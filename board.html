@@ -57,13 +57,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-13 15:42:33 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-13 15:44:35 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-13T15:42:33",
+  "generatedAt": "2026-07-13T15:44:35",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 12,
     "alerts": 0
@@ -75,14 +75,14 @@
       "project": "claude-handoff",
       "targetDir": "D:\\06_Utilities\\claude-handoff",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 미완결(INCONCLUSIVE) — 확인 후 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -97,9 +97,9 @@
         "runs": 1
       },
       "autorun": {
-        "active": false,
-        "phase": "verify",
-        "round": 0,
+        "active": true,
+        "phase": "worker",
+        "round": 1,
         "result": "ESCALATED"
       },
       "timeline": [
@@ -107,9 +107,14 @@
           "time": "2026-07-13 15:40:18",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-13 15:44:00",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-13 15:40:18"
+      "lastUpdate": "2026-07-13 15:44:00"
     },
     {
       "jobId": "Jremote-command",
@@ -692,13 +697,7 @@
       "lastUpdate": "2026-07-10 12:26:12"
     }
   ],
-  "escalations": [
-    {
-      "file": "Jremote-e2e-test_autorun-verify-nopass.md",
-      "jobId": "Jremote-e2e-test",
-      "cause": "autorun-verify-nopass"
-    }
-  ],
+  "escalations": [],
   "externalVerifies": [
     {
       "relayJobId": "J20260710-005444-75b0",
