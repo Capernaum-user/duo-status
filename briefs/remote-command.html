@@ -38,19 +38,22 @@ code{font-family:var(--mono);}
 <p class="sub">스트림 <code>remote-command</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>1</b></span>
-  <span class="stat">완료 <b>0</b></span>
+  <span class="stat">완료 <b>1</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-13 14:55:54</span>
+  <span class="stat">갱신 2026-07-13 15:34:34</span>
 </div>
 <hr>
 <section class="job">
-  <div class="jhead"><span class="jn">#1</span><h2>Jremote-command</h2><span class="chip blue">발주됨</span></div>
-  <div class="meta"><code>Jremote-command</code> · R1 · 갱신 2026-07-13 14:55:54</div>
-  <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
+  <div class="jhead"><span class="jn">#1</span><h2>모바일 원격 지시: GitHub Issues 명령함 → claude-duo 자동 가동</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jremote-command</code> · R2 · 갱신 2026-07-13 15:34:34</div>
+  <div class="block"><h3>기획 요약</h3><p>사용자는 **폰에서** 작업을 지시하고 싶다: 기능 선택+내용 입력 → PC의 claude-duo가 자동 가동(기획→<br>[검증]→무인 워커→무인 검토) → 완료 브리핑을 폰에서 열람. 이미 있는 것: ① `/handoff-auto` 스킬<br>(`C:\Users\권태향\.claude\skills\handoff-auto\SKILL.md` — 기획 절차의 정본, 필독) ② 무인 러너<br>`tools\auto-runner.ps1`(-JobId -Stream -Detach) ③ 브리핑 자동 발행(`publish\` — briefs가<br>`https://capernaum-user.github.io/duo-status/briefs/&lt;slug&gt;.html`로 자동 공개) ④ PC의 `gh` CLI 인증<br>(계정 Capernaum-user…</p></div>
   
-  <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
-  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회</p></div>
-  
+  <div class="block"><h3>작업 결과</h3><p>`remote\command-daemon.ps1`(R01 산출물)에서 검토자가 실증한 4개 결함을 수정했다. **결함 1(필수)**:<br>동시 실행 상한 초과 시 매 사이클 댓글을 반복 전송하던 것을 `status='queued'` 상태파일로 &quot;안내 완료&quot; 여부를<br>기억해 **이슈당 최초 1회**만 보내도록 고쳤다. 동시에 신규 명령 dedup 로직을 `status != 'queued'`일 때만<br>skip하도록 바꿔, 대기열 항목은 매 사이클 재평가되다가 슬롯이 비면 **자동으로 디스패치**된다(R01의 동작<br>보존). **결함 2(필수)**: 후속 감시 루프에서 `cmd-*.json` 파싱을 항목 단위 try/catch로 감싸 손상 파일 1개를<br>`remote\state\corrupt\`로 격리 후 나머지 커맨드·신규 명령 처리를 같은 사이클에서 계속하도록 고쳤다(R01은<br>이 파싱에 의도적으로 try/catch를 빼둔 채 AC5(사이클 생존)를 통과시킨 취약점이었다). **결함 4(필수)**:<br>모드 파싱 실패 시 `auto`로 fail-open하던 기본값을 `manual`로 fail-closed하고, 인식 실패를 알리는 전용<br>안내 댓글을 보내도록 고쳤다(`modeRecognized` 플래그로 호출부에 전달). **결함 3(선택)**: 최소 요구대로<br>**주석 + README 문서화만** 했다 — `Invoke-PlannerSpawn`의 실모드가 `Start-Process -Wait`로 동기 실행되어<br>기획 세션이 도는 수 분간 폴링 루프 전체(STOP-REMOTE 감지·다른 watching 커맨드 완료 감시 포함)가 멈추는<br>트레이드오프를 코드 주석과 README &quot;알려진 한계&quot; 항목에 명시했다. **비동기 전환은 이번 라운드에서 하지<br>않았다** — 미해결로 남겨둔다(아래 미해결 질문 참조).</p>
+<p>AC5(데몬 생존) 재증명은 R01처럼 프로덕션 코드를 취약하게 두는 방식이 아니라, **저널 파일을 별도 프로세스로<br>독점 잠금(`FileShare::None`)해 실제 IOException을 유발**하는 방식으로 검증했다(아래 기준5 증거) — 데몬<br>코드는 이 지점에 원래도 try/catch가 없었고(스크립트 최상단 `$ErrorActionPreference='Stop'`이라 이 예외도<br>사이클 최외곽 try/catch까지 전파됨), 이번 라운드에도 그 부분은 건드리지 않았다(범위 밖).</p>
+<p>`gh` 호출·GitHub 네트워크 접촉·데…</p><div class='files'>변경 파일: <code>command-daemon.ps1</code> <code>README.md</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 1회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  <div class='block'><h3>미해결 질문</h3><p>- 실제 GitHub Issue로 전체 루프 실전 검증(이 라운드도 R01과 동일하게 전부 mock).<br>- 이슈 폼(`remote\issue-template-command.yml`)을 `duo-status` 저장소 `.github/ISSUE_TEMPLATE/`에 실제 반영.<br>- 데몬 상주 실행 등록(시작프로그램/스케줄러) — 이번 라운드도 등록 코드 자체를 만들지 않음.<br>- 실 헤드리스 `claude -p` 기획 스폰의 실전 검증(권한·타임아웃·실제 opus 응답 형식 등).<br>- 결함3(블로킹 스폰)의 비동기 전환 여부 — 필요하다면 R03에서 별도로 발주할지 판단 필요.<br>- (참고) 이 세션에 주입된 프롬프트의 ORDER 본문이 relay의 실제 R02와 달랐던 점 — harness의 프롬프트 조립<br>  로직 확인이 필요할 수 있음(위 &quot;사전 안내&quot; 참조, 작업 자체에는 relay R02를 따라 영향 없었음).</p>
+<p>&lt;!-- END-OF-DOC --&gt;</p></div>
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-13 14:55:54</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-13 15:34:34</span></div>
 </article></div></body></html>
