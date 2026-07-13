@@ -38,19 +38,23 @@ code{font-family:var(--mono);}
 <p class="sub">스트림 <code>public-status</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>1</b></span>
-  <span class="stat">완료 <b>0</b></span>
+  <span class="stat">완료 <b>1</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-13 12:46:41</span>
+  <span class="stat">갱신 2026-07-13 13:19:21</span>
 </div>
 <hr>
 <section class="job">
-  <div class="jhead"><span class="jn">#1</span><h2>Jstatus-publish</h2><span class="chip blue">발주됨</span></div>
-  <div class="meta"><code>Jstatus-publish</code> · R1 · 갱신 2026-07-13 12:46:41</div>
+  <div class="jhead"><span class="jn">#1</span><h2>발행 스테이징 디렉터리 정리(purge) 결함 수정</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jstatus-publish</code> · R2 · 갱신 2026-07-13 13:19:20</div>
   <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
   
-  <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
-  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회</p></div>
-  
+  <div class="block"><h3>작업 결과</h3><p>R1 검토자가 지적한 실제 결함(`build-site.ps1`이 `publish\site\`를 빌드 전에 비우지 않아 유령 파일이<br>`robocopy /MIR`로 그대로 공개 발행되고, 오염 1건이 이후 모든 빌드를 영구 실패시키는 자가 봉쇄)을 고쳤다.</p>
+<p>`publish\build-site.ps1`에 **T1: 빌드 최초 단계(상태 스냅샷을 읽기 전)에서 `$OutDir` purge**를 추가했다<br>(안전장치: 경로가 정말 `...\publish\site` 꼬리일 때만 삭제, 아니면 즉시 throw — `site-repo\`와 그 `.git`은<br>건드리지 않음). 동시에 **T2: `-OutDir` 기본값을 `$Root` 기준**(`Join-Path $Root 'publish\site'`)으로 바꿔,<br>`-Root`에 다른 값(테스트 픽스처 등)을 넘겼을 때 실제 저장소가 아니라 그 루트 안에만 산출물이 생기도록<br>격리를 고쳤다(R1의 `$Root`-클로버링 버그 수정과 별개의 독립된 결함이었다 — 이번 라운드에서 처음 발견/수정).<br>`README.md`에 **T3: 복구 절차 1줄**을 실제 동작(퍼지 후 재생성 → 자동 복구)에 맞춰 갱신했다.</p>
+<p>`publish\publish-site.ps1`은 이번 라운드에서 **무수정**이다(ORDER가 &quot;필요 시 주석/안내만&quot;이라 명시했고,<br>실제로 이 스크립트의 로직은 결함과 무관 — 결함은 순전히 build-site.ps1의 스테이징 누적 문제였다).</p>
+<p>`gh` 호출·github.com 원격 추가·실제 저장소 생성·시작프로그램 등록은 **전혀 하지 않았다**(요구된 최상위 제약,<br>R1과 동일하게 유지). 모든 발행 테스트는 로컬 임시 bare repo와 `%TEMP%` 픽스처로만 수행했고, 테스트 종료 후<br>전부 삭제했다(아래 기준 증거 참조).</p><div class='files'>변경 파일: <code>build-site.ps1</code> <code>README.md</code> <code>publish-site.ps1</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 1회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  <div class='block'><h3>미해결 질문</h3><p>1. R1과 동일 — **실제 공개 저장소 생성·GitHub Pages 활성화·`watch-and-publish.ps1` 상시 실행(시작프로그램/<br>   스케줄러 등록)은 이 워커가 하지 않았다**. `publish\remote.txt`에 실제 저장소 URL을 적거나<br>   `-RemoteUrl`로 최초 발행하면 된다.<br>2. `_autorun_report_R1.md`, `tools\auto-runner.ps1.bak-hotfix1`, `tools\auto-runner.ps1.bak-hotfix2`는<br>   이 세션이 만든 것이 아니고(git status에 이미 untracked로 잡혀 있었음) 이번 ORDER의 allowed_paths<br>   밖이라 손대지 않았다 — 필요하면 검토자가 정리 여부를 판단해야 한다.<br>3. `publish\site-repo\`의 커밋 이력(5건, R1+R2 테스트 산물)은 전부 로컬 임시 bare repo를 향한 테스트여서<br>   실사용 가치가 없다 — 실제 발행을 시작하기 전에 `publish\site-repo\`를 초기화(삭제 후 재생성)할지,<br>   아니면 이대로 두고 첫 실제 push 때 자연스럽게 새 커밋이 쌓이게 둘지는 검토자·사용자 판단이 필요하다.</p>
+<p>&lt;!-- END-OF-DOC --&gt;</p></div>
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-13 12:46:41</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-13 13:19:21</span></div>
 </article></div></body></html>
