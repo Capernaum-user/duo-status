@@ -38,9 +38,9 @@ code{font-family:var(--mono);}
 <p class="sub">스트림 <code>remote-command</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>2</b></span>
-  <span class="stat">완료 <b>1</b></span>
-  <span class="stat">주의 <b>1</b></span>
-  <span class="stat">갱신 2026-07-13 15:41:43</span>
+  <span class="stat">완료 <b>2</b></span>
+  <span class="stat">주의 <b>0</b></span>
+  <span class="stat">갱신 2026-07-13 15:46:45</span>
 </div>
 <hr>
 <section class="job">
@@ -55,13 +55,14 @@ code{font-family:var(--mono);}
   <div class='block'><h3>미해결 질문</h3><p>- 실제 GitHub Issue로 전체 루프 실전 검증(이 라운드도 R01과 동일하게 전부 mock).<br>- 이슈 폼(`remote\issue-template-command.yml`)을 `duo-status` 저장소 `.github/ISSUE_TEMPLATE/`에 실제 반영.<br>- 데몬 상주 실행 등록(시작프로그램/스케줄러) — 이번 라운드도 등록 코드 자체를 만들지 않음.<br>- 실 헤드리스 `claude -p` 기획 스폰의 실전 검증(권한·타임아웃·실제 opus 응답 형식 등).<br>- 결함3(블로킹 스폰)의 비동기 전환 여부 — 필요하다면 R03에서 별도로 발주할지 판단 필요.<br>- (참고) 이 세션에 주입된 프롬프트의 ORDER 본문이 relay의 실제 R02와 달랐던 점 — harness의 프롬프트 조립<br>  로직 확인이 필요할 수 있음(위 &quot;사전 안내&quot; 참조, 작업 자체에는 relay R02를 따라 영향 없었음).</p>
 <p>&lt;!-- END-OF-DOC --&gt;</p></div>
 </section><section class="job">
-  <div class="jhead"><span class="jn">#2</span><h2>Jremote-e2e-test</h2><span class="chip rose">사람 개입</span></div>
-  <div class="meta"><code>Jremote-e2e-test</code> · R0 · 갱신 2026-07-13 15:41:43</div>
-  <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
+  <div class="jhead"><span class="jn">#2</span><h2>ORDER_Jremote-e2e-test_R01 — docs/remote-e2e-test.md 생성(원격 지시 E2E 검증 파일)</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jremote-e2e-test</code> · R1 · 갱신 2026-07-13 15:46:45</div>
+  <div class="block"><h3>기획 요약</h3><p>이 저장소(claude-handoff)에는 사용자가 **휴대폰에서 GitHub Issue로 지시를 보내면 무인 파이프라인이<br>자동으로 수행**하는 &quot;모바일 원격 명령함&quot; 기능이 있다(스트림: remote-command). 이번 작업은 그 경로가<br>실제로 끝까지 동작하는지 확인하는 **E2E(엔드투엔드) 검증용 산출물 1개를 만드는 것**이다.<br>요청은 실제로 GitHub Issue #1을 통해 접수되었고, 기획 세션이 이 지시서로 변환했다.<br>워커는 이 지시서 외의 대화 맥락을 알지 못해도 되며, 아래 &quot;할 일&quot;만 그대로 수행하면 된다.</p></div>
   <div class='block'><h3>교차검증</h3><span class='chip amber'>Codex PROTOCOL_ERROR · gemini PASS → INCONCLUSIVE</span></div>
-  <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
-  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회 · 러너 결과 <b>ESCALATED</b></p></div>
-  
+  <div class="block"><h3>작업 결과</h3><p>`D:\06_Utilities\claude-handoff\docs\remote-e2e-test.md` 파일을 UTF-8로 신규 생성했다. 파일은<br>지정된 한 줄(전각 em-dash 포함)만 담고 있으며, 다른 파일은 생성·수정·삭제하지 않았고 git<br>commit/push도 수행하지 않았다.</p><div class='files'>변경 파일: <code>remote-e2e-test.md</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  <div class='block'><h3>미해결 질문</h3><p>- `git status --short`에 함께 표시되는 `.gitignore` / `README.md` / `publish/build-site.ps1`<br>  (M) 및 `remote/` (untracked)는 이 ORDER 범위 밖의 기존 저장소 상태이며 이 워커가 만들지도<br>  건드리지도 않았다. commit 시점에 `docs/remote-e2e-test.md`만 골라 스테이징하도록 검토자가<br>  확인 바란다.</p>
+<p>&lt;!-- END-OF-DOC --&gt;</p></div>
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-13 15:41:43</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-13 15:46:45</span></div>
 </article></div></body></html>
