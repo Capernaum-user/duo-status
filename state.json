@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T15:40:31",
+  "generatedAt": "2026-07-13T15:42:33",
   "counts": {
     "active": 1,
     "waitingWorker": 1,
@@ -18,7 +18,7 @@
       "stage": "PLANNED",
       "stageIndex": 1,
       "stageLabel": "발주됨",
-      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "nextAction": "교차검증 미완결(INCONCLUSIVE) — 확인 후 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -27,20 +27,20 @@
         "rework": false
       },
       "verify": {
-        "status": "RUNNING",
-        "decision": null,
-        "a": null,
-        "b": null,
-        "relayJobId": "pending",
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PASS",
+        "relayJobId": "J20260713-154030-e15a",
         "startedAt": "2026-07-13 15:40:30",
-        "finishedAt": null,
+        "finishedAt": "2026-07-13 15:41:42",
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "verify",
         "round": 0,
-        "result": null
+        "result": "ESCALATED"
       },
       "timeline": [
         {
@@ -632,7 +632,13 @@
       "lastUpdate": "2026-07-10 12:26:12"
     }
   ],
-  "escalations": [],
+  "escalations": [
+    {
+      "file": "Jremote-e2e-test_autorun-verify-nopass.md",
+      "jobId": "Jremote-e2e-test",
+      "cause": "autorun-verify-nopass"
+    }
+  ],
   "externalVerifies": [
     {
       "relayJobId": "J20260710-005444-75b0",
