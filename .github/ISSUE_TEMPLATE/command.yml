@@ -1,0 +1,24 @@
+name: 원격 작업 지시 (claude-duo)
+description: 폰에서 PC의 claude-duo에 작업을 지시합니다.
+title: "[cmd] "
+labels: ["cmd"]
+body:
+  - type: dropdown
+    id: mode
+    attributes:
+      label: 실행 모드
+      description: 자동(무인)은 검증 없이 바로 파이프라인을 가동합니다. 수동은 PC에서 /check로 확인 후 진행합니다.
+      options:
+        - 자동(무인)
+        - 수동
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: 요청 내용
+      description: 하고 싶은 작업을 자연어로 적어주세요.
+      placeholder: "예) 대시보드에 다크모드 토글 버튼을 추가해줘"
+    validations:
+      required: true
