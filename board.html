@@ -57,14 +57,14 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-13 14:56:12 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-13 15:10:15 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-13T14:56:12",
+  "generatedAt": "2026-07-13T15:10:15",
   "counts": {
     "active": 1,
     "waitingWorker": 0,
-    "working": 1,
-    "waitingReview": 0,
+    "working": 0,
+    "waitingReview": 1,
     "done": 11,
     "alerts": 0
   },
@@ -75,10 +75,10 @@
       "project": "claude-handoff",
       "targetDir": "D:\\06_Utilities\\claude-handoff",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -89,7 +89,7 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": null
       },
@@ -103,9 +103,14 @@
           "time": "2026-07-13 14:55:56",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-13 15:09:46",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-13 14:55:56"
+      "lastUpdate": "2026-07-13 15:09:46"
     },
     {
       "jobId": "Jstatus-publish",
