@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="120">
+<title>근성 작업 관제 · 보드(스냅샷)</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+  <header class="hud">
+    <div class="brand">
+      <span class="eye">claude-duo · factory floor · 정적 스냅샷</span>
+      <h1>관제 보드</h1>
+    </div>
+    <div class="strip">
+      <div class="stat hot"><div class="n" id="c-active">-</div><div class="l">진행</div></div>
+      <div class="stat"><div class="n" id="c-worker">-</div><div class="l">워커대기</div></div>
+      <div class="stat"><div class="n" id="c-review">-</div><div class="l">검토대기</div></div>
+      <div class="stat done"><div class="n" id="c-done">-</div><div class="l">완료</div></div>
+      <div class="stat warn"><div class="n" id="c-alert">-</div><div class="l">경고</div></div>
+    </div>
+    <div class="right">
+      <div class="tabs">
+        <button id="tabBoard" class="on">보드</button>
+        <button id="tabList">리스트</button>
+      </div>
+      <div class="status" id="status"><span class="dot-live"></span><span id="statusText">스냅샷 로딩…</span></div>
+    </div>
+  </header>
+
+  <div class="banner" id="connBanner">⛔ 서버 연결 끊김 — 재연결 시도 중…</div>
+  <div class="banner" id="alertBanner"></div>
+
+  <div class="stage">
+    <canvas id="board"></canvas>
+
+    <div class="controls" id="boardControls">
+      <button id="zoomOut" title="축소">-</button>
+      <button id="zoomIn" title="확대">+</button>
+      <button id="zoomReset" title="리셋">reset</button>
+    </div>
+    <div class="hint">드래그=이동 · 휠=줌 · 토큰 클릭=상세 · 정적 스냅샷(2분마다 재발행분 자동 반영)</div>
+
+    <div id="listView">
+      <div id="listActive"></div>
+      <div class="list-fold" id="listDoneToggle" style="display:none">완료된 파이프라인</div>
+      <div id="listDone"></div>
+    </div>
+
+    <aside id="panel">
+      <div class="panel-h"><button id="panelClose" title="닫기">x</button></div>
+      <div id="panelBody"></div>
+    </aside>
+  </div>
+</div>
+
+<div id="tip"></div>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-13 12:51:22 · <a href="index.html">- 요약으로</a></p>
+<script>window.__STATE__ = {
+  "generatedAt": "2026-07-13T12:51:22",
+  "counts": {
+    "active": 1,
+    "waitingWorker": 0,
+    "working": 1,
+    "waitingReview": 0,
+    "done": 10,
+    "alerts": 0
+  },
+  "jobs": [
+    {
+      "jobId": "Jstatus-publish",
+      "title": "관제·브리핑 GitHub Pages 정적 발행기 (영구 공개 주소)",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-13 12:46:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 12:46:42",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-13 12:46:42"
+    },
+    {
+      "jobId": "Jdashboard-mobile",
+      "title": "관제 대시보드 모바일 뷰",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260713-121040-0114",
+        "startedAt": "2026-07-13 12:10:40",
+        "finishedAt": "2026-07-13 12:11:43",
+        "runs": 2
+      },
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-13 12:05:49",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 12:14:47",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 12:21:35",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 12:24:01",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-13 12:24:01"
+    },
+    {
+      "jobId": "Jhandoff-auto-brief",
+      "title": "/handoff-auto 스킬 + 스트림 브리핑 HTML(연장선 갱신)",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-13 10:53:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 11:32:17",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 11:51:16",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 11:51:46",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 11:53:55",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-13 11:53:55"
+    },
+    {
+      "jobId": "Jhandoff-expose",
+      "title": "관제 외부 접속 (cloudflared + 인증, 온디맨드)",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-13 10:21:22",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 10:26:15",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 10:36:40",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 10:40:35",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-13 10:42:17",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-13 10:42:17"
+    },
+    {
+      "jobId": "Jhandoff-board-ui",
+      "title": "관제 UI 입체화: 등각 팩토리 보드 (인터랙티브)",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-11 18:00:17",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-12 19:00:22",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-12 19:13:46",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-12 19:33:26",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-12 19:36:14",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-12 19:36:14"
+    },
+    {
+      "jobId": "Jhandoff-verify-graph",
+      "title": "교차검증 분기 + 그래프 관제 (duo × agent-relay 연동)",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-11 15:11:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 15:12:14",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 15:33:39",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 16:23:06",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 16:23:52",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 17:38:46",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-11 17:38:46"
+    },
+    {
+      "jobId": "Jhandoff-autorun",
+      "title": "L1~L3 자동화: 무인 러너(기획 제외 전자동)",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-11 15:32:59",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 16:57:37",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 17:22:03",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 17:35:06",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 17:37:44",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-11 17:37:44"
+    },
+    {
+      "jobId": "J20260710-115243-5a86",
+      "title": "test",
+      "project": "",
+      "targetDir": null,
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-10 11:52:43",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-10 11:52:43",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 14:57:47",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-11 14:57:47"
+    },
+    {
+      "jobId": "Jhandoff-dashboard",
+      "title": "claude-duo 파이프라인 라이브 대시보드",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-11 14:30:51",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 14:34:18",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 14:50:45",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 14:52:34",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 14:55:03",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-11 14:55:03"
+    },
+    {
+      "jobId": "Jhandoff-multijob",
+      "title": "claude-duo v1.1: 멀티잡 라우팅(다중 프로젝트 오배송 방지)",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-11 10:51:32",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 10:55:41",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 11:08:43",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 11:18:17",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-11 11:20:57",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-11 11:20:57"
+    },
+    {
+      "jobId": "Jduo-build-v1",
+      "title": "Jduo-build-v1",
+      "project": "",
+      "targetDir": null,
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-10 12:26:12",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-10 12:26:12"
+    }
+  ],
+  "escalations": [],
+  "externalVerifies": [
+    {
+      "relayJobId": "J20260710-005444-75b0",
+      "decision": "INCONCLUSIVE",
+      "time": "2026-07-09T16:01:32",
+      "slug": ""
+    },
+    {
+      "relayJobId": "J20260710-003042-a14b",
+      "decision": "BOTH_FAIL",
+      "time": "2026-07-09T15:46:46",
+      "slug": ""
+    },
+    {
+      "relayJobId": "J20260710-000939-a1d1",
+      "decision": "MIXED_NOTES",
+      "time": "2026-07-09T15:19:10",
+      "slug": ""
+    }
+  ]
+};</script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>브리핑 · 관제 모바일 뷰</title>
+<style>
+:root{--primary:#0064ff;--primary-dark:#0050cc;--green:#0caf60;--amber:#a16207;--rose:#e11d48;
+--bg:#f5f5f7;--surface:#fff;--surface-2:#fafafb;--text:#0f1419;--text-2:#525866;--text-3:#8e96a3;--border:#e4e6ea;--code:#f3f5f8;
+--font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"JetBrains Mono",Consolas,monospace;}
+@media (prefers-color-scheme:dark){:root{--bg:#0c0e12;--surface:#14171d;--surface-2:#1a1e26;--text:#e7ebf0;--text-2:#9aa3b0;--text-3:#6b7280;--border:#252a33;--code:#1a1e26;--primary:#3d8bff;--primary-dark:#5b9dff;--green:#25c07a;--amber:#d4a12a;--rose:#ff5d7d;}}
+*{box-sizing:border-box;}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px 70px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:0 8px 24px rgba(15,20,25,.06);padding:44px 48px;}
+.eye{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--primary);text-transform:uppercase;}
+h1{font-size:32px;font-weight:800;margin:.3em 0 .1em;}.sub{color:var(--text-2);font-size:14px;margin:0 0 8px;}
+.summary{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px;}
+.stat{background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700;}
+.stat b{color:var(--primary);}
+hr{border:0;border-top:1px solid var(--border);margin:28px 0;}
+.job{border-top:1px solid var(--border);padding-top:22px;margin-top:22px;}.job:first-of-type{border-top:0;margin-top:8px;}
+.jhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.jn{font-family:var(--mono);font-size:13px;font-weight:800;color:var(--text-3);}
+.jhead h2{font-size:21px;font-weight:800;margin:0;flex:1;}
+.meta{font-size:12.5px;color:var(--text-3);margin:2px 0 12px;}.meta code{font-family:var(--mono);}
+.block{margin:14px 0;}.block h3{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--text-3);margin:0 0 4px;}
+.block p{margin:.4em 0;}.ph{color:var(--text-3);font-style:italic;}
+.chip{display:inline-block;font-size:12px;font-weight:800;padding:3px 12px;border-radius:999px;}
+.chip.green{background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green);}
+.chip.rose{background:color-mix(in srgb,var(--rose) 16%,transparent);color:var(--rose);}
+.chip.amber{background:color-mix(in srgb,var(--amber) 16%,transparent);color:var(--amber);}
+.chip.blue{background:color-mix(in srgb,var(--primary) 14%,transparent);color:var(--primary-dark);}
+.files{font-size:13px;color:var(--text-2);margin-top:6px;}.files code{font-family:var(--mono);background:var(--code);padding:1px 6px;border-radius:5px;font-size:12px;}
+code{font-family:var(--mono);}
+.foot{margin-top:34px;padding-top:16px;border-top:1px solid var(--border);font-size:12.5px;color:var(--text-3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.foot a{color:var(--primary-dark);}
+@page{size:A4;margin:14mm;}@media print{body{background:#fff;}.card{box-shadow:none;border:0;padding:0;}}
+</style></head><body><div class="wrap"><article class="card">
+<div class="eye">claude-duo · 자동 브리핑</div>
+<h1>관제 모바일 뷰</h1>
+<p class="sub">스트림 <code>dashboard-mobile</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
+<div class="summary">
+  <span class="stat">전체 <b>1</b></span>
+  <span class="stat">완료 <b>1</b></span>
+  <span class="stat">주의 <b>0</b></span>
+  <span class="stat">갱신 2026-07-13 12:25:36</span>
+</div>
+<hr>
+<section class="job">
+  <div class="jhead"><span class="jn">#1</span><h2>관제 대시보드 모바일 뷰</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jdashboard-mobile</code> · R1 · 갱신 2026-07-13 12:24:29</div>
+  <div class="block"><h3>기획 요약</h3><p>claude-duo 관제 대시보드는 `http://localhost:8895`에서 서빙되는 **등각(isometric) 팩토리 보드**다.<br>구성: `dashboard\index.html`(얇은 셸: HUD·상세패널·canvas·리스트뷰 DOM) + `app.js`(로직) + `app.css`(스타일).<br>서버(`serve-dashboard.ps1`)는 화이트리스트 4경로(`/`·`/app.js`·`/app.css`·`/api/state`)만 서빙하며 **수정 금지**.<br>데이터는 `/api/state` 2초 폴링. `app.js` 구조: 최상단 **순수 함수 `mapStateToScene(state)`**(node 테스트 가능,<br>`module.exports` 가드) + `if (typeof window!=='u…</p></div>
+  <div class='block'><h3>교차검증</h3><span class='chip amber'>Codex PROTOCOL_ERROR · gemini PROTOCOL_ERROR → INCONCLUSIVE</span></div>
+  <div class="block"><h3>작업 결과</h3><p>등각 팩토리 보드(`dashboard/app.js`+`app.css`+`index.html`)에 **모바일 터치 입력 + 반응형 레이아웃**을 추가했다.<br>데스크톱 마우스/휠 핸들러는 전부 그대로 두고 **터치 핸들러를 별도로 추가**하는 방식(R1 택1 — 아래 &quot;내린 결정&quot; 참조)을<br>택해 회귀 위험을 최소화했다. `mapStateToScene` 순수 함수 구간(1~46행)은 백업본과 **바이트 단위로 동일**함을 diff로 확인했다.<br>부수적으로, index.html에 없는 `#genAt` 엘리먼트를 참조해 매 2초 폴링마다 예외를 던지고 `.catch()`로 흘러가 정상<br>연결 중에도 &quot;연결 끊김&quot; 배너가 뜨던 **기존 버그 1건**을 함께 제거했다(아래 &quot;내린 결정&quot; #4 참조, ORDER 범위 밖이지만<br>검토 편의를 위해 명시).</p><div class='files'>변경 파일: <code>app.js</code> <code>app.css</code> <code>index.html</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  <div class='block'><h3>미해결 질문</h3><p>1. **실기기 시각 확인은 사용자 몫**: 팬/핀치줌/탭 제스처의 실제 손맛, 하단 시트 슬라이드 애니메이션, HUD 줄바꿈이<br>   실제 폰 화면에서 겹치지 않는지는 `http://localhost:8895/`를 모바일 브라우저(또는 데스크톱 브라우저의 기기<br>   시뮬레이터)로 직접 열어 확인이 필요하다. 헤드리스 환경이라 실제 터치스크린 렌더링/제스처를 눈으로 볼 수 없었다.<br>2. **`$('genAt')` 버그 제거는 ORDER 범위 밖 판단**: 검토 시 되돌리길 원하면 알려달라(단, 되돌리면 폴링마다<br>   &quot;연결 끊김&quot; 배너 깜빡임이 재발한다).<br>3. **`fitScale()` 타겟 폭(640px)은 보드 타일 배치 근사치**: 실제 스테이션 좌표(plan~done 대각선 폭 약 532px +<br>   토큰 카드 여백)로 역산한 근사값이며, 정확한 &quot;보드 전체가 딱 맞게&quot; 보정은 아니고 &quot;대략 보이도록&quot;(ORDER 표현)<br>   수준이다.</p>
+<p>&lt;!-- END-OF-DOC --&gt;</p></div>
+</section>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-13 12:25:36</span></div>
+</article></div></body></html>
