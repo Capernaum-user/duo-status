@@ -1,14 +1,56 @@
 {
-  "generatedAt": "2026-07-13T15:37:15",
+  "generatedAt": "2026-07-13T15:40:31",
   "counts": {
-    "active": 0,
-    "waitingWorker": 0,
+    "active": 1,
+    "waitingWorker": 1,
     "working": 0,
     "waitingReview": 0,
     "done": 12,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jremote-e2e-test",
+      "title": "ORDER_Jremote-e2e-test_R01 — docs/remote-e2e-test.md 생성(원격 지시 E2E 검증 파일)",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "RUNNING",
+        "decision": null,
+        "a": null,
+        "b": null,
+        "relayJobId": "pending",
+        "startedAt": "2026-07-13 15:40:30",
+        "finishedAt": null,
+        "runs": 1
+      },
+      "autorun": {
+        "active": true,
+        "phase": "verify",
+        "round": 0,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-13 15:40:18",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-13 15:40:18"
+    },
     {
       "jobId": "Jremote-command",
       "title": "모바일 원격 지시: GitHub Issues 명령함 → claude-duo 자동 가동",
