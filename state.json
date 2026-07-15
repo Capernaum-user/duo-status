@@ -1,28 +1,28 @@
 {
-  "generatedAt": "2026-07-16T01:50:53",
+  "generatedAt": "2026-07-16T01:52:56",
   "counts": {
     "active": 1,
     "waitingWorker": 0,
-    "working": 0,
-    "waitingReview": 1,
+    "working": 1,
+    "waitingReview": 0,
     "done": 13,
     "alerts": 0
   },
   "jobs": [
     {
       "jobId": "Jsocratic-graft",
-      "title": "ORDER_Jsocratic-graft_R01 — agent_office_v2 비서 Socratic Intake 이식(S0+S2)",
+      "title": "ORDER_Jsocratic-graft_R02 — 라이브 SEALED 도달(스키마 sanitize) + selftest 정합",
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -38,9 +38,14 @@
           "time": "2026-07-15 21:19:24",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-16 01:52:03",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-15 21:19:24"
+      "lastUpdate": "2026-07-16 01:52:03"
     },
     {
       "jobId": "Jremote-e2e-test",
@@ -702,6 +707,12 @@
     }
   ],
   "invocations": [
+    {
+      "time": "2026-07-16 01:51:04",
+      "command": "handoff-check",
+      "panel": "agent_office_v2",
+      "text": "/check"
+    },
     {
       "time": "2026-07-16 01:45:37",
       "command": "handoff-check",
