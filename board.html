@@ -57,18 +57,46 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-15 20:32:26 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-15 20:36:29 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-15T20:32:26",
+  "generatedAt": "2026-07-15T20:36:29",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 13,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jsocratic-graft",
+      "title": "ORDER_Jsocratic-graft_R01 — agent_office_v2 비서 Socratic Intake 이식(S0+S2)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-15 20:35:45",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-15 20:35:45"
+    },
     {
       "jobId": "Jremote-e2e-test",
       "title": "ORDER_Jremote-e2e-test_R01 — docs/remote-e2e-test.md 생성(원격 지시 E2E 검증 파일)",
@@ -705,28 +733,6 @@
         }
       ],
       "lastUpdate": "2026-07-10 12:26:12"
-    },
-    {
-      "jobId": "Jsocratic-graft",
-      "title": "ORDER_Jsocratic-graft_R01 — agent_office_v2 비서 Socratic Intake 이식(S0+S2)",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "(folder)",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [],
-      "lastUpdate": ""
     }
   ],
   "escalations": [],
@@ -750,7 +756,14 @@
       "slug": ""
     }
   ],
-  "invocations": []
+  "invocations": [
+    {
+      "time": "2026-07-15 20:33:47",
+      "command": "handoff-check",
+      "panel": "agent_office_v2",
+      "text": "/check"
+    }
+  ]
 };</script>
 <script src="app.js"></script>
 </body>
