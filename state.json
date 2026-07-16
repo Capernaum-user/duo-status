@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-16T10:25:11",
+  "generatedAt": "2026-07-16T14:36:17",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 14,
     "alerts": 0
@@ -15,14 +15,14 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,14 @@
           "time": "2026-07-16 10:25:06",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-16 14:35:39",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-16 10:25:06"
+      "lastUpdate": "2026-07-16 14:35:39"
     },
     {
       "jobId": "Jsocratic-graft",
@@ -745,6 +750,12 @@
     }
   ],
   "invocations": [
+    {
+      "time": "2026-07-16 14:34:53",
+      "command": "handoff-check",
+      "panel": "agent_office_v2",
+      "text": "/check"
+    },
     {
       "time": "2026-07-16 01:51:04",
       "command": "handoff-check",
