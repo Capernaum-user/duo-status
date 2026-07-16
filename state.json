@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-16T18:59:07",
+  "generatedAt": "2026-07-16T19:01:10",
   "counts": {
-    "active": 1,
+    "active": 0,
     "waitingWorker": 0,
     "working": 0,
-    "waitingReview": 1,
-    "done": 18,
+    "waitingReview": 0,
+    "done": 19,
     "alerts": 0
   },
   "jobs": [
@@ -15,10 +15,10 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
-      "stage": "REVIEW-CLAIMED",
-      "stageIndex": 4,
-      "stageLabel": "검토 중",
-      "nextAction": "검토 결과 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -48,9 +48,14 @@
           "time": "2026-07-16 18:58:09",
           "state": "REVIEW-CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-16 19:00:30",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-16 18:58:09"
+      "lastUpdate": "2026-07-16 19:00:30"
     },
     {
       "jobId": "Jsocratic-s3",
