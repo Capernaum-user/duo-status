@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-16T16:04:40",
+  "generatedAt": "2026-07-16T16:08:43",
   "counts": {
-    "active": 1,
+    "active": 0,
     "waitingWorker": 0,
     "working": 0,
-    "waitingReview": 1,
-    "done": 16,
+    "waitingReview": 0,
+    "done": 17,
     "alerts": 0
   },
   "jobs": [
@@ -15,23 +15,23 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -48,9 +48,14 @@
           "time": "2026-07-16 16:03:45",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-16 16:08:08",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-16 16:03:45"
+      "lastUpdate": "2026-07-16 16:08:08"
     },
     {
       "jobId": "Jsocratic-s1-fu1",
