@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-07-16T17:33:55",
+  "generatedAt": "2026-07-16T18:14:59",
   "counts": {
-    "active": 0,
-    "waitingWorker": 0,
+    "active": 1,
+    "waitingWorker": 1,
     "working": 0,
     "waitingReview": 0,
     "done": 18,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jsocratic-s4",
+      "title": "ORDER_Jsocratic-s4_R01 — ADR 5필드 결정로그(approve/reject 훅) + .gitignore 선수",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-16 18:14:06",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-16 18:14:06"
+    },
     {
       "jobId": "Jsocratic-s3",
       "title": "ORDER_Jsocratic-s3_R01 — console 게이트 fail-open 봉인(M7) + 동일모델 자문 라벨(M6)",
