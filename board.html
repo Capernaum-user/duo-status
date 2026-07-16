@@ -57,18 +57,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-16 15:58:35 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-16 15:59:38 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-16T15:58:35",
+  "generatedAt": "2026-07-16T15:59:38",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 16,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jsocratic-s1-fu2",
+      "title": "ORDER_Jsocratic-s1-fu2_R01 — belief.variable 영속 전 수치 PII 로컬 마스킹 + 회귀가드",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-16 15:38:05",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 15:58:36",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-16 15:58:36"
+    },
     {
       "jobId": "Jsocratic-s1-fu1",
       "title": "ORDER_Jsocratic-s1-fu1_R01 — Socratic post-seal 재라운드 누적손실 폴백 재정렬 + 회귀가드",
@@ -88,10 +126,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -116,34 +154,6 @@
         }
       ],
       "lastUpdate": "2026-07-16 15:58:13"
-    },
-    {
-      "jobId": "Jsocratic-s1-fu2",
-      "title": "ORDER_Jsocratic-s1-fu2_R01 — belief.variable 영속 전 수치 PII 로컬 마스킹 + 회귀가드",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-16 15:38:05",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-16 15:38:05"
     },
     {
       "jobId": "Jsocratic-s1",
