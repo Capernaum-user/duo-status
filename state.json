@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-21T00:24:07",
+  "generatedAt": "2026-07-21T00:27:11",
   "counts": {
-    "active": 1,
-    "waitingWorker": 1,
+    "active": 0,
+    "waitingWorker": 0,
     "working": 0,
     "waitingReview": 0,
     "done": 53,
@@ -811,43 +811,6 @@
         }
       ],
       "lastUpdate": "2026-07-20 10:19:41"
-    },
-    {
-      "jobId": "Jfix",
-      "title": "Jfix",
-      "project": "",
-      "targetDir": null,
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "DONE",
-        "decision": "INCONCLUSIVE",
-        "a": "PROTOCOL_ERROR",
-        "b": "PASS",
-        "relayJobId": "Jx",
-        "startedAt": "2026-07-20 10:01:00",
-        "finishedAt": "2026-07-20 10:05:00",
-        "runs": 1
-      },
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-20 10:00:00",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 10:00:00"
     },
     {
       "jobId": "Jaudit-a4",
