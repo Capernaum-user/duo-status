@@ -71,14 +71,14 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 00:13:45 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 00:19:51 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-21T00:13:45",
+  "generatedAt": "2026-07-21T00:19:51",
   "counts": {
     "active": 1,
     "waitingWorker": 0,
-    "working": 1,
-    "waitingReview": 0,
+    "working": 0,
+    "waitingReview": 1,
     "done": 52,
     "alerts": 0
   },
@@ -89,10 +89,10 @@
       "project": "claude-handoff",
       "targetDir": "D:\\06_Utilities\\claude-handoff",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -103,7 +103,7 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": null
       },
@@ -117,9 +117,14 @@
           "time": "2026-07-21 00:13:37",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-21 00:18:55",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-21 00:13:37"
+      "lastUpdate": "2026-07-21 00:18:55"
     },
     {
       "jobId": "Jcosmos-landing-explainer",
@@ -2792,6 +2797,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 00:19:02",
+      "command": "handoff-verify",
+      "panel": "claude-handoff",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT만 보고 자족적으로 3중 게이트 검토하라. =…"
+    },
+    {
       "time": "2026-07-21 00:13:45",
       "command": "handoff-auto",
       "panel": "claude-handoff",
@@ -2904,12 +2915,6 @@
       "command": "handoff-auto",
       "panel": "16_cosmos-knowledge",
       "text": "/handoff-auto cosmos knowledge 사이트를 좀 더 개편할 필요가 있는게 다른 사람들은 내 페이지가 단순히 html로 만들어…"
-    },
-    {
-      "time": "2026-07-20 12:11:36",
-      "command": "handoff-check",
-      "panel": "agent_office_v2",
-      "text": "/check"
     }
   ]
 };</script>

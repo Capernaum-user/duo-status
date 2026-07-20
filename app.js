@@ -29,7 +29,7 @@ function mapStateToScene(state) {
     var v = j.verify || null;
     var booth = !!v;
     var boothActive = !!(v && v.status === 'RUNNING');
-    var boothFail = !!(v && v.status === 'DONE' && (v.decision === 'BOTH_FAIL' || v.decision === 'CONFLICT'));
+    var boothFail = !!(v && v.status === 'DONE' && (v.decision === 'BOTH_FAIL' || v.decision === 'CONFLICT' || v.decision === 'SINGLE_FAIL'));
     var alert = (j.stageIndex === 0) || !!(j.flags && j.flags.protocolError) || ((j.stageLabel || '').indexOf('[확인필요]') >= 0);
     var stackIndex = (station === 'done') ? (stackN++) : -1;
     var color = alert ? 'rose' : (j.stageIndex === 5 ? 'green' : 'primary');
