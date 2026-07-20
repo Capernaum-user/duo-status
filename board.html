@@ -71,18 +71,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 00:02:26 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 00:13:45 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-21T00:02:26",
+  "generatedAt": "2026-07-21T00:13:45",
   "counts": {
-    "active": 0,
+    "active": 1,
     "waitingWorker": 0,
-    "working": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 52,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jverify-decision-consistency",
+      "title": "ORDER_Jverify-decision-consistency_R01 — SINGLE_* 검증 판정값을 하류 6곳에 반영",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 00:13:34",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 00:13:37",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 00:13:37"
+    },
     {
       "jobId": "Jcosmos-landing-explainer",
       "title": "ORDER_Jcosmos-landing-explainer_R02 — 홈 랜딩 해부도 + 그래프 판독기 구현",
@@ -2754,6 +2792,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 00:13:45",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-21 00:09:58",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "/handoff-auto 남은거 진행해"
+    },
+    {
       "time": "2026-07-20 21:56:52",
       "command": "handoff-auto",
       "panel": "16_cosmos-knowledge",
@@ -2860,18 +2910,6 @@
       "command": "handoff-check",
       "panel": "agent_office_v2",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-20 12:11:30",
-      "command": "handoff-check",
-      "panel": "agent_office_v2",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-20 12:01:14",
-      "command": "handoff-check",
-      "panel": "console",
-      "text": "이제 /check 를 몇개나 더 해야돼? 그냥 /check 만 입력했는데 /check b2 라고 직접 지정해줘야되나?"
     }
   ]
 };</script>
