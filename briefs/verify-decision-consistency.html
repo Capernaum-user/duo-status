@@ -38,19 +38,20 @@ code{font-family:var(--mono);}
 <p class="sub">스트림 <code>verify-decision-consistency</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>1</b></span>
-  <span class="stat">완료 <b>0</b></span>
+  <span class="stat">완료 <b>1</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-21 00:13:34</span>
+  <span class="stat">갱신 2026-07-21 00:22:43</span>
 </div>
 <hr>
 <section class="job">
-  <div class="jhead"><span class="jn">#1</span><h2>Jverify-decision-consistency</h2><span class="chip blue">발주됨</span></div>
-  <div class="meta"><code>Jverify-decision-consistency</code> · R1 · 갱신 2026-07-21 00:13:34</div>
-  <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jverify-decision-consistency_R01 — SINGLE_* 검증 판정값을 하류 6곳에 반영</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jverify-decision-consistency</code> · R1 · 갱신 2026-07-21 00:22:43</div>
+  <div class="block"><h3>기획 요약</h3><p>`D:\06_Utilities\claude-handoff`는 claude-duo 핸드오프 파이프라인이고,<br>`D:\06_Utilities\agent-relay`가 외부 AI 2개(레인A=Codex, 레인B=gemini)로 ORDER를 교차검증한다.</p></div>
   
-  <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
-  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회</p></div>
-  
+  <div class="block"><h3>작업 결과</h3><p>agent-relay가 2026-07-20에 도입한 1중 강등 판정값(`SINGLE_PASS`/`SINGLE_FAIL`/`SINGLE_NEED_INFO`/`SINGLE_NOTES`)을<br>`tools\auto-runner.ps1`(판정 로직)은 이미 알고 있었지만, 하류 표시·안내 계층 6곳이 이를 몰라 `SINGLE_FAIL`이<br>경고색·중립 안내로 잘못 표시되던 문제를 고쳤다. 지시된 6개 파일 각각에서 **기존 분기 구조를 유지하고 새 값만<br>추가**했다: `app.js`의 `boothFail`에 `SINGLE_FAIL` 포함, `Get-HandoffState.ps1`의 `nextAction`에<br>`SINGLE_PASS`/`SINGLE_FAIL` 전용 분기 추가, `render-brief.ps1`의 칩 색에 `SINGLE_FAIL`→rose 추가(`SINGLE_PASS`는<br>의도적으로 amber 유지 — green이면 강등 사실이 숨음), 두 SKILL.md와 README.md에 새 값 설명 추가.<br>판정 로직 자체(`agent-relay`)와 러너의 통과/중단 집합(`auto-runner.ps1`)은 손대지 않았고, 249~268행이<br>작업 전과 동일함을 재확인했다(수용 기준 9).</p><div class='files'>변경 파일: <code>README.md</code> <code>Get-HandoffState.ps1</code> <code>app.js</code> <code>handoff-check.SKILL.md</code> <code>handoff-verify.SKILL.md</code> <code>render-brief.ps1</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  <div class='block'><h3>미해결 질문</h3><p>없음.</p>
+<p>&lt;!-- END-OF-DOC --&gt;</p></div>
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 00:13:34</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 00:22:43</span></div>
 </article></div></body></html>
