@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T00:23:02",
+  "generatedAt": "2026-07-21T00:24:07",
   "counts": {
     "active": 1,
     "waitingWorker": 1,
@@ -831,9 +831,9 @@
       },
       "verify": {
         "status": "DONE",
-        "decision": "CONFLICT",
+        "decision": "INCONCLUSIVE",
         "a": "PROTOCOL_ERROR",
-        "b": "FAIL",
+        "b": "PASS",
         "relayJobId": "Jx",
         "startedAt": "2026-07-20 10:01:00",
         "finishedAt": "2026-07-20 10:05:00",
