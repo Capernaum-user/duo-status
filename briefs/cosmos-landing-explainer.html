@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>브리핑 · Cosmos 랜딩 해부도 + 그래프 판독기</title>
+<style>
+:root{--primary:#0064ff;--primary-dark:#0050cc;--green:#0caf60;--amber:#a16207;--rose:#e11d48;
+--bg:#f5f5f7;--surface:#fff;--surface-2:#fafafb;--text:#0f1419;--text-2:#525866;--text-3:#8e96a3;--border:#e4e6ea;--code:#f3f5f8;
+--font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"JetBrains Mono",Consolas,monospace;}
+@media (prefers-color-scheme:dark){:root{--bg:#0c0e12;--surface:#14171d;--surface-2:#1a1e26;--text:#e7ebf0;--text-2:#9aa3b0;--text-3:#6b7280;--border:#252a33;--code:#1a1e26;--primary:#3d8bff;--primary-dark:#5b9dff;--green:#25c07a;--amber:#d4a12a;--rose:#ff5d7d;}}
+*{box-sizing:border-box;}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px 70px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:0 8px 24px rgba(15,20,25,.06);padding:44px 48px;}
+.eye{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--primary);text-transform:uppercase;}
+h1{font-size:32px;font-weight:800;margin:.3em 0 .1em;}.sub{color:var(--text-2);font-size:14px;margin:0 0 8px;}
+.summary{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px;}
+.stat{background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700;}
+.stat b{color:var(--primary);}
+hr{border:0;border-top:1px solid var(--border);margin:28px 0;}
+.job{border-top:1px solid var(--border);padding-top:22px;margin-top:22px;}.job:first-of-type{border-top:0;margin-top:8px;}
+.jhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.jn{font-family:var(--mono);font-size:13px;font-weight:800;color:var(--text-3);}
+.jhead h2{font-size:21px;font-weight:800;margin:0;flex:1;}
+.meta{font-size:12.5px;color:var(--text-3);margin:2px 0 12px;}.meta code{font-family:var(--mono);}
+.block{margin:14px 0;}.block h3{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--text-3);margin:0 0 4px;}
+.block p{margin:.4em 0;}.ph{color:var(--text-3);font-style:italic;}
+.chip{display:inline-block;font-size:12px;font-weight:800;padding:3px 12px;border-radius:999px;}
+.chip.green{background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green);}
+.chip.rose{background:color-mix(in srgb,var(--rose) 16%,transparent);color:var(--rose);}
+.chip.amber{background:color-mix(in srgb,var(--amber) 16%,transparent);color:var(--amber);}
+.chip.blue{background:color-mix(in srgb,var(--primary) 14%,transparent);color:var(--primary-dark);}
+.files{font-size:13px;color:var(--text-2);margin-top:6px;}.files code{font-family:var(--mono);background:var(--code);padding:1px 6px;border-radius:5px;font-size:12px;}
+code{font-family:var(--mono);}
+.foot{margin-top:34px;padding-top:16px;border-top:1px solid var(--border);font-size:12.5px;color:var(--text-3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.foot a{color:var(--primary-dark);}
+@page{size:A4;margin:14mm;}@media print{body{background:#fff;}.card{box-shadow:none;border:0;padding:0;}}
+</style></head><body><div class="wrap"><article class="card">
+<div class="eye">claude-duo · 자동 브리핑</div>
+<h1>Cosmos 랜딩 해부도 + 그래프 판독기</h1>
+<p class="sub">스트림 <code>cosmos-landing-explainer</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
+<div class="summary">
+  <span class="stat">전체 <b>1</b></span>
+  <span class="stat">완료 <b>1</b></span>
+  <span class="stat">주의 <b>0</b></span>
+  <span class="stat">갱신 2026-07-20 22:00:16</span>
+</div>
+<hr>
+<section class="job">
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jcosmos-landing-explainer_R02 — 홈 랜딩 해부도 + 그래프 판독기 구현</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jcosmos-landing-explainer</code> · R1 · 갱신 2026-07-20 22:00:16</div>
+  <div class="block"><h3>기획 요약</h3><p>`D:\01_Projects\16_cosmos-knowledge`는 권태향(AI 엔지니어)의 **채용 포트폴리오 겸 개인 지식정원**이다.<br>옵시디언 마크다운(`content/**/*.md`)을 자체 Node 빌드로 단일 데이터 번들(`site/garden-data.js`)로 바꾸고,<br>프레임워크 없이 바닐라 JS 템플릿 문자열로 렌더하는 정적 SPA다. 런타임 npm 의존성이 0이고,<br>위키링크·백링크·로컬 그래프뷰·Mermaid 렌더·한/영 이중언어·야간 무인 생성기를 전부 직접 만들었다.<br>라이브: https://capernaum-user.github.io/cosmos-knowledge/</p></div>
+  <div class='block'><h3>교차검증</h3><span class='chip amber'>Codex PROTOCOL_ERROR · gemini PROTOCOL_ERROR → INCONCLUSIVE</span></div>
+  <div class="block"><h3>작업 결과</h3><p>`LANDING-EXPLAINER-SPEC.md`(§1~§10 전문, 2746줄) 을 처음부터 끝까지 읽고 §10 작업 순서(고정)를 그대로 따랐다.<br>`build-content.mjs`(C1 폴더 `nav` + C2 `STATS` 스탬프) → `node build-content.mjs`(1차) → `site/home-explain.js` 신규 작성(C3 전부, 명세 순서 그대로) →<br>`site/app.js`(C4~C8) → `site/styles.css`(C9 a/b/c) → `node build-content.mjs`(2차, 최종) 순으로 구현했다.<br>명세 §6의 자동 게이트 **(1)~(10) 전부 exit 0**, 사람이 눈으로 보는 (11)~(14)도 헤드리스 Edge(CDP 직접 자동화)로<br>가능한 만큼 프로그램적으로 재확인했다(아래 증거 참조). `deploy.ps1 -BuildOnly`까지만 실행했고 `git push`·`.\deploy.ps1`(push 포함)은<br>실행하지 않았다 — 워킹트리에 변경만 있고 커밋·푸시 없음.</p>
+<p>**브라우저 확인 중 명세 범위 밖의 기존 결함 1건을 발견했다** — `.aside`(우측 그래프 레일)가 1080px 이하에서<br>`display:none`이 되어야 하는데(styles.css:33 media query) 실제로는 안 사라진다. 원인은 **내가 건드리지 않은**<br>`styles.css:36`의 무조건부 `.aside{display:flex}` 규칙이 33행의 media query 규칙보다 **소스상 뒤에 있어**, 동일<br>특이도 타이브레이크로 뒤 규칙이 이긴다. `git diff`로 33~36행을 전혀 건드리지 않았음을 확인했다 — 이번 작업이<br>만든 결함이 아니라 **기존 저장소에 원래 있던 결함**이다. 아래 「미해결 질문」에 재현 증거와 제안 수정을 남기고<br>직접 고치지는 않았다(이번 ORDER 범위 밖).</p><div class='files'>변경 파일: <code>home-explain.js</code> <code>app.js</code> <code>styles.css</code> <code>garden-data.js</code> <code>hubs.js</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  <div class='block'><h3>미해결 질문</h3><p>**1) 발견한 기존 결함(이번 작업 범위 밖, 수정하지 않음) — `.aside`/`.exrail`가 1080px 이하에서 숨지 않는다.**</p>
+<p>- 재현: `styles.css:33` `@media(max-width:1080px){.grid{grid-template-columns:1fr}.aside,.exrail{display:none}}`<br>  vs `styles.css:36`(같은 파일, **뒤에** 위치) `.aside{position:sticky;...;display:flex;...}`.<br>  두 규칙의 `.aside` 선택자는 특이도가 동일(0,1,0)하므로, 미디어쿼리가 매치해도 **소스 순서상 뒤에 오는<br>  무조건부 규칙이 이긴다** — CSS 캐스케이드 타이브레이크 규칙 그대로다.<br>- 실측(CDP, 뷰포트 정확히 390px로 에뮬레이트해 재확인): `window.matchMedia('(max-width:1080px)').matches === true`<br>  인데도 `getComputedStyle(document.querySelector('.aside')).display === &quot;flex&quot;`. 같은 방식으로 1024px에서도 동일.<br>  결과적으로 `document.documentElement.scrollWidth(656) !== clientWidth(390)` — 실제 가로 스크롤 발생.<br>- **이번 작업이 만든 결함이 아니다**: `git diff site/styles.css`로 33~36행이 이번 diff에 전혀 포함되지 않음을 확인했다<br>  (내 수정은 66행 부근과 252행 이후 신규 블록뿐).<br>- 영향받는 항목: 명세 §6 (12)의 1024px·390px 두 확인이 이 기존 결함 때문에 &quot;실패&quot;로 나온다.<br>  내가 새로 만든 코드(`.gx-mobile` 첫 줄 노출, `.gg-lab`/`.gg-lead` 숨김, `clickdemo` 행 노출 등)는 정상 동작하는 것을<br>  같은 세션에서 확인했다(`mobile390_gx_first_line`, `mobile390_clickdemo_row_visible:true`, `w1024_gx_first_line` 등) —<br>  즉 **내 C9 작업물은 맞게 배선됐고, `.aside` 자체가 숨지 않는 것은 완전히 별개의 상위 레이아웃 규칙 문제**다.<br>- 제안(적용하지 않음, 승인 필요): `site/styles.css:36`의 `.aside{...}` 규칙을…</p></div>
+</section>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-20 22:00:16</span></div>
+</article></div></body></html>

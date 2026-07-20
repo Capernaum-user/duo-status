@@ -6,6 +6,19 @@
  * ===================================================================== */
 
 /* ---------------- 1. 순수 장면 매핑 (node 테스트 대상) ---------------- */
+/* 'yyyy-MM-dd HH:mm:ss' 등 문자열에서 앞 10자 'YYYY-MM-DD'만 취하고, 형식이 아니면 null */
+function pickDateStr(raw) {
+  if (raw == null) return null;
+  var d = String(raw).trim().slice(0, 10);
+  return /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : null;
+}
+/* 날짜 문자열 배열(null 포함 가능) → [{date,count}] 날짜 내림차순 집계 */
+function aggregateDates(dateList) {
+  var counts = {};
+  dateList.forEach(function (d) { if (d) counts[d] = (counts[d] || 0) + 1; });
+  return Object.keys(counts).sort(function (a, b) { return a < b ? 1 : (a > b ? -1 : 0); })
+    .map(function (d) { return { date: d, count: counts[d] }; });
+}
 function mapStateToScene(state) {
   state = state || {};
   var STN = { 1: 'plan', 2: 'work', 3: 'report', 4: 'review', 5: 'done', 0: 'escalation' };
@@ -20,6 +33,9 @@ function mapStateToScene(state) {
     var alert = (j.stageIndex === 0) || !!(j.flags && j.flags.protocolError) || ((j.stageLabel || '').indexOf('[확인필요]') >= 0);
     var stackIndex = (station === 'done') ? (stackN++) : -1;
     var color = alert ? 'rose' : (j.stageIndex === 5 ? 'green' : 'primary');
+    var tl = Array.isArray(j.timeline) ? j.timeline : [];
+    var doneDate = (j.stageIndex === 5) ? pickDateStr(tl.length ? tl[tl.length - 1].time : j.lastUpdate) : null;
+    var requestDate = pickDateStr(tl.length ? tl[0].time : j.lastUpdate);
     return {
       jobId: j.jobId, title: j.title || j.jobId, project: j.project || '', round: j.round,
       station: station, booth: booth, boothActive: boothActive, boothFail: boothFail, stackIndex: stackIndex,
@@ -29,7 +45,8 @@ function mapStateToScene(state) {
       },
       alert: alert, color: color,
       stageIndex: j.stageIndex, stageLabel: j.stageLabel, nextAction: j.nextAction,
-      verify: v, autorun: j.autorun || null, timeline: Array.isArray(j.timeline) ? j.timeline : [], lastUpdate: j.lastUpdate || ''
+      verify: v, autorun: j.autorun || null, timeline: tl, lastUpdate: j.lastUpdate || '',
+      doneDate: doneDate, requestDate: requestDate
     };
   });
   return {
@@ -38,12 +55,32 @@ function mapStateToScene(state) {
     escalations: Array.isArray(state.escalations) ? state.escalations : [],
     externalVerifies: Array.isArray(state.externalVerifies) ? state.externalVerifies : [],
     generatedAt: state.generatedAt || '',
-    hasAlerts: tokens.some(function (t) { return t.alert; })
+    hasAlerts: tokens.some(function (t) { return t.alert; }),
+    doneDates: aggregateDates(tokens.map(function (t) { return t.doneDate; })),
+    requestDates: aggregateDates(tokens.map(function (t) { return t.requestDate; }))
   };
 }
 
+/* 완료 토큰을 선택 날짜로 걸러내고 stackIndex를 0부터 재부여(빈틈 없는 선반 스택을 위해).
+ * 진행 중 토큰(stageIndex!==5)은 필터와 무관하게 항상 포함. DOM/storage 비의존 순수 함수 — node에서도 검증 가능. */
+function computeFilteredView(tokens, selDate) {
+  tokens = Array.isArray(tokens) ? tokens : [];
+  var out = [], stackN = 0;
+  for (var i = 0; i < tokens.length; i++) {
+    var t = tokens[i];
+    if (t.stageIndex !== 5) { out.push(t); continue; }
+    if (selDate === 'ALL' || t.doneDate === selDate) {
+      var c = {}, k;
+      for (k in t) { if (Object.prototype.hasOwnProperty.call(t, k)) c[k] = t[k]; }
+      c.stackIndex = stackN++;
+      out.push(c);
+    }
+  }
+  return out;
+}
+
 /* node에서 require 가능하게 export (브라우저엔 영향 없음) */
-if (typeof module !== 'undefined' && module.exports) { module.exports = { mapStateToScene: mapStateToScene }; }
+if (typeof module !== 'undefined' && module.exports) { module.exports = { mapStateToScene: mapStateToScene, computeFilteredView: computeFilteredView }; }
 
 /* ---------------- 2. 브라우저 앱 (window 있을 때만) ---------------- */
 if (typeof window !== 'undefined' && typeof document !== 'undefined') {
@@ -77,10 +114,116 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 
     var cv = $('board'), ctx = cv.getContext('2d');
     var cam = { x: 0, y: 0, scale: 1 };
-    var scene = { tokens: [], counts: {}, escalations: [], externalVerifies: [], hasAlerts: false };
+    var scene = { tokens: [], view: [], counts: {}, escalations: [], externalVerifies: [], hasAlerts: false, doneDates: [], requestDates: [] };
     var pos = {};           // jobId → {x,y} 현재 화면상 타일좌표(트윈)
     var hover = null, selected = null, view = 'board', firstLoad = true, dpr = 1;
     var userAdjustedView = false; // 사용자가 직접 줌(휠/버튼/핀치)했는지 — true면 자동 줌보정 중단
+
+    /* ---------- 완료 선반 날짜 필터 ---------- */
+    var selDate = null;   // 'YYYY-MM-DD' 또는 'ALL'
+    var calMonth = null;  // 캘린더 팝오버가 보여주는 달 { y, m(0-11) }
+    var DFKEY = 'duo.doneFilter';
+    function todayStr() {
+      var d = new Date();
+      return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate());
+    }
+    function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+    function addDays(ds, delta) {
+      var p = ds.split('-').map(Number), d = new Date(p[0], p[1] - 1, p[2]);
+      d.setDate(d.getDate() + delta);
+      return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate());
+    }
+    function clampToday(ds) { var t = todayStr(); return ds > t ? t : ds; }
+    function monthOf(ds) { var p = ds.split('-').map(Number); return { y: p[0], m: p[1] - 1 }; }
+    function loadSelDate() {
+      var today = todayStr();
+      try {
+        var raw = localStorage.getItem(DFKEY);
+        if (raw) {
+          var obj = JSON.parse(raw);
+          if (obj && obj.savedOn === today && (obj.date === 'ALL' || /^\d{4}-\d{2}-\d{2}$/.test(obj.date))) return obj.date;
+        }
+      } catch (e) { /* 저장값 손상 시 오늘로 폴백 */ }
+      return today;
+    }
+    function saveSelDate() {
+      try { localStorage.setItem(DFKEY, JSON.stringify({ date: selDate, savedOn: todayStr() })); } catch (e) { /* 스토리지 불가 환경 무시 */ }
+    }
+    function applyFilter() { scene.view = computeFilteredView(scene.tokens, selDate); }
+    // 필터 변경 시 진입점: 정적 스냅샷 모드는 poll()이 1회만 도므로 poll()을 다시 부르지 않고
+    // applyFilter + 필요한 렌더 함수만 직접 호출한다(보드 canvas는 tick()의 rAF 루프가 상시 재렌더).
+    function onDateChange() {
+      saveSelDate();
+      applyFilter();
+      renderDateBar();
+      renderHud();
+      if (view === 'list') renderList();
+    }
+    function renderDateBar() {
+      if (!$('dateBar')) { return; }   // 날짜 바가 없는 셸(구 board.html 등)에서는 아무것도 하지 않는다
+      var today = todayStr();
+      $('dLabel').textContent = selDate === 'ALL' ? '전체 기간' : (selDate === today ? ('오늘 (' + today + ')') : selDate);
+      $('dToday').classList.toggle('on', selDate === today);
+      $('dAll').classList.toggle('on', selDate === 'ALL');
+      $('dNext').disabled = (selDate === today);
+      var reqCount, doneCount;
+      if (selDate === 'ALL') {
+        reqCount = scene.tokens.length;
+        doneCount = scene.tokens.filter(function (t) { return t.stageIndex === 5; }).length;
+      } else {
+        reqCount = scene.tokens.filter(function (t) { return t.requestDate === selDate; }).length;
+        doneCount = scene.tokens.filter(function (t) { return t.doneDate === selDate; }).length;
+      }
+      $('dSummary').textContent = '요청 ' + reqCount + '건 · 완료 ' + doneCount + '건';
+    }
+    function renderCal() {
+      var y = calMonth.y, m = calMonth.m, today = todayStr();
+      $('mLabel').textContent = y + '-' + pad2(m + 1);
+      var dowEl = document.querySelector('#calPop .cal-dow');
+      dowEl.innerHTML = ['월', '화', '수', '목', '금', '토', '일'].map(function (d) { return '<span>' + d + '</span>'; }).join('');
+      var first = new Date(y, m, 1), startPad = (first.getDay() + 6) % 7, daysInMonth = new Date(y, m + 1, 0).getDate();
+      var doneMap = {}; (scene.doneDates || []).forEach(function (d) { doneMap[d.date] = d.count; });
+      var cells = [];
+      for (var i = 0; i < startPad; i++) cells.push('<span class="cal-d cal-pad"></span>');
+      for (var day = 1; day <= daysInMonth; day++) {
+        var ds = y + '-' + pad2(m + 1) + '-' + pad2(day), cnt = doneMap[ds] || 0, isFuture = ds > today;
+        var cls = ['cal-d']; if (cnt === 0) cls.push('empty'); if (ds === today) cls.push('today'); if (ds === selDate) cls.push('sel'); if (isFuture) cls.push('future');
+        cells.push('<button type="button" class="' + cls.join(' ') + '" data-date="' + ds + '"' + (isFuture ? ' disabled' : '') + '>' + day + (cnt > 0 ? '<span class="cal-b">' + cnt + '</span>' : '') + '</button>');
+      }
+      $('calGrid').innerHTML = cells.join('');
+    }
+    function toggleCal() {
+      var pop = $('calPop'), willOpen = pop.hidden;
+      if (willOpen) { calMonth = monthOf(selDate === 'ALL' ? todayStr() : selDate); renderCal(); }
+      pop.hidden = !willOpen;
+    }
+    // 이 app.js는 두 개의 셸에서 로드된다 — dashboard\index.html(라이브)과 publish\build-site.ps1이
+    // 생성하는 board.html(정적 스냅샷). 셸이 어긋나 날짜 바 마크업이 없을 수 있으므로,
+    // 없으면 배선을 통째로 건너뛴다. 가드가 없으면 null.addEventListener가 던져서
+    // IIFE 전체가 죽고 보드가 아예 안 그려진다.
+    var hasDateBar = !!($('dateBar') && $('dPick') && $('calPop') && $('calGrid'));
+    if (hasDateBar) {
+      $('dPick').addEventListener('click', function (e) { e.stopPropagation(); toggleCal(); });
+      $('dPrev').addEventListener('click', function () { var base = selDate === 'ALL' ? todayStr() : selDate; selDate = addDays(base, -1); onDateChange(); });
+      $('dNext').addEventListener('click', function () { if ($('dNext').disabled) return; var base = selDate === 'ALL' ? todayStr() : selDate; selDate = clampToday(addDays(base, 1)); onDateChange(); });
+      $('dToday').addEventListener('click', function () { selDate = todayStr(); onDateChange(); });
+      $('dAll').addEventListener('click', function () { selDate = 'ALL'; onDateChange(); });
+      $('mPrev').addEventListener('click', function () { calMonth.m--; if (calMonth.m < 0) { calMonth.m = 11; calMonth.y--; } renderCal(); });
+      $('mNext').addEventListener('click', function () { calMonth.m++; if (calMonth.m > 11) { calMonth.m = 0; calMonth.y++; } renderCal(); });
+      $('calGrid').addEventListener('click', function (e) {
+        var btn = e.target.closest ? e.target.closest('.cal-d[data-date]') : null;
+        if (!btn || btn.disabled) return;
+        selDate = btn.getAttribute('data-date'); $('calPop').hidden = true; onDateChange();
+      });
+      document.addEventListener('click', function (e) {
+        var pop = $('calPop');
+        if (!pop.hidden && !pop.contains(e.target) && !$('dPick').contains(e.target)) pop.hidden = true;
+      });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') $('calPop').hidden = true; });
+    } else {
+      // 날짜 바가 없는 셸: 필터를 걸 UI가 없으므로 전체 보기로 고정한다(종전 동작 유지).
+      selDate = 'ALL';
+    }
 
     // 좁은 화면에서 보드 전체가 대략 보이도록 초기/리사이즈 시 자동 줌 보정(사용자가 직접 줌하기 전까지만)
     function fitScale() {
@@ -157,8 +300,8 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         // 그림자
         ctx.save(); ctx.globalAlpha = .5; ctx.fillStyle = p.shadow;
         ctx.beginPath(); ctx.ellipse(s.x, s.y + dep + 4, w, h * 0.7, 0, 0, 7); ctx.fill(); ctx.restore();
-        var isBooth = (k === 'booth'), busy = isBooth && scene.tokens.some(function (t) { return t.boothActive; });
-        var fail = isBooth && scene.tokens.some(function (t) { return t.boothFail; });
+        var isBooth = (k === 'booth'), busy = isBooth && scene.view.some(function (t) { return t.boothActive; });
+        var fail = isBooth && scene.view.some(function (t) { return t.boothFail; });
         var top = (k === 'escalation' || fail) ? p.rose : (busy ? p.amber : p.surface);
         isoBox(s.x, s.y, w, h, dep, top, shade(top, -8), p.border);
         // 아이콘/라벨
@@ -217,8 +360,8 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       return { x: s.x - w / 2, y: y - h, w: w, h: h };
     }
     function hitTest(mx, my) {
-      for (var i = scene.tokens.length - 1; i >= 0; i--) {
-        var r = tokenRect(scene.tokens[i]); if (r && mx >= r.x && mx <= r.x + r.w && my >= r.y && my <= r.y + r.h) return scene.tokens[i];
+      for (var i = scene.view.length - 1; i >= 0; i--) {
+        var r = tokenRect(scene.view[i]); if (r && mx >= r.x && mx <= r.x + r.w && my >= r.y && my <= r.y + r.h) return scene.view[i];
       }
       return null;
     }
@@ -229,21 +372,24 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.clearRect(0, 0, cv.width, cv.height);
       // 빈 상태
-      if (scene.tokens.length === 0) {
+      if (scene.view.length === 0) {
         drawFloor(p);
         ctx.textAlign = 'center'; ctx.fillStyle = p.text3; ctx.font = '600 15px sans-serif';
-        ctx.fillText('🏭 텅 빈 플로어 — 기획 패널에서 “기획해줘 …”로 시작하세요', cv.width / dpr / 2, cv.height / dpr / 2);
+        var emsg = (scene.tokens.length === 0)
+          ? '🏭 텅 빈 플로어 — 기획 패널에서 “기획해줘 …”로 시작하세요'
+          : ((selDate === 'ALL' ? '전체 기간' : selDate) + ' 표시할 항목 없음');
+        ctx.fillText(emsg, cv.width / dpr / 2, cv.height / dpr / 2);
         return;
       }
       drawFloor(p); drawConnectors(p); drawStations(p);
       // 토큰: 뒤(작은 c+r)부터
-      scene.tokens.slice().sort(function (a, b) { var pa = pos[a.jobId] || { x: 0, y: 0 }, pb = pos[b.jobId] || { x: 0, y: 0 }; return (pa.x + pa.y) - (pb.x + pb.y); }).forEach(function (t) { drawToken(p, t); });
+      scene.view.slice().sort(function (a, b) { var pa = pos[a.jobId] || { x: 0, y: 0 }, pb = pos[b.jobId] || { x: 0, y: 0 }; return (pa.x + pa.y) - (pb.x + pb.y); }).forEach(function (t) { drawToken(p, t); });
     }
 
     // 트윈 애니메이션 루프
     function tick() {
       var moving = false;
-      scene.tokens.forEach(function (t) {
+      scene.view.forEach(function (t) {
         var tg = targetTile(t); var cur = pos[t.jobId] || { x: tg.c, y: tg.r };
         if (reduceMotion) { cur.x = tg.c; cur.y = tg.r; }
         else {
@@ -254,7 +400,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         pos[t.jobId] = cur;
       });
       // booth pulse 시 계속 그림
-      var pulsing = scene.tokens.some(function (t) { return t.boothActive; });
+      var pulsing = scene.view.some(function (t) { return t.boothActive; });
       draw();
       requestAnimationFrame(tick);
     }
@@ -363,9 +509,16 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       $('c-active').textContent = c.active != null ? c.active : 0;
       $('c-worker').textContent = c.waitingWorker != null ? c.waitingWorker : 0;
       $('c-review').textContent = c.waitingReview != null ? c.waitingReview : 0;
-      $('c-done').textContent = c.done != null ? c.done : 0;
+      var totalDone = scene.tokens.filter(function (t) { return t.stageIndex === 5; }).length;
+      var selDone = (selDate === 'ALL') ? totalDone : scene.tokens.filter(function (t) { return t.doneDate === selDate; }).length;
+      $('c-done').textContent = selDone;
+      var doneLabel = $('c-done').parentElement.querySelector('.l');
+      if (doneLabel) {
+        var dtxt = (selDate === todayStr()) ? '오늘' : selDate;
+        doneLabel.textContent = (totalDone > selDone) ? ('완료(' + dtxt + ') · 총 ' + totalDone) : '완료';
+      }
       $('c-alert').textContent = c.alerts != null ? c.alerts : 0;
-      var ab = $('alertBanner'), al = scene.tokens.filter(function (t) { return t.alert; });
+      var ab = $('alertBanner'), al = scene.view.filter(function (t) { return t.alert; });
       if (al.length) { ab.classList.add('show'); ab.innerHTML = '⚠ 주의 ' + al.length + '건: ' + al.map(function (t) { return esc(t.jobId) + ' (' + esc(t.stageLabel) + ')'; }).join(', '); }
       else ab.classList.remove('show');
     }
@@ -401,14 +554,22 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     }
     function laneRow(t, n) {
       var auto = t.badges.auto ? '<span class="rework">🤖 ' + esc(t.badges.autoPhase || '무인') + '</span>' : (t.autorun ? '<span class="rework">🤖 ' + esc(t.badges.autoResult || '') + '</span>' : '');
-      return '<div class="lane' + (t.alert ? ' warn' : '') + '"><div class="lane-head"><span class="idx">#' + n + '</span><span class="jobid">' + esc(t.jobId) + '</span>' + (t.project ? '<span class="proj">· ' + esc(t.project) + '</span>' : '') + '<span class="rbadge">R' + esc(t.round) + '</span>' + (t.badges.rework ? '<span class="rework">↩ 재작업</span>' : '') + auto + '<span class="ltitle">' + esc(t.title) + '</span><span class="chip s' + t.stageIndex + '">' + esc(t.stageLabel) + '</span></div><div class="lane-graph">' + laneSvg(t) + '</div><div class="lane-foot"><span>다음: <b>' + esc(t.nextAction) + '</b></span><span class="upd">' + esc(t.lastUpdate || '—') + '</span></div></div>';
+      var reqd = t.requestDate ? '<span class="reqd">요청 ' + esc(t.requestDate) + '</span>' : '';
+      return '<div class="lane' + (t.alert ? ' warn' : '') + '"><div class="lane-head"><span class="idx">#' + n + '</span><span class="jobid">' + esc(t.jobId) + '</span>' + (t.project ? '<span class="proj">· ' + esc(t.project) + '</span>' : '') + '<span class="rbadge">R' + esc(t.round) + '</span>' + (t.badges.rework ? '<span class="rework">↩ 재작업</span>' : '') + auto + '<span class="ltitle">' + esc(t.title) + '</span><span class="chip s' + t.stageIndex + '">' + esc(t.stageLabel) + '</span></div><div class="lane-graph">' + laneSvg(t) + '</div><div class="lane-foot"><span>다음: <b>' + esc(t.nextAction) + '</b></span>' + reqd + '<span class="upd">' + esc(t.lastUpdate || '—') + '</span></div></div>';
     }
     function renderList() {
-      var act = scene.tokens.filter(function (t) { return t.stageIndex !== 5; }), done = scene.tokens.filter(function (t) { return t.stageIndex === 5; });
+      var act = scene.view.filter(function (t) { return t.stageIndex !== 5; }), done = scene.view.filter(function (t) { return t.stageIndex === 5; });
       $('listActive').innerHTML = act.map(function (t, i) { return laneRow(t, i + 1); }).join('') || '<div class="empty2">진행 중 없음</div>';
-      $('listDone').innerHTML = done.map(function (t, i) { return laneRow(t, i + 1); }).join('');
-      $('listDoneToggle').textContent = '완료된 파이프라인 ' + done.length + '건';
-      $('listDoneToggle').style.display = done.length ? 'flex' : 'none';
+      var dtag = (selDate === 'ALL') ? '전체' : selDate;
+      if (done.length) {
+        $('listDoneToggle').textContent = dtag + ' 완료 ' + done.length + '건';
+        $('listDoneToggle').style.display = 'flex';
+        $('listDone').innerHTML = done.map(function (t, i) { return laneRow(t, i + 1); }).join('');
+      } else {
+        $('listDoneToggle').style.display = 'none';
+        $('listDone').classList.add('open');
+        $('listDone').innerHTML = '<div class="empty2">' + dtag + ' 완료 없음</div>';
+      }
     }
     $('listDoneToggle').addEventListener('click', function () { $('listDoneToggle').classList.toggle('open'); $('listDone').classList.toggle('open'); });
 
@@ -422,7 +583,9 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         if (poll._staticDone) return;
         poll._staticDone = true;
         scene = mapStateToScene(window.__STATE__);
+        applyFilter();
         setConn(true);
+        renderDateBar();
         renderHud();
         if (view === 'list') renderList();
         firstLoad = false;
@@ -431,11 +594,14 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         return;
       }
       fetch('/api/state', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-        .then(function (st) { scene = mapStateToScene(st); setConn(true); renderHud(); if (view === 'list') renderList(); firstLoad = false; })
+        .then(function (st) { scene = mapStateToScene(st); applyFilter(); setConn(true); renderDateBar(); renderHud(); if (view === 'list') renderList(); firstLoad = false; })
         .catch(function () { setConn(false); if (firstLoad) $('statusText').textContent = '서버 대기 중…'; });
     }
 
     /* ---------- init ---------- */
+    selDate = loadSelDate();
+    calMonth = monthOf(selDate === 'ALL' ? todayStr() : selDate);
+    renderDateBar();
     window.addEventListener('resize', function () { resize(); });
     resize(); setView('board'); tick(); poll(); setInterval(poll, 2000);
   })();

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>브리핑 · 완료 선반 날짜별 캘린더 필터</title>
+<style>
+:root{--primary:#0064ff;--primary-dark:#0050cc;--green:#0caf60;--amber:#a16207;--rose:#e11d48;
+--bg:#f5f5f7;--surface:#fff;--surface-2:#fafafb;--text:#0f1419;--text-2:#525866;--text-3:#8e96a3;--border:#e4e6ea;--code:#f3f5f8;
+--font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"JetBrains Mono",Consolas,monospace;}
+@media (prefers-color-scheme:dark){:root{--bg:#0c0e12;--surface:#14171d;--surface-2:#1a1e26;--text:#e7ebf0;--text-2:#9aa3b0;--text-3:#6b7280;--border:#252a33;--code:#1a1e26;--primary:#3d8bff;--primary-dark:#5b9dff;--green:#25c07a;--amber:#d4a12a;--rose:#ff5d7d;}}
+*{box-sizing:border-box;}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px 70px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:0 8px 24px rgba(15,20,25,.06);padding:44px 48px;}
+.eye{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--primary);text-transform:uppercase;}
+h1{font-size:32px;font-weight:800;margin:.3em 0 .1em;}.sub{color:var(--text-2);font-size:14px;margin:0 0 8px;}
+.summary{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px;}
+.stat{background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700;}
+.stat b{color:var(--primary);}
+hr{border:0;border-top:1px solid var(--border);margin:28px 0;}
+.job{border-top:1px solid var(--border);padding-top:22px;margin-top:22px;}.job:first-of-type{border-top:0;margin-top:8px;}
+.jhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.jn{font-family:var(--mono);font-size:13px;font-weight:800;color:var(--text-3);}
+.jhead h2{font-size:21px;font-weight:800;margin:0;flex:1;}
+.meta{font-size:12.5px;color:var(--text-3);margin:2px 0 12px;}.meta code{font-family:var(--mono);}
+.block{margin:14px 0;}.block h3{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--text-3);margin:0 0 4px;}
+.block p{margin:.4em 0;}.ph{color:var(--text-3);font-style:italic;}
+.chip{display:inline-block;font-size:12px;font-weight:800;padding:3px 12px;border-radius:999px;}
+.chip.green{background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green);}
+.chip.rose{background:color-mix(in srgb,var(--rose) 16%,transparent);color:var(--rose);}
+.chip.amber{background:color-mix(in srgb,var(--amber) 16%,transparent);color:var(--amber);}
+.chip.blue{background:color-mix(in srgb,var(--primary) 14%,transparent);color:var(--primary-dark);}
+.files{font-size:13px;color:var(--text-2);margin-top:6px;}.files code{font-family:var(--mono);background:var(--code);padding:1px 6px;border-radius:5px;font-size:12px;}
+code{font-family:var(--mono);}
+.foot{margin-top:34px;padding-top:16px;border-top:1px solid var(--border);font-size:12.5px;color:var(--text-3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.foot a{color:var(--primary-dark);}
+@page{size:A4;margin:14mm;}@media print{body{background:#fff;}.card{box-shadow:none;border:0;padding:0;}}
+</style></head><body><div class="wrap"><article class="card">
+<div class="eye">claude-duo · 자동 브리핑</div>
+<h1>완료 선반 날짜별 캘린더 필터</h1>
+<p class="sub">스트림 <code>dashboard-done-calendar</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
+<div class="summary">
+  <span class="stat">전체 <b>1</b></span>
+  <span class="stat">완료 <b>1</b></span>
+  <span class="stat">주의 <b>0</b></span>
+  <span class="stat">갱신 2026-07-20 17:16:05</span>
+</div>
+<hr>
+<section class="job">
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jdashboard-done-calendar_R01 — 관제 보드 완료 선반: 날짜별 분리 + 캘린더 필터</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jdashboard-done-calendar</code> · R1 · 갱신 2026-07-20 17:16:05</div>
+  <div class="block"><h3>기획 요약</h3><p>`D:\06_Utilities\claude-handoff\dashboard` 는 claude-duo 핸드오프 파이프라인 관제 보드다.<br>`serve-dashboard.ps1` 이 `Get-HandoffState.ps1` 결과를 `/api/state` JSON으로 서빙하고,<br>`app.js` 가 2초 폴링해서 등각(isometric) canvas 보드와 리스트 뷰를 그린다.</p></div>
+  <div class='block'><h3>교차검증</h3><span class='chip amber'>Codex PROTOCOL_ERROR · gemini NEED_INFO → INCONCLUSIVE</span></div>
+  <div class="block"><h3>작업 결과</h3><p>1. `app.js` 순수 함수(`mapStateToScene`)에 `doneDate`/`requestDate`(토큰별) 및 `doneDates`/`requestDates`(날짜별 집계, 내림차순)를 추가했다. 기존 필드는 하나도 제거·변경하지 않았다.<br>2. `stackIndex`를 0부터 빈틈없이 재부여하는 별도 순수 함수 `computeFilteredView(tokens, selDate)`를 추가하고 `module.exports`에 포함시켰다(권장 사항 채택 — node로 직접 검증 가능).<br>3. `index.html`에 날짜 바 + 월간 캘린더 팝오버 마크업을 HUD 바로 아래 삽입했다.<br>4. `app.js` 브라우저 앱에 `selDate` 상태(오늘 기본값, `localStorage` 키 `duo.doneFilter`에 저장/복원, 날짜 변경 시 오늘 아님 폴백), 캘린더 렌더/네비게이션, `applyFilter()`, `onDateChange()`를 추가했다. `scene.tokens`를 직접 쓰던 렌더 경로 8곳을 `scene.view`로 교체했다(달력 배지·`#dSummary`·`renderHud`의 총계 병기는 의도적으로 `scene.tokens`/`scene.doneDates` 그대로 유지).<br>5. `app.css`에 `.datebar`/`.calpop`/`.cal-*`/`.reqd` 규칙을 추가했다. 지시서가 명시한 9개 변수(`--surface,--border,--text,--text-2,--text-3,--primary,--green,--font,--mono`)만 사용했고, 하드코딩 색상은 0건이다(1차 초안에서 `#fff`·`--surface-2`를 썼다가 재검토 후 `var(--surface)`/`color-mix()`로 교체 — 상세는 &quot;내린 결정&quot; 참조).<br>6. 정적 스냅샷 모드(`window.__STATE__`, `poll._staticDone` 가드)에서도 필터가 동작하도록, 날짜 변경 핸들러는 `poll()`을 절대 재호출하지 않고 `applyFilter()` + `renderDateBar()`/`renderHud()`/`renderList()`를 직접 호출한다. 보드 캔버스는 `tick()`의 `requestAnimationFrame` 루프가 매 프레임 `scene.view`를 다시 그리므로 별도 트리거가 필요 없다.<br>7. 서버(`Get-HandoffState.ps1`)·`/…</p><div class='files'>변경 파일: <code>app.js</code> <code>app.css</code> <code>index.html</code> <code>Get-HandoffState.ps1</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  <div class='block'><h3>미해결 질문</h3><p>없음.</p>
+<p>&lt;!-- END-OF-DOC --&gt;</p></div>
+</section>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-20 17:16:05</span></div>
+</article></div></body></html>

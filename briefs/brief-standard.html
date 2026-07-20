@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>브리핑 · 결재 보고서 시각화 표준</title>
+<style>
+:root{--primary:#0064ff;--primary-dark:#0050cc;--green:#0caf60;--amber:#a16207;--rose:#e11d48;
+--bg:#f5f5f7;--surface:#fff;--surface-2:#fafafb;--text:#0f1419;--text-2:#525866;--text-3:#8e96a3;--border:#e4e6ea;--code:#f3f5f8;
+--font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"JetBrains Mono",Consolas,monospace;}
+@media (prefers-color-scheme:dark){:root{--bg:#0c0e12;--surface:#14171d;--surface-2:#1a1e26;--text:#e7ebf0;--text-2:#9aa3b0;--text-3:#6b7280;--border:#252a33;--code:#1a1e26;--primary:#3d8bff;--primary-dark:#5b9dff;--green:#25c07a;--amber:#d4a12a;--rose:#ff5d7d;}}
+*{box-sizing:border-box;}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px 70px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:0 8px 24px rgba(15,20,25,.06);padding:44px 48px;}
+.eye{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--primary);text-transform:uppercase;}
+h1{font-size:32px;font-weight:800;margin:.3em 0 .1em;}.sub{color:var(--text-2);font-size:14px;margin:0 0 8px;}
+.summary{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px;}
+.stat{background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700;}
+.stat b{color:var(--primary);}
+hr{border:0;border-top:1px solid var(--border);margin:28px 0;}
+.job{border-top:1px solid var(--border);padding-top:22px;margin-top:22px;}.job:first-of-type{border-top:0;margin-top:8px;}
+.jhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.jn{font-family:var(--mono);font-size:13px;font-weight:800;color:var(--text-3);}
+.jhead h2{font-size:21px;font-weight:800;margin:0;flex:1;}
+.meta{font-size:12.5px;color:var(--text-3);margin:2px 0 12px;}.meta code{font-family:var(--mono);}
+.block{margin:14px 0;}.block h3{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--text-3);margin:0 0 4px;}
+.block p{margin:.4em 0;}.ph{color:var(--text-3);font-style:italic;}
+.chip{display:inline-block;font-size:12px;font-weight:800;padding:3px 12px;border-radius:999px;}
+.chip.green{background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green);}
+.chip.rose{background:color-mix(in srgb,var(--rose) 16%,transparent);color:var(--rose);}
+.chip.amber{background:color-mix(in srgb,var(--amber) 16%,transparent);color:var(--amber);}
+.chip.blue{background:color-mix(in srgb,var(--primary) 14%,transparent);color:var(--primary-dark);}
+.files{font-size:13px;color:var(--text-2);margin-top:6px;}.files code{font-family:var(--mono);background:var(--code);padding:1px 6px;border-radius:5px;font-size:12px;}
+code{font-family:var(--mono);}
+.foot{margin-top:34px;padding-top:16px;border-top:1px solid var(--border);font-size:12.5px;color:var(--text-3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.foot a{color:var(--primary-dark);}
+@page{size:A4;margin:14mm;}@media print{body{background:#fff;}.card{box-shadow:none;border:0;padding:0;}}
+</style></head><body><div class="wrap"><article class="card">
+<div class="eye">claude-duo · 자동 브리핑</div>
+<h1>결재 보고서 시각화 표준</h1>
+<p class="sub">스트림 <code>brief-standard</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
+<div class="summary">
+  <span class="stat">전체 <b>2</b></span>
+  <span class="stat">완료 <b>2</b></span>
+  <span class="stat">주의 <b>0</b></span>
+  <span class="stat">갱신 2026-07-20 19:55:45</span>
+</div>
+<hr>
+<section class="job">
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jbrief-std-a</code> · R1 · 갱신 2026-07-20 19:18:02</div>
+  <div class="block"><h3>기획 요약</h3><p>CEO 가 결재 화면에서 **텍스트 나열 때문에 판단이 어렵다**고 지적했다. 실제 사고 사례가 있다: 미션 `4473a6380ca2` 는 비서실장이 **&quot;진행 불가(중단) 판정&quot;** 을 내렸는데도 그 결론이 1,154자 본문에 묻혀 **그대로 승인·서명**됐다(게이트 A/B 는 Simple 트랙이라 `locked` 로 미발동, 검증 점수 없음). 상단 요약이 있었다면 즉시 반려 대상으로 보였을 건이다.</p></div>
+  
+  <div class="block"><h3>작업 결과</h3><p>CEO 가 지적한 &quot;텍스트 나열 때문에 판단이 어렵다&quot; 문제(미션 `4473a6380ca2`: 비서실장이 사실상<br>&quot;진행 불가&quot; 결론을 냈는데도 1,154자 본문에 묻혀 그대로 서명된 사고)를 막기 위해, 결재<br>표지(`knowledge.approval_cover` / `dossier.fallback_cover`)와 과정 문서(`dossier.build`) 상단에<br>**신호등(결정론) → 3대 요약 카드 → 파이프라인 타임라인(결정론) → 상세(접힘)** 레이아웃을<br>신설했다.</p>
+<p>- **판정(`dossier.verdict`)·타임라인(`dossier.timeline_md`)은 순수 결정론 함수**다. 둘 다<br>  `conductor.get_mission()` + 층 `nexus.db`(stages/gates) 실측만 읽고, LLM 을 절대 호출하지<br>  않는다. `dossier.build()`(과정 문서)·`dossier.assemble_cover()`(표지 최종 조립)가 이 두<br>  함수의 반환값을 **프롬프트 밖에서 그대로 삽입**하므로, LLM 은 재작성할 수 없다.<br>- **LLM(`knowledge.approval_cover`)은 3카드의 서술만** 담당하도록 프롬프트·JSON 스키마를<br>  `{&quot;purpose&quot;,&quot;risks&quot;,&quot;actions&quot;}` 로 전면 교체했다(구 스키마 `gist/why/purpose/checks/reco` 폐지).<br>  실패/미가용 시 `dossier.fallback_cover()` 가 **동일한 4요소를 전부 결정론으로** 채운다<br>  (`_derive_cards()` — risks=`verdict().why` 재사용, actions=미해소 차단가정·fit 갭·검증점수<br>  미달에서 도출 — 새 수치를 만들지 않음).<br>- **배선 제약 해결**: 호출부 `conductor.py:_prepare_approval_package`(수정 금지)는<br>  `approval_cover(title, goal, report_md, stats)` 를 이 시그니처 그대로 호출한다. `stats` 는<br>  `dossier.build()` 의 반환값을 그대로 opaque dict 로 전달하므로, `build()` 의 stats 딕셔너리에<br>  `&quot;mission_id&quot;` 키를 additive 로 얹어(`dossier.py` 변경만으로) `approval_cover` 가<br>  `dossier.assemble_cover(missio…</p></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  
+</section><section class="job">
+  <div class="jhead"><span class="jn">#2</span><h2>ORDER_Jbrief-std-b_R01 — 4F 뷰어: 신호등·카드·타임라인 시각 렌더 + 접기/펼치기</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jbrief-std-b</code> · R2 · 갱신 2026-07-20 19:55:45</div>
+  <div class="block"><h3>기획 요약</h3><p>선행 잡 `Jbrief-std-a`(ACCEPTED)가 결재 표지·과정 문서 md 에 **[신호등 1줄 → 3대 요약 카드 → 파이프라인 타임라인 → 상세]** 레이아웃을 심었다(신호등·타임라인은 결정론 계산). **그 잡의 REPORT(릴레이 아카이브 `relay\03_archive\Jbrief-std-a\`)에 적힌 &quot;접힘 마커 규약&quot;과 실제 md 형식을 먼저 읽어라** — 이 잡은 그 md 를 4F 화면에서 **읽기 좋게 렌더**한다.</p></div>
+  
+  <div class="block"><h3>작업 결과</h3><p>R01 검토에서 확정된 단일 결함 — **접기 블록이 영원히 열리지 않는 버그**(`toggleFold` 쓰기 경로는<br>`foldOpen[key]` 평면 기록인데, `mdBlocks` 읽기 경로는 `foldOpen[keyNS][key]` 중첩 조회를 해서<br>`openMap` 이 항상 `{}` 인 문제) 를 수정했다. `conductor/static/ceo.dc.html` **1줄만** 변경했다.</p>
+<p>읽기 경로를 평면 스킴으로 통일했다(ORDER 권장안 그대로 채택). `keyNS` 는 이미 `key` 문자열<br>(`keyNS + ':' + idx + ':' + title`) 앞부분에 포함돼 report/dossier·미션 구분을 하고 있으므로,<br>중첩 없이도 네임스페이스 분리가 유지된다. `:1379` 의 상태 주석(&quot;key: report|dossier:&lt;sel&gt;:&lt;idx&gt;:&lt;title&gt;&quot;)<br>이 원래부터 평면 스킴을 문서화하고 있었고, 이번 수정으로 코드가 그 주석과 실제로 일치하게 됐다.</p>
+<p>R01 이 심은 신호등 배너·3카드·타임라인·400→1500 캡·구형 폴백·`innerHTML` 0 은 **전혀 손대지<br>않았다**(아래 git diff 로 확인 — 1줄 변경 외 diff 없음).</p><div class='files'>변경 파일: <code>ceo.dc.html</code> <code>ceo.html</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 1회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  
+</section>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-20 19:55:45</span></div>
+</article></div></body></html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>브리핑 · 4F 관제 — 문서 파일철 UI 개편</title>
+<style>
+:root{--primary:#0064ff;--primary-dark:#0050cc;--green:#0caf60;--amber:#a16207;--rose:#e11d48;
+--bg:#f5f5f7;--surface:#fff;--surface-2:#fafafb;--text:#0f1419;--text-2:#525866;--text-3:#8e96a3;--border:#e4e6ea;--code:#f3f5f8;
+--font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"JetBrains Mono",Consolas,monospace;}
+@media (prefers-color-scheme:dark){:root{--bg:#0c0e12;--surface:#14171d;--surface-2:#1a1e26;--text:#e7ebf0;--text-2:#9aa3b0;--text-3:#6b7280;--border:#252a33;--code:#1a1e26;--primary:#3d8bff;--primary-dark:#5b9dff;--green:#25c07a;--amber:#d4a12a;--rose:#ff5d7d;}}
+*{box-sizing:border-box;}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px 70px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:0 8px 24px rgba(15,20,25,.06);padding:44px 48px;}
+.eye{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--primary);text-transform:uppercase;}
+h1{font-size:32px;font-weight:800;margin:.3em 0 .1em;}.sub{color:var(--text-2);font-size:14px;margin:0 0 8px;}
+.summary{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px;}
+.stat{background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700;}
+.stat b{color:var(--primary);}
+hr{border:0;border-top:1px solid var(--border);margin:28px 0;}
+.job{border-top:1px solid var(--border);padding-top:22px;margin-top:22px;}.job:first-of-type{border-top:0;margin-top:8px;}
+.jhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.jn{font-family:var(--mono);font-size:13px;font-weight:800;color:var(--text-3);}
+.jhead h2{font-size:21px;font-weight:800;margin:0;flex:1;}
+.meta{font-size:12.5px;color:var(--text-3);margin:2px 0 12px;}.meta code{font-family:var(--mono);}
+.block{margin:14px 0;}.block h3{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--text-3);margin:0 0 4px;}
+.block p{margin:.4em 0;}.ph{color:var(--text-3);font-style:italic;}
+.chip{display:inline-block;font-size:12px;font-weight:800;padding:3px 12px;border-radius:999px;}
+.chip.green{background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green);}
+.chip.rose{background:color-mix(in srgb,var(--rose) 16%,transparent);color:var(--rose);}
+.chip.amber{background:color-mix(in srgb,var(--amber) 16%,transparent);color:var(--amber);}
+.chip.blue{background:color-mix(in srgb,var(--primary) 14%,transparent);color:var(--primary-dark);}
+.files{font-size:13px;color:var(--text-2);margin-top:6px;}.files code{font-family:var(--mono);background:var(--code);padding:1px 6px;border-radius:5px;font-size:12px;}
+code{font-family:var(--mono);}
+.foot{margin-top:34px;padding-top:16px;border-top:1px solid var(--border);font-size:12.5px;color:var(--text-3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.foot a{color:var(--primary-dark);}
+@page{size:A4;margin:14mm;}@media print{body{background:#fff;}.card{box-shadow:none;border:0;padding:0;}}
+</style></head><body><div class="wrap"><article class="card">
+<div class="eye">claude-duo · 자동 브리핑</div>
+<h1>4F 관제 — 문서 파일철 UI 개편</h1>
+<p class="sub">스트림 <code>ceo-filing-cabinet</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
+<div class="summary">
+  <span class="stat">전체 <b>3</b></span>
+  <span class="stat">완료 <b>3</b></span>
+  <span class="stat">주의 <b>0</b></span>
+  <span class="stat">갱신 2026-07-20 18:27:14</span>
+</div>
+<hr>
+<section class="job">
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jceo-filing-cabinet_R01 — 4F 리뷰 큐를 상태별 파일철(폴더 탭 + 제목 목록 + 선택 시 본문)로 개편</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jceo-filing-cabinet</code> · R1 · 갱신 2026-07-20 17:23:55</div>
+  <div class="block"><h3>기획 요약</h3><p>4F CEO 관제 대시보드(`/ceo` = `conductor/static/ceo.dc.html`, DC 컴포넌트 + `support.js` 런타임 + Aether `_ds/`)의 중앙 **리뷰 큐**가 CEO 실사용에서 가독성 문제로 지적됐다:<br>1. **최근 5건만 보인다** — `sorted.slice(0, 5)`(:3240 부근). 그 이상은 화면에서 사라진다.<br>2. **상태가 뒤섞여 있다** — 정렬이 &quot;awaiting_ceo 우선&quot; 한 겹뿐이라 완료·실패·중단·진행이 한 줄에 섞인다.<br>3. CEO 요구: **&quot;중단/실패 · 완료 · 서명(결재) 대기&quot;로 분류해 나누고, 파일철처럼 제목만 목록으로 보이다가 선택하면 본문이 표시되게&quot; 해달라.**</p></div>
+  
+  <div class="block"><h3>작업 결과</h3><p>4F CEO 관제 대시보드(`/ceo` = `conductor/static/ceo.dc.html`)의 중앙 리뷰 큐를 상태별 파일철(탭 5개) + 스크롤 목록 + 선택 시 본문(기존 경로 재사용) 구조로 개편했다. 실측대로 상세 렌더는 이미 `S.sel` 기반 선택 경로(`select(id)` / `reopenClarify(id)`)가 있었으므로 그 로직은 전혀 건드리지 않았고, 목록 조립부(구 `sorted.slice(0, 5)`)만 재작성했다.</p>
+<p>- **탭 5종**: 결재 대기(`awaiting_ceo`) · 진행 중(`running`+`consolidating`+`awaiting_clarify`+`pending`) · 완료(`done`) · 중단·실패(`failed`+`stale`+`aborted`+`canceled`) · 전체. 각 탭 라벨에 건수 뱃지 부착(`라벨 + 카운트`), 0건 탭은 opacity:.55로 흐리게 하되 onClick은 유지(클릭 가능).<br>- **5건 제한 해제**: `sorted.slice(0, 5)` 제거. 대신 목록 컨테이너에 `max-height:300px; overflow-y:auto`를 적용해 화면 밀림 없이 스크롤되도록 함. 탭 내부는 `created` 최신순 정렬.<br>- **행 레이아웃**: 컨테이너를 가로 flex(`display:flex; gap:10px; align-items:stretch`)에서 세로 flex(`flex-direction:column`)로 전환, 각 행 스타일도 `flex:1 1 0`(가로 3분할)에서 `flex:none;width:100%`(세로 풀폭 리스트)로 변경. 제목 1줄 + 메타 1줄 + 상태 점/뱃지 구성은 그대로 유지.<br>- **선택 → 본문**: `queueItems[].onClick`은 기존과 동일하게 `awaiting_clarify`면 `this.reopenClarify(m.id)`, 아니면 `this.select(m.id)`를 호출한다. 신규 상세 렌더 로직 없음.<br>- **탭 상태**: `state.queueTab`(기본값 `'awaiting_ceo'`)로 컴포넌트 로컬 state에만 보관, `setQueueTab(t) = this.setState({queueTab: t})`. localStorage·서버 저장 없음. `poll()`은 이 필드를 갱신하지 않으므로 폴링 시 탭이 튀지 않는다. 선택 미션이 현재 탭 밖에 있으면 …</p><div class='files'>변경 파일: <code>ceo.dc.html</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 2회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  
+</section><section class="job">
+  <div class="jhead"><span class="jn">#2</span><h2>ORDER_Jceo-intake-simplify_R01 — 4F 하달부 간소화: INTAKE 라벨 제거 + 속도 선택기 UI 제거(항상 정밀)</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jceo-intake-simplify</code> · R1 · 갱신 2026-07-20 17:48:32</div>
+  <div class="block"><h3>기획 요약</h3><p>4F CEO 관제(`/ceo` = `conductor/static/ceo.dc.html`, DC 컴포넌트 + `support.js` + Aether `_ds/`) 상단 하달부가 **UI만 복잡하고 의미 없다**는 CEO 판정을 받았다. 두 요소를 UI에서 걷어낸다. **★백엔드는 한 줄도 건드리지 않는다★**(`.py` forbidden) — 이 잡은 순수 프런트 간소화다.</p></div>
+  
+  <div class="block"><h3>작업 결과</h3><p>`conductor/static/ceo.dc.html` 단일 파일만 수정. 백엔드(`.py`)·`console/`·`_ds/`·`ceo.html` 무접촉.</p>
+<p>1. **라벨 제거** — `:330` `MISSION INTAKE — 미션 하달` span 삭제. 남은 형제 요소(지식범위 선택기·입력창·버튼들)는 모두 `flex:none` 또는 `flex:1`로 이미 자기 크기를 갖고 있어, 컨테이너(`display:flex; gap:10px`)에서 항목 하나가 빠져도 정렬이 깨지지 않음 — 별도 레이아웃 보정 불필요.<br>2. **속도 선택기 UI 제거** — `:336-340`(구 라인 기준) 선택기 컨테이너 div + `sc-for list=&quot;{{ modeSegs }}&quot;` 렌더 삭제, HTML 주석으로 대체(복구 경로 명시). `renderVals()`의 `modeSegs` 조립 블록(구 `:2817-2825`, `curMode`/`SEG_EX` 포함)과 view 바인딩(구 `:3731`)도 제거하고 각각 주석으로 대체.<br>3. **항상 정밀(studio) 고정, 계약 보존**:<br>   - `submitMission`의 `const mode = this.state.missionMode || 'studio'` → `const mode = 'studio'` 로 하드코딩(명시 전송). POST body의 `mode` 필드는 그대로 유지.<br>   - `MODE_OPTS`, `state.missionMode`(초기값 `'studio'` 그대로), `setMode` 는 **삭제하지 않고 보존** — 각 지점에 &quot;UI 선택기 제거(2026-07-20 CEO 결정) — 미사용/복구 방법&quot; 주석 추가.<br>4. **express 배지 유지** — `:386`/`:3375` 대응 코드(`curModeExpress`, `⚡ 빠른 처리 · 검증 미적용` 배지) **무변경**.<br>5. **무회귀** — 리뷰 큐 파일철 탭 / clarify 카드 / 결재 버튼 / 활동 그래프 등은 diff 0 (아래 `git diff --stat` 참고). 신규 외부 의존 추가 없음.</p><div class='files'>변경 파일: <code>ceo.dc.html</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 2회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  
+</section><section class="job">
+  <div class="jhead"><span class="jn">#3</span><h2>ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jceo-chart-axes</code> · R1 · 갱신 2026-07-20 18:27:14</div>
+  <div class="block"><h3>기획 요약</h3><p>4F CEO 관제(`/ceo` = `conductor/static/ceo.dc.html`)의 **📊 성과 분석 모달**(`:744~`, `GET /api/analytics`) 차트가 CEO 실사용에서 **&quot;축 라벨과 수치 없이 단순 선형 그래프라 판독 불가&quot;** 판정을 받았다.</p></div>
+  
+  <div class="block"><h3>작업 결과</h3><p>4F CEO 관제 `/ceo`(`conductor/static/ceo.dc.html`) 성과 분석 모달의 부서 추이·층 비교 차트에 축 라벨·단위·그리드·데이터 포인트·크로스헤어 툴팁·상시 최신값 라벨·필터 연동 서브타이틀을 추가했다. 두 차트는 공통 JS 헬퍼 `_lineChart()` 하나를 경유하며(축/그리드/틱/마커/크로스헤어/툴팁/최신값라벨/스케일 계산 로직 전부 이 함수 안에만 존재), 팔레트·이중축·외부 의존 금지 등 불변식을 지켰다.</p>
+<p>**설계 결정 1 — &quot;공통 헬퍼&quot;의 범위**: 이 DC 프레임워크(`support.js`)는 `{{ }}` 템플릿이 정적 컴파일되는 구조라 두 sc-if 블록(부서 추이 / 층 비교)에 걸쳐 마크업 자체를 하나로 합치는 것은 불가능하다(각 뷰가 서로 다른 상단 칩·캡션을 가진 별도 `&lt;sc-if&gt;` 섹션). 그래서 **중복을 제거한 대상은 &quot;계산 로직&quot;**이다 — Y축 nice-scale, X축 라벨 솎아내기, 데이터→좌표 변환, 크로스헤어 인덱스 산출, 툴팁 좌표/앵커, 최신값 라벨 겹침 방지가 전부 `_lineChart()` 한 곳에만 있고, `anTrendChart`/`anFloorChart` 두 호출이 이를 공유한다. 마크업 두 블록은 동일한 필드명(`{{ anTrendChart.xxx }}` ↔ `{{ anFloorChart.xxx }}`)을 참조하는 거의 동형 구조로 남는다(프레임워크 제약상 불가피 — 아래 &quot;사람 확인 필요&quot;에도 기재).</p>
+<p>**설계 결정 2 — Y축 &quot;좋은 수&quot;**: `stages`(사용량)·`tokens`·`elapsed_sec`는 정수 친화 눈금(1/2/5/10 배수, 최소폭 4)을 쓰고 `attempts_avg`만 소수 눈금(2.5 배수 허용)을 쓴다. `score_avg`는 0~1 고정 스케일(.25 간격, 5눈금)로 지표 의미(0~1 유계)를 그대로 반영했다. `elapsed_sec`는 최대값이 120초 이상이면 분 단위로 전환하고, 눈금 자체를 분 도메인에서 다시 &quot;좋은 수&quot;로 계산해(초로 계산 후 환산하지 않음) 축·툴팁·범례·최신값 라벨 표기가 서로 어긋나지 않게 했다.</p>
+<p>**설계 결정 3 — 마커 생략 기준**: 날짜 수(`_cn`) &gt; 20 이면 개별 데이터 포인트 마커(원)를 생략하고 크로스헤어만 유지한다(가독성 우선). 현재 기본 조회 기간이 14~30일이라 대부분 마커가 보이며, `days` 파라미터를 늘리면 자…</p><div class='files'>변경 파일: <code>ceo.dc.html</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  
+</section>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-20 18:27:14</span></div>
+</article></div></body></html>

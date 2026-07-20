@@ -100,6 +100,31 @@ body{font-size:14px;-webkit-font-smoothing:antialiased;font-variant-numeric:tabu
 #listDone{display:none;} #listDone.open{display:block;}
 .empty2{color:var(--text-3);font-size:13px;padding:8px 0;}
 
+/* ---- 날짜 바 + 캘린더 팝오버 ---- */
+.datebar{position:relative;display:flex;align-items:center;gap:6px;padding:7px 16px;border-bottom:1px solid var(--border);background:var(--surface);flex-wrap:nowrap;z-index:5;}
+.datebar button{border:1px solid var(--border);background:var(--surface);color:var(--text-2);font-family:var(--font);font-weight:800;font-size:12px;padding:5px 11px;border-radius:8px;cursor:pointer;white-space:nowrap;}
+.datebar button:hover{background:color-mix(in srgb,var(--text) 8%,transparent);}
+.datebar button:disabled{opacity:.4;cursor:not-allowed;}
+.datebar button.on{background:var(--primary);color:var(--surface);border-color:var(--primary);}
+.datebar #dPick{display:flex;align-items:center;gap:5px;color:var(--text);}
+.dsum{margin-left:8px;font-size:12px;color:var(--text-3);font-family:var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.calpop{position:absolute;top:100%;left:16px;margin-top:6px;width:260px;background:var(--surface);border:1px solid var(--border);border-radius:11px;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:10px;z-index:55;}
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;font-size:12.5px;font-weight:800;color:var(--text);}
+.cal-h button{border:0;background:transparent;color:var(--text-2);font-size:16px;font-weight:800;cursor:pointer;padding:2px 8px;}
+.cal-h button:hover{color:var(--primary);}
+.cal-dow{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:10.5px;font-weight:800;color:var(--text-3);margin-bottom:4px;}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;}
+.cal-d{position:relative;border:1px solid transparent;background:transparent;color:var(--text);font-family:var(--font);font-size:11.5px;font-weight:600;border-radius:6px;padding:5px 0;cursor:pointer;text-align:center;}
+.cal-d:hover{background:color-mix(in srgb,var(--text) 8%,transparent);}
+.cal-d.empty{color:var(--text-3);font-weight:400;}
+.cal-d.today{border-color:var(--primary);}
+.cal-d.sel{background:var(--primary);color:var(--surface);}
+.cal-d.future{color:var(--text-3);opacity:.4;cursor:not-allowed;}
+.cal-d.cal-pad{cursor:default;pointer-events:none;}
+.cal-b{position:absolute;top:-3px;right:1px;min-width:13px;background:var(--green);color:var(--surface);border-radius:999px;font-size:8.5px;font-weight:800;line-height:13px;padding:0 3px;}
+.cal-d.sel .cal-b{background:var(--surface);color:var(--primary);}
+.reqd{color:var(--text-3);font-family:var(--mono);font-size:11px;}
+
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(12,175,96,.5);}70%{box-shadow:0 0 0 6px rgba(12,175,96,0);}100%{box-shadow:0 0 0 0 rgba(12,175,96,0);}}
 @media (prefers-reduced-motion: reduce){ #panel{transition:none;} .dot-live{animation:none;} }
 
@@ -132,4 +157,10 @@ body{font-size:14px;-webkit-font-smoothing:antialiased;font-variant-numeric:tabu
   #listView{padding:12px 10px 40px;}
   .lane{max-width:100%;padding:11px 12px;}
   .lane-graph{-webkit-overflow-scrolling:touch;}
+}
+
+@media (max-width: 560px){
+  .datebar{flex-wrap:wrap;padding:6px 10px;}
+  .dsum{flex:1 1 100%;margin-left:0;order:5;}
+  .calpop{left:0;right:0;width:auto;}
 }

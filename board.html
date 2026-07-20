@@ -30,6 +30,20 @@
     </div>
   </header>
 
+  <div class="datebar" id="dateBar">
+    <button id="dPrev" title="이전 날짜">◀</button>
+    <button id="dPick" title="캘린더 열기"><span id="dLabel">-</span> 📅</button>
+    <button id="dNext" title="다음 날짜">▶</button>
+    <button id="dToday">오늘</button>
+    <button id="dAll">전체</button>
+    <span class="dsum" id="dSummary"></span>
+    <div class="calpop" id="calPop" hidden>
+      <div class="cal-h"><button id="mPrev">&lsaquo;</button><span id="mLabel"></span><button id="mNext">&rsaquo;</button></div>
+      <div class="cal-dow"></div>
+      <div class="cal-grid" id="calGrid"></div>
+    </div>
+  </div>
+
   <div class="banner" id="connBanner">⛔ 서버 연결 끊김 — 재연결 시도 중…</div>
   <div class="banner" id="alertBanner"></div>
 
@@ -57,18 +71,1676 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-16 19:16:17 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-20 23:05:30 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-16T19:16:17",
+  "generatedAt": "2026-07-20T23:05:29",
   "counts": {
     "active": 0,
     "waitingWorker": 0,
     "working": 0,
     "waitingReview": 0,
-    "done": 20,
+    "done": 52,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jcosmos-landing-explainer",
+      "title": "ORDER_Jcosmos-landing-explainer_R02 — 홈 랜딩 해부도 + 그래프 판독기 구현",
+      "project": "16_cosmos-knowledge",
+      "targetDir": "D:\\01_Projects\\16_cosmos-knowledge",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260720-211256-da95",
+        "startedAt": "2026-07-20 21:12:55",
+        "finishedAt": "2026-07-20 21:13:56",
+        "runs": 1
+      },
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 21:12:40",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 21:16:39",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 21:56:47",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 21:59:53",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 21:59:53"
+    },
+    {
+      "jobId": "Jbrief-std-b",
+      "title": "ORDER_Jbrief-std-b_R01 — 4F 뷰어: 신호등·카드·타임라인 시각 렌더 + 접기/펼치기",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 2,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 2,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:18:04",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:43:36",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:45:37",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-20 19:53:28",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-20 19:55:16",
+          "state": "ACCEPTED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
+      "jobId": "Jgnosis-dedup",
+      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:55:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:55:50",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:21:37",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:27:06",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jceo-chart-axes",
+      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:59:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:59:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:23:57",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:26:23",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jceo-intake-simplify",
+      "title": "ORDER_Jceo-intake-simplify_R01 — 4F 하달부 간소화: INTAKE 라벨 제거 + 속도 선택기 UI 제거(항상 정밀)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:40:50",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:40:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:45:32",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:46:46",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:48:32",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 17:48:32"
+    },
+    {
+      "jobId": "Jceo-filing-cabinet",
+      "title": "ORDER_Jceo-filing-cabinet_R01 — 4F 리뷰 큐를 상태별 파일철(폴더 탭 + 제목 목록 + 선택 시 본문)로 개편",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:11:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:11:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:20:02",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:22:00",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:23:55",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 17:23:55"
+    },
+    {
+      "jobId": "Jdashboard-done-calendar",
+      "title": "ORDER_Jdashboard-done-calendar_R01 — 관제 보드 완료 선반: 날짜별 분리 + 캘린더 필터",
+      "project": "dashboard",
+      "targetDir": "D:\\06_Utilities\\claude-handoff\\dashboard",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "NEED_INFO",
+        "relayJobId": "J20260720-164458-0135",
+        "startedAt": "2026-07-20 16:44:58",
+        "finishedAt": "2026-07-20 16:49:41",
+        "runs": 1
+      },
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 16:44:52",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 16:53:30",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:13:58",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:15:46",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 17:15:46"
+    },
+    {
+      "jobId": "Jaudit-a1b",
+      "title": "ORDER_Jaudit-a1b_R02 — [R02] \"비서실 10인\" 소비자 라벨 동적화 (R01 이 만든 거짓 라벨 해소)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 2,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-20 00:43:22",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:51:10",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:27:40",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:27:57",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:37:31",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:38:03",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-20 12:12:05",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-20 12:35:46",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-20 12:35:58",
+          "state": "REVIEW-CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-20 12:37:36",
+          "state": "ACCEPTED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-20 12:37:36"
+    },
+    {
+      "jobId": "Jgates-b2",
+      "title": "ORDER_Jgates-b2_R01 — [게이트 후속] 정본 §6.3·§6.4 잔여분: RAG 정본·gnosis 씨앗·SYSTEM_FACTS",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-20 11:05:19",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:59:40",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 12:12:47",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 12:13:06",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 12:18:00",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 12:18:00"
+    },
+    {
+      "jobId": "Jaudit-q4",
+      "title": "ORDER_Jaudit-q4_R01 — [감사 §7-Q4] office-sim-upgrade 백업 이동 + 추적 해제 (CEO 결정: 권고안 ②)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-20 00:26:54",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:50:48",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:05:45",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:06:11",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:07:43",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 11:07:43"
+    },
+    {
+      "jobId": "Jgates-b1",
+      "title": "ORDER_Jgates-b1_R01 — [게이트 B1] Phase 1 본체: 아이디어 검증 게이트 0~5 프롬프트·지식 재배치",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-19 18:49:44",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:49:21",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:01:36",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:01:57",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 11:04:46",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 11:04:46"
+    },
+    {
+      "jobId": "Jaudit-a3b",
+      "title": "ORDER_Jaudit-a3b_R01 — [감사 A3b] auto-runner 보고서 초안 경로를 temp 로 이전 (claude-handoff 리포)",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-19 18:49:44",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:18:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:22:35",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:23:00",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:24:00",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 10:24:00"
+    },
+    {
+      "jobId": "Jgates-b0",
+      "title": "ORDER_Jgates-b0_R01 — [게이트 B0] Phase 0 준비·측정: baseline + NEXUS_IDEA_GATES 토글",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-19 18:49:44",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:12:10",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:17:41",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:18:09",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 10:19:41",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 10:19:41"
+    },
+    {
+      "jobId": "Jaudit-a4",
+      "title": "ORDER_Jaudit-a4_R01 — [감사 A4] 문서 정합화 (docs 전용 — 코드 무접촉)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-19 18:49:44",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 09:19:34",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 09:31:58",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 09:33:34",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 09:33:34"
+    },
+    {
+      "jobId": "Jaudit-a3",
+      "title": "ORDER_Jaudit-a3_R01 — [감사 A3] 리포 위생: 오염물 3종 제거·이동",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-19 18:49:44",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 02:14:21",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 02:19:43",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 02:20:03",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 02:23:24",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 02:23:24"
+    },
+    {
+      "jobId": "Jaudit-a2",
+      "title": "ORDER_Jaudit-a2_R01 — [감사 A2] 엔진·테스트 정합 (동작 불변 원칙)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-19 18:46:30",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 01:50:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 02:04:25",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 02:04:44",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 02:06:25",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 02:06:25"
+    },
+    {
+      "jobId": "Jaudit-a1",
+      "title": "ORDER_Jaudit-a1_R01 — [감사 A1] 런타임 거짓 컨텍스트 제거: 은퇴 2F/3F 하드코딩 4곳",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-19 18:46:30",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 00:21:19",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 00:40:37",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 00:40:52",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 00:42:27",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 00:42:27"
+    },
+    {
+      "jobId": "Jclarify-loop-cap",
+      "title": "ORDER_Jclarify-loop-cap_R01 — 명확화 루프 종결 보장: 위임 시멘틱 + 재질문 캡 + 중복 차단 + 전부맡기기",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-19 17:17:52",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-19 17:17:54",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-19 17:38:24",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-19 17:41:06",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-19 17:41:06"
+    },
+    {
+      "jobId": "Jpeek-w3-showable",
+      "title": "ORDER_Jpeek-w3-showable_R01 — peek Week 3 \"보여줄 수 있게\": peek-bridge 공개 + 랜딩 배포 + 디렉토리 제출 + 보안 FAQ",
+      "project": "peek",
+      "targetDir": "D:\\01_Projects\\peek",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-17 23:52:02",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 23:52:03",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-18 00:09:23",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-18 00:20:00",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-18 00:20:00"
+    },
+    {
+      "jobId": "Jpeek-w2-monetize",
+      "title": "ORDER_Jpeek-w2-monetize_R02 — 이어받기: R1 구현 검증 + 미완 마무리 + REPORT 제출",
+      "project": "peek",
+      "targetDir": "D:\\01_Projects\\peek",
+      "round": 2,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260717-183428-270a",
+        "startedAt": "2026-07-17 18:34:27",
+        "finishedAt": "2026-07-17 18:38:54",
+        "runs": 1
+      },
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-17 18:34:26",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 18:41:22",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 19:28:18",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-17 19:28:19",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-17 19:35:28",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-17 19:37:43",
+          "state": "ACCEPTED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-17 19:37:43"
+    },
+    {
+      "jobId": "Jclarify-chat-b",
+      "title": "ORDER_Jclarify-chat-b_R02 — 1문1답 페이싱 제거: 전 질문 동시 카드 + 클릭 중심 (CEO 실사용 기각 반영)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-17 09:14:39",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 09:39:30",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 09:57:25",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 09:59:23",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 11:27:09",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-17 11:40:18",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-17 11:55:30",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-17 11:57:41",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-17 11:57:41"
+    },
+    {
+      "jobId": "Jclarify-chat-a",
+      "title": "ORDER_Jclarify-chat-a_R02 — 재라운드·게이트2에도 객관식 선택지 생성 (백엔드 보강)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 2,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-17 09:13:48",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 09:15:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 09:36:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 09:39:02",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 11:27:09",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-17 11:27:35",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-17 11:35:21",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-17 11:39:46",
+          "state": "ACCEPTED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-17 11:39:46"
+    },
+    {
+      "jobId": "Jdesign-systems-biz-pivot",
+      "title": "ORDER_Jdesign-systems-biz-pivot_R01 — design-systems 사업화 전면 개편 기획 (2~4주 플랜 + 랜딩/가격/채널)",
+      "project": "10_Design-Systems",
+      "targetDir": "D:\\01_Projects\\10_Design-Systems",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-16 22:55:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 23:16:13",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 23:54:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 00:47:28",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-17 00:47:28"
+    },
+    {
+      "jobId": "Jwhitepetshop-biz-pivot",
+      "title": "ORDER_Jwhitepetshop-biz-pivot_R01 — whitepetshop 사업화 전면 개편 기획 (2~4주 플랜 + 랜딩/가격/채널)",
+      "project": "21_whitepetshop",
+      "targetDir": "D:\\01_Projects\\21_whitepetshop",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-16 22:57:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 23:26:26",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 23:48:52",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 00:46:00",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-17 00:46:00"
+    },
+    {
+      "jobId": "Jpeek-biz-pivot",
+      "title": "ORDER_Jpeek-biz-pivot_R01 — peek 사업화 전면 개편 기획 (2~4주 플랜 + 랜딩/가격/채널)",
+      "project": "peek",
+      "targetDir": "D:\\01_Projects\\peek",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-16 22:56:40",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 23:08:35",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 23:27:49",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-17 00:44:54",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-17 00:44:54"
+    },
+    {
+      "jobId": "Jfloor-selfheal",
+      "title": "ORDER_Jfloor-selfheal_R01 — 층 미기동 재발 방지: 자기치유 디스패치 + 미션 프리체크 + 부트스트랩 자동기동",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-16 22:53:37",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 22:53:38",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 23:19:45",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 23:21:49",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-16 23:21:49"
+    },
+    {
+      "jobId": "Jsocratic-m5c",
+      "title": "ORDER_Jsocratic-m5c_R01 — fit 폐루프: ADR Context 요약 + 결재 표지 1줄 + NEXUS_FIT_HARD 배너",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-16 21:13:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 21:49:11",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 22:04:09",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 22:10:13",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-16 22:10:13"
+    },
+    {
+      "jobId": "Jsocratic-m5b",
+      "title": "ORDER_Jsocratic-m5b_R01 — fit 인수시험 실행기 T1: 샌드박스 실행 오라클(opt-in)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-16 21:13:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 21:30:54",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 21:47:54",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 21:48:58",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-16 21:48:58"
+    },
+    {
+      "jobId": "Jsocratic-m5a",
+      "title": "ORDER_Jsocratic-m5a_R01 — fit 인수시험 실행기 T0: 결정론 커버리지 + fit-report 결재 패키지 첨부",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-16 21:12:09",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 21:13:48",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 21:28:19",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 21:30:27",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-16 21:30:27"
+    },
+    {
+      "jobId": "Jsocratic-s3b",
+      "title": "ORDER_Jsocratic-s3b_R01 — S3 마감: auto 모드 극장승인 봉인 + 사람대기 타임아웃 상신 + _parse_verdict matched 보조탐지",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-16 19:52:49",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 20:04:25",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 20:28:50",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 20:34:33",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-16 20:34:33"
+    },
+    {
+      "jobId": "Jsocratic-clarify-pii",
+      "title": "ORDER_Jsocratic-clarify-pii_R01 — clarify Q&A seal-시점 수치 PII 위생(라이브 UX 무변경)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-16 19:52:49",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 19:53:30",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 20:01:00",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-16 20:03:54",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-16 20:03:54"
+    },
     {
       "jobId": "Jsocratic-m34",
       "title": "ORDER_Jsocratic-m34_R01 — brief_path phantom 배선 + 스펙 절단순서·캡 회귀가드",
@@ -88,10 +1760,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -1038,7 +2710,28 @@
       "lastUpdate": "2026-07-10 12:26:12"
     }
   ],
-  "escalations": [],
+  "escalations": [
+    {
+      "file": "Jcosmos-landing-explainer_autorun-verify-nopass.md",
+      "jobId": "Jcosmos-landing-explainer",
+      "cause": "autorun-verify-nopass"
+    },
+    {
+      "file": "Jdashboard-done-calendar_autorun-verify-nopass.md",
+      "jobId": "Jdashboard-done-calendar",
+      "cause": "autorun-verify-nopass"
+    },
+    {
+      "file": "Jpeek-w2-monetize_autorun-verify-nopass.md",
+      "jobId": "Jpeek-w2-monetize",
+      "cause": "autorun-verify-nopass"
+    },
+    {
+      "file": "Jpeek-w2-monetize_autorun-worker-timeout.md",
+      "jobId": "Jpeek-w2-monetize",
+      "cause": "autorun-worker-timeout"
+    }
+  ],
   "externalVerifies": [
     {
       "relayJobId": "J20260710-005444-75b0",
@@ -1061,64 +2754,124 @@
   ],
   "invocations": [
     {
-      "time": "2026-07-16 18:33:03",
+      "time": "2026-07-20 21:56:52",
+      "command": "handoff-auto",
+      "panel": "16_cosmos-knowledge",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT만 보고 자족적으로 3중 게이트 검토하라. =…"
+    },
+    {
+      "time": "2026-07-20 21:16:42",
+      "command": "handoff-auto",
+      "panel": "16_cosmos-knowledge",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-20 19:53:34",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT만 보고 자족적으로 3중 게이트 검토하라. =…"
+    },
+    {
+      "time": "2026-07-20 19:47:06",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-20 19:18:08",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-20 19:15:10",
+      "command": "handoff-check",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT만 보고 자족적으로 3중 게이트 검토하라. =…"
+    },
+    {
+      "time": "2026-07-20 18:50:34",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-20 18:21:45",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT만 보고 자족적으로 3중 게이트 검토하라. =…"
+    },
+    {
+      "time": "2026-07-20 18:00:05",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-20 17:55:55",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-20 17:40:56",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-20 17:14:05",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT만 보고 자족적으로 3중 게이트 검토하라. =…"
+    },
+    {
+      "time": "2026-07-20 17:12:02",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-20 17:09:20",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "/handoff-auto 중지되거나 중단된 문서 그리고 완료된 문서 서명대기중인 문서들을 구분해서 분류해서 보고 싶어. 지금의 UIUX형태는 가…"
+    },
+    {
+      "time": "2026-07-20 16:53:34",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-20 16:39:47",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "/handoff-auto claude-duo 에 완료한 문서가 계속 완료선반에 쌓여서 시각적으로 보기 불편해. 날짜별로 나눠서 내가 선택한 날짜…"
+    },
+    {
+      "time": "2026-07-20 16:19:27",
+      "command": "handoff-auto",
+      "panel": "16_cosmos-knowledge",
+      "text": "/handoff-auto cosmos knowledge 사이트를 좀 더 개편할 필요가 있는게 다른 사람들은 내 페이지가 단순히 html로 만들어…"
+    },
+    {
+      "time": "2026-07-20 12:11:36",
       "command": "handoff-check",
       "panel": "agent_office_v2",
       "text": "/check"
     },
     {
-      "time": "2026-07-16 16:28:42",
+      "time": "2026-07-20 12:11:30",
       "command": "handoff-check",
       "panel": "agent_office_v2",
       "text": "/check"
     },
     {
-      "time": "2026-07-16 14:57:51",
+      "time": "2026-07-20 12:01:14",
       "command": "handoff-check",
-      "panel": "agent_office_v2",
-      "text": "anget office v2에 마지막 작업 다시 확인해줘. 프로그램이 꺼지는 바람에 너가 다른 패널에서 /check 하라고 한것들중 일부가 작업…"
-    },
-    {
-      "time": "2026-07-16 14:53:33",
-      "command": "handoff-check",
-      "panel": "agent_office_v2",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-16 14:53:28",
-      "command": "handoff-check",
-      "panel": "agent_office_v2",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-16 14:53:08",
-      "command": "handoff-check",
-      "panel": "agent_office_v2",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-16 14:34:53",
-      "command": "handoff-check",
-      "panel": "agent_office_v2",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-16 01:51:04",
-      "command": "handoff-check",
-      "panel": "agent_office_v2",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-16 01:45:37",
-      "command": "handoff-check",
-      "panel": "01_Projects",
-      "text": "Socratic Intake 이식(S0+S2) 워커 작업 완료 — REPORT 발행됨. 요약 (status: PARTIAL) /check로 cw…"
-    },
-    {
-      "time": "2026-07-15 20:33:47",
-      "command": "handoff-check",
-      "panel": "agent_office_v2",
-      "text": "/check"
+      "panel": "console",
+      "text": "이제 /check 를 몇개나 더 해야돼? 그냥 /check 만 입력했는데 /check b2 라고 직접 지정해줘야되나?"
     }
   ]
 };</script>
