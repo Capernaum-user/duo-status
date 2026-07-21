@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T20:33:11",
+  "generatedAt": "2026-07-21T20:36:16",
   "counts": {
     "active": 1,
     "waitingWorker": 0,
@@ -85,10 +85,10 @@
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "worker",
         "round": 1,
-        "result": "ESCALATED"
+        "result": "ERROR"
       },
       "timeline": [
         {
@@ -3131,6 +3131,11 @@
       "file": "Jpeek-w2-monetize_autorun-worker-timeout.md",
       "jobId": "Jpeek-w2-monetize",
       "cause": "autorun-worker-timeout"
+    },
+    {
+      "file": "Jvault-graphrag-p0_autorun-worker-fail.md",
+      "jobId": "Jvault-graphrag-p0",
+      "cause": "autorun-worker-fail"
     }
   ],
   "externalVerifies": [
