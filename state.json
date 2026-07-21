@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-21T17:59:22",
+  "generatedAt": "2026-07-21T18:09:27",
   "counts": {
     "active": 3,
     "waitingWorker": 0,
-    "working": 1,
-    "waitingReview": 2,
+    "working": 0,
+    "waitingReview": 3,
     "done": 54,
     "alerts": 1
   },
@@ -15,10 +15,10 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -29,7 +29,7 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": null
       },
@@ -43,9 +43,14 @@
           "time": "2026-07-21 17:59:19",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-21 18:08:36",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-21 17:59:19"
+      "lastUpdate": "2026-07-21 18:08:36"
     },
     {
       "jobId": "Jmission-discard-a",
@@ -2992,6 +2997,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 17:59:25",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-21 17:39:09",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3104,12 +3115,6 @@
       "command": "handoff-verify",
       "panel": "16_cosmos-knowledge",
       "text": "<task-notification> <task-id>wd1h7ldp2</task-id> <tool-use-id>toolu_01LNp37RbPEf…"
-    },
-    {
-      "time": "2026-07-21 02:29:46",
-      "command": "handoff-check",
-      "panel": "16_cosmos-knowledge",
-      "text": "<task-notification> <task-id>wrplzpem2</task-id> <tool-use-id>toolu_01AAiLPHpKYA…"
     }
   ]
 }
