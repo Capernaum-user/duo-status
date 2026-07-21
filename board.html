@@ -71,18 +71,61 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 17:43:07 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 17:51:17 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-21T17:43:07",
+  "generatedAt": "2026-07-21T17:51:16",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 1,
-    "waitingReview": 2,
+    "working": 0,
+    "waitingReview": 3,
     "done": 53,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jmission-discard-a",
+      "title": "ORDER_Jmission-discard-a_R01 — 미션 폐기(삭제) 엔드포인트 배선 + 질문대기 취소 허용 + 경험 학습 보존",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "review",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 17:38:58",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:39:01",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:51:00",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 17:51:00"
+    },
     {
       "jobId": "Jwhitepetshop-out",
       "title": "ORDER_Jwhitepetshop-out_R01 — OUT(손님앱) 트랙 R1: fake-door 배포 + OUT-G1 관측 설정",
@@ -178,44 +221,6 @@
         }
       ],
       "lastUpdate": "2026-07-21 17:40:13"
-    },
-    {
-      "jobId": "Jmission-discard-a",
-      "title": "ORDER_Jmission-discard-a_R01 — 미션 폐기(삭제) 엔드포인트 배선 + 질문대기 취소 허용 + 경험 학습 보존",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": true,
-        "phase": "worker",
-        "round": 1,
-        "result": null
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 17:38:58",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 17:39:01",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 17:39:01"
     },
     {
       "jobId": "Jmission-discard-b",
