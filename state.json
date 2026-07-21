@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T20:10:17",
+  "generatedAt": "2026-07-21T20:12:25",
   "counts": {
     "active": 3,
     "waitingWorker": 2,
@@ -18,7 +18,7 @@
       "stage": "PLANNED",
       "stageIndex": 1,
       "stageLabel": "발주됨",
-      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "nextAction": "교차검증 미완결(INCONCLUSIVE) — 확인 후 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -27,20 +27,20 @@
         "rework": false
       },
       "verify": {
-        "status": "RUNNING",
-        "decision": null,
-        "a": null,
-        "b": null,
-        "relayJobId": "pending",
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260721-201009-79a5",
         "startedAt": "2026-07-21 20:10:09",
-        "finishedAt": null,
+        "finishedAt": "2026-07-21 20:11:46",
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "verify",
         "round": 0,
-        "result": null
+        "result": "ESCALATED"
       },
       "timeline": [
         {
@@ -3101,6 +3101,11 @@
       "file": "Jpeek-w2-monetize_autorun-worker-timeout.md",
       "jobId": "Jpeek-w2-monetize",
       "cause": "autorun-worker-timeout"
+    },
+    {
+      "file": "Jvault-graphrag-p0_autorun-verify-nopass.md",
+      "jobId": "Jvault-graphrag-p0",
+      "cause": "autorun-verify-nopass"
     }
   ],
   "externalVerifies": [
