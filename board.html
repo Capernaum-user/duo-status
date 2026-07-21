@@ -71,9 +71,9 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-22 00:32:23 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-22 00:37:28 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-22T00:32:23",
+  "generatedAt": "2026-07-22T00:37:28",
   "counts": {
     "active": 3,
     "waitingWorker": 1,
@@ -91,20 +91,20 @@
       "round": 3,
       "stage": "REWORK",
       "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
+      "stageLabel": "발주됨",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 1,
+        "phase": "worker",
+        "round": 2,
         "result": "ACCEPTED"
       },
       "timeline": [
@@ -3360,6 +3360,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-22 00:36:57",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-22 00:22:12",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3472,12 +3478,6 @@
       "command": "handoff-auto",
       "panel": "claude-handoff",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-21 15:06:21",
-      "command": "handoff-auto",
-      "panel": "15_orca",
-      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
     }
   ]
 };</script>
