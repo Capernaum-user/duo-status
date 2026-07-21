@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T02:22:33",
+  "generatedAt": "2026-07-22T02:23:39",
   "counts": {
     "active": 3,
     "waitingWorker": 1,
@@ -69,18 +69,18 @@
     },
     {
       "jobId": "Jclarify-noautopop",
-      "title": "ORDER_Jclarify-noautopop_R02 — 스냅샷 가드를 '첫 성공 fetch' 기준으로 (첫 poll 실패 시 버그 재발 차단)",
+      "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 3,
       "stage": "REWORK",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
