@@ -1,37 +1,75 @@
 {
-  "generatedAt": "2026-07-21T17:51:16",
+  "generatedAt": "2026-07-21T17:59:22",
   "counts": {
-    "active": 4,
-    "waitingWorker": 1,
-    "working": 0,
-    "waitingReview": 3,
-    "done": 53,
+    "active": 3,
+    "waitingWorker": 0,
+    "working": 1,
+    "waitingReview": 2,
+    "done": 54,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jmission-discard-b",
+      "title": "ORDER_Jmission-discard-b_R01 — 4F 리뷰 큐: 미션 🗑 삭제 버튼(질문대기 포함 유연 취소)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 17:38:59",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:59:19",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 17:59:19"
+    },
     {
       "jobId": "Jmission-discard-a",
       "title": "ORDER_Jmission-discard-a_R01 — 미션 폐기(삭제) 엔드포인트 배선 + 질문대기 취소 허용 + 경험 학습 보존",
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -48,9 +86,14 @@
           "time": "2026-07-21 17:51:00",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-21 17:58:28",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-21 17:51:00"
+      "lastUpdate": "2026-07-21 17:58:28"
     },
     {
       "jobId": "Jwhitepetshop-out",
@@ -147,34 +190,6 @@
         }
       ],
       "lastUpdate": "2026-07-21 17:40:13"
-    },
-    {
-      "jobId": "Jmission-discard-b",
-      "title": "ORDER_Jmission-discard-b_R01 — 4F 리뷰 큐: 미션 🗑 삭제 버튼(질문대기 포함 유연 취소)",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-21 17:38:59",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 17:38:59"
     },
     {
       "jobId": "Jautomation-hub-bootstrap",

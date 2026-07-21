@@ -38,18 +38,19 @@ code{font-family:var(--mono);}
 <p class="sub">스트림 <code>mission-discard</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>2</b></span>
-  <span class="stat">완료 <b>0</b></span>
+  <span class="stat">완료 <b>1</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-21 17:38:59</span>
+  <span class="stat">갱신 2026-07-21 17:59:17</span>
 </div>
 <hr>
 <section class="job">
-  <div class="jhead"><span class="jn">#1</span><h2>Jmission-discard-a</h2><span class="chip blue">발주됨</span></div>
-  <div class="meta"><code>Jmission-discard-a</code> · R1 · 갱신 2026-07-21 17:38:58</div>
-  <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jmission-discard-a_R01 — 미션 폐기(삭제) 엔드포인트 배선 + 질문대기 취소 허용 + 경험 학습 보존</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jmission-discard-a</code> · R1 · 갱신 2026-07-21 17:59:16</div>
+  <div class="block"><h3>기획 요약</h3><p>4F CEO 관제(`/ceo`)에 **중단·실패 미션이 계속 쌓여** CEO 가 지운다. 요구 3가지:<br>1. **중단·실패(및 완료) 미션을 목록에서 영구 삭제**할 수 있어야 한다.<br>2. 삭제해도 **작업에서 얻은 경험·자료는 agent 학습으로 살아남아야** 한다(문서만 지우고 배움은 보존).<br>3. **질문 대기(awaiting_clarify) 미션도 취소·삭제 가능**해야 한다 — 현재는 잘못 넣은 프롬프트가 질문을 띄우면 취소가 안 돼 막힌다.</p></div>
   
-  <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
-  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회</p></div>
+  <div class="block"><h3>작업 결과</h3><p>`_MISSION_ABORTABLE`에 `awaiting_clarify`·`consolidating`을 추가해 질문대기/명세정리 중 미션도<br>abort로 취소할 수 있게 했다. 기존 `discard_mission(mission_id)`(conductor.py)에는 서버 엔드포인트가<br>없었으므로 `server.py`에 `POST /api/missions/{mission_id}/discard`를 abort와 동일한 얇은 어댑터<br>패턴으로 배선했다. 추가로 실패/중단(failed/aborted/stale) 미션을 폐기할 때 `discarded.jsonl` 아카이브<br>레코드에 `lesson` 필드(노드 error 취합, 없으면 관련 이벤트 메시지 폴백)를 함께 적재해 문서는 지워도<br>실패 원인(배움)은 원본 코퍼스에 남도록 했다(신규 파일·경로 없음 — 기존 discarded.jsonl 재사용).<br>회귀가드로 selftest_conductor.py에 `[O2]` 섹션(14개 체크)을 신설했다.</p>
+<p>라이브 4F(포트 8893)가 가동 중이어서 ORDER 검증문의 curl 스모크를 실행했다: 더미 미션 생성 →<br>S2 인테이크가 자동 진행되며 실제로 `running`(층 1F 디스패치·run 생성)까지 갔다 → `POST .../discard`<br>호출 시 `{&quot;detail&quot;:&quot;Not Found&quot;}` — **이유: 라이브 서버 프로세스는 이번 세션이 코드를 편집하기 전에<br>이미 기동돼 있어 새 라우트를 아직 메모리에 갖고 있지 않다(재시작 전까지는 당연한 상태이며 코드<br>결함이 아니다).** 라이브 프로세스 재시작은 이 ORDER 범위 밖의 공유 서비스 작동 변경이라 임의로<br>수행하지 않았다. 대신 **같은 라이브 DB(`conductor/data/missions.db`, 서버가 실제로 쓰는 그 파일)에<br>대고 서버 엔드포인트가 호출할 것과 동일한 `conductor.abort_mission`/`discard_mission` 함수를<br>in-process로 직접 호출**해 계약을 실측 검증했다 — HTTP 라우트만 재시작을 기다리는 배선 문제일 뿐,<br>그 아래 로직은 라이브 데이터로 이미 검증됐다. 검증 후 생성했던 더미 미션은 abort→discard로 완전히<br>정리했고(목록에서 실제로 사라짐 확인), 이 과정에서 생성된 `lesson` 필드도 실측 확인했다.</p></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
   
 </section><section class="job">
   <div class="jhead"><span class="jn">#2</span><h2>Jmission-discard-b</h2><span class="chip blue">발주됨</span></div>
@@ -60,5 +61,5 @@ code{font-family:var(--mono);}
   <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회</p></div>
   
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 17:38:59</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 17:59:17</span></div>
 </article></div></body></html>
