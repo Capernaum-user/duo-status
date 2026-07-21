@@ -1,51 +1,14 @@
 {
-  "generatedAt": "2026-07-21T13:44:35",
+  "generatedAt": "2026-07-21T13:45:40",
   "counts": {
-    "active": 1,
-    "waitingWorker": 1,
+    "active": 0,
+    "waitingWorker": 0,
     "working": 0,
     "waitingReview": 0,
     "done": 53,
     "alerts": 0
   },
   "jobs": [
-    {
-      "jobId": "Jtoken-probe",
-      "title": "ORDER_Jtoken-probe_R01",
-      "project": "",
-      "targetDir": null,
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 미완결(INCONCLUSIVE) — 확인 후 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "DONE",
-        "decision": "INCONCLUSIVE",
-        "a": "PROTOCOL_ERROR",
-        "b": "PROTOCOL_ERROR",
-        "relayJobId": "J20260721-134057-ad9f",
-        "startedAt": "2026-07-21 13:40:57",
-        "finishedAt": "2026-07-21 13:44:02",
-        "runs": 1
-      },
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-21 13:40:57",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 13:40:57"
-    },
     {
       "jobId": "Jverify-decision-consistency",
       "title": "ORDER_Jverify-decision-consistency_R01 — SINGLE_* 검증 판정값을 하류 6곳에 반영",
