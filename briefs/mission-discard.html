@@ -37,15 +37,15 @@ code{font-family:var(--mono);}
 <h1>미션 삭제·질문대기 취소 유연화</h1>
 <p class="sub">스트림 <code>mission-discard</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
-  <span class="stat">전체 <b>2</b></span>
-  <span class="stat">완료 <b>2</b></span>
+  <span class="stat">전체 <b>4</b></span>
+  <span class="stat">완료 <b>3</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-21 18:14:59</span>
+  <span class="stat">갱신 2026-07-21 20:16:23</span>
 </div>
 <hr>
 <section class="job">
   <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jmission-discard-a_R01 — 미션 폐기(삭제) 엔드포인트 배선 + 질문대기 취소 허용 + 경험 학습 보존</h2><span class="chip green">완료</span></div>
-  <div class="meta"><code>Jmission-discard-a</code> · R1 · 갱신 2026-07-21 17:59:16</div>
+  <div class="meta"><code>Jmission-discard-a</code> · R1 · 갱신 2026-07-21 18:22:54</div>
   <div class="block"><h3>기획 요약</h3><p>4F CEO 관제(`/ceo`)에 **중단·실패 미션이 계속 쌓여** CEO 가 지운다. 요구 3가지:<br>1. **중단·실패(및 완료) 미션을 목록에서 영구 삭제**할 수 있어야 한다.<br>2. 삭제해도 **작업에서 얻은 경험·자료는 agent 학습으로 살아남아야** 한다(문서만 지우고 배움은 보존).<br>3. **질문 대기(awaiting_clarify) 미션도 취소·삭제 가능**해야 한다 — 현재는 잘못 넣은 프롬프트가 질문을 띄우면 취소가 안 돼 막힌다.</p></div>
   
   <div class="block"><h3>작업 결과</h3><p>`_MISSION_ABORTABLE`에 `awaiting_clarify`·`consolidating`을 추가해 질문대기/명세정리 중 미션도<br>abort로 취소할 수 있게 했다. 기존 `discard_mission(mission_id)`(conductor.py)에는 서버 엔드포인트가<br>없었으므로 `server.py`에 `POST /api/missions/{mission_id}/discard`를 abort와 동일한 얇은 어댑터<br>패턴으로 배선했다. 추가로 실패/중단(failed/aborted/stale) 미션을 폐기할 때 `discarded.jsonl` 아카이브<br>레코드에 `lesson` 필드(노드 error 취합, 없으면 관련 이벤트 메시지 폴백)를 함께 적재해 문서는 지워도<br>실패 원인(배움)은 원본 코퍼스에 남도록 했다(신규 파일·경로 없음 — 기존 discarded.jsonl 재사용).<br>회귀가드로 selftest_conductor.py에 `[O2]` 섹션(14개 체크)을 신설했다.</p>
@@ -54,13 +54,30 @@ code{font-family:var(--mono);}
   
 </section><section class="job">
   <div class="jhead"><span class="jn">#2</span><h2>ORDER_Jmission-discard-b_R01 — 4F 리뷰 큐: 미션 🗑 삭제 버튼(질문대기 포함 유연 취소)</h2><span class="chip green">완료</span></div>
-  <div class="meta"><code>Jmission-discard-b</code> · R1 · 갱신 2026-07-21 18:14:59</div>
+  <div class="meta"><code>Jmission-discard-b</code> · R1 · 갱신 2026-07-21 18:22:54</div>
   <div class="block"><h3>기획 요약</h3><p>선행 잡 `Jmission-discard-a`(ACCEPTED)가 미션 폐기 API `POST /api/missions/{id}/discard` 를 배선했다(비-running 미션을 discarded.jsonl 아카이브 후 영구 삭제, awaiting_clarify 포함 삭제 가능). **그 잡 REPORT(릴레이 아카이브 `relay\03_archive\Jmission-discard-a\`)의 &quot;엔드포인트 계약 요약&quot;을 먼저 읽어라.** 이 잡은 4F 화면에 그 삭제를 붙인다.</p></div>
   
   <div class="block"><h3>작업 결과</h3><p>선행 잡 `Jmission-discard-a`가 배선한 `POST /api/missions/{id}/discard`(비-running 전 상태 삭제,<br>`awaiting_clarify` 포함)를 4F `ceo.dc.html` 리뷰 큐 화면에 붙였다. 변경은 전부 `conductor/static/ceo.dc.html`<br>단일 파일 안에서 이루어졌다.</p>
 <p>- **🗑 삭제 버튼**(헤더 액션 영역, 기존 ⛔중단 버튼 바로 옆) — 선택 미션이 `running`이 아닐 때만 노출<br>  (`discardable = !!curM &amp;&amp; mSt !== 'running'`). 기존 `--bad` 빨간 토큰 재사용, 아이콘·톤 모두 ⛔중단 버튼과<br>  통일.<br>- **확인 다이얼로그** — 기존 `this.setState({confirm:{kind,...}})` 패턴을 그대로 재사용해<br>  `kind:'discard'`로 신설(제목 &quot;🗑 미션 삭제&quot;, 본문/okLabel/danger 지시문 그대로). `confirmOk()`에<br>  `else if (c.kind === 'discard') this.doDiscard(c.missionId)` 분기 추가.<br>- **질문 대기(awaiting_clarify)에서도 삭제** — 두 경로 모두 지원:<br>  1) 헤더 🗑삭제 버튼은 `curMission()` 기준이라 clarify 모달이 닫혀 있어도 동작.<br>  2) clarify 카드 모달(전 화면 오버레이, z-index 63) 안에도 &quot;✕ 취소·삭제&quot; 버튼을 신설해 질문에 답하지<br>     않고도 바로 삭제로 벗어날 수 있게 했다.<br>  단, clarify 모달(z-index 63)이 열려 있을 때 신설 버튼이 여는 공용 confirm 모달(기존 z-index 60)이<br>  **뒤에 가려 클릭 불가**해지는 문제를 발견해, confirm 모달의 z-index를 60→66으로 올려 항상 최상단에<br>  뜨도록 고쳤다(다른 오버레이 최대값이 64였으므로 66이면 어떤 모달 위에서 열려도 항상 보임). confirm은<br>  이 화면에서 유일하게 다른 모달 위에 중첩될 수 있는 확인 게이트라 전역으로 올려도 회귀 위험이 없다.<br>  삭제 성공 시 `doDiscard`가 `this.state.clarifyMid === missionId`를 확인해 `clarifyOpen/clarifyMid/<br>  clarifyRound/clarifyHistory/clarifyWaiting…</p><div class='files'>변경 파일: <code>ceo.dc.html</code></div></div>
   <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
   
+</section><section class="job">
+  <div class="jhead"><span class="jn">#3</span><h2>ORDER_Jbulk-discard-a_R01 — 미션 일괄 폐기(bulk discard) 엔드포인트 + 회귀가드</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jbulk-discard-a</code> · R1 · 갱신 2026-07-21 20:16:22</div>
+  <div class="block"><h3>기획 요약</h3><p>4F CEO 관제(`/ceo`)에서 중단·실패·완료 미션 문서가 쌓이면 CEO 가 지운다. 단건 삭제<br>`POST /api/missions/{id}/discard` 는 이미 동작(직전 잡 `Jmission-discard-a` 로 배선 완료 — running 제외<br>전 상태를 discarded.jsonl 복구 아카이브 후 영구 삭제, 실패/중단 미션은 lesson 필드 적재). **이번 요구:<br>&quot;중단·실패&quot; 나 &quot;완료&quot; 처럼 한 분류를 버튼 하나로 통째 삭제**하고 싶다(하나씩 지우기 번거로움). 이 잡은<br>그 **일괄 삭제 백엔드**만 만든다. 프런트 버튼은 후속 잡 `Jbulk-discard-b`.</p></div>
+  
+  <div class="block"><h3>작업 결과</h3><p>미션 일괄 폐기(bulk discard) 백엔드를 구현했다.</p>
+<p>1. `conductor/conductor.py` — `discard_missions_bulk(ids: list | None) -&gt; dict` 신설. 기존<br>   `discard_mission(id)`(단건, running→409·복구 아카이브·lesson)을 각 id 에 그대로 재호출하는<br>   best-effort 루프. DB 직접 재구현 없음. 방어: `ids` 가 list 가 아니거나 비면 즉시<br>   `{ok:True, discarded:[], skipped:[], count:0}`. 중복 id 는 순서 보존 정규화로 1회만 처리.<br>   배치 상한 200 — 초과분은 `discard_mission` 호출 없이 `skipped` 에 `code:413` 로 표기. 각 id<br>   `str()` 강제. 전체를 `try/except`로 감싸 예외 비전파.<br>2. `conductor/server.py` — `POST /api/missions/discard-bulk` 신설. `{mission_id}` 계열 라우트<br>   (`/api/missions/{mission_id}/clarify` 등)보다 **먼저** 등록. `Request.json()` 을 try/except 로<br>   감싸 바디 누락/비정상 JSON 도 500 없이 `conductor.discard_missions_bulk(None)` 경로로 흡수<br>   (→ `{ok, discarded:[], skipped:[], count:0}`). `discard_missions_bulk` 는 sync 이므로<br>   `async def` 핸들러 안에서 `await` 없이 직접 호출(기존 단건 discard 핸들러와 동일 패턴). 루트<br>   인덱스(`/`) endpoints 목록에 1줄 추가.<br>3. `conductor/selftest_conductor.py` — `[O3]` 섹션(`t_discard_bulk`) 신설, `main()` 에서<br>   `await t_discard()` 다음 `t_discard_bulk()` 로 배선. (a)~(f) 전 케이스 22개 체크 전부 PASS.</p></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  
+</section><section class="job">
+  <div class="jhead"><span class="jn">#4</span><h2>Jbulk-discard-b</h2><span class="chip blue">발주됨</span></div>
+  <div class="meta"><code>Jbulk-discard-b</code> · R1 · 갱신 2026-07-21 19:58:13</div>
+  <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
+  
+  <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회</p></div>
+  
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 18:14:59</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 20:16:23</span></div>
 </article></div></body></html>

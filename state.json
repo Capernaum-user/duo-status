@@ -1,14 +1,100 @@
 {
-  "generatedAt": "2026-07-21T20:12:25",
+  "generatedAt": "2026-07-21T20:16:34",
   "counts": {
-    "active": 3,
-    "waitingWorker": 2,
-    "working": 0,
-    "waitingReview": 1,
-    "done": 57,
+    "active": 2,
+    "waitingWorker": 1,
+    "working": 1,
+    "waitingReview": 0,
+    "done": 58,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jbulk-discard-b",
+      "title": "ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 19:58:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:16:25",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 20:16:25"
+    },
+    {
+      "jobId": "Jbulk-discard-a",
+      "title": "ORDER_Jbulk-discard-a_R01 — 미션 일괄 폐기(bulk discard) 엔드포인트 + 회귀가드",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 19:58:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 19:58:24",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:08:26",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:15:45",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 20:15:45"
+    },
     {
       "jobId": "Jvault-graphrag-p0",
       "title": "ORDER_Jvault-graphrag-p0_R01 — VaultGraph Phase 0: 스캐폴드 + 인과적 비접촉 증명 + Chroma 베이스라인 동결",
@@ -50,77 +136,6 @@
         }
       ],
       "lastUpdate": "2026-07-21 20:10:00"
-    },
-    {
-      "jobId": "Jbulk-discard-a",
-      "title": "ORDER_Jbulk-discard-a_R01 — 미션 일괄 폐기(bulk discard) 엔드포인트 + 회귀가드",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": true,
-        "phase": "review",
-        "round": 1,
-        "result": null
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 19:58:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 19:58:24",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:08:26",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 20:08:26"
-    },
-    {
-      "jobId": "Jbulk-discard-b",
-      "title": "ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-21 19:58:13",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 19:58:13"
     },
     {
       "jobId": "Jwhitepetshop-out",
@@ -3130,6 +3145,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 20:16:33",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-21 19:58:32",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3242,12 +3263,6 @@
       "command": "handoff-auto",
       "panel": "15_orca",
       "text": "/handoff-auto 나는 orca 혹은 hermes 에서 자동화를 진행할거야. 그런데 내 폴더에 자동화에 대한 폴더가 있는지 나는 잘모르겠…"
-    },
-    {
-      "time": "2026-07-21 14:21:23",
-      "command": "handoff-review",
-      "panel": "claude-handoff",
-      "text": "<task-notification> <task-id>wn0x3hbwt</task-id> <tool-use-id>toolu_013bA3ns2VDU…"
     }
   ]
 }
