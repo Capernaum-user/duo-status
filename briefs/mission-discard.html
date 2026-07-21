@@ -38,9 +38,9 @@ code{font-family:var(--mono);}
 <p class="sub">스트림 <code>mission-discard</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>2</b></span>
-  <span class="stat">완료 <b>1</b></span>
+  <span class="stat">완료 <b>2</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-21 17:59:17</span>
+  <span class="stat">갱신 2026-07-21 18:14:59</span>
 </div>
 <hr>
 <section class="job">
@@ -53,13 +53,14 @@ code{font-family:var(--mono);}
   <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
   
 </section><section class="job">
-  <div class="jhead"><span class="jn">#2</span><h2>Jmission-discard-b</h2><span class="chip blue">발주됨</span></div>
-  <div class="meta"><code>Jmission-discard-b</code> · R1 · 갱신 2026-07-21 17:38:59</div>
-  <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
+  <div class="jhead"><span class="jn">#2</span><h2>ORDER_Jmission-discard-b_R01 — 4F 리뷰 큐: 미션 🗑 삭제 버튼(질문대기 포함 유연 취소)</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jmission-discard-b</code> · R1 · 갱신 2026-07-21 18:14:59</div>
+  <div class="block"><h3>기획 요약</h3><p>선행 잡 `Jmission-discard-a`(ACCEPTED)가 미션 폐기 API `POST /api/missions/{id}/discard` 를 배선했다(비-running 미션을 discarded.jsonl 아카이브 후 영구 삭제, awaiting_clarify 포함 삭제 가능). **그 잡 REPORT(릴레이 아카이브 `relay\03_archive\Jmission-discard-a\`)의 &quot;엔드포인트 계약 요약&quot;을 먼저 읽어라.** 이 잡은 4F 화면에 그 삭제를 붙인다.</p></div>
   
-  <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
-  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회</p></div>
+  <div class="block"><h3>작업 결과</h3><p>선행 잡 `Jmission-discard-a`가 배선한 `POST /api/missions/{id}/discard`(비-running 전 상태 삭제,<br>`awaiting_clarify` 포함)를 4F `ceo.dc.html` 리뷰 큐 화면에 붙였다. 변경은 전부 `conductor/static/ceo.dc.html`<br>단일 파일 안에서 이루어졌다.</p>
+<p>- **🗑 삭제 버튼**(헤더 액션 영역, 기존 ⛔중단 버튼 바로 옆) — 선택 미션이 `running`이 아닐 때만 노출<br>  (`discardable = !!curM &amp;&amp; mSt !== 'running'`). 기존 `--bad` 빨간 토큰 재사용, 아이콘·톤 모두 ⛔중단 버튼과<br>  통일.<br>- **확인 다이얼로그** — 기존 `this.setState({confirm:{kind,...}})` 패턴을 그대로 재사용해<br>  `kind:'discard'`로 신설(제목 &quot;🗑 미션 삭제&quot;, 본문/okLabel/danger 지시문 그대로). `confirmOk()`에<br>  `else if (c.kind === 'discard') this.doDiscard(c.missionId)` 분기 추가.<br>- **질문 대기(awaiting_clarify)에서도 삭제** — 두 경로 모두 지원:<br>  1) 헤더 🗑삭제 버튼은 `curMission()` 기준이라 clarify 모달이 닫혀 있어도 동작.<br>  2) clarify 카드 모달(전 화면 오버레이, z-index 63) 안에도 &quot;✕ 취소·삭제&quot; 버튼을 신설해 질문에 답하지<br>     않고도 바로 삭제로 벗어날 수 있게 했다.<br>  단, clarify 모달(z-index 63)이 열려 있을 때 신설 버튼이 여는 공용 confirm 모달(기존 z-index 60)이<br>  **뒤에 가려 클릭 불가**해지는 문제를 발견해, confirm 모달의 z-index를 60→66으로 올려 항상 최상단에<br>  뜨도록 고쳤다(다른 오버레이 최대값이 64였으므로 66이면 어떤 모달 위에서 열려도 항상 보임). confirm은<br>  이 화면에서 유일하게 다른 모달 위에 중첩될 수 있는 확인 게이트라 전역으로 올려도 회귀 위험이 없다.<br>  삭제 성공 시 `doDiscard`가 `this.state.clarifyMid === missionId`를 확인해 `clarifyOpen/clarifyMid/<br>  clarifyRound/clarifyHistory/clarifyWaiting…</p><div class='files'>변경 파일: <code>ceo.dc.html</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
   
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 17:59:17</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 18:14:59</span></div>
 </article></div></body></html>
