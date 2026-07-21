@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T20:36:16",
+  "generatedAt": "2026-07-21T20:40:22",
   "counts": {
     "active": 1,
     "waitingWorker": 0,
@@ -9,6 +9,63 @@
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jvault-graphrag-p0",
+      "title": "ORDER_Jvault-graphrag-p0_R02 — Phase 0a 마무리: 결함 3건 수정 + 미실행 단계 실행",
+      "project": "26_vault-graphrag",
+      "targetDir": "D:\\01_Projects\\26_vault-graphrag",
+      "round": 2,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260721-201009-79a5",
+        "startedAt": "2026-07-21 20:10:09",
+        "finishedAt": "2026-07-21 20:11:46",
+        "runs": 1
+      },
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:10:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:18:31",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:39:44",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-21 20:39:50",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-21 20:39:50"
+    },
     {
       "jobId": "Jbulk-discard-b",
       "title": "ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼",
@@ -56,53 +113,6 @@
         }
       ],
       "lastUpdate": "2026-07-21 20:31:52"
-    },
-    {
-      "jobId": "Jvault-graphrag-p0",
-      "title": "ORDER_Jvault-graphrag-p0_R01 — VaultGraph Phase 0a: 스캐폴드 + 인과적 비접촉 증명 + Chroma 베이스라인 동결",
-      "project": "26_vault-graphrag",
-      "targetDir": "D:\\01_Projects\\26_vault-graphrag",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "DONE",
-        "decision": "INCONCLUSIVE",
-        "a": "PROTOCOL_ERROR",
-        "b": "PROTOCOL_ERROR",
-        "relayJobId": "J20260721-201009-79a5",
-        "startedAt": "2026-07-21 20:10:09",
-        "finishedAt": "2026-07-21 20:11:46",
-        "runs": 1
-      },
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:10:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:18:31",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 20:18:31"
     },
     {
       "jobId": "Jbulk-discard-a",
@@ -3131,11 +3141,6 @@
       "file": "Jpeek-w2-monetize_autorun-worker-timeout.md",
       "jobId": "Jpeek-w2-monetize",
       "cause": "autorun-worker-timeout"
-    },
-    {
-      "file": "Jvault-graphrag-p0_autorun-worker-fail.md",
-      "jobId": "Jvault-graphrag-p0",
-      "cause": "autorun-worker-fail"
     }
   ],
   "externalVerifies": [
@@ -3159,6 +3164,12 @@
     }
   ],
   "invocations": [
+    {
+      "time": "2026-07-21 20:39:55",
+      "command": "handoff-auto",
+      "panel": "15_orca",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
     {
       "time": "2026-07-21 20:18:41",
       "command": "handoff-auto",
@@ -3272,12 +3283,6 @@
       "command": "handoff-auto",
       "panel": "15_orca",
       "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
-    },
-    {
-      "time": "2026-07-21 14:44:32",
-      "command": "handoff-auto",
-      "panel": "15_orca",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     }
   ]
 }
