@@ -71,18 +71,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-22 00:55:50 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-22 02:02:57 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-22T00:55:50",
+  "generatedAt": "2026-07-22T02:02:57",
   "counts": {
-    "active": 3,
+    "active": 4,
     "waitingWorker": 1,
-    "working": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 59,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jclarify-race",
+      "title": "ORDER_Jclarify-race_R01 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-22 02:02:19",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 02:02:21",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-22 02:02:21"
+    },
     {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R02 — 스냅샷 가드를 '첫 성공 fetch' 기준으로 (첫 poll 실패 시 버그 재발 차단)",
@@ -727,6 +765,59 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R01 — 4F 뷰어: 신호등·카드·타임라인 시각 렌더 + 접기/펼치기",
       "project": "agent_office_v2",
@@ -785,59 +876,6 @@
           "time": "2026-07-20 19:58:17",
           "state": "ACCEPTED",
           "round": 2
-        }
-      ],
-      "lastUpdate": "2026-07-20 19:58:17"
-    },
-    {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 18:50:28",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:50:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:15:05",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:17:29",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:58:17",
-          "state": "ACCEPTED",
-          "round": 1
         }
       ],
       "lastUpdate": "2026-07-20 19:58:17"
@@ -3375,6 +3413,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-22 02:02:28",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-22 00:36:57",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3484,12 +3528,6 @@
     },
     {
       "time": "2026-07-21 15:15:36",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-21 15:14:30",
       "command": "handoff-auto",
       "panel": "claude-handoff",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
