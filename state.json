@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T20:49:27",
+  "generatedAt": "2026-07-21T21:08:33",
   "counts": {
     "active": 2,
     "waitingWorker": 0,
@@ -28,10 +28,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "worker",
         "round": 1,
-        "result": null
+        "result": "ERROR"
       },
       "timeline": [
         {
@@ -75,7 +75,7 @@
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "worker",
         "round": 1,
         "result": "ERROR"
@@ -3161,6 +3161,11 @@
       "cause": "autorun-verify-nopass"
     },
     {
+      "file": "Jneo4j-durable_autorun-worker-fail.md",
+      "jobId": "Jneo4j-durable",
+      "cause": "autorun-worker-fail"
+    },
+    {
       "file": "Jobs-expiry-test_autorun-postcheck-conflict.md",
       "jobId": "Jobs-expiry-test",
       "cause": "autorun-postcheck-conflict"
@@ -3179,6 +3184,11 @@
       "file": "Jpeek-w2-monetize_autorun-worker-timeout.md",
       "jobId": "Jpeek-w2-monetize",
       "cause": "autorun-worker-timeout"
+    },
+    {
+      "file": "Jvault-graphrag-p0_autorun-worker-fail.md",
+      "jobId": "Jvault-graphrag-p0",
+      "cause": "autorun-worker-fail"
     }
   ],
   "externalVerifies": [

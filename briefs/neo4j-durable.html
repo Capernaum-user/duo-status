@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>브리핑 · VaultGraph — Vault GraphRAG 온톨로지 구축</title>
+<title>브리핑 · Neo4j 지속가동 3종</title>
 <style>
 :root{--primary:#0064ff;--primary-dark:#0050cc;--green:#0caf60;--amber:#a16207;--rose:#e11d48;
 --bg:#f5f5f7;--surface:#fff;--surface-2:#fafafb;--text:#0f1419;--text-2:#525866;--text-3:#8e96a3;--border:#e4e6ea;--code:#f3f5f8;
@@ -34,23 +34,23 @@ code{font-family:var(--mono);}
 @page{size:A4;margin:14mm;}@media print{body{background:#fff;}.card{box-shadow:none;border:0;padding:0;}}
 </style></head><body><div class="wrap"><article class="card">
 <div class="eye">claude-duo · 자동 브리핑</div>
-<h1>VaultGraph — Vault GraphRAG 온톨로지 구축</h1>
-<p class="sub">스트림 <code>vault-graphrag</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
+<h1>Neo4j 지속가동 3종</h1>
+<p class="sub">스트림 <code>neo4j-durable</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>1</b></span>
   <span class="stat">완료 <b>0</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-21 21:07:36</span>
+  <span class="stat">갱신 2026-07-21 21:08:31</span>
 </div>
 <hr>
 <section class="job">
-  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jvault-graphrag-p0_R02 — Phase 0a 마무리: 결함 3건 수정 + 미실행 단계 실행</h2><span class="chip amber">ERROR</span></div>
-  <div class="meta"><code>Jvault-graphrag-p0</code> · R1 · 갱신 2026-07-21 21:07:36</div>
-  <div class="block"><h3>기획 요약</h3><p>R1 워커가 코드를 잘 써 놓고 **실행 단계에 도달하지 못한 채 REPORT 없이 종료**했다(20:18:31 시작 → 20:35:59 종료, 17분). 스캐폴드·`.venv`(torch/transformers 포함)·모듈 10개는 이미 다 있다. **다시 만들지 마라.** 남은 것은 결함 3건 수정과 아직 한 번도 돌지 않은 단계의 실행이다.</p></div>
-  <div class='block'><h3>교차검증</h3><span class='chip amber'>Codex PROTOCOL_ERROR · gemini PROTOCOL_ERROR → INCONCLUSIVE</span></div>
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유</h2><span class="chip amber">ERROR</span></div>
+  <div class="meta"><code>Jneo4j-durable</code> · R1 · 갱신 2026-07-21 21:08:30</div>
+  <div class="block"><h3>기획 요약</h3><p>근본원인 진단 결과: **Neo4j 는 크래시로 죽는 게 아니라, Docker 컨테이너(`ao-neo4j`)인데 (1) 컨테이너에<br>자동 재시작 정책이 없어 Docker·PC 재시작 시 사라지고, (2) 부팅 때 아무도 다시 안 켜주며, (3) 낡은<br>`floors/neo4j/ontology.ready` 표식이 남아 검색층이 죽은 Neo4j 를 계속 두드려 로그폭주+지연을 유발**한다.<br>7월14일 정상 가동돼 데이터 볼륨(`floors/neo4j/data`)은 그대로 남아 있다(재적재 불요). 이 잡은 그 3가지를<br>지속적으로 고친다. **지금 당장의 수동 복구(Docker 켜고 기동)는 기획자가 별도로 수행하므로 이 잡의 범위<br>아님** — 이 잡은 &quot;다시는 조용히 죽지 않게&quot; 만드는 구조 변경만 담당.</p></div>
+  
   <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
   <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회 · 러너 결과 <b>ERROR</b></p></div>
   
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 21:07:36</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 21:08:31</span></div>
 </article></div></body></html>
