@@ -1,14 +1,57 @@
 {
-  "generatedAt": "2026-07-21T20:18:48",
+  "generatedAt": "2026-07-21T20:25:59",
   "counts": {
     "active": 2,
     "waitingWorker": 0,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 58,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jbulk-discard-b",
+      "title": "ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "review",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 19:58:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:16:25",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:25:34",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 20:25:34"
+    },
     {
       "jobId": "Jvault-graphrag-p0",
       "title": "ORDER_Jvault-graphrag-p0_R01 — VaultGraph Phase 0a: 스캐폴드 + 인과적 비접촉 증명 + Chroma 베이스라인 동결",
@@ -55,44 +98,6 @@
         }
       ],
       "lastUpdate": "2026-07-21 20:18:31"
-    },
-    {
-      "jobId": "Jbulk-discard-b",
-      "title": "ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": true,
-        "phase": "worker",
-        "round": 1,
-        "result": null
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 19:58:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:16:25",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 20:16:25"
     },
     {
       "jobId": "Jbulk-discard-a",
