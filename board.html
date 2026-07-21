@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 14:41:05 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 14:45:11 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-21T14:41:05",
+  "generatedAt": "2026-07-21T14:45:11",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 53,
     "alerts": 0
@@ -89,31 +89,31 @@
       "project": "25_automation-hub",
       "targetDir": "D:\\01_Projects\\25_automation-hub",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
       "verify": {
-        "status": "RUNNING",
-        "decision": null,
-        "a": null,
-        "b": null,
-        "relayJobId": "pending",
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260721-144057-3fbd",
         "startedAt": "2026-07-21 14:40:57",
-        "finishedAt": null,
+        "finishedAt": "2026-07-21 14:44:27",
         "runs": 1
       },
       "autorun": {
         "active": true,
-        "phase": "verify",
-        "round": 0,
+        "phase": "worker",
+        "round": 1,
         "result": null
       },
       "timeline": [
@@ -121,9 +121,14 @@
           "time": "2026-07-21 14:40:48",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-21 14:44:27",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-21 14:40:48"
+      "lastUpdate": "2026-07-21 14:44:27"
     },
     {
       "jobId": "Jverify-decision-consistency",
@@ -2844,6 +2849,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 14:44:32",
+      "command": "handoff-auto",
+      "panel": "15_orca",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-21 14:32:02",
       "command": "handoff-auto",
       "panel": "15_orca",
@@ -2953,12 +2964,6 @@
     },
     {
       "time": "2026-07-20 18:00:05",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-20 17:55:55",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
