@@ -40,17 +40,17 @@ code{font-family:var(--mono);}
   <span class="stat">전체 <b>1</b></span>
   <span class="stat">완료 <b>0</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-21 21:08:31</span>
+  <span class="stat">갱신 2026-07-22 00:18:15</span>
 </div>
 <hr>
 <section class="job">
   <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유</h2><span class="chip amber">ERROR</span></div>
-  <div class="meta"><code>Jneo4j-durable</code> · R1 · 갱신 2026-07-21 21:08:30</div>
+  <div class="meta"><code>Jneo4j-durable</code> · R1 · 갱신 2026-07-22 00:18:15</div>
   <div class="block"><h3>기획 요약</h3><p>근본원인 진단 결과: **Neo4j 는 크래시로 죽는 게 아니라, Docker 컨테이너(`ao-neo4j`)인데 (1) 컨테이너에<br>자동 재시작 정책이 없어 Docker·PC 재시작 시 사라지고, (2) 부팅 때 아무도 다시 안 켜주며, (3) 낡은<br>`floors/neo4j/ontology.ready` 표식이 남아 검색층이 죽은 Neo4j 를 계속 두드려 로그폭주+지연을 유발**한다.<br>7월14일 정상 가동돼 데이터 볼륨(`floors/neo4j/data`)은 그대로 남아 있다(재적재 불요). 이 잡은 그 3가지를<br>지속적으로 고친다. **지금 당장의 수동 복구(Docker 켜고 기동)는 기획자가 별도로 수행하므로 이 잡의 범위<br>아님** — 이 잡은 &quot;다시는 조용히 죽지 않게&quot; 만드는 구조 변경만 담당.</p></div>
   
   <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
   <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회 · 러너 결과 <b>ERROR</b></p></div>
   
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 21:08:31</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-22 00:18:15</span></div>
 </article></div></body></html>

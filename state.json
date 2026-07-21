@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T00:13:00",
+  "generatedAt": "2026-07-22T00:19:06",
   "counts": {
     "active": 2,
     "waitingWorker": 0,
@@ -28,7 +28,7 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "worker",
         "round": 1,
         "result": "ERROR"
