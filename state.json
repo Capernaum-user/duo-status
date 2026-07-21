@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-21T15:06:47",
+  "generatedAt": "2026-07-21T15:09:52",
   "counts": {
-    "active": 1,
-    "waitingWorker": 1,
+    "active": 0,
+    "waitingWorker": 0,
     "working": 0,
     "waitingReview": 0,
     "done": 53,
-    "alerts": 0
+    "alerts": 1
   },
   "jobs": [
     {
@@ -15,12 +15,12 @@
       "project": "25_automation-hub",
       "targetDir": "D:\\01_Projects\\25_automation-hub",
       "round": 3,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
       "nextAction": "교차검증 미완결(INCONCLUSIVE) — 확인 후 /check",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": true,
         "pendingReport": false,
@@ -62,9 +62,14 @@
           "time": "2026-07-21 15:01:18",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-07-21 15:09:47",
+          "state": "ESCALATED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-21 15:01:18"
+      "lastUpdate": "2026-07-21 15:09:47"
     },
     {
       "jobId": "Jverify-decision-consistency",
@@ -2742,6 +2747,11 @@
     }
   ],
   "escalations": [
+    {
+      "file": "Jautomation-hub-bootstrap_runner-add-dir-bootstrap-deadlock.md",
+      "jobId": "Jautomation-hub-bootstrap",
+      "cause": "runner-add-dir-bootstrap-deadlock"
+    },
     {
       "file": "Jcosmos-landing-explainer_autorun-verify-nopass.md",
       "jobId": "Jcosmos-landing-explainer",
