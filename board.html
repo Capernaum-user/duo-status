@@ -71,18 +71,55 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 00:27:11 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 13:41:30 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-21T00:27:11",
+  "generatedAt": "2026-07-21T13:41:30",
   "counts": {
-    "active": 0,
-    "waitingWorker": 0,
+    "active": 1,
+    "waitingWorker": 1,
     "working": 0,
     "waitingReview": 0,
     "done": 53,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jtoken-probe",
+      "title": "ORDER_Jtoken-probe_R01",
+      "project": "",
+      "targetDir": null,
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "RUNNING",
+        "decision": null,
+        "a": null,
+        "b": null,
+        "relayJobId": "pending",
+        "startedAt": "2026-07-21 13:40:57",
+        "finishedAt": null,
+        "runs": 1
+      },
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-21 13:40:57",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 13:40:57"
+    },
     {
       "jobId": "Jverify-decision-consistency",
       "title": "ORDER_Jverify-decision-consistency_R01 — SINGLE_* 검증 판정값을 하류 6곳에 반영",
@@ -2802,6 +2839,30 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 13:25:55",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "근데 /handoff-auto 라고 입력하고 프롬프트를 입력해도 왜 ai들이 스스로 /check 나 /handoff-review 가 되지 않는거…"
+    },
+    {
+      "time": "2026-07-21 12:50:34",
+      "command": "handoff-auto",
+      "panel": "21_whitepetshop",
+      "text": "/handoff-auto whitepetshop을 앞으로 어떻게 만들지 그 디자인과 구성들을 기획하고 세부계획서 초안 ERD 등등을 구체적으로 …"
+    },
+    {
+      "time": "2026-07-21 02:51:08",
+      "command": "handoff-verify",
+      "panel": "16_cosmos-knowledge",
+      "text": "<task-notification> <task-id>wd1h7ldp2</task-id> <tool-use-id>toolu_01LNp37RbPEf…"
+    },
+    {
+      "time": "2026-07-21 02:29:46",
+      "command": "handoff-check",
+      "panel": "16_cosmos-knowledge",
+      "text": "<task-notification> <task-id>wrplzpem2</task-id> <tool-use-id>toolu_01AAiLPHpKYA…"
+    },
+    {
       "time": "2026-07-21 00:19:02",
       "command": "handoff-verify",
       "panel": "claude-handoff",
@@ -2896,30 +2957,6 @@
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-20 17:09:20",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "/handoff-auto 중지되거나 중단된 문서 그리고 완료된 문서 서명대기중인 문서들을 구분해서 분류해서 보고 싶어. 지금의 UIUX형태는 가…"
-    },
-    {
-      "time": "2026-07-20 16:53:34",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-20 16:39:47",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "/handoff-auto claude-duo 에 완료한 문서가 계속 완료선반에 쌓여서 시각적으로 보기 불편해. 날짜별로 나눠서 내가 선택한 날짜…"
-    },
-    {
-      "time": "2026-07-20 16:19:27",
-      "command": "handoff-auto",
-      "panel": "16_cosmos-knowledge",
-      "text": "/handoff-auto cosmos knowledge 사이트를 좀 더 개편할 필요가 있는게 다른 사람들은 내 페이지가 단순히 html로 만들어…"
     }
   ]
 };</script>
