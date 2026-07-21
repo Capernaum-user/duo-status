@@ -1,19 +1,62 @@
 {
-  "generatedAt": "2026-07-21T16:08:41",
+  "generatedAt": "2026-07-21T16:18:47",
   "counts": {
     "active": 2,
     "waitingWorker": 0,
     "working": 2,
     "waitingReview": 0,
-    "done": 53,
+    "done": 54,
     "alerts": 1
   },
   "jobs": [
     {
-      "jobId": "Jwhitepetshop-out",
-      "title": "ORDER_Jwhitepetshop-out_R01 — OUT(손님앱) 트랙 R1: fake-door 배포 + OUT-G1 관측 설정",
-      "project": "out",
-      "targetDir": "D:\\01_Projects\\21_whitepetshop\\out",
+      "jobId": "Jstage2-mock",
+      "title": "Jstage2-mock",
+      "project": "claude-handoff",
+      "targetDir": "D:\\06_Utilities\\claude-handoff",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 16:18:32",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 16:18:34",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 16:18:44",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 16:18:44"
+    },
+    {
+      "jobId": "Jwhitepetshop-in",
+      "title": "ORDER_Jwhitepetshop-in_R01 — IN(사장앱) 트랙 R1: Phase 1 와이어프레임 + IN-G3 기술 스파이크 계획",
+      "project": "in",
+      "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
       "round": 1,
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -43,10 +86,10 @@
       "lastUpdate": "2026-07-21 16:08:26"
     },
     {
-      "jobId": "Jwhitepetshop-in",
-      "title": "ORDER_Jwhitepetshop-in_R01 — IN(사장앱) 트랙 R1: Phase 1 와이어프레임 + IN-G3 기술 스파이크 계획",
-      "project": "in",
-      "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
+      "jobId": "Jwhitepetshop-out",
+      "title": "ORDER_Jwhitepetshop-out_R01 — OUT(손님앱) 트랙 R1: fake-door 배포 + OUT-G1 관측 설정",
+      "project": "out",
+      "targetDir": "D:\\01_Projects\\21_whitepetshop\\out",
       "round": 1,
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -359,59 +402,6 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jgnosis-dedup",
-      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:55:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:55:50",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:21:37",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:27:06",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
       "jobId": "Jceo-chart-axes",
       "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
       "project": "agent_office_v2",
@@ -453,6 +443,59 @@
         },
         {
           "time": "2026-07-20 18:26:23",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jgnosis-dedup",
+      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:55:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:55:50",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:21:37",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
