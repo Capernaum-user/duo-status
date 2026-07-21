@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-22T02:16:16",
+  "generatedAt": "2026-07-22T02:19:22",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
+    "waitingWorker": 1,
     "working": 2,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 59,
     "alerts": 1
   },
@@ -15,10 +15,10 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -29,7 +29,7 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 2,
         "result": null
       },
@@ -53,9 +53,14 @@
           "time": "2026-07-22 02:11:08",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-07-22 02:18:46",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-22 02:11:08"
+      "lastUpdate": "2026-07-22 02:18:46"
     },
     {
       "jobId": "Jclarify-noautopop",
