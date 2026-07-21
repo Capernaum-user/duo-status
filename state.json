@@ -1,14 +1,61 @@
 {
-  "generatedAt": "2026-07-21T20:16:34",
+  "generatedAt": "2026-07-21T20:18:48",
   "counts": {
     "active": 2,
-    "waitingWorker": 1,
-    "working": 1,
+    "waitingWorker": 0,
+    "working": 2,
     "waitingReview": 0,
     "done": 58,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jvault-graphrag-p0",
+      "title": "ORDER_Jvault-graphrag-p0_R01 — VaultGraph Phase 0a: 스캐폴드 + 인과적 비접촉 증명 + Chroma 베이스라인 동결",
+      "project": "26_vault-graphrag",
+      "targetDir": "D:\\01_Projects\\26_vault-graphrag",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260721-201009-79a5",
+        "startedAt": "2026-07-21 20:10:09",
+        "finishedAt": "2026-07-21 20:11:46",
+        "runs": 1
+      },
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": "ESCALATED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:10:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:18:31",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 20:18:31"
+    },
     {
       "jobId": "Jbulk-discard-b",
       "title": "ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼",
@@ -94,48 +141,6 @@
         }
       ],
       "lastUpdate": "2026-07-21 20:15:45"
-    },
-    {
-      "jobId": "Jvault-graphrag-p0",
-      "title": "ORDER_Jvault-graphrag-p0_R01 — VaultGraph Phase 0: 스캐폴드 + 인과적 비접촉 증명 + Chroma 베이스라인 동결",
-      "project": "26_vault-graphrag",
-      "targetDir": "D:\\01_Projects\\26_vault-graphrag",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 미완결(INCONCLUSIVE) — 확인 후 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "DONE",
-        "decision": "INCONCLUSIVE",
-        "a": "PROTOCOL_ERROR",
-        "b": "PROTOCOL_ERROR",
-        "relayJobId": "J20260721-201009-79a5",
-        "startedAt": "2026-07-21 20:10:09",
-        "finishedAt": "2026-07-21 20:11:46",
-        "runs": 1
-      },
-      "autorun": {
-        "active": false,
-        "phase": "verify",
-        "round": 0,
-        "result": "ESCALATED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:10:00",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 20:10:00"
     },
     {
       "jobId": "Jwhitepetshop-out",
@@ -3116,11 +3121,6 @@
       "file": "Jpeek-w2-monetize_autorun-worker-timeout.md",
       "jobId": "Jpeek-w2-monetize",
       "cause": "autorun-worker-timeout"
-    },
-    {
-      "file": "Jvault-graphrag-p0_autorun-verify-nopass.md",
-      "jobId": "Jvault-graphrag-p0",
-      "cause": "autorun-verify-nopass"
     }
   ],
   "externalVerifies": [
@@ -3144,6 +3144,12 @@
     }
   ],
   "invocations": [
+    {
+      "time": "2026-07-21 20:18:41",
+      "command": "handoff-auto",
+      "panel": "15_orca",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
     {
       "time": "2026-07-21 20:16:33",
       "command": "handoff-auto",
@@ -3257,12 +3263,6 @@
       "command": "handoff-auto",
       "panel": "15_orca",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-21 14:32:02",
-      "command": "handoff-auto",
-      "panel": "15_orca",
-      "text": "/handoff-auto 나는 orca 혹은 hermes 에서 자동화를 진행할거야. 그런데 내 폴더에 자동화에 대한 폴더가 있는지 나는 잘모르겠…"
     }
   ]
 }
