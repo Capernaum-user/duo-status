@@ -38,20 +38,22 @@ code{font-family:var(--mono);}
 <p class="sub">스트림 <code>clarify-ux</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>1</b></span>
-  <span class="stat">완료 <b>1</b></span>
-  <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-22 00:11:50</span>
+  <span class="stat">완료 <b>0</b></span>
+  <span class="stat">주의 <b>1</b></span>
+  <span class="stat">갱신 2026-07-22 00:52:10</span>
 </div>
 <hr>
 <section class="job">
-  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jclarify-noautopop_R01 — 방치된 질문대기 미션의 강제 자동팝업 제거(내가 제출한 것만 질문 표시)</h2><span class="chip green">완료</span></div>
-  <div class="meta"><code>Jclarify-noautopop</code> · R1 · 갱신 2026-07-22 00:11:49</div>
-  <div class="block"><h3>기획 요약</h3><p>4F CEO 관제(`/ceo`)에서 **사용자가 실행하지도 않은 질문 카드가 저절로 화면을 덮으며 나타난다**는 버그<br>신고. 원인(실측 진단 완료): `_syncClarify()` 가 **매 poll 마다** `awaiting_clarify`(질문 대기) 상태인<br>미션이 있으면 — 그게 **며칠 전 방치된 오래된 미션이라도** — 질문 카드를 **강제로 열고(clarifyOpen:true)<br>차임·배경음악까지 재생**한다. 그래서 옛 미션 1건이 계속 자동으로 튀어나오고, 다른 작업(예: 일괄 삭제)<br>직후에도 이 카드가 결과 화면을 가려 &quot;삭제가 안 된 것처럼&quot; 보이게 만든다.</p></div>
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jclarify-noautopop_R02 — 스냅샷 가드를 '첫 성공 fetch' 기준으로 (첫 poll 실패 시 버그 재발 차단)</h2><span class="chip rose">재작업 한도</span></div>
+  <div class="meta"><code>Jclarify-noautopop</code> · R2 · 갱신 2026-07-22 00:52:09</div>
+  <div class="block"><h3>기획 요약</h3><p>R1(ACCEPTED)에서 `_syncClarify()` 에 `_clarifyLoadedIds` 스냅샷을 도입해, **페이지 로드 시점에 이미<br>awaiting_clarify 였던(방치) 미션은 질문 카드를 자동으로 띄우지 않고, 로드 이후 새로 질문대기가 된<br>미션만 자동으로 뜨게** 고쳤다. **검토에서 발견된 잔여 결함**을 이 라운드에서 닫는다:</p></div>
   
-  <div class="block"><h3>작업 결과</h3><p>`ceo.dc.html`의 `_syncClarify()` 자동오픈 블록에 &quot;로드 시점 스냅샷&quot; 가드를 추가해, 페이지를 열었을 때<br>이미 `awaiting_clarify` 상태였던(=방치된) 미션은 자동으로 팝업/차임/음악을 트리거하지 않도록 수정했다.<br>로드 이후 새로 `awaiting_clarify`로 전이한 미션(=방금 프롬프트를 제출한 것)만 기존과 동일하게 자동<br>오픈된다. `reopenClarify`(클릭 오픈), `clarifyWaitingNext`(라운드 연속), `clarifyDismissed`(나중에-닫기)<br>경로는 전혀 손대지 않았다. 백엔드·`doBulkDiscard`/`doDiscard`도 무접촉.</p>
-<p>구현 중 ORDER 의사코드 그대로는 놓치는 경합(race) 하나를 발견해 보강했다 — 아래 &quot;구현 노트(ORDER 대비<br>보강)&quot; 참고.</p><div class='files'>변경 파일: <code>ceo.dc.html</code> <code>latest.md</code></div></div>
-  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  <div class="block"><h3>작업 결과</h3><p>target_dir(`D:\01_Projects\AI_Control\agent_office_v2`)에서 `conductor/static/ceo.dc.html` 을 확인한 결과,<br>**본 라운드가 요구하는 수정이 작업 착수 시점에 이미 워킹트리/HEAD 에 반영·커밋되어 있었다.**<br>(`git diff HEAD -- conductor/static/ceo.dc.html` 결과 공백 — 워킹트리와 HEAD 가 완전히 일치.)</p>
+<p>해당 변경은 커밋 `c6ec554` (`session_end(DESKTOP-UVTC4TF): 2026-07-22 00:26:30`, 저자 TaeHyang Kwon)에<br>정확히 ORDER 가 요구하는 내용으로 포함돼 있었다:</p>
+<p>- `_pollCount`(폴 &quot;시도&quot; 횟수, 성공/실패 무관) 기준 스냅샷 가드를 **`_clarifyFetchOk`**(`/api/missions`<br>  최초 **성공** 응답 도착 여부, 1회 래치) 기준으로 교체.<br>- `poll()` 의 `/api/missions` 성공 분기(`ml.ok`)에서 `this._clarifyFetchOk = true` 를 1회 세팅.<br>- `_syncClarify()` 의 스냅샷 초기화 조건을 `this._clarifyLoadedIds === null` 단독 → `this._clarifyLoadedIds<br>  === null &amp;&amp; (!this._clarifyFetchOk 이면 return)` 구조로 변경 — 즉 첫 성공 fetch 전까지는 스냅샷을 굳히지<br>  않고 매 `_syncClarify` 호출마다 조용히 리턴(보수적 미확정 유지).<br>- 첫 성공 fetch 도달 시점에만 `_clarifyLoadedIds` 를 1회 채우고 그 라운드는 자동 오픈하지 않음(R1 로직 유지).<br>- 이후 `_clarifyLoadedIds` 에 없는 `awaiting_clarify` 신규 건만 자동 오픈(R1 로직 그대로).</p>
+<p>이번 라운드에서 내가 직접 코드를 새로 작성/수정하지는 않았다(이미 목표 상태였음). 대신:<br>1. 실제 파일 내용을 라인 단위로 정독해 ORDER 의 요구사항과 1:1 대조.<br>2. `git diff HEAD`로 &quot;이미 커밋된 상태 = 워킹트리 상태&quot; 임을 확인(추가로 손댈 코드 변경 없음 = `git add -A` 불필요, 불변식 자동 충족).<br>3. R1 로직(reopenClarify/clarifyWaitingNext/clarifyDismis…</p><div class='files'>변경 파일: <code>ceo.dc.html</code> <code>20260722-desktop-uvtc4tf.md</code> <code>ceo.html</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 2회 · 러너 결과 <b>REWORK-CAP</b></p></div>
   
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-22 00:11:50</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-22 00:52:10</span></div>
 </article></div></body></html>
