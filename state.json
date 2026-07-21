@@ -1,57 +1,14 @@
 {
-  "generatedAt": "2026-07-21T17:11:26",
+  "generatedAt": "2026-07-21T17:12:31",
   "counts": {
     "active": 2,
     "waitingWorker": 0,
     "working": 0,
     "waitingReview": 2,
-    "done": 54,
+    "done": 53,
     "alerts": 1
   },
   "jobs": [
-    {
-      "jobId": "Jstage3-final",
-      "title": "Jstage3-final",
-      "project": "p4-final",
-      "targetDir": "C:\\Users\\권태향\\AppData\\Local\\Temp\\p4-final",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 17:11:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 17:11:14",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 17:11:21",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 17:11:21"
-    },
     {
       "jobId": "Jwhitepetshop-out",
       "title": "ORDER_Jwhitepetshop-out_R01 — OUT(손님앱) 트랙 R1: fake-door 배포 + OUT-G1 관측 설정",
