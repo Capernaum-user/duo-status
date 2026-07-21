@@ -1,14 +1,80 @@
 {
-  "generatedAt": "2026-07-21T18:39:55",
+  "generatedAt": "2026-07-21T19:59:01",
   "counts": {
-    "active": 0,
-    "waitingWorker": 0,
-    "working": 0,
+    "active": 2,
+    "waitingWorker": 1,
+    "working": 1,
     "waitingReview": 0,
     "done": 57,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jbulk-discard-a",
+      "title": "ORDER_Jbulk-discard-a_R01 — 미션 일괄 폐기(bulk discard) 엔드포인트 + 회귀가드",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 19:58:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 19:58:24",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 19:58:24"
+    },
+    {
+      "jobId": "Jbulk-discard-b",
+      "title": "ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-21 19:58:13",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 19:58:13"
+    },
     {
       "jobId": "Jwhitepetshop-out",
       "title": "ORDER_Jwhitepetshop-out_R01 — OUT(손님앱) 트랙 R1: fake-door 배포 + OUT-G1 관측 설정",
@@ -3012,6 +3078,24 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 19:58:32",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
+      "time": "2026-07-21 19:18:09",
+      "command": "handoff-auto",
+      "panel": "15_orca",
+      "text": "/handoff-auto 내 d:\\는 옵시디언 vault내에서 rag하도록 되어 있는데 좀 더 정확한 rag를 위해서 graphRAG 그러니깐 …"
+    },
+    {
+      "time": "2026-07-21 19:00:16",
+      "command": "handoff-auto",
+      "panel": "agent_office_v3",
+      "text": "/handoff-auto agent office v3의 HANDOFF.md 읽고, UI/UX design을 만들려고하는데 너가 우선 agent …"
+    },
+    {
       "time": "2026-07-21 18:35:40",
       "command": "handoff-check",
       "panel": "15_orca",
@@ -3112,24 +3196,6 @@
       "command": "handoff-review",
       "panel": "claude-handoff",
       "text": "<task-notification> <task-id>wn0x3hbwt</task-id> <tool-use-id>toolu_013bA3ns2VDU…"
-    },
-    {
-      "time": "2026-07-21 13:57:16",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "/handoff-auto 내 agent office v2 에 보면 ai들이 서로 검증하는 방법이나 개선하는 방법들이 있어. 그걸 모방해서 cla…"
-    },
-    {
-      "time": "2026-07-21 13:25:55",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "근데 /handoff-auto 라고 입력하고 프롬프트를 입력해도 왜 ai들이 스스로 /check 나 /handoff-review 가 되지 않는거…"
-    },
-    {
-      "time": "2026-07-21 12:50:34",
-      "command": "handoff-auto",
-      "panel": "21_whitepetshop",
-      "text": "/handoff-auto whitepetshop을 앞으로 어떻게 만들지 그 디자인과 구성들을 기획하고 세부계획서 초안 ERD 등등을 구체적으로 …"
     }
   ]
 }
