@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 14:52:22 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 14:54:27 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-21T14:52:22",
+  "generatedAt": "2026-07-21T14:54:27",
   "counts": {
     "active": 1,
-    "waitingWorker": 0,
-    "working": 1,
+    "waitingWorker": 1,
+    "working": 0,
     "waitingReview": 0,
     "done": 53,
     "alerts": 0
@@ -88,17 +88,17 @@
       "title": "ORDER_Jautomation-hub-bootstrap_R01 — 자동화 전용 허브 폴더 신설 + 개발자 자동화 카탈로그 HTML 제작",
       "project": "25_automation-hub",
       "targetDir": "D:\\01_Projects\\25_automation-hub",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "round": 2,
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "교차검증 미완결(INCONCLUSIVE) — 확인 후 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": {
         "status": "DONE",
@@ -112,8 +112,8 @@
       },
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 1,
+        "phase": "worker",
+        "round": 2,
         "result": null
       },
       "timeline": [
@@ -126,9 +126,14 @@
           "time": "2026-07-21 14:44:27",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-21 14:53:26",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-21 14:44:27"
+      "lastUpdate": "2026-07-21 14:53:26"
     },
     {
       "jobId": "Jverify-decision-consistency",
@@ -2849,6 +2854,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 14:53:47",
+      "command": "handoff-auto",
+      "panel": "15_orca",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-21 14:51:03",
       "command": "handoff-auto",
       "panel": "15_orca",
@@ -2961,12 +2972,6 @@
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-20 18:21:45",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT만 보고 자족적으로 3중 게이트 검토하라. =…"
     }
   ]
 };</script>
