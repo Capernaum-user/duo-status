@@ -71,33 +71,33 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 16:19:53 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 17:03:59 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-21T16:19:52",
+  "generatedAt": "2026-07-21T17:03:59",
   "counts": {
     "active": 2,
     "waitingWorker": 0,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 53,
     "alerts": 1
   },
   "jobs": [
     {
-      "jobId": "Jwhitepetshop-out",
-      "title": "ORDER_Jwhitepetshop-out_R01 — OUT(손님앱) 트랙 R1: fake-door 배포 + OUT-G1 관측 설정",
-      "project": "out",
-      "targetDir": "D:\\01_Projects\\21_whitepetshop\\out",
+      "jobId": "Jwhitepetshop-in",
+      "title": "ORDER_Jwhitepetshop-in_R01 — IN(사장앱) 트랙 R1: Phase 1 와이어프레임 + IN-G3 기술 스파이크 계획",
+      "project": "in",
+      "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -112,15 +112,20 @@
           "time": "2026-07-21 16:08:26",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-21 17:03:29",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-21 16:08:26"
+      "lastUpdate": "2026-07-21 17:03:29"
     },
     {
-      "jobId": "Jwhitepetshop-in",
-      "title": "ORDER_Jwhitepetshop-in_R01 — IN(사장앱) 트랙 R1: Phase 1 와이어프레임 + IN-G3 기술 스파이크 계획",
-      "project": "in",
-      "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
+      "jobId": "Jwhitepetshop-out",
+      "title": "ORDER_Jwhitepetshop-out_R01 — OUT(손님앱) 트랙 R1: fake-door 배포 + OUT-G1 관측 설정",
+      "project": "out",
+      "targetDir": "D:\\01_Projects\\21_whitepetshop\\out",
       "round": 1,
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -2940,6 +2945,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 16:57:44",
+      "command": "handoff-check",
+      "panel": "21_whitepetshop",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-21 16:07:14",
       "command": "handoff-check",
       "panel": "21_whitepetshop",
@@ -3052,12 +3063,6 @@
       "command": "handoff-auto",
       "panel": "claude-handoff",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-21 00:09:58",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "/handoff-auto 남은거 진행해"
     }
   ]
 };</script>
