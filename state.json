@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T14:45:11",
+  "generatedAt": "2026-07-21T14:51:17",
   "counts": {
     "active": 1,
     "waitingWorker": 0,
@@ -23,7 +23,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": {
@@ -38,7 +38,7 @@
       },
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": null
       },
@@ -2775,6 +2775,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 14:51:03",
+      "command": "handoff-auto",
+      "panel": "15_orca",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
+    },
+    {
       "time": "2026-07-21 14:44:32",
       "command": "handoff-auto",
       "panel": "15_orca",
@@ -2887,12 +2893,6 @@
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT만 보고 자족적으로 3중 게이트 검토하라. =…"
-    },
-    {
-      "time": "2026-07-20 18:00:05",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     }
   ]
 }
