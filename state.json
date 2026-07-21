@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-22T00:01:42",
+  "generatedAt": "2026-07-22T00:07:48",
   "counts": {
     "active": 3,
     "waitingWorker": 0,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 59,
     "alerts": 1
   },
@@ -15,10 +15,10 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -29,7 +29,7 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": null
       },
@@ -43,9 +43,14 @@
           "time": "2026-07-22 00:01:08",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-22 00:07:09",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-22 00:01:08"
+      "lastUpdate": "2026-07-22 00:07:09"
     },
     {
       "jobId": "Jneo4j-durable",
