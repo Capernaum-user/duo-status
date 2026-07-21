@@ -40,12 +40,12 @@ code{font-family:var(--mono);}
   <span class="stat">전체 <b>1</b></span>
   <span class="stat">완료 <b>0</b></span>
   <span class="stat">주의 <b>1</b></span>
-  <span class="stat">갱신 2026-07-22 00:52:10</span>
+  <span class="stat">갱신 2026-07-22 00:55:39</span>
 </div>
 <hr>
 <section class="job">
   <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jclarify-noautopop_R02 — 스냅샷 가드를 '첫 성공 fetch' 기준으로 (첫 poll 실패 시 버그 재발 차단)</h2><span class="chip rose">재작업 한도</span></div>
-  <div class="meta"><code>Jclarify-noautopop</code> · R2 · 갱신 2026-07-22 00:52:09</div>
+  <div class="meta"><code>Jclarify-noautopop</code> · R2 · 갱신 2026-07-22 00:55:39</div>
   <div class="block"><h3>기획 요약</h3><p>R1(ACCEPTED)에서 `_syncClarify()` 에 `_clarifyLoadedIds` 스냅샷을 도입해, **페이지 로드 시점에 이미<br>awaiting_clarify 였던(방치) 미션은 질문 카드를 자동으로 띄우지 않고, 로드 이후 새로 질문대기가 된<br>미션만 자동으로 뜨게** 고쳤다. **검토에서 발견된 잔여 결함**을 이 라운드에서 닫는다:</p></div>
   
   <div class="block"><h3>작업 결과</h3><p>target_dir(`D:\01_Projects\AI_Control\agent_office_v2`)에서 `conductor/static/ceo.dc.html` 을 확인한 결과,<br>**본 라운드가 요구하는 수정이 작업 착수 시점에 이미 워킹트리/HEAD 에 반영·커밋되어 있었다.**<br>(`git diff HEAD -- conductor/static/ceo.dc.html` 결과 공백 — 워킹트리와 HEAD 가 완전히 일치.)</p>
@@ -55,5 +55,5 @@ code{font-family:var(--mono);}
   <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 2회 · 러너 결과 <b>REWORK-CAP</b></p></div>
   
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-22 00:52:10</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-22 00:55:39</span></div>
 </article></div></body></html>
