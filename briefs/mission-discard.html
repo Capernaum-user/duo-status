@@ -38,9 +38,9 @@ code{font-family:var(--mono);}
 <p class="sub">스트림 <code>mission-discard</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>4</b></span>
-  <span class="stat">완료 <b>3</b></span>
+  <span class="stat">완료 <b>4</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-21 20:16:23</span>
+  <span class="stat">갱신 2026-07-21 20:32:39</span>
 </div>
 <hr>
 <section class="job">
@@ -71,13 +71,14 @@ code{font-family:var(--mono);}
   <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
   
 </section><section class="job">
-  <div class="jhead"><span class="jn">#4</span><h2>Jbulk-discard-b</h2><span class="chip blue">발주됨</span></div>
-  <div class="meta"><code>Jbulk-discard-b</code> · R1 · 갱신 2026-07-21 19:58:13</div>
-  <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
+  <div class="jhead"><span class="jn">#4</span><h2>ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jbulk-discard-b</code> · R1 · 갱신 2026-07-21 20:32:38</div>
+  <div class="block"><h3>기획 요약</h3><p>선행 잡 `Jbulk-discard-a`(ACCEPTED)가 **일괄 폐기 API** `POST /api/missions/discard-bulk` 를 배선했다.<br>**그 잡 REPORT(릴레이 아카이브 `relay\03_archive\Jbulk-discard-a\`)의 &quot;엔드포인트 계약 요약&quot;을 먼저<br>읽어라.** 요약(현 설계): 요청 `{&quot;ids&quot;:[...]}`(화면에 보이는 그 id 목록), 응답<br>`{&quot;ok&quot;:true, &quot;discarded&quot;:[...삭제된 id...], &quot;skipped&quot;:[{&quot;id&quot;,&quot;error&quot;,&quot;code&quot;}...], &quot;count&quot;:&lt;삭제수&gt;}`.<br>running 은 skip(409), 미존재 skip(404), best-effort 부분성공(한 항목 실패가 배치를 막지 않음). 각 항목은…</p></div>
   
-  <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
-  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회</p></div>
+  <div class="block"><h3>작업 결과</h3><p>리뷰 큐(`ceo.dc.html`)에 분류(탭) 단위 &quot;이 목록 전체 삭제&quot; 버튼을 배선했다. 선행 잡<br>`Jbulk-discard-a` 가 배선한 `POST /api/missions/discard-bulk`(`{&quot;ids&quot;:[...]}` → `{ok, discarded,<br>skipped, count}`, running=409 skip · 미존재=404 skip · best-effort 부분성공 · 배치 상한 200)를<br>그대로 재사용했고, 백엔드는 무수정이다.</p>
+<p>1. **탭 헤더에 일괄 삭제 버튼 추가** (`ceo.dc.html:352-357` 부근 템플릿) — `queueTabs` 렌더 직후<br>   `&lt;sc-if value=&quot;{{ bulkShow }}&quot;&gt;` 로 감싼 버튼 1개. `--bad`(위험) 토큰, 기존 탭 버튼과 같은 줄에<br>   `margin-left:auto` 로 우측 배치.<br>2. **대상 id 계산** (`renderVals()`, `queueScoped` 산출 직후) — `bulkTargets = (curQTab==='stopped'<br>   || curQTab==='done') ? queueScoped.filter(m =&gt; m.status!=='running').map(m=&gt;m.id) : []`.<br>   `queueScoped` 는 이미 현재 탭에 귀속된 미션 배열(WYSIWYG) 이므로 여기서 다시 status 필터링해<br>   화면에 보이는 것만, running 만 방어적으로 제외한다. `bulkShow = bulkTargets.length &gt; 0` —<br>   진행중(active)·결재대기(awaiting_ceo)·전체(all) 탭에서는 이 계산 자체가 빈 배열이라 버튼이<br>   구조적으로 안 뜬다(조건 자체가 stopped/done 이외엔 `[]` 을 강제).<br>3. **확인 다이얼로그** — `_askBulkDiscard(ids)` 신설(`ceo.dc.html:2787~`). 기존 `confirm` 상태<br>   패턴 그대로: `kind:'discard-bulk'`, 제목 &quot;🗑 목록 전체 삭제&quot;, 본문/okLabel ORDER 문구 그대로,<br>   `danger:true`. `confirmOk()`(`:2963`)에 `else if (c.kind === 'discard-bulk')<br>   this.doBulkDiscard(c.bulkIds)` 분기 추가.<br>4. **`doBulkDiscard(ids)`** (`:…</p><div class='files'>변경 파일: <code>ceo.dc.html</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 0회 · 러너 결과 <b>ACCEPTED</b></p></div>
   
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 20:16:23</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-21 20:32:39</span></div>
 </article></div></body></html>
