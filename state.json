@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-21T15:10:58",
+  "generatedAt": "2026-07-21T15:15:03",
   "counts": {
-    "active": 0,
+    "active": 1,
     "waitingWorker": 0,
-    "working": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 53,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Je2e-gatecheck",
+      "title": "Je2e-gatecheck",
+      "project": "model_hint: sonnet",
+      "targetDir": "model_hint: sonnet",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 15:14:23",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 15:14:25",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 15:14:25"
+    },
     {
       "jobId": "Jautomation-hub-bootstrap",
       "title": "ORDER_Jautomation-hub-bootstrap_R02 — R1 재발주(전량 미수행) + 파일 접근 차단 우회 절차 명시",
@@ -2800,6 +2838,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 15:14:30",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-21 15:06:21",
       "command": "handoff-auto",
       "panel": "15_orca",
@@ -2912,12 +2956,6 @@
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT만 보고 자족적으로 3중 게이트 검토하라. =…"
-    },
-    {
-      "time": "2026-07-20 19:47:06",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     }
   ]
 }
