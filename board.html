@@ -71,18 +71,71 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 18:23:44 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-21 18:38:50 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-21T18:23:44",
+  "generatedAt": "2026-07-21T18:38:50",
   "counts": {
-    "active": 2,
+    "active": 1,
     "waitingWorker": 0,
     "working": 0,
-    "waitingReview": 2,
-    "done": 55,
+    "waitingReview": 1,
+    "done": 56,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jwhitepetshop-in",
+      "title": "ORDER_Jwhitepetshop-in_R01 — IN(사장앱) 트랙 R1: Phase 1 와이어프레임 + IN-G3 기술 스파이크 계획",
+      "project": "in",
+      "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-21 15:27:23",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 16:08:26",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:03:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:19:39",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:40:13",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 18:38:17",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 18:38:17"
+    },
     {
       "jobId": "Jmission-discard-b",
       "title": "ORDER_Jmission-discard-b_R01 — 4F 리뷰 큐: 미션 🗑 삭제 버튼(질문대기 포함 유연 취소)",
@@ -187,13 +240,13 @@
       "round": 1,
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -211,54 +264,6 @@
         },
         {
           "time": "2026-07-21 17:04:19",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 17:19:39",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 17:40:13",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-21 17:40:13"
-    },
-    {
-      "jobId": "Jwhitepetshop-in",
-      "title": "ORDER_Jwhitepetshop-in_R01 — IN(사장앱) 트랙 R1: Phase 1 와이어프레임 + IN-G3 기술 스파이크 계획",
-      "project": "in",
-      "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-21 15:27:23",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 16:08:26",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 17:03:29",
           "state": "DONE",
           "round": 1
         },
@@ -3076,6 +3081,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-21 18:35:40",
+      "command": "handoff-check",
+      "panel": "15_orca",
+      "text": "<task-notification> <task-id>wsh1rwx9h</task-id> <tool-use-id>toolu_01RJNuCbLQxZ…"
+    },
+    {
       "time": "2026-07-21 17:59:25",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3188,12 +3199,6 @@
       "command": "handoff-auto",
       "panel": "21_whitepetshop",
       "text": "/handoff-auto whitepetshop을 앞으로 어떻게 만들지 그 디자인과 구성들을 기획하고 세부계획서 초안 ERD 등등을 구체적으로 …"
-    },
-    {
-      "time": "2026-07-21 02:51:08",
-      "command": "handoff-verify",
-      "panel": "16_cosmos-knowledge",
-      "text": "<task-notification> <task-id>wd1h7ldp2</task-id> <tool-use-id>toolu_01LNp37RbPEf…"
     }
   ]
 };</script>
