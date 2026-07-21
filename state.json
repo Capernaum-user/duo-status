@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T14:58:32",
+  "generatedAt": "2026-07-21T15:01:37",
   "counts": {
     "active": 1,
     "waitingWorker": 1,
@@ -11,10 +11,10 @@
   "jobs": [
     {
       "jobId": "Jautomation-hub-bootstrap",
-      "title": "ORDER_Jautomation-hub-bootstrap_R01 — 자동화 전용 허브 폴더 신설 + 개발자 자동화 카탈로그 HTML 제작",
+      "title": "ORDER_Jautomation-hub-bootstrap_R02 — R1 재발주(전량 미수행) + 파일 접근 차단 우회 절차 명시",
       "project": "25_automation-hub",
       "targetDir": "D:\\01_Projects\\25_automation-hub",
-      "round": 2,
+      "round": 3,
       "stage": "REWORK",
       "stageIndex": 1,
       "stageLabel": "발주됨",
@@ -23,7 +23,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": true,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": {
@@ -57,9 +57,14 @@
           "time": "2026-07-21 14:53:26",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-07-21 15:01:18",
+          "state": "REWORK",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-21 14:53:26"
+      "lastUpdate": "2026-07-21 15:01:18"
     },
     {
       "jobId": "Jverify-decision-consistency",
