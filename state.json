@@ -1,20 +1,58 @@
 {
-  "generatedAt": "2026-07-21T17:08:10",
+  "generatedAt": "2026-07-21T17:09:15",
   "counts": {
-    "active": 2,
+    "active": 3,
     "waitingWorker": 0,
-    "working": 0,
+    "working": 1,
     "waitingReview": 2,
     "done": 54,
     "alerts": 1
   },
   "jobs": [
     {
-      "jobId": "Jp4-enforce",
-      "title": "Jp4-enforce",
-      "project": "claude-handoff",
-      "targetDir": "D:\\06_Utilities\\claude-handoff",
-      "round": 2,
+      "jobId": "Jp4-freeform",
+      "title": "Jp4-freeform",
+      "project": "p4-scratch",
+      "targetDir": "C:\\Users\\권태향\\AppData\\Local\\Temp\\p4-scratch",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "review",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 17:09:08",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:09:10",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-21 17:09:10"
+    },
+    {
+      "jobId": "Jp4-observe",
+      "title": "Jp4-observe",
+      "project": "p4-scratch",
+      "targetDir": "C:\\Users\\권태향\\AppData\\Local\\Temp\\p4-scratch",
+      "round": 1,
       "stage": "ACCEPTED",
       "stageIndex": 5,
       "stageLabel": "완료",
@@ -28,34 +66,29 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
-        "round": 2,
-        "result": null
+        "round": 1,
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
-          "time": "2026-07-21 17:07:53",
+          "time": "2026-07-21 17:08:58",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-21 17:07:54",
+          "time": "2026-07-21 17:09:00",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-21 17:08:01",
+          "time": "2026-07-21 17:09:07",
           "state": "ACCEPTED",
           "round": 1
-        },
-        {
-          "time": "2026-07-21 17:08:09",
-          "state": "ACCEPTED",
-          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-21 17:08:09"
+      "lastUpdate": "2026-07-21 17:09:07"
     },
     {
       "jobId": "Jwhitepetshop-out",
@@ -301,59 +334,6 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 18:50:28",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:50:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:15:05",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:17:29",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:58:17",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 19:58:17"
-    },
-    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R01 — 4F 뷰어: 신호등·카드·타임라인 시각 렌더 + 접기/펼치기",
       "project": "agent_office_v2",
@@ -417,8 +397,8 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jgnosis-dedup",
-      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
@@ -442,32 +422,32 @@
       },
       "timeline": [
         {
-          "time": "2026-07-20 17:55:47",
+          "time": "2026-07-20 18:50:28",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-20 17:55:50",
+          "time": "2026-07-20 18:50:29",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:21:37",
+          "time": "2026-07-20 19:15:05",
           "state": "DONE",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:27:06",
+          "time": "2026-07-20 19:17:29",
           "state": "ACCEPTED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:30:08",
+          "time": "2026-07-20 19:58:17",
           "state": "ACCEPTED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-07-20 18:30:08"
+      "lastUpdate": "2026-07-20 19:58:17"
     },
     {
       "jobId": "Jceo-chart-axes",
@@ -511,6 +491,59 @@
         },
         {
           "time": "2026-07-20 18:26:23",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jgnosis-dedup",
+      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:55:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:55:50",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:21:37",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
