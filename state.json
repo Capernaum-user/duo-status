@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T09:44:11",
+  "generatedAt": "2026-07-22T09:47:17",
   "counts": {
     "active": 4,
     "waitingWorker": 2,
@@ -17,20 +17,20 @@
       "round": 2,
       "stage": "REWORK",
       "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
+      "stageLabel": "발주됨",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 1,
+        "phase": "worker",
+        "round": 2,
         "result": null
       },
       "timeline": [
@@ -3407,6 +3407,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-22 09:46:27",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-22 09:39:02",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3519,12 +3525,6 @@
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-21 17:14:16",
-      "command": "handoff-check",
-      "panel": "21_whitepetshop",
-      "text": "두개다 /check 했어. 하나는 작업 안끝났고 하나는 끝난 것 같은데 너가 확인해봐."
     }
   ]
 }
