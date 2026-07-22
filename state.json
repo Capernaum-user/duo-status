@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-22T02:23:39",
+  "generatedAt": "2026-07-22T09:29:57",
   "counts": {
-    "active": 3,
+    "active": 4,
     "waitingWorker": 1,
-    "working": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 60,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jmermaid-render",
+      "title": "ORDER_Jmermaid-render_R01 — 보고서 뷰어에서 mermaid xychart-beta·pie 블록을 실제 시각 차트로 렌더",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-22 09:28:56",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:28:58",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-22 09:28:58"
+    },
     {
       "jobId": "Jclarify-race",
       "title": "ORDER_Jclarify-race_R01 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
@@ -827,59 +865,6 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jceo-chart-axes",
-      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
-      "project": "agent_office_v2",
-      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:59:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:59:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:23:57",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:26:23",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
       "jobId": "Jgnosis-dedup",
       "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
       "project": "agent_office_v2",
@@ -921,6 +906,59 @@
         },
         {
           "time": "2026-07-20 18:27:06",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jceo-chart-axes",
+      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:59:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:59:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:23:57",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:26:23",
           "state": "ACCEPTED",
           "round": 1
         },
@@ -3359,6 +3397,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-22 09:29:05",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-22 02:15:32",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3468,12 +3512,6 @@
     },
     {
       "time": "2026-07-21 16:57:44",
-      "command": "handoff-check",
-      "panel": "21_whitepetshop",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-21 16:07:14",
       "command": "handoff-check",
       "panel": "21_whitepetshop",
       "text": "/check"
