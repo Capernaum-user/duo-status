@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-22T09:56:36",
+  "generatedAt": "2026-07-22T10:02:44",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
+    "waitingWorker": 1,
     "working": 2,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 60,
     "alerts": 1
   },
@@ -15,15 +15,15 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 3,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": true,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -63,9 +63,14 @@
           "time": "2026-07-22 09:55:18",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-07-22 10:02:40",
+          "state": "DONE",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-22 09:55:18"
+      "lastUpdate": "2026-07-22 10:02:40"
     },
     {
       "jobId": "Jclarify-race",
