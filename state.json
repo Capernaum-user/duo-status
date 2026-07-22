@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-22T09:29:57",
+  "generatedAt": "2026-07-22T09:39:04",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 60,
     "alerts": 1
   },
@@ -15,21 +15,21 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": null
       },
@@ -43,9 +43,14 @@
           "time": "2026-07-22 09:28:58",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-22 09:38:53",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-22 09:28:58"
+      "lastUpdate": "2026-07-22 09:38:53"
     },
     {
       "jobId": "Jclarify-race",
@@ -3397,6 +3402,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-22 09:39:02",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
+    },
+    {
       "time": "2026-07-22 09:29:05",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3509,12 +3520,6 @@
       "command": "handoff-check",
       "panel": "21_whitepetshop",
       "text": "두개다 /check 했어. 하나는 작업 안끝났고 하나는 끝난 것 같은데 너가 확인해봐."
-    },
-    {
-      "time": "2026-07-21 16:57:44",
-      "command": "handoff-check",
-      "panel": "21_whitepetshop",
-      "text": "/check"
     }
   ]
 }
