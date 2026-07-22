@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T10:02:44",
+  "generatedAt": "2026-07-22T10:03:50",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
@@ -17,19 +17,19 @@
       "round": 3,
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": true,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 3,
         "result": null
       },
