@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-07-22T09:52:24",
+  "generatedAt": "2026-07-22T09:55:30",
   "counts": {
     "active": 4,
-    "waitingWorker": 1,
+    "waitingWorker": 2,
     "working": 2,
-    "waitingReview": 1,
+    "waitingReview": 0,
     "done": 60,
     "alerts": 1
   },
   "jobs": [
     {
       "jobId": "Jmermaid-render",
-      "title": "ORDER_Jmermaid-render_R01 — 보고서 뷰어에서 mermaid xychart-beta·pie 블록을 실제 시각 차트로 렌더",
+      "title": "ORDER_Jmermaid-render_R02 — 닫히지 않은 ```mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정",
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 2,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "round": 3,
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -58,9 +58,14 @@
           "time": "2026-07-22 09:51:26",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-07-22 09:55:18",
+          "state": "REWORK",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-22 09:51:26"
+      "lastUpdate": "2026-07-22 09:55:18"
     },
     {
       "jobId": "Jclarify-race",
