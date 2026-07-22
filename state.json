@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-22T09:39:04",
+  "generatedAt": "2026-07-22T09:44:11",
   "counts": {
     "active": 4,
-    "waitingWorker": 1,
+    "waitingWorker": 2,
     "working": 2,
-    "waitingReview": 1,
+    "waitingReview": 0,
     "done": 60,
     "alerts": 1
   },
@@ -14,17 +14,17 @@
       "title": "ORDER_Jmermaid-render_R01 — 보고서 뷰어에서 mermaid xychart-beta·pie 블록을 실제 시각 차트로 렌더",
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "round": 2,
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": {
@@ -48,9 +48,14 @@
           "time": "2026-07-22 09:38:53",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-22 09:43:43",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-22 09:38:53"
+      "lastUpdate": "2026-07-22 09:43:43"
     },
     {
       "jobId": "Jclarify-race",
