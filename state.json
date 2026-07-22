@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-22T09:47:17",
+  "generatedAt": "2026-07-22T09:52:24",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
+    "waitingWorker": 1,
     "working": 2,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 60,
     "alerts": 1
   },
@@ -15,10 +15,10 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -29,7 +29,7 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 2,
         "result": null
       },
@@ -53,9 +53,14 @@
           "time": "2026-07-22 09:43:43",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-07-22 09:51:26",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-22 09:43:43"
+      "lastUpdate": "2026-07-22 09:51:26"
     },
     {
       "jobId": "Jclarify-race",
@@ -3407,6 +3412,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-22 09:51:33",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
+    },
+    {
       "time": "2026-07-22 09:46:27",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3516,12 +3527,6 @@
     },
     {
       "time": "2026-07-21 17:59:25",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-21 17:39:09",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
