@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>브리핑 · 보고서 mermaid 차트 렌더</title>
+<style>
+:root{--primary:#0064ff;--primary-dark:#0050cc;--green:#0caf60;--amber:#a16207;--rose:#e11d48;
+--bg:#f5f5f7;--surface:#fff;--surface-2:#fafafb;--text:#0f1419;--text-2:#525866;--text-3:#8e96a3;--border:#e4e6ea;--code:#f3f5f8;
+--font:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"JetBrains Mono",Consolas,monospace;}
+@media (prefers-color-scheme:dark){:root{--bg:#0c0e12;--surface:#14171d;--surface-2:#1a1e26;--text:#e7ebf0;--text-2:#9aa3b0;--text-3:#6b7280;--border:#252a33;--code:#1a1e26;--primary:#3d8bff;--primary-dark:#5b9dff;--green:#25c07a;--amber:#d4a12a;--rose:#ff5d7d;}}
+*{box-sizing:border-box;}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px 70px;}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:0 8px 24px rgba(15,20,25,.06);padding:44px 48px;}
+.eye{font-size:11px;font-weight:800;letter-spacing:.09em;color:var(--primary);text-transform:uppercase;}
+h1{font-size:32px;font-weight:800;margin:.3em 0 .1em;}.sub{color:var(--text-2);font-size:14px;margin:0 0 8px;}
+.summary{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 8px;}
+.stat{background:var(--surface-2);border:1px solid var(--border);border-radius:999px;padding:5px 13px;font-size:13px;font-weight:700;}
+.stat b{color:var(--primary);}
+hr{border:0;border-top:1px solid var(--border);margin:28px 0;}
+.job{border-top:1px solid var(--border);padding-top:22px;margin-top:22px;}.job:first-of-type{border-top:0;margin-top:8px;}
+.jhead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.jn{font-family:var(--mono);font-size:13px;font-weight:800;color:var(--text-3);}
+.jhead h2{font-size:21px;font-weight:800;margin:0;flex:1;}
+.meta{font-size:12.5px;color:var(--text-3);margin:2px 0 12px;}.meta code{font-family:var(--mono);}
+.block{margin:14px 0;}.block h3{font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--text-3);margin:0 0 4px;}
+.block p{margin:.4em 0;}.ph{color:var(--text-3);font-style:italic;}
+.chip{display:inline-block;font-size:12px;font-weight:800;padding:3px 12px;border-radius:999px;}
+.chip.green{background:color-mix(in srgb,var(--green) 16%,transparent);color:var(--green);}
+.chip.rose{background:color-mix(in srgb,var(--rose) 16%,transparent);color:var(--rose);}
+.chip.amber{background:color-mix(in srgb,var(--amber) 16%,transparent);color:var(--amber);}
+.chip.blue{background:color-mix(in srgb,var(--primary) 14%,transparent);color:var(--primary-dark);}
+.files{font-size:13px;color:var(--text-2);margin-top:6px;}.files code{font-family:var(--mono);background:var(--code);padding:1px 6px;border-radius:5px;font-size:12px;}
+code{font-family:var(--mono);}
+.foot{margin-top:34px;padding-top:16px;border-top:1px solid var(--border);font-size:12.5px;color:var(--text-3);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.foot a{color:var(--primary-dark);}
+@page{size:A4;margin:14mm;}@media print{body{background:#fff;}.card{box-shadow:none;border:0;padding:0;}}
+</style></head><body><div class="wrap"><article class="card">
+<div class="eye">claude-duo · 자동 브리핑</div>
+<h1>보고서 mermaid 차트 렌더</h1>
+<p class="sub">스트림 <code>report-viz</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
+<div class="summary">
+  <span class="stat">전체 <b>1</b></span>
+  <span class="stat">완료 <b>0</b></span>
+  <span class="stat">주의 <b>1</b></span>
+  <span class="stat">갱신 2026-07-22 10:11:10</span>
+</div>
+<hr>
+<section class="job">
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jmermaid-render_R03 — 닫히지 않은 ```mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2 미이행 재발주)</h2><span class="chip rose">재작업 한도</span></div>
+  <div class="meta"><code>Jmermaid-render</code> · R4 · 갱신 2026-07-22 10:11:09</div>
+  <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
+  
+  <div class="block"><h3>작업 결과</h3><p>`target_dir`(`D:\01_Projects\AI_Control\agent_office_v2`)를 열어 ORDER 의 &quot;할 일&quot;(mermaid `xychart-beta`·<br>`pie` 펜스를 실제 시각 차트로 렌더)을 확인했다. **요청된 구현은 이미 `conductor/static/ceo.dc.html` 에<br>완전히 존재**한다(도입 커밋 `c727bd5`, 이전 R1 라운드에서 작성되어 R2 재검증을 거쳤고, 이번 R3 시점까지<br>`git diff c727bd5 HEAD -- conductor/static/ceo.dc.html` 출력이 **완전히 비어 있어** — 즉 그 이후 세션들이<br>이 파일을 전혀 건드리지 않아 — 코드가 그대로 유지되고 있음을 확인했다).</p>
+<p>이번 R3 라운드는 **코드를 추가로 수정하지 않았다**(수정할 결함을 발견하지 못함). 대신 R1/R2 보다 검증<br>강도를 한 단계 올려, 아래 순서로 **&quot;코드를 손으로 베끼지 않고 실제 파일에서 그대로 추출해, 실제 서버가<br>들고 있는 실제 보고서 데이터로 end-to-end 실행&quot;**하는 독립 재현을 수행했다:</p>
+<p>1. `parseMermaidChart`/`_parseXYChart`/`_parsePieChart` 세 메서드를 `conductor/static/ceo.dc.html` 의<br>   3068~3123행에서 `sed`로 **그대로(바이트 단위) 추출**해 임시 하네스(`_r3_parser_harness.js`, 리포 밖)에<br>   싸넣고, 실행 중인 서버(`http://127.0.0.1:8893`)에서 **실제로** `/api/missions/52b111ac10ac/report` 를<br>   호출해 받은 markdown 원문에서 mermaid 펜스를 정규식으로 잘라 그 추출 코드에 통과시켰다. 결과가 기대값과<br>   완전히 일치함을 확인했다(AC-01 증거).<br>2. `CHART_PALETTE`/`fmtChartNum`/`mkChartTitle`/`renderXYChart`/`renderPieChart`/`renderChart` 여섯 개를<br>   4026~4106행에서 동일하게 **그대로 추출**해(`_r3_render_extract_raw.js`), `mkLine`/`bStyles`/`NOOP` 세<br>   의존성만 최소 스텁으로 채운 뒤 `new Function(...)` 으로 감싸 실행했다(1단계에서 파싱한 실제 데이터를<br>   입력으로). **막대 폭…</p><div class='files'>변경 파일: <code>ceo.dc.html</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 3회 · 러너 결과 <b>REWORK-CAP</b></p></div>
+  
+</section>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-22 10:11:10</span></div>
+</article></div></body></html>

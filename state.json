@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T10:11:01",
+  "generatedAt": "2026-07-22T10:12:08",
   "counts": {
     "active": 4,
     "waitingWorker": 2,
@@ -28,10 +28,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 3,
-        "result": null
+        "result": "REWORK-CAP"
       },
       "timeline": [
         {
@@ -3378,6 +3378,11 @@
       "file": "Jdashboard-done-calendar_autorun-verify-nopass.md",
       "jobId": "Jdashboard-done-calendar",
       "cause": "autorun-verify-nopass"
+    },
+    {
+      "file": "Jmermaid-render_autorun-roundcap.md",
+      "jobId": "Jmermaid-render",
+      "cause": "autorun-roundcap"
     },
     {
       "file": "Jneo4j-durable_autorun-worker-fail.md",
