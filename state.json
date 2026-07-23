@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-24T08:12:09",
+  "generatedAt": "2026-07-24T08:15:16",
   "counts": {
     "active": 5,
     "waitingWorker": 2,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 60,
     "alerts": 1
   },
@@ -15,21 +15,21 @@
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": null
       },
@@ -43,9 +43,14 @@
           "time": "2026-07-24 08:11:19",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-24 08:15:00",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-24 08:11:19"
+      "lastUpdate": "2026-07-24 08:15:00"
     },
     {
       "jobId": "Jmermaid-render",
@@ -3475,6 +3480,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-24 08:15:08",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
+    },
+    {
+      "time": "2026-07-24 08:14:21",
+      "command": "handoff-auto",
+      "panel": "16_cosmos-knowledge",
+      "text": "cosmos-knowledge 프로젝트의 콘텐츠 및 기존 config/hubs.json 구조를 다각도로 분석한 결과, 현재 12개로 파편화된 카…"
+    },
+    {
       "time": "2026-07-24 08:11:25",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3581,18 +3598,6 @@
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-21 19:18:09",
-      "command": "handoff-auto",
-      "panel": "15_orca",
-      "text": "/handoff-auto 내 d:\\는 옵시디언 vault내에서 rag하도록 되어 있는데 좀 더 정확한 rag를 위해서 graphRAG 그러니깐 …"
-    },
-    {
-      "time": "2026-07-21 19:00:16",
-      "command": "handoff-auto",
-      "panel": "agent_office_v3",
-      "text": "/handoff-auto agent office v3의 HANDOFF.md 읽고, UI/UX design을 만들려고하는데 너가 우선 agent …"
     }
   ]
 }
