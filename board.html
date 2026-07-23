@@ -71,32 +71,70 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-22 10:12:08 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-24 08:12:10 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-22T10:12:08",
+  "generatedAt": "2026-07-24T08:12:09",
   "counts": {
-    "active": 4,
+    "active": 5,
     "waitingWorker": 2,
-    "working": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 60,
     "alerts": 1
   },
   "jobs": [
     {
+      "jobId": "Jmermaid-flush",
+      "title": "ORDER_Jmermaid-flush_R01 — mdLines: 미닫힘 mermaid 펜스 버퍼 flush(내용 소실 방지)",
+      "project": "agent_office_v2",
+      "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-24 08:11:17",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-24 08:11:19",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-24 08:11:19"
+    },
+    {
       "jobId": "Jmermaid-render",
-      "title": "ORDER_Jmermaid-render_R03 — 닫히지 않은 ```mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2 미이행 재발주)",
+      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
       "project": "agent_office_v2",
       "targetDir": "D:\\01_Projects\\AI_Control\\agent_office_v2",
       "round": 4,
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -3511,6 +3549,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-24 08:11:25",
+      "command": "handoff-auto",
+      "panel": "agent_office_v2",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-22 09:55:58",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
@@ -3623,12 +3667,6 @@
       "command": "handoff-auto",
       "panel": "agent_office_v3",
       "text": "/handoff-auto agent office v3의 HANDOFF.md 읽고, UI/UX design을 만들려고하는데 너가 우선 agent …"
-    },
-    {
-      "time": "2026-07-21 18:35:40",
-      "command": "handoff-check",
-      "panel": "15_orca",
-      "text": "<task-notification> <task-id>wsh1rwx9h</task-id> <tool-use-id>toolu_01RJNuCbLQxZ…"
     }
   ]
 };</script>
