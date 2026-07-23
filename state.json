@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-24T08:35:52",
+  "generatedAt": "2026-07-24T08:39:57",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
+    "waitingWorker": 2,
     "working": 2,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 61,
     "alerts": 1
   },
@@ -15,10 +15,10 @@
       "project": "16_cosmos-knowledge",
       "targetDir": "D:\\01_Projects\\16_cosmos-knowledge",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -29,7 +29,7 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 2,
         "result": null
       },
@@ -53,9 +53,14 @@
           "time": "2026-07-24 08:34:35",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-07-24 08:38:59",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-24 08:34:35"
+      "lastUpdate": "2026-07-24 08:38:59"
     },
     {
       "jobId": "Jmermaid-flush",
