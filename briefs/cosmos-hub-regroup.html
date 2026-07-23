@@ -38,19 +38,21 @@ code{font-family:var(--mono);}
 <p class="sub">스트림 <code>cosmos-hub-regroup</code> · 연장선 문서(작업이 이어질수록 이 문서가 갱신됩니다)</p>
 <div class="summary">
   <span class="stat">전체 <b>1</b></span>
-  <span class="stat">완료 <b>0</b></span>
+  <span class="stat">완료 <b>1</b></span>
   <span class="stat">주의 <b>0</b></span>
-  <span class="stat">갱신 2026-07-24 08:21:20</span>
+  <span class="stat">갱신 2026-07-24 08:43:40</span>
 </div>
 <hr>
 <section class="job">
-  <div class="jhead"><span class="jn">#1</span><h2>Jcosmos-hub-regroup</h2><span class="chip blue">발주됨</span></div>
-  <div class="meta"><code>Jcosmos-hub-regroup</code> · R1 · 갱신 2026-07-24 08:21:20</div>
-  <div class="block"><h3>기획 요약</h3><p>(배경 없음)</p></div>
+  <div class="jhead"><span class="jn">#1</span><h2>ORDER_Jcosmos-hub-regroup_R01 — 카테고리 13개를 4개 그룹으로 묶는 UI 그룹핑 레이어 (파일 무이동)</h2><span class="chip green">완료</span></div>
+  <div class="meta"><code>Jcosmos-hub-regroup</code> · R2 · 갱신 2026-07-24 08:43:39</div>
+  <div class="block"><h3>기획 요약</h3><p>Cosmos Knowledge(공개 지식정원 SPA)의 상위 카테고리(허브)가 13개로 늘어 홈 타일·사이드바 탐색기가 파편화됐다. 방문자(채용 담당자·개발자)의 인지 부하를 줄이기 위해 **13개 허브를 4개 그룹으로 묶어 보여주는 UI 그룹핑 레이어**를 얹는다.</p></div>
   
-  <div class="block"><h3>작업 결과</h3><p>(보고 대기 중)</p></div>
-  <div class="block"><h3>검토 판정</h3><p>수락 0회 · 재작업 0회</p></div>
-  
+  <div class="block"><h3>작업 결과</h3><p>이번 R2 라운드 착수 시점에 이미 ORDER의 T1~T4 구현이 **세션 시작 이전부터 전량 완료돼 있었다**<br>(이전 라운드 `_autorun_report_R1.md`가 동일 작업을 DONE으로 이미 보고했고, 대화 시작 시점의<br>git status에도 `config/hub-groups.json`이 이미 untracked로 존재했다). 즉 R1이 실제 구현을 마쳤고,<br>이번 R2는 그 결과물이 여전히 스펙대로 유효한지 **처음부터 다시 자가검증**한 라운드다.</p>
+<p>확인 결과: `config/hub-groups.json`(4그룹 정의, github-repos 포함 13허브 전량 매핑),<br>`build-content.mjs`의 GROUPS try/catch 로딩+출력, `site/app.js`의 `folderGroups()` 헬퍼·<br>`homeTiles()`·`explorer()` 그룹 렌더·기타 폴백, `site/styles.css`의 `.tile-group`/`.tile-group-head`/<br>`.exgroup-head` 규칙 — ORDER가 요구한 형태와 정확히 일치한다. `node build-content.mjs`를 재실행해<br>`garden-data.js`를 재생성했고, AC-01~AC-08 전부 실제 명령으로 재확인해 전부 통과했다. 이번<br>라운드에서 **내가 새로 수정/생성한 파일은 없다**(AC-05 근거 — T0/T5 git status 스냅샷이 완전히<br>동일). git 커밋/푸시/배포는 하지 않았다.</p><div class='files'>변경 파일: <code>garden-data.js</code> <code>hubs.js</code> <code>hub-groups.js</code></div></div>
+  <div class="block"><h3>검토 판정</h3><p>수락 1회 · 재작업 1회 · 러너 결과 <b>ACCEPTED</b></p></div>
+  <div class='block'><h3>미해결 질문</h3><p>- **브라우저 실렌더 검증은 이번 무인 라운드 범위 밖이다.** AC-07/08은 코드 수준(문자열 매치) 확인일<br>  뿐, 실제로 `server.mjs`를 띄워 홈 화면의 그룹 섹션 4개(+기타, 있다면)와 탐색기의 그룹 라벨이<br>  시각적으로 올바르게 렌더되는지, 라이트/다크 테마 전환·언어 토글(ko/en)이 그룹 라벨에도 정상<br>  반영되는지는 사람이 배포 전 육안으로 확인해야 한다. `server.mjs` 실행은 forbidden_paths에 있어<br>  이번 라운드에서도 시도하지 않았다.<br>- 외부 2AI 교차검증(codex 쿼터 장애)이 이번 라운드에서도 생략됐다는 점은 ORDER의 `auto_verify: false`<br>  그대로이며, 별도 확인은 필요 없다.<br>- 왜 동일 ORDER가 R1에 이어 R2로 재발주됐는지(핸드오프 릴레이 유실, 재확인 요청 등)는 이 워커<br>  세션이 알 수 있는 범위 밖이다 — 기획 세션이 판단할 사안으로 남긴다.</p>
+<p>&lt;!-- END-OF-DOC --&gt;</p></div>
 </section>
-<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-24 08:21:20</span></div>
+<div class="foot"><span>관제 보드: <a href="http://localhost:8895">http://localhost:8895</a></span><span>생성: render-brief.ps1 · 2026-07-24 08:43:40</span></div>
 </article></div></body></html>
