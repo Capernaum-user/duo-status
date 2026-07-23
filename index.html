@@ -33,7 +33,7 @@ ul{margin:8px 0 0;padding-left:20px;}
 <h1>근성 작업 관제</h1>
 <p class="muted">파이프라인 현황 스냅샷 · 2분마다 자동 재로드</p>
 <div class="summary">
-  <span class="stat">진행 <b>4</b></span>
+  <span class="stat">진행 <b>5</b></span>
   <span class="stat">워커대기 <b>2</b></span>
   <span class="stat">검토대기 <b>0</b></span>
   <span class="stat">완료 <b>61</b></span>
@@ -43,11 +43,11 @@ ul{margin:8px 0 0;padding-left:20px;}
 <table>
   <thead><tr><th>jobId</th><th>제목</th><th>상태</th><th>갱신</th></tr></thead>
   <tbody>
+      <tr><td><code>Jcosmos-hub-regroup</code></td><td>ORDER_Jcosmos-hub-regroup_R01 — 카테고리 13개를 4개 그룹으로 묶는 UI 그룹핑 레이어 (파일 무이동)</td><td>작업 중</td><td>2026-07-24 08:21:22</td></tr>
       <tr><td><code>Jmermaid-flush</code></td><td>ORDER_Jmermaid-flush_R01 — mdLines: 미닫힘 mermaid 펜스 버퍼 flush(내용 소실 방지)</td><td>완료</td><td>2026-07-24 08:18:01</td></tr>
       <tr><td><code>Jmermaid-render</code></td><td>ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)</td><td>발주됨 [확인필요]</td><td>2026-07-22 10:10:33</td></tr>
       <tr><td><code>Jclarify-race</code></td><td>ORDER_Jclarify-race_R01 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)</td><td>완료</td><td>2026-07-22 02:21:18</td></tr>
       <tr><td><code>Jclarify-noautopop</code></td><td>ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)</td><td>발주됨 [확인필요]</td><td>2026-07-22 00:49:26</td></tr>
-      <tr><td><code>Jneo4j-durable</code></td><td>ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유</td><td>작업 중</td><td>2026-07-22 00:11:51</td></tr>
   </tbody>
 </table>
 <h3>브리핑</h3>
@@ -55,6 +55,7 @@ ul{margin:8px 0 0;padding-left:20px;}
       <li><a href="briefs/brief-standard.html">brief-standard.html</a></li>
       <li><a href="briefs/ceo-filing-cabinet.html">ceo-filing-cabinet.html</a></li>
       <li><a href="briefs/clarify-ux.html">clarify-ux.html</a></li>
+      <li><a href="briefs/cosmos-hub-regroup.html">cosmos-hub-regroup.html</a></li>
       <li><a href="briefs/cosmos-landing-explainer.html">cosmos-landing-explainer.html</a></li>
       <li><a href="briefs/dashboard-done-calendar.html">dashboard-done-calendar.html</a></li>
       <li><a href="briefs/dashboard-mobile.html">dashboard-mobile.html</a></li>
@@ -74,5 +75,5 @@ ul{margin:8px 0 0;padding-left:20px;}
   <a class="sec" href="state.json">state.json (API)</a>
   <a class="sec" href="https://github.com/Capernaum-user/duo-status/issues/new?labels=cmd&template=command.yml">📱 새 작업 지시</a>
 </div>
-<div class="foot">마지막 발행 2026-07-24 08:19:29 · 원본 상태 생성 2026-07-24T08:19:29</div>
+<div class="foot">마지막 발행 2026-07-24 08:21:35 · 원본 상태 생성 2026-07-24T08:21:34</div>
 </div></div></body></html>
