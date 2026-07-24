@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-25T01:32:39",
+  "generatedAt": "2026-07-25T02:27:47",
   "counts": {
     "active": 5,
     "waitingWorker": 2,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 61,
     "alerts": 1
   },
@@ -15,15 +15,15 @@
       "project": "in",
       "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
       "round": 2,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -68,9 +68,14 @@
           "time": "2026-07-25 01:31:37",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-07-25 02:26:59",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-25 01:31:37"
+      "lastUpdate": "2026-07-25 02:26:59"
     },
     {
       "jobId": "Jcosmos-hub-regroup",
@@ -3553,6 +3558,24 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 01:51:27",
+      "command": "handoff-verify",
+      "panel": "ObsidianVault",
+      "text": "--- created_at: \"2026-07-24\" updated_at: \"2026-07-24\" project: \"harness\" type: \"…"
+    },
+    {
+      "time": "2026-07-25 01:44:12",
+      "command": "handoff-verify",
+      "panel": "ObsidianVault",
+      "text": "--- created_at: \"2026-07-24\" updated_at: \"2026-07-24\" project: \"harness\" type: \"…"
+    },
+    {
+      "time": "2026-07-25 01:33:58",
+      "command": "handoff-check",
+      "panel": "21_whitepetshop",
+      "text": "다른 패널에서 /check했어. 끝나면 너에게 뭐라고 해야돼?"
+    },
+    {
       "time": "2026-07-25 01:30:33",
       "command": "handoff-check",
       "panel": "21_whitepetshop",
@@ -3650,24 +3673,6 @@
     },
     {
       "time": "2026-07-22 00:36:57",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-22 00:22:12",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-22 00:11:57",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-22 00:01:13",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
