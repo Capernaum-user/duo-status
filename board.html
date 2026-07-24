@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 01:28:32 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 01:32:39 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-25T01:28:32",
+  "generatedAt": "2026-07-25T01:32:39",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
-    "working": 2,
+    "waitingWorker": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 61,
     "alerts": 1
@@ -85,18 +85,18 @@
   "jobs": [
     {
       "jobId": "Jwhitepetshop-in",
-      "title": "ORDER_Jwhitepetshop-in_R01 — IN(사장앱) 트랙 R1: Phase 1 와이어프레임 + IN-G3 기술 스파이크 계획",
+      "title": "ORDER_Jwhitepetshop-in_R02 — IN Phase 1: 레이펫 사장앱(흐름 C) 안드로이드 네이티브 구현",
       "project": "in",
       "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
       "round": 2,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -137,9 +137,14 @@
           "time": "2026-07-25 01:27:25",
           "state": "PLANNED",
           "round": 2
+        },
+        {
+          "time": "2026-07-25 01:31:37",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-25 01:27:25"
+      "lastUpdate": "2026-07-25 01:31:37"
     },
     {
       "jobId": "Jcosmos-hub-regroup",
@@ -3622,6 +3627,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 01:30:33",
+      "command": "handoff-check",
+      "panel": "21_whitepetshop",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-25 01:23:54",
       "command": "handoff-auto",
       "panel": "ObsidianVault",
@@ -3731,12 +3742,6 @@
     },
     {
       "time": "2026-07-22 00:01:13",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-21 20:48:55",
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
