@@ -71,14 +71,14 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 19:36:12 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 19:54:20 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-25T19:36:12",
+  "generatedAt": "2026-07-25T19:54:20",
   "counts": {
     "active": 1,
     "waitingWorker": 0,
-    "working": 1,
-    "waitingReview": 0,
+    "working": 0,
+    "waitingReview": 1,
     "done": 73,
     "alerts": 0
   },
@@ -89,15 +89,15 @@
       "project": "in",
       "targetDir": "<local>",
       "round": 9,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -282,9 +282,14 @@
           "time": "2026-07-25 19:35:26",
           "state": "CLAIMED",
           "round": 9
+        },
+        {
+          "time": "2026-07-25 19:53:58",
+          "state": "DONE",
+          "round": 9
         }
       ],
-      "lastUpdate": "2026-07-25 19:35:26"
+      "lastUpdate": "2026-07-25 19:53:58"
     },
     {
       "jobId": "Jproject-28-p0",
@@ -4148,6 +4153,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 19:39:23",
+      "command": "handoff-review",
+      "panel": "app",
+      "text": "레이펫 어플에 픽업일경우 주소입력란에 주소 입력할 수 있게 선택형 주소와 입력형 주소로 선택형주소는 시와 구 정도로하고 시와 구를 선택하면 나머…"
+    },
+    {
       "time": "2026-07-25 19:34:49",
       "command": "handoff-check",
       "panel": "app",
@@ -4260,12 +4271,6 @@
       "command": "handoff-auto",
       "panel": "claude-handoff",
       "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
-    },
-    {
-      "time": "2026-07-25 14:36:23",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     }
   ]
 };</script>
