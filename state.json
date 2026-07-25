@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-25T15:34:00",
+  "generatedAt": "2026-07-25T15:35:04",
   "counts": {
-    "active": 6,
+    "active": 7,
     "waitingWorker": 4,
-    "working": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 67,
     "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jduo-relay-cleanup",
+      "title": "ORDER_Jduo-relay-cleanup_R01 — 릴레이 상태 소급 보정 + 고아 ORDER·잔여 에스컬레이션 회수",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-07-25 15:34:31",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:34:34",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:34:34"
+    },
     {
       "jobId": "Jduo-board-render",
       "title": "ORDER_Jduo-board-render_R02 — 완료 더미의 에스컬레이션 침범 제거 + 큐 상단 캔버스 이탈 방지",
@@ -3931,6 +3969,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 15:34:55",
+      "command": "handoff-check",
+      "panel": "project-30",
+      "text": "/check"
+    },
+    {
+      "time": "2026-07-25 15:34:40",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-25 15:28:10",
       "command": "handoff-auto",
       "panel": "claude-handoff",
@@ -4037,18 +4087,6 @@
       "command": "handoff-check",
       "panel": "project-17",
       "text": "No pending order targets this project (<local>"
-    },
-    {
-      "time": "2026-07-25 12:21:40",
-      "command": "handoff-check",
-      "panel": "project-17",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-25 11:30:09",
-      "command": "handoff-review",
-      "panel": "app",
-      "text": "/handoff-review"
     }
   ]
 }
