@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-07-25T17:32:21",
+  "generatedAt": "2026-07-25T17:39:27",
   "counts": {
-    "active": 1,
+    "active": 0,
     "waitingWorker": 0,
     "working": 0,
-    "waitingReview": 1,
-    "done": 69,
+    "waitingReview": 0,
+    "done": 70,
     "alerts": 4
   },
   "jobs": [
     {
-      "jobId": "Jduo-history-purge",
-      "title": "ORDER_Jduo-history-purge_R02 — 옛 sha 접근성 재검증 + 단명 프로세스 정체 규명",
-      "project": "project-30",
+      "jobId": "Jproject-23-in",
+      "title": "ORDER_Jproject-23-in_R07 — 연락처 일괄 가져오기: \"강아지이름(견종)\" 패턴 자동 해석 (v1.4)",
+      "project": "in",
       "targetDir": "<local>",
-      "round": 2,
+      "round": 7,
       "stage": "ACCEPTED",
       "stageIndex": 5,
       "stageLabel": "완료",
@@ -24,64 +24,6 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-25 14:39:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 14:52:22",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:02:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:07:02",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:35:36",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:43:20",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 17:32:05",
-          "state": "ACCEPTED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-07-25 17:32:05"
-    },
-    {
-      "jobId": "Jproject-23-in",
-      "title": "ORDER_Jproject-23-in_R07 — 연락처 일괄 가져오기: \"강아지이름(견종)\" 패턴 자동 해석 (v1.4)",
-      "project": "in",
-      "targetDir": "<local>",
-      "round": 7,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -231,9 +173,72 @@
           "time": "2026-07-25 17:30:08",
           "state": "DONE",
           "round": 7
+        },
+        {
+          "time": "2026-07-25 17:39:06",
+          "state": "ACCEPTED",
+          "round": 7
         }
       ],
-      "lastUpdate": "2026-07-25 17:30:08"
+      "lastUpdate": "2026-07-25 17:39:06"
+    },
+    {
+      "jobId": "Jduo-history-purge",
+      "title": "ORDER_Jduo-history-purge_R02 — 옛 sha 접근성 재검증 + 단명 프로세스 정체 규명",
+      "project": "project-30",
+      "targetDir": "<local>",
+      "round": 2,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 14:39:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 14:52:22",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:02:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:07:02",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:35:36",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:43:20",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 17:32:05",
+          "state": "ACCEPTED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-25 17:32:05"
     },
     {
       "jobId": "Jduo-relay-cleanup",
@@ -4004,6 +4009,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 17:34:58",
+      "command": "handoff-review",
+      "panel": "project-23",
+      "text": "/handoff-review"
+    },
+    {
       "time": "2026-07-25 17:27:52",
       "command": "handoff-check",
       "panel": "project-30",
@@ -4115,12 +4126,6 @@
       "time": "2026-07-25 13:43:23",
       "command": "handoff-check",
       "panel": "app",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-25 13:40:43",
-      "command": "handoff-check",
-      "panel": "project-30",
       "text": "/check"
     }
   ]
