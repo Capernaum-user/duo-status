@@ -1,14 +1,217 @@
 {
-  "generatedAt": "2026-07-25T18:42:05",
+  "generatedAt": "2026-07-25T19:36:12",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 73,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jproject-23-in",
+      "title": "ORDER_Jproject-23-in_R09 — 설정 완전 편집화 + 휴무 확장 (v1.6)",
+      "project": "in",
+      "targetDir": "<local>",
+      "round": 9,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-21 15:27:23",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 16:08:26",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:03:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:19:39",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 17:40:13",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 18:38:17",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 01:27:25",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 01:31:37",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 02:26:59",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 10:38:49",
+          "state": "ACCEPTED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 10:58:28",
+          "state": "PLANNED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 11:05:31",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 11:26:25",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 11:51:33",
+          "state": "ACCEPTED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 12:22:14",
+          "state": "PLANNED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-25 12:29:57",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-25 12:44:13",
+          "state": "DONE",
+          "round": 4
+        },
+        {
+          "time": "2026-07-25 13:04:53",
+          "state": "ACCEPTED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-25 13:39:43",
+          "state": "PLANNED",
+          "round": 5
+        },
+        {
+          "time": "2026-07-25 13:44:23",
+          "state": "CLAIMED",
+          "round": 5
+        },
+        {
+          "time": "2026-07-25 14:14:09",
+          "state": "DONE",
+          "round": 5
+        },
+        {
+          "time": "2026-07-25 14:20:30",
+          "state": "ACCEPTED",
+          "round": 5
+        },
+        {
+          "time": "2026-07-25 15:02:42",
+          "state": "PLANNED",
+          "round": 6
+        },
+        {
+          "time": "2026-07-25 16:10:15",
+          "state": "CLAIMED",
+          "round": 6
+        },
+        {
+          "time": "2026-07-25 16:29:54",
+          "state": "DONE",
+          "round": 6
+        },
+        {
+          "time": "2026-07-25 16:51:47",
+          "state": "ACCEPTED",
+          "round": 6
+        },
+        {
+          "time": "2026-07-25 17:15:32",
+          "state": "PLANNED",
+          "round": 7
+        },
+        {
+          "time": "2026-07-25 17:18:52",
+          "state": "CLAIMED",
+          "round": 7
+        },
+        {
+          "time": "2026-07-25 17:30:08",
+          "state": "DONE",
+          "round": 7
+        },
+        {
+          "time": "2026-07-25 17:39:06",
+          "state": "ACCEPTED",
+          "round": 7
+        },
+        {
+          "time": "2026-07-25 17:46:20",
+          "state": "PLANNED",
+          "round": 8
+        },
+        {
+          "time": "2026-07-25 17:47:55",
+          "state": "CLAIMED",
+          "round": 8
+        },
+        {
+          "time": "2026-07-25 18:01:28",
+          "state": "DONE",
+          "round": 8
+        },
+        {
+          "time": "2026-07-25 18:08:16",
+          "state": "ACCEPTED",
+          "round": 8
+        },
+        {
+          "time": "2026-07-25 18:09:20",
+          "state": "PLANNED",
+          "round": 9
+        },
+        {
+          "time": "2026-07-25 19:35:26",
+          "state": "CLAIMED",
+          "round": 9
+        }
+      ],
+      "lastUpdate": "2026-07-25 19:35:26"
+    },
     {
       "jobId": "Jproject-28-p0",
       "title": "ORDER_Jproject-28-p0_R03 — Phase 0a 최종 관문 2개: doctor ok:true + test p0 통과 (게이트 의미론 결함 1건 수정)",
@@ -314,204 +517,6 @@
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
-      "jobId": "Jproject-23-in",
-      "title": "ORDER_Jproject-23-in_R08 — \"오늘의 일정\" 잠금화면 알림 (v1.5)",
-      "project": "in",
-      "targetDir": "<local>",
-      "round": 9,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-21 15:27:23",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 16:08:26",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 17:03:29",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 17:19:39",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 17:40:13",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 18:38:17",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 01:27:25",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 01:31:37",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 02:26:59",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 10:38:49",
-          "state": "ACCEPTED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 10:58:28",
-          "state": "PLANNED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 11:05:31",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 11:26:25",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 11:51:33",
-          "state": "ACCEPTED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 12:22:14",
-          "state": "PLANNED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-25 12:29:57",
-          "state": "CLAIMED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-25 12:44:13",
-          "state": "DONE",
-          "round": 4
-        },
-        {
-          "time": "2026-07-25 13:04:53",
-          "state": "ACCEPTED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-25 13:39:43",
-          "state": "PLANNED",
-          "round": 5
-        },
-        {
-          "time": "2026-07-25 13:44:23",
-          "state": "CLAIMED",
-          "round": 5
-        },
-        {
-          "time": "2026-07-25 14:14:09",
-          "state": "DONE",
-          "round": 5
-        },
-        {
-          "time": "2026-07-25 14:20:30",
-          "state": "ACCEPTED",
-          "round": 5
-        },
-        {
-          "time": "2026-07-25 15:02:42",
-          "state": "PLANNED",
-          "round": 6
-        },
-        {
-          "time": "2026-07-25 16:10:15",
-          "state": "CLAIMED",
-          "round": 6
-        },
-        {
-          "time": "2026-07-25 16:29:54",
-          "state": "DONE",
-          "round": 6
-        },
-        {
-          "time": "2026-07-25 16:51:47",
-          "state": "ACCEPTED",
-          "round": 6
-        },
-        {
-          "time": "2026-07-25 17:15:32",
-          "state": "PLANNED",
-          "round": 7
-        },
-        {
-          "time": "2026-07-25 17:18:52",
-          "state": "CLAIMED",
-          "round": 7
-        },
-        {
-          "time": "2026-07-25 17:30:08",
-          "state": "DONE",
-          "round": 7
-        },
-        {
-          "time": "2026-07-25 17:39:06",
-          "state": "ACCEPTED",
-          "round": 7
-        },
-        {
-          "time": "2026-07-25 17:46:20",
-          "state": "PLANNED",
-          "round": 8
-        },
-        {
-          "time": "2026-07-25 17:47:55",
-          "state": "CLAIMED",
-          "round": 8
-        },
-        {
-          "time": "2026-07-25 18:01:28",
-          "state": "DONE",
-          "round": 8
-        },
-        {
-          "time": "2026-07-25 18:08:16",
-          "state": "ACCEPTED",
-          "round": 8
-        },
-        {
-          "time": "2026-07-25 18:09:20",
-          "state": "PLANNED",
-          "round": 9
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:09:20"
     },
     {
       "jobId": "Jduo-history-purge",
@@ -4069,6 +4074,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 19:34:49",
+      "command": "handoff-check",
+      "panel": "app",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-25 18:18:46",
       "command": "handoff-auto",
       "panel": "claude-handoff",
@@ -4181,12 +4192,6 @@
       "command": "handoff-auto",
       "panel": "claude-handoff",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-25 14:31:00",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "승인 대기 중인 러너 결함 정리하고, 지금 너가 보고했던 모든 내용에 대해서 다 처리해줘. 다만 너가 하는건 아니고 다른 ai에게 요청할거야. …"
     }
   ]
 }
