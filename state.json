@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-25T16:30:53",
+  "generatedAt": "2026-07-25T16:52:00",
   "counts": {
-    "active": 2,
+    "active": 1,
     "waitingWorker": 0,
     "working": 0,
-    "waitingReview": 2,
-    "done": 68,
+    "waitingReview": 1,
+    "done": 69,
     "alerts": 4
   },
   "jobs": [
@@ -15,15 +15,15 @@
       "project": "in",
       "targetDir": "<local>",
       "round": 6,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -153,9 +153,14 @@
           "time": "2026-07-25 16:29:54",
           "state": "DONE",
           "round": 6
+        },
+        {
+          "time": "2026-07-25 16:51:47",
+          "state": "ACCEPTED",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-07-25 16:29:54"
+      "lastUpdate": "2026-07-25 16:51:47"
     },
     {
       "jobId": "Jduo-relay-cleanup",
@@ -3979,6 +3984,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 16:50:05",
+      "command": "handoff-check",
+      "panel": "app",
+      "text": "지금은 돈이 없어서 결제까지는 못했지만 거의 다 작성했어. 그리고 /check해서 끝났고"
+    },
+    {
       "time": "2026-07-25 16:09:40",
       "command": "handoff-check",
       "panel": "app",
@@ -4091,12 +4102,6 @@
       "command": "handoff-check",
       "panel": "project-23",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-25 12:28:04",
-      "command": "handoff-review",
-      "panel": "app",
-      "text": "/handoff-review"
     }
   ]
 }
