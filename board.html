@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 17:46:31 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 17:48:35 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-25T17:46:31",
+  "generatedAt": "2026-07-25T17:48:35",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 69,
     "alerts": 4
@@ -85,18 +85,18 @@
   "jobs": [
     {
       "jobId": "Jproject-23-in",
-      "title": "ORDER_Jproject-23-in_R07 — 연락처 일괄 가져오기: \"강아지이름(견종)\" 패턴 자동 해석 (v1.4)",
+      "title": "ORDER_Jproject-23-in_R08 — \"오늘의 일정\" 잠금화면 알림 (v1.5)",
       "project": "in",
       "targetDir": "<local>",
       "round": 8,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -257,9 +257,14 @@
           "time": "2026-07-25 17:46:20",
           "state": "PLANNED",
           "round": 8
+        },
+        {
+          "time": "2026-07-25 17:47:55",
+          "state": "CLAIMED",
+          "round": 8
         }
       ],
-      "lastUpdate": "2026-07-25 17:46:20"
+      "lastUpdate": "2026-07-25 17:47:55"
     },
     {
       "jobId": "Jduo-history-purge",
@@ -4088,6 +4093,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 17:47:22",
+      "command": "handoff-check",
+      "panel": "app",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-25 17:34:58",
       "command": "handoff-review",
       "panel": "project-23",
@@ -4200,12 +4211,6 @@
       "command": "handoff-review",
       "panel": "project-23",
       "text": "/handoff-review"
-    },
-    {
-      "time": "2026-07-25 13:43:23",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "/check"
     }
   ]
 };</script>
