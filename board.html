@@ -71,66 +71,33 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 00:56:26 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 01:02:31 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-26T00:56:26",
+  "generatedAt": "2026-07-26T01:02:30",
   "counts": {
     "active": 2,
     "waitingWorker": 0,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 73,
     "alerts": 0
   },
   "jobs": [
-    {
-      "jobId": "Jao3-p0-boundary-hardening",
-      "title": "ORDER_Jao3-p0-boundary-hardening_R1 — v2→v3 결합 P0: 경계 하드닝(라이브 v2 읽기 제거·guard 강화·limits 데이터화·Belief orphan_policy 재평가)",
-      "project": "ontology",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-25 23:40:16",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 00:55:57",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-26 00:55:57"
-    },
     {
       "jobId": "Jproject-23-in",
       "title": "ORDER_Jproject-23-in_R12 — 반려견 프로필·예약 연결·반려견별 이력 (v1.9)",
       "project": "in",
       "targetDir": "<local>",
       "round": 12,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -375,9 +342,47 @@
           "time": "2026-07-26 00:24:59",
           "state": "CLAIMED",
           "round": 12
+        },
+        {
+          "time": "2026-07-26 01:02:06",
+          "state": "DONE",
+          "round": 12
         }
       ],
-      "lastUpdate": "2026-07-26 00:24:59"
+      "lastUpdate": "2026-07-26 01:02:06"
+    },
+    {
+      "jobId": "Jao3-p0-boundary-hardening",
+      "title": "ORDER_Jao3-p0-boundary-hardening_R1 — v2→v3 결합 P0: 경계 하드닝(라이브 v2 읽기 제거·guard 강화·limits 데이터화·Belief orphan_policy 재평가)",
+      "project": "ontology",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 23:40:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 00:55:57",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 00:55:57"
     },
     {
       "jobId": "Jproject-28-p0",
