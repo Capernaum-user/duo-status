@@ -1,463 +1,28 @@
 {
-  "generatedAt": "2026-07-25T16:03:40",
+  "generatedAt": "2026-07-25T16:10:46",
   "counts": {
     "active": 2,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 1,
     "done": 68,
     "alerts": 4
   },
   "jobs": [
     {
-      "jobId": "Jduo-relay-cleanup",
-      "title": "ORDER_Jduo-relay-cleanup_R01 — 릴레이 상태 소급 보정 + 고아 ORDER·잔여 에스컬레이션 회수",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-25 15:34:31",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:34:34",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:42:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:46:47",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:46:47"
-    },
-    {
-      "jobId": "Jduo-history-purge",
-      "title": "ORDER_Jduo-history-purge_R02 — 옛 sha 접근성 재검증 + 단명 프로세스 정체 규명",
-      "project": "project-30",
-      "targetDir": "<local>",
-      "round": 2,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-25 14:39:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 14:52:22",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:02:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:07:02",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:35:36",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:43:20",
-          "state": "DONE",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:43:20"
-    },
-    {
-      "jobId": "Jmermaid-render",
-      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
-      "project": "project-33",
-      "targetDir": "<local>",
-      "round": 4,
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
-      "flags": {
-        "escalated": true,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 3,
-        "result": "REWORK-CAP"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-22 09:28:56",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 09:28:58",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 09:38:53",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 09:43:43",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:51:26",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:55:18",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:02:40",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:08:32",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-07-22 10:10:33",
-          "state": "PLANNED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:38:15"
-    },
-    {
-      "jobId": "Jclarify-noautopop",
-      "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
-      "project": "project-33",
-      "targetDir": "<local>",
-      "round": 3,
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
-      "flags": {
-        "escalated": true,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 2,
-        "result": "REWORK-CAP"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-22 00:01:06",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:01:08",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:07:09",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:10:57",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:22:06",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:22:08",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:27:54",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:32:03",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 00:42:06",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 00:49:26",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:38:15"
-    },
-    {
-      "jobId": "Jproject-28-p0",
-      "title": "ORDER_Jproject-28-p0_R02 — Phase 0a 마무리: 결함 3건 수정 + 미실행 단계 실행",
-      "project": "project-28",
-      "targetDir": "<local>",
-      "round": 2,
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
-      "flags": {
-        "escalated": true,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "DONE",
-        "decision": "INCONCLUSIVE",
-        "a": "PROTOCOL_ERROR",
-        "b": "PROTOCOL_ERROR",
-        "relayJobId": "J20260721-201009-79a5",
-        "startedAt": "2026-07-21 20:10:09",
-        "finishedAt": "2026-07-21 20:11:46",
-        "runs": 1
-      },
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:10:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:18:31",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:39:44",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-21 20:39:50",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:38:15"
-    },
-    {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-33",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
-      "flags": {
-        "escalated": true,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:38:15"
-    },
-    {
-      "jobId": "Jduo-board-render",
-      "title": "ORDER_Jduo-board-render_R02 — 완료 더미의 에스컬레이션 침범 제거 + 큐 상단 캔버스 이탈 방지",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 2,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 2,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-25 14:51:08",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 14:51:15",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:02:40",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:09:53",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:16:25",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:28:04",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:32:24",
-          "state": "ACCEPTED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:32:24"
-    },
-    {
       "jobId": "Jproject-23-in",
-      "title": "ORDER_Jproject-23-in_R05 — 실사용 피드백 1차: 키보드 대응·연락처 저장·2주 날짜/시간 선택·단계 재배열 (v1.3)",
+      "title": "ORDER_Jproject-23-in_R06 — 플레이 스토어 내부 테스트 등록 준비물 (AAB·문안·그래픽·개인정보처리방침)",
       "project": "in",
       "targetDir": "<local>",
       "round": 6,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -578,9 +143,449 @@
           "time": "2026-07-25 15:02:42",
           "state": "PLANNED",
           "round": 6
+        },
+        {
+          "time": "2026-07-25 16:10:15",
+          "state": "CLAIMED",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-07-25 15:02:42"
+      "lastUpdate": "2026-07-25 16:10:15"
+    },
+    {
+      "jobId": "Jduo-relay-cleanup",
+      "title": "ORDER_Jduo-relay-cleanup_R01 — 릴레이 상태 소급 보정 + 고아 ORDER·잔여 에스컬레이션 회수",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-25 15:34:31",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:34:34",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:42:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:46:47",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:46:47"
+    },
+    {
+      "jobId": "Jduo-history-purge",
+      "title": "ORDER_Jduo-history-purge_R02 — 옛 sha 접근성 재검증 + 단명 프로세스 정체 규명",
+      "project": "project-30",
+      "targetDir": "<local>",
+      "round": 2,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 14:39:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 14:52:22",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:02:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:07:02",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:35:36",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:43:20",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:43:20"
+    },
+    {
+      "jobId": "Jclarify-noautopop",
+      "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 3,
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 2,
+        "result": "REWORK-CAP"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-22 00:01:06",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:01:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:07:09",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:10:57",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:22:06",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:22:08",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:27:54",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:32:03",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 00:42:06",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 00:49:26",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:38:15"
+    },
+    {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:38:15"
+    },
+    {
+      "jobId": "Jproject-28-p0",
+      "title": "ORDER_Jproject-28-p0_R02 — Phase 0a 마무리: 결함 3건 수정 + 미실행 단계 실행",
+      "project": "project-28",
+      "targetDir": "<local>",
+      "round": 2,
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260721-201009-79a5",
+        "startedAt": "2026-07-21 20:10:09",
+        "finishedAt": "2026-07-21 20:11:46",
+        "runs": 1
+      },
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:10:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:18:31",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:39:44",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-21 20:39:50",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:38:15"
+    },
+    {
+      "jobId": "Jmermaid-render",
+      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 4,
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 3,
+        "result": "REWORK-CAP"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-22 09:28:56",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:28:58",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:38:53",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:43:43",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:51:26",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:55:18",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:02:40",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:08:32",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-07-22 10:10:33",
+          "state": "PLANNED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 4
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:38:15"
+    },
+    {
+      "jobId": "Jduo-board-render",
+      "title": "ORDER_Jduo-board-render_R02 — 완료 더미의 에스컬레이션 침범 제거 + 큐 상단 캔버스 이탈 방지",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 2,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 2,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-25 14:51:08",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 14:51:15",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:02:40",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:09:53",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:16:25",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:28:04",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:32:24",
+          "state": "ACCEPTED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:32:24"
     },
     {
       "jobId": "Jduo-runner-repair",
@@ -3969,6 +3974,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 16:09:40",
+      "command": "handoff-check",
+      "panel": "app",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-25 15:34:55",
       "command": "handoff-check",
       "panel": "project-30",
@@ -4081,12 +4092,6 @@
       "command": "handoff-review",
       "panel": "app",
       "text": "/handoff-review"
-    },
-    {
-      "time": "2026-07-25 12:26:04",
-      "command": "handoff-check",
-      "panel": "project-17",
-      "text": "No pending order targets this project (<local>"
     }
   ]
 }
