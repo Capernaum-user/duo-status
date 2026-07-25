@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-07-25T23:31:53",
+  "generatedAt": "2026-07-25T23:40:56",
   "counts": {
-    "active": 1,
-    "waitingWorker": 0,
+    "active": 2,
+    "waitingWorker": 1,
     "working": 1,
     "waitingReview": 0,
     "done": 73,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jao3-p0-boundary-hardening",
+      "title": "ORDER_Jao3-p0-boundary-hardening_R1 — v2→v3 결합 P0: 경계 하드닝(라이브 v2 읽기 제거·guard 강화·limits 데이터화·Belief orphan_policy 재평가)",
+      "project": "ontology",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 23:40:16",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 23:40:16"
+    },
     {
       "jobId": "Jproject-23-in",
       "title": "ORDER_Jproject-23-in_R11 — 조회 캘린더·오늘 표시·수동 소요시간(1시간 기본, ±30분) (v1.8)",
@@ -4114,6 +4142,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 23:34:25",
+      "command": "handoff-auto",
+      "panel": "project-33",
+      "text": "그러면 너는 그걸 바탕으로 기획자이자 감독자가되어서 다른 ai에게 기획된 내용을 전달하고 완성시킨 작업을 너가 검토하고 다시 다음 작업을 ai에…"
+    },
+    {
       "time": "2026-07-25 23:30:51",
       "command": "handoff-check",
       "panel": "app",
@@ -4226,12 +4260,6 @@
       "command": "handoff-auto",
       "panel": "claude-handoff",
       "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
-    },
-    {
-      "time": "2026-07-25 15:16:31",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     }
   ]
 }
