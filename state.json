@@ -1,14 +1,62 @@
 {
-  "generatedAt": "2026-07-25T15:35:04",
+  "generatedAt": "2026-07-25T15:36:08",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
-    "working": 3,
+    "waitingWorker": 3,
+    "working": 4,
     "waitingReview": 0,
     "done": 67,
     "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jduo-history-purge",
+      "title": "ORDER_Jduo-history-purge_R02 — 옛 sha 접근성 재검증 + 단명 프로세스 정체 규명",
+      "project": "project-30",
+      "targetDir": "<local>",
+      "round": 2,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 14:39:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 14:52:22",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:02:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:07:02",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:35:36",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:35:36"
+    },
     {
       "jobId": "Jduo-relay-cleanup",
       "title": "ORDER_Jduo-relay-cleanup_R01 — 릴레이 상태 소급 보정 + 고아 ORDER·잔여 에스컬레이션 회수",
@@ -109,49 +157,6 @@
         }
       ],
       "lastUpdate": "2026-07-25 15:32:24"
-    },
-    {
-      "jobId": "Jduo-history-purge",
-      "title": "ORDER_Jduo-history-purge_R01 — duo-status git 히스토리 재작성 (자동화 정지·복구 절차 포함)",
-      "project": "project-30",
-      "targetDir": "<local>",
-      "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-25 14:39:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 14:52:22",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:02:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:07:02",
-          "state": "REWORK",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:07:02"
     },
     {
       "jobId": "Jproject-23-in",
