@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-25T18:08:45",
+  "generatedAt": "2026-07-25T18:09:49",
   "counts": {
-    "active": 0,
-    "waitingWorker": 0,
+    "active": 1,
+    "waitingWorker": 1,
     "working": 0,
     "waitingReview": 0,
-    "done": 70,
+    "done": 69,
     "alerts": 4
   },
   "jobs": [
@@ -14,15 +14,15 @@
       "title": "ORDER_Jproject-23-in_R08 — \"오늘의 일정\" 잠금화면 알림 (v1.5)",
       "project": "in",
       "targetDir": "<local>",
-      "round": 8,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
+      "round": 9,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
@@ -198,9 +198,14 @@
           "time": "2026-07-25 18:08:16",
           "state": "ACCEPTED",
           "round": 8
+        },
+        {
+          "time": "2026-07-25 18:09:20",
+          "state": "PLANNED",
+          "round": 9
         }
       ],
-      "lastUpdate": "2026-07-25 18:08:16"
+      "lastUpdate": "2026-07-25 18:09:20"
     },
     {
       "jobId": "Jduo-history-purge",
