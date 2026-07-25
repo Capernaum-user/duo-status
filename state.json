@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-25T18:34:02",
+  "generatedAt": "2026-07-25T18:42:05",
   "counts": {
-    "active": 2,
+    "active": 1,
     "waitingWorker": 1,
     "working": 0,
-    "waitingReview": 1,
-    "done": 72,
-    "alerts": 1
+    "waitingReview": 0,
+    "done": 73,
+    "alerts": 0
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-28",
       "targetDir": "<local>",
       "round": 3,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -37,10 +37,10 @@
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": "ERROR"
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -82,9 +82,14 @@
           "time": "2026-07-25 18:33:27",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-07-25 18:41:34",
+          "state": "ACCEPTED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-25 18:33:27"
+      "lastUpdate": "2026-07-25 18:41:34"
     },
     {
       "jobId": "Jclarify-noautopop",
