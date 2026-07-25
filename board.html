@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 15:16:45 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 15:28:49 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-25T15:16:45",
+  "generatedAt": "2026-07-25T15:28:49",
   "counts": {
     "active": 7,
     "waitingWorker": 4,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 66,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
     {
@@ -89,10 +89,10 @@
       "project": "claude-handoff",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -103,7 +103,7 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 2,
         "result": null
       },
@@ -132,9 +132,14 @@
           "time": "2026-07-25 15:16:25",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-07-25 15:28:04",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-25 15:16:25"
+      "lastUpdate": "2026-07-25 15:28:04"
     },
     {
       "jobId": "Jduo-history-purge",
@@ -3995,6 +4000,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 15:28:10",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
+    },
+    {
       "time": "2026-07-25 15:16:31",
       "command": "handoff-auto",
       "panel": "claude-handoff",
@@ -4107,12 +4118,6 @@
       "command": "handoff-review",
       "panel": "app",
       "text": "/handoff-review"
-    },
-    {
-      "time": "2026-07-25 11:04:31",
-      "command": "handoff-check",
-      "panel": "in",
-      "text": "/check"
     }
   ]
 };</script>
