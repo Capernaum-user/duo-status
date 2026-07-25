@@ -71,18 +71,90 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 18:12:54 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 18:18:58 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-25T18:12:54",
+  "generatedAt": "2026-07-25T18:18:58",
   "counts": {
-    "active": 1,
+    "active": 2,
     "waitingWorker": 1,
-    "working": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 72,
-    "alerts": 1
+    "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jproject-28-p0",
+      "title": "ORDER_Jproject-28-p0_R03 — Phase 0a 최종 관문 2개: doctor ok:true + test p0 통과 (게이트 의미론 결함 1건 수정)",
+      "project": "project-28",
+      "targetDir": "<local>",
+      "round": 3,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260721-201009-79a5",
+        "startedAt": "2026-07-21 20:10:09",
+        "finishedAt": "2026-07-21 20:11:46",
+        "runs": 1
+      },
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:10:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:18:31",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:39:44",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-21 20:39:50",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 18:18:38",
+          "state": "PLANNED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 18:18:40",
+          "state": "CLAIMED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:18:40"
+    },
     {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
@@ -610,68 +682,6 @@
         }
       ],
       "lastUpdate": "2026-07-25 15:46:47"
-    },
-    {
-      "jobId": "Jproject-28-p0",
-      "title": "ORDER_Jproject-28-p0_R02 — Phase 0a 마무리: 결함 3건 수정 + 미실행 단계 실행",
-      "project": "project-28",
-      "targetDir": "<local>",
-      "round": 2,
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
-      "flags": {
-        "escalated": true,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "DONE",
-        "decision": "INCONCLUSIVE",
-        "a": "PROTOCOL_ERROR",
-        "b": "PROTOCOL_ERROR",
-        "relayJobId": "J20260721-201009-79a5",
-        "startedAt": "2026-07-21 20:10:09",
-        "finishedAt": "2026-07-21 20:11:46",
-        "runs": 1
-      },
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:10:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:18:31",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:39:44",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-21 20:39:50",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:38:15"
     },
     {
       "jobId": "Jduo-board-render",
@@ -4123,6 +4133,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 18:18:46",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-25 18:04:15",
       "command": "handoff-review",
       "panel": "app",
@@ -4235,12 +4251,6 @@
       "command": "handoff-auto",
       "panel": "claude-handoff",
       "text": "승인 대기 중인 러너 결함 정리하고, 지금 너가 보고했던 모든 내용에 대해서 다 처리해줘. 다만 너가 하는건 아니고 다른 ai에게 요청할거야. …"
-    },
-    {
-      "time": "2026-07-25 14:26:08",
-      "command": "handoff-check",
-      "panel": "project-30",
-      "text": "/check"
     }
   ]
 };</script>
