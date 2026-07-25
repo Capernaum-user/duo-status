@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-25T21:33:41",
+  "generatedAt": "2026-07-25T23:30:49",
   "counts": {
-    "active": 0,
-    "waitingWorker": 0,
+    "active": 1,
+    "waitingWorker": 1,
     "working": 0,
     "waitingReview": 0,
-    "done": 74,
+    "done": 73,
     "alerts": 0
   },
   "jobs": [
@@ -14,15 +14,15 @@
       "title": "ORDER_Jproject-23-in_R10 — 픽업 주소 입력 + 예약 완료 요약 + 월간 캘린더 (v1.7)",
       "project": "in",
       "targetDir": "<local>",
-      "round": 10,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
+      "round": 11,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
@@ -238,9 +238,14 @@
           "time": "2026-07-25 21:33:15",
           "state": "ACCEPTED",
           "round": 10
+        },
+        {
+          "time": "2026-07-25 23:30:26",
+          "state": "PLANNED",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-07-25 21:33:15"
+      "lastUpdate": "2026-07-25 23:30:26"
     },
     {
       "jobId": "Jproject-28-p0",
