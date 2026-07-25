@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-25T18:18:58",
+  "generatedAt": "2026-07-25T18:34:02",
   "counts": {
     "active": 2,
     "waitingWorker": 1,
-    "working": 1,
-    "waitingReview": 0,
+    "working": 0,
+    "waitingReview": 1,
     "done": 72,
-    "alerts": 0
+    "alerts": 1
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-28",
       "targetDir": "<local>",
       "round": 3,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,7 +38,7 @@
       },
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": "ERROR"
       },
@@ -77,9 +77,14 @@
           "time": "2026-07-25 18:18:40",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-07-25 18:33:27",
+          "state": "DONE",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-25 18:18:40"
+      "lastUpdate": "2026-07-25 18:33:27"
     },
     {
       "jobId": "Jclarify-noautopop",
