@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-07-25T15:10:40",
+  "generatedAt": "2026-07-25T15:16:45",
   "counts": {
     "active": 7,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 0,
     "done": 66,
-    "alerts": 3
+    "alerts": 2
   },
   "jobs": [
     {
       "jobId": "Jduo-board-render",
-      "title": "ORDER_Jduo-board-render_R01 — 관제 보드 토큰 겹침 해소 + 경고/주의 카운트 판정 통일",
+      "title": "ORDER_Jduo-board-render_R02 — 완료 더미의 에스컬레이션 침범 제거 + 큐 상단 캔버스 이탈 방지",
       "project": "claude-handoff",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -29,8 +29,8 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 1,
+        "phase": "worker",
+        "round": 2,
         "result": null
       },
       "timeline": [
@@ -53,9 +53,14 @@
           "time": "2026-07-25 15:09:53",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-07-25 15:16:25",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-25 15:09:53"
+      "lastUpdate": "2026-07-25 15:16:25"
     },
     {
       "jobId": "Jduo-history-purge",
@@ -3916,6 +3921,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 15:16:31",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-07-25 15:02:51",
       "command": "handoff-auto",
       "panel": "claude-handoff",
@@ -4028,12 +4039,6 @@
       "command": "handoff-check",
       "panel": "in",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-25 10:31:28",
-      "command": "handoff-review",
-      "panel": "project-23",
-      "text": "/handoff-review"
     }
   ]
 }
