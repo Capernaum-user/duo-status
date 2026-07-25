@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 23:30:49 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 23:31:53 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-25T23:30:49",
+  "generatedAt": "2026-07-25T23:31:53",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 73,
     "alerts": 0
@@ -85,18 +85,18 @@
   "jobs": [
     {
       "jobId": "Jproject-23-in",
-      "title": "ORDER_Jproject-23-in_R10 — 픽업 주소 입력 + 예약 완료 요약 + 월간 캘린더 (v1.7)",
+      "title": "ORDER_Jproject-23-in_R11 — 조회 캘린더·오늘 표시·수동 소요시간(1시간 기본, ±30분) (v1.8)",
       "project": "in",
       "targetDir": "<local>",
       "round": 11,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -317,9 +317,14 @@
           "time": "2026-07-25 23:30:26",
           "state": "PLANNED",
           "round": 11
+        },
+        {
+          "time": "2026-07-25 23:31:38",
+          "state": "CLAIMED",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-07-25 23:30:26"
+      "lastUpdate": "2026-07-25 23:31:38"
     },
     {
       "jobId": "Jproject-28-p0",
@@ -4183,6 +4188,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 23:30:51",
+      "command": "handoff-check",
+      "panel": "app",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-25 21:28:32",
       "command": "handoff-review",
       "panel": "app",
@@ -4295,12 +4306,6 @@
       "command": "handoff-auto",
       "panel": "claude-handoff",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-07-25 15:02:51",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
     }
   ]
 };</script>
