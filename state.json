@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-26T01:33:54",
+  "generatedAt": "2026-07-26T01:35:57",
   "counts": {
     "active": 2,
-    "waitingWorker": 1,
-    "working": 1,
+    "waitingWorker": 0,
+    "working": 2,
     "waitingReview": 0,
     "done": 73,
     "alerts": 0
@@ -11,18 +11,18 @@
   "jobs": [
     {
       "jobId": "Jao3-p0-boundary-hardening",
-      "title": "ORDER_Jao3-p0-boundary-hardening_R1 — v2→v3 결합 P0: 경계 하드닝(라이브 v2 읽기 제거·guard 강화·limits 데이터화·Belief orphan_policy 재평가)",
+      "title": "ORDER_Jao3-p0-boundary-hardening_R2 — v2→v3 결합 P1: 미션 사실 흡수(MissionEvent + MissionArchive)",
       "project": "ontology",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -53,9 +53,14 @@
           "time": "2026-07-26 01:33:47",
           "state": "PLANNED",
           "round": 2
+        },
+        {
+          "time": "2026-07-26 01:34:59",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-26 01:33:47"
+      "lastUpdate": "2026-07-26 01:34:59"
     },
     {
       "jobId": "Jproject-23-in",
@@ -4202,6 +4207,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 01:34:26",
+      "command": "handoff-check",
+      "panel": "project-33",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-26 01:18:21",
       "command": "handoff-check",
       "panel": "app",
@@ -4314,12 +4325,6 @@
       "command": "handoff-check",
       "panel": "project-30",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-25 17:26:10",
-      "command": "handoff-review",
-      "panel": "project-23",
-      "text": "순간 떠오른 아이디어인데 이거는 기억해뒀다가 이번 r7끝나면 나에게 알려주면돼. 어떤 아이디어냐면 스마트폰 알림기능 그러니깐 잠금화면상태에서도 …"
     }
   ]
 }
