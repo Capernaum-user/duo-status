@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-26T01:19:41",
+  "generatedAt": "2026-07-26T01:25:46",
   "counts": {
     "active": 2,
     "waitingWorker": 0,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 73,
-    "alerts": 0
+    "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jao3-p0-boundary-hardening",
+      "title": "ORDER_Jao3-p0-boundary-hardening_R1 — v2→v3 결합 P0: 경계 하드닝(라이브 v2 읽기 제거·guard 강화·limits 데이터화·Belief orphan_policy 재평가)",
+      "project": "ontology",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 23:40:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 00:55:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:24:48",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 01:24:48"
+    },
     {
       "jobId": "Jproject-23-in",
       "title": "ORDER_Jproject-23-in_R13 — 매출 화면(도넛·막대 그래프)·문자 프리필 (v2.0)",
@@ -291,39 +329,6 @@
         }
       ],
       "lastUpdate": "2026-07-26 01:19:24"
-    },
-    {
-      "jobId": "Jao3-p0-boundary-hardening",
-      "title": "ORDER_Jao3-p0-boundary-hardening_R1 — v2→v3 결합 P0: 경계 하드닝(라이브 v2 읽기 제거·guard 강화·limits 데이터화·Belief orphan_policy 재평가)",
-      "project": "ontology",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-25 23:40:16",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 00:55:57",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-26 00:55:57"
     },
     {
       "jobId": "Jproject-28-p0",
