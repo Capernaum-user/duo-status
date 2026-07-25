@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-25T11:06:19",
+  "generatedAt": "2026-07-25T11:27:34",
   "counts": {
     "active": 5,
     "waitingWorker": 2,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 61,
     "alerts": 1
   },
@@ -15,15 +15,15 @@
       "project": "in",
       "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
       "round": 3,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -88,9 +88,14 @@
           "time": "2026-07-25 11:05:31",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-07-25 11:26:25",
+          "state": "DONE",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-25 11:05:31"
+      "lastUpdate": "2026-07-25 11:26:25"
     },
     {
       "jobId": "Jcosmos-hub-regroup",
