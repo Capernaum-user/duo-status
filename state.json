@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-26T01:11:38",
+  "generatedAt": "2026-07-26T01:19:41",
   "counts": {
     "active": 2,
-    "waitingWorker": 1,
-    "working": 1,
+    "waitingWorker": 0,
+    "working": 2,
     "waitingReview": 0,
     "done": 73,
     "alerts": 0
@@ -11,18 +11,18 @@
   "jobs": [
     {
       "jobId": "Jproject-23-in",
-      "title": "ORDER_Jproject-23-in_R12 — 반려견 프로필·예약 연결·반려견별 이력 (v1.9)",
+      "title": "ORDER_Jproject-23-in_R13 — 매출 화면(도넛·막대 그래프)·문자 프리필 (v2.0)",
       "project": "in",
       "targetDir": "<local>",
       "round": 13,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -283,9 +283,14 @@
           "time": "2026-07-26 01:11:32",
           "state": "PLANNED",
           "round": 13
+        },
+        {
+          "time": "2026-07-26 01:19:24",
+          "state": "CLAIMED",
+          "round": 13
         }
       ],
-      "lastUpdate": "2026-07-26 01:11:32"
+      "lastUpdate": "2026-07-26 01:19:24"
     },
     {
       "jobId": "Jao3-p0-boundary-hardening",
@@ -4182,6 +4187,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 01:18:21",
+      "command": "handoff-check",
+      "panel": "app",
+      "text": "/check"
+    },
+    {
+      "time": "2026-07-26 01:17:31",
+      "command": "handoff-auto",
+      "panel": "claude-handoff",
+      "text": "cladue-handoff 를 좀 더 보강할게. /handoff-auto 를 시작하거나 기획해달라고 할때 다른 패널에서 /check 를 내가 직…"
+    },
+    {
       "time": "2026-07-26 01:04:12",
       "command": "handoff-review",
       "panel": "app",
@@ -4288,18 +4305,6 @@
       "command": "handoff-review",
       "panel": "project-23",
       "text": "순간 떠오른 아이디어인데 이거는 기억해뒀다가 이번 r7끝나면 나에게 알려주면돼. 어떤 아이디어냐면 스마트폰 알림기능 그러니깐 잠금화면상태에서도 …"
-    },
-    {
-      "time": "2026-07-25 17:18:18",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-25 16:50:05",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "지금은 돈이 없어서 결제까지는 못했지만 거의 다 작성했어. 그리고 /check해서 끝났고"
     }
   ]
 }
