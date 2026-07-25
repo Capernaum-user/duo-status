@@ -1,66 +1,51 @@
 {
-  "generatedAt": "2026-07-26T01:42:07",
+  "generatedAt": "2026-07-26T01:47:12",
   "counts": {
-    "active": 2,
+    "active": 3,
     "waitingWorker": 0,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 2,
     "done": 73,
     "alerts": 0
   },
   "jobs": [
     {
-      "jobId": "Jao3-p0-boundary-hardening",
-      "title": "ORDER_Jao3-p0-boundary-hardening_R2 — v2→v3 결합 P1: 미션 사실 흡수(MissionEvent + MissionArchive)",
-      "project": "ontology",
+      "jobId": "Je2e-step-one",
+      "title": "ORDER_Je2e-step-one_R01 — 1단계",
+      "project": "e2e",
       "targetDir": "<local>",
-      "round": 2,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
       "autorun": null,
       "timeline": [
         {
-          "time": "2026-07-25 23:40:16",
+          "time": "2026-07-26 01:46:40",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-26 00:55:57",
+          "time": "2026-07-26 01:46:42",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-26 01:24:48",
+          "time": "2026-07-26 01:46:42",
           "state": "DONE",
           "round": 1
-        },
-        {
-          "time": "2026-07-26 01:29:43",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 01:33:47",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-26 01:34:59",
-          "state": "CLAIMED",
-          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-26 01:34:59"
+      "lastUpdate": "2026-07-26 01:46:42"
     },
     {
       "jobId": "Jproject-23-in",
@@ -68,15 +53,15 @@
       "project": "in",
       "targetDir": "<local>",
       "round": 13,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -341,9 +326,67 @@
           "time": "2026-07-26 01:19:24",
           "state": "CLAIMED",
           "round": 13
+        },
+        {
+          "time": "2026-07-26 01:46:24",
+          "state": "DONE",
+          "round": 13
         }
       ],
-      "lastUpdate": "2026-07-26 01:19:24"
+      "lastUpdate": "2026-07-26 01:46:24"
+    },
+    {
+      "jobId": "Jao3-p0-boundary-hardening",
+      "title": "ORDER_Jao3-p0-boundary-hardening_R2 — v2→v3 결합 P1: 미션 사실 흡수(MissionEvent + MissionArchive)",
+      "project": "ontology",
+      "targetDir": "<local>",
+      "round": 2,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 23:40:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 00:55:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:24:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:29:43",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:33:47",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-26 01:34:59",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-26 01:34:59"
     },
     {
       "jobId": "Jproject-28-p0",
@@ -426,94 +469,6 @@
         }
       ],
       "lastUpdate": "2026-07-25 18:41:34"
-    },
-    {
-      "jobId": "Jclarify-noautopop",
-      "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
-      "project": "project-33",
-      "targetDir": "<local>",
-      "round": 3,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 2,
-        "result": "REWORK-CAP"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-22 00:01:06",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:01:08",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:07:09",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:10:57",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:22:06",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:22:08",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:27:54",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:32:03",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 00:42:06",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 00:49:26",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
     },
     {
       "jobId": "Jneo4j-durable",
@@ -647,6 +602,94 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 4
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
+      "jobId": "Jclarify-noautopop",
+      "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 3,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 2,
+        "result": "REWORK-CAP"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-22 00:01:06",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:01:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:07:09",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:10:57",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:22:06",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:22:08",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:27:54",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:32:03",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 00:42:06",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 00:49:26",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 3
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -1594,59 +1637,6 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "project-33",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 18:50:28",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:50:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:15:05",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:17:29",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:58:17",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 19:58:17"
-    },
-    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-33",
@@ -1705,6 +1695,59 @@
           "time": "2026-07-20 19:58:17",
           "state": "ACCEPTED",
           "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
       "lastUpdate": "2026-07-20 19:58:17"
