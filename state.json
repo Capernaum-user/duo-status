@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-25T10:39:06",
+  "generatedAt": "2026-07-25T10:59:13",
   "counts": {
-    "active": 4,
-    "waitingWorker": 2,
+    "active": 5,
+    "waitingWorker": 3,
     "working": 2,
     "waitingReview": 0,
-    "done": 62,
+    "done": 61,
     "alerts": 1
   },
   "jobs": [
@@ -14,15 +14,15 @@
       "title": "ORDER_Jwhitepetshop-in_R02 — IN Phase 1: 레이펫 사장앱(흐름 C) 안드로이드 네이티브 구현",
       "project": "in",
       "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
-      "round": 2,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
+      "round": 3,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
@@ -78,9 +78,14 @@
           "time": "2026-07-25 10:38:49",
           "state": "ACCEPTED",
           "round": 2
+        },
+        {
+          "time": "2026-07-25 10:58:28",
+          "state": "PLANNED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-25 10:38:49"
+      "lastUpdate": "2026-07-25 10:58:28"
     },
     {
       "jobId": "Jcosmos-hub-regroup",
