@@ -71,24 +71,24 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 15:43:16 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 15:44:20 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-25T15:43:16",
+  "generatedAt": "2026-07-25T15:44:20",
   "counts": {
     "active": 3,
     "waitingWorker": 1,
-    "working": 1,
-    "waitingReview": 1,
+    "working": 0,
+    "waitingReview": 2,
     "done": 67,
-    "alerts": 4
+    "alerts": 5
   },
   "jobs": [
     {
-      "jobId": "Jduo-relay-cleanup",
-      "title": "ORDER_Jduo-relay-cleanup_R01 — 릴레이 상태 소급 보정 + 고아 ORDER·잔여 에스컬레이션 회수",
-      "project": "claude-handoff",
+      "jobId": "Jduo-history-purge",
+      "title": "ORDER_Jduo-history-purge_R02 — 옛 sha 접근성 재검증 + 단명 프로세스 정체 규명",
+      "project": "project-30",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "stage": "DONE",
       "stageIndex": 3,
       "stageLabel": "보고 제출",
@@ -98,6 +98,59 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 14:39:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 14:52:22",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:02:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:07:02",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:35:36",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-25 15:43:20",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-25 15:43:20"
+    },
+    {
+      "jobId": "Jduo-relay-cleanup",
+      "title": "ORDER_Jduo-relay-cleanup_R01 — 릴레이 상태 소급 보정 + 고아 ORDER·잔여 에스컬레이션 회수",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -396,54 +449,6 @@
         }
       ],
       "lastUpdate": "2026-07-25 15:38:15"
-    },
-    {
-      "jobId": "Jduo-history-purge",
-      "title": "ORDER_Jduo-history-purge_R02 — 옛 sha 접근성 재검증 + 단명 프로세스 정체 규명",
-      "project": "project-30",
-      "targetDir": "<local>",
-      "round": 2,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-25 14:39:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 14:52:22",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:02:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:07:02",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-25 15:35:36",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-07-25 15:35:36"
     },
     {
       "jobId": "Jduo-board-render",
