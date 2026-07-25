@@ -79,8 +79,59 @@ function computeFilteredView(tokens, selDate) {
   return out;
 }
 
+/* 겹침 방지 배치 상수(배율 1.0 기준 px). 카드 44x26 + 여유 4px로 어떤 인접 슬롯도 겹치지 않는다. */
+var SLOT_COLS = 3;        // 스테이션 큐 1행당 최대 카드 수(옆 스테이션 침범 방지용 폭 제한)
+var SLOT_DX = 48;         // 같은 행 카드 중심 간 수평 간격
+var SLOT_DY = 30;         // 다음 행/스택 단 간 수직 간격
+var SLOT_BASE_LIFT = 26;  // 스테이션 중심으로부터 첫 카드까지의 기본 들어올림(라벨 +38px 아래를 침범하지 않음)
+var DONE_CAP = 8;         // 완료 선반에 개별 렌더할 최대 카드 수 — 넘으면 최상단 1장을 "외 N건"으로 접는다
+
+/* 스테이션별(완료 제외) 카드를 최대 SLOT_COLS열 그리드로 슬롯팅 + 완료 선반은 수직 스택(+상한 초과 시 접기).
+ * 반환값은 화면 좌표 헬퍼(tileToScreen)가 준 스테이션 중심점에 더할 (dx,dy) 오프셋 맵이다.
+ * offsets에 없는 jobId는 접힘으로 렌더 생략 대상(foldedIds에 포함). DOM 비의존 순수 함수 — node에서도 검증 가능. */
+function computeTokenLayout(view) {
+  view = Array.isArray(view) ? view : [];
+  var offsets = {};
+  var groups = {}, order = [];
+  view.forEach(function (t) {
+    if (t.station === 'done') return;
+    var key = (t.booth && (t.boothActive || t.boothFail) && t.stageIndex <= 2) ? 'booth' : t.station;
+    if (!groups[key]) { groups[key] = []; order.push(key); }
+    groups[key].push(t.jobId);
+  });
+  order.forEach(function (key) {
+    var ids = groups[key];
+    ids.forEach(function (jobId, i) {
+      var row = Math.floor(i / SLOT_COLS), col = i % SLOT_COLS;
+      var rowCount = Math.min(SLOT_COLS, ids.length - row * SLOT_COLS);
+      offsets[jobId] = {
+        dx: (col - (rowCount - 1) / 2) * SLOT_DX,
+        dy: -(SLOT_BASE_LIFT + row * SLOT_DY)
+      };
+    });
+  });
+
+  var doneTokens = view.filter(function (t) { return t.station === 'done'; })
+    .slice().sort(function (a, b) { return a.stackIndex - b.stackIndex; });
+  var foldedIds = [], fold = null;
+  var visibleN = doneTokens.length > DONE_CAP ? (DONE_CAP - 1) : doneTokens.length;
+  for (var i = 0; i < visibleN; i++) {
+    offsets[doneTokens[i].jobId] = { dx: 0, dy: -(SLOT_BASE_LIFT + i * SLOT_DY) };
+  }
+  if (doneTokens.length > DONE_CAP) {
+    foldedIds = doneTokens.slice(visibleN).map(function (t) { return t.jobId; });
+    fold = { count: foldedIds.length, dx: 0, dy: -(SLOT_BASE_LIFT + visibleN * SLOT_DY) };
+  }
+  return { offsets: offsets, foldedIds: foldedIds, fold: fold };
+}
+
 /* node에서 require 가능하게 export (브라우저엔 영향 없음) */
-if (typeof module !== 'undefined' && module.exports) { module.exports = { mapStateToScene: mapStateToScene, computeFilteredView: computeFilteredView }; }
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    mapStateToScene: mapStateToScene, computeFilteredView: computeFilteredView, computeTokenLayout: computeTokenLayout,
+    SLOT_COLS: SLOT_COLS, SLOT_DX: SLOT_DX, SLOT_DY: SLOT_DY, SLOT_BASE_LIFT: SLOT_BASE_LIFT, DONE_CAP: DONE_CAP
+  };
+}
 
 /* ---------------- 2. 브라우저 앱 (window 있을 때만) ---------------- */
 if (typeof window !== 'undefined' && typeof document !== 'undefined') {
@@ -114,7 +165,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
 
     var cv = $('board'), ctx = cv.getContext('2d');
     var cam = { x: 0, y: 0, scale: 1 };
-    var scene = { tokens: [], view: [], counts: {}, escalations: [], externalVerifies: [], hasAlerts: false, doneDates: [], requestDates: [] };
+    var scene = { tokens: [], view: [], counts: {}, escalations: [], externalVerifies: [], hasAlerts: false, doneDates: [], requestDates: [], layout: { offsets: {}, foldedIds: [], fold: null } };
     var pos = {};           // jobId → {x,y} 현재 화면상 타일좌표(트윈)
     var hover = null, selected = null, view = 'board', firstLoad = true, dpr = 1;
     var userAdjustedView = false; // 사용자가 직접 줌(휠/버튼/핀치)했는지 — true면 자동 줌보정 중단
@@ -149,7 +200,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     function saveSelDate() {
       try { localStorage.setItem(DFKEY, JSON.stringify({ date: selDate, savedOn: todayStr() })); } catch (e) { /* 스토리지 불가 환경 무시 */ }
     }
-    function applyFilter() { scene.view = computeFilteredView(scene.tokens, selDate); }
+    function applyFilter() { scene.view = computeFilteredView(scene.tokens, selDate); scene.layout = computeTokenLayout(scene.view); }
     // 필터 변경 시 진입점: 정적 스냅샷 모드는 poll()이 1회만 도므로 poll()을 다시 부르지 않고
     // applyFilter + 필요한 렌더 함수만 직접 호출한다(보드 canvas는 tick()의 rAF 루프가 상시 재렌더).
     function onDateChange() {
@@ -242,12 +293,11 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     function origin() { return { x: cv.width / dpr * 0.30, y: 90 }; }
     function tileToScreen(c, r) { var o = origin(); return { x: o.x + (c - r) * TW * cam.scale + cam.x, y: o.y + (c + r) * TH * cam.scale + cam.y }; }
 
-    // 각 토큰의 목표 타일좌표(스테이션 기준, done은 스택 오프셋, booth 점유 시 부스)
+    // 각 토큰의 목표 타일좌표(스테이션 기준, booth 점유 시 부스). 스테이션 내 겹침 방지 오프셋은
+    // scene.layout(computeTokenLayout)이 별도로 계산해 tokenScreenRect에서 더해진다.
     function targetTile(t) {
       var st = (t.booth && (t.boothActive || t.boothFail) && t.stageIndex <= 2) ? STATIONS.booth : (STATIONS[t.station] || STATIONS.plan);
-      var c = st.c, r = st.r;
-      if (t.station === 'done' && t.stackIndex >= 0) { r += 0.0; c += 0.0; }
-      return { c: c, r: r, stackIndex: t.stackIndex };
+      return { c: st.c, r: st.r };
     }
 
     /* ---------- 등각 그리기 헬퍼 ---------- */
@@ -326,38 +376,57 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       });
     }
     function tokenColor(p, t) { return t.color === 'rose' ? p.rose : (t.color === 'green' ? p.green : p.primary); }
-    function drawToken(p, t) {
-      var pt = pos[t.jobId]; if (!pt) return;
+
+    // 토큰 화면 사각형(카드) 계산 — drawToken(렌더)과 tokenRect(히트테스트)가 공유하는 유일한 좌표 헬퍼.
+    // 한쪽만 고치면 보이는 위치와 클릭 판정이 어긋나므로 반드시 이 함수를 거쳐야 한다.
+    // scene.layout.offsets에 jobId가 없으면(완료 상한 초과로 접힘) null — 렌더/히트테스트 모두 생략.
+    function tokenScreenRect(t) {
+      var pt = pos[t.jobId]; if (!pt) return null;
+      var off = scene.layout && scene.layout.offsets[t.jobId]; if (!off) return null;
       var s = tileToScreen(pt.x, pt.y);
-      var lift = 26 * cam.scale + (t.stackIndex >= 0 ? t.stackIndex * 9 * cam.scale : 0);
-      var y = s.y - lift, w = 44 * cam.scale, h = 26 * cam.scale, col = tokenColor(p, t);
-      // 그림자
+      var w = 44 * cam.scale, h = 26 * cam.scale;
+      var cx = s.x + off.dx * cam.scale, cy = s.y + off.dy * cam.scale;
+      return { x: cx - w / 2, y: cy - h, w: w, h: h, cx: cx, cy: cy, floorX: cx, floorY: s.y };
+    }
+    function tokenRect(t) { return tokenScreenRect(t); }
+
+    function drawToken(p, t) {
+      var r = tokenScreenRect(t); if (!r) return;
+      var col = tokenColor(p, t);
+      // 그림자(바닥 위치 기준 — 카드가 뜬 높이와 무관하게 발밑에 고정)
       ctx.save(); ctx.globalAlpha = .35; ctx.fillStyle = p.shadow;
-      ctx.beginPath(); ctx.ellipse(s.x, s.y + 2, w * 0.5, h * 0.28, 0, 0, 7); ctx.fill(); ctx.restore();
+      ctx.beginPath(); ctx.ellipse(r.floorX, r.floorY + 2, r.w * 0.5, r.h * 0.28, 0, 0, 7); ctx.fill(); ctx.restore();
       // 카드
-      roundRect(s.x - w / 2, y - h, w, h, 5 * cam.scale); ctx.fillStyle = p.surface; ctx.fill();
+      roundRect(r.x, r.y, r.w, r.h, 5 * cam.scale); ctx.fillStyle = p.surface; ctx.fill();
       ctx.lineWidth = (t.jobId === (hover && hover.jobId) || t.jobId === (selected && selected.jobId)) ? 2.5 : 1.4;
       ctx.strokeStyle = t.alert ? p.rose : col; ctx.stroke();
       // 좌측 상태 바
-      ctx.fillStyle = col; roundRect(s.x - w / 2, y - h, 4 * cam.scale, h, 2 * cam.scale); ctx.fill();
+      ctx.fillStyle = col; roundRect(r.x, r.y, 4 * cam.scale, r.h, 2 * cam.scale); ctx.fill();
       // 텍스트
       ctx.textAlign = 'left'; ctx.fillStyle = p.text; ctx.font = '800 ' + (9.5 * cam.scale) + 'px sans-serif';
-      ctx.fillText(shortId(t.jobId), s.x - w / 2 + 8 * cam.scale, y - h + 11 * cam.scale);
+      ctx.fillText(shortId(t.jobId), r.x + 8 * cam.scale, r.y + 11 * cam.scale);
       ctx.fillStyle = p.text3; ctx.font = (8 * cam.scale) + 'px sans-serif';
       var sub = 'R' + t.round + (t.badges.auto ? ' 🤖' : '') + (t.badges.rework ? ' ↩' : '');
-      ctx.fillText(sub, s.x - w / 2 + 8 * cam.scale, y - 6 * cam.scale);
-      if (t.alert) { ctx.fillStyle = p.rose; ctx.textAlign = 'right'; ctx.fillText('⚠', s.x + w / 2 - 5 * cam.scale, y - h + 11 * cam.scale); }
+      ctx.fillText(sub, r.x + 8 * cam.scale, r.y + r.h - 6 * cam.scale);
+      if (t.alert) { ctx.fillStyle = p.rose; ctx.textAlign = 'right'; ctx.fillText('⚠', r.x + r.w - 5 * cam.scale, r.y + 11 * cam.scale); }
     }
     function roundRect(x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
     function shortId(id) { return id.length > 18 ? id.slice(0, 17) + '…' : id; }
 
-    // 토큰 화면 사각(히트테스트용)
-    function tokenRect(t) {
-      var pt = pos[t.jobId]; if (!pt) return null;
-      var s = tileToScreen(pt.x, pt.y);
-      var lift = 26 * cam.scale + (t.stackIndex >= 0 ? t.stackIndex * 9 * cam.scale : 0);
-      var w = 44 * cam.scale, h = 26 * cam.scale, y = s.y - lift;
-      return { x: s.x - w / 2, y: y - h, w: w, h: h };
+    // 완료 선반 상한 초과분을 나타내는 접힌 요약 카드("외 N건"). scene.layout.fold가 있을 때만 그린다.
+    // 클릭/호버 대상이 아니다(hitTest는 scene.view만 순회하므로 자동으로 제외됨).
+    function drawFoldCard(p) {
+      var fold = scene.layout && scene.layout.fold; if (!fold) return;
+      var doneSt = STATIONS.done, s = tileToScreen(doneSt.c, doneSt.r);
+      var w = 44 * cam.scale, h = 26 * cam.scale;
+      var cx = s.x + fold.dx * cam.scale, cy = s.y + fold.dy * cam.scale;
+      var x = cx - w / 2, y = cy - h;
+      ctx.save(); ctx.globalAlpha = .35; ctx.fillStyle = p.shadow;
+      ctx.beginPath(); ctx.ellipse(s.x, s.y + 2, w * 0.5, h * 0.28, 0, 0, 7); ctx.fill(); ctx.restore();
+      roundRect(x, y, w, h, 5 * cam.scale); ctx.fillStyle = shade(p.surface, -6); ctx.fill();
+      ctx.lineWidth = 1.4; ctx.strokeStyle = p.text3; ctx.stroke();
+      ctx.textAlign = 'center'; ctx.fillStyle = p.text2; ctx.font = '800 ' + (9.5 * cam.scale) + 'px sans-serif';
+      ctx.fillText('외 ' + fold.count + '건', cx, cy - h / 2 + 3 * cam.scale);
     }
     function hitTest(mx, my) {
       for (var i = scene.view.length - 1; i >= 0; i--) {
@@ -384,6 +453,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       drawFloor(p); drawConnectors(p); drawStations(p);
       // 토큰: 뒤(작은 c+r)부터
       scene.view.slice().sort(function (a, b) { var pa = pos[a.jobId] || { x: 0, y: 0 }, pb = pos[b.jobId] || { x: 0, y: 0 }; return (pa.x + pa.y) - (pb.x + pb.y); }).forEach(function (t) { drawToken(p, t); });
+      drawFoldCard(p);
     }
 
     // 트윈 애니메이션 루프
