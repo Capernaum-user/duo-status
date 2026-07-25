@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 10:59:13 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-25 11:06:19 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-25T10:59:13",
+  "generatedAt": "2026-07-25T11:06:19",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
-    "working": 2,
+    "waitingWorker": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 61,
     "alerts": 1
@@ -85,18 +85,18 @@
   "jobs": [
     {
       "jobId": "Jwhitepetshop-in",
-      "title": "ORDER_Jwhitepetshop-in_R02 — IN Phase 1: 레이펫 사장앱(흐름 C) 안드로이드 네이티브 구현",
+      "title": "ORDER_Jwhitepetshop-in_R03 — 실기기 블로커 수정: 마법사 ③단계 화면이 상태 변화를 반영하지 않음",
       "project": "in",
       "targetDir": "D:\\01_Projects\\21_whitepetshop\\in",
       "round": 3,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -157,9 +157,14 @@
           "time": "2026-07-25 10:58:28",
           "state": "PLANNED",
           "round": 3
+        },
+        {
+          "time": "2026-07-25 11:05:31",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-25 10:58:28"
+      "lastUpdate": "2026-07-25 11:05:31"
     },
     {
       "jobId": "Jcosmos-hub-regroup",
@@ -3642,6 +3647,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-25 11:04:31",
+      "command": "handoff-check",
+      "panel": "in",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-25 10:31:28",
       "command": "handoff-review",
       "panel": "21_whitepetshop",
@@ -3754,12 +3765,6 @@
       "command": "handoff-auto",
       "panel": "agent_office_v2",
       "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
-    },
-    {
-      "time": "2026-07-22 02:02:28",
-      "command": "handoff-auto",
-      "panel": "agent_office_v2",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     }
   ]
 };</script>
