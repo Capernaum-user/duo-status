@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-26T01:09:34",
+  "generatedAt": "2026-07-26T01:11:38",
   "counts": {
-    "active": 1,
-    "waitingWorker": 0,
+    "active": 2,
+    "waitingWorker": 1,
     "working": 1,
     "waitingReview": 0,
-    "done": 74,
+    "done": 73,
     "alerts": 0
   },
   "jobs": [
@@ -14,15 +14,15 @@
       "title": "ORDER_Jproject-23-in_R12 — 반려견 프로필·예약 연결·반려견별 이력 (v1.9)",
       "project": "in",
       "targetDir": "<local>",
-      "round": 12,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
+      "round": 13,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
@@ -278,9 +278,14 @@
           "time": "2026-07-26 01:08:52",
           "state": "ACCEPTED",
           "round": 12
+        },
+        {
+          "time": "2026-07-26 01:11:32",
+          "state": "PLANNED",
+          "round": 13
         }
       ],
-      "lastUpdate": "2026-07-26 01:08:52"
+      "lastUpdate": "2026-07-26 01:11:32"
     },
     {
       "jobId": "Jao3-p0-boundary-hardening",
