@@ -71,18 +71,51 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 00:50:21 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 00:56:26 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-26T00:50:21",
+  "generatedAt": "2026-07-26T00:56:26",
   "counts": {
     "active": 2,
-    "waitingWorker": 1,
-    "working": 1,
+    "waitingWorker": 0,
+    "working": 2,
     "waitingReview": 0,
     "done": 73,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jao3-p0-boundary-hardening",
+      "title": "ORDER_Jao3-p0-boundary-hardening_R1 — v2→v3 결합 P0: 경계 하드닝(라이브 v2 읽기 제거·guard 강화·limits 데이터화·Belief orphan_policy 재평가)",
+      "project": "ontology",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 23:40:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 00:55:57",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 00:55:57"
+    },
     {
       "jobId": "Jproject-23-in",
       "title": "ORDER_Jproject-23-in_R12 — 반려견 프로필·예약 연결·반려견별 이력 (v1.9)",
@@ -345,34 +378,6 @@
         }
       ],
       "lastUpdate": "2026-07-26 00:24:59"
-    },
-    {
-      "jobId": "Jao3-p0-boundary-hardening",
-      "title": "ORDER_Jao3-p0-boundary-hardening_R1 — v2→v3 결합 P0: 경계 하드닝(라이브 v2 읽기 제거·guard 강화·limits 데이터화·Belief orphan_policy 재평가)",
-      "project": "ontology",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-25 23:40:16",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-25 23:40:16"
     },
     {
       "jobId": "Jproject-28-p0",
@@ -4236,6 +4241,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 00:55:02",
+      "command": "handoff-check",
+      "panel": "project-33",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-26 00:24:19",
       "command": "handoff-check",
       "panel": "in",
@@ -4347,12 +4358,6 @@
       "time": "2026-07-25 16:09:40",
       "command": "handoff-check",
       "panel": "app",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-25 15:34:55",
-      "command": "handoff-check",
-      "panel": "project-30",
       "text": "/check"
     }
   ]
