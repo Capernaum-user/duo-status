@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-26T11:29:09",
+  "generatedAt": "2026-07-26T11:30:17",
   "counts": {
     "active": 4,
     "waitingWorker": 2,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 74,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jao3-p2r-memories-saved",
+      "title": "v2→v3 결합 Round A(P2 잔여): memoriesOf* 링크 + analytics saved set",
+      "project": "ontology",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 11:13:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 11:14:44",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 11:29:15",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 11:29:15"
+    },
     {
       "jobId": "Jhtmldocs-sweep-triage",
       "title": "ORDER_Jhtmldocs-sweep-triage_R02 — 판정 재작업: misc 해체 · 중복 정규화 · 견본/생성물 제외",
@@ -154,39 +192,6 @@
         }
       ],
       "lastUpdate": "2026-07-26 11:17:55"
-    },
-    {
-      "jobId": "Jao3-p2r-memories-saved",
-      "title": "v2→v3 결합 Round A(P2 잔여): memoriesOf* 링크 + analytics saved set",
-      "project": "ontology",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-26 11:13:18",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 11:14:44",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-26 11:14:44"
     },
     {
       "jobId": "Jraypet-hotel-01-base",
