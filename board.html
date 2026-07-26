@@ -71,61 +71,28 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 11:02:05 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 11:03:13 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-26T11:02:05",
+  "generatedAt": "2026-07-26T11:03:12",
   "counts": {
-    "active": 2,
+    "active": 1,
     "waitingWorker": 0,
     "working": 1,
-    "waitingReview": 1,
-    "done": 74,
-    "alerts": 1
+    "waitingReview": 0,
+    "done": 75,
+    "alerts": 0
   },
   "jobs": [
-    {
-      "jobId": "Jraypet-hotel-01-base",
-      "title": "1단계: 설정 우측상단 톱니 재배치 + 호텔링 기반(DB·설정·순수 함수) (v2.2)",
-      "project": "in",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-26 10:50:33",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 11:01:52",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-26 11:01:52"
-    },
     {
       "jobId": "Jao3-p0-boundary-hardening",
       "title": "ORDER_Jao3-p0-boundary-hardening_R4 — v2→v3 결합 P2: 결재 근거 흡수(ClarifyQuestion·MissionSpec, PII-안전 게이팅)",
       "project": "ontology",
       "targetDir": "<local>",
       "round": 4,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -205,9 +172,47 @@
           "time": "2026-07-26 10:55:36",
           "state": "DONE",
           "round": 4
+        },
+        {
+          "time": "2026-07-26 11:02:10",
+          "state": "ACCEPTED",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-07-26 10:55:36"
+      "lastUpdate": "2026-07-26 11:02:10"
+    },
+    {
+      "jobId": "Jraypet-hotel-01-base",
+      "title": "1단계: 설정 우측상단 톱니 재배치 + 호텔링 기반(DB·설정·순수 함수) (v2.2)",
+      "project": "in",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 10:50:33",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 11:01:52",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 11:01:52"
     },
     {
       "jobId": "Jproject-23-in",
@@ -4384,6 +4389,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 11:02:40",
+      "command": "handoff-check",
+      "panel": "claude-handoff",
+      "text": "project-23에서 패널들끼리 주고받으라고 /cycle 하고 또 다른 패널에서 /check 까지 했어. 지금 서로 주고 받는지 확인해줘"
+    },
+    {
       "time": "2026-07-26 11:00:49",
       "command": "handoff-check",
       "panel": "app",
@@ -4495,12 +4506,6 @@
       "time": "2026-07-26 00:55:02",
       "command": "handoff-check",
       "panel": "project-33",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-26 00:24:19",
-      "command": "handoff-check",
-      "panel": "in",
       "text": "/check"
     }
   ]
