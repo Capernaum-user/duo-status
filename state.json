@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-26T13:25:24",
+  "generatedAt": "2026-07-26T13:26:34",
   "counts": {
     "active": 3,
-    "waitingWorker": 2,
-    "working": 1,
+    "waitingWorker": 1,
+    "working": 2,
     "waitingReview": 0,
     "done": 82,
     "alerts": 1
@@ -15,14 +15,14 @@
       "project": "06_HTML-Docs",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,14 @@
           "time": "2026-07-26 13:25:17",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-26 13:25:49",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-26 13:25:17"
+      "lastUpdate": "2026-07-26 13:25:49"
     },
     {
       "jobId": "Jhtmldocs-registry-v2",
