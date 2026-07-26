@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-26T12:00:31",
+  "generatedAt": "2026-07-26T12:14:39",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 77,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "ontology",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,9 +38,14 @@
           "time": "2026-07-26 12:00:18",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-26 12:14:10",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-26 12:00:18"
+      "lastUpdate": "2026-07-26 12:14:10"
     },
     {
       "jobId": "Jao3-p3-topology-deps",
