@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T11:38:32",
+  "generatedAt": "2026-07-26T11:44:40",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
@@ -4411,6 +4411,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 11:41:18",
+      "command": "handoff-check",
+      "panel": "claude-handoff",
+      "text": "agent office v3에서 /cycle 로 /check 해서 잘돌아가고 있는데 혹시 지금 너가 /check 하라고 한 p3가 그걸 말하는거…"
+    },
+    {
       "time": "2026-07-26 11:37:37",
       "command": "handoff-check",
       "panel": "ontology",
@@ -4522,12 +4528,6 @@
       "time": "2026-07-26 09:26:14",
       "command": "handoff-check",
       "panel": "app",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-26 09:25:48",
-      "command": "handoff-check",
-      "panel": "project-33",
       "text": "/check"
     }
   ]
