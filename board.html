@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 03:19:31 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 09:26:46 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-26T03:19:30",
+  "generatedAt": "2026-07-26T09:26:46",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 74,
     "alerts": 0
@@ -85,18 +85,18 @@
   "jobs": [
     {
       "jobId": "Jao3-p0-boundary-hardening",
-      "title": "ORDER_Jao3-p0-boundary-hardening_R2 — v2→v3 결합 P1: 미션 사실 흡수(MissionEvent + MissionArchive)",
+      "title": "ORDER_Jao3-p0-boundary-hardening_R3 — R2 잔여 1건: _v2guard read_allow 패치(AC-10 회귀 해소)",
       "project": "ontology",
       "targetDir": "<local>",
       "round": 3,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -142,9 +142,14 @@
           "time": "2026-07-26 03:19:14",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-07-26 09:26:25",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-07-26 03:19:14"
+      "lastUpdate": "2026-07-26 09:26:25"
     },
     {
       "jobId": "Jproject-23-in",
@@ -4301,6 +4306,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 09:26:14",
+      "command": "handoff-check",
+      "panel": "app",
+      "text": "/check"
+    },
+    {
+      "time": "2026-07-26 09:25:48",
+      "command": "handoff-check",
+      "panel": "project-33",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-26 03:10:24",
       "command": "handoff-check",
       "panel": "project-33",
@@ -4406,18 +4423,6 @@
       "time": "2026-07-25 18:04:15",
       "command": "handoff-review",
       "panel": "app",
-      "text": "/handoff-review"
-    },
-    {
-      "time": "2026-07-25 17:47:22",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-25 17:34:58",
-      "command": "handoff-review",
-      "panel": "project-23",
       "text": "/handoff-review"
     }
   ]
