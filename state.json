@@ -1,24 +1,57 @@
 {
-  "generatedAt": "2026-07-26T13:39:42",
+  "generatedAt": "2026-07-26T13:43:49",
   "counts": {
     "active": 3,
     "waitingWorker": 1,
-    "working": 1,
-    "waitingReview": 1,
-    "done": 82,
-    "alerts": 2
+    "working": 2,
+    "waitingReview": 0,
+    "done": 83,
+    "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jhtmldocs-builder-v2",
+      "title": "ORDER_Jhtmldocs-builder-v2_R01 — 인덱스 빌더 개편: 프로젝트별 섹션 + 카테고리 부가축 + 링크 검증",
+      "project": "06_HTML-Docs",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 13:42:53",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 13:43:20",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 13:43:20"
+    },
     {
       "jobId": "Jhtmldocs-collect-new",
       "title": "ORDER_Jhtmldocs-collect-new_R01 — COLLECT 판정 문서를 문서함으로 복사 · 명명규칙 적용 · 레지스트리 등록",
       "project": "06_HTML-Docs",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +76,14 @@
           "time": "2026-07-26 13:39:24",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-26 13:42:53",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-26 13:39:24"
+      "lastUpdate": "2026-07-26 13:42:53"
     },
     {
       "jobId": "Jhtmldocs-registry-v2",
