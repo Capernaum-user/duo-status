@@ -1,14 +1,102 @@
 {
-  "generatedAt": "2026-07-26T10:20:35",
+  "generatedAt": "2026-07-26T10:40:42",
   "counts": {
     "active": 1,
-    "waitingWorker": 1,
-    "working": 0,
+    "waitingWorker": 0,
+    "working": 1,
     "waitingReview": 0,
     "done": 74,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jao3-p0-boundary-hardening",
+      "title": "ORDER_Jao3-p0-boundary-hardening_R4 — v2→v3 결합 P2: 결재 근거 흡수(ClarifyQuestion·MissionSpec, PII-안전 게이팅)",
+      "project": "ontology",
+      "targetDir": "<local>",
+      "round": 4,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 23:40:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 00:55:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:24:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:29:43",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:33:47",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-26 01:34:59",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-26 01:49:12",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-26 03:19:14",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-26 09:26:25",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-26 09:32:53",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-26 09:46:42",
+          "state": "ACCEPTED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-26 09:51:15",
+          "state": "PLANNED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-26 10:40:24",
+          "state": "CLAIMED",
+          "round": 4
+        }
+      ],
+      "lastUpdate": "2026-07-26 10:40:24"
+    },
     {
       "jobId": "Jproject-23-in",
       "title": "ORDER_Jproject-23-in_R14 — 재방문 주기·올 때가 된 고객·지난번 요약 + WizardScreen 기계적 분리 (v2.1)",
@@ -321,89 +409,6 @@
         }
       ],
       "lastUpdate": "2026-07-26 10:20:18"
-    },
-    {
-      "jobId": "Jao3-p0-boundary-hardening",
-      "title": "ORDER_Jao3-p0-boundary-hardening_R3 — R2 잔여 1건: _v2guard read_allow 패치(AC-10 회귀 해소)",
-      "project": "ontology",
-      "targetDir": "<local>",
-      "round": 4,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-25 23:40:16",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 00:55:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 01:24:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 01:29:43",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 01:33:47",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-26 01:34:59",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-26 01:49:12",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-26 03:19:14",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-26 09:26:25",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-26 09:32:53",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-26 09:46:42",
-          "state": "ACCEPTED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-26 09:51:15",
-          "state": "PLANNED",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-07-26 09:51:15"
     },
     {
       "jobId": "Jproject-28-p0",
@@ -4267,6 +4272,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 10:39:52",
+      "command": "handoff-check",
+      "panel": "project-33",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-26 10:17:28",
       "command": "handoff-verify",
       "panel": "claude-handoff",
@@ -4379,12 +4390,6 @@
       "command": "handoff-check",
       "panel": "app",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-25 21:28:32",
-      "command": "handoff-review",
-      "panel": "app",
-      "text": "/handoff-review"
     }
   ]
 }
