@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-07-26T10:09:28",
+  "generatedAt": "2026-07-26T10:20:35",
   "counts": {
-    "active": 2,
+    "active": 1,
     "waitingWorker": 1,
     "working": 0,
-    "waitingReview": 1,
-    "done": 73,
+    "waitingReview": 0,
+    "done": 74,
     "alerts": 0
   },
   "jobs": [
@@ -15,15 +15,15 @@
       "project": "in",
       "targetDir": "<local>",
       "round": 14,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -313,9 +313,14 @@
           "time": "2026-07-26 10:09:24",
           "state": "DONE",
           "round": 14
+        },
+        {
+          "time": "2026-07-26 10:20:18",
+          "state": "ACCEPTED",
+          "round": 14
         }
       ],
-      "lastUpdate": "2026-07-26 10:09:24"
+      "lastUpdate": "2026-07-26 10:20:18"
     },
     {
       "jobId": "Jao3-p0-boundary-hardening",
@@ -4262,6 +4267,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 10:17:28",
+      "command": "handoff-verify",
+      "panel": "claude-handoff",
+      "text": "그러면 /handoff-verify 는 언제써야되고, 어떻게 해야 이걸 자동으로 검토하게 해놓은거야?"
+    },
+    {
+      "time": "2026-07-26 10:15:41",
+      "command": "handoff-review",
+      "panel": "project-23",
+      "text": "/handoff-review"
+    },
+    {
       "time": "2026-07-26 09:40:01",
       "command": "handoff-check",
       "panel": "ontology",
@@ -4365,18 +4382,6 @@
     },
     {
       "time": "2026-07-25 21:28:32",
-      "command": "handoff-review",
-      "panel": "app",
-      "text": "/handoff-review"
-    },
-    {
-      "time": "2026-07-25 20:13:31",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-25 19:58:14",
       "command": "handoff-review",
       "panel": "app",
       "text": "/handoff-review"
