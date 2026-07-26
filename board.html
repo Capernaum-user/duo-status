@@ -71,18 +71,46 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 11:03:13 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 11:07:19 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-26T11:03:12",
+  "generatedAt": "2026-07-26T11:07:19",
   "counts": {
-    "active": 1,
-    "waitingWorker": 0,
+    "active": 2,
+    "waitingWorker": 1,
     "working": 1,
     "waitingReview": 0,
     "done": 75,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jhtmldocs-sweep-triage",
+      "title": "ORDER_Jhtmldocs-sweep-triage_R01 — <local>",
+      "project": "06_HTML-Docs",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 11:06:45",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 11:06:45"
+    },
     {
       "jobId": "Jao3-p0-boundary-hardening",
       "title": "ORDER_Jao3-p0-boundary-hardening_R4 — v2→v3 결합 P2: 결재 근거 흡수(ClarifyQuestion·MissionSpec, PII-안전 게이팅)",
@@ -4389,6 +4417,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 11:03:56",
+      "command": "handoff-check",
+      "panel": "project-33",
+      "text": "/check"
+    },
+    {
+      "time": "2026-07-26 11:03:25",
+      "command": "handoff-check",
+      "panel": "claude-handoff",
+      "text": "P2워커의 완료보고는 아직 진행중인거야? 내가 /check를 해줘야하는거야?"
+    },
+    {
       "time": "2026-07-26 11:02:40",
       "command": "handoff-check",
       "panel": "claude-handoff",
@@ -4495,18 +4535,6 @@
       "command": "handoff-auto",
       "panel": "claude-handoff",
       "text": "cladue-handoff 를 좀 더 보강할게. /handoff-auto 를 시작하거나 기획해달라고 할때 다른 패널에서 /check 를 내가 직…"
-    },
-    {
-      "time": "2026-07-26 01:04:12",
-      "command": "handoff-review",
-      "panel": "app",
-      "text": "/handoff-review"
-    },
-    {
-      "time": "2026-07-26 00:55:02",
-      "command": "handoff-check",
-      "panel": "project-33",
-      "text": "/check"
     }
   ]
 };</script>
