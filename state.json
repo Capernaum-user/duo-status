@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-26T13:13:57",
+  "generatedAt": "2026-07-26T13:15:04",
   "counts": {
     "active": 3,
-    "waitingWorker": 2,
-    "working": 1,
+    "waitingWorker": 1,
+    "working": 2,
     "waitingReview": 0,
     "done": 81,
-    "alerts": 2
+    "alerts": 1
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "06_HTML-Docs",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -33,9 +33,14 @@
           "time": "2026-07-26 13:13:40",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-26 13:14:12",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-26 13:13:40"
+      "lastUpdate": "2026-07-26 13:14:12"
     },
     {
       "jobId": "Jhtmldocs-sweep-triage",
