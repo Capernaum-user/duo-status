@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-07-26T12:26:14",
+  "generatedAt": "2026-07-26T12:27:21",
   "counts": {
     "active": 3,
-    "waitingWorker": 2,
-    "working": 1,
+    "waitingWorker": 1,
+    "working": 2,
     "waitingReview": 0,
     "done": 79,
-    "alerts": 2
+    "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-hotel-03-integrate",
+      "title": "3단계: 오늘의 알림·매출·이력·내보내기 통합 + 호텔전용 모드 (v2.4)",
+      "project": "in",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 12:26:08",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 12:26:59",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 12:26:59"
+    },
     {
       "jobId": "Jraypet-hotel-02-booking",
       "title": "2단계: 호텔 예약 흐름 — 홈 분기·호텔 마법사·오늘 섹션·달력 점유 표시 (v2.3)",
@@ -771,6 +804,59 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
       "jobId": "Jmermaid-render",
       "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
       "project": "project-33",
@@ -849,59 +935,6 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 4
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-33",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -4504,28 +4537,6 @@
         }
       ],
       "lastUpdate": "2026-07-10 12:26:12"
-    },
-    {
-      "jobId": "Jraypet-hotel-03-integrate",
-      "title": "3단계: 오늘의 알림·매출·이력·내보내기 통합 + 호텔전용 모드 (v2.4)",
-      "project": "in",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "(folder)",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [],
-      "lastUpdate": ""
     }
   ],
   "escalations": [
@@ -4571,6 +4582,12 @@
     }
   ],
   "invocations": [
+    {
+      "time": "2026-07-26 12:27:18",
+      "command": "handoff-check",
+      "panel": "claude-handoff",
+      "text": "처음 대기하다가 몇분 후에 /check 확인되면 다시 대기타임이 처음부터 시작하도록 하면 좋을 것 같은데 /check 하고있는 패널이 작업중인지…"
+    },
     {
       "time": "2026-07-26 11:41:18",
       "command": "handoff-check",
@@ -4684,12 +4701,6 @@
       "command": "handoff-check",
       "panel": "project-23",
       "text": "온톨로지 워커 패널 /check 는 뭐야? 레이펫이 아니라 온톨로지꺼말하는거야? 그리고 레이펫은 발주해줘"
-    },
-    {
-      "time": "2026-07-26 09:26:14",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "/check"
     }
   ]
 }
