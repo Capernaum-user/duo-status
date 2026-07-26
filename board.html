@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 11:07:19 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 11:11:26 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-26T11:07:19",
+  "generatedAt": "2026-07-26T11:11:26",
   "counts": {
     "active": 2,
-    "waitingWorker": 1,
-    "working": 1,
+    "waitingWorker": 0,
+    "working": 2,
     "waitingReview": 0,
     "done": 75,
     "alerts": 0
@@ -89,14 +89,14 @@
       "project": "06_HTML-Docs",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -107,9 +107,14 @@
           "time": "2026-07-26 11:06:45",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-26 11:11:01",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-26 11:06:45"
+      "lastUpdate": "2026-07-26 11:11:01"
     },
     {
       "jobId": "Jao3-p0-boundary-hardening",
@@ -4417,6 +4422,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 11:10:05",
+      "command": "handoff-check",
+      "panel": "01_project-34",
+      "text": "/check"
+    },
+    {
+      "time": "2026-07-26 11:08:48",
+      "command": "handoff-check",
+      "panel": "project-33",
+      "text": "p3부터 p4까지 다른 패널에서 진행할 수있도록 너는 기획자 역할을 그대로 진행하고 /cycle 기능을 이용해서 자동으로 해보자. 내가 다른 패…"
+    },
+    {
       "time": "2026-07-26 11:03:56",
       "command": "handoff-check",
       "panel": "project-33",
@@ -4523,18 +4540,6 @@
       "command": "handoff-check",
       "panel": "project-33",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-26 01:18:21",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-26 01:17:31",
-      "command": "handoff-auto",
-      "panel": "claude-handoff",
-      "text": "cladue-handoff 를 좀 더 보강할게. /handoff-auto 를 시작하거나 기획해달라고 할때 다른 패널에서 /check 를 내가 직…"
     }
   ]
 };</script>
