@@ -1,56 +1,18 @@
 {
-  "generatedAt": "2026-07-26T13:11:50",
+  "generatedAt": "2026-07-26T13:13:57",
   "counts": {
-    "active": 4,
-    "waitingWorker": 1,
+    "active": 3,
+    "waitingWorker": 2,
     "working": 1,
-    "waitingReview": 2,
-    "done": 79,
-    "alerts": 3
+    "waitingReview": 0,
+    "done": 81,
+    "alerts": 2
   },
   "jobs": [
     {
-      "jobId": "Jraypet-hotel-03-integrate",
-      "title": "3단계: 오늘의 알림·매출·이력·내보내기 통합 + 호텔전용 모드 (v2.4)",
-      "project": "in",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-26 12:26:08",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 12:26:59",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 13:03:37",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-26 13:03:37"
-    },
-    {
-      "jobId": "Jaov2-route-worker-fix",
-      "title": "project-33 route.json worker 배정 정정 (codex → claude)",
-      "project": "project-33",
+      "jobId": "Jhtmldocs-registry-v2",
+      "title": "ORDER_Jhtmldocs-registry-v2_R01 — _registry.json 에 프로젝트 축 도입 · 기존 103건 전량 배정 · 관제보드 정리",
+      "project": "06_HTML-Docs",
       "targetDir": "<local>",
       "round": 1,
       "stage": "PLANNED",
@@ -68,12 +30,12 @@
       "autorun": null,
       "timeline": [
         {
-          "time": "2026-07-26 12:41:23",
+          "time": "2026-07-26 13:13:40",
           "state": "PLANNED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-07-26 12:41:23"
+      "lastUpdate": "2026-07-26 13:13:40"
     },
     {
       "jobId": "Jhtmldocs-sweep-triage",
@@ -81,10 +43,10 @@
       "project": "06_HTML-Docs",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -119,9 +81,85 @@
           "time": "2026-07-26 12:39:40",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-07-26 13:13:39",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-26 12:39:40"
+      "lastUpdate": "2026-07-26 13:13:39"
+    },
+    {
+      "jobId": "Jraypet-hotel-03-integrate",
+      "title": "3단계: 오늘의 알림·매출·이력·내보내기 통합 + 호텔전용 모드 (v2.4)",
+      "project": "in",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 12:26:08",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 12:26:59",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 13:03:37",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 13:13:07",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 13:13:07"
+    },
+    {
+      "jobId": "Jaov2-route-worker-fix",
+      "title": "project-33 route.json worker 배정 정정 (codex → claude)",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 12:41:23",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 12:41:23"
     },
     {
       "jobId": "Jraypet-hotel-02-booking",
@@ -2008,6 +2046,59 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-33",
@@ -2066,59 +2157,6 @@
           "time": "2026-07-20 19:58:17",
           "state": "ACCEPTED",
           "round": 2
-        }
-      ],
-      "lastUpdate": "2026-07-20 19:58:17"
-    },
-    {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "project-33",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 18:50:28",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:50:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:15:05",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:17:29",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:58:17",
-          "state": "ACCEPTED",
-          "round": 1
         }
       ],
       "lastUpdate": "2026-07-20 19:58:17"
