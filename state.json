@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-26T11:13:33",
+  "generatedAt": "2026-07-26T11:15:38",
   "counts": {
     "active": 3,
-    "waitingWorker": 1,
-    "working": 2,
+    "waitingWorker": 0,
+    "working": 3,
     "waitingReview": 0,
     "done": 75,
     "alerts": 0
@@ -15,14 +15,14 @@
       "project": "ontology",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,14 @@
           "time": "2026-07-26 11:13:18",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-26 11:14:44",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-26 11:13:18"
+      "lastUpdate": "2026-07-26 11:14:44"
     },
     {
       "jobId": "Jhtmldocs-sweep-triage",
@@ -4376,6 +4381,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 11:14:09",
+      "command": "handoff-check",
+      "panel": "project-33",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-26 11:10:05",
       "command": "handoff-check",
       "panel": "01_project-34",
@@ -4488,12 +4499,6 @@
       "command": "handoff-review",
       "panel": "app",
       "text": "/handoff-review"
-    },
-    {
-      "time": "2026-07-26 01:34:26",
-      "command": "handoff-check",
-      "panel": "project-33",
-      "text": "/check"
     }
   ]
 }
