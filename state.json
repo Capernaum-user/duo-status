@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-07-26T10:40:42",
+  "generatedAt": "2026-07-26T10:50:50",
   "counts": {
-    "active": 1,
-    "waitingWorker": 0,
+    "active": 2,
+    "waitingWorker": 1,
     "working": 1,
     "waitingReview": 0,
     "done": 74,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-hotel-01-base",
+      "title": "1단계: 설정 우측상단 톱니 재배치 + 호텔링 기반(DB·설정·순수 함수) (v2.2)",
+      "project": "in",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 10:50:33",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 10:50:33"
+    },
     {
       "jobId": "Jao3-p0-boundary-hardening",
       "title": "ORDER_Jao3-p0-boundary-hardening_R4 — v2→v3 결합 P2: 결재 근거 흡수(ClarifyQuestion·MissionSpec, PII-안전 게이팅)",
@@ -1659,59 +1687,6 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "project-33",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 18:50:28",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:50:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:15:05",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:17:29",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:58:17",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 19:58:17"
-    },
-    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-33",
@@ -1770,6 +1745,59 @@
           "time": "2026-07-20 19:58:17",
           "state": "ACCEPTED",
           "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
       "lastUpdate": "2026-07-20 19:58:17"
@@ -4272,6 +4300,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 10:49:52",
+      "command": "handoff-check",
+      "panel": "claude-handoff",
+      "text": "다른 패널에서 /cycle 을 시도했어. /check 하면 알려줄게 근데 이걸 알려주면 너는 뭐할거야?"
+    },
+    {
+      "time": "2026-07-26 10:46:45",
+      "command": "handoff-check",
+      "panel": "01_project-34",
+      "text": "/cycle html문서함 file:///D:/02_Documents/06_HTML-Docs/index.html 여기의 카테고리의 분류가 프로젝…"
+    },
+    {
       "time": "2026-07-26 10:39:52",
       "command": "handoff-check",
       "panel": "project-33",
@@ -4378,18 +4418,6 @@
       "command": "handoff-review",
       "panel": "app",
       "text": "/handoff-review"
-    },
-    {
-      "time": "2026-07-25 23:34:25",
-      "command": "handoff-auto",
-      "panel": "project-33",
-      "text": "그러면 너는 그걸 바탕으로 기획자이자 감독자가되어서 다른 ai에게 기획된 내용을 전달하고 완성시킨 작업을 너가 검토하고 다시 다음 작업을 ai에…"
-    },
-    {
-      "time": "2026-07-25 23:30:51",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "/check"
     }
   ]
 }
