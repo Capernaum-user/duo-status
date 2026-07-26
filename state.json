@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-26T12:17:54",
+  "generatedAt": "2026-07-26T12:22:01",
   "counts": {
     "active": 3,
     "waitingWorker": 1,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 78,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-hotel-02-booking",
+      "title": "2단계: 호텔 예약 흐름 — 홈 분기·호텔 마법사·오늘 섹션·달력 점유 표시 (v2.3)",
+      "project": "in",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 11:48:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 11:48:40",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 12:21:19",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 12:21:19"
+    },
     {
       "jobId": "Jao3-p4-dashboard-clarify",
       "title": "v2→v3 결합 Round C(P4 일부): 읽기 도구 확인 + CEO 대시보드 미션 타임라인·질문 카드",
@@ -94,39 +132,6 @@
         }
       ],
       "lastUpdate": "2026-07-26 11:59:17"
-    },
-    {
-      "jobId": "Jraypet-hotel-02-booking",
-      "title": "2단계: 호텔 예약 흐름 — 홈 분기·호텔 마법사·오늘 섹션·달력 점유 표시 (v2.3)",
-      "project": "in",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-26 11:48:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 11:48:40",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-26 11:48:40"
     },
     {
       "jobId": "Jraypet-hotel-01-base",
