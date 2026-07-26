@@ -71,18 +71,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 12:41:35 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-26 13:03:43 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-26T12:41:35",
+  "generatedAt": "2026-07-26T13:03:43",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 2,
-    "waitingReview": 1,
+    "working": 1,
+    "waitingReview": 2,
     "done": 79,
     "alerts": 0
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-hotel-03-integrate",
+      "title": "3단계: 오늘의 알림·매출·이력·내보내기 통합 + 호텔전용 모드 (v2.4)",
+      "project": "in",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-26 12:26:08",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 12:26:59",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 13:03:37",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-26 13:03:37"
+    },
     {
       "jobId": "Jaov2-route-worker-fix",
       "title": "project-33 route.json worker 배정 정정 (codex → claude)",
@@ -158,39 +196,6 @@
         }
       ],
       "lastUpdate": "2026-07-26 12:39:40"
-    },
-    {
-      "jobId": "Jraypet-hotel-03-integrate",
-      "title": "3단계: 오늘의 알림·매출·이력·내보내기 통합 + 호텔전용 모드 (v2.4)",
-      "project": "in",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-26 12:26:08",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 12:26:59",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-26 12:26:59"
     },
     {
       "jobId": "Jraypet-hotel-02-booking",
@@ -4690,6 +4695,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 12:42:12",
+      "command": "handoff-check",
+      "panel": "project-33",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-26 12:27:18",
       "command": "handoff-check",
       "panel": "claude-handoff",
@@ -4802,12 +4813,6 @@
       "command": "handoff-check",
       "panel": "app",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-26 09:31:07",
-      "command": "handoff-check",
-      "panel": "project-23",
-      "text": "온톨로지 워커 패널 /check 는 뭐야? 레이펫이 아니라 온톨로지꺼말하는거야? 그리고 레이펫은 발주해줘"
     }
   ]
 };</script>
