@@ -1,14 +1,122 @@
 {
-  "generatedAt": "2026-07-26T11:31:24",
+  "generatedAt": "2026-07-26T11:38:32",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
-    "working": 0,
+    "waitingWorker": 1,
+    "working": 1,
     "waitingReview": 2,
     "done": 74,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jao3-p0-boundary-hardening",
+      "title": "ORDER_Jao3-p0-boundary-hardening_R5 — v2→v3 결합 P3: 미션 노드 의존관계 링크(dependsOnNode)",
+      "project": "ontology",
+      "targetDir": "<local>",
+      "round": 5,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-25 23:40:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 00:55:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:24:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:29:43",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-26 01:33:47",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-26 01:34:59",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-26 01:49:12",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-26 03:19:14",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-26 09:26:25",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-26 09:32:53",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-26 09:46:42",
+          "state": "ACCEPTED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-26 09:51:15",
+          "state": "PLANNED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-26 10:40:24",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-26 10:55:36",
+          "state": "DONE",
+          "round": 4
+        },
+        {
+          "time": "2026-07-26 11:02:10",
+          "state": "ACCEPTED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-26 11:17:55",
+          "state": "PLANNED",
+          "round": 5
+        },
+        {
+          "time": "2026-07-26 11:38:25",
+          "state": "CLAIMED",
+          "round": 5
+        }
+      ],
+      "lastUpdate": "2026-07-26 11:38:25"
+    },
     {
       "jobId": "Jraypet-hotel-01-base",
       "title": "1단계: 설정 우측상단 톱니 재배치 + 호텔링 기반(DB·설정·순수 함수) (v2.2)",
@@ -17,13 +125,13 @@
       "round": 1,
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -127,109 +235,6 @@
         }
       ],
       "lastUpdate": "2026-07-26 11:28:17"
-    },
-    {
-      "jobId": "Jao3-p0-boundary-hardening",
-      "title": "ORDER_Jao3-p0-boundary-hardening_R4 — v2→v3 결합 P2: 결재 근거 흡수(ClarifyQuestion·MissionSpec, PII-안전 게이팅)",
-      "project": "ontology",
-      "targetDir": "<local>",
-      "round": 5,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-25 23:40:16",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 00:55:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 01:24:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 01:29:43",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-26 01:33:47",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-26 01:34:59",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-26 01:49:12",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-26 03:19:14",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-26 09:26:25",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-26 09:32:53",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-26 09:46:42",
-          "state": "ACCEPTED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-26 09:51:15",
-          "state": "PLANNED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-26 10:40:24",
-          "state": "CLAIMED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-26 10:55:36",
-          "state": "DONE",
-          "round": 4
-        },
-        {
-          "time": "2026-07-26 11:02:10",
-          "state": "ACCEPTED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-26 11:17:55",
-          "state": "PLANNED",
-          "round": 5
-        }
-      ],
-      "lastUpdate": "2026-07-26 11:17:55"
     },
     {
       "jobId": "Jproject-23-in",
@@ -4406,6 +4411,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-26 11:37:37",
+      "command": "handoff-check",
+      "panel": "ontology",
+      "text": "/check"
+    },
+    {
+      "time": "2026-07-26 11:35:29",
+      "command": "handoff-check",
+      "panel": "project-23",
+      "text": "다른 패널에서 이미 /check 되어서 진행되고 있는데 너가 멈춰버리면 안되지 다시 시작해"
+    },
+    {
       "time": "2026-07-26 11:14:09",
       "command": "handoff-check",
       "panel": "project-33",
@@ -4512,18 +4529,6 @@
       "command": "handoff-check",
       "panel": "project-33",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-26 03:10:24",
-      "command": "handoff-check",
-      "panel": "project-33",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-26 03:10:07",
-      "command": "handoff-review",
-      "panel": "app",
-      "text": "/handoff-review"
     }
   ]
 }
