@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-07-27T19:08:59",
+  "generatedAt": "2026-07-27T21:52:56",
   "counts": {
-    "active": 2,
-    "waitingWorker": 1,
+    "active": 3,
+    "waitingWorker": 2,
     "working": 1,
     "waitingReview": 0,
     "done": 85,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jteach-research",
+      "title": "ORDER_Jteach-research_R01 — 교재·강의 사업 근거자료 수집(리서치 도시에 구축)",
+      "project": "30_teaching-studio",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-27 21:51:54",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-27 21:51:54"
+    },
     {
       "jobId": "Jhtmldocs-preexist-fix",
       "title": "ORDER_Jhtmldocs-preexist-fix_R01 — 문서함 사전 존재 결함 정리(깨진 문서 6건 · 관제보드 1건 · 분류 라벨)",
@@ -1107,6 +1135,59 @@
       "lastUpdate": "2026-07-25 18:12:36"
     },
     {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
       "project": "project-33",
@@ -1190,59 +1271,6 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 3
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-33",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -4803,6 +4831,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-27 21:52:51",
+      "command": "handoff-check",
+      "panel": "ObsidianVault",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-26 13:10:17",
       "command": "handoff-check",
       "panel": "project-33",
@@ -4915,12 +4949,6 @@
       "command": "handoff-check",
       "panel": "ontology",
       "text": "워커 패널에서 /check 했어. No ORDER is currently waiting in relay\\01_order\\. The report …"
-    },
-    {
-      "time": "2026-07-26 09:39:16",
-      "command": "handoff-check",
-      "panel": "project-33",
-      "text": "/check"
     }
   ]
 }
