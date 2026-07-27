@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-07-27T21:54:03",
+  "generatedAt": "2026-07-27T22:12:08",
   "counts": {
-    "active": 3,
-    "waitingWorker": 1,
+    "active": 4,
+    "waitingWorker": 2,
     "working": 2,
     "waitingReview": 0,
     "done": 85,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-msg-00-intent",
+      "title": "인텐트 실행 경로 정비(선결) · 침묵 실패 제거",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-27 22:11:35",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-27 22:11:35"
+    },
     {
       "jobId": "Jteach-research",
       "title": "ORDER_Jteach-research_R01 — 교재·강의 사업 근거자료 수집(리서치 도시에 구축)",
@@ -1057,6 +1085,94 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
+      "jobId": "Jclarify-noautopop",
+      "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
+      "project": "project-34",
+      "targetDir": "<local>",
+      "round": 3,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 2,
+        "result": "REWORK-CAP"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-22 00:01:06",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:01:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:07:09",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:10:57",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:22:06",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:22:08",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:27:54",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:32:03",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 00:42:06",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 00:49:26",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
       "jobId": "Jmermaid-render",
       "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
       "project": "project-34",
@@ -1188,94 +1304,6 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
-      "jobId": "Jclarify-noautopop",
-      "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
-      "project": "project-34",
-      "targetDir": "<local>",
-      "round": 3,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 2,
-        "result": "REWORK-CAP"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-22 00:01:06",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:01:08",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:07:09",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:10:57",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:22:06",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:22:08",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:27:54",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:32:03",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 00:42:06",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 00:49:26",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 3
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -2339,59 +2367,6 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jgnosis-dedup",
-      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
-      "project": "project-34",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:55:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:55:50",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:21:37",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:27:06",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
       "jobId": "Jceo-chart-axes",
       "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
       "project": "project-34",
@@ -2433,6 +2408,59 @@
         },
         {
           "time": "2026-07-20 18:26:23",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jgnosis-dedup",
+      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
+      "project": "project-34",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:55:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:55:50",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:21:37",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
