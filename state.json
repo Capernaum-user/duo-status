@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-28T00:26:46",
+  "generatedAt": "2026-07-28T00:31:53",
   "counts": {
     "active": 3,
-    "waitingWorker": 2,
-    "working": 1,
+    "waitingWorker": 1,
+    "working": 2,
     "waitingReview": 0,
     "done": 96,
     "alerts": 1
@@ -15,14 +15,14 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,14 @@
           "time": "2026-07-28 00:26:06",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 00:31:18",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 00:26:06"
+      "lastUpdate": "2026-07-28 00:31:18"
     },
     {
       "jobId": "Jteach-hardening",
@@ -5309,6 +5314,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-28 00:30:07",
+      "command": "handoff-check",
+      "panel": "ObsidianVault",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-28 00:25:23",
       "command": "handoff-check",
       "panel": "out",
@@ -5421,12 +5432,6 @@
       "command": "handoff-check",
       "panel": "project-34",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-26 10:17:28",
-      "command": "handoff-verify",
-      "panel": "claude-handoff",
-      "text": "그러면 /handoff-verify 는 언제써야되고, 어떻게 해야 이걸 자동으로 검토하게 해놓은거야?"
     }
   ]
 }
