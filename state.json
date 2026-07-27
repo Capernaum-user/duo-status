@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-28T01:15:02",
+  "generatedAt": "2026-07-28T01:16:08",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 100,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-sendform-booking",
+      "title": "예약 폼(미용 달력 + 호텔링 범위) + 문자 회신 — 2/5",
+      "project": "project-23",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-28 00:54:42",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 00:55:13",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 01:16:05",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-28 01:16:05"
+    },
     {
       "jobId": "Jteach2-restructure",
       "title": "ORDER_Jteach2-restructure_R01 — 리포 반영(챕터 재구성·EPUB 우선·무료부 분리 빌드)",
@@ -127,39 +165,6 @@
         }
       ],
       "lastUpdate": "2026-07-28 01:01:55"
-    },
-    {
-      "jobId": "Jraypet-sendform-booking",
-      "title": "예약 폼(미용 달력 + 호텔링 범위) + 문자 회신 — 2/5",
-      "project": "project-23",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-28 00:54:42",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-28 00:55:13",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-28 00:55:13"
     },
     {
       "jobId": "Jraypet-sendform-card",
