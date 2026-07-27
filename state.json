@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-27T23:05:57",
+  "generatedAt": "2026-07-27T23:13:03",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 92,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach-pilot",
+      "title": "ORDER_Jteach-pilot_R01 — 파일럿 챕터 1개 완성 + 3형식 파생 실증 + 품질 린터",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-27 23:00:09",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 23:01:31",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 23:12:15",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-27 23:12:15"
+    },
     {
       "jobId": "Jraypet-msg-03-sendui",
       "title": "카드 즉시 알림(전화·문자·카톡) + 발송 바텀시트 · v2.5.0 빌드",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-07-27 23:05:13"
-    },
-    {
-      "jobId": "Jteach-pilot",
-      "title": "ORDER_Jteach-pilot_R01 — 파일럿 챕터 1개 완성 + 3형식 파생 실증 + 품질 린터",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-27 23:00:09",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-27 23:01:31",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-27 23:01:31"
     },
     {
       "jobId": "Jteach-scaffold",
