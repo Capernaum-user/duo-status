@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-27T23:30:28",
+  "generatedAt": "2026-07-27T23:38:33",
   "counts": {
     "active": 3,
     "waitingWorker": 1,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 95,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach-hardening",
+      "title": "ORDER_Jteach-hardening_R01 — 파일럿·린터 잔여 결함 3건 정리 + 브리핑 갱신",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-27 23:28:34",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 23:28:59",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 23:37:34",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-27 23:37:34"
+    },
     {
       "jobId": "Jraypet-msg-03-sendui",
       "title": "카드 즉시 알림(전화·문자·카톡) + 발송 바텀시트 · v2.5.0 빌드",
@@ -51,39 +89,6 @@
         }
       ],
       "lastUpdate": "2026-07-27 23:29:12"
-    },
-    {
-      "jobId": "Jteach-hardening",
-      "title": "ORDER_Jteach-hardening_R01 — 파일럿·린터 잔여 결함 3건 정리 + 브리핑 갱신",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-27 23:28:34",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-27 23:28:59",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-27 23:28:59"
     },
     {
       "jobId": "Jteach-roadmap",
