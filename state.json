@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-28T01:18:14",
+  "generatedAt": "2026-07-28T01:28:20",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 101,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach2-restructure",
+      "title": "ORDER_Jteach2-restructure_R01 — 리포 반영(챕터 재구성·EPUB 우선·무료부 분리 빌드)",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-28 01:13:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 01:14:54",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 01:27:58",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-28 01:27:58"
+    },
     {
       "jobId": "Jraypet-sendform-applink",
       "title": "사장앱 [예약폼 보내기]: 스냅샷 인코더 + 공유 발송 — 3/5",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-07-28 01:17:15"
-    },
-    {
-      "jobId": "Jteach2-restructure",
-      "title": "ORDER_Jteach2-restructure_R01 — 리포 반영(챕터 재구성·EPUB 우선·무료부 분리 빌드)",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-28 01:13:18",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-28 01:14:54",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-28 01:14:54"
     },
     {
       "jobId": "Jteach2-curriculum",
