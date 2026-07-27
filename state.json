@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-07-27T22:34:02",
+  "generatedAt": "2026-07-27T22:35:08",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
-    "working": 2,
+    "waitingWorker": 1,
+    "working": 3,
     "waitingReview": 0,
     "done": 89,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jteach-scaffold",
+      "title": "ORDER_Jteach-scaffold_R01 — 리포 구조 + 단일 원천 출판 툴체인 구축과 빌드 실증",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-27 22:33:53",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 22:34:14",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-27 22:34:14"
+    },
     {
       "jobId": "Jteach-curriculum",
       "title": "ORDER_Jteach-curriculum_R01 — 백워드 설계 커리큘럼과 책 목차 확정",
@@ -47,34 +80,6 @@
         {
           "time": "2026-07-27 22:33:53",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-27 22:33:53"
-    },
-    {
-      "jobId": "Jteach-scaffold",
-      "title": "ORDER_Jteach-scaffold_R01 — 리포 구조 + 단일 원천 출판 툴체인 구축과 빌드 실증",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-27 22:33:53",
-          "state": "PLANNED",
           "round": 1
         }
       ],
