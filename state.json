@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-28T01:44:43",
+  "generatedAt": "2026-07-28T01:59:49",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 103,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach2-pilot",
+      "title": "ORDER_Jteach2-pilot_R01 — 심화 챕터 파일럿 1개 집필 + 검증 + 브리핑 갱신",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-28 01:30:07",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 01:31:26",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 01:58:58",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-28 01:58:58"
+    },
     {
       "jobId": "Jraypet-sendform-ingest",
       "title": "사장앱 회신 수신: 공유 인텐트 → 파서 → [확인] 등록 — 4/5",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-07-28 01:44:04"
-    },
-    {
-      "jobId": "Jteach2-pilot",
-      "title": "ORDER_Jteach2-pilot_R01 — 심화 챕터 파일럿 1개 집필 + 검증 + 브리핑 갱신",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-28 01:30:07",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-28 01:31:26",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-28 01:31:26"
     },
     {
       "jobId": "Jteach2-restructure",
