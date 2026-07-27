@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-27T23:00:41",
+  "generatedAt": "2026-07-27T23:01:46",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
-    "working": 2,
+    "waitingWorker": 1,
+    "working": 3,
     "waitingReview": 0,
     "done": 91,
-    "alerts": 2
+    "alerts": 1
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -33,9 +33,14 @@
           "time": "2026-07-27 23:00:09",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-27 23:01:31",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-27 23:00:09"
+      "lastUpdate": "2026-07-27 23:01:31"
     },
     {
       "jobId": "Jteach-scaffold",
