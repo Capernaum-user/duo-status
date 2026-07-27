@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-27T22:31:52",
+  "generatedAt": "2026-07-27T22:32:57",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 88,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach-curriculum",
+      "title": "ORDER_Jteach-curriculum_R01 — 백워드 설계 커리큘럼과 책 목차 확정",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-27 22:22:04",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 22:24:23",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 22:32:26",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-27 22:32:26"
+    },
     {
       "jobId": "Jraypet-msg-01-domain",
       "title": "문구 템플릿 도메인(순수 함수) + 바이트 카운터",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-07-27 22:31:06"
-    },
-    {
-      "jobId": "Jteach-curriculum",
-      "title": "ORDER_Jteach-curriculum_R01 — 백워드 설계 커리큘럼과 책 목차 확정",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-27 22:22:04",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-27 22:24:23",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-27 22:24:23"
     },
     {
       "jobId": "Jteach-standard",
