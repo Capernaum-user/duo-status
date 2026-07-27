@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-07-28T01:13:57",
+  "generatedAt": "2026-07-28T01:15:02",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
-    "working": 2,
+    "waitingWorker": 1,
+    "working": 3,
     "waitingReview": 0,
     "done": 100,
-    "alerts": 2
+    "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jteach2-restructure",
+      "title": "ORDER_Jteach2-restructure_R01 — 리포 반영(챕터 재구성·EPUB 우선·무료부 분리 빌드)",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-28 01:13:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 01:14:54",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-28 01:14:54"
+    },
     {
       "jobId": "Jteach2-curriculum",
       "title": "ORDER_Jteach2-curriculum_R01 — 커리큘럼 v2 개정(심화 5주제 편입, 최대 20챕터)",
@@ -47,34 +80,6 @@
         {
           "time": "2026-07-28 01:13:18",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-28 01:13:18"
-    },
-    {
-      "jobId": "Jteach2-restructure",
-      "title": "ORDER_Jteach2-restructure_R01 — 리포 반영(챕터 재구성·EPUB 우선·무료부 분리 빌드)",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-28 01:13:18",
-          "state": "PLANNED",
           "round": 1
         }
       ],
