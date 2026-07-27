@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-27T22:35:08",
+  "generatedAt": "2026-07-27T22:40:13",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 89,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-msg-01-domain",
+      "title": "문구 템플릿 도메인(순수 함수) + 바이트 카운터",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-27 22:31:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 22:31:27",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 22:39:49",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-27 22:39:49"
+    },
     {
       "jobId": "Jteach-scaffold",
       "title": "ORDER_Jteach-scaffold_R01 — 리포 구조 + 단일 원천 출판 툴체인 구축과 빌드 실증",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-07-27 22:33:53"
-    },
-    {
-      "jobId": "Jraypet-msg-01-domain",
-      "title": "문구 템플릿 도메인(순수 함수) + 바이트 카운터",
-      "project": "app",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-27 22:31:12",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-27 22:31:27",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-27 22:31:27"
     },
     {
       "jobId": "Jraypet-msg-00-intent",
