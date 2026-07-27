@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-07-27T23:40:39",
+  "generatedAt": "2026-07-28T00:26:46",
   "counts": {
-    "active": 2,
-    "waitingWorker": 1,
+    "active": 3,
+    "waitingWorker": 2,
     "working": 1,
     "waitingReview": 0,
     "done": 96,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jteach2-decisions",
+      "title": "ORDER_Jteach2-decisions_R01 — 확정 결정 6건 기록 + 로드맵·공개전략 반영 + 보류 트랙 등록",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-28 00:26:06",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-28 00:26:06"
+    },
     {
       "jobId": "Jteach-hardening",
       "title": "ORDER_Jteach-hardening_R01 — 파일럿·린터 잔여 결함 3건 정리 + 브리핑 갱신",
@@ -1502,59 +1530,6 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-34",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
       "project": "project-34",
@@ -1721,6 +1696,59 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 4
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-34",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -5281,6 +5309,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-28 00:25:23",
+      "command": "handoff-check",
+      "panel": "out",
+      "text": "/cycle 좋아 모두 마음에 들어. 다만 고객에게 보여야되는 화면인만큼 디자인이 좀 더 화려해도 좋을 것 같아. 검은 바탕에 금색 글자들과 금…"
+    },
+    {
       "time": "2026-07-27 22:14:51",
       "command": "handoff-check",
       "panel": "app",
@@ -5393,12 +5427,6 @@
       "command": "handoff-verify",
       "panel": "claude-handoff",
       "text": "그러면 /handoff-verify 는 언제써야되고, 어떻게 해야 이걸 자동으로 검토하게 해놓은거야?"
-    },
-    {
-      "time": "2026-07-26 10:15:41",
-      "command": "handoff-review",
-      "panel": "project-23",
-      "text": "/handoff-review"
     }
   ]
 }
