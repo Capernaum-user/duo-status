@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-27T22:12:08",
+  "generatedAt": "2026-07-27T22:13:14",
   "counts": {
     "active": 4,
     "waitingWorker": 2,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 85,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach-research",
+      "title": "ORDER_Jteach-research_R01 — 교재·강의 사업 근거자료 수집(리서치 도시에 구축)",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-27 21:51:54",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 21:53:39",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-27 22:12:52",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-27 22:12:52"
+    },
     {
       "jobId": "Jraypet-msg-00-intent",
       "title": "인텐트 실행 경로 정비(선결) · 침묵 실패 제거",
@@ -36,39 +74,6 @@
         }
       ],
       "lastUpdate": "2026-07-27 22:11:35"
-    },
-    {
-      "jobId": "Jteach-research",
-      "title": "ORDER_Jteach-research_R01 — 교재·강의 사업 근거자료 수집(리서치 도시에 구축)",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-27 21:51:54",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-27 21:53:39",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-27 21:53:39"
     },
     {
       "jobId": "Jhtmldocs-preexist-fix",
