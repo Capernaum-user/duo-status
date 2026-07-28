@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-28T15:30:37",
+  "generatedAt": "2026-07-28T15:35:45",
   "counts": {
     "active": 3,
-    "waitingWorker": 1,
+    "waitingWorker": 2,
     "working": 1,
-    "waitingReview": 1,
+    "waitingReview": 0,
     "done": 111,
-    "alerts": 2
+    "alerts": 1
   },
   "jobs": [
     {
@@ -14,17 +14,17 @@
       "title": "ORDER_Jteach3-typeset_R01 — 한글 PDF 조판 결함 수정(어절 공백 소실 외 3건)",
       "project": "project-32",
       "targetDir": "<local>",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "round": 2,
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -43,9 +43,14 @@
           "time": "2026-07-28 15:30:11",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 15:35:33",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-28 15:30:11"
+      "lastUpdate": "2026-07-28 15:35:33"
     },
     {
       "jobId": "Jteach3-product",
