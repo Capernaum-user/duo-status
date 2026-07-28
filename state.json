@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-28T17:21:46",
+  "generatedAt": "2026-07-28T17:34:53",
   "counts": {
     "active": 4,
     "waitingWorker": 2,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 117,
     "alerts": 2
   },
@@ -15,15 +15,15 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -38,9 +38,14 @@
           "time": "2026-07-28 17:20:45",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 17:34:40",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 17:20:45"
+      "lastUpdate": "2026-07-28 17:34:40"
     },
     {
       "jobId": "Jteach4-ch01",
