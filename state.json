@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-28T14:27:45",
+  "generatedAt": "2026-07-28T14:31:53",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 109,
     "alerts": 1
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-shortlink-app",
+      "title": "사장앱: v2 압축 링크 인코더 + 문자 문구 + v2.6.2 — 2/2",
+      "project": "project-23",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-28 14:10:45",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 14:11:17",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 14:31:35",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-28 14:31:35"
+    },
     {
       "jobId": "Jteach3-product",
       "title": "ORDER_Jteach3-product_R01 — 8주 과정을 기본 상품으로 재편 + 브리핑 갱신",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-07-28 14:26:18"
-    },
-    {
-      "jobId": "Jraypet-shortlink-app",
-      "title": "사장앱: v2 압축 링크 인코더 + 문자 문구 + v2.6.2 — 2/2",
-      "project": "project-23",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-28 14:10:45",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-28 14:11:17",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-28 14:11:17"
     },
     {
       "jobId": "Jraypet-shortlink-web",
