@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-28T14:48:28",
+  "generatedAt": "2026-07-28T15:30:37",
   "counts": {
     "active": 3,
     "waitingWorker": 1,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 111,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,9 +38,14 @@
           "time": "2026-07-28 14:47:22",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 15:30:11",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 14:47:22"
+      "lastUpdate": "2026-07-28 15:30:11"
     },
     {
       "jobId": "Jteach3-product",
@@ -5959,6 +5964,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-28 15:30:24",
+      "command": "handoff-check",
+      "panel": "out",
+      "text": "/cycle 앱 이름을 레이펫으로 했지만 사실 대중성을 위해서는 반려견 미용과 호텔링 가능한 어플이라는걸 알 수 있는 제목으로 바꿔야 할것 같아…"
+    },
+    {
+      "time": "2026-07-28 15:10:15",
+      "command": "handoff-check",
+      "panel": "project-18",
+      "text": "/cycle 너가 판단한대로 진행해. 무언가 내가 답변해야하는 것이 있다면 html문서로 선택형 입력란을 만들어줘. 선택해서 너에게 제출할 수 …"
+    },
+    {
       "time": "2026-07-28 13:50:31",
       "command": "handoff-check",
       "panel": "project-23",
@@ -6065,18 +6082,6 @@
       "command": "handoff-check",
       "panel": "claude-handoff",
       "text": "P2워커의 완료보고는 아직 진행중인거야? 내가 /check를 해줘야하는거야?"
-    },
-    {
-      "time": "2026-07-26 11:02:40",
-      "command": "handoff-check",
-      "panel": "claude-handoff",
-      "text": "project-23에서 패널들끼리 주고받으라고 /cycle 하고 또 다른 패널에서 /check 까지 했어. 지금 서로 주고 받는지 확인해줘"
-    },
-    {
-      "time": "2026-07-26 11:00:49",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "/check"
     }
   ]
 }
