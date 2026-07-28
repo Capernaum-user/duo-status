@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-28T14:11:17",
+  "generatedAt": "2026-07-28T14:12:24",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
-    "working": 2,
+    "waitingWorker": 1,
+    "working": 3,
     "waitingReview": 0,
     "done": 108,
-    "alerts": 2
+    "alerts": 1
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-23",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -33,9 +33,14 @@
           "time": "2026-07-28 14:10:45",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 14:11:17",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 14:10:45"
+      "lastUpdate": "2026-07-28 14:11:17"
     },
     {
       "jobId": "Jraypet-shortlink-web",
