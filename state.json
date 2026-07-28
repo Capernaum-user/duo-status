@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-28T16:16:49",
+  "generatedAt": "2026-07-28T16:17:56",
   "counts": {
     "active": 4,
-    "waitingWorker": 3,
-    "working": 1,
+    "waitingWorker": 2,
+    "working": 2,
     "waitingReview": 0,
     "done": 113,
     "alerts": 2
@@ -15,10 +15,10 @@
       "project": "project-23",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -33,9 +33,14 @@
           "time": "2026-07-28 16:15:55",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 16:16:51",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 16:15:55"
+      "lastUpdate": "2026-07-28 16:16:51"
     },
     {
       "jobId": "Jmungbook-rebrand-app",
@@ -82,18 +87,18 @@
     },
     {
       "jobId": "Jcosmos-audit-verify",
-      "title": "ORDER_Jcosmos-audit-verify_R01 — 감사 후속 반영분 독립 검증",
-      "project": "project-18",
-      "targetDir": "<local>",
+      "title": "Jcosmos-audit-verify",
+      "project": "",
+      "targetDir": null,
       "round": 1,
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
