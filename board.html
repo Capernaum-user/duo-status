@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-28 15:56:10 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-28 15:59:18 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-28T15:56:09",
+  "generatedAt": "2026-07-28T15:59:18",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
-    "working": 2,
+    "waitingWorker": 1,
+    "working": 3,
     "waitingReview": 0,
     "done": 111,
     "alerts": 1
@@ -89,14 +89,14 @@
       "project": "project-23",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -107,9 +107,14 @@
           "time": "2026-07-28 15:55:25",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 15:58:54",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 15:55:25"
+      "lastUpdate": "2026-07-28 15:58:54"
     },
     {
       "jobId": "Jteach3-typeset",
@@ -6076,6 +6081,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-28 15:57:04",
+      "command": "handoff-check",
+      "panel": "project-23",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-28 15:30:24",
       "command": "handoff-check",
       "panel": "out",
@@ -6188,12 +6199,6 @@
       "command": "handoff-check",
       "panel": "project-34",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-26 11:03:25",
-      "command": "handoff-check",
-      "panel": "claude-handoff",
-      "text": "P2워커의 완료보고는 아직 진행중인거야? 내가 /check를 해줘야하는거야?"
     }
   ]
 };</script>
