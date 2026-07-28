@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-28T15:35:45",
+  "generatedAt": "2026-07-28T15:36:52",
   "counts": {
     "active": 3,
-    "waitingWorker": 2,
-    "working": 1,
+    "waitingWorker": 1,
+    "working": 2,
     "waitingReview": 0,
     "done": 111,
     "alerts": 1
@@ -11,18 +11,18 @@
   "jobs": [
     {
       "jobId": "Jteach3-typeset",
-      "title": "ORDER_Jteach3-typeset_R01 — 한글 PDF 조판 결함 수정(어절 공백 소실 외 3건)",
+      "title": "ORDER_Jteach3-typeset_R02 — 재작업: fig-pos 부작용으로 생긴 빈 페이지 제거",
       "project": "project-32",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -48,9 +48,14 @@
           "time": "2026-07-28 15:35:33",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-07-28 15:36:30",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-07-28 15:35:33"
+      "lastUpdate": "2026-07-28 15:36:30"
     },
     {
       "jobId": "Jteach3-product",
