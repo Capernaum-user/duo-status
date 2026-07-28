@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-28T14:12:24",
+  "generatedAt": "2026-07-28T14:23:31",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 108,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach3-length",
+      "title": "ORDER_Jteach3-length_R01 — 챕터 분량 상한 상향 + 전 문서·린터 정합",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-28 13:59:22",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 14:00:15",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 14:23:09",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-28 14:23:09"
+    },
     {
       "jobId": "Jraypet-shortlink-app",
       "title": "사장앱: v2 압축 링크 인코더 + 문자 문구 + v2.6.2 — 2/2",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-07-28 14:10:45"
-    },
-    {
-      "jobId": "Jteach3-length",
-      "title": "ORDER_Jteach3-length_R01 — 챕터 분량 상한 상향 + 전 문서·린터 정합",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-28 13:59:22",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-28 14:00:15",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-28 14:00:15"
     },
     {
       "jobId": "Jteach3-pdfproject-17",
