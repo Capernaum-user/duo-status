@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-07-28T14:01:04",
+  "generatedAt": "2026-07-28T14:10:11",
   "counts": {
     "active": 4,
     "waitingWorker": 1,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 107,
-    "alerts": 1
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-shortlink-web",
+      "title": "레이펫 예약 페이지: 압축 링크 v2 디코더 — 1/2",
+      "project": "project-23",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-28 13:48:46",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 13:51:00",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 14:09:32",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-28 14:09:32"
+    },
     {
       "jobId": "Jteach3-length",
       "title": "ORDER_Jteach3-length_R01 — 챕터 분량 상한 상향 + 전 문서·린터 정합",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-07-28 13:57:48"
-    },
-    {
-      "jobId": "Jraypet-shortlink-web",
-      "title": "레이펫 예약 페이지: 압축 링크 v2 디코더 — 1/2",
-      "project": "project-23",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-28 13:48:46",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-28 13:51:00",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-28 13:51:00"
     },
     {
       "jobId": "Jraypet-sendform-release",
