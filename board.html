@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-28 13:39:10 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-28 13:40:17 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-28T13:39:10",
+  "generatedAt": "2026-07-28T13:40:17",
   "counts": {
     "active": 3,
-    "waitingWorker": 2,
-    "working": 1,
+    "waitingWorker": 1,
+    "working": 2,
     "waitingReview": 0,
     "done": 106,
     "alerts": 1
@@ -89,14 +89,14 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -107,9 +107,14 @@
           "time": "2026-07-28 13:38:32",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 13:40:00",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 13:38:32"
+      "lastUpdate": "2026-07-28 13:40:00"
     },
     {
       "jobId": "Jraypet-sendform-release",
@@ -5813,6 +5818,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-28 13:39:24",
+      "command": "handoff-check",
+      "panel": "ObsidianVault",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-28 00:38:14",
       "command": "handoff-check",
       "panel": "project-23",
@@ -5925,12 +5936,6 @@
       "command": "handoff-check",
       "panel": "claude-handoff",
       "text": "다른 패널에서 /cycle 을 시도했어. /check 하면 알려줄게 근데 이걸 알려주면 너는 뭐할거야?"
-    },
-    {
-      "time": "2026-07-26 10:46:45",
-      "command": "handoff-check",
-      "panel": "01_project-35",
-      "text": "/cycle html문서함 file:///D:/02_Documents/06_HTML-Docs/index.html 여기의 카테고리의 분류가 프로젝…"
     }
   ]
 };</script>
