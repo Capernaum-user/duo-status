@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-28T13:59:57",
+  "generatedAt": "2026-07-28T14:01:04",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
-    "working": 2,
+    "waitingWorker": 1,
+    "working": 3,
     "waitingReview": 0,
     "done": 107,
-    "alerts": 2
+    "alerts": 1
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -33,9 +33,14 @@
           "time": "2026-07-28 13:59:22",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 14:00:15",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 13:59:22"
+      "lastUpdate": "2026-07-28 14:00:15"
     },
     {
       "jobId": "Jteach3-pdfproject-17",
