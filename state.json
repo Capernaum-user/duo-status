@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-07-28T16:55:13",
+  "generatedAt": "2026-07-28T16:56:21",
   "counts": {
     "active": 4,
-    "waitingWorker": 3,
-    "working": 1,
+    "waitingWorker": 2,
+    "working": 2,
     "waitingReview": 0,
     "done": 116,
-    "alerts": 3
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach4-ch01",
+      "title": "ORDER_Jteach4-ch01_R01 — ch01 집필: AI가 들쭉날쭉한 진짜 이유 — 그리고 이 책의 지도",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-07-28 16:54:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-28 16:55:31",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-28 16:55:31"
+    },
     {
       "jobId": "Jteach4-buildfix",
       "title": "ORDER_Jteach4-buildfix_R01 — 빌드 스크립트 멱등성 결함 수정",
@@ -47,34 +80,6 @@
         {
           "time": "2026-07-28 16:54:47",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-28 16:54:47"
-    },
-    {
-      "jobId": "Jteach4-ch01",
-      "title": "ORDER_Jteach4-ch01_R01 — ch01 집필: AI가 들쭉날쭉한 진짜 이유 — 그리고 이 책의 지도",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-07-28 16:54:47",
-          "state": "PLANNED",
           "round": 1
         }
       ],
