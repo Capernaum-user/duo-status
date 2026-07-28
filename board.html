@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-28 16:27:04 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-28 16:28:13 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-28T16:27:04",
+  "generatedAt": "2026-07-28T16:28:13",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
+    "waitingWorker": 2,
     "working": 2,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 113,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
     {
@@ -89,14 +89,14 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -107,9 +107,14 @@
           "time": "2026-07-28 16:26:09",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 16:27:55",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 16:26:09"
+      "lastUpdate": "2026-07-28 16:27:55"
     },
     {
       "jobId": "Jmungbook-landing-core",
@@ -117,10 +122,10 @@
       "project": "project-23",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -140,9 +145,14 @@
           "time": "2026-07-28 16:16:51",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-28 16:27:07",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-28 16:16:51"
+      "lastUpdate": "2026-07-28 16:27:07"
     },
     {
       "jobId": "Jmungbook-rebrand-app",
@@ -6190,6 +6200,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-28 16:27:13",
+      "command": "handoff-check",
+      "panel": "ObsidianVault",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-28 15:57:04",
       "command": "handoff-check",
       "panel": "project-23",
@@ -6302,12 +6318,6 @@
       "command": "handoff-check",
       "panel": "project-35",
       "text": "p3부터 p4까지 다른 패널에서 진행할 수있도록 너는 기획자 역할을 그대로 진행하고 /cycle 기능을 이용해서 자동으로 해보자. 내가 다른 패…"
-    },
-    {
-      "time": "2026-07-26 11:03:56",
-      "command": "handoff-check",
-      "panel": "project-35",
-      "text": "/check"
     }
   ]
 };</script>
