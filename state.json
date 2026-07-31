@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-31T20:18:49",
+  "generatedAt": "2026-07-31T20:19:57",
   "counts": {
-    "active": 4,
+    "active": 3,
     "waitingWorker": 2,
     "working": 1,
-    "waitingReview": 1,
-    "done": 122,
-    "alerts": 3
+    "waitingReview": 0,
+    "done": 123,
+    "alerts": 2
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +43,14 @@
           "time": "2026-07-31 20:18:34",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-31 20:19:47",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-31 20:18:34"
+      "lastUpdate": "2026-07-31 20:19:47"
     },
     {
       "jobId": "Jteach5-ch05",
