@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-31 18:55:39 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-07-31 19:14:07 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-07-31T18:55:39",
+  "generatedAt": "2026-07-31T19:14:05",
   "counts": {
     "active": 4,
     "waitingWorker": 2,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 119,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
     {
@@ -89,10 +89,10 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -112,9 +112,14 @@
           "time": "2026-07-31 18:55:09",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-07-31 19:13:09",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-07-31 18:55:09"
+      "lastUpdate": "2026-07-31 19:13:09"
     },
     {
       "jobId": "Jteach4-partone",
@@ -6425,6 +6430,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-07-31 19:06:51",
+      "command": "handoff-check",
+      "panel": "01_foundry-ontology-corpus",
+      "text": "/handoff-check"
+    },
+    {
       "time": "2026-07-31 18:54:20",
       "command": "handoff-check",
       "panel": "ObsidianVault",
@@ -6537,12 +6548,6 @@
       "command": "handoff-check",
       "panel": "project-23",
       "text": "다른 패널에서 이미 /check 되어서 진행되고 있는데 너가 멈춰버리면 안되지 다시 시작해"
-    },
-    {
-      "time": "2026-07-26 11:14:09",
-      "command": "handoff-check",
-      "panel": "project-35",
-      "text": "/check"
     }
   ]
 };</script>
