@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-02T00:04:35",
+  "generatedAt": "2026-08-02T00:05:43",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
-    "working": 1,
+    "waitingWorker": 2,
+    "working": 2,
     "waitingReview": 1,
     "done": 156,
-    "alerts": 4
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jteach7-review-a",
+      "title": "ch06~ch13 검수",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 23:58:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 00:05:06",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 00:05:06"
+    },
     {
       "jobId": "Jaov2-extacc-routing",
       "title": "라우팅 수리: 비서가 \"권한 없습니다\" 대신 탐색비서에게 위임하게",
@@ -80,34 +113,6 @@
         {
           "time": "2026-08-01 23:58:16",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-01 23:58:16"
-    },
-    {
-      "jobId": "Jteach7-review-a",
-      "title": "ch06~ch13 검수",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 23:58:16",
-          "state": "PLANNED",
           "round": 1
         }
       ],
