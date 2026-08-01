@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-02T01:34:10",
+  "generatedAt": "2026-08-02T01:35:21",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
-    "working": 2,
+    "waitingWorker": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 161,
     "alerts": 2
@@ -15,14 +15,14 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,14 @@
           "time": "2026-08-02 01:33:49",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-02 01:35:12",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-02 01:33:49"
+      "lastUpdate": "2026-08-02 01:35:12"
     },
     {
       "jobId": "Jteach7-review-b",
