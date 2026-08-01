@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-02T01:41:49",
+  "generatedAt": "2026-08-02T01:48:21",
   "counts": {
     "active": 5,
     "waitingWorker": 2,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 162,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jteach7-project-32-all",
+      "title": "20챕터 project-32 전량 생성 + 8주 과정 매핑 검증",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 01:33:49",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 01:35:12",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 01:47:25",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 01:47:25"
+    },
     {
       "jobId": "Jaov2-extacc-verify",
       "title": "통합 검증 + 시각화 HTML 보고서",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-08-02 01:40:10"
-    },
-    {
-      "jobId": "Jteach7-project-32-all",
-      "title": "20챕터 project-32 전량 생성 + 8주 과정 매핑 검증",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-02 01:33:49",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-02 01:35:12",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-02 01:35:12"
     },
     {
       "jobId": "Jteach7-review-b",
