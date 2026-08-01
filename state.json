@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-01T23:17:40",
+  "generatedAt": "2026-08-01T23:18:48",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
-    "working": 2,
+    "waitingWorker": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 154,
-    "alerts": 3
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jdsr2-fix-b1b7",
+      "title": "전수 컴파일에서 나온 결함 F1·F2 수정 + 14종 재검증",
+      "project": "project-11",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 23:17:02",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 23:17:51",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 23:17:51"
+    },
     {
       "jobId": "Jdsr2-howto-audit",
       "title": "오너용 사용 가이드 HTML + 라우터 문서 정합성 감사",
@@ -47,34 +80,6 @@
         {
           "time": "2026-08-01 23:17:02",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-01 23:17:02"
-    },
-    {
-      "jobId": "Jdsr2-fix-b1b7",
-      "title": "전수 컴파일에서 나온 결함 F1·F2 수정 + 14종 재검증",
-      "project": "project-11",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 23:17:02",
-          "state": "PLANNED",
           "round": 1
         }
       ],
