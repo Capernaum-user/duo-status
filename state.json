@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-02T08:32:33",
+  "generatedAt": "2026-08-02T08:54:43",
   "counts": {
     "active": 4,
     "waitingWorker": 2,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 166,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-33",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,9 +38,14 @@
           "time": "2026-08-02 08:31:31",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-02 08:54:18",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-02 08:31:31"
+      "lastUpdate": "2026-08-02 08:54:18"
     },
     {
       "jobId": "Jteach7-release",
@@ -131,7 +136,7 @@
     {
       "jobId": "Jaov2-extacc-verify",
       "title": "통합 검증 + 시각화 HTML 보고서",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -217,7 +222,7 @@
     {
       "jobId": "Jaov2-extacc-mcp",
       "title": "MCP 화이트리스트 연결",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -318,7 +323,7 @@
     {
       "jobId": "Jaov2-extacc-connectors",
       "title": "커넥터 프레임워크: GitHub(gh 경유) + HTTP API",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -361,7 +366,7 @@
     {
       "jobId": "Jaov2-extacc-roots",
       "title": "다중 루트: <local>",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -447,7 +452,7 @@
     {
       "jobId": "Jaov2-extacc-routing",
       "title": "라우팅 수리: 비서가 \"권한 없습니다\" 대신 탐색비서에게 위임하게",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -657,7 +662,7 @@
     {
       "jobId": "Jcurjob-panel",
       "title": "4단계 — 상태판 확장 + 품질 지표 + 통합 검증: 늘어난 일이 눈에 보이게",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -738,7 +743,7 @@
     {
       "jobId": "Jaov2-viewer-verify",
       "title": "통합 검증 + 시각화 HTML 보고서",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -824,7 +829,7 @@
     {
       "jobId": "Jaov2-viewer-project-2",
       "title": "run 결과에 산출물 요약 붙이기 (무엇이 어디에 생겼는지)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -867,7 +872,7 @@
     {
       "jobId": "Jcurjob-hygiene",
       "title": "3단계 — Vault 문서 위생 검사(J10): 4,851개 노트를 규칙으로 훑는다",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -905,7 +910,7 @@
     {
       "jobId": "Jaov2-viewer-preview",
       "title": "미리보기 렌더 + 실제로 열기 버튼",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -991,7 +996,7 @@
     {
       "jobId": "Jcurjob-relay",
       "title": "R2 — 예산 잠금 해제 후 실제 실행 검증 (코드는 그대로)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 2,
       "stage": "ACCEPTED",
@@ -1097,7 +1102,7 @@
     {
       "jobId": "Jaov2-viewer-explorer",
       "title": "산출물 탐색기 패널: 클릭으로 폴더 드나들기 + 결과물 경로 표시",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1140,7 +1145,7 @@
     {
       "jobId": "Jaov2-viewer-core",
       "title": "뷰어 백엔드: kind 판별 · 원본 서빙 · OS 열기 · 산출물 추적",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1183,7 +1188,7 @@
     {
       "jobId": "Jcurjob-embed",
       "title": "R2 — 형식 수정만: `order_id` 를 파일명으로 고쳐 REPORT 재제출",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 2,
       "stage": "ACCEPTED",
@@ -1236,7 +1241,7 @@
     {
       "jobId": "Jao2pent-intake-unclip",
       "title": "4F 대시보드 intake 버튼 클리핑 해제 (CSS 2줄 수정)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1365,7 +1370,7 @@
     {
       "jobId": "Jcuradm-wire",
       "title": "4단계 — 상시 갱신 배선 + 문서 + 통합 검증",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1408,7 +1413,7 @@
     {
       "jobId": "Jcuradm-widget",
       "title": "3단계 — 위젯 렌더러: 대기/동작을 한눈에 + GPU·양자화·작업 이력",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1451,7 +1456,7 @@
     {
       "jobId": "Jaov2-fs-e2e",
       "title": "ORDER_Jaov2-fs-e2e_R01 — 통합 검증 + 시각화 HTML 보고",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1494,7 +1499,7 @@
     {
       "jobId": "Jcuradm-history",
       "title": "2단계 — 작업 이력 집계기(history): 감사 로그를 &ldquo;무엇을 하고 있고 무엇을 했나&rdquo;로",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1537,7 +1542,7 @@
     {
       "jobId": "Jaov2-docflow",
       "title": "ORDER_Jaov2-docflow_R01 — 개발문서 5단계 파이프라인",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1580,7 +1585,7 @@
     {
       "jobId": "Jcuradm-probe",
       "title": "1단계 — 텔레메트리 수집기(probe): GPU · Ollama · 모델 정보를 JSON 한 장으로",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1618,7 +1623,7 @@
     {
       "jobId": "Jaov2-fs-cli",
       "title": "ORDER_Jaov2-fs-cli_R01 — CEO 대시보드 비서실 CLI 확장",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1661,7 +1666,7 @@
     {
       "jobId": "Jaov2-fs-secretary",
       "title": "ORDER_Jaov2-fs-secretary_R01 — 비서 연결: 탐색비서·집행비서 + /api/fs/*",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -1704,7 +1709,7 @@
     {
       "jobId": "Jaov2-fs-core",
       "title": "ORDER_Jaov2-fs-core_R01 — 권한 코어: 정책게이트·집행기·감사·휴지통",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -2653,8 +2658,8 @@
       "lastUpdate": "2026-07-28 14:10:45"
     },
     {
-      "jobId": "Jteach3-pdfproject-17",
-      "title": "ORDER_Jteach3-pdfproject-17_R01 — PDF 렌더 도구 설치 + 한글 PDF 육안 검증",
+      "jobId": "Jteach3-pdfproject-34",
+      "title": "ORDER_Jteach3-pdfproject-34_R01 — PDF 렌더 도구 설치 + 한글 PDF 육안 검증",
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
@@ -3873,8 +3878,8 @@
     },
     {
       "jobId": "Jaov2-route-worker-fix",
-      "title": "project-35 route.json worker 배정 정정 (codex → claude)",
-      "project": "project-35",
+      "title": "project-36 route.json worker 배정 정정 (codex → claude)",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "PLANNED",
@@ -4620,7 +4625,7 @@
     {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 3,
       "stage": "OUT-OF-BAND-DONE",
@@ -4708,7 +4713,7 @@
     {
       "jobId": "Jmermaid-render",
       "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 4,
       "stage": "OUT-OF-BAND-DONE",
@@ -4791,7 +4796,7 @@
     {
       "jobId": "Jneo4j-durable",
       "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "OUT-OF-BAND-DONE",
@@ -5263,7 +5268,7 @@
     {
       "jobId": "Jmermaid-flush",
       "title": "ORDER_Jmermaid-flush_R01 — mdLines: 미닫힘 mermaid 펜스 버퍼 flush(내용 소실 방지)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -5311,7 +5316,7 @@
     {
       "jobId": "Jclarify-race",
       "title": "ORDER_Jclarify-race_R02 — 코드는 확정(무변경). REPORT만 재제출한다 (커버리지 게이트 통과 + 서술 오류 2건 정정)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 2,
       "stage": "ACCEPTED",
@@ -5369,7 +5374,7 @@
     {
       "jobId": "Jbulk-discard-b",
       "title": "ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -5417,7 +5422,7 @@
     {
       "jobId": "Jbulk-discard-a",
       "title": "ORDER_Jbulk-discard-a_R01 — 미션 일괄 폐기(bulk discard) 엔드포인트 + 회귀가드",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -5518,7 +5523,7 @@
     {
       "jobId": "Jmission-discard-b",
       "title": "ORDER_Jmission-discard-b_R01 — 4F 리뷰 큐: 미션 🗑 삭제 버튼(질문대기 포함 유연 취소)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -5566,7 +5571,7 @@
     {
       "jobId": "Jmission-discard-a",
       "title": "ORDER_Jmission-discard-a_R01 — 미션 폐기(삭제) 엔드포인트 배선 + 질문대기 취소 허용 + 경험 학습 보존",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -5786,7 +5791,7 @@
     {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 2,
       "stage": "ACCEPTED",
@@ -5849,7 +5854,7 @@
     {
       "jobId": "Jbrief-std-a",
       "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -5902,7 +5907,7 @@
     {
       "jobId": "Jceo-chart-axes",
       "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -5955,7 +5960,7 @@
     {
       "jobId": "Jgnosis-dedup",
       "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6008,7 +6013,7 @@
     {
       "jobId": "Jceo-intake-simplify",
       "title": "ORDER_Jceo-intake-simplify_R01 — 4F 하달부 간소화: INTAKE 라벨 제거 + 속도 선택기 UI 제거(항상 정밀)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6061,7 +6066,7 @@
     {
       "jobId": "Jceo-filing-cabinet",
       "title": "ORDER_Jceo-filing-cabinet_R01 — 4F 리뷰 큐를 상태별 파일철(폴더 탭 + 제목 목록 + 선택 시 본문)로 개편",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6171,7 +6176,7 @@
     {
       "jobId": "Jaudit-a1b",
       "title": "ORDER_Jaudit-a1b_R02 — [R02] \"비서실 10인\" 소비자 라벨 동적화 (R01 이 만든 거짓 라벨 해소)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 2,
       "stage": "ACCEPTED",
@@ -6244,7 +6249,7 @@
     {
       "jobId": "Jgates-b2",
       "title": "ORDER_Jgates-b2_R01 — [게이트 후속] 정본 §6.3·§6.4 잔여분: RAG 정본·gnosis 씨앗·SYSTEM_FACTS",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6292,7 +6297,7 @@
     {
       "jobId": "Jaudit-q4",
       "title": "ORDER_Jaudit-q4_R01 — [감사 §7-Q4] office-sim-upgrade 백업 이동 + 추적 해제 (CEO 결정: 권고안 ②)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6340,7 +6345,7 @@
     {
       "jobId": "Jgates-b1",
       "title": "ORDER_Jgates-b1_R01 — [게이트 B1] Phase 1 본체: 아이디어 검증 게이트 0~5 프롬프트·지식 재배치",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6436,7 +6441,7 @@
     {
       "jobId": "Jgates-b0",
       "title": "ORDER_Jgates-b0_R01 — [게이트 B0] Phase 0 준비·측정: baseline + NEXUS_IDEA_GATES 토글",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6484,7 +6489,7 @@
     {
       "jobId": "Jaudit-a4",
       "title": "ORDER_Jaudit-a4_R01 — [감사 A4] 문서 정합화 (docs 전용 — 코드 무접촉)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6527,7 +6532,7 @@
     {
       "jobId": "Jaudit-a3",
       "title": "ORDER_Jaudit-a3_R01 — [감사 A3] 리포 위생: 오염물 3종 제거·이동",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6575,7 +6580,7 @@
     {
       "jobId": "Jaudit-a2",
       "title": "ORDER_Jaudit-a2_R01 — [감사 A2] 엔진·테스트 정합 (동작 불변 원칙)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6623,7 +6628,7 @@
     {
       "jobId": "Jaudit-a1",
       "title": "ORDER_Jaudit-a1_R01 — [감사 A1] 런타임 거짓 컨텍스트 제거: 은퇴 2F/3F 하드코딩 4곳",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6671,7 +6676,7 @@
     {
       "jobId": "Jclarify-loop-cap",
       "title": "ORDER_Jclarify-loop-cap_R01 — 명확화 루프 종결 보장: 위임 시멘틱 + 재질문 캡 + 중복 차단 + 전부맡기기",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6834,7 +6839,7 @@
     {
       "jobId": "Jclarify-chat-b",
       "title": "ORDER_Jclarify-chat-b_R02 — 1문1답 페이싱 제거: 전 질문 동시 카드 + 클릭 중심 (CEO 실사용 기각 반영)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -6902,7 +6907,7 @@
     {
       "jobId": "Jclarify-chat-a",
       "title": "ORDER_Jclarify-chat-a_R02 — 재라운드·게이트2에도 객관식 선택지 생성 (백엔드 보강)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 2,
       "stage": "ACCEPTED",
@@ -7099,7 +7104,7 @@
     {
       "jobId": "Jfloor-selfheal",
       "title": "ORDER_Jfloor-selfheal_R01 — 층 미기동 재발 방지: 자기치유 디스패치 + 미션 프리체크 + 부트스트랩 자동기동",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7147,7 +7152,7 @@
     {
       "jobId": "Jsocratic-m5c",
       "title": "ORDER_Jsocratic-m5c_R01 — fit 폐루프: ADR Context 요약 + 결재 표지 1줄 + NEXUS_FIT_HARD 배너",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7195,7 +7200,7 @@
     {
       "jobId": "Jsocratic-m5b",
       "title": "ORDER_Jsocratic-m5b_R01 — fit 인수시험 실행기 T1: 샌드박스 실행 오라클(opt-in)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7243,7 +7248,7 @@
     {
       "jobId": "Jsocratic-m5a",
       "title": "ORDER_Jsocratic-m5a_R01 — fit 인수시험 실행기 T0: 결정론 커버리지 + fit-report 결재 패키지 첨부",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7291,7 +7296,7 @@
     {
       "jobId": "Jsocratic-s3b",
       "title": "ORDER_Jsocratic-s3b_R01 — S3 마감: auto 모드 극장승인 봉인 + 사람대기 타임아웃 상신 + _parse_verdict matched 보조탐지",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7339,7 +7344,7 @@
     {
       "jobId": "Jsocratic-clarify-pii",
       "title": "ORDER_Jsocratic-clarify-pii_R01 — clarify Q&A seal-시점 수치 PII 위생(라이브 UX 무변경)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7387,7 +7392,7 @@
     {
       "jobId": "Jsocratic-m34",
       "title": "ORDER_Jsocratic-m34_R01 — brief_path phantom 배선 + 스펙 절단순서·캡 회귀가드",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7435,7 +7440,7 @@
     {
       "jobId": "Jsocratic-s4",
       "title": "ORDER_Jsocratic-s4_R01 — ADR 5필드 결정로그(approve/reject 훅) + .gitignore 선수",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7483,7 +7488,7 @@
     {
       "jobId": "Jsocratic-s3",
       "title": "ORDER_Jsocratic-s3_R01 — console 게이트 fail-open 봉인(M7) + 동일모델 자문 라벨(M6)",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7531,7 +7536,7 @@
     {
       "jobId": "Jsocratic-s1-fu2",
       "title": "ORDER_Jsocratic-s1-fu2_R01 — belief.variable 영속 전 수치 PII 로컬 마스킹 + 회귀가드",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7579,7 +7584,7 @@
     {
       "jobId": "Jsocratic-s1-fu1",
       "title": "ORDER_Jsocratic-s1-fu1_R01 — Socratic post-seal 재라운드 누적손실 폴백 재정렬 + 회귀가드",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7627,7 +7632,7 @@
     {
       "jobId": "Jsocratic-s1",
       "title": "ORDER_Jsocratic-s1_R01 — S1(M2) 믿음상태 질문 루프: 멀티라운드 누적 손실버그 수정 + belief 통과-저장",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
       "stage": "ACCEPTED",
@@ -7670,7 +7675,7 @@
     {
       "jobId": "Jsocratic-graft",
       "title": "ORDER_Jsocratic-graft_R02 — 라이브 SEALED 도달(스키마 sanitize) + selftest 정합",
-      "project": "project-35",
+      "project": "project-36",
       "targetDir": "<local>",
       "round": 2,
       "stage": "ACCEPTED",
@@ -8483,13 +8488,13 @@
     {
       "time": "2026-07-26 13:10:17",
       "command": "handoff-check",
-      "panel": "project-35",
-      "text": "Only one ORDER is pending, but its target_dir is project-35 — a different p…"
+      "panel": "project-36",
+      "text": "Only one ORDER is pending, but its target_dir is project-36 — a different p…"
     },
     {
       "time": "2026-07-26 12:42:12",
       "command": "handoff-check",
-      "panel": "project-35",
+      "panel": "project-36",
       "text": "/check"
     },
     {
