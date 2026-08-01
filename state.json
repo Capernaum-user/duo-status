@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-01T21:06:44",
+  "generatedAt": "2026-08-01T21:07:51",
   "counts": {
     "active": 8,
     "waitingWorker": 2,
-    "working": 6,
-    "waitingReview": 0,
+    "working": 5,
+    "waitingReview": 1,
     "done": 138,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jao2pent-intake-unclip",
+      "title": "4F 대시보드 intake 버튼 클리핑 해제 (CSS 2줄 수정)",
+      "project": "project-35",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 20:58:26",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 21:04:38",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 21:07:16",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 21:07:16"
+    },
     {
       "jobId": "Jteach7-frontmatter",
       "title": "앞부속물 3슬롯 집필",
@@ -41,39 +79,6 @@
         }
       ],
       "lastUpdate": "2026-08-01 21:06:27"
-    },
-    {
-      "jobId": "Jao2pent-intake-unclip",
-      "title": "4F 대시보드 intake 버튼 클리핑 해제 (CSS 2줄 수정)",
-      "project": "project-35",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 20:58:26",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-01 21:04:38",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-01 21:04:38"
     },
     {
       "jobId": "Jaov2-viewer-core",
