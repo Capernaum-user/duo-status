@@ -1,24 +1,57 @@
 {
-  "generatedAt": "2026-08-02T08:54:43",
+  "generatedAt": "2026-08-02T08:56:51",
   "counts": {
     "active": 4,
     "waitingWorker": 2,
-    "working": 1,
-    "waitingReview": 1,
-    "done": 166,
-    "alerts": 3
+    "working": 2,
+    "waitingReview": 0,
+    "done": 167,
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jremilingo-project-39",
+      "title": "Remi Lingo 스토리 슬롯 조각 집필 + 조합기 실증",
+      "project": "project-33",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 08:56:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 08:56:27",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 08:56:27"
+    },
     {
       "jobId": "Jremilingo-dbschema",
       "title": "Remi Lingo DB 스키마 DDL + 결정론 판정 SQL 실증",
       "project": "project-33",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +76,14 @@
           "time": "2026-08-02 08:54:18",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-02 08:56:16",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-02 08:54:18"
+      "lastUpdate": "2026-08-02 08:56:16"
     },
     {
       "jobId": "Jteach7-release",
@@ -4623,6 +4661,59 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-36",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
       "project": "project-36",
@@ -4789,59 +4880,6 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 4
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-36",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
