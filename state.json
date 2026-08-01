@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-08-01T14:44:55",
+  "generatedAt": "2026-08-01T15:09:13",
   "counts": {
     "active": 5,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 125,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
     {
-      "jobId": "Jteach6-handout",
-      "title": "ORDER_Jteach6-handout_R01 — 주차별 교재(handout) 산출물 신설",
+      "jobId": "Jteach6-project-32",
+      "title": "ORDER_Jteach6-project-32_R01 — 주차별 교재(project-32) 산출물 신설",
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,9 +38,14 @@
           "time": "2026-08-01 14:44:20",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-01 15:08:06",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-01 14:44:20"
+      "lastUpdate": "2026-08-01 15:08:06"
     },
     {
       "jobId": "Jteach6-visuals",
