@@ -71,18 +71,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-01 22:46:16 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-01 22:48:23 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-01T22:46:16",
+  "generatedAt": "2026-08-01T22:48:23",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 1,
+    "working": 2,
+    "waitingReview": 2,
     "done": 149,
-    "alerts": 3
+    "alerts": 5
   },
   "jobs": [
+    {
+      "jobId": "Jdsr2-compile-all",
+      "title": "14 아키타입 전수 컴파일 + 스냅샷 + 조립 결함 목록",
+      "project": "project-11",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 22:40:05",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 22:40:42",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 22:47:22",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 22:47:22"
+    },
     {
       "jobId": "Jaov2-viewer-verify",
       "title": "통합 검증 + 시각화 HTML 보고서",
@@ -91,13 +129,13 @@
       "round": 1,
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -120,39 +158,6 @@
         }
       ],
       "lastUpdate": "2026-08-01 22:45:57"
-    },
-    {
-      "jobId": "Jdsr2-compile-all",
-      "title": "14 아키타입 전수 컴파일 + 스냅샷 + 조립 결함 목록",
-      "project": "project-11",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 22:40:05",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-01 22:40:42",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-01 22:40:42"
     },
     {
       "jobId": "Jdsr2-reachability",
