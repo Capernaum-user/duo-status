@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-01T22:08:52",
+  "generatedAt": "2026-08-01T22:25:07",
   "counts": {
     "active": 6,
-    "waitingWorker": 3,
+    "waitingWorker": 2,
     "working": 3,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 146,
-    "alerts": 3
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jcurjob-hygiene",
+      "title": "3단계 — Vault 문서 위생 검사(J10): 4,851개 노트를 규칙으로 훑는다",
+      "project": "project-35",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 22:01:42",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 22:24:23",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 22:24:23"
+    },
     {
       "jobId": "Jaov2-viewer-project-2",
       "title": "run 결과에 산출물 요약 붙이기 (무엇이 어디에 생겼는지)",
@@ -127,34 +160,6 @@
         }
       ],
       "lastUpdate": "2026-08-01 22:05:08"
-    },
-    {
-      "jobId": "Jcurjob-hygiene",
-      "title": "3단계 — Vault 문서 위생 검사(J10): 4,851개 노트를 규칙으로 훑는다",
-      "project": "project-35",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 22:01:42",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-01 22:01:42"
     },
     {
       "jobId": "Jcurjob-relay",
