@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-01T23:15:32",
+  "generatedAt": "2026-08-01T23:17:40",
   "counts": {
     "active": 5,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
-    "done": 153,
+    "waitingReview": 0,
+    "done": 154,
     "alerts": 3
   },
   "jobs": [
@@ -15,10 +15,10 @@
       "project": "project-11",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +43,42 @@
           "time": "2026-08-01 23:14:53",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-01 23:17:02",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-01 23:14:53"
+      "lastUpdate": "2026-08-01 23:17:02"
+    },
+    {
+      "jobId": "Jdsr2-fix-b1b7",
+      "title": "전수 컴파일에서 나온 결함 F1·F2 수정 + 14종 재검증",
+      "project": "project-11",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 23:17:02",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 23:17:02"
     },
     {
       "jobId": "Jdsr2-coverage",
