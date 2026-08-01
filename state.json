@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-02T03:38:24",
+  "generatedAt": "2026-08-02T03:40:33",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 1,
-    "waitingReview": 1,
-    "done": 164,
-    "alerts": 3
+    "waitingReview": 0,
+    "done": 165,
+    "alerts": 2
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +43,42 @@
           "time": "2026-08-02 03:38:07",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-02 03:40:15",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-02 03:38:07"
+      "lastUpdate": "2026-08-02 03:40:15"
+    },
+    {
+      "jobId": "Jteach7-release",
+      "title": "출간 준비 최종 점검",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 03:40:15",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 03:40:15"
     },
     {
       "jobId": "Jaov2-extacc-verify",
