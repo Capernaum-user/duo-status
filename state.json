@@ -1,24 +1,52 @@
 {
-  "generatedAt": "2026-08-02T01:48:21",
+  "generatedAt": "2026-08-02T01:49:38",
   "counts": {
     "active": 5,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
-    "done": 162,
-    "alerts": 3
+    "waitingReview": 0,
+    "done": 163,
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach7-cover",
+      "title": "표지 문구 확정 + 표지 이미지 갱신",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 01:49:24",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 01:49:24"
+    },
     {
       "jobId": "Jteach7-project-32-all",
       "title": "20챕터 project-32 전량 생성 + 8주 과정 매핑 검증",
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +71,14 @@
           "time": "2026-08-02 01:47:25",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-02 01:49:23",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-02 01:47:25"
+      "lastUpdate": "2026-08-02 01:49:23"
     },
     {
       "jobId": "Jaov2-extacc-verify",
@@ -4484,89 +4517,6 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
-      "jobId": "Jmermaid-render",
-      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
-      "project": "project-35",
-      "targetDir": "<local>",
-      "round": 4,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 3,
-        "result": "REWORK-CAP"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-22 09:28:56",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 09:28:58",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 09:38:53",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 09:43:43",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:51:26",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:55:18",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:02:40",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:08:32",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-07-22 10:10:33",
-          "state": "PLANNED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
       "jobId": "Jneo4j-durable",
       "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
       "project": "project-35",
@@ -4703,6 +4653,89 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 3
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
+      "jobId": "Jmermaid-render",
+      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
+      "project": "project-35",
+      "targetDir": "<local>",
+      "round": 4,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 3,
+        "result": "REWORK-CAP"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-22 09:28:56",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:28:58",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:38:53",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:43:43",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:51:26",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:55:18",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:02:40",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:08:32",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-07-22 10:10:33",
+          "state": "PLANNED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 4
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
