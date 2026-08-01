@@ -1,29 +1,57 @@
 {
-  "generatedAt": "2026-08-02T01:37:30",
+  "generatedAt": "2026-08-02T01:40:39",
   "counts": {
     "active": 5,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
-    "done": 161,
+    "waitingReview": 0,
+    "done": 162,
     "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jaov2-extacc-verify",
+      "title": "통합 검증 + 시각화 HTML 보고서",
+      "project": "project-35",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 01:40:24",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 01:40:24"
+    },
     {
       "jobId": "Jaov2-extacc-mcp",
       "title": "MCP 화이트리스트 연결",
       "project": "project-35",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -43,9 +71,14 @@
           "time": "2026-08-02 01:37:15",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-02 01:40:10",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-02 01:37:15"
+      "lastUpdate": "2026-08-02 01:40:10"
     },
     {
       "jobId": "Jteach7-project-32-all",
