@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-02T03:40:33",
+  "generatedAt": "2026-08-02T03:41:41",
   "counts": {
     "active": 4,
-    "waitingWorker": 3,
-    "working": 1,
+    "waitingWorker": 2,
+    "working": 2,
     "waitingReview": 0,
     "done": 165,
     "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach7-release",
+      "title": "출간 준비 최종 점검",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 03:40:15",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 03:41:23",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 03:41:23"
+    },
     {
       "jobId": "Jteach7-cover",
       "title": "표지 문구 확정 + 표지 이미지 갱신",
@@ -47,34 +80,6 @@
         {
           "time": "2026-08-02 03:40:15",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-02 03:40:15"
-    },
-    {
-      "jobId": "Jteach7-release",
-      "title": "출간 준비 최종 점검",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-02 03:40:15",
-          "state": "PLANNED",
           "round": 1
         }
       ],
