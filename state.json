@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-01T13:53:58",
+  "generatedAt": "2026-08-01T13:55:05",
   "counts": {
     "active": 4,
-    "waitingWorker": 3,
-    "working": 1,
+    "waitingWorker": 2,
+    "working": 2,
     "waitingReview": 0,
     "done": 124,
     "alerts": 2
@@ -15,14 +15,14 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,14 @@
           "time": "2026-08-01 13:53:51",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-01 13:54:20",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-01 13:53:51"
+      "lastUpdate": "2026-08-01 13:54:20"
     },
     {
       "jobId": "Jteach6-design",
