@@ -1,24 +1,52 @@
 {
-  "generatedAt": "2026-08-02T01:32:52",
+  "generatedAt": "2026-08-02T01:34:10",
   "counts": {
     "active": 5,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
-    "done": 160,
-    "alerts": 3
+    "waitingReview": 0,
+    "done": 161,
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jteach7-project-32-all",
+      "title": "20챕터 project-32 전량 생성 + 8주 과정 매핑 검증",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 01:33:49",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 01:33:49"
+    },
     {
       "jobId": "Jteach7-review-b",
       "title": "ch14~ch20 검수 R2: 총괄 문서의 사실오류 정정",
       "project": "project-32",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -58,9 +86,14 @@
           "time": "2026-08-02 01:32:05",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-08-02 01:33:49",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-02 01:32:05"
+      "lastUpdate": "2026-08-02 01:33:49"
     },
     {
       "jobId": "Jaov2-extacc-mcp",
