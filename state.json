@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-01T21:19:15",
+  "generatedAt": "2026-08-01T21:27:23",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 4,
-    "waitingReview": 0,
+    "working": 3,
+    "waitingReview": 1,
     "done": 139,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jaov2-viewer-core",
+      "title": "뷰어 백엔드: kind 판별 · 원본 서빙 · OS 열기 · 산출물 추적",
+      "project": "project-35",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 20:55:23",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 21:03:44",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 21:26:27",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 21:26:27"
+    },
     {
       "jobId": "Jcurjob-embed",
       "title": "R2 — 형식 수정만: `order_id` 를 파일명으로 고쳐 REPORT 재제출",
@@ -127,39 +165,6 @@
         }
       ],
       "lastUpdate": "2026-08-01 21:06:27"
-    },
-    {
-      "jobId": "Jaov2-viewer-core",
-      "title": "뷰어 백엔드: kind 판별 · 원본 서빙 · OS 열기 · 산출물 추적",
-      "project": "project-35",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 20:55:23",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-01 21:03:44",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-01 21:03:44"
     },
     {
       "jobId": "Jdsrouter-compiler",
