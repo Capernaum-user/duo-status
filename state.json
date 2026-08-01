@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-01T21:03:21",
+  "generatedAt": "2026-08-01T21:04:28",
   "counts": {
     "active": 8,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 0,
     "done": 138,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jaov2-viewer-core",
+      "title": "뷰어 백엔드: kind 판별 · 원본 서빙 · OS 열기 · 산출물 추적",
+      "project": "project-35",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 20:55:23",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 21:03:44",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 21:03:44"
+    },
     {
       "jobId": "Jdsrouter-compiler",
       "title": "Intent Router 프롬프트 컴파일러 (PowerShell)",
@@ -121,34 +154,6 @@
       "round": 1,
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 20:58:26",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-01 20:58:26"
-    },
-    {
-      "jobId": "Jaov2-viewer-core",
-      "title": "뷰어 백엔드: kind 판별 · 원본 서빙 · OS 열기 · 산출물 추적",
-      "project": "project-35",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
       "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
@@ -162,12 +167,12 @@
       "autorun": null,
       "timeline": [
         {
-          "time": "2026-08-01 20:55:23",
+          "time": "2026-08-01 20:58:26",
           "state": "PLANNED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-08-01 20:55:23"
+      "lastUpdate": "2026-08-01 20:58:26"
     },
     {
       "jobId": "Jcurjob-embed",
