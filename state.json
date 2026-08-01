@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-01T22:41:08",
+  "generatedAt": "2026-08-01T22:46:16",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 4,
-    "waitingReview": 0,
+    "working": 3,
+    "waitingReview": 1,
     "done": 149,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jaov2-viewer-verify",
+      "title": "통합 검증 + 시각화 HTML 보고서",
+      "project": "project-35",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 22:32:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 22:32:44",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 22:45:57",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 22:45:57"
+    },
     {
       "jobId": "Jdsr2-compile-all",
       "title": "14 아키타입 전수 컴파일 + 스냅샷 + 조립 결함 목록",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-08-01 22:40:05"
-    },
-    {
-      "jobId": "Jaov2-viewer-verify",
-      "title": "통합 검증 + 시각화 HTML 보고서",
-      "project": "project-35",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 22:32:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-01 22:32:44",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-01 22:32:44"
     },
     {
       "jobId": "Jaov2-viewer-project-2",
