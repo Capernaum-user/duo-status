@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-01T21:45:15",
+  "generatedAt": "2026-08-01T21:47:23",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
-    "working": 3,
+    "waitingWorker": 3,
+    "working": 4,
     "waitingReview": 0,
     "done": 141,
-    "alerts": 4
+    "alerts": 3
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-11",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -48,9 +48,14 @@
           "time": "2026-08-01 21:44:02",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-01 21:46:32",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-01 21:44:02"
+      "lastUpdate": "2026-08-01 21:46:32"
     },
     {
       "jobId": "Jaov2-viewer-explorer",
