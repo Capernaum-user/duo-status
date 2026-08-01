@@ -1,24 +1,57 @@
 {
-  "generatedAt": "2026-08-01T22:38:00",
+  "generatedAt": "2026-08-01T22:41:08",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 1,
-    "done": 148,
-    "alerts": 4
+    "working": 4,
+    "waitingReview": 0,
+    "done": 149,
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jdsr2-compile-all",
+      "title": "14 아키타입 전수 컴파일 + 스냅샷 + 조립 결함 목록",
+      "project": "project-11",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 22:40:05",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 22:40:42",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 22:40:42"
+    },
     {
       "jobId": "Jdsr2-reachability",
       "title": "도달 불가 아키타입 7종 복구 (명세·사전·컴파일러 정합화)",
       "project": "project-11",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +76,14 @@
           "time": "2026-08-01 22:37:25",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-01 22:40:05",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-01 22:37:25"
+      "lastUpdate": "2026-08-01 22:40:05"
     },
     {
       "jobId": "Jaov2-viewer-verify",
