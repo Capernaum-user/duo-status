@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-02T00:14:16",
+  "generatedAt": "2026-08-02T00:44:24",
   "counts": {
     "active": 5,
     "waitingWorker": 2,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 157,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jteach7-review-a",
+      "title": "ch06~ch13 검수",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 23:58:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 00:05:06",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 00:43:42",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 00:43:42"
+    },
     {
       "jobId": "Jaov2-extacc-roots",
       "title": "다중 루트: <local>",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-08-02 00:07:59"
-    },
-    {
-      "jobId": "Jteach7-review-a",
-      "title": "ch06~ch13 검수",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 23:58:16",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-02 00:05:06",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-02 00:05:06"
     },
     {
       "jobId": "Jteach7-frontmatter",
