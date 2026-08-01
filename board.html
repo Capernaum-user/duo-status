@@ -71,18 +71,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-01 18:00:25 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-01 18:04:33 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-01T18:00:25",
+  "generatedAt": "2026-08-01T18:04:33",
   "counts": {
     "active": 5,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 131,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jaov2-docflow",
+      "title": "ORDER_Jaov2-docflow_R01 — 개발문서 5단계 파이프라인",
+      "project": "project-35",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-01 17:48:11",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 17:48:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-01 18:04:02",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-01 18:04:02"
+    },
     {
       "jobId": "Jcuradm-history",
       "title": "2단계 — 작업 이력 집계기(history): 감사 로그를 &ldquo;무엇을 하고 있고 무엇을 했나&rdquo;로",
@@ -148,39 +186,6 @@
         }
       ],
       "lastUpdate": "2026-08-01 17:59:32"
-    },
-    {
-      "jobId": "Jaov2-docflow",
-      "title": "ORDER_Jaov2-docflow_R01 — 개발문서 5단계 파이프라인",
-      "project": "project-35",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-01 17:48:11",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-01 17:48:51",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-01 17:48:51"
     },
     {
       "jobId": "Jaov2-fs-cli",
