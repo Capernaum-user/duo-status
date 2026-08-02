@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-02T10:43:08",
+  "generatedAt": "2026-08-02T13:49:20",
   "counts": {
     "active": 4,
     "waitingWorker": 3,
     "working": 1,
     "waitingReview": 0,
     "done": 173,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
     {
@@ -17,12 +17,12 @@
       "round": 1,
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
