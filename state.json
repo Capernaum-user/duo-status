@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-02T18:44:51",
+  "generatedAt": "2026-08-02T18:46:01",
   "counts": {
     "active": 6,
     "waitingWorker": 2,
-    "working": 4,
-    "waitingReview": 0,
+    "working": 3,
+    "waitingReview": 1,
     "done": 181,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jaov2rev-chatfix",
+      "title": "ORDER_Jaov2rev-chatfix_R01 — 수정 발주 기능으로 project-34 채팅 말풍선을 되살린다(실증)",
+      "project": "project-34",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 17:37:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 17:40:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 18:45:09",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 18:45:09"
+    },
     {
       "jobId": "Jwritekit-rules",
       "title": "ORDER_Jwritekit-rules_R01 — 역설계 분석: 비포 합성 + 사용자 문체 규칙 도출",
@@ -132,39 +170,6 @@
         }
       ],
       "lastUpdate": "2026-08-02 17:54:48"
-    },
-    {
-      "jobId": "Jaov2rev-chatfix",
-      "title": "ORDER_Jaov2rev-chatfix_R01 — 수정 발주 기능으로 project-34 채팅 말풍선을 되살린다(실증)",
-      "project": "project-34",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-02 17:37:41",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-02 17:40:08",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-02 17:40:08"
     },
     {
       "jobId": "Jaov2rev-deliver",
