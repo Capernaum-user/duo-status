@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-02T19:48:25",
+  "generatedAt": "2026-08-02T19:49:35",
   "counts": {
-    "active": 6,
+    "active": 5,
     "waitingWorker": 2,
     "working": 3,
-    "waitingReview": 1,
-    "done": 186,
-    "alerts": 3
+    "waitingReview": 0,
+    "done": 187,
+    "alerts": 2
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "ai-workspace",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +43,14 @@
           "time": "2026-08-02 19:47:49",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-02 19:48:53",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-02 19:47:49"
+      "lastUpdate": "2026-08-02 19:48:53"
     },
     {
       "jobId": "Jwritekit-wiring",
