@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-02T14:24:13",
+  "generatedAt": "2026-08-02T14:25:22",
   "counts": {
     "active": 4,
-    "waitingWorker": 3,
-    "working": 1,
+    "waitingWorker": 2,
+    "working": 2,
     "waitingReview": 0,
     "done": 175,
     "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jupaper-guide",
+      "title": "결정 기록 갱신 + 등록 실행 가이드 + 커밋 봉인",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 14:24:03",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-02 14:25:00",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 14:25:00"
+    },
     {
       "jobId": "Jupaper-listing",
       "title": "유페이퍼 판매 페이지 문안 작성",
@@ -47,34 +80,6 @@
         {
           "time": "2026-08-02 14:24:03",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-02 14:24:03"
-    },
-    {
-      "jobId": "Jupaper-guide",
-      "title": "결정 기록 갱신 + 등록 실행 가이드 + 커밋 봉인",
-      "project": "project-32",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-02 14:24:03",
-          "state": "PLANNED",
           "round": 1
         }
       ],
