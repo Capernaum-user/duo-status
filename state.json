@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-02T20:25:56",
+  "generatedAt": "2026-08-02T20:27:06",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
-    "working": 2,
+    "waitingWorker": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 189,
-    "alerts": 3
+    "alerts": 2
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -48,9 +48,14 @@
           "time": "2026-08-02 20:25:24",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-02 20:26:10",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-02 20:25:24"
+      "lastUpdate": "2026-08-02 20:26:10"
     },
     {
       "jobId": "Jaov2doc-cli",
