@@ -71,28 +71,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-02 23:05:10 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-02 23:10:40 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-02T23:05:06",
+  "generatedAt": "2026-08-02T23:10:40",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 1,
-    "waitingReview": 1,
-    "done": 194,
-    "alerts": 3
+    "waitingReview": 0,
+    "done": 195,
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jaov2doc-mission",
+      "title": "ORDER_Jaov2doc-mission_R01 — 미션이 끝나면 개발문서가 자동으로 나오게(1F 실행축 ↔ 문서축 연결)",
+      "project": "project-36",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 23:10:11",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 23:10:11"
+    },
     {
       "jobId": "Jaov2doc-sign",
       "title": "ORDER_Jaov2doc-sign_R01 — 생성 문서에 서명·검증 붙이기(문서 묶음 매니페스트)",
       "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -117,9 +145,14 @@
           "time": "2026-08-02 23:04:04",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-02 23:09:51",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-02 23:04:04"
+      "lastUpdate": "2026-08-02 23:09:51"
     },
     {
       "jobId": "Jaov2doc-rewrite",
