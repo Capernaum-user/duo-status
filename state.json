@@ -1,29 +1,57 @@
 {
-  "generatedAt": "2026-08-02T20:47:34",
+  "generatedAt": "2026-08-02T20:50:44",
   "counts": {
     "active": 5,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
-    "done": 190,
+    "waitingReview": 0,
+    "done": 191,
     "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jtypo-final",
+      "title": "전권 육안 검수 + 재배포 산출물 갱신 + 커밋",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-02 20:50:37",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-02 20:50:37"
+    },
     {
       "jobId": "Jtypo-korean",
       "title": "한글 조판 R2: CJKecglue 제거가 순손실이다(-80건). xCJKecglue 로 다시 푼다",
       "project": "project-32",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -58,9 +86,14 @@
           "time": "2026-08-02 20:47:29",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-08-02 20:50:37",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-02 20:47:29"
+      "lastUpdate": "2026-08-02 20:50:37"
     },
     {
       "jobId": "Jaov2doc-proof",
