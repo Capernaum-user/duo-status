@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-02T17:54:08",
+  "generatedAt": "2026-08-02T17:55:17",
   "counts": {
     "active": 6,
-    "waitingWorker": 3,
-    "working": 3,
+    "waitingWorker": 2,
+    "working": 4,
     "waitingReview": 0,
     "done": 180,
-    "alerts": 3
+    "alerts": 2
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-32",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -48,9 +48,14 @@
           "time": "2026-08-02 17:53:11",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-02 17:54:48",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-02 17:53:11"
+      "lastUpdate": "2026-08-02 17:54:48"
     },
     {
       "jobId": "Jwritekit-corpus",
