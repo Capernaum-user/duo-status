@@ -71,18 +71,46 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-04 08:12:07 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-04 08:13:18 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-04T08:12:07",
+  "generatedAt": "2026-08-04T08:13:18",
   "counts": {
     "active": 4,
     "waitingWorker": 3,
     "working": 1,
     "waitingReview": 0,
     "done": 196,
-    "alerts": 3
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jaov2doc-index",
+      "title": "ORDER_Jaov2doc-index_R01 — 생성 문서를 목록으로 묶고, 지식서고 반출 가능 여부를 실측 판정",
+      "project": "project-36",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-04 08:11:51",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-04 08:11:51"
+    },
     {
       "jobId": "Jaov2doc-mission",
       "title": "ORDER_Jaov2doc-mission_R01 — 미션이 끝나면 개발문서가 자동으로 나오게(1F 실행축 ↔ 문서축 연결)",
@@ -6004,59 +6032,6 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-36",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
       "jobId": "Jmermaid-render",
       "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
       "project": "project-36",
@@ -6135,6 +6110,59 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 4
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-36",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -9737,28 +9765,6 @@
         }
       ],
       "lastUpdate": "2026-07-10 12:26:12"
-    },
-    {
-      "jobId": "Jaov2doc-index",
-      "title": "ORDER_Jaov2doc-index_R01 — 생성 문서를 목록으로 묶고, 지식서고 반출 가능 여부를 실측 판정",
-      "project": "project-36",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "(folder)",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [],
-      "lastUpdate": ""
     }
   ],
   "escalations": [
