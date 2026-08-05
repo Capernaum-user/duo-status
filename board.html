@@ -71,33 +71,61 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-05 14:32:55 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-05 14:37:04 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-05T14:32:54",
+  "generatedAt": "2026-08-05T14:37:04",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 1,
-    "waitingReview": 1,
-    "done": 203,
+    "waitingReview": 0,
+    "done": 204,
     "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-export-06-publish",
+      "title": "v2.8.0 GitHub 릴리스 발행(사장 폰에서 앱 자체 업데이트로 받게)",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-05 14:36:32",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-05 14:36:32"
+    },
     {
       "jobId": "Jraypet-export-05-release",
       "title": "문서화 + v2.8.0 버전업 + 릴리스 APK 로컬 스테이징",
       "project": "app",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -117,9 +145,14 @@
           "time": "2026-08-05 14:32:44",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-05 14:36:26",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-05 14:32:44"
+      "lastUpdate": "2026-08-05 14:36:26"
     },
     {
       "jobId": "Jraypet-export-04-image",
