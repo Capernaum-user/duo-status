@@ -1,24 +1,52 @@
 {
-  "generatedAt": "2026-08-05T14:05:24",
+  "generatedAt": "2026-08-05T14:08:34",
   "counts": {
     "active": 4,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 1,
-    "waitingReview": 1,
-    "done": 202,
-    "alerts": 3
+    "waitingReview": 0,
+    "done": 203,
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-export-05-release",
+      "title": "문서화 + v2.8.0 버전업 + 릴리스 APK 로컬 스테이징",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-05 14:08:23",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-05 14:08:23"
+    },
     {
       "jobId": "Jraypet-export-04-image",
       "title": "표 이미지 공유: 조용히 죽는 버튼 제거 + AC-06 재정의(R2)",
       "project": "app",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -58,9 +86,14 @@
           "time": "2026-08-05 14:05:11",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-08-05 14:08:15",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-05 14:05:11"
+      "lastUpdate": "2026-08-05 14:08:15"
     },
     {
       "jobId": "Jraypet-export-03-calendar",
