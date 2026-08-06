@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-06T19:26:47",
+  "generatedAt": "2026-08-06T19:27:57",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 215,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jaov2dash-01-baseline",
+      "title": "현행 대시보드 실측(전 스크린샷·픽셀 계측) + 재배치 설계서 (화면 파일 무변경)",
+      "project": "project-37",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 19:03:07",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 19:06:21",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 19:26:35",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 19:26:35"
+    },
     {
       "jobId": "Jmungbook-contacts-search",
       "title": "연락처 가져오기 이름 원본 유지 + 고객 검색(초성 포함)",
@@ -41,39 +79,6 @@
         }
       ],
       "lastUpdate": "2026-08-06 19:26:15"
-    },
-    {
-      "jobId": "Jaov2dash-01-baseline",
-      "title": "현행 대시보드 실측(전 스크린샷·픽셀 계측) + 재배치 설계서 (화면 파일 무변경)",
-      "project": "project-37",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 19:03:07",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 19:06:21",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-06 19:06:21"
     },
     {
       "jobId": "Jmungpro-04-docs",
