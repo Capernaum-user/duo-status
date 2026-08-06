@@ -1,24 +1,52 @@
 {
-  "generatedAt": "2026-08-06T13:01:03",
+  "generatedAt": "2026-08-06T13:25:15",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
+    "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 1,
-    "done": 212,
-    "alerts": 4
+    "waitingReview": 0,
+    "done": 213,
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jmungpro-03-lockui",
+      "title": "읽기전용 잠금을 화면에 적용 + 구독 안내·구매 화면",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 13:24:54",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 13:24:54"
+    },
     {
       "jobId": "Jmungpro-02-entitlement",
       "title": "구독 상태 계층: 잠금 판정 순수 함수 + Play Billing 연결",
       "project": "app",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +71,19 @@
           "time": "2026-08-06 13:00:36",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-06 13:24:27",
+          "state": "ACCEPTED",
+          "round": 2
+        },
+        {
+          "time": "2026-08-06 13:24:48",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-06 13:00:36"
+      "lastUpdate": "2026-08-06 13:24:48"
     },
     {
       "jobId": "Jaov2clar-05-proof",
