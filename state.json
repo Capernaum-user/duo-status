@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-06T12:30:50",
+  "generatedAt": "2026-08-06T12:32:01",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
-    "working": 2,
+    "waitingWorker": 3,
+    "working": 3,
     "waitingReview": 0,
     "done": 210,
     "alerts": 3
@@ -11,18 +11,18 @@
   "jobs": [
     {
       "jobId": "Jaov2clar-05-proof",
-      "title": "실제 화면에서 통합 실증 + 오너 보고서(HTML) 발행",
+      "title": "ORDER_Jaov2clar-05-proof_R02 — 조사 브리프 자동생성 결함의 근본 원인 규명·수정 + 오너 보고서 문구 정정",
       "project": "project-37",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -48,9 +48,14 @@
           "time": "2026-08-06 12:30:23",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-06 12:31:31",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-06 12:30:23"
+      "lastUpdate": "2026-08-06 12:31:31"
     },
     {
       "jobId": "Jmungpro-01-fork",
