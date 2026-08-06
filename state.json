@@ -1,24 +1,62 @@
 {
-  "generatedAt": "2026-08-06T22:21:02",
+  "generatedAt": "2026-08-06T22:31:14",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 2,
     "done": 223,
-    "alerts": 3
+    "alerts": 5
   },
   "jobs": [
+    {
+      "jobId": "Jmungbook-pro-port",
+      "title": "상용판 `pro\\app\\`에 1~3단계 기능 이식 + 구독 잠금 경계 반영",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 21:33:36",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 21:34:22",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 22:30:29",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 22:30:29"
+    },
     {
       "jobId": "Jaov2boot-02-proof",
       "title": "ORDER_Jaov2boot-02-proof_R02 — 근본 원인 확정됨(DETACHED_PROCESS). 고치고 라이브로 실증하라",
       "project": "project-37",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -53,9 +91,14 @@
           "time": "2026-08-06 22:19:53",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-08-06 22:30:28",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-06 22:19:53"
+      "lastUpdate": "2026-08-06 22:30:28"
     },
     {
       "jobId": "Jaov2boot-01-wire",
@@ -99,39 +142,6 @@
         }
       ],
       "lastUpdate": "2026-08-06 21:45:56"
-    },
-    {
-      "jobId": "Jmungbook-pro-port",
-      "title": "상용판 `pro\\app\\`에 1~3단계 기능 이식 + 구독 잠금 경계 반영",
-      "project": "app",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 21:33:36",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 21:34:22",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-06 21:34:22"
     },
     {
       "jobId": "Jmungbook-booking-edit",
