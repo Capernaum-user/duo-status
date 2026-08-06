@@ -71,18 +71,89 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-06 20:00:41 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-06 20:02:51 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-06T20:00:41",
+  "generatedAt": "2026-08-06T20:02:50",
   "counts": {
     "active": 6,
-    "waitingWorker": 3,
+    "waitingWorker": 4,
     "working": 2,
-    "waitingReview": 1,
-    "done": 218,
+    "waitingReview": 0,
+    "done": 219,
     "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jmungbook-booking-detail",
+      "title": "조회 탭 예약 카드 클릭 → 예약 상세 화면 + 예약 삭제",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 20:02:03",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 20:02:03"
+    },
+    {
+      "jobId": "Jmungbook-contacts-search",
+      "title": "연락처 가져오기 이름 원본 유지 + 고객 검색(초성 포함)",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 19:08:46",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 19:26:15",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 19:51:58",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 20:02:03",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 20:02:03"
+    },
     {
       "jobId": "Jaov2dash-04-proof",
       "title": "전/후 실측 대조 + 오너용 시각화 HTML 보고서 발행 (화면 파일 무수정)",
@@ -153,44 +224,6 @@
         }
       ],
       "lastUpdate": "2026-08-06 19:58:25"
-    },
-    {
-      "jobId": "Jmungbook-contacts-search",
-      "title": "연락처 가져오기 이름 원본 유지 + 고객 검색(초성 포함)",
-      "project": "app",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 19:08:46",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 19:26:15",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 19:51:58",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-06 19:51:58"
     },
     {
       "jobId": "Jaov2dash-02-rail",
