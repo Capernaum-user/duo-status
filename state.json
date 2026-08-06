@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-06T12:32:01",
+  "generatedAt": "2026-08-06T12:37:11",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 210,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jmungpro-01-fork",
+      "title": "상용판 분리(pro\\app\\ 신설) + 자체 업데이트 제거",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 12:21:34",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 12:23:58",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 12:36:22",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 12:36:22"
+    },
     {
       "jobId": "Jaov2clar-05-proof",
       "title": "ORDER_Jaov2clar-05-proof_R02 — 조사 브리프 자동생성 결함의 근본 원인 규명·수정 + 오너 보고서 문구 정정",
@@ -56,39 +94,6 @@
         }
       ],
       "lastUpdate": "2026-08-06 12:31:31"
-    },
-    {
-      "jobId": "Jmungpro-01-fork",
-      "title": "상용판 분리(pro\\app\\ 신설) + 자체 업데이트 제거",
-      "project": "app",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 12:21:34",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 12:23:58",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-06 12:23:58"
     },
     {
       "jobId": "Jaov2clar-04-research",
