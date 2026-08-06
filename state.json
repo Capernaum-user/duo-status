@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-06T12:44:52",
+  "generatedAt": "2026-08-06T13:01:03",
   "counts": {
     "active": 5,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 212,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jmungpro-02-entitlement",
+      "title": "구독 상태 계층: 잠금 판정 순수 함수 + Play Billing 연결",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 12:39:34",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 12:40:32",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 13:00:36",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 13:00:36"
+    },
     {
       "jobId": "Jaov2clar-05-proof",
       "title": "ORDER_Jaov2clar-05-proof_R02 — 조사 브리프 자동생성 결함의 근본 원인 규명·수정 + 오너 보고서 문구 정정",
@@ -66,39 +104,6 @@
         }
       ],
       "lastUpdate": "2026-08-06 12:42:51"
-    },
-    {
-      "jobId": "Jmungpro-02-entitlement",
-      "title": "구독 상태 계층: 잠금 판정 순수 함수 + Play Billing 연결",
-      "project": "app",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 12:39:34",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 12:40:32",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-06 12:40:32"
     },
     {
       "jobId": "Jmungpro-01-fork",
