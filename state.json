@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-06T11:25:02",
+  "generatedAt": "2026-08-06T11:37:12",
   "counts": {
     "active": 4,
     "waitingWorker": 2,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 207,
     "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jaov2clar-02-engine",
+      "title": "백엔드: 질문 개수 확장 + 설명형 객관식(options_rich) + 방법론 태그(question_meta)",
+      "project": "project-36",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 11:06:48",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 11:07:31",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 11:36:22",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 11:36:22"
+    },
     {
       "jobId": "Jraypet-cancel-01-feature",
       "title": "취소된 호텔 숙박이 잠금화면 알림에 새는 것 차단 (R2)",
@@ -66,39 +104,6 @@
         }
       ],
       "lastUpdate": "2026-08-06 11:24:37"
-    },
-    {
-      "jobId": "Jaov2clar-02-engine",
-      "title": "백엔드: 질문 개수 확장 + 설명형 객관식(options_rich) + 방법론 태그(question_meta)",
-      "project": "project-36",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 11:06:48",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 11:07:31",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-06 11:07:31"
     },
     {
       "jobId": "Jaov2clar-01-spec",
