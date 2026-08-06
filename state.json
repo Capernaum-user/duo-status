@@ -1,24 +1,77 @@
 {
-  "generatedAt": "2026-08-06T12:40:22",
+  "generatedAt": "2026-08-06T12:41:32",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 211,
     "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jaov2clar-05-proof",
+      "title": "ORDER_Jaov2clar-05-proof_R02 — 조사 브리프 자동생성 결함의 근본 원인 규명·수정 + 오너 보고서 문구 정정",
+      "project": "project-37",
+      "targetDir": "<local>",
+      "round": 2,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 12:07:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 12:07:52",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 12:24:31",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 12:30:23",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-08-06 12:31:31",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-08-06 12:41:07",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-08-06 12:41:07"
+    },
     {
       "jobId": "Jmungpro-02-entitlement",
       "title": "구독 상태 계층: 잠금 판정 순수 함수 + Play Billing 연결",
       "project": "app",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -33,9 +86,14 @@
           "time": "2026-08-06 12:39:34",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-06 12:40:32",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-06 12:39:34"
+      "lastUpdate": "2026-08-06 12:40:32"
     },
     {
       "jobId": "Jmungpro-01-fork",
@@ -79,54 +137,6 @@
         }
       ],
       "lastUpdate": "2026-08-06 12:39:26"
-    },
-    {
-      "jobId": "Jaov2clar-05-proof",
-      "title": "ORDER_Jaov2clar-05-proof_R02 — 조사 브리프 자동생성 결함의 근본 원인 규명·수정 + 오너 보고서 문구 정정",
-      "project": "project-37",
-      "targetDir": "<local>",
-      "round": 2,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 12:07:18",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 12:07:52",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 12:24:31",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 12:30:23",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-08-06 12:31:31",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-08-06 12:31:31"
     },
     {
       "jobId": "Jaov2clar-04-research",
