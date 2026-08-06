@@ -1,14 +1,57 @@
 {
-  "generatedAt": "2026-08-06T11:08:25",
+  "generatedAt": "2026-08-06T11:12:34",
   "counts": {
     "active": 5,
-    "waitingWorker": 2,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
+    "waitingReview": 0,
     "done": 206,
-    "alerts": 3
+    "alerts": 2
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-cancel-01-feature",
+      "title": "예약 취소 기능(미용·호텔) + 되돌리기",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 2,
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 10:32:32",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 10:36:02",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 11:07:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 11:12:17",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-08-06 11:12:17"
+    },
     {
       "jobId": "Jaov2clar-02-engine",
       "title": "백엔드: 질문 개수 확장 + 설명형 객관식(options_rich) + 방법론 태그(question_meta)",
@@ -41,44 +84,6 @@
         }
       ],
       "lastUpdate": "2026-08-06 11:07:31"
-    },
-    {
-      "jobId": "Jraypet-cancel-01-feature",
-      "title": "예약 취소 기능(미용·호텔) + 되돌리기",
-      "project": "app",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 10:32:32",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 10:36:02",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-06 11:07:29",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-06 11:07:29"
     },
     {
       "jobId": "Jaov2clar-01-spec",
