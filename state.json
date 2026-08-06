@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-06T21:35:37",
+  "generatedAt": "2026-08-06T21:36:49",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
-    "working": 2,
+    "waitingWorker": 3,
+    "working": 3,
     "waitingReview": 0,
     "done": 222,
     "alerts": 3
@@ -15,14 +15,14 @@
       "project": "project-37",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,14 @@
           "time": "2026-08-06 21:35:13",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-06 21:36:39",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-06 21:35:13"
+      "lastUpdate": "2026-08-06 21:36:39"
     },
     {
       "jobId": "Jmungbook-pro-port",
