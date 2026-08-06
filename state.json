@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-06T13:26:25",
+  "generatedAt": "2026-08-06T14:11:36",
   "counts": {
     "active": 5,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 213,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "app",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,9 +38,14 @@
           "time": "2026-08-06 13:25:51",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-06 14:10:53",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-06 13:25:51"
+      "lastUpdate": "2026-08-06 14:10:53"
     },
     {
       "jobId": "Jmungpro-02-entitlement",
