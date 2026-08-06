@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-08-06T11:37:12",
+  "generatedAt": "2026-08-06T11:44:22",
   "counts": {
-    "active": 4,
-    "waitingWorker": 2,
+    "active": 5,
+    "waitingWorker": 3,
     "working": 1,
     "waitingReview": 1,
     "done": 207,
-    "alerts": 2
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jraypet-install-02-selfinstall",
+      "title": "앱이 스스로 설치하기(설치할 때마다 보안 끄는 불편 제거)",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 11:43:21",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 11:43:21"
+    },
     {
       "jobId": "Jaov2clar-02-engine",
       "title": "백엔드: 질문 개수 확장 + 설명형 객관식(options_rich) + 방법론 태그(question_meta)",
@@ -17,13 +45,13 @@
       "round": 1,
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
