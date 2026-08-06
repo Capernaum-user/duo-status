@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-06T21:00:53",
+  "generatedAt": "2026-08-06T21:02:04",
   "counts": {
     "active": 5,
-    "waitingWorker": 4,
-    "working": 1,
+    "waitingWorker": 3,
+    "working": 2,
     "waitingReview": 0,
     "done": 221,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jmungbook-booking-edit",
+      "title": "예약 수정: 전체 재편집 + 금액 재계산",
+      "project": "app",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 21:00:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 21:01:17",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 21:01:17"
+    },
     {
       "jobId": "Jmungbook-booking-detail",
       "title": "조회 탭 예약 카드 클릭 → 예약 상세 화면 + 예약 삭제",
@@ -47,34 +80,6 @@
         {
           "time": "2026-08-06 21:00:41",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-06 21:00:41"
-    },
-    {
-      "jobId": "Jmungbook-booking-edit",
-      "title": "예약 수정: 전체 재편집 + 금액 재계산",
-      "project": "app",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 21:00:41",
-          "state": "PLANNED",
           "round": 1
         }
       ],
