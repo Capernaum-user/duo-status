@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-06T19:52:09",
+  "generatedAt": "2026-08-06T19:57:19",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
+    "waitingWorker": 3,
     "working": 1,
-    "waitingReview": 1,
+    "waitingReview": 2,
     "done": 217,
-    "alerts": 4
+    "alerts": 5
   },
   "jobs": [
+    {
+      "jobId": "Jaov2dash-03-center",
+      "title": "프롬프트 패널·project-16 Gateway 한 공간으로 + 서명 데스크·씰 버튼 축소",
+      "project": "project-37",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 19:44:31",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-06 19:56:19",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 19:56:19"
+    },
     {
       "jobId": "Jmungbook-contacts-search",
       "title": "연락처 가져오기 이름 원본 유지 + 고객 검색(초성 포함)",
@@ -17,13 +50,13 @@
       "round": 1,
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -46,34 +79,6 @@
         }
       ],
       "lastUpdate": "2026-08-06 19:51:58"
-    },
-    {
-      "jobId": "Jaov2dash-03-center",
-      "title": "프롬프트 패널·project-16 Gateway 한 공간으로 + 서명 데스크·씰 버튼 축소",
-      "project": "project-37",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-06 19:44:31",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-06 19:44:31"
     },
     {
       "jobId": "Jaov2dash-02-rail",
