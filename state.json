@@ -1,29 +1,57 @@
 {
-  "generatedAt": "2026-08-06T19:42:29",
+  "generatedAt": "2026-08-06T19:44:57",
   "counts": {
     "active": 6,
-    "waitingWorker": 3,
+    "waitingWorker": 4,
     "working": 2,
-    "waitingReview": 1,
-    "done": 216,
+    "waitingReview": 0,
+    "done": 217,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jaov2dash-03-center",
+      "title": "프롬프트 패널·project-16 Gateway 한 공간으로 + 서명 데스크·씰 버튼 축소",
+      "project": "project-37",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-06 19:44:31",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-06 19:44:31"
+    },
     {
       "jobId": "Jaov2dash-02-rail",
       "title": "좌측 레일 두 패널 통합 + Review Queue 기본 접힘(통계 한 줄 노출)",
       "project": "project-37",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -43,9 +71,14 @@
           "time": "2026-08-06 19:42:18",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-06 19:44:21",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-06 19:42:18"
+      "lastUpdate": "2026-08-06 19:44:21"
     },
     {
       "jobId": "Jaov2dash-01-baseline",
