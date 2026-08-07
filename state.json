@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-07T12:31:09",
+  "generatedAt": "2026-08-07T12:38:21",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 235,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jaov2mdl-03-local",
+      "title": "로컬 LLM 을 실제로 고를 수 있게(설치 모델 열거 + local 패밀리 정합)",
+      "project": "project-38",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-07 12:29:04",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-07 12:30:21",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-07 12:37:45",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-07 12:37:45"
+    },
     {
       "jobId": "Jmungbook-release-v2100",
       "title": "ORDER_Jmungbook-release-v2100_R01 — 문서화 + v2.10.0(vc25) 빌드·서명검증·릴리스 발행",
@@ -41,39 +79,6 @@
         }
       ],
       "lastUpdate": "2026-08-07 12:30:31"
-    },
-    {
-      "jobId": "Jaov2mdl-03-local",
-      "title": "로컬 LLM 을 실제로 고를 수 있게(설치 모델 열거 + local 패밀리 정합)",
-      "project": "project-38",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-07 12:29:04",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-07 12:30:21",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-07 12:30:21"
     },
     {
       "jobId": "Jmungbook-sales-pro-port",
