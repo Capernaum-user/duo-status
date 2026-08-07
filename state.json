@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-07T19:54:43",
+  "generatedAt": "2026-08-07T20:07:55",
   "counts": {
     "active": 6,
-    "waitingWorker": 5,
+    "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 251,
     "alerts": 5
   },
   "jobs": [
+    {
+      "jobId": "Jmungbook-release-v2110",
+      "title": "문서화 + 선물판 v2.11.0(vc26) 발행",
+      "project": "project-23",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-07 19:51:02",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-07 20:07:05",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-07 20:07:05"
+    },
     {
       "jobId": "Jaoapp-close",
       "title": "독립 검증 · 차단 결함 마감 · 운영 문서 · 완료 보고서",
@@ -51,34 +84,6 @@
         }
       ],
       "lastUpdate": "2026-08-07 19:53:47"
-    },
-    {
-      "jobId": "Jmungbook-release-v2110",
-      "title": "문서화 + 선물판 v2.11.0(vc26) 발행",
-      "project": "project-23",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-07 19:51:02",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-07 19:51:02"
     },
     {
       "jobId": "Jmungbook-delete-myphone-pro-port",
