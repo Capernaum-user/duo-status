@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-07T12:43:55",
+  "generatedAt": "2026-08-07T12:45:06",
   "counts": {
-    "active": 6,
+    "active": 5,
     "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
-    "done": 236,
-    "alerts": 4
+    "waitingReview": 0,
+    "done": 237,
+    "alerts": 3
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-23",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +43,14 @@
           "time": "2026-08-07 12:43:11",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-07 12:44:37",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-07 12:43:11"
+      "lastUpdate": "2026-08-07 12:44:37"
     },
     {
       "jobId": "Jaov2mdl-04-cli",
