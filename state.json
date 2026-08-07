@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-07T18:48:16",
+  "generatedAt": "2026-08-07T18:49:27",
   "counts": {
     "active": 7,
-    "waitingWorker": 6,
-    "working": 1,
+    "waitingWorker": 5,
+    "working": 2,
     "waitingReview": 0,
     "done": 244,
-    "alerts": 6
+    "alerts": 5
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-prd",
+      "title": "기획서(PRD) + 요구사항 정의서(SRS): 1F를 UI 없는 에이전트 공간으로 재정의한다",
+      "project": "project-39",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-07 18:48:15",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-07 18:48:41",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-07 18:48:41"
+    },
     {
       "jobId": "Jaoapp-decide",
       "title": "새 트랙 골격 + 기술 선정을 실측으로 확정한다",
@@ -9400,59 +9433,6 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jceo-chart-axes",
-      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
-      "project": "project-39",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:59:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:59:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:23:57",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:26:23",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
       "jobId": "Jgnosis-dedup",
       "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
       "project": "project-39",
@@ -9494,6 +9474,59 @@
         },
         {
           "time": "2026-07-20 18:27:06",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jceo-chart-axes",
+      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
+      "project": "project-39",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:59:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:59:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:23:57",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:26:23",
           "state": "ACCEPTED",
           "round": 1
         },
@@ -11851,28 +11884,6 @@
         }
       ],
       "lastUpdate": "2026-07-10 12:26:12"
-    },
-    {
-      "jobId": "Jaoapp-prd",
-      "title": "기획서(PRD) + 요구사항 정의서(SRS): 1F를 UI 없는 에이전트 공간으로 재정의한다",
-      "project": "project-39",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "(folder)",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [],
-      "lastUpdate": ""
     }
   ],
   "escalations": [
