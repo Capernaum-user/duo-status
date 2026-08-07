@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-07T19:04:23",
+  "generatedAt": "2026-08-07T19:05:35",
   "counts": {
     "active": 7,
-    "waitingWorker": 6,
-    "working": 1,
+    "waitingWorker": 5,
+    "working": 2,
     "waitingReview": 0,
     "done": 246,
-    "alerts": 6
+    "alerts": 5
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-39",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -33,9 +33,14 @@
           "time": "2026-08-07 19:03:43",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-07 19:05:08",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-07 19:03:43"
+      "lastUpdate": "2026-08-07 19:05:08"
     },
     {
       "jobId": "Jaoapp-arch",
