@@ -71,32 +71,65 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-07 18:03:33 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-07 18:05:44 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-07T18:03:32",
+  "generatedAt": "2026-08-07T18:05:44",
   "counts": {
     "active": 6,
-    "waitingWorker": 5,
+    "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 241,
     "alerts": 4
   },
   "jobs": [
     {
-      "jobId": "Jgrowth-hub-scaffold",
-      "title": "ORDER_Jgrowth-hub-scaffold_R01 — 홍보·모집 부문(growth/) 골격과 아이디어 장부 설비 신설",
-      "project": "project-32",
+      "jobId": "Jmungbook-customer-delete-detail",
+      "title": "고객 상세에서 고객 1명 완전 삭제(선물판 `in\\app`)",
+      "project": "app",
       "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-07 17:28:19",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-07 18:05:34",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-07 18:05:34"
+    },
+    {
+      "jobId": "Jgrowth-hub-scaffold",
+      "title": "Jgrowth-hub-scaffold",
+      "project": "",
+      "targetDir": null,
       "round": 1,
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -144,34 +177,6 @@
         {
           "time": "2026-08-07 17:28:19",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-07 17:28:19"
-    },
-    {
-      "jobId": "Jmungbook-customer-delete-detail",
-      "title": "고객 상세에서 고객 1명 완전 삭제(선물판 `in\\app`)",
-      "project": "app",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-07 17:28:19",
-          "state": "PLANNED",
           "round": 1
         }
       ],
