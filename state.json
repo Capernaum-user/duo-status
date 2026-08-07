@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-08-07T17:29:01",
+  "generatedAt": "2026-08-07T18:03:32",
   "counts": {
-    "active": 5,
-    "waitingWorker": 4,
+    "active": 6,
+    "waitingWorker": 5,
     "working": 1,
     "waitingReview": 0,
     "done": 241,
     "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jgrowth-hub-scaffold",
+      "title": "ORDER_Jgrowth-hub-scaffold_R01 — 홍보·모집 부문(growth/) 골격과 아이디어 장부 설비 신설",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-07 18:02:12",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-07 18:02:12"
+    },
     {
       "jobId": "Jmungbook-customer-delete-data",
       "title": "고객 완전 삭제 데이터 계층(선물판 `in\\app`)",
