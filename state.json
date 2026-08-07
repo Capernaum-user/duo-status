@@ -1,24 +1,123 @@
 {
-  "generatedAt": "2026-08-07T12:26:46",
+  "generatedAt": "2026-08-07T12:29:57",
   "counts": {
     "active": 6,
-    "waitingWorker": 3,
+    "waitingWorker": 5,
     "working": 1,
-    "waitingReview": 2,
-    "done": 233,
-    "alerts": 5
+    "waitingReview": 0,
+    "done": 235,
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jmungbook-release-v2100",
+      "title": "ORDER_Jmungbook-release-v2100_R01 — 문서화 + v2.10.0(vc25) 빌드·서명검증·릴리스 발행",
+      "project": "project-23",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-07 12:29:25",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-07 12:29:25"
+    },
+    {
+      "jobId": "Jmungbook-sales-pro-port",
+      "title": "ORDER_Jmungbook-sales-pro-port_R01 — 상용판(pro)으로 고객별 매출 + 호텔 달력 이식",
+      "project": "project-23",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-07 11:39:36",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-07 11:40:28",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-07 12:18:18",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-07 12:29:24",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-07 12:29:24"
+    },
+    {
+      "jobId": "Jaov2mdl-03-local",
+      "title": "로컬 LLM 을 실제로 고를 수 있게(설치 모델 열거 + local 패밀리 정합)",
+      "project": "project-38",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-07 12:29:04",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-07 12:29:04"
+    },
     {
       "jobId": "Jaov2mdl-02-catalog",
       "title": "모델 카탈로그·티어·하드코딩 ID 갱신",
       "project": "project-38",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +142,14 @@
           "time": "2026-08-07 12:26:08",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-07 12:28:58",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-07 12:26:08"
+      "lastUpdate": "2026-08-07 12:28:58"
     },
     {
       "jobId": "Jaov2mdl-01-plan",
@@ -89,44 +193,6 @@
         }
       ],
       "lastUpdate": "2026-08-07 12:19:15"
-    },
-    {
-      "jobId": "Jmungbook-sales-pro-port",
-      "title": "ORDER_Jmungbook-sales-pro-port_R01 — 상용판(pro)으로 고객별 매출 + 호텔 달력 이식",
-      "project": "project-23",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-07 11:39:36",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-07 11:40:28",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-07 12:18:18",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-07 12:18:18"
     },
     {
       "jobId": "Jmungbook-hotel-datepicker",
