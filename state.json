@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-07T12:29:57",
+  "generatedAt": "2026-08-07T12:31:09",
   "counts": {
     "active": 6,
-    "waitingWorker": 5,
-    "working": 1,
+    "waitingWorker": 3,
+    "working": 3,
     "waitingReview": 0,
     "done": 235,
-    "alerts": 4
+    "alerts": 3
   },
   "jobs": [
     {
@@ -15,14 +15,14 @@
       "project": "project-23",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,47 @@
           "time": "2026-08-07 12:29:25",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-07 12:30:31",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-07 12:29:25"
+      "lastUpdate": "2026-08-07 12:30:31"
+    },
+    {
+      "jobId": "Jaov2mdl-03-local",
+      "title": "로컬 LLM 을 실제로 고를 수 있게(설치 모델 열거 + local 패밀리 정합)",
+      "project": "project-38",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-07 12:29:04",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-07 12:30:21",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-07 12:30:21"
     },
     {
       "jobId": "Jmungbook-sales-pro-port",
@@ -79,34 +117,6 @@
         }
       ],
       "lastUpdate": "2026-08-07 12:29:24"
-    },
-    {
-      "jobId": "Jaov2mdl-03-local",
-      "title": "로컬 LLM 을 실제로 고를 수 있게(설치 모델 열거 + local 패밀리 정합)",
-      "project": "project-38",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-07 12:29:04",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-07 12:29:04"
     },
     {
       "jobId": "Jaov2mdl-02-catalog",
