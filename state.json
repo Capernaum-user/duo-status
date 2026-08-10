@@ -1,24 +1,52 @@
 {
-  "generatedAt": "2026-08-10T23:47:03",
+  "generatedAt": "2026-08-10T23:48:15",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
+    "waitingWorker": 5,
     "working": 1,
-    "waitingReview": 1,
-    "done": 254,
+    "waitingReview": 0,
+    "done": 255,
     "alerts": 5
   },
   "jobs": [
+    {
+      "jobId": "Jpmhub-playbooks",
+      "title": "ORDER_Jpmhub-playbooks_R01 — 기획 방법론 플레이북 14종 + 실제 프로젝트 예시 세트",
+      "project": "project-38",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-10 23:47:06",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-10 23:47:06"
+    },
     {
       "jobId": "Jpmhub-project-41",
       "title": "ORDER_Jpmhub-project-41_R01 — 5단계 산출물 템플릿 28종 작성",
       "project": "project-38",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,9 +66,14 @@
           "time": "2026-08-10 23:45:57",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-10 23:47:05",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-10 23:45:57"
+      "lastUpdate": "2026-08-10 23:47:05"
     },
     {
       "jobId": "Jpmhub-corpus-harvest",
