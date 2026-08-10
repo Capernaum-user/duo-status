@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-10T23:48:15",
+  "generatedAt": "2026-08-11T00:01:29",
   "counts": {
     "active": 6,
-    "waitingWorker": 5,
+    "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 255,
     "alerts": 5
   },
@@ -15,10 +15,10 @@
       "project": "project-38",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -33,9 +33,14 @@
           "time": "2026-08-10 23:47:06",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-11 00:00:49",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-10 23:47:06"
+      "lastUpdate": "2026-08-11 00:00:49"
     },
     {
       "jobId": "Jpmhub-project-41",
