@@ -71,28 +71,61 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-11 23:18:53 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-11 23:21:07 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-11T23:18:52",
+  "generatedAt": "2026-08-11T23:21:07",
   "counts": {
     "active": 5,
     "waitingWorker": 3,
-    "working": 1,
-    "waitingReview": 1,
-    "done": 299,
-    "alerts": 4
+    "working": 2,
+    "waitingReview": 0,
+    "done": 300,
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jcosmos-system-intake",
+      "title": "ORDER_Jcosmos-system-intake_R01 — 7/24 이후 새로 생긴 프로젝트·시스템을 코스모스 카테고리에 채우기",
+      "project": "project-18",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-11 23:20:14",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 23:20:57",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-11 23:20:57"
+    },
     {
       "jobId": "Jcosmos-tts-sweep",
       "title": "ORDER_Jcosmos-tts-sweep_R01 — TTS 적용 범위를 전 카테고리로 확대 + 기존 음성 새 톤으로 재생성",
       "project": "project-18",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -117,9 +150,14 @@
           "time": "2026-08-11 23:18:25",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-11 23:20:14",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-11 23:18:25"
+      "lastUpdate": "2026-08-11 23:20:14"
     },
     {
       "jobId": "Jpmcheck-wire",
