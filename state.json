@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-11T21:55:36",
+  "generatedAt": "2026-08-11T22:02:48",
   "counts": {
     "active": 5,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 293,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-38",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,9 +38,14 @@
           "time": "2026-08-11 21:54:32",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-11 22:02:28",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-11 21:54:32"
+      "lastUpdate": "2026-08-11 22:02:28"
     },
     {
       "jobId": "Jproject-32-master-plan",
