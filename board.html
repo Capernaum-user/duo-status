@@ -71,18 +71,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-11 22:42:04 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-11 22:44:17 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-11T22:42:03",
+  "generatedAt": "2026-08-11T22:44:17",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 296,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jpmcheck-selftest",
+      "title": "`plan-check.ps1` 자체 시험 fixture 구축",
+      "project": "project-38",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-11 22:25:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 22:27:28",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 22:43:18",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-11 22:43:18"
+    },
     {
       "jobId": "Jcosmos-tts-voice",
       "title": "ORDER_Jcosmos-tts-voice_R01 — TTS를 2인 팟캐스트에서 \"활기찬 1인 해설\"로 전환",
@@ -158,39 +196,6 @@
         }
       ],
       "lastUpdate": "2026-08-11 22:40:34"
-    },
-    {
-      "jobId": "Jpmcheck-selftest",
-      "title": "`plan-check.ps1` 자체 시험 fixture 구축",
-      "project": "project-38",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-11 22:25:18",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-11 22:27:28",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-11 22:27:28"
     },
     {
       "jobId": "Jpmcheck-build",
