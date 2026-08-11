@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-11T22:28:19",
+  "generatedAt": "2026-08-11T22:38:35",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 295,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jcosmos-setup-watchlist",
+      "title": "ORDER_Jcosmos-setup-watchlist_R01 — 셋업직결 워치리스트 신설 (뉴스 \"도달\" 레이어)",
+      "project": "project-18",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-11 22:22:22",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 22:25:18",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 22:37:57",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-11 22:37:57"
+    },
     {
       "jobId": "Jpmcheck-selftest",
       "title": "`plan-check.ps1` 자체 시험 fixture 구축",
@@ -41,39 +79,6 @@
         }
       ],
       "lastUpdate": "2026-08-11 22:27:28"
-    },
-    {
-      "jobId": "Jcosmos-setup-watchlist",
-      "title": "ORDER_Jcosmos-setup-watchlist_R01 — 셋업직결 워치리스트 신설 (뉴스 \"도달\" 레이어)",
-      "project": "project-18",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-11 22:22:22",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-11 22:25:18",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-11 22:25:18"
     },
     {
       "jobId": "Jpmcheck-build",
