@@ -71,18 +71,51 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-11 12:53:34 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-11 12:57:47 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-11T12:53:34",
+  "generatedAt": "2026-08-11T12:57:47",
   "counts": {
     "active": 7,
-    "waitingWorker": 6,
+    "waitingWorker": 5,
     "working": 1,
-    "waitingReview": 0,
+    "waitingReview": 1,
     "done": 273,
-    "alerts": 5
+    "alerts": 6
   },
   "jobs": [
+    {
+      "jobId": "Jwrite-linter",
+      "title": "쉬운 글쓰기 검사기",
+      "project": "project-11",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-11 12:50:45",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 12:56:45",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-11 12:56:45"
+    },
     {
       "jobId": "Jpmks-verify",
       "title": "ORDER_Jpmks-verify_R01 — KS X 3253 현행 판본·항목 수 진위 확인 (팩트체크)",
@@ -134,12 +167,12 @@
       "round": 1,
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -192,34 +225,6 @@
         {
           "time": "2026-08-11 12:50:45",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-11 12:50:45"
-    },
-    {
-      "jobId": "Jwrite-linter",
-      "title": "쉬운 글쓰기 검사기",
-      "project": "project-11",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-11 12:50:45",
-          "state": "PLANNED",
           "round": 1
         }
       ],
