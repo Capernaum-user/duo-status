@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-11T23:05:37",
+  "generatedAt": "2026-08-11T23:18:52",
   "counts": {
     "active": 5,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 299,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jcosmos-tts-sweep",
+      "title": "ORDER_Jcosmos-tts-sweep_R01 — TTS 적용 범위를 전 카테고리로 확대 + 기존 음성 새 톤으로 재생성",
+      "project": "project-18",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-11 22:53:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 22:54:13",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 23:18:25",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-11 23:18:25"
+    },
     {
       "jobId": "Jpmcheck-wire",
       "title": "검사기를 허브 절차에 배선하고 완료 보고 HTML을 만든다",
@@ -51,39 +89,6 @@
         }
       ],
       "lastUpdate": "2026-08-11 23:04:58"
-    },
-    {
-      "jobId": "Jcosmos-tts-sweep",
-      "title": "ORDER_Jcosmos-tts-sweep_R01 — TTS 적용 범위를 전 카테고리로 확대 + 기존 음성 새 톤으로 재생성",
-      "project": "project-18",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-11 22:53:41",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-11 22:54:13",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-11 22:54:13"
     },
     {
       "jobId": "Jcosmos-tts-voice",
