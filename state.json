@@ -1,24 +1,57 @@
 {
-  "generatedAt": "2026-08-11T15:23:46",
+  "generatedAt": "2026-08-11T15:24:59",
   "counts": {
     "active": 5,
     "waitingWorker": 3,
-    "working": 1,
-    "waitingReview": 1,
-    "done": 291,
-    "alerts": 4
+    "working": 2,
+    "waitingReview": 0,
+    "done": 292,
+    "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jproject-32-master-plan",
+      "title": "ORDER_Jproject-32-master-plan_R01 — 세부계획서 통합, 12주 실행 로드맵, 시각화 HTML 브리핑",
+      "project": "project-32",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-11 15:24:19",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 15:24:40",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-11 15:24:40"
+    },
     {
       "jobId": "Jproject-32-studio-console",
       "title": "ORDER_Jproject-32-studio-console_R01 — 교육 운영 관리 도구 설계서와 동작하는 MVP",
       "project": "project-32",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +76,14 @@
           "time": "2026-08-11 15:23:24",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-11 15:24:18",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-11 15:23:24"
+      "lastUpdate": "2026-08-11 15:24:18"
     },
     {
       "jobId": "Jscore-template",
