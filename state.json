@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-11T22:46:30",
+  "generatedAt": "2026-08-11T22:52:45",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 0,
+    "working": 2,
+    "waitingReview": 1,
     "done": 297,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jcosmos-tts-voice",
+      "title": "ORDER_Jcosmos-tts-voice_R01 — TTS를 2인 팟캐스트에서 \"활기찬 1인 해설\"로 전환",
+      "project": "project-18",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-11 22:40:34",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 22:41:10",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-11 22:52:06",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-11 22:52:06"
+    },
     {
       "jobId": "Jpmcheck-wire",
       "title": "검사기를 허브 절차에 배선하고 완료 보고 HTML을 만든다",
@@ -84,39 +122,6 @@
         }
       ],
       "lastUpdate": "2026-08-11 22:45:43"
-    },
-    {
-      "jobId": "Jcosmos-tts-voice",
-      "title": "ORDER_Jcosmos-tts-voice_R01 — TTS를 2인 팟캐스트에서 \"활기찬 1인 해설\"로 전환",
-      "project": "project-18",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-11 22:40:34",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-11 22:41:10",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-11 22:41:10"
     },
     {
       "jobId": "Jcosmos-setup-watchlist",
