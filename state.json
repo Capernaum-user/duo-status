@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-13T02:07:46",
+  "generatedAt": "2026-08-13T02:10:01",
   "counts": {
     "active": 5,
-    "waitingWorker": 4,
-    "working": 1,
+    "waitingWorker": 3,
+    "working": 2,
     "waitingReview": 0,
     "done": 320,
     "alerts": 3
@@ -15,14 +15,14 @@
       "project": "claude-handoff",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,14 @@
           "time": "2026-08-13 02:07:30",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-13 02:09:26",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-13 02:07:30"
+      "lastUpdate": "2026-08-13 02:09:26"
     },
     {
       "jobId": "Jduoboard-scanner",
