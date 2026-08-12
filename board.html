@@ -71,28 +71,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-13 02:06:29 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-13 02:07:46 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-13T02:06:29",
+  "generatedAt": "2026-08-13T02:07:46",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
+    "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 1,
-    "done": 319,
+    "waitingReview": 0,
+    "done": 320,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jduoboard-metrics",
+      "title": "ORDER_Jduoboard-metrics_R01 — duo 관제보드 이력 확장: 코드 변경량·대기 측정",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 02:07:30",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 02:07:30"
+    },
     {
       "jobId": "Jduoboard-scanner",
       "title": "ORDER_Jduoboard-scanner_R02 — 이력 스캐너 재작업: 실패 원인을 \"원인\"으로 만든다",
       "project": "claude-handoff",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "REVIEW-CLAIMED",
-      "stageIndex": 4,
-      "stageLabel": "검토 중",
-      "nextAction": "검토 결과 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -147,9 +175,14 @@
           "time": "2026-08-13 02:06:15",
           "state": "REVIEW-CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-08-13 02:07:29",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-13 02:06:15"
+      "lastUpdate": "2026-08-13 02:07:29"
     },
     {
       "jobId": "Jdeskcourse-wrap",
