@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-13T01:54:56",
+  "generatedAt": "2026-08-13T01:58:13",
   "counts": {
     "active": 5,
-    "waitingWorker": 4,
-    "working": 1,
+    "waitingWorker": 3,
+    "working": 2,
     "waitingReview": 0,
     "done": 319,
-    "alerts": 4
+    "alerts": 3
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "claude-handoff",
       "targetDir": "<local>",
       "round": 2,
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -58,9 +58,14 @@
           "time": "2026-08-13 01:54:08",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-13 01:57:18",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-13 01:54:08"
+      "lastUpdate": "2026-08-13 01:57:18"
     },
     {
       "jobId": "Jdeskcourse-wrap",
