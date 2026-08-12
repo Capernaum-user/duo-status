@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-08-13T00:54:01",
+  "generatedAt": "2026-08-13T00:58:15",
   "counts": {
     "active": 5,
-    "waitingWorker": 3,
+    "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 1,
+    "waitingReview": 0,
     "done": 316,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
     {
       "jobId": "Jdeskcourse-deck",
-      "title": "강의 진행용 PPTX 5종",
+      "title": "강의 진행용 덱 재작업 (R2): 글자 덱을 그림 덱으로 바꾼다",
       "project": "project-36",
       "targetDir": "<local>",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "round": 2,
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -43,9 +43,14 @@
           "time": "2026-08-13 00:53:49",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-13 00:57:09",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-13 00:53:49"
+      "lastUpdate": "2026-08-13 00:57:09"
     },
     {
       "jobId": "Jdeskcourse-rest",
