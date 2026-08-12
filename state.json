@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-08-12T11:44:16",
+  "generatedAt": "2026-08-12T17:47:50",
   "counts": {
-    "active": 4,
-    "waitingWorker": 3,
+    "active": 5,
+    "waitingWorker": 4,
     "working": 1,
     "waitingReview": 0,
     "done": 312,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jdeskcourse-recon",
+      "title": "디자인 시스템 정찰 + 스크린샷 파이프라인 + 교재 형식 확정",
+      "project": "project-36",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-12 17:46:58",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-12 17:46:58"
+    },
     {
       "jobId": "Jglobalmd-bootbudget",
       "title": "ORDER_Jglobalmd-bootbudget_R02 — 존재하지 않는 파일명 1건 정정 (R1 은 거의 전부 통과)",
