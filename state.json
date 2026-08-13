@@ -1,14 +1,57 @@
 {
-  "generatedAt": "2026-08-13T22:08:33",
+  "generatedAt": "2026-08-13T22:09:46",
   "counts": {
     "active": 8,
     "waitingWorker": 5,
-    "working": 2,
-    "waitingReview": 1,
+    "working": 1,
+    "waitingReview": 2,
     "done": 329,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jao2-lane",
+      "title": "project-41 에 기획 레인을 **가산**한다 (기존 파일 1줄 외 무수정)",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 08:55:13",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 21:44:34",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 21:59:05",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:08:55",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 22:08:55"
+    },
     {
       "jobId": "Jdash-03-rollout",
       "title": "ORDER_Jdash-03-rollout_R01 — 지침 변경 초안 + 목업 1장 + 승인 요청서",
@@ -17,12 +60,12 @@
       "round": 1,
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -102,44 +145,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 22:02:26"
-    },
-    {
-      "jobId": "Jao2-lane",
-      "title": "project-41 에 기획 레인을 **가산**한다 (기존 파일 1줄 외 무수정)",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 08:55:13",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 21:44:34",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 21:59:05",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 21:59:05"
     },
     {
       "jobId": "Jdash-01-discovery",
