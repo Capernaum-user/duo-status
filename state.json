@@ -1,14 +1,47 @@
 {
-  "generatedAt": "2026-08-13T22:50:21",
+  "generatedAt": "2026-08-13T22:51:31",
   "counts": {
-    "active": 7,
+    "active": 8,
     "waitingWorker": 3,
-    "working": 2,
+    "working": 3,
     "waitingReview": 2,
     "done": 333,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jcosmosbg-interaction",
+      "title": "ORDER_Jcosmosbg-interaction_R01 — 행성을 만질 수 있게 (호버·근접·클릭 반응)",
+      "project": "project-18",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 22:50:34",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:50:53",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 22:50:53"
+    },
     {
       "jobId": "Jcosmosbg-milkyway",
       "title": "ORDER_Jcosmosbg-milkyway_R01 — 행성이 \"둘러싸는\" 은하수 구도 만들기",
@@ -48,9 +81,14 @@
           "time": "2026-08-13 22:49:28",
           "state": "ACCEPTED",
           "round": 1
+        },
+        {
+          "time": "2026-08-13 22:50:32",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-13 22:49:28"
+      "lastUpdate": "2026-08-13 22:50:32"
     },
     {
       "jobId": "Jhud-01-lane",
