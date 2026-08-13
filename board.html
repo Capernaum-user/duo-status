@@ -71,18 +71,56 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-13 21:32:54 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-13 21:39:05 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-13T21:32:53",
+  "generatedAt": "2026-08-13T21:39:05",
   "counts": {
     "active": 8,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 2,
+    "working": 1,
+    "waitingReview": 3,
     "done": 325,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jduoboard-verify",
+      "title": "ORDER_Jduoboard-verify_R01 — duo 관제보드 이력 확장: 전체 회귀 검증 + 사용법 문서",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 21:22:52",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 21:24:06",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 21:38:40",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 21:38:40"
+    },
     {
       "jobId": "Jdash-01-discovery",
       "title": "ORDER_Jdash-01-discovery_R01 — 레퍼런스 해부 + 대시보드 현황 실측",
@@ -110,39 +148,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 21:32:29"
-    },
-    {
-      "jobId": "Jduoboard-verify",
-      "title": "ORDER_Jduoboard-verify_R01 — duo 관제보드 이력 확장: 전체 회귀 검증 + 사용법 문서",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 21:22:52",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 21:24:06",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 21:24:06"
     },
     {
       "jobId": "Jduoboard-view",
