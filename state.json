@@ -1,14 +1,52 @@
 {
-  "generatedAt": "2026-08-13T20:53:54",
+  "generatedAt": "2026-08-13T21:19:06",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 2,
+    "working": 1,
+    "waitingReview": 3,
     "done": 324,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jduoboard-view",
+      "title": "ORDER_Jduoboard-view_R01 — duo 관제보드 이력 확장: API 라우트 + 새 「기록」 탭",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 20:50:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 20:51:24",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 21:18:52",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 21:18:52"
+    },
     {
       "jobId": "Jaoapp-01-llmcall",
       "title": "진짜 claude 를 딱 한 번 불러서, 그게 진짜였다는 영수증을 남긴다",
@@ -46,39 +84,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 20:53:02"
-    },
-    {
-      "jobId": "Jduoboard-view",
-      "title": "ORDER_Jduoboard-view_R01 — duo 관제보드 이력 확장: API 라우트 + 새 「기록」 탭",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 20:50:12",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 20:51:24",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 20:51:24"
     },
     {
       "jobId": "Jduoboard-metrics",
