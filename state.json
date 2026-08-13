@@ -1,14 +1,57 @@
 {
-  "generatedAt": "2026-08-13T22:30:46",
+  "generatedAt": "2026-08-13T22:31:59",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 1,
+    "working": 2,
+    "waitingReview": 2,
     "done": 331,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jao2-verify",
+      "title": "접합이 실제로 도는지 주행으로 증명하고 시각화 보고한다",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 08:55:13",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:17:01",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:18:24",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:31:22",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 22:31:22"
+    },
     {
       "jobId": "Jaoapp-03-runner",
       "title": "오래 걸리는 일을 뒤에서 돌리는 방을 만든다 — 아직 가짜 엔진 그대로",
@@ -84,44 +127,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 22:25:32"
-    },
-    {
-      "jobId": "Jao2-verify",
-      "title": "접합이 실제로 도는지 주행으로 증명하고 시각화 보고한다",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 08:55:13",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:17:01",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:18:24",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 22:18:24"
     },
     {
       "jobId": "Jao2-lane",
