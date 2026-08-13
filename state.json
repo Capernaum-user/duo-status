@@ -1,28 +1,61 @@
 {
-  "generatedAt": "2026-08-13T18:20:40",
+  "generatedAt": "2026-08-13T20:38:57",
   "counts": {
     "active": 7,
-    "waitingWorker": 5,
-    "working": 1,
+    "waitingWorker": 4,
+    "working": 2,
     "waitingReview": 1,
     "done": 323,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
     {
+      "jobId": "Jaoapp-01-llmcall",
+      "title": "진짜 claude 를 딱 한 번 불러서, 그게 진짜였다는 영수증을 남긴다",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 10:05:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 20:38:26",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 20:38:26"
+    },
+    {
       "jobId": "Jduoboard-metrics",
-      "title": "ORDER_Jduoboard-metrics_R02 — 측정 재작업: 148초를 25초로, 재작업 집계를 사실대로",
+      "title": "ORDER_Jduoboard-metrics_R03 — 측정 커버리지 복구: 예산으로 버리지 말고 캐시로 남긴다",
       "project": "claude-handoff",
       "targetDir": "<local>",
       "round": 3,
       "stage": "REWORK",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -129,34 +162,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 18:14:49"
-    },
-    {
-      "jobId": "Jaoapp-01-llmcall",
-      "title": "진짜 claude 를 딱 한 번 불러서, 그게 진짜였다는 영수증을 남긴다",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 10:05:41",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 10:05:41"
     },
     {
       "jobId": "Jao2-lane",
