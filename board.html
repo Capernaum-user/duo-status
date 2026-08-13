@@ -71,18 +71,81 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-13 08:55:45 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-13 09:02:59 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-13T08:55:44",
+  "generatedAt": "2026-08-13T09:02:59",
   "counts": {
     "active": 6,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 0,
+    "working": 1,
+    "waitingReview": 1,
     "done": 323,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jduoboard-metrics",
+      "title": "ORDER_Jduoboard-metrics_R02 — 측정 재작업: 148초를 25초로, 재작업 집계를 사실대로",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 2,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 02:07:30",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 02:09:26",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 02:38:00",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 02:38:18",
+          "state": "REVIEW-CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 02:46:52",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-08-13 02:46:53",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-08-13 08:49:54",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-08-13 09:02:00",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-08-13 09:02:00"
+    },
     {
       "jobId": "Jao2-lane",
       "title": "Jao2-lane",
@@ -204,64 +267,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 08:55:13"
-    },
-    {
-      "jobId": "Jduoboard-metrics",
-      "title": "ORDER_Jduoboard-metrics_R02 — 측정 재작업: 148초를 25초로, 재작업 집계를 사실대로",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 2,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 02:07:30",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 02:09:26",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 02:38:00",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 02:38:18",
-          "state": "REVIEW-CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 02:46:52",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-08-13 02:46:53",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-08-13 08:49:54",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-08-13 08:49:54"
     },
     {
       "jobId": "Jduoboard-scanner",
