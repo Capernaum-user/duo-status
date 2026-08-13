@@ -71,18 +71,51 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-13 22:09:46 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-13 22:12:00 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-13T22:09:46",
+  "generatedAt": "2026-08-13T22:11:59",
   "counts": {
     "active": 8,
-    "waitingWorker": 5,
-    "working": 1,
+    "waitingWorker": 4,
+    "working": 2,
     "waitingReview": 2,
     "done": 329,
-    "alerts": 4
+    "alerts": 5
   },
   "jobs": [
+    {
+      "jobId": "Jcosmosbg-orbit-engine",
+      "title": "ORDER_Jcosmosbg-orbit-engine_R01 — 고정 행성을 공전하는 태양계로 (궤도 엔진)",
+      "project": "project-18",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 22:02:26",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:11:15",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 22:11:15"
+    },
     {
       "jobId": "Jao2-lane",
       "title": "project-41 에 기획 레인을 **가산**한다 (기존 파일 1줄 외 무수정)",
@@ -193,34 +226,6 @@
       "lastUpdate": "2026-08-13 22:08:15"
     },
     {
-      "jobId": "Jcosmosbg-orbit-engine",
-      "title": "ORDER_Jcosmosbg-orbit-engine_R01 — 고정 행성을 공전하는 태양계로 (궤도 엔진)",
-      "project": "project-18",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 22:02:26",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 22:02:26"
-    },
-    {
       "jobId": "Jdash-01-discovery",
       "title": "ORDER_Jdash-01-discovery_R01 — 레퍼런스 해부 + 대시보드 현황 실측",
       "project": "project-11",
@@ -266,13 +271,13 @@
       "round": 1,
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
