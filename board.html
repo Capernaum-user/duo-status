@@ -71,18 +71,89 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-13 23:26:36 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-14 00:40:50 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-13T23:26:36",
+  "generatedAt": "2026-08-14T00:40:49",
   "counts": {
     "active": 7,
-    "waitingWorker": 3,
+    "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 3,
-    "done": 337,
-    "alerts": 3
+    "waitingReview": 2,
+    "done": 338,
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-04-budget",
+      "title": "진짜 엔진을 연결하고, 돈이 새지 않도록 지갑에 상한을 건다",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-14 00:40:02",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 00:40:02"
+    },
+    {
+      "jobId": "Jaoapp-03-runner",
+      "title": "오래 걸리는 일을 뒤에서 돌리는 방을 만든다 — 아직 가짜 엔진 그대로",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 22:14:09",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:15:00",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:30:00",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 00:39:45",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 00:39:45"
+    },
     {
       "jobId": "Jhud-03-guides",
       "title": "ORDER_Jhud-03-guides_R01 — 지침 4곳 갱신(모든 AI가 새 레인을 알게 한다)",
@@ -392,13 +463,13 @@
       "round": 1,
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -426,44 +497,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 22:31:22"
-    },
-    {
-      "jobId": "Jaoapp-03-runner",
-      "title": "오래 걸리는 일을 뒤에서 돌리는 방을 만든다 — 아직 가짜 엔진 그대로",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 22:14:09",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:15:00",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:30:00",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 22:30:00"
     },
     {
       "jobId": "Jdash-03-rollout",
