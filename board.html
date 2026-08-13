@@ -71,18 +71,66 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-14 00:42:03 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-14 00:44:14 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-14T00:42:02",
+  "generatedAt": "2026-08-14T00:44:14",
   "counts": {
-    "active": 8,
+    "active": 7,
     "waitingWorker": 5,
     "working": 1,
-    "waitingReview": 2,
-    "done": 338,
-    "alerts": 4
+    "waitingReview": 1,
+    "done": 339,
+    "alerts": 5
   },
   "jobs": [
+    {
+      "jobId": "Jao2-verify",
+      "title": "접합이 실제로 도는지 주행으로 증명하고 시각화 보고한다",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 08:55:13",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:17:01",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:18:24",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:31:22",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 00:43:36",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 00:43:36"
+    },
     {
       "jobId": "Jhudapp-01-skin",
       "title": "ORDER_Jhudapp-01-skin_R01 — 대시보드를 11_console-hud 디자인으로 교체 + 전폭 레이아웃",
@@ -119,12 +167,12 @@
       "round": 1,
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -395,13 +443,13 @@
       "round": 1,
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -482,49 +530,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 22:35:58"
-    },
-    {
-      "jobId": "Jao2-verify",
-      "title": "접합이 실제로 도는지 주행으로 증명하고 시각화 보고한다",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 08:55:13",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:17:01",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:18:24",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:31:22",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 22:31:22"
     },
     {
       "jobId": "Jdash-03-rollout",
