@@ -1,24 +1,57 @@
 {
-  "generatedAt": "2026-08-14T01:36:14",
+  "generatedAt": "2026-08-14T01:42:27",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 1,
-    "waitingReview": 2,
-    "done": 341,
-    "alerts": 5
+    "working": 2,
+    "waitingReview": 1,
+    "done": 342,
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jhudapp-03-verify",
+      "title": "ORDER_Jhudapp-03-verify_R01 — 실기동 육안 검증 + 회귀 + 발견 결함 즉시 수정",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-14 01:41:36",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 01:42:14",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 01:42:14"
+    },
     {
       "jobId": "Jhudapp-02-window",
       "title": "ORDER_Jhudapp-02-window_R01 — 창을 화면 전체 크기로 + 실제 기동 확인",
       "project": "project-41",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -43,9 +76,14 @@
           "time": "2026-08-14 01:35:46",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-14 01:41:35",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-14 01:35:46"
+      "lastUpdate": "2026-08-14 01:41:35"
     },
     {
       "jobId": "Jhudapp-01-skin",
