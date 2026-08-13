@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-14T01:23:48",
+  "generatedAt": "2026-08-14T01:25:02",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
-    "working": 1,
+    "waitingWorker": 3,
+    "working": 2,
     "waitingReview": 1,
     "done": 341,
-    "alerts": 4
+    "alerts": 3
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-41",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -33,9 +33,14 @@
           "time": "2026-08-14 01:23:21",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-14 01:24:31",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-14 01:23:21"
+      "lastUpdate": "2026-08-14 01:24:31"
     },
     {
       "jobId": "Jhudapp-01-skin",
