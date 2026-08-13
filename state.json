@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-13T23:12:35",
+  "generatedAt": "2026-08-13T23:15:49",
   "counts": {
     "active": 9,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 4,
+    "working": 1,
+    "waitingReview": 5,
     "done": 334,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
     {
-      "jobId": "Jhud-02-blocks",
-      "title": "ORDER_Jhud-02-blocks_R01 — 목업을 blocks.html 참조본으로 승격 + 검사기 통과",
-      "project": "ObsidianVault",
+      "jobId": "Jcosmosbg-verify",
+      "title": "ORDER_Jcosmosbg-verify_R01 — 회귀·성능·테마 검증 + 전후 비교 리포트",
+      "project": "project-18",
       "targetDir": "<local>",
       "round": 1,
       "stage": "DONE",
@@ -30,28 +30,33 @@
       "autorun": null,
       "timeline": [
         {
-          "time": "2026-08-13 22:59:12",
+          "time": "2026-08-13 23:01:00",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-08-13 23:11:48",
+          "time": "2026-08-13 23:01:12",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 23:15:19",
           "state": "DONE",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-08-13 23:11:48"
+      "lastUpdate": "2026-08-13 23:15:19"
     },
     {
-      "jobId": "Jcosmosbg-verify",
-      "title": "ORDER_Jcosmosbg-verify_R01 — 회귀·성능·테마 검증 + 전후 비교 리포트",
-      "project": "project-18",
+      "jobId": "Jhud-02-blocks",
+      "title": "ORDER_Jhud-02-blocks_R01 — 목업을 blocks.html 참조본으로 승격 + 검사기 통과",
+      "project": "ObsidianVault",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -63,17 +68,17 @@
       "autorun": null,
       "timeline": [
         {
-          "time": "2026-08-13 23:01:00",
+          "time": "2026-08-13 22:59:12",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-08-13 23:01:12",
-          "state": "CLAIMED",
+          "time": "2026-08-13 23:11:48",
+          "state": "DONE",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-08-13 23:01:12"
+      "lastUpdate": "2026-08-13 23:11:48"
     },
     {
       "jobId": "Jcosmosbg-interaction",
@@ -15932,6 +15937,11 @@
       "file": "Jclarify-noautopop_autorun-roundcap.md",
       "jobId": "Jclarify-noautopop",
       "cause": "autorun-roundcap"
+    },
+    {
+      "file": "Jcosmosbg-verify_autopilot-worker-noreport.md",
+      "jobId": "Jcosmosbg-verify",
+      "cause": "autopilot-worker-noreport"
     },
     {
       "file": "Jmermaid-render_autorun-roundcap.md",
