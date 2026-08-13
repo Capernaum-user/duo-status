@@ -1,14 +1,95 @@
 {
-  "generatedAt": "2026-08-13T21:43:43",
+  "generatedAt": "2026-08-13T21:44:55",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
+    "waitingWorker": 5,
     "working": 1,
-    "waitingReview": 2,
+    "waitingReview": 1,
     "done": 326,
-    "alerts": 5
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jao2-lane",
+      "title": "project-41 에 기획 레인을 **가산**한다 (기존 파일 1줄 외 무수정)",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 08:55:13",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 21:44:34",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 21:44:34"
+    },
+    {
+      "jobId": "Jaohub-verdict",
+      "title": "허브 규약이 \"자체 판정\"을 시키는 문장을 \"대조·증거 제출\"로 바로잡는다",
+      "project": "project-38",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 08:55:13",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 08:55:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 18:08:33",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 18:14:49",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 21:44:33",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 21:44:33"
+    },
     {
       "jobId": "Jduoboard-verify",
       "title": "ORDER_Jduoboard-verify_R01 — duo 관제보드 이력 확장: 전체 회귀 검증 + 사용법 문서",
@@ -268,77 +349,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 20:50:11"
-    },
-    {
-      "jobId": "Jaohub-verdict",
-      "title": "허브 규약이 \"자체 판정\"을 시키는 문장을 \"대조·증거 제출\"로 바로잡는다",
-      "project": "project-38",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 08:55:13",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 08:55:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 18:08:33",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 18:14:49",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 18:14:49"
-    },
-    {
-      "jobId": "Jao2-lane",
-      "title": "Jao2-lane",
-      "project": "",
-      "targetDir": null,
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 08:55:13",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 08:55:13"
     },
     {
       "jobId": "Jao2-verify",
