@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-13T21:40:17",
+  "generatedAt": "2026-08-13T21:42:30",
   "counts": {
-    "active": 8,
+    "active": 7,
     "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 3,
-    "done": 325,
-    "alerts": 3
+    "waitingReview": 2,
+    "done": 326,
+    "alerts": 4
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "claude-handoff",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "REVIEW-CLAIMED",
-      "stageIndex": 4,
-      "stageLabel": "검토 중",
-      "nextAction": "검토 결과 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -48,9 +48,14 @@
           "time": "2026-08-13 21:39:01",
           "state": "REVIEW-CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-13 21:42:08",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-13 21:39:01"
+      "lastUpdate": "2026-08-13 21:42:08"
     },
     {
       "jobId": "Jdash-01-discovery",
@@ -60,12 +65,12 @@
       "round": 1,
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
