@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-14T01:08:23",
+  "generatedAt": "2026-08-14T01:22:36",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 1,
+    "working": 1,
+    "waitingReview": 2,
     "done": 340,
-    "alerts": 3
+    "alerts": 4
   },
   "jobs": [
     {
@@ -15,10 +15,10 @@
       "project": "project-41",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,9 +38,14 @@
           "time": "2026-08-14 01:07:35",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-14 01:21:44",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-14 01:07:35"
+      "lastUpdate": "2026-08-14 01:21:44"
     },
     {
       "jobId": "Jaoapp-04-budget",
