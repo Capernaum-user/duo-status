@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-14T01:59:43",
+  "generatedAt": "2026-08-14T02:04:06",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
+    "waitingReview": 2,
     "done": 342,
-    "alerts": 4
+    "alerts": 5
   },
   "jobs": [
     {
@@ -15,14 +15,14 @@
       "project": "project-36",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -33,9 +33,14 @@
           "time": "2026-08-14 01:59:26",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-14 02:03:23",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-14 01:59:26"
+      "lastUpdate": "2026-08-14 02:03:23"
     },
     {
       "jobId": "Jhudapp-03-verify",
@@ -43,10 +48,10 @@
       "project": "project-41",
       "targetDir": "<local>",
       "round": 1,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -66,9 +71,14 @@
           "time": "2026-08-14 01:42:14",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-14 02:02:56",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-14 01:42:14"
+      "lastUpdate": "2026-08-14 02:02:56"
     },
     {
       "jobId": "Jhudapp-02-window",
