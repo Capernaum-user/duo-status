@@ -1,14 +1,67 @@
 {
-  "generatedAt": "2026-08-13T22:51:31",
+  "generatedAt": "2026-08-13T22:52:43",
   "counts": {
-    "active": 8,
+    "active": 9,
     "waitingWorker": 3,
     "working": 3,
-    "waitingReview": 2,
-    "done": 333,
+    "waitingReview": 3,
+    "done": 332,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jcosmosbg-milkyway",
+      "title": "ORDER_Jcosmosbg-milkyway_R01 — 행성이 \"둘러싸는\" 은하수 구도 만들기",
+      "project": "project-18",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 22:36:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:36:35",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:46:38",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:49:28",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:50:32",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-13 22:52:06",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 22:52:06"
+    },
     {
       "jobId": "Jcosmosbg-interaction",
       "title": "ORDER_Jcosmosbg-interaction_R01 — 행성을 만질 수 있게 (호버·근접·클릭 반응)",
@@ -41,54 +94,6 @@
         }
       ],
       "lastUpdate": "2026-08-13 22:50:53"
-    },
-    {
-      "jobId": "Jcosmosbg-milkyway",
-      "title": "ORDER_Jcosmosbg-milkyway_R01 — 행성이 \"둘러싸는\" 은하수 구도 만들기",
-      "project": "project-18",
-      "targetDir": "<local>",
-      "round": 1,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-13 22:36:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:36:35",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:46:38",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:49:28",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-13 22:50:32",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-13 22:50:32"
     },
     {
       "jobId": "Jhud-01-lane",
