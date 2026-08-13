@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-08-13T21:24:40",
+  "generatedAt": "2026-08-13T21:32:53",
   "counts": {
-    "active": 7,
-    "waitingWorker": 3,
+    "active": 8,
+    "waitingWorker": 4,
     "working": 2,
     "waitingReview": 2,
     "done": 325,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jdash-01-discovery",
+      "title": "ORDER_Jdash-01-discovery_R01 — 레퍼런스 해부 + 대시보드 현황 실측",
+      "project": "project-11",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-13 21:32:29",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-13 21:32:29"
+    },
     {
       "jobId": "Jduoboard-verify",
       "title": "ORDER_Jduoboard-verify_R01 — duo 관제보드 이력 확장: 전체 회귀 검증 + 사용법 문서",
