@@ -1,14 +1,77 @@
 {
-  "generatedAt": "2026-08-14T13:01:25",
+  "generatedAt": "2026-08-14T13:02:53",
   "counts": {
-    "active": 7,
+    "active": 8,
     "waitingWorker": 5,
-    "working": 2,
+    "working": 3,
     "waitingReview": 0,
     "done": 353,
     "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jaoback-03-jobbanner",
+      "title": "Job Object 안전장치가 꺼지면 화면이 알려 준다 + 백로그 장부 마감",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-14 12:57:48",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 13:02:20",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 13:02:20"
+    },
+    {
+      "jobId": "Jdrift-01-tokencheck",
+      "title": "ORDER_Jdrift-01-tokencheck_R01 — 토큰 사본 드리프트를 기계가 잡게 한다",
+      "project": "ObsidianVault",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-14 13:01:48",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 13:01:48"
+    },
     {
       "jobId": "Jpm90-01-scorecard",
       "title": "스코어카드 스크립트 신설과 plan-check 오탐·미탐 수리",
@@ -42,35 +105,6 @@
         }
       ],
       "lastUpdate": "2026-08-14 13:00:28"
-    },
-    {
-      "jobId": "Jaoback-03-jobbanner",
-      "title": "Job Object 안전장치가 꺼지면 화면이 알려 준다 + 백로그 장부 마감",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-14 12:57:48",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-14 12:57:48"
     },
     {
       "jobId": "Jaoback-02-lifecycle",
