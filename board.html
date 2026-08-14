@@ -71,18 +71,66 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-14 16:30:48 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-14 16:34:03 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-14T16:30:47",
+  "generatedAt": "2026-08-14T16:34:03",
   "counts": {
-    "active": 7,
-    "waitingWorker": 4,
+    "active": 6,
+    "waitingWorker": 3,
     "working": 1,
     "waitingReview": 2,
     "done": 357,
-    "alerts": 4
+    "alerts": 5
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-ledger",
+      "title": "ORDER_Jaoapp-ledger_R01 — 상태 원장을 사실과 맞춘다(단계 선기록·running 전이·이벤트 원장·집계 분리)",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 0,
+      "originDir": "<local>",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "1중 검증 FAIL — 기획 수정(재발주) 권장",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "SINGLE_FAIL",
+        "a": "FAIL",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260814-162315-a0e3",
+        "startedAt": "2026-08-14 16:23:15",
+        "finishedAt": "2026-08-14 16:33:30",
+        "runs": 1
+      },
+      "autorun": {
+        "active": false,
+        "phase": "verify",
+        "round": 0,
+        "result": "ESCALATED"
+      },
+      "timeline": [
+        {
+          "time": "2026-08-14 16:23:07",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 16:33:30",
+          "state": "ESCALATED",
+          "round": 0
+        }
+      ],
+      "lastUpdate": "2026-08-14 16:33:30"
+    },
     {
       "jobId": "Jpm90-03-enforce",
       "title": "게이트 집행 3종 구축: P11 검사 · 차단 훅 · 트리거 훅 (스코어카드 B3·B4·B5)",
@@ -116,49 +164,6 @@
         }
       ],
       "lastUpdate": "2026-08-14 16:30:18"
-    },
-    {
-      "jobId": "Jaoapp-ledger",
-      "title": "ORDER_Jaoapp-ledger_R01 — 상태 원장을 사실과 맞춘다(단계 선기록·running 전이·이벤트 원장·집계 분리)",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 진행 중 — 완료 후 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "RUNNING",
-        "decision": null,
-        "a": null,
-        "b": null,
-        "relayJobId": "pending",
-        "startedAt": "2026-08-14 16:23:15",
-        "finishedAt": null,
-        "runs": 1
-      },
-      "autorun": {
-        "active": true,
-        "phase": "verify",
-        "round": 0,
-        "result": null
-      },
-      "timeline": [
-        {
-          "time": "2026-08-14 16:23:07",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-14 16:23:07"
     },
     {
       "jobId": "Jpm90-02-wrapper",
@@ -17248,6 +17253,11 @@
     }
   ],
   "escalations": [
+    {
+      "file": "Jaoapp-ledger_autorun-verify-fail.md",
+      "jobId": "Jaoapp-ledger",
+      "cause": "autorun-verify-fail"
+    },
     {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
       "jobId": "Jclarify-noautopop",
