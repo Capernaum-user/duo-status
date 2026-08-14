@@ -38,6 +38,9 @@ function mapStateToScene(state) {
     var requestDate = pickDateStr(tl.length ? tl[0].time : j.lastUpdate);
     return {
       jobId: j.jobId, title: j.title || j.jobId, project: j.project || '', round: j.round,
+      /* 폴더 정보 — targetDir은 /check가 라우팅에 쓰는 주소(워커 패널을 열 폴더),
+         originDir은 그 지시서를 발주한 패널의 폴더. 정적 발행본에서는 마스킹돼 '<local>'로 온다. */
+      targetDir: j.targetDir || '', originDir: j.originDir || '',
       station: station, booth: booth, boothActive: boothActive, boothFail: boothFail, stackIndex: stackIndex,
       badges: {
         auto: !!(j.autorun && j.autorun.active), rework: !!(j.flags && j.flags.rework),
@@ -578,6 +581,56 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     }
     function hideTip() { $('tip').classList.remove('show'); }
 
+    /* ---------- 폴더(어디서 발주됐고 어디서 /check 하나) ---------- */
+    /* 정적 발행본(publish\build-site.ps1)은 Protect-PublishedState가 'X:\...'를 '<local>'로 마스킹한다.
+       그 경우 복사 버튼은 쓸모가 없으므로 내지 않고, 값만 회색으로 보여준다. */
+    function isRealPath(p) { return !!p && String(p).indexOf('<local>') < 0; }
+    function fallbackCopy(txt) {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = txt; ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed'; ta.style.top = '-1000px'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+      } catch (e) { }
+    }
+    function copyText(txt, btn) {
+      var flash = function () {
+        if (!btn) return;
+        var old = btn.getAttribute('data-label') || btn.textContent;
+        btn.setAttribute('data-label', old);
+        btn.textContent = '복사됨'; btn.classList.add('ok');
+        setTimeout(function () { btn.textContent = old; btn.classList.remove('ok'); }, 1400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).then(flash, function () { fallbackCopy(txt); flash(); });
+      } else { fallbackCopy(txt); flash(); }
+    }
+    document.addEventListener('click', function (ev) {
+      var b = (ev.target && ev.target.closest) ? ev.target.closest('.pcopy') : null;
+      if (!b) return;
+      ev.preventDefault(); ev.stopPropagation();
+      copyText(b.getAttribute('data-copy') || '', b);
+    });
+    /* 경로 표시용 — 구분자 뒤에 <wbr>(폭 0 줄바꿈 기회)를 넣어 낱말 한가운데가 아니라
+       폴더 경계에서 접히게 한다. <wbr>는 문자를 더하지 않아 복사·비교에 영향이 없다. */
+    function escPath(p) { return esc(p).replace(/([\\/])/g, '$1<wbr>'); }
+    function pathRow(label, path, hint) {
+      if (!path) return '';
+      var real = isRealPath(path);
+      return '<div class="prow"><div class="plab">' + esc(label) + '</div>' +
+        '<div class="ppath' + (real ? '' : ' masked') + '"><code>' + escPath(path) + '</code>' +
+        (real ? '<button type="button" class="pcopy" data-copy="' + esc(path) + '" title="경로 복사">복사</button>' : '') +
+        '</div>' + (hint ? '<div class="phint">' + esc(hint) + '</div>' : '') + '</div>';
+    }
+    function folderHtml(t) {
+      var rows = t.targetDir
+        ? pathRow('작업 폴더', t.targetDir, '이 폴더에서 패널을 열고 /check')
+        : '<div class="pm">이 ORDER에는 target_dir이 없다 — 워커가 폴더로 자기 것을 고를 수 없다.</div>';
+      if (t.originDir && t.originDir !== t.targetDir) rows += pathRow('발주한 패널', t.originDir, '');
+      else if (!t.originDir) rows += '<div class="pm">발주 패널 기록 없음(2026-08-14 이전 발주분).</div>';
+      return '<div class="psec"><h4>폴더</h4>' + rows + '</div>';
+    }
+
     /* ---------- 우측 상세 슬라이드 패널 ---------- */
     function openPanel(t) {
       selected = t;
@@ -590,6 +643,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         '<div class="pttl">' + esc(t.jobId) + ' <span class="pr">R' + esc(t.round) + '</span>' + (t.badges.auto ? ' 🤖' : '') + '</div>' +
         '<div class="psub">' + (t.project ? esc(t.project) + ' · ' : '') + esc(t.title) + '</div>' +
         '<div class="pchip ' + t.color + '">' + esc(t.stageLabel) + '</div>' +
+        folderHtml(t) +
         '<div class="psec"><h4>다음 행동</h4><div>' + esc(t.nextAction || '—') + '</div></div>' +
         verifyHtml + autoHtml +
         '<div class="psec"><h4>타임라인</h4><ul class="ptl">' + (tl || '<li class="pm">기록 없음</li>') + '</ul></div>' +
@@ -650,7 +704,13 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     function laneRow(t, n) {
       var auto = t.badges.auto ? '<span class="rework">🤖 ' + esc(t.badges.autoPhase || '무인') + '</span>' : (t.autorun ? '<span class="rework">🤖 ' + esc(t.badges.autoResult || '') + '</span>' : '');
       var reqd = t.requestDate ? '<span class="reqd">요청 ' + esc(t.requestDate) + '</span>' : '';
-      return '<div class="lane' + (t.alert ? ' warn' : '') + '"><div class="lane-head"><span class="idx">#' + n + '</span><span class="jobid">' + esc(t.jobId) + '</span>' + (t.project ? '<span class="proj">· ' + esc(t.project) + '</span>' : '') + '<span class="rbadge">R' + esc(t.round) + '</span>' + (t.badges.rework ? '<span class="rework">↩ 재작업</span>' : '') + auto + '<span class="ltitle">' + esc(t.title) + '</span><span class="chip s' + t.stageIndex + '">' + esc(t.stageLabel) + '</span></div><div class="lane-graph">' + laneSvg(t) + '</div><div class="lane-foot"><span>다음: <b>' + esc(t.nextAction) + '</b></span>' + reqd + '<span class="upd">' + esc(t.lastUpdate || '—') + '</span></div></div>';
+      /* 폴더 줄 — 리스트에서 카드를 열지 않고도 "어디서 /check 하나"를 바로 읽게 한다. */
+      var dir = t.targetDir
+        ? '<div class="lane-dir"><span class="dl">작업 폴더</span><code>' + escPath(t.targetDir) + '</code>' +
+          (isRealPath(t.targetDir) ? '<button type="button" class="pcopy" data-copy="' + esc(t.targetDir) + '" title="경로 복사">복사</button>' : '') +
+          (t.originDir && t.originDir !== t.targetDir ? '<span class="dfrom">발주 ' + escPath(t.originDir) + '</span>' : '') + '</div>'
+        : '<div class="lane-dir none"><span class="dl">작업 폴더</span><code>target_dir 없음</code></div>';
+      return '<div class="lane' + (t.alert ? ' warn' : '') + '"><div class="lane-head"><span class="idx">#' + n + '</span><span class="jobid">' + esc(t.jobId) + '</span>' + (t.project ? '<span class="proj">· ' + esc(t.project) + '</span>' : '') + '<span class="rbadge">R' + esc(t.round) + '</span>' + (t.badges.rework ? '<span class="rework">↩ 재작업</span>' : '') + auto + '<span class="ltitle">' + esc(t.title) + '</span><span class="chip s' + t.stageIndex + '">' + esc(t.stageLabel) + '</span></div>' + dir + '<div class="lane-graph">' + laneSvg(t) + '</div><div class="lane-foot"><span>다음: <b>' + esc(t.nextAction) + '</b></span>' + reqd + '<span class="upd">' + esc(t.lastUpdate || '—') + '</span></div></div>';
     }
     function renderList() {
       var act = scene.view.filter(function (t) { return t.stageIndex !== 5; }), done = scene.view.filter(function (t) { return t.stageIndex === 5; });
