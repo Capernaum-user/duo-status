@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-08-14T16:43:50",
+  "generatedAt": "2026-08-14T16:59:06",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
+    "waitingReview": 2,
     "done": 358,
-    "alerts": 5
+    "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jpm90-04-method",
+      "title": "방법론 D축 확장: 중단 경로·가설 검증·brownfield 라우팅·1인 경감",
+      "project": "project-38",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-14 16:34:54",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 16:58:49",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 16:58:49"
+    },
     {
       "jobId": "Jaoapp-ledger2",
       "title": "ORDER_Jaoapp-ledger2_R01 — 상태 원장을 사실과 맞춘다(단계 선기록·running 전이·이벤트 원장·집계 분리)",
@@ -56,35 +90,6 @@
         }
       ],
       "lastUpdate": "2026-08-14 16:42:48"
-    },
-    {
-      "jobId": "Jpm90-04-method",
-      "title": "방법론 D축 확장: 중단 경로·가설 검증·brownfield 라우팅·1인 경감",
-      "project": "project-38",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-14 16:34:54",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-14 16:34:54"
     },
     {
       "jobId": "Jpm90-03-enforce",
