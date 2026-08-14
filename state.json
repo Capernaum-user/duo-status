@@ -1,14 +1,67 @@
 {
-  "generatedAt": "2026-08-14T17:01:22",
+  "generatedAt": "2026-08-14T17:12:47",
   "counts": {
     "active": 7,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 1,
+    "working": 1,
+    "waitingReview": 2,
     "done": 359,
-    "alerts": 4
+    "alerts": 6
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-ledger2",
+      "title": "ORDER_Jaoapp-ledger2_R01 — 상태 원장을 사실과 맞춘다(단계 선기록·running 전이·이벤트 원장·집계 분리)",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "SINGLE_PASS",
+        "a": "PROTOCOL_ERROR",
+        "b": "PASS",
+        "relayJobId": "J20260814-163705-ab75",
+        "startedAt": "2026-08-14 16:37:05",
+        "finishedAt": "2026-08-14 16:42:48",
+        "runs": 1
+      },
+      "autorun": {
+        "active": true,
+        "phase": "review",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-14 16:37:04",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 16:42:48",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 17:11:51",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 17:11:51"
+    },
     {
       "jobId": "Jpm90-05-evidence",
       "title": "근거 추적성 C1~C5: 원장 등급·원문 미열람 표기·1단계 시장 문헌·P10b 신설",
@@ -18,12 +71,12 @@
       "originDir": "<local>",
       "stage": "PLANNED",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -76,54 +129,6 @@
         }
       ],
       "lastUpdate": "2026-08-14 17:01:09"
-    },
-    {
-      "jobId": "Jaoapp-ledger2",
-      "title": "ORDER_Jaoapp-ledger2_R01 — 상태 원장을 사실과 맞춘다(단계 선기록·running 전이·이벤트 원장·집계 분리)",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "DONE",
-        "decision": "SINGLE_PASS",
-        "a": "PROTOCOL_ERROR",
-        "b": "PASS",
-        "relayJobId": "J20260814-163705-ab75",
-        "startedAt": "2026-08-14 16:37:05",
-        "finishedAt": "2026-08-14 16:42:48",
-        "runs": 1
-      },
-      "autorun": {
-        "active": true,
-        "phase": "worker",
-        "round": 1,
-        "result": null
-      },
-      "timeline": [
-        {
-          "time": "2026-08-14 16:37:04",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-14 16:42:48",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-14 16:42:48"
     },
     {
       "jobId": "Jpm90-03-enforce",
