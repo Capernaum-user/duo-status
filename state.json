@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-08-14T12:58:01",
+  "generatedAt": "2026-08-14T13:01:25",
   "counts": {
     "active": 7,
-    "waitingWorker": 6,
-    "working": 1,
+    "waitingWorker": 5,
+    "working": 2,
     "waitingReview": 0,
     "done": 353,
     "alerts": 4
   },
   "jobs": [
+    {
+      "jobId": "Jpm90-01-scorecard",
+      "title": "스코어카드 스크립트 신설과 plan-check 오탐·미탐 수리",
+      "project": "project-38",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-14 11:49:44",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 13:00:28",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 13:00:28"
+    },
     {
       "jobId": "Jaoback-03-jobbanner",
       "title": "Job Object 안전장치가 꺼지면 화면이 알려 준다 + 백로그 장부 마감",
@@ -183,35 +217,6 @@
         }
       ],
       "lastUpdate": "2026-08-14 11:51:16"
-    },
-    {
-      "jobId": "Jpm90-01-scorecard",
-      "title": "스코어카드 스크립트 신설과 plan-check 오탐·미탐 수리",
-      "project": "project-38",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-14 11:49:44",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-14 11:49:44"
     },
     {
       "jobId": "Jeduhub-verify",
