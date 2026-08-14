@@ -1,14 +1,42 @@
 {
-  "generatedAt": "2026-08-14T11:32:05",
+  "generatedAt": "2026-08-14T11:33:17",
   "counts": {
-    "active": 5,
-    "waitingWorker": 3,
+    "active": 6,
+    "waitingWorker": 4,
     "working": 2,
     "waitingReview": 0,
     "done": 350,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jhudfin-01-project-3",
+      "title": "ORDER_Jhudfin-01-project-3_R01 — Gemini·Codex 도 문서 레인을 알게 한다 (포인터만, 표 복제 금지)",
+      "project": "ObsidianVault",
+      "targetDir": "<local>",
+      "round": 1,
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-14 11:32:29",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 11:32:29"
+    },
     {
       "jobId": "Jaoback-01-testlock",
       "title": "테스트가 세 가지 거짓말을 잡게 만든다 (제품 코드는 손대지 않는다)",
