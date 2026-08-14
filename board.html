@@ -71,18 +71,86 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-14 11:50:39 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-14 11:51:50 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-14T11:50:38",
+  "generatedAt": "2026-08-14T11:51:50",
   "counts": {
     "active": 7,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 6,
+    "working": 1,
     "waitingReview": 0,
-    "done": 350,
+    "done": 351,
     "alerts": 3
   },
   "jobs": [
+    {
+      "jobId": "Jaoback-02-lifecycle",
+      "title": "미션 수명주기를 정직하게 만든다 (좀비 회수 누락 · 죽은 running 상태 · 비결정 테스트)",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-14 11:51:24",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 11:51:24"
+    },
+    {
+      "jobId": "Jaoback-01-testlock",
+      "title": "테스트가 세 가지 거짓말을 잡게 만든다 (제품 코드는 손대지 않는다)",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-14 10:01:57",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 11:31:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-14 11:51:16",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-14 11:51:16"
+    },
     {
       "jobId": "Jpm90-01-scorecard",
       "title": "스코어카드 스크립트 신설과 plan-check 오탐·미탐 수리",
@@ -140,40 +208,6 @@
         }
       ],
       "lastUpdate": "2026-08-14 11:32:29"
-    },
-    {
-      "jobId": "Jaoback-01-testlock",
-      "title": "테스트가 세 가지 거짓말을 잡게 만든다 (제품 코드는 손대지 않는다)",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-14 10:01:57",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-14 11:31:51",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-14 11:31:51"
     },
     {
       "jobId": "Jeduhub-verify",
@@ -14325,60 +14359,6 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "project-41",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 18:50:28",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:50:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:15:05",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:17:29",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:58:17",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 19:58:17"
-    },
-    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-41",
@@ -14443,8 +14423,8 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jceo-chart-axes",
-      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
       "project": "project-41",
       "targetDir": "<local>",
       "round": 1,
@@ -14469,32 +14449,32 @@
       },
       "timeline": [
         {
-          "time": "2026-07-20 17:59:55",
+          "time": "2026-07-20 18:50:28",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-20 17:59:57",
+          "time": "2026-07-20 18:50:29",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:23:57",
+          "time": "2026-07-20 19:15:05",
           "state": "DONE",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:26:23",
+          "time": "2026-07-20 19:17:29",
           "state": "ACCEPTED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:30:08",
+          "time": "2026-07-20 19:58:17",
           "state": "ACCEPTED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-07-20 18:30:08"
+      "lastUpdate": "2026-07-20 19:58:17"
     },
     {
       "jobId": "Jgnosis-dedup",
@@ -14539,6 +14519,60 @@
         },
         {
           "time": "2026-07-20 18:27:06",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jceo-chart-axes",
+      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
+      "project": "project-41",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:59:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:59:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:23:57",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:26:23",
           "state": "ACCEPTED",
           "round": 1
         },
