@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-14T19:35:12",
+  "generatedAt": "2026-08-14T19:49:27",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
+    "waitingWorker": 3,
     "working": 1,
-    "waitingReview": 1,
+    "waitingReview": 2,
     "done": 364,
     "alerts": 5
   },
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -34,9 +34,14 @@
           "time": "2026-08-14 19:34:19",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-14 19:49:03",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-14 19:34:19"
+      "lastUpdate": "2026-08-14 19:49:03"
     },
     {
       "jobId": "Jpm90-08-scorewire",
