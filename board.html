@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-14 17:25:19 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-14 17:32:35 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-14T17:25:19",
+  "generatedAt": "2026-08-14T17:32:35",
   "counts": {
     "active": 7,
-    "waitingWorker": 5,
+    "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 1,
+    "waitingReview": 2,
     "done": 359,
-    "alerts": 6
+    "alerts": 5
   },
   "jobs": [
     {
@@ -90,15 +90,15 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": {
@@ -113,7 +113,7 @@
       },
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 2,
         "result": null
       },
@@ -137,9 +137,14 @@
           "time": "2026-08-14 17:23:08",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-14 17:32:21",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-14 17:23:08"
+      "lastUpdate": "2026-08-14 17:32:21"
     },
     {
       "jobId": "Jpm90-05-evidence",
