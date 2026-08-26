@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 21:01:43 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 21:11:51 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T21:01:41",
+  "generatedAt": "2026-08-26T21:11:49",
   "counts": {
     "active": 6,
-    "waitingWorker": 3,
+    "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 2,
+    "waitingReview": 1,
     "done": 371,
-    "alerts": 7
+    "alerts": 8
   },
   "jobs": [
     {
@@ -88,18 +88,18 @@
       "title": "ORDER_Jaoapp-artifact-ui_R01 — 산출물 화면(4열 목록 · 인라인 본문 뷰어 · 열기 버튼 · 구조 점검기 확장)",
       "project": "project-44",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": {
@@ -123,9 +123,14 @@
           "time": "2026-08-26 21:00:52",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-26 21:10:13",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-26 21:00:52"
+      "lastUpdate": "2026-08-26 21:10:13"
     },
     {
       "jobId": "Jaoapp-artifact2",
@@ -18119,6 +18124,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-26 21:11:06",
+      "command": "handoff-check",
+      "panel": "claude-handoff",
+      "text": "/check"
+    },
+    {
       "time": "2026-07-31 19:06:51",
       "command": "handoff-check",
       "panel": "01_foundry-ontology-corpus",
@@ -18231,12 +18242,6 @@
       "command": "handoff-check",
       "panel": "ontology",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-26 11:35:29",
-      "command": "handoff-check",
-      "panel": "project-23",
-      "text": "다른 패널에서 이미 /check 되어서 진행되고 있는데 너가 멈춰버리면 안되지 다시 시작해"
     }
   ]
 };</script>
