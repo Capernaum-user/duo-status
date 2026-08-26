@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 22:15:08 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 22:25:24 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T22:15:07",
+  "generatedAt": "2026-08-26T22:25:24",
   "counts": {
-    "active": 6,
+    "active": 5,
     "waitingWorker": 3,
-    "working": 2,
+    "working": 1,
     "waitingReview": 1,
     "done": 372,
-    "alerts": 8
+    "alerts": 9
   },
   "jobs": [
     {
@@ -90,12 +90,12 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -103,10 +103,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "worker",
         "round": 1,
-        "result": null
+        "result": "ERROR"
       },
       "timeline": [
         {
@@ -118,9 +118,14 @@
           "time": "2026-08-26 22:14:00",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-26 22:25:04",
+          "state": "ESCALATED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-26 22:14:00"
+      "lastUpdate": "2026-08-26 22:25:04"
     },
     {
       "jobId": "Jaoapp-ctl-logic",
@@ -18158,6 +18163,11 @@
       "file": "Jaoapp-artifact-ui_autorun-review-timeout.md",
       "jobId": "Jaoapp-artifact-ui",
       "cause": "autorun-review-timeout"
+    },
+    {
+      "file": "Jaoapp-ctl-panel_autorun-worker-fail.md",
+      "jobId": "Jaoapp-ctl-panel",
+      "cause": "autorun-worker-fail"
     },
     {
       "file": "Jaoapp-ledger_autorun-verify-fail.md",
