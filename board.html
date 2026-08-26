@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 17:57:24 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:01:40 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T17:57:23",
+  "generatedAt": "2026-08-26T18:01:40",
   "counts": {
-    "active": 6,
-    "waitingWorker": 4,
+    "active": 5,
+    "waitingWorker": 3,
     "working": 1,
     "waitingReview": 1,
     "done": 365,
-    "alerts": 4
+    "alerts": 5
   },
   "jobs": [
     {
@@ -88,43 +88,48 @@
       "title": "ORDER_Jaoapp-approval_R01 — 결재선을 실제로 성립시킨다(blocked 진입·진짜 서명·반려 재작업 루프)",
       "project": "project-43",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 0,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "교차검증 미완결(SINGLE_project-17) — 확인 후 /check",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
       "verify": {
-        "status": "RUNNING",
-        "decision": null,
-        "a": null,
-        "b": null,
-        "relayJobId": "pending",
+        "status": "DONE",
+        "decision": "SINGLE_project-17",
+        "a": "PROTOCOL_ERROR",
+        "b": "PASS_WITH_project-17",
+        "relayJobId": "J20260826-175517-8bb9",
         "startedAt": "2026-08-26 17:55:16",
-        "finishedAt": null,
+        "finishedAt": "2026-08-26 18:00:48",
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "verify",
         "round": 0,
-        "result": null
+        "result": "ESCALATED"
       },
       "timeline": [
         {
           "time": "2026-08-26 17:55:14",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-26 18:00:48",
+          "state": "ESCALATED",
+          "round": 0
         }
       ],
-      "lastUpdate": "2026-08-26 17:55:14"
+      "lastUpdate": "2026-08-26 18:00:48"
     },
     {
       "jobId": "Jpm90-09-closeout",
@@ -17608,6 +17613,11 @@
     }
   ],
   "escalations": [
+    {
+      "file": "Jaoapp-approval_autorun-verify-nopass.md",
+      "jobId": "Jaoapp-approval",
+      "cause": "autorun-verify-nopass"
+    },
     {
       "file": "Jaoapp-ledger_autorun-verify-fail.md",
       "jobId": "Jaoapp-ledger",
