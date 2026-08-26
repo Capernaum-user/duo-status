@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-08-26T18:54:56",
+  "generatedAt": "2026-08-26T18:56:13",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 2,
-    "done": 366,
-    "alerts": 7
+    "waitingReview": 1,
+    "done": 367,
+    "alerts": 6
   },
   "jobs": [
+    {
+      "jobId": "Jghost-02-filter",
+      "title": "죽은 패널이 목록에 안 잡히게 한다 (훅은 한 글자도 고치지 않는다)",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-26 18:41:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 18:53:20",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 18:55:05",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 18:55:05"
+    },
     {
       "jobId": "Jaoapp-approval3",
       "title": "ORDER_Jaoapp-approval3_R01 — 서명 키 수명주기 결함 2건 수리(공개키 소실 시 개인키 보존 · 로드 경로 권한 재검사)",
@@ -51,40 +90,6 @@
         }
       ],
       "lastUpdate": "2026-08-26 18:53:52"
-    },
-    {
-      "jobId": "Jghost-02-filter",
-      "title": "죽은 패널이 목록에 안 잡히게 한다 (훅은 한 글자도 고치지 않는다)",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-26 18:41:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-26 18:53:20",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-26 18:53:20"
     },
     {
       "jobId": "Jaoapp-approval2",
