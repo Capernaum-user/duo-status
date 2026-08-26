@@ -71,18 +71,57 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-27 03:15:16 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-27 03:16:34 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-27T03:15:15",
+  "generatedAt": "2026-08-27T03:16:34",
   "counts": {
-    "active": 6,
+    "active": 7,
     "waitingWorker": 3,
-    "working": 2,
+    "working": 3,
     "waitingReview": 1,
     "done": 373,
     "alerts": 10
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-step6a-core",
+      "title": "ORDER_Jaoapp-step6a-core_R01 — 6단계 축소판 A: 되묻기 판정·병합 + 로컬 근거 질의(백엔드 전용)",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-27 03:15:20",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-27 03:15:21",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-27 03:15:21"
+    },
     {
       "jobId": "Jaoapp-prompt-view",
       "title": "ORDER_Jaoapp-prompt-view_R01 — 조립된 프롬프트를 눈으로 확인하는 화면·관측",
@@ -18424,6 +18463,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-27 03:15:28",
+      "command": "handoff-auto",
+      "panel": "project-45",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-27 02:57:45",
       "command": "handoff-auto",
       "panel": "project-45",
@@ -18535,12 +18580,6 @@
       "time": "2026-07-28 16:27:13",
       "command": "handoff-check",
       "panel": "ObsidianVault",
-      "text": "/check"
-    },
-    {
-      "time": "2026-07-28 15:57:04",
-      "command": "handoff-check",
-      "panel": "project-23",
       "text": "/check"
     }
   ]
