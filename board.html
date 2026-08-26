@@ -71,18 +71,57 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-27 04:53:28 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-27 04:54:42 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-27T04:53:28",
+  "generatedAt": "2026-08-27T04:54:42",
   "counts": {
-    "active": 6,
+    "active": 7,
     "waitingWorker": 3,
-    "working": 2,
+    "working": 3,
     "waitingReview": 1,
     "done": 375,
     "alerts": 10
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-observe7a",
+      "title": "ORDER_Jaoapp-observe7a_R01 — 관측 백엔드: 단계별 토큰 계측 · 응답 원문 비밀 마스킹 · 회전 진단 로그",
+      "project": "project-46",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-27 04:53:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-27 04:53:48",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-27 04:53:48"
+    },
     {
       "jobId": "Jaoapp-step6b-ui",
       "title": "ORDER_Jaoapp-step6b-ui_R01 — 6단계 축소판 B: 되묻기 질문 카드 + [작업 지시 | 질문] 토글 (화면 전용)",
@@ -103,10 +142,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -18552,6 +18591,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-27 04:53:55",
+      "command": "handoff-auto",
+      "panel": "project-46",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-27 04:22:34",
       "command": "handoff-auto",
       "panel": "project-46",
@@ -18664,12 +18709,6 @@
       "command": "handoff-check",
       "panel": "claude-handoff",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-31 19:06:51",
-      "command": "handoff-check",
-      "panel": "01_foundry-ontology-corpus",
-      "text": "/handoff-check"
     }
   ]
 };</script>
