@@ -71,12 +71,12 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 21:11:51 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 21:17:06 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T21:11:49",
+  "generatedAt": "2026-08-26T21:17:04",
   "counts": {
-    "active": 6,
-    "waitingWorker": 4,
+    "active": 5,
+    "waitingWorker": 3,
     "working": 1,
     "waitingReview": 1,
     "done": 371,
@@ -88,14 +88,14 @@
       "title": "ORDER_Jaoapp-artifact-ui_R01 — 산출물 화면(4열 목록 · 인라인 본문 뷰어 · 열기 버튼 · 구조 점검기 확장)",
       "project": "project-44",
       "targetDir": "<local>",
-      "round": 2,
+      "round": 1,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -103,10 +103,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "TIMEOUT"
       },
       "timeline": [
         {
@@ -128,9 +128,14 @@
           "time": "2026-08-26 21:10:13",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-26 21:15:57",
+          "state": "ESCALATED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-26 21:10:13"
+      "lastUpdate": "2026-08-26 21:15:57"
     },
     {
       "jobId": "Jaoapp-artifact2",
@@ -18062,6 +18067,11 @@
       "cause": "autorun-verify-nopass"
     },
     {
+      "file": "Jaoapp-artifact-ui_autorun-review-timeout.md",
+      "jobId": "Jaoapp-artifact-ui",
+      "cause": "autorun-review-timeout"
+    },
+    {
       "file": "Jaoapp-ledger_autorun-verify-fail.md",
       "jobId": "Jaoapp-ledger",
       "cause": "autorun-verify-fail"
@@ -18123,6 +18133,12 @@
     }
   ],
   "invocations": [
+    {
+      "time": "2026-08-26 21:12:22",
+      "command": "handoff-check",
+      "panel": "?",
+      "text": "{\"prompt\":\"/check 프로브\",\"cwd\":\"<local>",\"session_id\":\"probe-x\"}"
+    },
     {
       "time": "2026-08-26 21:11:06",
       "command": "handoff-check",
@@ -18236,12 +18252,6 @@
       "command": "handoff-check",
       "panel": "claude-handoff",
       "text": "agent office v3에서 /cycle 로 /check 해서 잘돌아가고 있는데 혹시 지금 너가 /check 하라고 한 p3가 그걸 말하는거…"
-    },
-    {
-      "time": "2026-07-26 11:37:37",
-      "command": "handoff-check",
-      "panel": "ontology",
-      "text": "/check"
     }
   ]
 };</script>
