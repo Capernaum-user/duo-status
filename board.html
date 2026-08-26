@@ -71,12 +71,12 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:50:03 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:51:21 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T18:50:02",
+  "generatedAt": "2026-08-26T18:51:20",
   "counts": {
-    "active": 7,
-    "waitingWorker": 5,
+    "active": 6,
+    "waitingWorker": 4,
     "working": 1,
     "waitingReview": 1,
     "done": 366,
@@ -88,14 +88,14 @@
       "title": "ORDER_Jaoapp-approval2_R01 — 결재선을 실제로 성립시킨다(blocked 진입·진짜 Ed25519 서명·반려 재작업 루프)",
       "project": "project-44",
       "targetDir": "<local>",
-      "round": 2,
+      "round": 1,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -112,10 +112,10 @@
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "TIMEOUT"
       },
       "timeline": [
         {
@@ -137,9 +137,14 @@
           "time": "2026-08-26 18:49:18",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-26 18:50:04",
+          "state": "ESCALATED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-26 18:49:18"
+      "lastUpdate": "2026-08-26 18:50:04"
     },
     {
       "jobId": "Jghost-01-sweeper",
@@ -17743,6 +17748,11 @@
       "file": "Jaoapp-approval_autorun-verify-nopass.md",
       "jobId": "Jaoapp-approval",
       "cause": "autorun-verify-nopass"
+    },
+    {
+      "file": "Jaoapp-approval2_autorun-review-timeout.md",
+      "jobId": "Jaoapp-approval2",
+      "cause": "autorun-review-timeout"
     },
     {
       "file": "Jaoapp-ledger_autorun-verify-fail.md",
