@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-08-27T02:57:25",
+  "generatedAt": "2026-08-27T02:58:41",
   "counts": {
-    "active": 6,
+    "active": 7,
     "waitingWorker": 3,
-    "working": 2,
+    "working": 3,
     "waitingReview": 1,
     "done": 372,
     "alerts": 10
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-prompt-view",
+      "title": "ORDER_Jaoapp-prompt-view_R01 — 조립된 프롬프트를 눈으로 확인하는 화면·관측",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-27 02:57:37",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-27 02:57:39",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-27 02:57:39"
+    },
     {
       "jobId": "Jaoapp-prompt-project-49",
       "title": "ORDER_Jaoapp-prompt-project-49_R01 — 프롬프트 자산 이식 (부서 헌장 · 검증 방법론 · 근거등급 규율)",
@@ -29,10 +68,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -14400,11 +14439,11 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
-      "jobId": "Jmermaid-render",
-      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
       "project": "project-45",
       "targetDir": "<local>",
-      "round": 4,
+      "round": 1,
       "originDir": null,
       "stage": "OUT-OF-BAND-DONE",
       "stageIndex": 5,
@@ -14415,70 +14454,40 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": true
+        "rework": false
       },
       "verify": null,
       "autorun": {
         "active": false,
-        "phase": "review",
-        "round": 3,
-        "result": "REWORK-CAP"
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
       },
       "timeline": [
         {
-          "time": "2026-07-22 09:28:56",
+          "time": "2026-07-21 20:48:47",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-22 09:28:58",
+          "time": "2026-07-21 20:48:49",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-22 09:38:53",
-          "state": "DONE",
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
           "round": 1
-        },
-        {
-          "time": "2026-07-22 09:43:43",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:51:26",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:55:18",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:02:40",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:08:32",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-07-22 10:10:33",
-          "state": "PLANNED",
-          "round": 4
         },
         {
           "time": "2026-07-25 15:38:15",
           "state": "ESCALATED",
-          "round": 4
+          "round": 1
         },
         {
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
-          "round": 4
+          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -14573,11 +14582,11 @@
       "lastUpdate": "2026-07-25 18:12:36"
     },
     {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "jobId": "Jmermaid-render",
+      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
       "project": "project-45",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 4,
       "originDir": null,
       "stage": "OUT-OF-BAND-DONE",
       "stageIndex": 5,
@@ -14588,40 +14597,70 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": {
         "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
+        "phase": "review",
+        "round": 3,
+        "result": "REWORK-CAP"
       },
       "timeline": [
         {
-          "time": "2026-07-21 20:48:47",
+          "time": "2026-07-22 09:28:56",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-21 20:48:49",
+          "time": "2026-07-22 09:28:58",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
+          "time": "2026-07-22 09:38:53",
+          "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-22 09:43:43",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:51:26",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:55:18",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:02:40",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:08:32",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-07-22 10:10:33",
+          "state": "PLANNED",
+          "round": 4
         },
         {
           "time": "2026-07-25 15:38:15",
           "state": "ESCALATED",
-          "round": 1
+          "round": 4
         },
         {
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
-          "round": 1
+          "round": 4
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -18301,6 +18340,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-27 02:57:45",
+      "command": "handoff-auto",
+      "panel": "project-45",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-27 02:24:44",
       "command": "handoff-auto",
       "panel": "project-45",
@@ -18413,12 +18458,6 @@
       "command": "handoff-check",
       "panel": "project-23",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-28 15:30:24",
-      "command": "handoff-check",
-      "panel": "out",
-      "text": "/cycle 앱 이름을 레이펫으로 했지만 사실 대중성을 위해서는 반려견 미용과 호텔링 가능한 어플이라는걸 알 수 있는 제목으로 바꿔야 할것 같아…"
     }
   ]
 }
