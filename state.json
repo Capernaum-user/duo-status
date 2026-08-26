@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-27T02:00:51",
+  "generatedAt": "2026-08-27T02:08:08",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 2,
-    "done": 371,
+    "waitingReview": 1,
+    "done": 372,
     "alerts": 9
   },
   "jobs": [
@@ -16,22 +16,22 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 2,
+        "phase": "worker",
+        "round": 3,
         "result": null
       },
       "timeline": [
@@ -64,9 +64,14 @@
           "time": "2026-08-27 02:00:32",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-08-27 02:07:26",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-27 02:00:32"
+      "lastUpdate": "2026-08-27 02:07:26"
     },
     {
       "jobId": "Jaoapp-ctl-logic",
@@ -18227,6 +18232,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-27 02:08:06",
+      "command": "handoff-auto",
+      "panel": "project-45",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-27 01:41:14",
       "command": "handoff-auto",
       "panel": "project-45",
@@ -18339,12 +18350,6 @@
       "command": "handoff-check",
       "panel": "project-18",
       "text": "/cycle 너가 판단한대로 진행해. 무언가 내가 답변해야하는 것이 있다면 html문서로 선택형 입력란을 만들어줘. 선택해서 너에게 제출할 수 …"
-    },
-    {
-      "time": "2026-07-28 13:50:31",
-      "command": "handoff-check",
-      "panel": "project-23",
-      "text": "/check Jraypet-shortlink-web"
     }
   ]
 }
