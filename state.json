@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-08-26T19:27:34",
+  "generatedAt": "2026-08-26T20:04:46",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
-    "working": 1,
+    "waitingWorker": 3,
+    "working": 2,
     "waitingReview": 1,
     "done": 368,
     "alerts": 6
   },
   "jobs": [
+    {
+      "jobId": "Jowner-01-claimjob",
+      "title": "누가 집어간 작업인지 기록하고, 판정을 시험 가능한 함수로 만든다 (훅은 건드리지 않는다)",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-26 19:01:40",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 20:03:56",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 20:03:56"
+    },
     {
       "jobId": "Jaoapp-approval3",
       "title": "ORDER_Jaoapp-approval3_R01 — 서명 키 수명주기 결함 2건 수리(공개키 소실 시 개인키 보존 · 로드 경로 권한 재검사)",
@@ -66,35 +100,6 @@
         }
       ],
       "lastUpdate": "2026-08-26 19:25:40"
-    },
-    {
-      "jobId": "Jowner-01-claimjob",
-      "title": "누가 집어간 작업인지 기록하고, 판정을 시험 가능한 함수로 만든다 (훅은 건드리지 않는다)",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-26 19:01:40",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-26 19:01:40"
     },
     {
       "jobId": "Jghost-02-filter",
