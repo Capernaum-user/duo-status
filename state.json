@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-08-26T20:08:20",
+  "generatedAt": "2026-08-26T20:10:05",
   "counts": {
-    "active": 6,
+    "active": 5,
     "waitingWorker": 3,
-    "working": 2,
+    "working": 1,
     "waitingReview": 1,
-    "done": 369,
+    "done": 370,
     "alerts": 7
   },
   "jobs": [
+    {
+      "jobId": "Jowner-02-guard",
+      "title": "남의 작업을 자기 것으로 받지 못하게 막는다 (저장소 훅만 고친다 · 설치는 사람이 한다)",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-26 20:06:21",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 20:06:35",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 20:08:28",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 20:08:28",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 20:08:28"
+    },
     {
       "jobId": "Jaoapp-artifact",
       "title": "ORDER_Jaoapp-artifact_R01 — 산출물 읽기 백엔드(경로 방어 · 종류 판정 · 본문 반환 · 네이티브 열기)",
@@ -56,40 +100,6 @@
         }
       ],
       "lastUpdate": "2026-08-26 20:07:37"
-    },
-    {
-      "jobId": "Jowner-02-guard",
-      "title": "남의 작업을 자기 것으로 받지 못하게 막는다 (저장소 훅만 고친다 · 설치는 사람이 한다)",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-26 20:06:21",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-08-26 20:06:35",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-26 20:06:35"
     },
     {
       "jobId": "Jowner-01-claimjob",
