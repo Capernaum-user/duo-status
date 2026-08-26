@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-26T18:37:09",
+  "generatedAt": "2026-08-26T18:40:24",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
+    "waitingWorker": 3,
     "working": 1,
-    "waitingReview": 2,
+    "waitingReview": 3,
     "done": 365,
     "alerts": 6
   },
   "jobs": [
     {
-      "jobId": "Jaoapp-approval2",
-      "title": "ORDER_Jaoapp-approval2_R01 — 결재선을 실제로 성립시킨다(blocked 진입·진짜 Ed25519 서명·반려 재작업 루프)",
-      "project": "project-44",
+      "jobId": "Jghost-01-sweeper",
+      "title": "유령 패널 청소기를 독립 파일로 만든다 (기존 파일은 한 글자도 건드리지 않는다)",
+      "project": "claude-handoff",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -25,6 +25,40 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-26 18:22:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 18:39:11",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 18:39:11"
+    },
+    {
+      "jobId": "Jaoapp-approval2",
+      "title": "ORDER_Jaoapp-approval2_R01 — 결재선을 실제로 성립시킨다(blocked 진입·진짜 Ed25519 서명·반려 재작업 루프)",
+      "project": "project-44",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
         "rework": false
       },
       "verify": {
@@ -61,35 +95,6 @@
         }
       ],
       "lastUpdate": "2026-08-26 18:35:00"
-    },
-    {
-      "jobId": "Jghost-01-sweeper",
-      "title": "유령 패널 청소기를 독립 파일로 만든다 (기존 파일은 한 글자도 건드리지 않는다)",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-26 18:22:00",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-26 18:22:00"
     },
     {
       "jobId": "Jaoapp-approval",
