@@ -71,18 +71,95 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:56:13 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 19:02:52 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T18:56:13",
+  "generatedAt": "2026-08-26T19:02:52",
   "counts": {
-    "active": 6,
+    "active": 7,
     "waitingWorker": 4,
-    "working": 1,
+    "working": 2,
     "waitingReview": 1,
     "done": 367,
     "alerts": 6
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-approval3",
+      "title": "ORDER_Jaoapp-approval3_R01 — 서명 키 수명주기 결함 2건 수리(공개키 소실 시 개인키 보존 · 로드 경로 권한 재검사)",
+      "project": "project-44",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260826-185354-7d0e",
+        "startedAt": "2026-08-26 18:53:54",
+        "finishedAt": "2026-08-26 19:01:43",
+        "runs": 1
+      },
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-26 18:53:52",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 19:01:44",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 19:01:44"
+    },
+    {
+      "jobId": "Jowner-01-claimjob",
+      "title": "누가 집어간 작업인지 기록하고, 판정을 시험 가능한 함수로 만든다 (훅은 건드리지 않는다)",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-26 19:01:40",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 19:01:40"
+    },
     {
       "jobId": "Jghost-02-filter",
       "title": "죽은 패널이 목록에 안 잡히게 한다 (훅은 한 글자도 고치지 않는다)",
@@ -121,49 +198,6 @@
         }
       ],
       "lastUpdate": "2026-08-26 18:55:05"
-    },
-    {
-      "jobId": "Jaoapp-approval3",
-      "title": "ORDER_Jaoapp-approval3_R01 — 서명 키 수명주기 결함 2건 수리(공개키 소실 시 개인키 보존 · 로드 경로 권한 재검사)",
-      "project": "project-44",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 진행 중 — 완료 후 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "RUNNING",
-        "decision": null,
-        "a": null,
-        "b": null,
-        "relayJobId": "pending",
-        "startedAt": "2026-08-26 18:53:54",
-        "finishedAt": null,
-        "runs": 1
-      },
-      "autorun": {
-        "active": true,
-        "phase": "verify",
-        "round": 0,
-        "result": null
-      },
-      "timeline": [
-        {
-          "time": "2026-08-26 18:53:52",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-26 18:53:52"
     },
     {
       "jobId": "Jaoapp-approval2",
@@ -15176,60 +15210,6 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "project-44",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 18:50:28",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:50:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:15:05",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:17:29",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:58:17",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 19:58:17"
-    },
-    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-44",
@@ -15294,8 +15274,8 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jgnosis-dedup",
-      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
       "project": "project-44",
       "targetDir": "<local>",
       "round": 1,
@@ -15320,32 +15300,32 @@
       },
       "timeline": [
         {
-          "time": "2026-07-20 17:55:47",
+          "time": "2026-07-20 18:50:28",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-20 17:55:50",
+          "time": "2026-07-20 18:50:29",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:21:37",
+          "time": "2026-07-20 19:15:05",
           "state": "DONE",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:27:06",
+          "time": "2026-07-20 19:17:29",
           "state": "ACCEPTED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:30:08",
+          "time": "2026-07-20 19:58:17",
           "state": "ACCEPTED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-07-20 18:30:08"
+      "lastUpdate": "2026-07-20 19:58:17"
     },
     {
       "jobId": "Jceo-chart-axes",
@@ -15390,6 +15370,60 @@
         },
         {
           "time": "2026-07-20 18:26:23",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jgnosis-dedup",
+      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
+      "project": "project-44",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:55:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:55:50",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:21:37",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
