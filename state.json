@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T22:07:33",
+  "generatedAt": "2026-08-26T22:13:50",
   "counts": {
-    "active": 6,
+    "active": 5,
     "waitingWorker": 3,
     "working": 1,
-    "waitingReview": 2,
-    "done": 371,
-    "alerts": 9
+    "waitingReview": 1,
+    "done": 372,
+    "alerts": 8
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -49,9 +49,14 @@
           "time": "2026-08-26 22:06:38",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-26 22:12:57",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-26 22:06:38"
+      "lastUpdate": "2026-08-26 22:12:57"
     },
     {
       "jobId": "Jaoapp-artifact-ui",
