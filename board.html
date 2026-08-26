@@ -71,18 +71,57 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 22:13:51 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 22:15:08 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T22:13:50",
+  "generatedAt": "2026-08-26T22:15:07",
   "counts": {
-    "active": 5,
+    "active": 6,
     "waitingWorker": 3,
-    "working": 1,
+    "working": 2,
     "waitingReview": 1,
     "done": 372,
     "alerts": 8
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-ctl-panel",
+      "title": "ORDER_Jaoapp-ctl-panel_R01 — 진행 통제 화면: 중단·이어서 하기·멈춤 의심·종료 확인 (화면 전용)",
+      "project": "project-44",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-26 22:13:58",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 22:14:00",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 22:14:00"
+    },
     {
       "jobId": "Jaoapp-ctl-logic",
       "title": "ORDER_Jaoapp-ctl-logic_R01 — 진행 통제 로직: 중단·재개·무진전 타임아웃 (백엔드 전용)",
@@ -103,10 +142,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -18183,6 +18222,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-26 22:14:08",
+      "command": "handoff-auto",
+      "panel": "project-44",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-26 22:06:47",
       "command": "handoff-auto",
       "panel": "project-44",
@@ -18295,12 +18340,6 @@
       "command": "handoff-check",
       "panel": "ObsidianVault",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-28 00:25:23",
-      "command": "handoff-check",
-      "panel": "out",
-      "text": "/cycle 좋아 모두 마음에 들어. 다만 고객에게 보여야되는 화면인만큼 디자인이 좀 더 화려해도 좋을 것 같아. 검은 바탕에 금색 글자들과 금…"
     }
   ]
 };</script>
