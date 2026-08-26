@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-08-27T05:34:15",
+  "generatedAt": "2026-08-27T05:35:30",
   "counts": {
-    "active": 6,
+    "active": 7,
     "waitingWorker": 3,
-    "working": 2,
+    "working": 3,
     "waitingReview": 1,
     "done": 377,
     "alerts": 10
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-updatecore",
+      "title": "ORDER_Jaoapp-updatecore_R01 — 자체 업데이트 엔진 실구현(매니페스트 검증·SHA256·원자적 포인터 스왑·롤백)",
+      "project": "project-46",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-27 05:34:31",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-27 05:34:33",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-27 05:34:33"
+    },
     {
       "jobId": "Jaoapp-costpanel7b",
       "title": "ORDER_Jaoapp-costpanel7b_R01 — 비용을 화면에 올린다: 5칸째 KPI 타일 + 접이식 지출 드릴다운 + 구조 검사 6건",
@@ -29,10 +68,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -18576,6 +18615,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-27 05:34:38",
+      "command": "handoff-auto",
+      "panel": "project-46",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-27 05:15:36",
       "command": "handoff-auto",
       "panel": "project-46",
@@ -18688,12 +18733,6 @@
       "command": "handoff-check",
       "panel": "claude-handoff",
       "text": "/check"
-    },
-    {
-      "time": "2026-08-26 21:12:22",
-      "command": "handoff-check",
-      "panel": "?",
-      "text": "{\"prompt\":\"/check 프로브\",\"cwd\":\"<local>",\"session_id\":\"probe-x\"}"
     }
   ]
 }
