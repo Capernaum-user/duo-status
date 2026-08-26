@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-26T19:19:32",
+  "generatedAt": "2026-08-26T19:27:34",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 4,
     "working": 1,
-    "waitingReview": 2,
-    "done": 367,
-    "alerts": 7
+    "waitingReview": 1,
+    "done": 368,
+    "alerts": 6
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -38,10 +38,10 @@
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -58,9 +58,14 @@
           "time": "2026-08-26 19:18:19",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-26 19:25:40",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-26 19:18:19"
+      "lastUpdate": "2026-08-26 19:25:40"
     },
     {
       "jobId": "Jowner-01-claimjob",
