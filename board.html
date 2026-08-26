@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:03:56 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:14:12 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T18:03:55",
+  "generatedAt": "2026-08-26T18:14:12",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
-    "working": 1,
+    "waitingWorker": 3,
+    "working": 2,
     "waitingReview": 1,
     "done": 365,
     "alerts": 5
@@ -90,31 +90,31 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
       "verify": {
-        "status": "RUNNING",
-        "decision": null,
-        "a": null,
-        "b": null,
-        "relayJobId": "pending",
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260826-180314-ac48",
         "startedAt": "2026-08-26 18:03:14",
-        "finishedAt": null,
+        "finishedAt": "2026-08-26 18:13:33",
         "runs": 1
       },
       "autorun": {
         "active": true,
-        "phase": "verify",
-        "round": 0,
+        "phase": "worker",
+        "round": 1,
         "result": null
       },
       "timeline": [
@@ -122,9 +122,14 @@
           "time": "2026-08-26 18:03:12",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-08-26 18:13:34",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-26 18:03:12"
+      "lastUpdate": "2026-08-26 18:13:34"
     },
     {
       "jobId": "Jaoapp-approval",
