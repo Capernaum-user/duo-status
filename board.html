@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 21:47:16 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 22:07:33 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T21:47:15",
+  "generatedAt": "2026-08-26T22:07:33",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 1,
+    "working": 1,
+    "waitingReview": 2,
     "done": 371,
-    "alerts": 8
+    "alerts": 9
   },
   "jobs": [
     {
@@ -90,10 +90,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -104,7 +104,7 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": null
       },
@@ -118,9 +118,14 @@
           "time": "2026-08-26 21:45:17",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-26 22:06:38",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-26 21:45:17"
+      "lastUpdate": "2026-08-26 22:06:38"
     },
     {
       "jobId": "Jaoapp-artifact-ui",
@@ -18173,6 +18178,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-26 22:06:47",
+      "command": "handoff-auto",
+      "panel": "project-44",
+      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
+    },
+    {
       "time": "2026-08-26 21:45:31",
       "command": "handoff-auto",
       "panel": "project-44",
@@ -18285,12 +18296,6 @@
       "command": "handoff-check",
       "panel": "out",
       "text": "/cycle 좋아 모두 마음에 들어. 다만 고객에게 보여야되는 화면인만큼 디자인이 좀 더 화려해도 좋을 것 같아. 검은 바탕에 금색 글자들과 금…"
-    },
-    {
-      "time": "2026-07-27 22:14:51",
-      "command": "handoff-check",
-      "panel": "app",
-      "text": "/check Jraypet-msg-00-intent"
     }
   ]
 };</script>
