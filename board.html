@@ -71,14 +71,14 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-27 01:41:31 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-27 02:00:51 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-27T01:41:31",
+  "generatedAt": "2026-08-27T02:00:51",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 1,
+    "working": 2,
+    "waitingReview": 2,
     "done": 371,
     "alerts": 9
   },
@@ -86,25 +86,25 @@
     {
       "jobId": "Jaoapp-ctl-panel2",
       "title": "ORDER_Jaoapp-ctl-panel2_R02 — R1 화면 배선의 실사용 결함 2건 수정 (화면 전용)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 2,
         "result": null
       },
@@ -133,14 +133,19 @@
           "time": "2026-08-27 01:41:06",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-08-27 02:00:32",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-27 01:41:06"
+      "lastUpdate": "2026-08-27 02:00:32"
     },
     {
       "jobId": "Jaoapp-ctl-logic",
       "title": "ORDER_Jaoapp-ctl-logic_R01 — 진행 통제 로직: 중단·재개·무진전 타임아웃 (백엔드 전용)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -199,7 +204,7 @@
     {
       "jobId": "Jaoapp-ctl-panel",
       "title": "ORDER_Jaoapp-ctl-panel_R01 — 진행 통제 화면: 중단·이어서 하기·멈춤 의심·종료 확인 (화면 전용)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -243,7 +248,7 @@
     {
       "jobId": "Jaoapp-artifact-ui",
       "title": "ORDER_Jaoapp-artifact-ui_R01 — 산출물 화면(4열 목록 · 인라인 본문 뷰어 · 열기 버튼 · 구조 점검기 확장)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -297,7 +302,7 @@
     {
       "jobId": "Jaoapp-artifact2",
       "title": "ORDER_Jaoapp-artifact2_R01 — 산출물 읽기 백엔드(경로 방어 · 종류 판정 · 본문 반환 · 네이티브 열기)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -482,7 +487,7 @@
     {
       "jobId": "Jaoapp-approval3",
       "title": "ORDER_Jaoapp-approval3_R01 — 서명 키 수명주기 결함 2건 수리(공개키 소실 시 개인키 보존 · 로드 경로 권한 재검사)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -579,7 +584,7 @@
     {
       "jobId": "Jaoapp-approval2",
       "title": "ORDER_Jaoapp-approval2_R01 — 결재선을 실제로 성립시킨다(blocked 진입·진짜 Ed25519 서명·반려 재작업 루프)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -846,7 +851,7 @@
     {
       "jobId": "Jpm90-06-v2",
       "title": "docflow 자동 문서화 경로에 내용 검사 게이트를 물리고 빈 런 서명을 차단한다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -929,7 +934,7 @@
     {
       "jobId": "Jaoapp-ledger2",
       "title": "ORDER_Jaoapp-ledger2_R01 — 상태 원장을 사실과 맞춘다(단계 선기록·running 전이·이벤트 원장·집계 분리)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
@@ -1250,7 +1255,7 @@
     {
       "jobId": "Jaoback-03-jobbanner",
       "title": "Job Object 안전장치가 꺼지면 화면이 알려 준다 + 백로그 장부 마감",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -1323,7 +1328,7 @@
     {
       "jobId": "Jaoback-02-lifecycle",
       "title": "미션 수명주기를 정직하게 만든다 (좀비 회수 누락 · 죽은 running 상태 · 비결정 테스트)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
@@ -1401,7 +1406,7 @@
     {
       "jobId": "Jaoback-01-testlock",
       "title": "테스트가 세 가지 거짓말을 잡게 만든다 (제품 코드는 손대지 않는다)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -1484,7 +1489,7 @@
     {
       "jobId": "Jaoapp-06-shutdown",
       "title": "창을 닫으면 진짜로 다 끝나게 만든다 — 남의 프로세스는 건드리지 않고",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -1567,7 +1572,7 @@
     {
       "jobId": "Jaoapp-05-gui",
       "title": "창을 실제로 띄워 사람이 눈으로 확인하고, 오류가 화면에 보이게 만든다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -1699,7 +1704,7 @@
     {
       "jobId": "Jhudapp-03-verify",
       "title": "ORDER_Jhudapp-03-verify_R01 — 실기동 육안 검증 + 회귀 + 발견 결함 즉시 수정",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -1743,7 +1748,7 @@
     {
       "jobId": "Jaoapp-04-budget",
       "title": "진짜 엔진을 연결하고, 돈이 새지 않도록 지갑에 상한을 건다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -1787,7 +1792,7 @@
     {
       "jobId": "Jhudapp-02-window",
       "title": "ORDER_Jhudapp-02-window_R01 — 창을 화면 전체 크기로 + 실제 기동 확인",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -1831,7 +1836,7 @@
     {
       "jobId": "Jhudapp-01-skin",
       "title": "ORDER_Jhudapp-01-skin_R01 — 대시보드를 11_console-hud 디자인으로 교체 + 전폭 레이아웃",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -1983,7 +1988,7 @@
     {
       "jobId": "Jao2-verify",
       "title": "접합이 실제로 도는지 주행으로 증명하고 시각화 보고한다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -2032,7 +2037,7 @@
     {
       "jobId": "Jaoapp-03-runner",
       "title": "오래 걸리는 일을 뒤에서 돌리는 방을 만든다 — 아직 가짜 엔진 그대로",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -2324,8 +2329,8 @@
     },
     {
       "jobId": "Jao2-lane",
-      "title": "project-44 에 기획 레인을 **가산**한다 (기존 파일 1줄 외 무수정)",
-      "project": "project-44",
+      "title": "project-45 에 기획 레인을 **가산**한다 (기존 파일 1줄 외 무수정)",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -2374,7 +2379,7 @@
     {
       "jobId": "Jaoapp-02-lock",
       "title": "여러 창구가 같은 장부를 동시에 만져도 안 터지게 하고, 앱이 두 번 뜨는 것을 막는다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -2496,7 +2501,7 @@
     {
       "jobId": "Jaoapp-01-llmcall",
       "title": "진짜 claude 를 딱 한 번 불러서, 그게 진짜였다는 영수증을 남긴다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -3281,7 +3286,7 @@
     {
       "jobId": "Jglobalmd-swap",
       "title": "ORDER_Jglobalmd-swap_R01 — 독립 검증 후 전역 지침 교체",
-      "project": "project-56",
+      "project": "project-57",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -3325,7 +3330,7 @@
     {
       "jobId": "Jglobalmd-restructure",
       "title": "ORDER_Jglobalmd-restructure_R01 — 임시본에서 전역 지침 축약 + 상세를 정본으로 이관",
-      "project": "project-56",
+      "project": "project-57",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -5703,8 +5708,8 @@
       "lastUpdate": "2026-08-11 00:02:30"
     },
     {
-      "jobId": "Jpmhub-project-46",
-      "title": "ORDER_Jpmhub-project-46_R01 — 5단계 산출물 템플릿 28종 작성",
+      "jobId": "Jpmhub-project-47",
+      "title": "ORDER_Jpmhub-project-47_R01 — 5단계 산출물 템플릿 28종 작성",
       "project": "project-38",
       "targetDir": "<local>",
       "round": 1,
@@ -5861,7 +5866,7 @@
     {
       "jobId": "Jaoapp-close",
       "title": "독립 검증 · 차단 결함 마감 · 운영 문서 · 완료 보고서",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -5944,7 +5949,7 @@
     {
       "jobId": "Jaoapp-skeleton",
       "title": "실제로 기동되는 최소 골격 구현 + 자동 테스트",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -6042,7 +6047,7 @@
     {
       "jobId": "Jaoapp-ui",
       "title": "대시보드 화면 설계서 + 정적 목업 1장",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -6086,7 +6091,7 @@
     {
       "jobId": "Jaoapp-arch",
       "title": "시스템 아키텍처 · 데이터 설계 · API 명세 · 자체 업데이트 설계",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -6130,7 +6135,7 @@
     {
       "jobId": "Jaoapp-prd",
       "title": "기획서(PRD) + 요구사항 정의서(SRS): 1F를 UI 없는 에이전트 공간으로 재정의한다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -6174,7 +6179,7 @@
     {
       "jobId": "Jaoapp-decide",
       "title": "새 트랙 골격 + 기술 선정을 실측으로 확정한다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -6335,7 +6340,7 @@
     {
       "jobId": "Jaov2mdl-06-proof",
       "title": "라이브 실증: 고른 모델이 실제로 그 모델로 호출되는가",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -6379,7 +6384,7 @@
     {
       "jobId": "Jaov2mdl-05-ui",
       "title": "4F 대시보드에서 패밀리·계층·모델을 고를 수 있게",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -6423,7 +6428,7 @@
     {
       "jobId": "Jaov2mdl-04-cli",
       "title": "codex / gemini 를 실제로 실행되게(어댑터 추가)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -6511,7 +6516,7 @@
     {
       "jobId": "Jaov2mdl-03-local",
       "title": "로컬 LLM 을 실제로 고를 수 있게(설치 모델 열거 + local 패밀리 정합)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -6599,7 +6604,7 @@
     {
       "jobId": "Jaov2mdl-02-catalog",
       "title": "모델 카탈로그·티어·하드코딩 ID 갱신",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -6643,7 +6648,7 @@
     {
       "jobId": "Jaov2mdl-01-plan",
       "title": "모델 계층·패밀리 개편 설계서 작성 (소스 무수정)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -7039,7 +7044,7 @@
     {
       "jobId": "Jaov2boot-02-proof",
       "title": "ORDER_Jaov2boot-02-proof_R02 — 근본 원인 확정됨(DETACHED_PROCESS). 고치고 라이브로 실증하라",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -7098,7 +7103,7 @@
     {
       "jobId": "Jaov2boot-01-wire",
       "title": "4F 기동 시 1F 자동 동반 기동 배선 (기존 자기치유 재사용 · 가산 구현)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -7230,7 +7235,7 @@
     {
       "jobId": "Jaov2dash-04-proof",
       "title": "전/후 실측 대조 + 오너용 시각화 HTML 보고서 발행 (화면 파일 무수정)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -7318,7 +7323,7 @@
     {
       "jobId": "Jaov2dash-03-center",
       "title": "프롬프트 패널·project-16 Gateway 한 공간으로 + 서명 데스크·씰 버튼 축소",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -7357,7 +7362,7 @@
     {
       "jobId": "Jaov2dash-02-rail",
       "title": "좌측 레일 두 패널 통합 + Review Queue 기본 접힘(통계 한 줄 노출)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -7401,7 +7406,7 @@
     {
       "jobId": "Jaov2dash-01-baseline",
       "title": "현행 대시보드 실측(전 스크린샷·픽셀 계측) + 재배치 설계서 (화면 파일 무변경)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -7582,7 +7587,7 @@
     {
       "jobId": "Jaov2clar-05-proof",
       "title": "ORDER_Jaov2clar-05-proof_R02 — 조사 브리프 자동생성 결함의 근본 원인 규명·수정 + 오너 보고서 문구 정정",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -7685,7 +7690,7 @@
     {
       "jobId": "Jaov2clar-04-research",
       "title": "답변 이후: 방법론 기반 조사 브리프 생성기(연구자료 수집) — 기본 OFF 옵트인",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -7729,7 +7734,7 @@
     {
       "jobId": "Jaov2clar-03-modal",
       "title": "화면: 질문 모달 확대 + 선택지 설명 표시 + 왜 묻는지 표시",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -7773,7 +7778,7 @@
     {
       "jobId": "Jaov2clar-02-engine",
       "title": "백엔드: 질문 개수 확장 + 설명형 객관식(options_rich) + 방법론 태그(questionproject-38)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -7905,7 +7910,7 @@
     {
       "jobId": "Jaov2clar-01-spec",
       "title": "인테이크 질문(clarify) 격상: 현행 경로 인벤토리 + 방법론 매핑 설계서 (코드 무변경)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -8223,7 +8228,7 @@
     {
       "jobId": "Jaov2doc-close",
       "title": "ORDER_Jaov2doc-close_R01 — 검증자가 찾은 blocking 결함만 마감하고 보고서를 정정",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -8267,7 +8272,7 @@
     {
       "jobId": "Jaov2doc-verify",
       "title": "ORDER_Jaov2doc-verify_R01 — 4개 구멍이 실제로 막혔는지 통합 실증 + 시각화 보고서",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -8311,7 +8316,7 @@
     {
       "jobId": "Jaov2doc-index",
       "title": "ORDER_Jaov2doc-index_R01 — 생성 문서를 목록으로 묶고, 지식서고 반출 가능 여부를 실측 판정",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -8355,7 +8360,7 @@
     {
       "jobId": "Jaov2doc-mission",
       "title": "ORDER_Jaov2doc-mission_R01 — 미션이 끝나면 개발문서가 자동으로 나오게(1F 실행축 ↔ 문서축 연결)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -8399,7 +8404,7 @@
     {
       "jobId": "Jaov2doc-sign",
       "title": "ORDER_Jaov2doc-sign_R01 — 생성 문서에 서명·검증 붙이기(문서 묶음 매니페스트)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -8443,7 +8448,7 @@
     {
       "jobId": "Jaov2doc-rewrite",
       "title": "ORDER_Jaov2doc-rewrite_R01 — 문서 재집필(덮어쓰기) 배선 + 원본 보호",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -8531,7 +8536,7 @@
     {
       "jobId": "Jaov2doc-proof",
       "title": "ORDER_Jaov2doc-proof_R01 — 5단계 문서가 실제로 나오는지 실증하고 시각화 보고서로 남긴다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -8634,7 +8639,7 @@
     {
       "jobId": "Jaov2doc-cli",
       "title": "ORDER_Jaov2doc-cli_R01 — CEO 대시보드에서 5단계 문서 집필을 실제로 실행·관전하게 만들기",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -8678,7 +8683,7 @@
     {
       "jobId": "Jaov2doc-writer",
       "title": "ORDER_Jaov2doc-writer_R01 — 개발문서 5단계를 \"규격\"에서 \"실제 집필\"로 만드는 엔진 신설",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -9104,7 +9109,7 @@
     {
       "jobId": "Jaov2rev-deliver",
       "title": "ORDER_Jaov2rev-deliver_R01 — 딜리버리에 기존 파일을 보여주고, 폴백이 원본을 덮지 못하게 한다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -9192,7 +9197,7 @@
     {
       "jobId": "Jaov2rev-parent",
       "title": "ORDER_Jaov2rev-parent_R01 — 발주에 부모 런을 붙이고 샌드박스를 부모에서 시드한다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -9236,7 +9241,7 @@
     {
       "jobId": "Jaov2rev-redact",
       "title": "ORDER_Jaov2rev-redact_R02 — R1 코드는 유지. AC-05 를 완주 가능한 형태로 고쳐 end-to-end 재현만 마친다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -9508,7 +9513,7 @@
       "lastUpdate": "2026-08-02 10:21:16"
     },
     {
-      "jobId": "Jremilingo-project-47ets",
+      "jobId": "Jremilingo-project-48ets",
       "title": "Remi Lingo 출시 게이트 측정 세트 3종 제작(G-1 · G-2 · G-10)",
       "project": "project-33",
       "targetDir": "<local>",
@@ -9640,7 +9645,7 @@
       "lastUpdate": "2026-08-02 09:37:13"
     },
     {
-      "jobId": "Jremilingo-project-48",
+      "jobId": "Jremilingo-project-49",
       "title": "Remi Lingo 스토리 슬롯 조각 집필 + 조합기 실증",
       "project": "project-33",
       "targetDir": "<local>",
@@ -9818,7 +9823,7 @@
     {
       "jobId": "Jaov2-extacc-verify",
       "title": "통합 검증 + 시각화 HTML 보고서",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -9906,7 +9911,7 @@
     {
       "jobId": "Jaov2-extacc-mcp",
       "title": "MCP 화이트리스트 연결",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10009,7 +10014,7 @@
     {
       "jobId": "Jaov2-extacc-connectors",
       "title": "커넥터 프레임워크: GitHub(gh 경유) + HTTP API",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10053,7 +10058,7 @@
     {
       "jobId": "Jaov2-extacc-roots",
       "title": "다중 루트: <local>",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10141,7 +10146,7 @@
     {
       "jobId": "Jaov2-extacc-routing",
       "title": "라우팅 수리: 비서가 \"권한 없습니다\" 대신 탐색비서에게 위임하게",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10356,7 +10361,7 @@
     {
       "jobId": "Jcurjob-panel",
       "title": "4단계 — 상태판 확장 + 품질 지표 + 통합 검증: 늘어난 일이 눈에 보이게",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10439,7 +10444,7 @@
     {
       "jobId": "Jaov2-viewer-verify",
       "title": "통합 검증 + 시각화 HTML 보고서",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10527,7 +10532,7 @@
     {
       "jobId": "Jaov2-viewer-project-2",
       "title": "run 결과에 산출물 요약 붙이기 (무엇이 어디에 생겼는지)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10571,7 +10576,7 @@
     {
       "jobId": "Jcurjob-hygiene",
       "title": "3단계 — Vault 문서 위생 검사(J10): 4,851개 노트를 규칙으로 훑는다",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10610,7 +10615,7 @@
     {
       "jobId": "Jaov2-viewer-preview",
       "title": "미리보기 렌더 + 실제로 열기 버튼",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10698,7 +10703,7 @@
     {
       "jobId": "Jcurjob-relay",
       "title": "R2 — 예산 잠금 해제 후 실제 실행 검증 (코드는 그대로)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -10806,7 +10811,7 @@
     {
       "jobId": "Jaov2-viewer-explorer",
       "title": "산출물 탐색기 패널: 클릭으로 폴더 드나들기 + 결과물 경로 표시",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10850,7 +10855,7 @@
     {
       "jobId": "Jaov2-viewer-core",
       "title": "뷰어 백엔드: kind 판별 · 원본 서빙 · OS 열기 · 산출물 추적",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -10894,7 +10899,7 @@
     {
       "jobId": "Jcurjob-embed",
       "title": "R2 — 형식 수정만: `order_id` 를 파일명으로 고쳐 REPORT 재제출",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -10948,7 +10953,7 @@
     {
       "jobId": "Jao2pent-intake-unclip",
       "title": "4F 대시보드 intake 버튼 클리핑 해제 (CSS 2줄 수정)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -11080,7 +11085,7 @@
     {
       "jobId": "Jcuradm-wire",
       "title": "4단계 — 상시 갱신 배선 + 문서 + 통합 검증",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -11124,7 +11129,7 @@
     {
       "jobId": "Jcuradm-widget",
       "title": "3단계 — 위젯 렌더러: 대기/동작을 한눈에 + GPU·양자화·작업 이력",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -11168,7 +11173,7 @@
     {
       "jobId": "Jaov2-fs-e2e",
       "title": "ORDER_Jaov2-fs-e2e_R01 — 통합 검증 + 시각화 HTML 보고",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -11212,7 +11217,7 @@
     {
       "jobId": "Jcuradm-history",
       "title": "2단계 — 작업 이력 집계기(history): 감사 로그를 &ldquo;무엇을 하고 있고 무엇을 했나&rdquo;로",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -11256,7 +11261,7 @@
     {
       "jobId": "Jaov2-docflow",
       "title": "ORDER_Jaov2-docflow_R01 — 개발문서 5단계 파이프라인",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -11300,7 +11305,7 @@
     {
       "jobId": "Jcuradm-probe",
       "title": "1단계 — 텔레메트리 수집기(probe): GPU · Ollama · 모델 정보를 JSON 한 장으로",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -11339,7 +11344,7 @@
     {
       "jobId": "Jaov2-fs-cli",
       "title": "ORDER_Jaov2-fs-cli_R01 — CEO 대시보드 비서실 CLI 확장",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -11383,7 +11388,7 @@
     {
       "jobId": "Jaov2-fs-secretary",
       "title": "ORDER_Jaov2-fs-secretary_R01 — 비서 연결: 탐색비서·집행비서 + /api/fs/*",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -11427,7 +11432,7 @@
     {
       "jobId": "Jaov2-fs-core",
       "title": "ORDER_Jaov2-fs-core_R01 — 권한 코어: 정책게이트·집행기·감사·휴지통",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -13646,8 +13651,8 @@
     },
     {
       "jobId": "Jaov2-route-worker-fix",
-      "title": "project-44 route.json worker 배정 정정 (codex → claude)",
-      "project": "project-44",
+      "title": "project-45 route.json worker 배정 정정 (codex → claude)",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -14402,7 +14407,7 @@
     {
       "jobId": "Jmermaid-render",
       "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 4,
       "originDir": null,
@@ -14486,7 +14491,7 @@
     {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 3,
       "originDir": null,
@@ -14575,7 +14580,7 @@
     {
       "jobId": "Jneo4j-durable",
       "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15056,7 +15061,7 @@
     {
       "jobId": "Jmermaid-flush",
       "title": "ORDER_Jmermaid-flush_R01 — mdLines: 미닫힘 mermaid 펜스 버퍼 flush(내용 소실 방지)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15105,7 +15110,7 @@
     {
       "jobId": "Jclarify-race",
       "title": "ORDER_Jclarify-race_R02 — 코드는 확정(무변경). REPORT만 재제출한다 (커버리지 게이트 통과 + 서술 오류 2건 정정)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -15164,7 +15169,7 @@
     {
       "jobId": "Jbulk-discard-b",
       "title": "ORDER_Jbulk-discard-b_R01 — 4F 리뷰 큐: 분류 단위 '이 목록 전체 삭제' 버튼",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15213,7 +15218,7 @@
     {
       "jobId": "Jbulk-discard-a",
       "title": "ORDER_Jbulk-discard-a_R01 — 미션 일괄 폐기(bulk discard) 엔드포인트 + 회귀가드",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15316,7 +15321,7 @@
     {
       "jobId": "Jmission-discard-b",
       "title": "ORDER_Jmission-discard-b_R01 — 4F 리뷰 큐: 미션 🗑 삭제 버튼(질문대기 포함 유연 취소)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15365,7 +15370,7 @@
     {
       "jobId": "Jmission-discard-a",
       "title": "ORDER_Jmission-discard-a_R01 — 미션 폐기(삭제) 엔드포인트 배선 + 질문대기 취소 허용 + 경험 학습 보존",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15589,7 +15594,7 @@
     {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -15653,7 +15658,7 @@
     {
       "jobId": "Jbrief-std-a",
       "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15707,7 +15712,7 @@
     {
       "jobId": "Jceo-chart-axes",
       "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15761,7 +15766,7 @@
     {
       "jobId": "Jgnosis-dedup",
       "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15815,7 +15820,7 @@
     {
       "jobId": "Jceo-intake-simplify",
       "title": "ORDER_Jceo-intake-simplify_R01 — 4F 하달부 간소화: INTAKE 라벨 제거 + 속도 선택기 UI 제거(항상 정밀)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15869,7 +15874,7 @@
     {
       "jobId": "Jceo-filing-cabinet",
       "title": "ORDER_Jceo-filing-cabinet_R01 — 4F 리뷰 큐를 상태별 파일철(폴더 탭 + 제목 목록 + 선택 시 본문)로 개편",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -15981,7 +15986,7 @@
     {
       "jobId": "Jaudit-a1b",
       "title": "ORDER_Jaudit-a1b_R02 — [R02] \"비서실 10인\" 소비자 라벨 동적화 (R01 이 만든 거짓 라벨 해소)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -16055,7 +16060,7 @@
     {
       "jobId": "Jgates-b2",
       "title": "ORDER_Jgates-b2_R01 — [게이트 후속] 정본 §6.3·§6.4 잔여분: RAG 정본·gnosis 씨앗·SYSTEM_FACTS",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16104,7 +16109,7 @@
     {
       "jobId": "Jaudit-q4",
       "title": "ORDER_Jaudit-q4_R01 — [감사 §7-Q4] office-sim-upgrade 백업 이동 + 추적 해제 (CEO 결정: 권고안 ②)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16153,7 +16158,7 @@
     {
       "jobId": "Jgates-b1",
       "title": "ORDER_Jgates-b1_R01 — [게이트 B1] Phase 1 본체: 아이디어 검증 게이트 0~5 프롬프트·지식 재배치",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16251,7 +16256,7 @@
     {
       "jobId": "Jgates-b0",
       "title": "ORDER_Jgates-b0_R01 — [게이트 B0] Phase 0 준비·측정: baseline + NEXUS_IDEA_GATES 토글",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16300,7 +16305,7 @@
     {
       "jobId": "Jaudit-a4",
       "title": "ORDER_Jaudit-a4_R01 — [감사 A4] 문서 정합화 (docs 전용 — 코드 무접촉)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16344,7 +16349,7 @@
     {
       "jobId": "Jaudit-a3",
       "title": "ORDER_Jaudit-a3_R01 — [감사 A3] 리포 위생: 오염물 3종 제거·이동",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16393,7 +16398,7 @@
     {
       "jobId": "Jaudit-a2",
       "title": "ORDER_Jaudit-a2_R01 — [감사 A2] 엔진·테스트 정합 (동작 불변 원칙)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16442,7 +16447,7 @@
     {
       "jobId": "Jaudit-a1",
       "title": "ORDER_Jaudit-a1_R01 — [감사 A1] 런타임 거짓 컨텍스트 제거: 은퇴 2F/3F 하드코딩 4곳",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16491,7 +16496,7 @@
     {
       "jobId": "Jclarify-loop-cap",
       "title": "ORDER_Jclarify-loop-cap_R01 — 명확화 루프 종결 보장: 위임 시멘틱 + 재질문 캡 + 중복 차단 + 전부맡기기",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16657,7 +16662,7 @@
     {
       "jobId": "Jclarify-chat-b",
       "title": "ORDER_Jclarify-chat-b_R02 — 1문1답 페이싱 제거: 전 질문 동시 카드 + 클릭 중심 (CEO 실사용 기각 반영)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16726,7 +16731,7 @@
     {
       "jobId": "Jclarify-chat-a",
       "title": "ORDER_Jclarify-chat-a_R02 — 재라운드·게이트2에도 객관식 선택지 생성 (백엔드 보강)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -16927,7 +16932,7 @@
     {
       "jobId": "Jfloor-selfheal",
       "title": "ORDER_Jfloor-selfheal_R01 — 층 미기동 재발 방지: 자기치유 디스패치 + 미션 프리체크 + 부트스트랩 자동기동",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -16976,7 +16981,7 @@
     {
       "jobId": "Jsocratic-m5c",
       "title": "ORDER_Jsocratic-m5c_R01 — fit 폐루프: ADR Context 요약 + 결재 표지 1줄 + NEXUS_FIT_HARD 배너",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17025,7 +17030,7 @@
     {
       "jobId": "Jsocratic-m5b",
       "title": "ORDER_Jsocratic-m5b_R01 — fit 인수시험 실행기 T1: 샌드박스 실행 오라클(opt-in)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17074,7 +17079,7 @@
     {
       "jobId": "Jsocratic-m5a",
       "title": "ORDER_Jsocratic-m5a_R01 — fit 인수시험 실행기 T0: 결정론 커버리지 + fit-report 결재 패키지 첨부",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17123,7 +17128,7 @@
     {
       "jobId": "Jsocratic-s3b",
       "title": "ORDER_Jsocratic-s3b_R01 — S3 마감: auto 모드 극장승인 봉인 + 사람대기 타임아웃 상신 + _parse_verdict matched 보조탐지",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17172,7 +17177,7 @@
     {
       "jobId": "Jsocratic-clarify-pii",
       "title": "ORDER_Jsocratic-clarify-pii_R01 — clarify Q&A seal-시점 수치 PII 위생(라이브 UX 무변경)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17221,7 +17226,7 @@
     {
       "jobId": "Jsocratic-m34",
       "title": "ORDER_Jsocratic-m34_R01 — brief_path phantom 배선 + 스펙 절단순서·캡 회귀가드",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17270,7 +17275,7 @@
     {
       "jobId": "Jsocratic-s4",
       "title": "ORDER_Jsocratic-s4_R01 — ADR 5필드 결정로그(approve/reject 훅) + .gitignore 선수",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17319,7 +17324,7 @@
     {
       "jobId": "Jsocratic-s3",
       "title": "ORDER_Jsocratic-s3_R01 — console 게이트 fail-open 봉인(M7) + 동일모델 자문 라벨(M6)",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17368,7 +17373,7 @@
     {
       "jobId": "Jsocratic-s1-fu2",
       "title": "ORDER_Jsocratic-s1-fu2_R01 — belief.variable 영속 전 수치 PII 로컬 마스킹 + 회귀가드",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17417,7 +17422,7 @@
     {
       "jobId": "Jsocratic-s1-fu1",
       "title": "ORDER_Jsocratic-s1-fu1_R01 — Socratic post-seal 재라운드 누적손실 폴백 재정렬 + 회귀가드",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17466,7 +17471,7 @@
     {
       "jobId": "Jsocratic-s1",
       "title": "ORDER_Jsocratic-s1_R01 — S1(M2) 믿음상태 질문 루프: 멀티라운드 누적 손실버그 수정 + belief 통과-저장",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 1,
       "originDir": null,
@@ -17510,7 +17515,7 @@
     {
       "jobId": "Jsocratic-graft",
       "title": "ORDER_Jsocratic-graft_R02 — 라이브 SEALED 도달(스키마 sanitize) + selftest 정합",
-      "project": "project-44",
+      "project": "project-45",
       "targetDir": "<local>",
       "round": 2,
       "originDir": null,
@@ -18298,37 +18303,37 @@
     {
       "time": "2026-08-27 01:41:14",
       "command": "handoff-auto",
-      "panel": "project-44",
+      "panel": "project-45",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     },
     {
       "time": "2026-08-27 01:10:21",
       "command": "handoff-auto",
-      "panel": "project-44",
+      "panel": "project-45",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     },
     {
       "time": "2026-08-27 01:10:19",
       "command": "handoff-auto",
-      "panel": "project-44",
+      "panel": "project-45",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     },
     {
       "time": "2026-08-26 22:14:08",
       "command": "handoff-auto",
-      "panel": "project-44",
+      "panel": "project-45",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     },
     {
       "time": "2026-08-26 22:06:47",
       "command": "handoff-auto",
-      "panel": "project-44",
+      "panel": "project-45",
       "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
     },
     {
       "time": "2026-08-26 21:45:31",
       "command": "handoff-auto",
-      "panel": "project-44",
+      "panel": "project-45",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     },
     {
