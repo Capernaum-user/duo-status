@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-27T04:07:34",
+  "generatedAt": "2026-08-27T04:08:52",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
-    "working": 2,
+    "waitingWorker": 3,
+    "working": 3,
     "waitingReview": 1,
     "done": 373,
     "alerts": 10
@@ -11,27 +11,27 @@
   "jobs": [
     {
       "jobId": "Jaoapp-step6a-core",
-      "title": "ORDER_Jaoapp-step6a-core_R02 — R1 회귀 1건 수정: 되묻기 경로가 `require_approval` 을 통째로 버린다",
+      "title": "ORDER_Jaoapp-step6a-core_R03 — 코드 수정 없음: 같은 증거를 게이트가 읽는 라벨로 다시 제출한다",
       "project": "project-45",
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 2,
+        "phase": "worker",
+        "round": 3,
         "result": null
       },
       "timeline": [
@@ -69,9 +69,14 @@
           "time": "2026-08-27 04:07:16",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-08-27 04:08:18",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-08-27 04:07:16"
+      "lastUpdate": "2026-08-27 04:08:18"
     },
     {
       "jobId": "Jaoapp-prompt-view",
@@ -18414,6 +18419,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-27 04:08:26",
+      "command": "handoff-auto",
+      "panel": "project-45",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-27 03:50:00",
       "command": "handoff-auto",
       "panel": "project-45",
@@ -18526,12 +18537,6 @@
       "command": "handoff-check",
       "panel": "ObsidianVault",
       "text": "/check"
-    },
-    {
-      "time": "2026-07-31 11:24:02",
-      "command": "handoff-check",
-      "panel": "ObsidianVault",
-      "text": "/cycle 다음 작업 이어서 진행해야겠어 챕터 완성시키자. 다른 패널에서 /check 할 수있게 진행해"
     }
   ]
 }
