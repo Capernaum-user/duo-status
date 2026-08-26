@@ -71,18 +71,52 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:51:21 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:53:39 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T18:51:20",
+  "generatedAt": "2026-08-26T18:53:39",
   "counts": {
     "active": 6,
-    "waitingWorker": 4,
+    "waitingWorker": 3,
     "working": 1,
-    "waitingReview": 1,
+    "waitingReview": 2,
     "done": 366,
-    "alerts": 7
+    "alerts": 6
   },
   "jobs": [
+    {
+      "jobId": "Jghost-02-filter",
+      "title": "죽은 패널이 목록에 안 잡히게 한다 (훅은 한 글자도 고치지 않는다)",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-08-26 18:41:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 18:53:20",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 18:53:20"
+    },
     {
       "jobId": "Jaoapp-approval2",
       "title": "ORDER_Jaoapp-approval2_R01 — 결재선을 실제로 성립시킨다(blocked 진입·진짜 Ed25519 서명·반려 재작업 루프)",
@@ -180,35 +214,6 @@
         {
           "time": "2026-08-26 18:41:55",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-08-26 18:41:55"
-    },
-    {
-      "jobId": "Jghost-02-filter",
-      "title": "죽은 패널이 목록에 안 잡히게 한다 (훅은 한 글자도 고치지 않는다)",
-      "project": "claude-handoff",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-08-26 18:41:55",
-          "state": "PLANNED",
           "round": 1
         }
       ],
