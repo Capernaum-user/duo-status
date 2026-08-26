@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-27T02:53:09",
+  "generatedAt": "2026-08-27T02:57:25",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 2,
-    "done": 371,
-    "alerts": 11
+    "waitingReview": 1,
+    "done": 372,
+    "alerts": 10
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -49,9 +49,14 @@
           "time": "2026-08-27 02:52:02",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-27 02:56:57",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-27 02:52:02"
+      "lastUpdate": "2026-08-27 02:56:57"
     },
     {
       "jobId": "Jaoapp-ctl-panel2",
