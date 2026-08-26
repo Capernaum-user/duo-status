@@ -71,18 +71,61 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:53:39 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-26 18:54:56 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-26T18:53:39",
+  "generatedAt": "2026-08-26T18:54:56",
   "counts": {
-    "active": 6,
-    "waitingWorker": 3,
+    "active": 7,
+    "waitingWorker": 4,
     "working": 1,
     "waitingReview": 2,
     "done": 366,
-    "alerts": 6
+    "alerts": 7
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-approval3",
+      "title": "ORDER_Jaoapp-approval3_R01 — 서명 키 수명주기 결함 2건 수리(공개키 소실 시 개인키 보존 · 로드 경로 권한 재검사)",
+      "project": "project-44",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "RUNNING",
+        "decision": null,
+        "a": null,
+        "b": null,
+        "relayJobId": "pending",
+        "startedAt": "2026-08-26 18:53:54",
+        "finishedAt": null,
+        "runs": 1
+      },
+      "autorun": {
+        "active": true,
+        "phase": "verify",
+        "round": 0,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-26 18:53:52",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 18:53:52"
+    },
     {
       "jobId": "Jghost-02-filter",
       "title": "죽은 패널이 목록에 안 잡히게 한다 (훅은 한 글자도 고치지 않는다)",
@@ -92,13 +135,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -15128,6 +15171,60 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "project-44",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-44",
@@ -15192,8 +15289,8 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "jobId": "Jgnosis-dedup",
+      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
       "project": "project-44",
       "targetDir": "<local>",
       "round": 1,
@@ -15218,32 +15315,32 @@
       },
       "timeline": [
         {
-          "time": "2026-07-20 18:50:28",
+          "time": "2026-07-20 17:55:47",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:50:29",
+          "time": "2026-07-20 17:55:50",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:15:05",
+          "time": "2026-07-20 18:21:37",
           "state": "DONE",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:17:29",
+          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:58:17",
+          "time": "2026-07-20 18:30:08",
           "state": "ACCEPTED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-07-20 19:58:17"
+      "lastUpdate": "2026-07-20 18:30:08"
     },
     {
       "jobId": "Jceo-chart-axes",
@@ -15288,60 +15385,6 @@
         },
         {
           "time": "2026-07-20 18:26:23",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
-      "jobId": "Jgnosis-dedup",
-      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
-      "project": "project-44",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:55:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:55:50",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:21:37",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
