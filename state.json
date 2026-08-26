@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-08-26T20:04:46",
+  "generatedAt": "2026-08-26T20:07:04",
   "counts": {
-    "active": 6,
-    "waitingWorker": 3,
+    "active": 7,
+    "waitingWorker": 4,
     "working": 2,
     "waitingReview": 1,
-    "done": 368,
+    "done": 369,
     "alerts": 6
   },
   "jobs": [
     {
-      "jobId": "Jowner-01-claimjob",
-      "title": "누가 집어간 작업인지 기록하고, 판정을 시험 가능한 함수로 만든다 (훅은 건드리지 않는다)",
+      "jobId": "Jowner-02-guard",
+      "title": "남의 작업을 자기 것으로 받지 못하게 막는다 (저장소 훅만 고친다 · 설치는 사람이 한다)",
       "project": "claude-handoff",
       "targetDir": "<local>",
       "round": 1,
@@ -31,6 +31,40 @@
       "autorun": null,
       "timeline": [
         {
+          "time": "2026-08-26 20:06:21",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 20:06:35",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 20:06:35"
+    },
+    {
+      "jobId": "Jowner-01-claimjob",
+      "title": "누가 집어간 작업인지 기록하고, 판정을 시험 가능한 함수로 만든다 (훅은 건드리지 않는다)",
+      "project": "claude-handoff",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
           "time": "2026-08-26 19:01:40",
           "state": "PLANNED",
           "round": 1
@@ -39,9 +73,62 @@
           "time": "2026-08-26 20:03:56",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-26 20:06:20",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-08-26 20:06:20",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-26 20:03:56"
+      "lastUpdate": "2026-08-26 20:06:20"
+    },
+    {
+      "jobId": "Jaoapp-artifact",
+      "title": "ORDER_Jaoapp-artifact_R01 — 산출물 읽기 백엔드(경로 방어 · 종류 판정 · 본문 반환 · 네이티브 열기)",
+      "project": "project-44",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "RUNNING",
+        "decision": null,
+        "a": null,
+        "b": null,
+        "relayJobId": "pending",
+        "startedAt": "2026-08-26 20:05:55",
+        "finishedAt": null,
+        "runs": 1
+      },
+      "autorun": {
+        "active": true,
+        "phase": "verify",
+        "round": 0,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-26 20:05:53",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-26 20:05:53"
     },
     {
       "jobId": "Jaoapp-approval3",
