@@ -71,29 +71,29 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-27 01:36:13 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-27 01:41:31 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-27T01:36:13",
+  "generatedAt": "2026-08-27T01:41:31",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
-    "working": 2,
+    "waitingWorker": 3,
+    "working": 3,
     "waitingReview": 1,
     "done": 371,
-    "alerts": 10
+    "alerts": 9
   },
   "jobs": [
     {
       "jobId": "Jaoapp-ctl-panel2",
-      "title": "ORDER_Jaoapp-ctl-panel2_R01 — 진행 통제 화면: 중단·이어서 하기·멈춤 의심·종료 확인 (화면 전용)",
+      "title": "ORDER_Jaoapp-ctl-panel2_R02 — R1 화면 배선의 실사용 결함 2건 수정 (화면 전용)",
       "project": "project-44",
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -104,8 +104,8 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 1,
+        "phase": "worker",
+        "round": 2,
         "result": null
       },
       "timeline": [
@@ -128,9 +128,14 @@
           "time": "2026-08-27 01:35:15",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-27 01:41:06",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-27 01:35:15"
+      "lastUpdate": "2026-08-27 01:41:06"
     },
     {
       "jobId": "Jaoapp-ctl-logic",
@@ -18291,6 +18296,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-27 01:41:14",
+      "command": "handoff-auto",
+      "panel": "project-44",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-27 01:10:21",
       "command": "handoff-auto",
       "panel": "project-44",
@@ -18403,12 +18414,6 @@
       "command": "handoff-check",
       "panel": "project-23",
       "text": "/check Jraypet-shortlink-web"
-    },
-    {
-      "time": "2026-07-28 13:39:24",
-      "command": "handoff-check",
-      "panel": "ObsidianVault",
-      "text": "/check"
     }
   ]
 };</script>
