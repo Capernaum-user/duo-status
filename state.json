@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-08-28T03:48:38",
+  "generatedAt": "2026-08-28T03:53:00",
   "counts": {
-    "active": 6,
+    "active": 7,
     "waitingWorker": 3,
-    "working": 2,
+    "working": 3,
     "waitingReview": 1,
     "done": 380,
     "alerts": 12
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-port-p3",
+      "title": "ORDER_Jaoapp-port-p3_R01 — 승계 P3: StageMachine 실행 연결",
+      "project": "project-47",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-28 03:52:36",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-28 03:52:41",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-28 03:52:41"
+    },
     {
       "jobId": "Jaoapp-port-p2",
       "title": "ORDER_Jaoapp-port-p2_R03 — 교훈 기록 귀속 복구 (문서 1건, 코드 무변경)",
@@ -18812,6 +18851,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-28 03:52:56",
+      "command": "handoff-auto",
+      "panel": "project-47",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-28 03:36:22",
       "command": "handoff-auto",
       "panel": "project-47",
@@ -18921,12 +18966,6 @@
     },
     {
       "time": "2026-08-27 01:10:19",
-      "command": "handoff-auto",
-      "panel": "project-47",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-08-26 22:14:08",
       "command": "handoff-auto",
       "panel": "project-47",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
