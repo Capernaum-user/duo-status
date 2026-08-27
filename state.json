@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-28T02:14:53",
+  "generatedAt": "2026-08-28T02:21:12",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 2,
-    "done": 379,
-    "alerts": 11
+    "waitingReview": 1,
+    "done": 380,
+    "alerts": 10
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -30,8 +30,8 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 1,
+        "phase": "worker",
+        "round": 2,
         "result": null
       },
       "timeline": [
@@ -49,9 +49,14 @@
           "time": "2026-08-28 02:13:47",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-28 02:20:19",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-28 02:13:47"
+      "lastUpdate": "2026-08-28 02:20:19"
     },
     {
       "jobId": "Jaoapp-shipwire",
@@ -18718,6 +18723,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-28 02:20:50",
+      "command": "handoff-auto",
+      "panel": "project-47",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-28 02:02:34",
       "command": "handoff-auto",
       "panel": "project-47",
@@ -18830,12 +18841,6 @@
       "command": "handoff-check",
       "panel": "project-38",
       "text": "/check 한글 인코딩 시험 완료"
-    },
-    {
-      "time": "2026-08-26 21:39:14",
-      "command": "handoff-cycle",
-      "panel": "ObsidianVault",
-      "text": "/cycle ?ㅼ쓬 ?④퀎"
     }
   ]
 }
