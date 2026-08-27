@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-28T02:21:12",
+  "generatedAt": "2026-08-28T02:24:31",
   "counts": {
     "active": 6,
     "waitingWorker": 3,
     "working": 2,
     "waitingReview": 1,
-    "done": 380,
-    "alerts": 10
+    "done": 379,
+    "alerts": 11
   },
   "jobs": [
     {
@@ -14,14 +14,14 @@
       "title": "ORDER_Jaoapp-port-p1_R01 — 승계 P1: v2 엔진 33파일 이식 골격",
       "project": "project-47",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -29,10 +29,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "worker",
         "round": 2,
-        "result": null
+        "result": "ERROR"
       },
       "timeline": [
         {
@@ -54,9 +54,14 @@
           "time": "2026-08-28 02:20:19",
           "state": "ACCEPTED",
           "round": 1
+        },
+        {
+          "time": "2026-08-28 02:24:14",
+          "state": "ESCALATED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-28 02:20:19"
+      "lastUpdate": "2026-08-28 02:24:14"
     },
     {
       "jobId": "Jaoapp-shipwire",
@@ -18664,6 +18669,11 @@
       "file": "Jaoapp-ledger_autorun-verify-fail.md",
       "jobId": "Jaoapp-ledger",
       "cause": "autorun-verify-fail"
+    },
+    {
+      "file": "Jaoapp-port-p1_autorun-worker-fail.md",
+      "jobId": "Jaoapp-port-p1",
+      "cause": "autorun-worker-fail"
     },
     {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
