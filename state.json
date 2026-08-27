@@ -1,37 +1,37 @@
 {
-  "generatedAt": "2026-08-28T03:14:33",
+  "generatedAt": "2026-08-28T03:20:47",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 2,
+    "working": 3,
+    "waitingReview": 1,
     "done": 379,
     "alerts": 12
   },
   "jobs": [
     {
       "jobId": "Jaoapp-port-p2",
-      "title": "ORDER_Jaoapp-port-p2_R01 — 승계 P2: 다리 정상화 + 계획(NL→DAG) 연결",
+      "title": "ORDER_Jaoapp-port-p2_R02 — P2 범위 정합화: 경계 이탈 1건 추인 + 문서 정합 + 실측 딜타 공개",
       "project": "project-47",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 1,
+        "phase": "worker",
+        "round": 2,
         "result": null
       },
       "timeline": [
@@ -49,9 +49,19 @@
           "time": "2026-08-28 03:14:11",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-28 03:20:12",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-08-28 03:20:32",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-28 03:14:11"
+      "lastUpdate": "2026-08-28 03:20:32"
     },
     {
       "jobId": "Jaoapp-port-p1",
@@ -18777,6 +18787,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-28 03:20:43",
+      "command": "handoff-auto",
+      "panel": "project-47",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-28 02:56:36",
       "command": "handoff-auto",
       "panel": "project-47",
@@ -18889,12 +18905,6 @@
       "command": "handoff-auto",
       "panel": "project-47",
       "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
-    },
-    {
-      "time": "2026-08-26 21:45:31",
-      "command": "handoff-auto",
-      "panel": "project-47",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     }
   ]
 }
