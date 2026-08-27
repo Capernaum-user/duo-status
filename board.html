@@ -71,14 +71,14 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-28 05:15:38 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-28 05:30:57 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-28T05:15:37",
+  "generatedAt": "2026-08-28T05:30:56",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 2,
+    "waitingReview": 1,
     "done": 381,
     "alerts": 13
   },
@@ -90,12 +90,12 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -103,10 +103,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "TIMEOUT"
       },
       "timeline": [
         {
@@ -123,9 +123,14 @@
           "time": "2026-08-28 05:14:59",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-28 05:30:04",
+          "state": "ESCALATED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-28 05:14:59"
+      "lastUpdate": "2026-08-28 05:30:04"
     },
     {
       "jobId": "Jaoapp-port-p3",
@@ -18935,6 +18940,11 @@
       "file": "Jaoapp-port-p1_autorun-worker-fail.md",
       "jobId": "Jaoapp-port-p1",
       "cause": "autorun-worker-fail"
+    },
+    {
+      "file": "Jaoapp-port-p4_autorun-review-timeout.md",
+      "jobId": "Jaoapp-port-p4",
+      "cause": "autorun-review-timeout"
     },
     {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
