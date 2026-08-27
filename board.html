@@ -71,29 +71,29 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-28 03:34:21 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-28 03:36:38 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-28T03:34:21",
+  "generatedAt": "2026-08-28T03:36:38",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
-    "working": 2,
+    "waitingWorker": 3,
+    "working": 3,
     "waitingReview": 1,
     "done": 379,
-    "alerts": 13
+    "alerts": 12
   },
   "jobs": [
     {
       "jobId": "Jaoapp-port-p2",
-      "title": "ORDER_Jaoapp-port-p2_R02 — P2 범위 정합화: 경계 이탈 1건 추인 + 문서 정합 + 실측 딜타 공개",
+      "title": "ORDER_Jaoapp-port-p2_R03 — 교훈 기록 귀속 복구 (문서 1건, 코드 무변경)",
       "project": "project-47",
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -104,8 +104,8 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 2,
+        "phase": "worker",
+        "round": 3,
         "result": null
       },
       "timeline": [
@@ -143,9 +143,14 @@
           "time": "2026-08-28 03:33:25",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-08-28 03:36:11",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-08-28 03:33:25"
+      "lastUpdate": "2026-08-28 03:36:11"
     },
     {
       "jobId": "Jaoapp-port-p1",
@@ -18871,6 +18876,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-28 03:36:22",
+      "command": "handoff-auto",
+      "panel": "project-47",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-28 03:20:43",
       "command": "handoff-auto",
       "panel": "project-47",
@@ -18983,12 +18994,6 @@
       "command": "handoff-auto",
       "panel": "project-47",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-08-26 22:06:47",
-      "command": "handoff-auto",
-      "panel": "project-47",
-      "text": "너는 claude-duo의 무인(headless) 검토자다. 아래 원 ORDER와 워커 REPORT를 보고 3중 게이트 + 결정론 후검으로 검토…"
     }
   ]
 };</script>
