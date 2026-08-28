@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-29T01:43:38",
+  "generatedAt": "2026-08-29T01:55:59",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 1,
+    "working": 2,
+    "waitingReview": 2,
     "done": 385,
     "alerts": 14
   },
@@ -16,21 +16,21 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 1,
         "result": null
       },
@@ -44,9 +44,14 @@
           "time": "2026-08-29 01:43:05",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-08-29 01:55:42",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-29 01:43:05"
+      "lastUpdate": "2026-08-29 01:55:42"
     },
     {
       "jobId": "Jaoapp-port-p8",
