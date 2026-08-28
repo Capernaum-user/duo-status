@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-08-29T01:06:36",
+  "generatedAt": "2026-08-29T01:10:53",
   "counts": {
-    "active": 6,
+    "active": 7,
     "waitingWorker": 3,
-    "working": 2,
+    "working": 3,
     "waitingReview": 1,
     "done": 385,
     "alerts": 13
   },
   "jobs": [
+    {
+      "jobId": "Jaoapp-port-p8",
+      "title": "ORDER_Jaoapp-port-p8_R01 — 승계 P8: 보안 원장 + 파일 집행 + 성과 집계",
+      "project": "project-47",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-08-29 01:10:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-08-29 01:10:14",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-08-29 01:10:14"
+    },
     {
       "jobId": "Jaoapp-port-p7",
       "title": "ORDER_Jaoapp-port-p7_R02 — P7 재작업: 임베딩 타임아웃 상한 + stage 배선",
@@ -19141,6 +19180,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-29 01:10:24",
+      "command": "handoff-auto",
+      "panel": "project-47",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-29 00:15:28",
       "command": "handoff-auto",
       "panel": "project-47",
@@ -19250,12 +19295,6 @@
     },
     {
       "time": "2026-08-27 04:08:26",
-      "command": "handoff-auto",
-      "panel": "project-47",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-08-27 03:50:00",
       "command": "handoff-auto",
       "panel": "project-47",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
