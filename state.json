@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-28T22:35:40",
+  "generatedAt": "2026-08-28T22:40:59",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 2,
-    "done": 381,
+    "waitingReview": 1,
+    "done": 382,
     "alerts": 13
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -49,9 +49,14 @@
           "time": "2026-08-28 22:35:16",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-28 22:39:48",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-28 22:35:16"
+      "lastUpdate": "2026-08-28 22:39:48"
     },
     {
       "jobId": "Jaoapp-port-p4",
