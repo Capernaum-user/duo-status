@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-29T01:33:02",
+  "generatedAt": "2026-08-29T01:36:19",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 2,
+    "waitingReview": 1,
     "done": 385,
     "alerts": 14
   },
@@ -16,12 +16,12 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -29,10 +29,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ESCALATED"
       },
       "timeline": [
         {
@@ -49,9 +49,14 @@
           "time": "2026-08-29 01:31:01",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-08-29 01:35:45",
+          "state": "ESCALATED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-08-29 01:31:01"
+      "lastUpdate": "2026-08-29 01:35:45"
     },
     {
       "jobId": "Jaoapp-port-p7",
@@ -19126,6 +19131,11 @@
       "file": "Jaoapp-port-p4_autorun-review-timeout.md",
       "jobId": "Jaoapp-port-p4",
       "cause": "autorun-review-timeout"
+    },
+    {
+      "file": "Jaoapp-port-p8_autorun-review-halt.md",
+      "jobId": "Jaoapp-port-p8",
+      "cause": "autorun-review-halt"
     },
     {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
