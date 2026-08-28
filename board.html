@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-29 02:03:21 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-29 02:20:41 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-29T02:03:20",
+  "generatedAt": "2026-08-29T02:20:41",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 3,
-    "working": 3,
+    "working": 2,
     "waitingReview": 1,
     "done": 385,
-    "alerts": 14
+    "alerts": 15
   },
   "jobs": [
     {
@@ -90,12 +90,12 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -103,10 +103,10 @@
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "worker",
         "round": 2,
-        "result": null
+        "result": "ERROR"
       },
       "timeline": [
         {
@@ -133,9 +133,14 @@
           "time": "2026-08-29 02:02:59",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-08-29 02:20:18",
+          "state": "ESCALATED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-29 02:02:59"
+      "lastUpdate": "2026-08-29 02:20:18"
     },
     {
       "jobId": "Jaoapp-port-p8",
@@ -19264,6 +19269,11 @@
       "file": "Jaoapp-port-p8_autorun-review-halt.md",
       "jobId": "Jaoapp-port-p8",
       "cause": "autorun-review-halt"
+    },
+    {
+      "file": "Jaoapp-port-p9_autorun-worker-fail.md",
+      "jobId": "Jaoapp-port-p9",
+      "cause": "autorun-worker-fail"
     },
     {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
