@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-08-29T00:57:24",
+  "generatedAt": "2026-08-29T01:05:16",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 2,
-    "done": 384,
+    "waitingReview": 1,
+    "done": 385,
     "alerts": 13
   },
   "jobs": [
@@ -16,23 +16,23 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 2,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -64,9 +64,14 @@
           "time": "2026-08-29 00:56:44",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-08-29 01:03:44",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-29 00:56:44"
+      "lastUpdate": "2026-08-29 01:03:44"
     },
     {
       "jobId": "Jaoapp-port-p6",
