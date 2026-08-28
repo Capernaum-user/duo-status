@@ -71,29 +71,29 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-29 00:14:37 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-08-29 00:15:53 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-08-29T00:14:37",
+  "generatedAt": "2026-08-29T00:15:52",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
-    "working": 2,
+    "waitingWorker": 3,
+    "working": 3,
     "waitingReview": 1,
     "done": 384,
-    "alerts": 14
+    "alerts": 13
   },
   "jobs": [
     {
       "jobId": "Jaoapp-port-p7",
-      "title": "ORDER_Jaoapp-port-p7_R01 — 승계 P7: 지식 연결 (일화 기억 + 멀티소스 검색)",
+      "title": "ORDER_Jaoapp-port-p7_R02 — P7 재작업: 임베딩 타임아웃 상한 + stage 배선",
       "project": "project-47",
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -104,8 +104,8 @@
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 1,
+        "phase": "worker",
+        "round": 2,
         "result": null
       },
       "timeline": [
@@ -128,9 +128,14 @@
           "time": "2026-08-29 00:13:46",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-08-29 00:15:22",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-08-29 00:13:46"
+      "lastUpdate": "2026-08-29 00:15:22"
     },
     {
       "jobId": "Jaoapp-port-p6",
@@ -19200,6 +19205,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-08-29 00:15:28",
+      "command": "handoff-auto",
+      "panel": "project-47",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-08-28 23:52:34",
       "command": "handoff-auto",
       "panel": "project-47",
@@ -19309,12 +19320,6 @@
     },
     {
       "time": "2026-08-27 03:50:00",
-      "command": "handoff-auto",
-      "panel": "project-47",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-08-27 03:15:28",
       "command": "handoff-auto",
       "panel": "project-47",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
