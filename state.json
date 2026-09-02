@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T08:18:33",
+  "generatedAt": "2026-09-03T08:19:55",
   "counts": {
     "active": 7,
     "waitingWorker": 4,
@@ -19910,6 +19910,11 @@
       "file": "Jproject-28-p0_autorun-worker-fail.md",
       "jobId": "Jproject-28-p0",
       "cause": "autorun-worker-fail"
+    },
+    {
+      "file": "Jproject-48-spec_autopilot-worker-noreport.md",
+      "jobId": "Jproject-48-spec",
+      "cause": "autopilot-worker-noreport"
     }
   ],
   "externalVerifies": [
