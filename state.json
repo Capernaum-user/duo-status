@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-03T07:37:20",
+  "generatedAt": "2026-09-03T07:44:39",
   "counts": {
     "active": 8,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 1,
     "done": 397,
     "alerts": 16
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-03 07:36:29",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-03 07:44:05",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-03 07:36:29"
+      "lastUpdate": "2026-09-03 07:44:05"
     },
     {
       "jobId": "Jproject-48-spec",
@@ -19850,6 +19855,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-03 07:43:29",
+      "command": "handoff-check",
+      "panel": "01_bostonbau",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-03 07:30:28",
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
@@ -19959,12 +19970,6 @@
     },
     {
       "time": "2026-08-28 04:19:37",
-      "command": "handoff-auto",
-      "panel": "project-50",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-08-28 03:52:56",
       "command": "handoff-auto",
       "panel": "project-50",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
