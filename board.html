@@ -71,18 +71,52 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-03 07:14:10 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-03 07:36:01 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-03T07:14:10",
+  "generatedAt": "2026-09-03T07:36:00",
   "counts": {
     "active": 7,
-    "waitingWorker": 4,
+    "waitingWorker": 3,
     "working": 2,
-    "waitingReview": 1,
+    "waitingReview": 2,
     "done": 396,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jproject-48-analyze",
+      "title": "3단계: 문체·어휘·문장·구조 특성 분석(정량 전수 + 정성 표본)",
+      "project": "project-48",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 07:02:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 07:34:21",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 07:34:21"
+    },
     {
       "jobId": "Jmrgolf-contract-addendum",
       "title": "계약 부속 합의서 제1호 작성 (수집 방식 변경)",
@@ -126,35 +160,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 07:12:07"
-    },
-    {
-      "jobId": "Jproject-48-analyze",
-      "title": "3단계: 문체·어휘·문장·구조 특성 분석(정량 전수 + 정성 표본)",
-      "project": "project-48",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 07:02:41",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 07:02:41"
     },
     {
       "jobId": "Jproject-48-crawl",
@@ -19856,6 +19861,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-03 07:30:28",
+      "command": "handoff-cycle",
+      "panel": "ObsidianVault",
+      "text": "/cycle 그리고 전화문의를 눌렀을때 단순히 웹페이지로 연결되도록 변경해줘. 그리고 그 페이지에서 고객의 정보와 문의 내용 그리고 문의 종류를…"
+    },
+    {
       "time": "2026-09-03 06:32:04",
       "command": "handoff-check",
       "panel": "project-40",
@@ -19965,12 +19976,6 @@
     },
     {
       "time": "2026-08-28 03:52:56",
-      "command": "handoff-auto",
-      "panel": "project-50",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-08-28 03:36:22",
       "command": "handoff-auto",
       "panel": "project-50",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
