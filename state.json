@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-09-03T07:57:36",
+  "generatedAt": "2026-09-03T07:58:55",
   "counts": {
     "active": 8,
-    "waitingWorker": 4,
+    "waitingWorker": 5,
     "working": 2,
-    "waitingReview": 2,
+    "waitingReview": 1,
     "done": 397,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jbostonbau-v2-inquiry-page",
+      "title": "ORDER_Jbostonbau-v2-inquiry-page_R02 — 문의 접수 페이지 · 전화 버튼을 웹 양식으로 · 데이터 계약",
+      "project": "01_bostonbau",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 07:36:29",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 07:44:05",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 07:55:11",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 07:58:07",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-03 07:58:07"
+    },
     {
       "jobId": "Jproject-48-spec",
       "title": "4단계 R2: 검사기를 코퍼스로 보정하고 결함 4건을 고친다",
@@ -47,45 +91,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 07:56:09"
-    },
-    {
-      "jobId": "Jbostonbau-v2-inquiry-page",
-      "title": "ORDER_Jbostonbau-v2-inquiry-page_R01 — 문의 접수 페이지 · 전화 버튼을 웹 양식으로 · 데이터 계약",
-      "project": "01_bostonbau",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 07:36:29",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 07:44:05",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 07:55:11",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 07:55:11"
     },
     {
       "jobId": "Jproject-48-analyze",
