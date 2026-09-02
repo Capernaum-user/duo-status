@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-03T01:24:07",
+  "generatedAt": "2026-09-03T01:28:46",
   "counts": {
     "active": 9,
     "waitingWorker": 3,
-    "working": 5,
-    "waitingReview": 1,
+    "working": 4,
+    "waitingReview": 2,
     "done": 388,
-    "alerts": 15
+    "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jproject-48-select",
+      "title": "1단계: 블로그 선정(근거 수치) · 크롤러 제작 · 파일럿 수집",
+      "project": "project-48",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 00:47:57",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 00:53:05",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 01:28:07",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 01:28:07"
+    },
     {
       "jobId": "Jmrgolf-web-skeleton",
       "title": "Next.js 웹 뼈대와 Supabase 스키마",
@@ -120,40 +159,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 01:05:02"
-    },
-    {
-      "jobId": "Jproject-48-select",
-      "title": "1단계: 블로그 선정(근거 수치) · 크롤러 제작 · 파일럿 수집",
-      "project": "project-48",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 00:47:57",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 00:53:05",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 00:53:05"
     },
     {
       "jobId": "Jmrgolf-crawl-spike",
