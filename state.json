@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-03T06:38:25",
+  "generatedAt": "2026-09-03T06:40:44",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 4,
-    "waitingReview": 1,
+    "working": 3,
+    "waitingReview": 2,
     "done": 392,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jbostonbau-v2-image-pipeline",
+      "title": "ORDER_Jbostonbau-v2-image-pipeline_R01 — 사진 반입 파이프라인 · 고정물 왕복 · 미리보기 · 보고",
+      "project": "01_bostonbau",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 06:23:24",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 06:24:00",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 06:39:52",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 06:39:52"
+    },
     {
       "jobId": "Jproject-48-crawl",
       "title": "2단계 R2: 한국어 코퍼스 확충(신호 규칙 확장 · 신규 5곳 재측정·수집 · toss 페이지네이션 확인)",
@@ -81,40 +120,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 06:33:05"
-    },
-    {
-      "jobId": "Jbostonbau-v2-image-pipeline",
-      "title": "ORDER_Jbostonbau-v2-image-pipeline_R01 — 사진 반입 파이프라인 · 고정물 왕복 · 미리보기 · 보고",
-      "project": "01_bostonbau",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 06:23:24",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 06:24:00",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 06:24:00"
     },
     {
       "jobId": "Jbostonbau-v2-review-pages",
