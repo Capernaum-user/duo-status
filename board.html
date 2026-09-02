@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-03 01:01:56 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-03 01:05:20 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-03T01:01:56",
+  "generatedAt": "2026-09-03T01:05:19",
   "counts": {
     "active": 9,
-    "waitingWorker": 4,
-    "working": 4,
+    "waitingWorker": 3,
+    "working": 5,
     "waitingReview": 1,
     "done": 387,
     "alerts": 15
@@ -90,14 +90,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -108,9 +108,14 @@
           "time": "2026-09-03 01:00:54",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-03 01:05:02",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-03 01:00:54"
+      "lastUpdate": "2026-09-03 01:05:02"
     },
     {
       "jobId": "Jmrgolf-clean-pipeline",
@@ -19523,6 +19528,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-03 01:04:20",
+      "command": "handoff-check",
+      "panel": "01_bostonbau",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-03 00:51:12",
       "command": "handoff-check",
       "panel": "project-48",
@@ -19632,12 +19643,6 @@
     },
     {
       "time": "2026-08-28 03:20:43",
-      "command": "handoff-auto",
-      "panel": "project-50",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-08-28 02:56:36",
       "command": "handoff-auto",
       "panel": "project-50",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
