@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-03T06:32:22",
+  "generatedAt": "2026-09-03T06:33:43",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 1,
     "done": 392,
     "alerts": 16
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-03 06:31:30",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-03 06:33:05",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-03 06:31:30"
+      "lastUpdate": "2026-09-03 06:33:05"
     },
     {
       "jobId": "Jbostonbau-v2-image-pipeline",
