@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T08:54:21",
+  "generatedAt": "2026-09-03T08:55:42",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
@@ -11,10 +11,10 @@
   "jobs": [
     {
       "jobId": "Jproject-48-wire",
-      "title": "5단계: 전역 배선 · 실전 검증 · 검사기 공격 시험",
+      "title": "5단계 R2: 공격 시험 마무리 · README 최종 수치 · 커밋",
       "project": "project-48",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -25,7 +25,7 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -39,9 +39,19 @@
           "time": "2026-09-03 08:28:34",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-03 08:55:11",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-03 08:55:39",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-03 08:28:34"
+      "lastUpdate": "2026-09-03 08:55:39"
     },
     {
       "jobId": "Jproject-48-spec",
