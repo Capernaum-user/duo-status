@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-03T13:39:59",
+  "generatedAt": "2026-09-03T13:41:18",
   "counts": {
     "active": 8,
-    "waitingWorker": 4,
-    "working": 3,
+    "waitingWorker": 3,
+    "working": 4,
     "waitingReview": 1,
     "done": 405,
-    "alerts": 16
+    "alerts": 15
   },
   "jobs": [
+    {
+      "jobId": "Jwp-mass-topics",
+      "title": "ORDER_Jwp-mass-topics_R01 — 주제 매트릭스 370행 · 생성기와 검사기",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 12:21:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 13:40:41",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 13:40:41"
+    },
     {
       "jobId": "Jwriting-voice-wire",
       "title": "5단계: 전역 배선 · 같은 분량 재작성 검증 3건 · 사람 목소리 검사기 공격 시험",
@@ -174,35 +208,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 12:38:32"
-    },
-    {
-      "jobId": "Jwp-mass-topics",
-      "title": "ORDER_Jwp-mass-topics_R01 — 주제 매트릭스 370행 · 생성기와 검사기",
-      "project": "project-45",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 12:21:13",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 12:21:13"
     },
     {
       "jobId": "Jwriting-voice-sync",
