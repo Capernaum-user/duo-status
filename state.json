@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-09-03T16:24:05",
+  "generatedAt": "2026-09-03T16:26:25",
   "counts": {
     "active": 8,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 2,
+    "working": 3,
+    "waitingReview": 1,
     "done": 409,
-    "alerts": 16
+    "alerts": 15
   },
   "jobs": [
+    {
+      "jobId": "Jwp-mass-schedule",
+      "title": "ORDER_Jwp-mass-schedule_R02 — 14일 예약 발행 · 내부 링크 · 메인 v2 카드 밴드",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 15:59:49",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 15:59:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 16:22:55",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 16:25:16",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-03 16:25:30",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-03 16:25:30"
+    },
     {
       "jobId": "Jwriting-voice-allproject-3",
       "title": "1단계: 사람 목소리 여덟 가지를 Claude 밖의 모든 에이전트(Gemini·Codex·Antigravity)에도 잇는다",
@@ -37,45 +86,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 16:23:29"
-    },
-    {
-      "jobId": "Jwp-mass-schedule",
-      "title": "ORDER_Jwp-mass-schedule_R01 — 14일 예약 발행 · 내부 링크 · 메인 v2 카드 밴드",
-      "project": "project-45",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 15:59:49",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 15:59:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 16:22:55",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 16:22:55"
     },
     {
       "jobId": "Jwp-mass-cards",
