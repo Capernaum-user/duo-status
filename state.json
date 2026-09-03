@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-09-04T07:55:09",
+  "generatedAt": "2026-09-04T07:57:41",
   "counts": {
-    "active": 7,
+    "active": 8,
     "waitingWorker": 4,
     "working": 2,
-    "waitingReview": 1,
-    "done": 420,
+    "waitingReview": 2,
+    "done": 419,
     "alerts": 15
   },
   "jobs": [
+    {
+      "jobId": "Jwp-auto-scaffold",
+      "title": "ORDER_Jwp-auto-scaffold_R01 — 범용 뼈대 `new-site.ps1` · 어떤 사이트든 명령 하나로 · 데모 사이트 8905",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 20:59:44",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 21:00:00",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-04 00:32:43",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-04 07:53:54",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-04 07:56:48",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-04 07:56:48"
+    },
     {
       "jobId": "Jmrgolf-rulelayer-90",
       "title": "ORDER_Jmrgolf-rulelayer-90 — 결제 없이 문맥 정제 90% 돌파 — 결정론 규칙층과 지수 백오프",
@@ -37,50 +86,6 @@
         }
       ],
       "lastUpdate": "2026-09-04 07:53:58"
-    },
-    {
-      "jobId": "Jwp-auto-scaffold",
-      "title": "ORDER_Jwp-auto-scaffold_R01 — 범용 뼈대 `new-site.ps1` · 어떤 사이트든 명령 하나로 · 데모 사이트 8905",
-      "project": "project-45",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 20:59:44",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 21:00:00",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-04 00:32:43",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-04 07:53:54",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-04 07:53:54"
     },
     {
       "jobId": "Jwp-auto-observe",
