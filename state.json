@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-03T19:36:57",
+  "generatedAt": "2026-09-03T19:58:20",
   "counts": {
     "active": 8,
     "waitingWorker": 3,
-    "working": 4,
-    "waitingReview": 1,
+    "working": 3,
+    "waitingReview": 2,
     "done": 412,
-    "alerts": 15
+    "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-board-map",
+      "title": "ORDER_Jmrgolf-board-map_R01 — 필고 게시판 4종의 post_id·category 조합을 실측으로 확정한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 19:15:09",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 19:17:10",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 19:57:37",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 19:57:37"
+    },
     {
       "jobId": "Jwriting-voice-allproject-3",
       "title": "1단계 R2: 네 파일에 박힌 깨진 경로를 고친다",
@@ -24,7 +63,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -57,40 +96,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 19:34:46"
-    },
-    {
-      "jobId": "Jmrgolf-board-map",
-      "title": "ORDER_Jmrgolf-board-map_R01 — 필고 게시판 4종의 post_id·category 조합을 실측으로 확정한다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 19:15:09",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 19:17:10",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 19:17:10"
     },
     {
       "jobId": "Jwp-auto-runall",
