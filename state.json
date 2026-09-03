@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-03T13:58:39",
+  "generatedAt": "2026-09-03T14:01:00",
   "counts": {
     "active": 8,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 2,
+    "working": 4,
+    "waitingReview": 1,
     "done": 405,
-    "alerts": 16
+    "alerts": 15
   },
   "jobs": [
     {
       "jobId": "Jwp-mass-topics",
-      "title": "ORDER_Jwp-mass-topics_R01 — 주제 매트릭스 370행 · 생성기와 검사기",
+      "title": "ORDER_Jwp-mass-topics_R02 — 주제 매트릭스 370행 · 생성기와 검사기",
       "project": "project-45",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-09-03 13:57:34",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-03 14:00:32",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-03 14:00:46",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-03 13:57:34"
+      "lastUpdate": "2026-09-03 14:00:46"
     },
     {
       "jobId": "Jwriting-voice-wire",
