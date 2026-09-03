@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-03T20:48:24",
+  "generatedAt": "2026-09-03T20:53:46",
   "counts": {
     "active": 7,
     "waitingWorker": 3,
-    "working": 3,
-    "waitingReview": 1,
+    "working": 2,
+    "waitingReview": 2,
     "done": 417,
-    "alerts": 15
+    "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jwp-auto-deploy",
+      "title": "ORDER_Jwp-auto-deploy_R01 — 배포 자동화 · 스테이징 리허설(8904) · 사장님 5분 안내 한 장",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 20:40:03",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 20:40:14",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 20:52:39",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 20:52:39"
+    },
     {
       "jobId": "Jmrgolf-schedule",
       "title": "ORDER_Jmrgolf-schedule_R01 — 정해진 시각에 스스로 돌게 걸고 이어가기 문서를 갱신한다",
@@ -52,40 +91,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 20:47:17"
-    },
-    {
-      "jobId": "Jwp-auto-deploy",
-      "title": "ORDER_Jwp-auto-deploy_R01 — 배포 자동화 · 스테이징 리허설(8904) · 사장님 5분 안내 한 장",
-      "project": "project-45",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 20:40:03",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 20:40:14",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 20:40:14"
     },
     {
       "jobId": "Jwp-auto-runall",
