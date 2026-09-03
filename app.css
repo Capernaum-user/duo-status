@@ -219,10 +219,24 @@ body{font-size:14px;-webkit-font-smoothing:antialiased;font-variant-numeric:tabu
 .stat.neon-danger .n{color:var(--neon-danger-ink);text-shadow:0 0 7px rgba(var(--neon-danger-glow),.40);}
 .stat.neon-danger .l{color:var(--neon-danger-ink);}
 
-/* L2 · 리스트 뷰 레인 카드. .lane.warn 의 inset 3px 선은 네온 위에 남겨 낱말 없는 좌측 표식을 유지한다 */
-.lane.neon-gold{border-color:var(--neon-gold)!important;}
-.lane.warn.neon-danger{border-color:var(--neon-danger)!important;}
-.lane.neon-gold .jobid,.lane.neon-gold .ltitle{color:var(--neon-gold-ink);}
+/* L2 · 리스트 뷰 레인 카드.
+   .lane.warn 이 이미 box-shadow(inset 3px 0 0)를 갖고 특이도가 (0,2,0)이라 .neon-* 한 겹으로는 덮이지 않는다.
+   그래서 레인 전용 규칙을 같은 특이도로 뒤에 두고, 좌측 3px 표식을 네온 코어색으로 이어받아 함께 그린다. */
+@keyframes neonLaneGold{
+  0%,100%{box-shadow:inset 3px 0 0 var(--neon-gold),inset 0 0 5px rgba(var(--neon-gold-glow),.20),0 0 7px rgba(var(--neon-gold-glow),.34),0 0 18px rgba(var(--neon-gold-glow),.14);}
+  50%    {box-shadow:inset 3px 0 0 var(--neon-gold),inset 0 0 8px rgba(var(--neon-gold-glow),.34),0 0 11px rgba(var(--neon-gold-glow),.52),0 0 26px rgba(var(--neon-gold-glow),.26);}
+}
+@keyframes neonLaneDanger{
+  0%,100%{box-shadow:inset 3px 0 0 var(--neon-danger),inset 0 0 5px rgba(var(--neon-danger-glow),.20),0 0 7px rgba(var(--neon-danger-glow),.36),0 0 18px rgba(var(--neon-danger-glow),.16);}
+  50%    {box-shadow:inset 3px 0 0 var(--neon-danger),inset 0 0 8px rgba(var(--neon-danger-glow),.36),0 0 11px rgba(var(--neon-danger-glow),.56),0 0 26px rgba(var(--neon-danger-glow),.28);}
+}
+.lane.neon-gold{border-color:var(--neon-gold)!important;
+  box-shadow:inset 3px 0 0 var(--neon-gold),inset 0 0 6px rgba(var(--neon-gold-glow),.28),0 0 8px rgba(var(--neon-gold-glow),.42),0 0 22px rgba(var(--neon-gold-glow),.20);
+  animation:neonLaneGold 2.8s ease-in-out infinite;}
+.lane.neon-danger{border-color:var(--neon-danger)!important;
+  box-shadow:inset 3px 0 0 var(--neon-danger),inset 0 0 6px rgba(var(--neon-danger-glow),.28),0 0 8px rgba(var(--neon-danger-glow),.46),0 0 22px rgba(var(--neon-danger-glow),.22);
+  animation:neonLaneDanger 2.6s ease-in-out infinite;}
+.lane.neon-gold .jobid{color:var(--neon-gold-ink);}
 .lane.neon-danger .jobid{color:var(--neon-danger-ink);}
 
 /* L3 · 상태 배지(.chip · .pchip) — 테두리가 없으므로 inset 1px 링으로 코어선을 만든다(레이아웃 불변) */
@@ -264,6 +278,7 @@ body{font-size:14px;-webkit-font-smoothing:antialiased;font-variant-numeric:tabu
 
 /* 번쩍임을 끈 사용자에게는 정지된 발광만 남긴다 */
 @media (prefers-reduced-motion: reduce){
-  .neon-gold,.neon-danger,.chip.neon-gold,.chip.neon-danger,.pchip.neon-gold,.pchip.neon-danger,
+  .neon-gold,.neon-danger,.lane.neon-gold,.lane.neon-danger,
+  .chip.neon-gold,.chip.neon-danger,.pchip.neon-gold,.pchip.neon-danger,
   .banner.show,.dot-live{animation:none!important;}
 }

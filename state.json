@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-03T19:31:15",
+  "generatedAt": "2026-09-03T19:35:38",
   "counts": {
-    "active": 9,
+    "active": 8,
     "waitingWorker": 3,
-    "working": 5,
+    "working": 4,
     "waitingReview": 1,
-    "done": 411,
+    "done": 412,
     "alerts": 15
   },
   "jobs": [
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -44,9 +44,19 @@
           "time": "2026-09-03 19:30:40",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-03 19:34:45",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-03 19:34:46",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-03 19:30:40"
+      "lastUpdate": "2026-09-03 19:34:46"
     },
     {
       "jobId": "Jmrgolf-board-map",
@@ -20645,6 +20655,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-03 19:33:02",
+      "command": "handoff-review",
+      "panel": "project-48",
+      "text": "지금 **handoff-review 스킬을 실행**하라(사용자가 /handoff-review 를 입력하지 않는다). - 대상 JobId: Jwr…"
+    },
+    {
       "time": "2026-09-03 19:16:16",
       "command": "handoff-check",
       "panel": "project-40",
@@ -20757,12 +20773,6 @@
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
       "text": "/cycle 보스턴치과 사이트를 만들다 말았었는데, 이제는 보스턴 치과사이트를 당산역 원덴탈솔루션치과와 유사하게 만들어서 노출을 늘리고 싶어. …"
-    },
-    {
-      "time": "2026-09-03 00:37:22",
-      "command": "handoff-cycle",
-      "panel": "project-40",
-      "text": "/cycle 내가 프롬프트 붙여넣기 귀찮아서졌어. 너가 스스로 기획자이자 감독관이되어서 내용을 전달하고 다른 패널에서 에이전트가 코드작업을 할 …"
     }
   ]
 }

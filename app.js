@@ -31,6 +31,13 @@ function mapStateToScene(state) {
     var boothActive = !!(v && v.status === 'RUNNING');
     var boothFail = !!(v && v.status === 'DONE' && (v.decision === 'BOTH_FAIL' || v.decision === 'CONFLICT' || v.decision === 'SINGLE_FAIL'));
     var alert = (j.stageIndex === 0) || !!(j.flags && j.flags.protocolError) || ((j.stageLabel || '').indexOf('[확인필요]') >= 0);
+    /* 네온 판정 — 기존 alert/color 는 손대지 않고 시각 표시용 필드만 하나 더한다.
+       금색 = 지금 살아 움직이는 것 · 사람이 지금 봐야 하는 것:
+              stageIndex 2(CLAIMED 작업 중) · 3(DONE 검토 대기) · autorun.active(무인 러너 가동) · verify RUNNING(교차검증 중).
+       빨강 = 잘못된 것: stageIndex 0(ESCALATED) · flags.protocolError · 교차검증 실패(BOTH_FAIL/CONFLICT/SINGLE_FAIL).
+       발주 대기(1)·보고(미사용)·완료(5)는 켜지 않는다. 빨강이 금색을 이긴다. */
+    var neon = ((j.stageIndex === 0) || !!(j.flags && j.flags.protocolError) || boothFail) ? 'danger'
+      : (((j.stageIndex === 2) || (j.stageIndex === 3) || !!(j.autorun && j.autorun.active) || boothActive) ? 'gold' : '');
     var stackIndex = (station === 'done') ? (stackN++) : -1;
     var color = alert ? 'rose' : (j.stageIndex === 5 ? 'green' : 'primary');
     var tl = Array.isArray(j.timeline) ? j.timeline : [];
@@ -46,7 +53,7 @@ function mapStateToScene(state) {
         auto: !!(j.autorun && j.autorun.active), rework: !!(j.flags && j.flags.rework),
         autoResult: j.autorun ? j.autorun.result : null, autoPhase: j.autorun ? j.autorun.phase : null
       },
-      alert: alert, color: color,
+      alert: alert, color: color, neon: neon,
       stageIndex: j.stageIndex, stageLabel: j.stageLabel, nextAction: j.nextAction,
       verify: v, autorun: j.autorun || null, timeline: tl, lastUpdate: j.lastUpdate || '',
       doneDate: doneDate, requestDate: requestDate
@@ -181,9 +188,22 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       return {
         floor: css('--floor'), floorLine: css('--floor-line'), surface: css('--surface'), border: css('--border'),
         text: css('--text'), text2: css('--text-2'), text3: css('--text-3'),
-        primary: css('--primary'), green: css('--green'), rose: css('--rose'), amber: css('--amber'), shadow: 'rgba(0,0,0,.22)'
+        primary: css('--primary'), green: css('--green'), rose: css('--rose'), amber: css('--amber'), shadow: 'rgba(0,0,0,.22)',
+        /* 네온 — 코어색은 테두리/램프에, glow(rgb 3원소)는 ctx.shadowColor 에 쓴다. app.css 와 같은 토큰이다. */
+        neonGold: css('--neon-gold'), neonDanger: css('--neon-danger'),
+        neonGoldGlow: css('--neon-gold-glow') || '224,161,0', neonDangerGlow: css('--neon-danger-glow') || '225,29,72'
       };
     }
+    /* 네온 발광을 켠다. blur 는 줌 배율을 따라 커지고, 호출부는 반드시 neonOff()로 되돌려야 한다
+     * (안 그러면 뒤에 그리는 것이 전부 번진다). 발광은 네온이 켜진 노드에만 걸어 60fps 비용을 묶어 둔다. */
+    function neonOn(p, kind, strength) {
+      var glow = (kind === 'danger') ? p.neonDangerGlow : p.neonGoldGlow;
+      var breathe = reduceMotion ? 1 : (0.72 + 0.28 * Math.sin(Date.now() / 445)); /* 2.8초 주기 — 관제화면이 피곤하지 않게 느리게 */
+      ctx.shadowColor = 'rgba(' + glow + ',' + (0.85 * breathe).toFixed(3) + ')';
+      ctx.shadowBlur = (strength || 12) * cam.scale * breathe;
+      ctx.shadowOffsetX = 0; ctx.shadowOffsetY = 0;
+    }
+    function neonOff() { ctx.shadowBlur = 0; ctx.shadowColor = 'rgba(0,0,0,0)'; }
 
     var cv = $('board'), ctx = cv.getContext('2d');
     var cam = { x: 0, y: 0, scale: 1 };
@@ -376,6 +396,19 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         var fail = isBooth && scene.view.some(function (t) { return t.boothFail; });
         var top = (k === 'escalation' || fail) ? p.rose : (busy ? p.amber : p.surface);
         isoBox(s.x, s.y, w, h, dep, top, shade(top, -8), p.border);
+        /* 네온 — 에스컬레이션/검증실패 스테이션은 빨강, 가동 중인 검수부스는 금색.
+           윗면 마름모 윤곽에만 발광을 걸고 곧바로 끈다(뒤에 그릴 라벨이 번지지 않게). */
+        var stNeon = (k === 'escalation' || fail) ? 'danger' : (busy ? 'gold' : '');
+        if (stNeon) {
+          ctx.save();
+          neonOn(p, stNeon, 16);
+          ctx.strokeStyle = (stNeon === 'danger') ? p.neonDanger : p.neonGold;
+          ctx.lineWidth = 1.6 * cam.scale;
+          ctx.beginPath();
+          ctx.moveTo(s.x, s.y - h); ctx.lineTo(s.x + w, s.y); ctx.lineTo(s.x, s.y + h); ctx.lineTo(s.x - w, s.y); ctx.closePath();
+          ctx.stroke(); ctx.stroke();
+          neonOff(); ctx.restore();
+        }
         // 아이콘/라벨
         ctx.textAlign = 'center';
         ctx.font = (16 * cam.scale) + 'px sans-serif'; ctx.fillText(st.icon, s.x, s.y + 5 * cam.scale);
@@ -386,7 +419,8 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       });
     }
     function drawRobots(p, s, busy, fail) {
-      var lamp = fail ? p.rose : (busy ? p.amber : p.text3);
+      var lamp = fail ? p.neonDanger : (busy ? p.neonGold : p.text3);
+      var lampNeon = fail ? 'danger' : (busy ? 'gold' : '');
       [['Codex', -18], ['gemini', 18]].forEach(function (rb) {
         var rx = s.x + rb[1] * cam.scale, ry = s.y - 20 * cam.scale;
         ctx.fillStyle = shade(p.surface, -10); ctx.strokeStyle = p.border; ctx.lineWidth = 1;
@@ -394,7 +428,10 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         ctx.strokeRect(rx - 7 * cam.scale, ry - 7 * cam.scale, 14 * cam.scale, 14 * cam.scale);
         ctx.beginPath(); ctx.arc(rx, ry, 2.6 * cam.scale, 0, 7); ctx.fillStyle = lamp;
         if (busy) ctx.globalAlpha = 0.5 + 0.5 * Math.abs(Math.sin(Date.now() / 300));
-        ctx.fill(); ctx.globalAlpha = 1;
+        if (lampNeon) neonOn(p, lampNeon, 10);       // 램프에만 발광
+        ctx.fill();
+        if (lampNeon) neonOff();                      // 반드시 되돌린다
+        ctx.globalAlpha = 1;
       });
     }
     function tokenColor(p, t) { return t.color === 'rose' ? p.rose : (t.color === 'green' ? p.green : p.primary); }
@@ -421,9 +458,14 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       // 카드
       roundRect(r.x, r.y, r.w, r.h, 5 * cam.scale); ctx.fillStyle = p.surface; ctx.fill();
       ctx.lineWidth = (t.jobId === (hover && hover.jobId) || t.jobId === (selected && selected.jobId)) ? 2.5 : 1.4;
-      ctx.strokeStyle = t.alert ? p.rose : col; ctx.stroke();
+      /* 네온 — 진행 중(gold)·위험(danger) 노드만 테두리를 코어색으로 바꾸고 발광을 두 번 겹쳐 칠한다.
+         발광은 여기에만 걸고 즉시 끈다. 켠 채로 두면 아래 좌측 바·글자까지 전부 번진다. */
+      var neonCore = t.neon === 'danger' ? p.neonDanger : (t.neon === 'gold' ? p.neonGold : null);
+      ctx.strokeStyle = neonCore || (t.alert ? p.rose : col);
+      if (neonCore) { neonOn(p, t.neon, 13); ctx.stroke(); ctx.stroke(); neonOff(); }
+      ctx.stroke();
       // 좌측 상태 바
-      ctx.fillStyle = col; roundRect(r.x, r.y, 4 * cam.scale, r.h, 2 * cam.scale); ctx.fill();
+      ctx.fillStyle = neonCore || col; roundRect(r.x, r.y, 4 * cam.scale, r.h, 2 * cam.scale); ctx.fill();
       // 텍스트
       ctx.textAlign = 'left'; ctx.fillStyle = p.text; ctx.font = '800 ' + (9.5 * cam.scale) + 'px sans-serif';
       ctx.fillText(shortId(t.jobId), r.x + 8 * cam.scale, r.y + 11 * cam.scale);
@@ -431,6 +473,12 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       var sub = 'R' + t.round + (t.badges.auto ? ' 🤖' : '') + (t.badges.rework ? ' ↩' : '');
       ctx.fillText(sub, r.x + 8 * cam.scale, r.y + r.h - 6 * cam.scale);
       if (t.alert) { ctx.fillStyle = p.rose; ctx.textAlign = 'right'; ctx.fillText('⚠', r.x + r.w - 5 * cam.scale, r.y + 11 * cam.scale); }
+      /* 색만으로 구분하지 않는다 — 네온이 켜진 카드에는 낱말을 붙인다(색맹인 사람도 읽을 수 있게). */
+      if (neonCore) {
+        ctx.fillStyle = neonCore; ctx.textAlign = 'right'; ctx.font = '800 ' + (7.5 * cam.scale) + 'px sans-serif';
+        ctx.fillText(t.neon === 'danger' ? '주의' : '진행', r.x + r.w - 5 * cam.scale, r.y + r.h - 6 * cam.scale);
+        ctx.textAlign = 'left';
+      }
     }
     function roundRect(x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
     function shortId(id) { return id.length > 18 ? id.slice(0, 17) + '…' : id; }
@@ -642,7 +690,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       $('panelBody').innerHTML =
         '<div class="pttl">' + esc(t.jobId) + ' <span class="pr">R' + esc(t.round) + '</span>' + (t.badges.auto ? ' 🤖' : '') + '</div>' +
         '<div class="psub">' + (t.project ? esc(t.project) + ' · ' : '') + esc(t.title) + '</div>' +
-        '<div class="pchip ' + t.color + '">' + esc(t.stageLabel) + '</div>' +
+        '<div class="pchip ' + t.color + (t.neon ? ' neon-' + t.neon : '') + '">' + esc(t.stageLabel) + '</div>' +
         folderHtml(t) +
         '<div class="psec"><h4>다음 행동</h4><div>' + esc(t.nextAction || '—') + '</div></div>' +
         verifyHtml + autoHtml +
@@ -653,6 +701,13 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     $('panelClose').addEventListener('click', function () { $('panel').classList.remove('open'); selected = null; });
 
     /* ---------- HUD / 뷰 토글 ---------- */
+    /* 카운터 한 장의 네온을 켜고 끈다. 숫자 자체는 건드리지 않고 클래스만 토글한다. */
+    function setStatNeon(numId, kind) {
+      var el = $(numId); if (!el || !el.parentElement) return;
+      var box = el.parentElement;
+      box.classList.toggle('neon-gold', kind === 'gold');
+      box.classList.toggle('neon-danger', kind === 'danger');
+    }
     function renderHud() {
       var c = scene.counts || {};
       $('c-active').textContent = c.active != null ? c.active : 0;
@@ -667,6 +722,11 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         doneLabel.textContent = (totalDone > selDone) ? ('완료(' + dtxt + ') · 총 ' + totalDone) : '완료';
       }
       $('c-alert').textContent = c.alerts != null ? c.alerts : 0;
+      /* L1 네온 — 진행·검토대기는 금색, 경고는 빨강. 값이 0이면 끈다(0건인 경고가 빛나면 안 된다).
+         워커대기·완료는 "지금 움직이는 것"도 "잘못된 것"도 아니므로 켜지 않는다. */
+      setStatNeon('c-active', (c.active || 0) > 0 ? 'gold' : '');
+      setStatNeon('c-review', (c.waitingReview || 0) > 0 ? 'gold' : '');
+      setStatNeon('c-alert', (c.alerts || 0) > 0 ? 'danger' : '');
       var ab = $('alertBanner'), al = scene.view.filter(function (t) { return t.alert; });
       if (al.length) { ab.classList.add('show'); ab.innerHTML = '⚠ 주의 ' + al.length + '건: ' + al.map(function (t) { return esc(t.jobId) + ' (' + esc(t.stageLabel) + ')'; }).join(', '); }
       else ab.classList.remove('show');
@@ -710,7 +770,8 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
           (isRealPath(t.targetDir) ? '<button type="button" class="pcopy" data-copy="' + esc(t.targetDir) + '" title="경로 복사">복사</button>' : '') +
           (t.originDir && t.originDir !== t.targetDir ? '<span class="dfrom">발주 ' + escPath(t.originDir) + '</span>' : '') + '</div>'
         : '<div class="lane-dir none"><span class="dl">작업 폴더</span><code>target_dir 없음</code></div>';
-      return '<div class="lane' + (t.alert ? ' warn' : '') + '"><div class="lane-head"><span class="idx">#' + n + '</span><span class="jobid">' + esc(t.jobId) + '</span>' + (t.project ? '<span class="proj">· ' + esc(t.project) + '</span>' : '') + '<span class="rbadge">R' + esc(t.round) + '</span>' + (t.badges.rework ? '<span class="rework">↩ 재작업</span>' : '') + auto + '<span class="ltitle">' + esc(t.title) + '</span><span class="chip s' + t.stageIndex + '">' + esc(t.stageLabel) + '</span></div>' + dir + '<div class="lane-graph">' + laneSvg(t) + '</div><div class="lane-foot"><span>다음: <b>' + esc(t.nextAction) + '</b></span>' + reqd + '<span class="upd">' + esc(t.lastUpdate || '—') + '</span></div></div>';
+      var nc = t.neon ? (' neon-' + t.neon) : '';   /* L2·L3 네온 — 레인 카드와 단계 칩이 같은 언어를 쓴다 */
+      return '<div class="lane' + (t.alert ? ' warn' : '') + nc + '"><div class="lane-head"><span class="idx">#' + n + '</span><span class="jobid">' + esc(t.jobId) + '</span>' + (t.project ? '<span class="proj">· ' + esc(t.project) + '</span>' : '') + '<span class="rbadge">R' + esc(t.round) + '</span>' + (t.badges.rework ? '<span class="rework">↩ 재작업</span>' : '') + auto + '<span class="ltitle">' + esc(t.title) + '</span><span class="chip s' + t.stageIndex + nc + '">' + esc(t.stageLabel) + '</span></div>' + dir + '<div class="lane-graph">' + laneSvg(t) + '</div><div class="lane-foot"><span>다음: <b>' + esc(t.nextAction) + '</b></span>' + reqd + '<span class="upd">' + esc(t.lastUpdate || '—') + '</span></div></div>';
     }
     function renderList() {
       var act = scene.view.filter(function (t) { return t.stageIndex !== 5; }), done = scene.view.filter(function (t) { return t.stageIndex === 5; });
