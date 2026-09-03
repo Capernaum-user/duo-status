@@ -1,14 +1,82 @@
 {
-  "generatedAt": "2026-09-03T20:39:17",
+  "generatedAt": "2026-09-03T20:40:39",
   "counts": {
     "active": 8,
     "waitingWorker": 3,
-    "working": 2,
-    "waitingReview": 3,
-    "done": 414,
-    "alerts": 17
+    "working": 4,
+    "waitingReview": 1,
+    "done": 416,
+    "alerts": 15
   },
   "jobs": [
+    {
+      "jobId": "Jwp-auto-deploy",
+      "title": "ORDER_Jwp-auto-deploy_R01 — 배포 자동화 · 스테이징 리허설(8904) · 사장님 5분 안내 한 장",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 20:40:03",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 20:40:14",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 20:40:14"
+    },
+    {
+      "jobId": "Jmrgolf-schedule",
+      "title": "ORDER_Jmrgolf-schedule_R01 — 정해진 시각에 스스로 돌게 걸고 이어가기 문서를 갱신한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 20:39:30",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 20:40:13",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 20:40:13"
+    },
     {
       "jobId": "Jwp-auto-runall",
       "title": "ORDER_Jwp-auto-runall_R01 — 무인 전량 실행기 · Day 6~14 실행 · 작업 스케줄러 등록",
@@ -16,10 +84,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -44,9 +112,14 @@
           "time": "2026-09-03 20:38:54",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-03 20:40:02",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-03 20:38:54"
+      "lastUpdate": "2026-09-03 20:40:02"
     },
     {
       "jobId": "Jmrgolf-collect-store",
@@ -55,10 +128,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -93,9 +166,14 @@
           "time": "2026-09-03 20:38:41",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-09-03 20:39:30",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-03 20:38:41"
+      "lastUpdate": "2026-09-03 20:39:30"
     },
     {
       "jobId": "Jmrgolf-extract-fields",
