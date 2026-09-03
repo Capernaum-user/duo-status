@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-03T20:34:34",
+  "generatedAt": "2026-09-03T20:35:56",
   "counts": {
     "active": 8,
-    "waitingWorker": 4,
-    "working": 3,
+    "waitingWorker": 3,
+    "working": 4,
     "waitingReview": 1,
     "done": 414,
     "alerts": 15
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-collect-store",
-      "title": "ORDER_Jmrgolf-collect-store_R01 — 중복 없이 쌓이는 증분 저장소를 만들고 4종을 확장 수집한다",
+      "title": "ORDER_Jmrgolf-collect-store_R02 — 짧은 본문이 잘린 것인지 원래 짧은 것인지 원문 대조로 못 박는다",
       "project": "project-40",
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -44,9 +44,14 @@
           "time": "2026-09-03 20:34:01",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-09-03 20:35:06",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-03 20:34:01"
+      "lastUpdate": "2026-09-03 20:35:06"
     },
     {
       "jobId": "Jmrgolf-extract-fields",
