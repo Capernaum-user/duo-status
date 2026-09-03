@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-03T08:57:00",
+  "generatedAt": "2026-09-03T11:55:53",
   "counts": {
-    "active": 7,
+    "active": 6,
     "waitingWorker": 3,
-    "working": 3,
+    "working": 2,
     "waitingReview": 1,
-    "done": 400,
+    "done": 401,
     "alerts": 15
   },
   "jobs": [
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -49,9 +49,19 @@
           "time": "2026-09-03 08:55:39",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-03 11:54:15",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-03 11:55:38",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-03 08:55:39"
+      "lastUpdate": "2026-09-03 11:55:38"
     },
     {
       "jobId": "Jproject-48-spec",
