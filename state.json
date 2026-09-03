@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-03T20:35:56",
+  "generatedAt": "2026-09-03T20:39:17",
   "counts": {
     "active": 8,
     "waitingWorker": 3,
-    "working": 4,
-    "waitingReview": 1,
+    "working": 2,
+    "waitingReview": 3,
     "done": 414,
-    "alerts": 15
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jwp-auto-runall",
+      "title": "ORDER_Jwp-auto-runall_R01 — 무인 전량 실행기 · Day 6~14 실행 · 작업 스케줄러 등록",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 19:11:26",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 19:13:03",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 20:38:54",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 20:38:54"
+    },
     {
       "jobId": "Jmrgolf-collect-store",
       "title": "ORDER_Jmrgolf-collect-store_R02 — 짧은 본문이 잘린 것인지 원래 짧은 것인지 원문 대조로 못 박는다",
@@ -16,10 +55,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -49,9 +88,14 @@
           "time": "2026-09-03 20:35:06",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-03 20:38:41",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-03 20:35:06"
+      "lastUpdate": "2026-09-03 20:38:41"
     },
     {
       "jobId": "Jmrgolf-extract-fields",
@@ -189,40 +233,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 19:34:46"
-    },
-    {
-      "jobId": "Jwp-auto-runall",
-      "title": "ORDER_Jwp-auto-runall_R01 — 무인 전량 실행기 · Day 6~14 실행 · 작업 스케줄러 등록",
-      "project": "project-45",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 19:11:26",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 19:13:03",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 19:13:03"
     },
     {
       "jobId": "Jwp-mass-runbook",

@@ -34,9 +34,11 @@ function mapStateToScene(state) {
     /* 네온 판정 — 기존 alert/color 는 손대지 않고 시각 표시용 필드만 하나 더한다.
        금색 = 지금 살아 움직이는 것 · 사람이 지금 봐야 하는 것:
               stageIndex 2(CLAIMED 작업 중) · 3(DONE 검토 대기) · autorun.active(무인 러너 가동) · verify RUNNING(교차검증 중).
-       빨강 = 잘못된 것: stageIndex 0(ESCALATED) · flags.protocolError · 교차검증 실패(BOTH_FAIL/CONFLICT/SINGLE_FAIL).
-       발주 대기(1)·보고(미사용)·완료(5)는 켜지 않는다. 빨강이 금색을 이긴다. */
-    var neon = ((j.stageIndex === 0) || !!(j.flags && j.flags.protocolError) || boothFail) ? 'danger'
+       빨강 = 잘못된 것: 위 alert 로 판정된 것 전부(stageIndex 0 ESCALATED · flags.protocolError ·
+              stageLabel 의 [확인필요]) 와 교차검증 실패(BOTH_FAIL/CONFLICT/SINGLE_FAIL).
+       alert 가 곧 danger 다 — 상단 「경고」 카운터가 세는 것과 빨간 네온이 켜지는 노드가 같은 집합이어야 한다.
+       발주 대기(1)·보고(미사용)·완료(5)는 켜지 않는다. 빨강이 금색을 이긴다(삼항 앞자리). */
+    var neon = (alert || boothFail) ? 'danger'
       : (((j.stageIndex === 2) || (j.stageIndex === 3) || !!(j.autorun && j.autorun.active) || boothActive) ? 'gold' : '');
     var stackIndex = (station === 'done') ? (stackN++) : -1;
     var color = alert ? 'rose' : (j.stageIndex === 5 ? 'green' : 'primary');
@@ -790,7 +792,17 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     $('listDoneToggle').addEventListener('click', function () { $('listDoneToggle').classList.toggle('open'); $('listDone').classList.toggle('open'); });
 
     /* ---------- 폴러 ---------- */
-    function setConn(ok) { $('connBanner').classList.toggle('show', !ok); $('statusText').textContent = ok ? '실시간 연결됨' : '연결 끊김'; $('status').classList.toggle('off', !ok); }
+    /* 표시등은 서버 연결 상태를 말한다. 끊기면 빨강으로 굳고, 붙어 있어도 지금 움직이는 잡이
+       0건이면 네온을 끄고 차분한 초록으로 둔다 — 다 빛나면 아무것도 빛나지 않는 것과 같다. */
+    function liveBusy() {
+      return !!(scene && Array.isArray(scene.tokens) && scene.tokens.some(function (t) { return t.neon === 'gold'; }));
+    }
+    function setConn(ok) {
+      $('connBanner').classList.toggle('show', !ok);
+      $('statusText').textContent = ok ? '실시간 연결됨' : '연결 끊김';
+      $('status').classList.toggle('off', !ok);
+      $('status').classList.toggle('busy', ok && liveBusy());
+    }
     function poll() {
       /* 정적 스냅샷 모드(publish\build-site.ps1 산출물): window.__STATE__가 주입돼 있으면
        * fetch/폴링 없이 그 객체로 1회만 렌더하고 이후 poll() 호출(setInterval)은 즉시 반환한다.
