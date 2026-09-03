@@ -36,7 +36,10 @@ function mapStateToScene(state) {
               stageIndex 2(CLAIMED 작업 중) · 3(DONE 검토 대기) · autorun.active(무인 러너 가동) · verify RUNNING(교차검증 중).
        빨강 = 잘못된 것: 위 alert 로 판정된 것 전부(stageIndex 0 ESCALATED · flags.protocolError ·
               stageLabel 의 [확인필요]) 와 교차검증 실패(BOTH_FAIL/CONFLICT/SINGLE_FAIL).
-       alert 가 곧 danger 다 — 상단 「경고」 카운터가 세는 것과 빨간 네온이 켜지는 노드가 같은 집합이어야 한다.
+       danger 는 alert 의 상위집합이다 — alert 로 잡히는 것을 전부 포함하고, 거기에
+       에스컬레이션까지 가지 않은 교차검증 실패(boothFail)를 더한다. 그래서 빨간 네온이
+       상단 「경고」 카운터보다 많이 켜질 수 있고, 그것은 의도다. 검증이 깨진 발주를
+       경고로 올리기 전에 화면에서 먼저 붉게 보여 주는 편이 덜 켜는 것보다 안전하다.
        발주 대기(1)·보고(미사용)·완료(5)는 켜지 않는다. 빨강이 금색을 이긴다(삼항 앞자리). */
     var neon = (alert || boothFail) ? 'danger'
       : (((j.stageIndex === 2) || (j.stageIndex === 3) || !!(j.autorun && j.autorun.active) || boothActive) ? 'gold' : '');

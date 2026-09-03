@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-03T21:00:47",
+  "generatedAt": "2026-09-04T00:33:20",
   "counts": {
     "active": 7,
-    "waitingWorker": 3,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 2,
     "waitingReview": 1,
     "done": 419,
     "alerts": 15
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
@@ -39,9 +39,14 @@
           "time": "2026-09-03 21:00:00",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-04 00:32:43",
+          "state": "PLANNED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-03 21:00:00"
+      "lastUpdate": "2026-09-04 00:32:43"
     },
     {
       "jobId": "Jwp-auto-observe",
@@ -20902,6 +20907,11 @@
       "cause": "autorun-worker-fail"
     },
     {
+      "file": "Jwp-auto-scaffold_autopilot-claim-stale.md",
+      "jobId": "Jwp-auto-scaffold",
+      "cause": "autopilot-claim-stale"
+    },
+    {
       "file": "Jwp-mass-topics_autopilot-unclaimed.md",
       "jobId": "Jwp-mass-topics",
       "cause": "autopilot-unclaimed"
@@ -20938,6 +20948,24 @@
     }
   ],
   "invocations": [
+    {
+      "time": "2026-09-04 00:29:21",
+      "command": "handoff-cycle",
+      "panel": "ObsidianVault",
+      "text": "/cycle 다른 패널에서 /check 했어."
+    },
+    {
+      "time": "2026-09-03 23:20:17",
+      "command": "handoff-cycle",
+      "panel": "project-40",
+      "text": "/cycle project-40에 이어서 진행할 작업이 있는지 확인하고 있다면 시작할 수 있도록 준비해줘. 다른 패널에서 /check 해줄게."
+    },
+    {
+      "time": "2026-09-03 23:19:47",
+      "command": "handoff-cycle",
+      "panel": "project-40",
+      "text": "/cycle project-40에 이어서 진행할 작업이 있는지 확인하고 있다면 시작할 수 있도록 준비해줘. 다른 패널에서 /check 해줄게."
+    },
     {
       "time": "2026-09-03 19:33:02",
       "command": "handoff-review",
@@ -21039,24 +21067,6 @@
       "command": "handoff-check",
       "panel": "01_bostonbau",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-03 00:51:12",
-      "command": "handoff-check",
-      "panel": "project-48",
-      "text": "/check"
-    },
-    {
-      "time": "2026-09-03 00:45:12",
-      "command": "handoff-check",
-      "panel": "project-40",
-      "text": "/check"
-    },
-    {
-      "time": "2026-09-03 00:40:47",
-      "command": "handoff-cycle",
-      "panel": "ObsidianVault",
-      "text": "/cycle 보스턴치과 사이트를 만들다 말았었는데, 이제는 보스턴 치과사이트를 당산역 원덴탈솔루션치과와 유사하게 만들어서 노출을 늘리고 싶어. …"
     }
   ]
 }
