@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-03T19:17:36",
+  "generatedAt": "2026-09-03T19:28:53",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
     "working": 4,
     "waitingReview": 1,
     "done": 411,
-    "alerts": 16
+    "alerts": 15
   },
   "jobs": [
+    {
+      "jobId": "Jwriting-voice-allproject-3",
+      "title": "1단계: 사람 목소리 여덟 가지를 Claude 밖의 모든 에이전트(Gemini·Codex·Antigravity)에도 잇는다",
+      "project": "project-48",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 16:23:29",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 19:28:08",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-03 19:28:08"
+    },
     {
       "jobId": "Jmrgolf-board-map",
       "title": "ORDER_Jmrgolf-board-map_R01 — 필고 게시판 4종의 post_id·category 조합을 실측으로 확정한다",
@@ -194,35 +228,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 16:31:48"
-    },
-    {
-      "jobId": "Jwriting-voice-allproject-3",
-      "title": "1단계: 사람 목소리 여덟 가지를 Claude 밖의 모든 에이전트(Gemini·Codex·Antigravity)에도 잇는다",
-      "project": "project-48",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 16:23:29",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 16:23:29"
     },
     {
       "jobId": "Jwp-mass-cards",
