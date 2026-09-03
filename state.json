@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-03T18:32:18",
+  "generatedAt": "2026-09-03T19:11:36",
   "counts": {
-    "active": 7,
-    "waitingWorker": 4,
+    "active": 8,
+    "waitingWorker": 5,
     "working": 2,
     "waitingReview": 1,
     "done": 411,
     "alerts": 15
   },
   "jobs": [
+    {
+      "jobId": "Jwp-auto-runall",
+      "title": "ORDER_Jwp-auto-runall_R01 — 무인 전량 실행기 · Day 6~14 실행 · 작업 스케줄러 등록",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 19:11:26",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 19:11:26"
+    },
     {
       "jobId": "Jwp-mass-runbook",
       "title": "ORDER_Jwp-mass-runbook_R02 — 하루 실행기 · 상태 대시보드 · 배포 패키지 · 전량 작성 착수",
@@ -17818,6 +17847,60 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "project-50",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-50",
@@ -17882,8 +17965,8 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "jobId": "Jgnosis-dedup",
+      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
       "project": "project-50",
       "targetDir": "<local>",
       "round": 1,
@@ -17908,32 +17991,32 @@
       },
       "timeline": [
         {
-          "time": "2026-07-20 18:50:28",
+          "time": "2026-07-20 17:55:47",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:50:29",
+          "time": "2026-07-20 17:55:50",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:15:05",
+          "time": "2026-07-20 18:21:37",
           "state": "DONE",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:17:29",
+          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:58:17",
+          "time": "2026-07-20 18:30:08",
           "state": "ACCEPTED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-07-20 19:58:17"
+      "lastUpdate": "2026-07-20 18:30:08"
     },
     {
       "jobId": "Jceo-chart-axes",
@@ -17978,60 +18061,6 @@
         },
         {
           "time": "2026-07-20 18:26:23",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
-      "jobId": "Jgnosis-dedup",
-      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
-      "project": "project-50",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:55:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:55:50",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:21:37",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
@@ -20567,6 +20596,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-03 19:08:21",
+      "command": "handoff-cycle",
+      "panel": "project-40",
+      "text": "/cycle 다음 작업 시작해"
+    },
+    {
       "time": "2026-09-03 15:54:13",
       "command": "handoff-cycle",
       "panel": "claude-handoff",
@@ -20676,12 +20711,6 @@
     },
     {
       "time": "2026-08-29 02:03:09",
-      "command": "handoff-auto",
-      "panel": "project-50",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-08-29 01:43:14",
       "command": "handoff-auto",
       "panel": "project-50",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
