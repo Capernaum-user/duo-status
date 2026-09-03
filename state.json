@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-03T19:16:11",
+  "generatedAt": "2026-09-03T19:17:36",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 1,
     "done": 411,
     "alerts": 16
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-03 19:15:09",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-03 19:17:10",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-03 19:15:09"
+      "lastUpdate": "2026-09-03 19:17:10"
     },
     {
       "jobId": "Jwp-auto-runall",
@@ -20630,6 +20635,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-03 19:16:16",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-03 19:14:27",
       "command": "handoff-cycle",
       "panel": "project-48",
@@ -20742,12 +20753,6 @@
       "command": "handoff-cycle",
       "panel": "project-40",
       "text": "/cycle 내가 프롬프트 붙여넣기 귀찮아서졌어. 너가 스스로 기획자이자 감독관이되어서 내용을 전달하고 다른 패널에서 에이전트가 코드작업을 할 …"
-    },
-    {
-      "time": "2026-09-03 00:34:11",
-      "command": "handoff-cycle",
-      "panel": "project-11",
-      "text": "/cycle 지금부터 가장 인지도 높은 블로그를 충분히 다 크롤링해. 그리고 그 글들의 특성을 파악한 후에 문체나 단어선택 문장력 등등 글을 쓰…"
     }
   ]
 }
