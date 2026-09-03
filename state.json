@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-03T14:01:00",
+  "generatedAt": "2026-09-03T14:04:18",
   "counts": {
     "active": 8,
     "waitingWorker": 3,
-    "working": 4,
-    "waitingReview": 1,
+    "working": 3,
+    "waitingReview": 2,
     "done": 405,
-    "alerts": 15
+    "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jwriting-voice-wire",
+      "title": "5단계: 전역 배선 · 같은 분량 재작성 검증 3건 · 사람 목소리 검사기 공격 시험",
+      "project": "project-48",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 13:39:21",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 13:39:35",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 14:03:23",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-03 14:03:23"
+    },
     {
       "jobId": "Jwp-mass-topics",
       "title": "ORDER_Jwp-mass-topics_R02 — 주제 매트릭스 370행 · 생성기와 검사기",
@@ -57,40 +96,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 14:00:46"
-    },
-    {
-      "jobId": "Jwriting-voice-wire",
-      "title": "5단계: 전역 배선 · 같은 분량 재작성 검증 3건 · 사람 목소리 검사기 공격 시험",
-      "project": "project-48",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 13:39:21",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 13:39:35",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-03 13:39:35"
     },
     {
       "jobId": "Jwriting-voice-bank",
