@@ -916,7 +916,7 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     });
 
     function poll() {
-      /* 정적 스냅샷 모드(publishuild-site.ps1 산출물): window.__STATE__가 주입돼 있으면
+      /* 정적 스냅샷 모드(publish\build-site.ps1 산출물): window.__STATE__가 주입돼 있으면
        * fetch/폴링 없이 그 객체로 1회만 렌더하고 이후 poll() 호출은 즉시 반환한다.
        * __STATE__가 없으면 아래 폴링 루프가 돈다 — 요청은 한 번에 하나뿐이다. */
       if (window.__STATE__) {
