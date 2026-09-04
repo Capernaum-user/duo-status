@@ -806,10 +806,119 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
       $('status').classList.toggle('off', !ok);
       $('status').classList.toggle('busy', ok && liveBusy());
     }
+    /* 응답 한 벌을 화면의 다른 조각과 나눠 쓴다. index.html 의 「최근 handoff 요청」 오버레이가
+       같은 /api/state 를 따로 또 부르면 서버가 받는 요청이 두 배라, 여기서 한 번만 받아 넘긴다. */
+    function shareState(st) {
+      try { window.dispatchEvent(new CustomEvent('duo:state', { detail: st })); }
+      catch (e) { /* CustomEvent 미지원 환경에서는 오버레이만 비어 있게 둔다 */ }
+    }
+
+    /* F1 — 서버가 「아직 첫 스캔 중」이라고 답하는 자리(HTTP 503 + {pending:true}). 이것은 끊김이 아니다.
+       백오프를 키우지 않고 서버가 말한 retryAfterMs(없으면 1500ms) 뒤에 그대로 다시 묻는다. */
+    function setPending(body) {
+      $('connBanner').classList.remove('show');
+      $('status').classList.remove('off');
+      $('status').classList.remove('stale');
+      var why = (body && body.updaterError) ? (' · ' + String(body.updaterError).slice(0, 60)) : '';
+      $('statusText').textContent = '첫 스캔 준비 중…' + why;
+    }
+
+    /* F3 — 신선도. 서버가 실어 보낸 scanAgeMs·stale·updaterError 를 사람이 읽는 낱말로 옮긴다.
+       캐시에 값이 남아 있다는 이유로 멈춘 데이터를 「실시간 연결됨」이라 적는 것이 이 보드에서 가장
+       나쁜 실패다. 그래서 서버가 낡았다고 말하면 표시등을 빨간 네온으로 켜고, 마지막 스캔이 몇 초
+       전인지 낱말로 함께 적는다 — 색만으로 말하지 않는다. 연결 자체는 살아 있으므로 배너는 켜지 않는다. */
+    function freshnessNote(st) {
+      if (!st) return '';
+      var err = st.updaterError ? String(st.updaterError) : '';
+      if (!st.stale && !err) return '';
+      var ms = (typeof st.scanAgeMs === 'number') ? st.scanAgeMs : -1;
+      var ageTxt = (ms < 0) ? '아직 한 번도 못 캤음' : ('마지막 스캔 ' + Math.round(ms / 1000) + '초 전');
+      return '갱신 멈춤 · ' + ageTxt + (err ? (' · ' + err.slice(0, 60)) : '');
+    }
+    function applyFreshness(st) {
+      var note = freshnessNote(st);
+      $('status').classList.toggle('stale', !!note);
+      if (note) $('statusText').textContent = note;
+    }
+
+    /* 폴링 간격 규칙 — 최소 2초, 상한 30초.
+       · 이전 요청이 끝난 뒤에야 다음을 예약한다(겹침 없음). 응답이 느리면 주기는 저절로 늘어난다.
+       · 응답이 5초를 넘게 걸리면 다음 간격을 그 소요시간만큼(최대 30초) 벌린다.
+       · 실패하면 간격을 두 배로 늘리고, 성공해서 빨라지면 곧바로 2초로 돌아온다. */
+    var POLL_MIN_MS = 2000, POLL_MAX_MS = 30000, POLL_SLOW_MS = 5000;
+    var pollDelay = POLL_MIN_MS, pollBusy = false, pollTimer = null, pollPaused = false;
+    var waitTimer = null, waitStart = 0;
+
+    /* 기다리는 중이라는 것을 낱말로 적는다 — 색만으로 말하지 않는다. 배너·표시등은 건드리지 않는다. */
+    function stopWaitNotice() { if (waitTimer) { clearInterval(waitTimer); waitTimer = null; } }
+    function startWaitNotice() {
+      stopWaitNotice();
+      waitStart = Date.now();
+      waitTimer = setInterval(function () {
+        var sec = Math.round((Date.now() - waitStart) / 1000);
+        if (sec < 5) return;
+        var el = $('statusText');
+        if (el) el.textContent = '응답 대기 중… ' + sec + '초';
+      }, 1000);
+    }
+
+    function requestState() {
+      var started = Date.now();
+      startWaitNotice();
+      return fetch('/api/state', { cache: 'no-store' }).then(function (r) {
+        if (r.status === 503) {
+          /* 첫 스캔 전에는 서버가 짧은 pending JSON 을 준다. 본문이 없거나 형태가 다르면 진짜 실패로 본다. */
+          return r.json().then(function (b) { return (b && b.pending) ? { __pending: b } : null; },
+            function () { return null; })
+            .then(function (p) { if (!p) throw new Error('HTTP 503'); return p; });
+        }
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+        .then(function (st) {
+          if (st && st.__pending) {                       /* 준비 중 — 연결 끊김이 아니다 */
+            setPending(st.__pending);
+            var wait = Number(st.__pending.retryAfterMs);
+            pollDelay = (isFinite(wait) && wait > 0) ? Math.min(POLL_MAX_MS, wait) : 1500;
+            return;
+          }
+          scene = mapStateToScene(st); applyFilter(); setConn(true); renderDateBar(); renderHud(); if (view === 'list') renderList(); firstLoad = false;
+          applyFreshness(st);
+          shareState(st);
+          var took = Date.now() - started;
+          pollDelay = took > POLL_SLOW_MS ? Math.min(POLL_MAX_MS, took) : POLL_MIN_MS;
+        })
+        .catch(function () {
+          $('status').classList.remove('stale');          /* 진짜 실패는 끊김으로 말한다 */
+          setConn(false); if (firstLoad) $('statusText').textContent = '서버 대기 중…';
+          pollDelay = Math.min(POLL_MAX_MS, Math.max(POLL_MIN_MS * 2, pollDelay * 2));
+        });
+    }
+
+    function scheduleNextPoll(ms) {
+      if (pollTimer) { clearTimeout(pollTimer); pollTimer = null; }
+      if (document.hidden) { pollPaused = true; return; }   /* 안 보는 탭에는 요청을 쏘지 않는다 */
+      pollPaused = false;
+      pollTimer = setTimeout(pollTick, Math.max(0, ms));
+    }
+
+    function pollTick() {
+      pollTimer = null;
+      if (pollBusy) { scheduleNextPoll(POLL_MIN_MS); return; }   /* 진행 중이면 이번 차례를 건너뛴다 */
+      pollBusy = true;
+      var release = function () { pollBusy = false; stopWaitNotice(); scheduleNextPoll(pollDelay); };
+      try { requestState().then(release, release); }             /* 성공·실패·예외 어느 쪽이든 반드시 푼다 */
+      catch (e) { release(); }                                   /* fetch 가 동기로 던져도 잠기지 않는다 */
+    }
+
+    document.addEventListener('visibilitychange', function () {
+      if (!document.hidden && pollPaused && !pollBusy) { pollPaused = false; scheduleNextPoll(0); }
+    });
+
     function poll() {
-      /* 정적 스냅샷 모드(publish\build-site.ps1 산출물): window.__STATE__가 주입돼 있으면
-       * fetch/폴링 없이 그 객체로 1회만 렌더하고 이후 poll() 호출(setInterval)은 즉시 반환한다.
-       * __STATE__가 없으면 아래 기존 폴링 경로가 그대로 실행된다(무변경). */
+      /* 정적 스냅샷 모드(publishuild-site.ps1 산출물): window.__STATE__가 주입돼 있으면
+       * fetch/폴링 없이 그 객체로 1회만 렌더하고 이후 poll() 호출은 즉시 반환한다.
+       * __STATE__가 없으면 아래 폴링 루프가 돈다 — 요청은 한 번에 하나뿐이다. */
       if (window.__STATE__) {
         if (poll._staticDone) return;
         poll._staticDone = true;
@@ -820,13 +929,12 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
         renderHud();
         if (view === 'list') renderList();
         firstLoad = false;
+        shareState(window.__STATE__);
         var stEl = $('statusText');
         if (stEl) stEl.textContent = '스냅샷 · ' + (window.__STATE__.generatedAt || '');
         return;
       }
-      fetch('/api/state', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-        .then(function (st) { scene = mapStateToScene(st); applyFilter(); setConn(true); renderDateBar(); renderHud(); if (view === 'list') renderList(); firstLoad = false; })
-        .catch(function () { setConn(false); if (firstLoad) $('statusText').textContent = '서버 대기 중…'; });
+      pollTick();
     }
 
     /* ---------- init ---------- */
@@ -834,6 +942,6 @@ if (typeof window !== 'undefined' && typeof document !== 'undefined') {
     calMonth = monthOf(selDate === 'ALL' ? todayStr() : selDate);
     renderDateBar();
     window.addEventListener('resize', function () { resize(); });
-    resize(); setView('board'); tick(); poll(); setInterval(poll, 2000);
+    resize(); setView('board'); tick(); poll();
   })();
 }

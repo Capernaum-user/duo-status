@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-04T07:57:41",
+  "generatedAt": "2026-09-04T10:09:04",
   "counts": {
     "active": 8,
-    "waitingWorker": 4,
-    "working": 2,
+    "waitingWorker": 3,
+    "working": 3,
     "waitingReview": 2,
     "done": 419,
     "alerts": 15
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-rulelayer-90",
+      "title": "ORDER_Jmrgolf-rulelayer-90 — 결제 없이 문맥 정제 90% 돌파 — 결정론 규칙층과 지수 백오프",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-04 07:53:58",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-04 10:08:07",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-04 10:08:07"
+    },
     {
       "jobId": "Jwp-auto-scaffold",
       "title": "ORDER_Jwp-auto-scaffold_R01 — 범용 뼈대 `new-site.ps1` · 어떤 사이트든 명령 하나로 · 데모 사이트 8905",
@@ -57,35 +91,6 @@
         }
       ],
       "lastUpdate": "2026-09-04 07:56:48"
-    },
-    {
-      "jobId": "Jmrgolf-rulelayer-90",
-      "title": "ORDER_Jmrgolf-rulelayer-90 — 결제 없이 문맥 정제 90% 돌파 — 결정론 규칙층과 지수 백오프",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-04 07:53:58",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-04 07:53:58"
     },
     {
       "jobId": "Jwp-auto-observe",
@@ -20931,6 +20936,11 @@
       "cause": "autorun-roundcap"
     },
     {
+      "file": "Jmrgolf-rulelayer-90_autopilot-unclaimed.md",
+      "jobId": "Jmrgolf-rulelayer-90",
+      "cause": "autopilot-unclaimed"
+    },
+    {
       "file": "Jneo4j-durable_autorun-worker-fail.md",
       "jobId": "Jneo4j-durable",
       "cause": "autorun-worker-fail"
@@ -20987,6 +20997,12 @@
     }
   ],
   "invocations": [
+    {
+      "time": "2026-09-04 10:07:31",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "안티그래비티에게 /check 명령을 내렸어 너도 진행해"
+    },
     {
       "time": "2026-09-04 00:29:21",
       "command": "handoff-cycle",
@@ -21099,12 +21115,6 @@
       "time": "2026-09-03 06:32:04",
       "command": "handoff-check",
       "panel": "project-40",
-      "text": "/check"
-    },
-    {
-      "time": "2026-09-03 01:04:20",
-      "command": "handoff-check",
-      "panel": "01_bostonbau",
       "text": "/check"
     }
   ]

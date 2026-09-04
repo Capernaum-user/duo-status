@@ -279,10 +279,19 @@ body{font-size:14px;-webkit-font-smoothing:antialiased;font-variant-numeric:tabu
 .status.off .dot-live{background:var(--neon-danger);animation:none;
   box-shadow:0 0 5px rgba(var(--neon-danger-glow),.7),0 0 16px rgba(var(--neon-danger-glow),.35);}
 .status.off #statusText{color:var(--neon-danger-ink);font-weight:700;}
+/* 갱신 멈춤(.stale)=연결은 붙어 있는데 서버가 낡은 값을 주고 있다. 끊김과 구별되게 빨강이 숨을 쉰다.
+   낡은 것을 새것처럼 보여 주지 않는 것이 이 보드의 첫 약속이라, 옆 낱말이 몇 초 전 것인지 말한다. */
+@keyframes neonDotDanger{
+  0%,100%{box-shadow:0 0 4px rgba(var(--neon-danger-glow),.55),0 0 12px rgba(var(--neon-danger-glow),.28);}
+  50%    {box-shadow:0 0 7px rgba(var(--neon-danger-glow),.9),0 0 20px rgba(var(--neon-danger-glow),.5);}
+}
+.status.stale .dot-live{background:var(--neon-danger);animation:neonDotDanger 2.2s ease-in-out infinite;
+  box-shadow:0 0 5px rgba(var(--neon-danger-glow),.7),0 0 16px rgba(var(--neon-danger-glow),.35);}
+.status.stale #statusText{color:var(--neon-danger-ink);font-weight:700;}
 
 /* 번쩍임을 끈 사용자에게는 정지된 발광만 남긴다 */
 @media (prefers-reduced-motion: reduce){
   .neon-gold,.neon-danger,.lane.neon-gold,.lane.neon-danger,
   .chip.neon-gold,.chip.neon-danger,.pchip.neon-gold,.pchip.neon-danger,
-  .banner.show,.dot-live,.status.busy .dot-live{animation:none!important;}
+  .banner.show,.dot-live,.status.busy .dot-live,.status.stale .dot-live{animation:none!important;}
 }
