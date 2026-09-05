@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 03:10:48 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 03:17:18 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-06T03:10:46",
+  "generatedAt": "2026-09-06T03:17:15",
   "counts": {
     "active": 10,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 2,
     "done": 422,
     "alerts": 16
@@ -90,14 +90,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -108,9 +108,14 @@
           "time": "2026-09-06 03:09:38",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-06 03:15:29",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-06 03:09:38"
+      "lastUpdate": "2026-09-06 03:15:29"
     },
     {
       "jobId": "Jmrgolf-community-ui",
@@ -21272,6 +21277,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-06 03:14:47",
+      "command": "handoff-check",
+      "panel": "project-45",
+      "text": "/check 10min"
+    },
+    {
+      "time": "2026-09-06 03:13:19",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-06 03:07:29",
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
@@ -21378,18 +21395,6 @@
       "command": "handoff-check",
       "panel": "project-48",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-03 12:09:30",
-      "command": "handoff-check",
-      "panel": "ObsidianVault",
-      "text": "/check 10min"
-    },
-    {
-      "time": "2026-09-03 12:04:46",
-      "command": "handoff-cycle",
-      "panel": "ObsidianVault",
-      "text": "/cycle 옮겨도 돼. 그리고 내가 원하는게 정확히 무엇인지 이해한거 맞지? 나는 내가 원하는 블로그나 사이트를 만들어서 상위노출을 노리고 있…"
     }
   ]
 };</script>
