@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T02:23:09",
+  "generatedAt": "2026-09-06T02:48:04",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
@@ -24,7 +24,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -21130,6 +21130,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-06 02:29:57",
+      "command": "handoff-cycle",
+      "panel": "project-40",
+      "text": "/cycle 정양선 대표님이 내게 의뢰한 형님이셔 그래서 입금자는 이선민 님으로 입금자명확인되었던건데 정양선 대표님 명의로 계약했으니 앞으로 내…"
+    },
+    {
       "time": "2026-09-04 14:33:56",
       "command": "handoff-check",
       "panel": "project-40",
@@ -21242,12 +21248,6 @@
       "command": "handoff-check",
       "panel": "01_bostonbau",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-03 07:30:28",
-      "command": "handoff-cycle",
-      "panel": "ObsidianVault",
-      "text": "/cycle 그리고 전화문의를 눌렀을때 단순히 웹페이지로 연결되도록 변경해줘. 그리고 그 페이지에서 고객의 정보와 문의 내용 그리고 문의 종류를…"
     }
   ]
 }
