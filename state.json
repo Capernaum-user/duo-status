@@ -1,48 +1,14 @@
 {
-  "generatedAt": "2026-09-07T03:32:33",
+  "generatedAt": "2026-09-07T03:44:01",
   "counts": {
-    "active": 9,
+    "active": 8,
     "waitingWorker": 4,
     "working": 3,
-    "waitingReview": 2,
-    "done": 440,
-    "alerts": 17
+    "waitingReview": 1,
+    "done": 441,
+    "alerts": 16
   },
   "jobs": [
-    {
-      "jobId": "Jmrgolf-web-refresh",
-      "title": "ORDER_Jmrgolf-web-refresh_R01 — 커뮤니티 화면을 오늘 정제한 데이터로 다시 빌드해 낡은 본문이 남지 않게 한다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-07 03:00:12",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-07 03:32:12",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-07 03:32:12"
-    },
     {
       "jobId": "Jproject-28-phase4b-hybrid-ask",
       "title": "ORDER_Jproject-28-phase4b-hybrid-ask_R03 — R2 가 정직하게 올려보낸 정책 결정을 planner 가 내린다: `internal` 을 `restricted_visibility` 에서 뺀다",
@@ -50,10 +16,10 @@
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -108,9 +74,48 @@
           "time": "2026-09-07 03:29:57",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-09-07 03:43:26",
+          "state": "ACCEPTED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-07 03:29:57"
+      "lastUpdate": "2026-09-07 03:43:26"
+    },
+    {
+      "jobId": "Jmrgolf-web-refresh",
+      "title": "ORDER_Jmrgolf-web-refresh_R01 — 커뮤니티 화면을 오늘 정제한 데이터로 다시 빌드해 낡은 본문이 남지 않게 한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-07 03:00:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-07 03:32:12",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 03:32:12"
     },
     {
       "jobId": "Jmrgolf-uptime-watchdog",
