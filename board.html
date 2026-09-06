@@ -71,47 +71,18 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 19:32:06 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 19:37:19 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-06T19:32:05",
+  "generatedAt": "2026-09-06T19:37:18",
   "counts": {
-    "active": 9,
+    "active": 8,
     "waitingWorker": 5,
     "working": 2,
-    "waitingReview": 2,
+    "waitingReview": 1,
     "done": 432,
     "alerts": 17
   },
   "jobs": [
-    {
-      "jobId": "Jmrgolf-apikey-truth",
-      "title": "ORDER_Jmrgolf-apikey-truth_R01 — 누적 실행기가 인증 실패를 쿼터 부족으로 위장하지 못하게 막고 올바른 키로 돌게 한다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-06 19:31:50",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-06 19:31:50"
-    },
     {
       "jobId": "Jproject-28-phase2-structure",
       "title": "ORDER_Jproject-28-phase2-structure_R03 — build --structure 의 ExternalArtifact 진동을 없애 진짜 고정점을 만들고, 문서·커밋·REPORT 를 다시 제출한다",
@@ -119,12 +90,12 @@
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -141,10 +112,10 @@
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 2,
-        "result": "ERROR"
+        "result": "REWORK-CAP"
       },
       "timeline": [
         {
@@ -186,9 +157,48 @@
           "time": "2026-09-06 19:28:51",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-09-06 19:36:40",
+          "state": "ACCEPTED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-06 19:36:59",
+          "state": "ESCALATED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-06 19:28:51"
+      "lastUpdate": "2026-09-06 19:36:59"
+    },
+    {
+      "jobId": "Jmrgolf-apikey-truth",
+      "title": "ORDER_Jmrgolf-apikey-truth_R01 — 누적 실행기가 인증 실패를 쿼터 부족으로 위장하지 못하게 막고 올바른 키로 돌게 한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-06 19:31:50",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-06 19:31:50"
     },
     {
       "jobId": "Jwriting-voice-allagents",
@@ -21678,6 +21688,11 @@
       "file": "Jproject-28-p0_autorun-worker-fail.md",
       "jobId": "Jproject-28-p0",
       "cause": "autorun-worker-fail"
+    },
+    {
+      "file": "Jproject-28-phase2-structure_autorun-roundcap.md",
+      "jobId": "Jproject-28-phase2-structure",
+      "cause": "autorun-roundcap"
     },
     {
       "file": "Jproject-28-phase2-structure_autorun-worker-fail.md",
