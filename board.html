@@ -71,18 +71,52 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 15:22:51 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 15:37:34 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-06T15:22:50",
+  "generatedAt": "2026-09-06T15:37:33",
   "counts": {
     "active": 10,
-    "waitingWorker": 5,
+    "waitingWorker": 4,
     "working": 4,
-    "waitingReview": 1,
+    "waitingReview": 2,
     "done": 430,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-cache-safety",
+      "title": "ORDER_Jmrgolf-cache-safety — 오늘 캐시 138건이 동시쓰기로 날아갔다. 다시 그러지 않게 잠금과 원자적 쓰기를 넣는다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-06 15:14:22",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 15:36:11",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-06 15:36:11"
+    },
     {
       "jobId": "Jproject-28-phase2-structure",
       "title": "ORDER_Jproject-28-phase2-structure_R01 — project-28 Phase 2: agent-office 런 901건과 템플릿 노트를 구조 객체로 뽑아 Neo4j 에 올린다 (LLM 0회)",
@@ -174,35 +208,6 @@
         }
       ],
       "lastUpdate": "2026-09-06 15:16:01"
-    },
-    {
-      "jobId": "Jmrgolf-cache-safety",
-      "title": "ORDER_Jmrgolf-cache-safety — 오늘 캐시 138건이 동시쓰기로 날아갔다. 다시 그러지 않게 잠금과 원자적 쓰기를 넣는다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-06 15:14:22",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-06 15:14:22"
     },
     {
       "jobId": "Jmrgolf-recall-90",
@@ -21643,6 +21648,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-06 15:24:21",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-06 15:22:24",
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
@@ -21755,12 +21766,6 @@
       "command": "handoff-cycle",
       "panel": "project-40",
       "text": "/cycle 다음 작업 시작해"
-    },
-    {
-      "time": "2026-09-03 15:54:13",
-      "command": "handoff-cycle",
-      "panel": "claude-handoff",
-      "text": "<task-notification> <task-id>wdz4w9izj</task-id> <tool-use-id>toolu_01SczusHdQ6s…"
     }
   ]
 };</script>
