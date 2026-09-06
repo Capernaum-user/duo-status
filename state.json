@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T19:15:16",
+  "generatedAt": "2026-09-06T19:16:31",
   "counts": {
     "active": 8,
     "waitingWorker": 4,
@@ -9,6 +9,60 @@
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jwriting-voice-allagents",
+      "title": "1단계 R2: 네 파일에 박힌 깨진 경로를 고친다",
+      "project": "project-48",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-03 16:23:29",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-03 19:28:08",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-03 19:30:40",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-03 19:34:45",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-03 19:34:46",
+          "state": "ACCEPTED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 19:16:26",
+          "state": "ACCEPTED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-06 19:16:26"
+    },
     {
       "jobId": "Jwp-auto-scaffold",
       "title": "ORDER_Jwp-auto-scaffold_R01 — 범용 뼈대 `new-site.ps1` · 어떤 사이트든 명령 하나로 · 데모 사이트 8905",
@@ -1005,55 +1059,6 @@
         }
       ],
       "lastUpdate": "2026-09-03 19:59:18"
-    },
-    {
-      "jobId": "Jwriting-voice-allagents",
-      "title": "1단계 R2: 네 파일에 박힌 깨진 경로를 고친다",
-      "project": "project-48",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-03 16:23:29",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-03 19:28:08",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-03 19:30:40",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-03 19:34:45",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-09-03 19:34:46",
-          "state": "ACCEPTED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-03 19:34:46"
     },
     {
       "jobId": "Jwp-mass-runbook",
