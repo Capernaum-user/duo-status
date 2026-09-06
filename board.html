@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 19:45:30 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 20:18:43 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-06T19:45:30",
+  "generatedAt": "2026-09-06T20:18:43",
   "counts": {
-    "active": 9,
+    "active": 8,
     "waitingWorker": 5,
-    "working": 3,
+    "working": 2,
     "waitingReview": 1,
     "done": 433,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
     {
@@ -88,14 +88,14 @@
       "title": "ORDER_Jproject-28-phase3-chunk-embed_R01 — project-28 Phase 3: 480토큰 캡 청킹 · MiniLM 임베딩 · Neo4j 벡터·전문 인덱스 (LLM 0회)",
       "project": "project-28",
       "targetDir": "<local>",
-      "round": 0,
+      "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -112,10 +112,10 @@
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "worker",
         "round": 1,
-        "result": "ESCALATED"
+        "result": "ERROR"
       },
       "timeline": [
         {
@@ -132,9 +132,14 @@
           "time": "2026-09-06 19:44:17",
           "state": "CLAIMED",
           "round": 0
+        },
+        {
+          "time": "2026-09-06 20:18:28",
+          "state": "ESCALATED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-06 19:44:17"
+      "lastUpdate": "2026-09-06 20:18:28"
     },
     {
       "jobId": "Jproject-28-phase2-structure",
@@ -21723,6 +21728,11 @@
       "cause": "autorun-roundcap"
     },
     {
+      "file": "Jmrgolf-apikey-truth_autopilot-unclaimed.md",
+      "jobId": "Jmrgolf-apikey-truth",
+      "cause": "autopilot-unclaimed"
+    },
+    {
       "file": "Jmrgolf-project-49-100_autopilot-unclaimed.md",
       "jobId": "Jmrgolf-project-49-100",
       "cause": "autopilot-unclaimed"
@@ -21761,6 +21771,11 @@
       "file": "Jproject-28-phase3-chunk-embed_autorun-verify-nopass.md",
       "jobId": "Jproject-28-phase3-chunk-embed",
       "cause": "autorun-verify-nopass"
+    },
+    {
+      "file": "Jproject-28-phase3-chunk-embed_autorun-worker-fail.md",
+      "jobId": "Jproject-28-phase3-chunk-embed",
+      "cause": "autorun-worker-fail"
     },
     {
       "file": "Jwp-auto-scaffold_autopilot-claim-stale.md",
