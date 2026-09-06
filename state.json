@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T10:27:04",
+  "generatedAt": "2026-09-06T10:29:19",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
@@ -181,7 +181,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -21277,6 +21277,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-06 10:27:29",
+      "command": "handoff-cycle",
+      "panel": "project-40",
+      "text": "/cycle"
+    },
+    {
       "time": "2026-09-06 03:14:47",
       "command": "handoff-check",
       "panel": "project-45",
@@ -21388,12 +21394,6 @@
       "time": "2026-09-03 13:36:47",
       "command": "handoff-check",
       "panel": "01_order",
-      "text": "/check"
-    },
-    {
-      "time": "2026-09-03 12:09:41",
-      "command": "handoff-check",
-      "panel": "project-48",
       "text": "/check"
     }
   ]
