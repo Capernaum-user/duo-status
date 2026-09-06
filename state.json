@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-06T15:47:21",
+  "generatedAt": "2026-09-06T18:43:03",
   "counts": {
-    "active": 8,
+    "active": 9,
     "waitingWorker": 4,
-    "working": 3,
+    "working": 4,
     "waitingReview": 1,
     "done": 431,
-    "alerts": 17
+    "alerts": 16
   },
   "jobs": [
     {
       "jobId": "Jproject-28-phase2-structure",
-      "title": "ORDER_Jproject-28-phase2-structure_R01 — project-28 Phase 2: agent-office 런 901건과 템플릿 노트를 구조 객체로 뽑아 Neo4j 에 올린다 (LLM 0회)",
+      "title": "ORDER_Jproject-28-phase2-structure_R02 — Phase 2 마무리 라운드: 이미 적재된 구조 그래프를 검증하고 문서·커밋·REPORT 를 제출한다",
       "project": "project-28",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
-        "escalated": true,
+        "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": {
         "status": "DONE",
@@ -38,7 +38,7 @@
         "runs": 1
       },
       "autorun": {
-        "active": false,
+        "active": true,
         "phase": "worker",
         "round": 1,
         "result": "ERROR"
@@ -58,9 +58,19 @@
           "time": "2026-09-06 15:46:33",
           "state": "ESCALATED",
           "round": 1
+        },
+        {
+          "time": "2026-09-06 18:42:31",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 18:42:35",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-06 15:46:33"
+      "lastUpdate": "2026-09-06 18:42:35"
     },
     {
       "jobId": "Jmrgolf-cache-safety",
