@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-06T23:27:00",
+  "generatedAt": "2026-09-06T23:37:12",
   "counts": {
     "active": 9,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 1,
+    "working": 2,
+    "waitingReview": 2,
     "done": 434,
     "alerts": 16
   },
@@ -16,21 +16,21 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 2,
         "result": null
       },
@@ -54,9 +54,14 @@
           "time": "2026-09-06 23:15:30",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-06 23:36:17",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-06 23:15:30"
+      "lastUpdate": "2026-09-06 23:36:17"
     },
     {
       "jobId": "Jproject-28-phase3-chunk-embed",
