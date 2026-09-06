@@ -71,18 +71,86 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 19:16:31 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 19:17:48 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-06T19:16:31",
+  "generatedAt": "2026-09-06T19:17:47",
   "counts": {
     "active": 8,
-    "waitingWorker": 4,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 2,
     "waitingReview": 1,
     "done": 432,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jproject-28-phase2-structure",
+      "title": "ORDER_Jproject-28-phase2-structure_R02 — Phase 2 마무리 라운드: 이미 적재된 구조 그래프를 검증하고 문서·커밋·REPORT 를 제출한다",
+      "project": "project-28",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "교차검증 미완결(INCONCLUSIVE) — 확인 후 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260906-151814-11bb",
+        "startedAt": "2026-09-06 15:18:14",
+        "finishedAt": "2026-09-06 15:22:15",
+        "runs": 1
+      },
+      "autorun": {
+        "active": true,
+        "phase": "review",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-09-06 15:18:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 15:22:15",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 15:46:33",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 18:42:31",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 18:42:35",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 19:17:43",
+          "state": "REWORK",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-06 19:17:43"
+    },
     {
       "jobId": "Jwriting-voice-allagents",
       "title": "1단계 R2: 네 파일에 박힌 깨진 경로를 고친다",
@@ -195,69 +263,6 @@
         }
       ],
       "lastUpdate": "2026-09-06 19:14:48"
-    },
-    {
-      "jobId": "Jproject-28-phase2-structure",
-      "title": "ORDER_Jproject-28-phase2-structure_R02 — Phase 2 마무리 라운드: 이미 적재된 구조 그래프를 검증하고 문서·커밋·REPORT 를 제출한다",
-      "project": "project-28",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": {
-        "status": "DONE",
-        "decision": "INCONCLUSIVE",
-        "a": "PROTOCOL_ERROR",
-        "b": "PROTOCOL_ERROR",
-        "relayJobId": "J20260906-151814-11bb",
-        "startedAt": "2026-09-06 15:18:14",
-        "finishedAt": "2026-09-06 15:22:15",
-        "runs": 1
-      },
-      "autorun": {
-        "active": true,
-        "phase": "review",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-09-06 15:18:12",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 15:22:15",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 15:46:33",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 18:42:31",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-06 18:42:35",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-06 18:42:35"
     },
     {
       "jobId": "Jmrgolf-cache-safety",
