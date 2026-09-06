@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-07T05:59:40",
+  "generatedAt": "2026-09-07T06:04:52",
   "counts": {
     "active": 8,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 2,
-    "done": 445,
+    "working": 3,
+    "waitingReview": 1,
+    "done": 446,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jproject-28-phase4c-retune",
+      "title": "ORDER_Jproject-28-phase4c-retune_R01 — project-28 Phase 4c: 그래프 점수 전파를 「시드 보존·가산」으로 바꿔 C ≥ B 를 구조로 보장하고 S1·S3·S4 로 재측정한다",
+      "project": "project-28",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-09-07 06:04:33",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-07 06:04:34",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 06:04:34"
+    },
     {
       "jobId": "Jproject-28-phase5b-eval-run",
       "title": "ORDER_Jproject-28-phase5b-eval-run_R01 — project-28 Phase 5b: 3-arm 전수 측정 · 게이트 판정 · VERDICT (숫자를 미화하지 않는다)",
@@ -16,23 +55,23 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "review",
         "round": 1,
-        "result": null
+        "result": "ACCEPTED"
       },
       "timeline": [
         {
@@ -49,9 +88,14 @@
           "time": "2026-09-07 05:58:57",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-07 06:03:50",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-07 05:58:57"
+      "lastUpdate": "2026-09-07 06:03:50"
     },
     {
       "jobId": "Jproject-28-phase5a-gold-harness",
@@ -18384,11 +18428,11 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
-      "jobId": "Jmermaid-render",
-      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
       "project": "project-53",
       "targetDir": "<local>",
-      "round": 4,
+      "round": 1,
       "originDir": null,
       "stage": "OUT-OF-BAND-DONE",
       "stageIndex": 5,
@@ -18399,70 +18443,40 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": true
+        "rework": false
       },
       "verify": null,
       "autorun": {
         "active": false,
-        "phase": "review",
-        "round": 3,
-        "result": "REWORK-CAP"
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
       },
       "timeline": [
         {
-          "time": "2026-07-22 09:28:56",
+          "time": "2026-07-21 20:48:47",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-22 09:28:58",
+          "time": "2026-07-21 20:48:49",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-22 09:38:53",
-          "state": "DONE",
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
           "round": 1
-        },
-        {
-          "time": "2026-07-22 09:43:43",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:51:26",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:55:18",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:02:40",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:08:32",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-07-22 10:10:33",
-          "state": "PLANNED",
-          "round": 4
         },
         {
           "time": "2026-07-25 15:38:15",
           "state": "ESCALATED",
-          "round": 4
+          "round": 1
         },
         {
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
-          "round": 4
+          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -18557,11 +18571,11 @@
       "lastUpdate": "2026-07-25 18:12:36"
     },
     {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "jobId": "Jmermaid-render",
+      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
       "project": "project-53",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 4,
       "originDir": null,
       "stage": "OUT-OF-BAND-DONE",
       "stageIndex": 5,
@@ -18572,40 +18586,70 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": {
         "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
+        "phase": "review",
+        "round": 3,
+        "result": "REWORK-CAP"
       },
       "timeline": [
         {
-          "time": "2026-07-21 20:48:47",
+          "time": "2026-07-22 09:28:56",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-21 20:48:49",
+          "time": "2026-07-22 09:28:58",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
+          "time": "2026-07-22 09:38:53",
+          "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-22 09:43:43",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:51:26",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:55:18",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:02:40",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:08:32",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-07-22 10:10:33",
+          "state": "PLANNED",
+          "round": 4
         },
         {
           "time": "2026-07-25 15:38:15",
           "state": "ESCALATED",
-          "round": 1
+          "round": 4
         },
         {
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
-          "round": 1
+          "round": 4
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -19571,6 +19615,60 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "project-53",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-53",
@@ -19635,8 +19733,8 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "jobId": "Jgnosis-dedup",
+      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
       "project": "project-53",
       "targetDir": "<local>",
       "round": 1,
@@ -19661,32 +19759,32 @@
       },
       "timeline": [
         {
-          "time": "2026-07-20 18:50:28",
+          "time": "2026-07-20 17:55:47",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:50:29",
+          "time": "2026-07-20 17:55:50",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:15:05",
+          "time": "2026-07-20 18:21:37",
           "state": "DONE",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:17:29",
+          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:58:17",
+          "time": "2026-07-20 18:30:08",
           "state": "ACCEPTED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-07-20 19:58:17"
+      "lastUpdate": "2026-07-20 18:30:08"
     },
     {
       "jobId": "Jceo-chart-axes",
@@ -19731,60 +19829,6 @@
         },
         {
           "time": "2026-07-20 18:26:23",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
-      "jobId": "Jgnosis-dedup",
-      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
-      "project": "project-53",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:55:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:55:50",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:21:37",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
@@ -22360,6 +22404,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-07 06:04:40",
+      "command": "handoff-auto",
+      "panel": "01_foundry-ontology-corpus",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-09-07 04:41:26",
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
@@ -22472,12 +22522,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-06 15:22:24",
-      "command": "handoff-auto",
-      "panel": "01_foundry-ontology-corpus",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     }
   ]
 }
