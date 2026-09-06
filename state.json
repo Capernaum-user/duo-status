@@ -1,14 +1,83 @@
 {
-  "generatedAt": "2026-09-07T00:32:00",
+  "generatedAt": "2026-09-07T00:33:14",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 4,
-    "waitingReview": 1,
+    "working": 3,
+    "waitingReview": 2,
     "done": 436,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jproject-28-phase4a-query-ir",
+      "title": "ORDER_Jproject-28-phase4a-query-ir_R03 — R2 잔여: 컴파일러 전 구간 unhashable 입력 크래시 4곳 봉인 + Chunk 기준값 재설정",
+      "project": "project-28",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "review",
+        "round": 3,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-09-06 22:36:06",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 22:36:07",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 23:15:08",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 23:15:30",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 23:36:17",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-07 00:03:30",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-07 00:04:52",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-07 00:33:01",
+          "state": "DONE",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-07 00:33:01"
+    },
     {
       "jobId": "Jmrgolf-uptime-evidence",
       "title": "ORDER_Jmrgolf-uptime-evidence_R01 — 가동률 증거에서 조작된 시험 기록을 걷어내고 검사기의 중복 계수를 바로잡는다",
@@ -130,70 +199,6 @@
         }
       ],
       "lastUpdate": "2026-09-07 00:14:43"
-    },
-    {
-      "jobId": "Jproject-28-phase4a-query-ir",
-      "title": "ORDER_Jproject-28-phase4a-query-ir_R03 — R2 잔여: 컴파일러 전 구간 unhashable 입력 크래시 4곳 봉인 + Chunk 기준값 재설정",
-      "project": "project-28",
-      "targetDir": "<local>",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": true,
-        "phase": "worker",
-        "round": 3,
-        "result": null
-      },
-      "timeline": [
-        {
-          "time": "2026-09-06 22:36:06",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 22:36:07",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 23:15:08",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-06 23:15:30",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-06 23:36:17",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-09-07 00:03:30",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-09-07 00:04:52",
-          "state": "CLAIMED",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-09-07 00:04:52"
     },
     {
       "jobId": "Jproject-28-phase3-chunk-embed",
