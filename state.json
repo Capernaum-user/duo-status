@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-07T01:12:34",
+  "generatedAt": "2026-09-07T01:14:53",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 3,
-    "waitingReview": 2,
-    "done": 438,
-    "alerts": 17
+    "working": 4,
+    "waitingReview": 1,
+    "done": 439,
+    "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-uptime-watchdog",
+      "title": "ORDER_Jmrgolf-uptime-watchdog_R01 — 표본 한 건으로 합격을 찍는 것을 막고 빠진 회차를 심사 전에 잡아낸다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-07 01:13:52",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-07 01:14:51",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 01:14:51"
+    },
     {
       "jobId": "Jmrgolf-test-isolation",
       "title": "ORDER_Jmrgolf-test-isolation_R01 — 시험이 운영 캐시에 가짜 항목을 심는 것을 막고 흔들리는 동시성 시험을 잡는다",
@@ -16,10 +50,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -44,9 +78,14 @@
           "time": "2026-09-07 01:11:32",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-07 01:13:51",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-07 01:11:32"
+      "lastUpdate": "2026-09-07 01:13:51"
     },
     {
       "jobId": "Jproject-28-phase4b-hybrid-ask",
@@ -101,7 +140,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
