@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-06T14:34:50",
+  "generatedAt": "2026-09-06T14:41:04",
   "counts": {
     "active": 10,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 1,
     "done": 428,
     "alerts": 17
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-06 14:33:56",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-06 14:40:11",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-06 14:33:56"
+      "lastUpdate": "2026-09-06 14:40:11"
     },
     {
       "jobId": "Jmrgolf-recall-90",
@@ -21467,6 +21472,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-06 14:39:09",
+      "command": "handoff-check",
+      "panel": "project-28",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-06 10:35:46",
       "command": "handoff-check",
       "panel": "project-40",
@@ -21579,12 +21590,6 @@
       "command": "handoff-check",
       "panel": "ObsidianVault",
       "text": "다른 패널에서 /check 했어. 확인후 너도 진행해"
-    },
-    {
-      "time": "2026-09-03 13:37:54",
-      "command": "handoff-check",
-      "panel": "project-45",
-      "text": "/check"
     }
   ]
 }
