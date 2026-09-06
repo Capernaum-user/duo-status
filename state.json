@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-07T00:15:49",
+  "generatedAt": "2026-09-07T00:17:12",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 1,
     "done": 435,
-    "alerts": 17
+    "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-context-90",
+      "title": "ORDER_Jmrgolf-context-90_R01 — 살아 있는 키로 실패분을 재호출해 문맥 재현율을 90% 위로 올린다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-07 00:14:43",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-07 00:15:36",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 00:15:36"
+    },
     {
       "jobId": "Jmrgolf-apikey-truth",
       "title": "ORDER_Jmrgolf-apikey-truth_R01 — 누적 실행기가 인증 실패를 쿼터 부족으로 위장하지 못하게 막고 올바른 키로 돌게 한다",
@@ -48,35 +82,6 @@
         {
           "time": "2026-09-07 00:14:43",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-07 00:14:43"
-    },
-    {
-      "jobId": "Jmrgolf-context-90",
-      "title": "ORDER_Jmrgolf-context-90_R01 — 살아 있는 키로 실패분을 재호출해 문맥 재현율을 90% 위로 올린다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-07 00:14:43",
-          "state": "PLANNED",
           "round": 1
         }
       ],
