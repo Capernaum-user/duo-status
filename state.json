@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-06T19:17:47",
+  "generatedAt": "2026-09-06T19:19:03",
   "counts": {
     "active": 8,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 1,
     "done": 432,
     "alerts": 16
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jproject-28-phase2-structure",
-      "title": "ORDER_Jproject-28-phase2-structure_R02 — Phase 2 마무리 라운드: 이미 적재된 구조 그래프를 검증하고 문서·커밋·REPORT 를 제출한다",
+      "title": "ORDER_Jproject-28-phase2-structure_R03 — build --structure 의 ExternalArtifact 진동을 없애 진짜 고정점을 만들고, 문서·커밋·REPORT 를 다시 제출한다",
       "project": "project-28",
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 미완결(INCONCLUSIVE) — 확인 후 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -39,8 +39,8 @@
       },
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 1,
+        "phase": "worker",
+        "round": 2,
         "result": "ERROR"
       },
       "timeline": [
@@ -73,9 +73,14 @@
           "time": "2026-09-06 19:17:43",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-09-06 19:18:17",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-06 19:17:43"
+      "lastUpdate": "2026-09-06 19:18:17"
     },
     {
       "jobId": "Jwriting-voice-allagents",
@@ -21614,6 +21619,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-06 19:18:33",
+      "command": "handoff-auto",
+      "panel": "01_foundry-ontology-corpus",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-09-06 18:43:06",
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
@@ -21726,12 +21737,6 @@
       "command": "handoff-cycle",
       "panel": "project-48",
       "text": "⎿ Stop hook error: ⛔ 오토파일럿 — 단계 1/1 (Jwriting-voice-allagents)을 45분째 **아무도 집어가지 …"
-    },
-    {
-      "time": "2026-09-03 19:12:29",
-      "command": "handoff-check",
-      "panel": "project-45",
-      "text": "/check"
     }
   ]
 }
