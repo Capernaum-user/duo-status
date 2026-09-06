@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-07T04:01:07",
+  "generatedAt": "2026-09-07T04:02:19",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 1,
     "done": 442,
-    "alerts": 17
+    "alerts": 16
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -34,9 +34,14 @@
           "time": "2026-09-07 04:00:33",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-07 04:01:24",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-07 04:00:33"
+      "lastUpdate": "2026-09-07 04:01:24"
     },
     {
       "jobId": "Jmrgolf-web-refresh",
