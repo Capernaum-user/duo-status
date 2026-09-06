@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-07T02:55:44",
+  "generatedAt": "2026-09-07T03:00:19",
   "counts": {
-    "active": 8,
-    "waitingWorker": 4,
+    "active": 9,
+    "waitingWorker": 5,
     "working": 2,
     "waitingReview": 2,
     "done": 440,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-web-refresh",
+      "title": "ORDER_Jmrgolf-web-refresh_R01 — 커뮤니티 화면을 오늘 정제한 데이터로 다시 빌드해 낡은 본문이 남지 않게 한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-07 03:00:12",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 03:00:12"
+    },
     {
       "jobId": "Jproject-28-phase4b-hybrid-ask",
       "title": "ORDER_Jproject-28-phase4b-hybrid-ask_R02 — Phase 4b 재작업: AC-04(machine 티어 도달)·AC-05(visibility 선필터) 두 결손을 상류 데이터까지 내려가 닫는다",
@@ -18,13 +47,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -18139,90 +18168,6 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
-      "jobId": "Jmermaid-render",
-      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
-      "project": "project-53",
-      "targetDir": "<local>",
-      "round": 4,
-      "originDir": null,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 3,
-        "result": "REWORK-CAP"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-22 09:28:56",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 09:28:58",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 09:38:53",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 09:43:43",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:51:26",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:55:18",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:02:40",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:08:32",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-07-22 10:10:33",
-          "state": "PLANNED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 4
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
       "project": "project-53",
@@ -18307,6 +18252,90 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 3
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
+      "jobId": "Jmermaid-render",
+      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
+      "project": "project-53",
+      "targetDir": "<local>",
+      "round": 4,
+      "originDir": null,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 3,
+        "result": "REWORK-CAP"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-22 09:28:56",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:28:58",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:38:53",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 09:43:43",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:51:26",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:55:18",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:02:40",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:08:32",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-07-22 10:10:33",
+          "state": "PLANNED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 4
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 4
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
