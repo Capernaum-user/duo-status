@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-06T19:29:50",
+  "generatedAt": "2026-09-06T19:32:05",
   "counts": {
-    "active": 8,
-    "waitingWorker": 4,
+    "active": 9,
+    "waitingWorker": 5,
     "working": 2,
     "waitingReview": 2,
     "done": 432,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-apikey-truth",
+      "title": "ORDER_Jmrgolf-apikey-truth_R01 — 누적 실행기가 인증 실패를 쿼터 부족으로 위장하지 못하게 막고 올바른 키로 돌게 한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-06 19:31:50",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-06 19:31:50"
+    },
     {
       "jobId": "Jproject-28-phase2-structure",
       "title": "ORDER_Jproject-28-phase2-structure_R03 — build --structure 의 ExternalArtifact 진동을 없애 진짜 고정점을 만들고, 문서·커밋·REPORT 를 다시 제출한다",
@@ -18,13 +47,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": {
@@ -18855,6 +18884,60 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "project-53",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-53",
@@ -18919,8 +19002,8 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "jobId": "Jgnosis-dedup",
+      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
       "project": "project-53",
       "targetDir": "<local>",
       "round": 1,
@@ -18945,32 +19028,32 @@
       },
       "timeline": [
         {
-          "time": "2026-07-20 18:50:28",
+          "time": "2026-07-20 17:55:47",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-20 18:50:29",
+          "time": "2026-07-20 17:55:50",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:15:05",
+          "time": "2026-07-20 18:21:37",
           "state": "DONE",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:17:29",
+          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
         {
-          "time": "2026-07-20 19:58:17",
+          "time": "2026-07-20 18:30:08",
           "state": "ACCEPTED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-07-20 19:58:17"
+      "lastUpdate": "2026-07-20 18:30:08"
     },
     {
       "jobId": "Jceo-chart-axes",
@@ -19015,60 +19098,6 @@
         },
         {
           "time": "2026-07-20 18:26:23",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
-      "jobId": "Jgnosis-dedup",
-      "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
-      "project": "project-53",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:55:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:55:50",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:21:37",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:27:06",
           "state": "ACCEPTED",
           "round": 1
         },
