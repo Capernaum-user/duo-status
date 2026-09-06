@@ -71,72 +71,33 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-07 00:03:03 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-07 00:04:26 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-07T00:03:02",
+  "generatedAt": "2026-09-07T00:04:26",
   "counts": {
     "active": 9,
-    "waitingWorker": 4,
+    "waitingWorker": 5,
     "working": 2,
-    "waitingReview": 3,
+    "waitingReview": 2,
     "done": 434,
     "alerts": 17
   },
   "jobs": [
     {
-      "jobId": "Jmrgolf-apikey-truth",
-      "title": "ORDER_Jmrgolf-apikey-truth_R01 — 누적 실행기가 인증 실패를 쿼터 부족으로 위장하지 못하게 막고 올바른 키로 돌게 한다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-06 19:31:50",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 23:38:43",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-07 00:02:31",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-07 00:02:31"
-    },
-    {
       "jobId": "Jproject-28-phase4a-query-ir",
       "title": "ORDER_Jproject-28-phase4a-query-ir_R02 — R1 재작업: `reference` 크래시 수정 + AC-08 회귀 스위트 마감",
       "project": "project-28",
       "targetDir": "<local>",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -172,9 +133,53 @@
           "time": "2026-09-06 23:36:17",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-09-07 00:03:30",
+          "state": "REWORK",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-06 23:36:17"
+      "lastUpdate": "2026-09-07 00:03:30"
+    },
+    {
+      "jobId": "Jmrgolf-apikey-truth",
+      "title": "ORDER_Jmrgolf-apikey-truth_R01 — 누적 실행기가 인증 실패를 쿼터 부족으로 위장하지 못하게 막고 올바른 키로 돌게 한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-06 19:31:50",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 23:38:43",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-07 00:02:31",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 00:02:31"
     },
     {
       "jobId": "Jproject-28-phase3-chunk-embed",
