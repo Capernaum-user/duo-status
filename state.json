@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-06T20:23:55",
+  "generatedAt": "2026-09-06T20:37:06",
   "counts": {
-    "active": 9,
+    "active": 8,
     "waitingWorker": 5,
-    "working": 3,
+    "working": 2,
     "waitingReview": 1,
     "done": 433,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
     {
@@ -14,14 +14,14 @@
       "title": "ORDER_Jproject-28-phase3-chunk-embed_R02 — Phase 3 마무리 라운드: 이미 만든 청커·임베더로 core+extended 를 실제 색인하고 검증·문서·커밋·REPORT 를 제출한다",
       "project": "project-28",
       "targetDir": "<local>",
-      "round": 2,
+      "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -38,7 +38,7 @@
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "worker",
         "round": 1,
         "result": "ERROR"
@@ -73,9 +73,14 @@
           "time": "2026-09-06 20:23:34",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-06 20:36:58",
+          "state": "ESCALATED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-06 20:23:34"
+      "lastUpdate": "2026-09-06 20:36:58"
     },
     {
       "jobId": "Jproject-28-phase2-structure",
