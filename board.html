@@ -71,18 +71,52 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-07 03:30:13 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-07 03:32:33 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-07T03:30:12",
+  "generatedAt": "2026-09-07T03:32:33",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 2,
     "done": 440,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-web-refresh",
+      "title": "ORDER_Jmrgolf-web-refresh_R01 — 커뮤니티 화면을 오늘 정제한 데이터로 다시 빌드해 낡은 본문이 남지 않게 한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-07 03:00:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-07 03:32:12",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 03:32:12"
+    },
     {
       "jobId": "Jproject-28-phase4b-hybrid-ask",
       "title": "ORDER_Jproject-28-phase4b-hybrid-ask_R03 — R2 가 정직하게 올려보낸 정책 결정을 planner 가 내린다: `internal` 을 `restricted_visibility` 에서 뺀다",
@@ -92,13 +126,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -151,35 +185,6 @@
         }
       ],
       "lastUpdate": "2026-09-07 03:29:57"
-    },
-    {
-      "jobId": "Jmrgolf-web-refresh",
-      "title": "ORDER_Jmrgolf-web-refresh_R01 — 커뮤니티 화면을 오늘 정제한 데이터로 다시 빌드해 낡은 본문이 남지 않게 한다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-07 03:00:12",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-07 03:00:12"
     },
     {
       "jobId": "Jmrgolf-uptime-watchdog",
@@ -22233,6 +22238,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-07 03:30:49",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-07 03:11:25",
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
@@ -22344,12 +22355,6 @@
       "time": "2026-09-06 14:39:09",
       "command": "handoff-check",
       "panel": "project-28",
-      "text": "/check"
-    },
-    {
-      "time": "2026-09-06 10:35:46",
-      "command": "handoff-check",
-      "panel": "project-40",
       "text": "/check"
     }
   ]
