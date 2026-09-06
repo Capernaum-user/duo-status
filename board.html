@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-07 00:04:26 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-07 00:05:56 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-07T00:04:26",
+  "generatedAt": "2026-09-07T00:05:55",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 2,
     "done": 434,
     "alerts": 17
@@ -85,27 +85,27 @@
   "jobs": [
     {
       "jobId": "Jproject-28-phase4a-query-ir",
-      "title": "ORDER_Jproject-28-phase4a-query-ir_R02 — R1 재작업: `reference` 크래시 수정 + AC-08 회귀 스위트 마감",
+      "title": "ORDER_Jproject-28-phase4a-query-ir_R03 — R2 잔여: 컴파일러 전 구간 unhashable 입력 크래시 4곳 봉인 + Chunk 기준값 재설정",
       "project": "project-28",
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 2,
+        "phase": "worker",
+        "round": 3,
         "result": null
       },
       "timeline": [
@@ -138,9 +138,14 @@
           "time": "2026-09-07 00:03:30",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-09-07 00:04:52",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-07 00:03:30"
+      "lastUpdate": "2026-09-07 00:04:52"
     },
     {
       "jobId": "Jmrgolf-apikey-truth",
@@ -21939,6 +21944,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-07 00:05:03",
+      "command": "handoff-auto",
+      "panel": "01_foundry-ontology-corpus",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-09-06 23:38:05",
       "command": "handoff-check",
       "panel": "project-40",
@@ -22051,12 +22062,6 @@
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
       "text": "/cycle 떼어줘. 그리고 너가 만들어준 페이지들이 좌측으로 치우쳐져있어. 지금부터 제대로 된 디자인을 구성하기 위해 기획준비해. 그리고 도메…"
-    },
-    {
-      "time": "2026-09-06 02:29:57",
-      "command": "handoff-cycle",
-      "panel": "project-40",
-      "text": "/cycle 정양선 대표님이 내게 의뢰한 형님이셔 그래서 입금자는 이선민 님으로 입금자명확인되었던건데 정양선 대표님 명의로 계약했으니 앞으로 내…"
     }
   ]
 };</script>
