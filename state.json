@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-09-07T03:00:19",
+  "generatedAt": "2026-09-07T03:10:35",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 2,
-    "waitingReview": 2,
+    "waitingReview": 1,
     "done": 440,
-    "alerts": 17
+    "alerts": 16
   },
   "jobs": [
     {
-      "jobId": "Jmrgolf-web-refresh",
-      "title": "ORDER_Jmrgolf-web-refresh_R01 — 커뮤니티 화면을 오늘 정제한 데이터로 다시 빌드해 낡은 본문이 남지 않게 한다",
-      "project": "project-40",
+      "jobId": "Jproject-28-phase4b-hybrid-ask",
+      "title": "ORDER_Jproject-28-phase4b-hybrid-ask_R02 — Phase 4b 재작업: AC-04(machine 티어 도달)·AC-05(visibility 선필터) 두 결손을 상류 데이터까지 내려가 닫는다",
+      "project": "project-28",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "PLANNED",
+      "stage": "REWORK",
       "stageIndex": 1,
       "stageLabel": "발주됨",
       "nextAction": "워커 패널에서 /check",
@@ -24,35 +24,6 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-07 03:00:12",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-07 03:00:12"
-    },
-    {
-      "jobId": "Jproject-28-phase4b-hybrid-ask",
-      "title": "ORDER_Jproject-28-phase4b-hybrid-ask_R02 — Phase 4b 재작업: AC-04(machine 티어 도달)·AC-05(visibility 선필터) 두 결손을 상류 데이터까지 내려가 닫는다",
-      "project": "project-28",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -88,9 +59,43 @@
           "time": "2026-09-07 02:54:30",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-09-07 03:10:29",
+          "state": "REWORK",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-07 02:54:30"
+      "lastUpdate": "2026-09-07 03:10:29"
+    },
+    {
+      "jobId": "Jmrgolf-web-refresh",
+      "title": "ORDER_Jmrgolf-web-refresh_R01 — 커뮤니티 화면을 오늘 정제한 데이터로 다시 빌드해 낡은 본문이 남지 않게 한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-07 03:00:12",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 03:00:12"
     },
     {
       "jobId": "Jmrgolf-uptime-watchdog",
