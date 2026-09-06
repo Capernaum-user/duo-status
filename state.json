@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-07T03:10:35",
+  "generatedAt": "2026-09-07T03:11:51",
   "counts": {
     "active": 9,
-    "waitingWorker": 6,
-    "working": 2,
+    "waitingWorker": 5,
+    "working": 3,
     "waitingReview": 1,
     "done": 440,
     "alerts": 16
@@ -11,27 +11,27 @@
   "jobs": [
     {
       "jobId": "Jproject-28-phase4b-hybrid-ask",
-      "title": "ORDER_Jproject-28-phase4b-hybrid-ask_R02 — Phase 4b 재작업: AC-04(machine 티어 도달)·AC-05(visibility 선필터) 두 결손을 상류 데이터까지 내려가 닫는다",
+      "title": "ORDER_Jproject-28-phase4b-hybrid-ask_R03 — R2 가 정직하게 올려보낸 정책 결정을 planner 가 내린다: `internal` 을 `restricted_visibility` 에서 뺀다",
       "project": "project-28",
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "review",
-        "round": 2,
+        "phase": "worker",
+        "round": 3,
         "result": null
       },
       "timeline": [
@@ -64,9 +64,14 @@
           "time": "2026-09-07 03:10:29",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-09-07 03:11:08",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-07 03:10:29"
+      "lastUpdate": "2026-09-07 03:11:08"
     },
     {
       "jobId": "Jmrgolf-web-refresh",
@@ -22149,6 +22154,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-07 03:11:25",
+      "command": "handoff-auto",
+      "panel": "01_foundry-ontology-corpus",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-09-07 02:16:05",
       "command": "handoff-cycle",
       "panel": "project-40",
@@ -22261,12 +22272,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-06 10:27:29",
-      "command": "handoff-cycle",
-      "panel": "project-40",
-      "text": "/cycle"
     }
   ]
 }
