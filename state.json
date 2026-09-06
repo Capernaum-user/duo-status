@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T01:03:26",
+  "generatedAt": "2026-09-07T01:04:59",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
@@ -11,9 +11,9 @@
   "jobs": [
     {
       "jobId": "Jproject-28-phase4b-hybrid-ask",
-      "title": "Jproject-28-phase4b-hybrid-ask",
-      "project": "",
-      "targetDir": null,
+      "title": "ORDER_Jproject-28-phase4b-hybrid-ask_R01 — project-28 Phase 4b: 하이브리드 그래프 검색 `vg ask` (시드 → 2홉 확장 → 전파 점수 → provenance 인용 → 컨텍스트 팩)",
+      "project": "project-28",
+      "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
       "stage": "CLAIMED",
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -22046,6 +22046,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-07 01:04:01",
+      "command": "handoff-auto",
+      "panel": "01_foundry-ontology-corpus",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-09-07 00:05:03",
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
@@ -22158,12 +22164,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-06 03:07:29",
-      "command": "handoff-cycle",
-      "panel": "ObsidianVault",
-      "text": "/cycle 떼어줘. 그리고 너가 만들어준 페이지들이 좌측으로 치우쳐져있어. 지금부터 제대로 된 디자인을 구성하기 위해 기획준비해. 그리고 도메…"
     }
   ]
 }
