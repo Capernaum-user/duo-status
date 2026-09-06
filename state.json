@@ -1,14 +1,127 @@
 {
-  "generatedAt": "2026-09-07T00:51:08",
+  "generatedAt": "2026-09-07T01:03:26",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 3,
-    "waitingReview": 2,
-    "done": 437,
-    "alerts": 17
+    "working": 4,
+    "waitingReview": 1,
+    "done": 438,
+    "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jproject-28-phase4b-hybrid-ask",
+      "title": "Jproject-28-phase4b-hybrid-ask",
+      "project": "",
+      "targetDir": null,
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "worker",
+        "round": 1,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-09-07 01:03:20",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-07 01:03:25",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 01:03:25"
+    },
+    {
+      "jobId": "Jproject-28-phase4a-query-ir",
+      "title": "ORDER_Jproject-28-phase4a-query-ir_R03 — R2 잔여: 컴파일러 전 구간 unhashable 입력 크래시 4곳 봉인 + Chunk 기준값 재설정",
+      "project": "project-28",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": true,
+        "phase": "review",
+        "round": 3,
+        "result": null
+      },
+      "timeline": [
+        {
+          "time": "2026-09-06 22:36:06",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 22:36:07",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 23:15:08",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 23:15:30",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 23:36:17",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-07 00:03:30",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-07 00:04:52",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-07 00:33:01",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-09-07 01:02:34",
+          "state": "ACCEPTED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-07 01:02:34"
+    },
     {
       "jobId": "Jmrgolf-test-isolation",
       "title": "ORDER_Jmrgolf-test-isolation_R01 — 시험이 운영 캐시에 가짜 항목을 심는 것을 막고 흔들리는 동시성 시험을 잡는다",
@@ -86,75 +199,6 @@
         }
       ],
       "lastUpdate": "2026-09-07 00:49:15"
-    },
-    {
-      "jobId": "Jproject-28-phase4a-query-ir",
-      "title": "ORDER_Jproject-28-phase4a-query-ir_R03 — R2 잔여: 컴파일러 전 구간 unhashable 입력 크래시 4곳 봉인 + Chunk 기준값 재설정",
-      "project": "project-28",
-      "targetDir": "<local>",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": true,
-        "phase": "review",
-        "round": 3,
-        "result": null
-      },
-      "timeline": [
-        {
-          "time": "2026-09-06 22:36:06",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 22:36:07",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 23:15:08",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-06 23:15:30",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-06 23:36:17",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-09-07 00:03:30",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-09-07 00:04:52",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-09-07 00:33:01",
-          "state": "DONE",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-09-07 00:33:01"
     },
     {
       "jobId": "Jmrgolf-context-90",
@@ -18026,11 +18070,11 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "jobId": "Jmermaid-render",
+      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
       "project": "project-53",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 4,
       "originDir": null,
       "stage": "OUT-OF-BAND-DONE",
       "stageIndex": 5,
@@ -18041,40 +18085,70 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": {
         "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
+        "phase": "review",
+        "round": 3,
+        "result": "REWORK-CAP"
       },
       "timeline": [
         {
-          "time": "2026-07-21 20:48:47",
+          "time": "2026-07-22 09:28:56",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-21 20:48:49",
+          "time": "2026-07-22 09:28:58",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
+          "time": "2026-07-22 09:38:53",
+          "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-07-22 09:43:43",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:51:26",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 09:55:18",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:02:40",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 10:08:32",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-07-22 10:10:33",
+          "state": "PLANNED",
+          "round": 4
         },
         {
           "time": "2026-07-25 15:38:15",
           "state": "ESCALATED",
-          "round": 1
+          "round": 4
         },
         {
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
-          "round": 1
+          "round": 4
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -18169,11 +18243,11 @@
       "lastUpdate": "2026-07-25 18:12:36"
     },
     {
-      "jobId": "Jmermaid-render",
-      "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
       "project": "project-53",
       "targetDir": "<local>",
-      "round": 4,
+      "round": 1,
       "originDir": null,
       "stage": "OUT-OF-BAND-DONE",
       "stageIndex": 5,
@@ -18184,70 +18258,40 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": true
+        "rework": false
       },
       "verify": null,
       "autorun": {
         "active": false,
-        "phase": "review",
-        "round": 3,
-        "result": "REWORK-CAP"
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
       },
       "timeline": [
         {
-          "time": "2026-07-22 09:28:56",
+          "time": "2026-07-21 20:48:47",
           "state": "PLANNED",
           "round": 1
         },
         {
-          "time": "2026-07-22 09:28:58",
+          "time": "2026-07-21 20:48:49",
           "state": "CLAIMED",
           "round": 1
         },
         {
-          "time": "2026-07-22 09:38:53",
-          "state": "DONE",
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
           "round": 1
-        },
-        {
-          "time": "2026-07-22 09:43:43",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:51:26",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 09:55:18",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:02:40",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 10:08:32",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-07-22 10:10:33",
-          "state": "PLANNED",
-          "round": 4
         },
         {
           "time": "2026-07-25 15:38:15",
           "state": "ESCALATED",
-          "round": 4
+          "round": 1
         },
         {
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
-          "round": 4
+          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
