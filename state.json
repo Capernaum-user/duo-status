@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-07T02:09:52",
+  "generatedAt": "2026-09-07T02:55:44",
   "counts": {
     "active": 8,
     "waitingWorker": 4,
-    "working": 3,
-    "waitingReview": 1,
+    "working": 2,
+    "waitingReview": 2,
     "done": 440,
     "alerts": 16
   },
@@ -16,21 +16,21 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 2,
         "result": null
       },
@@ -54,9 +54,14 @@
           "time": "2026-09-07 02:09:10",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-07 02:54:30",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-07 02:09:10"
+      "lastUpdate": "2026-09-07 02:54:30"
     },
     {
       "jobId": "Jmrgolf-uptime-watchdog",
@@ -22110,6 +22115,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-07 02:16:05",
+      "command": "handoff-cycle",
+      "panel": "project-40",
+      "text": "/cycle 다음 관리자 powershell에서 작업 스케쥴러 이벤트 로그를 켜는 것 포함해서 진행해야 하는게 있다면 전부 진행해."
+    },
+    {
       "time": "2026-09-07 02:09:21",
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
@@ -22222,12 +22233,6 @@
       "command": "handoff-cycle",
       "panel": "project-40",
       "text": "/cycle"
-    },
-    {
-      "time": "2026-09-06 03:14:47",
-      "command": "handoff-check",
-      "panel": "project-45",
-      "text": "/check 10min"
     }
   ]
 }
