@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-06T19:19:03",
+  "generatedAt": "2026-09-06T19:29:50",
   "counts": {
     "active": 8,
     "waitingWorker": 4,
-    "working": 3,
-    "waitingReview": 1,
+    "working": 2,
+    "waitingReview": 2,
     "done": 432,
     "alerts": 16
   },
@@ -16,15 +16,15 @@
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": {
@@ -39,7 +39,7 @@
       },
       "autorun": {
         "active": true,
-        "phase": "worker",
+        "phase": "review",
         "round": 2,
         "result": "ERROR"
       },
@@ -78,9 +78,14 @@
           "time": "2026-09-06 19:18:17",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-09-06 19:28:51",
+          "state": "DONE",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-06 19:18:17"
+      "lastUpdate": "2026-09-06 19:28:51"
     },
     {
       "jobId": "Jwriting-voice-allagents",
