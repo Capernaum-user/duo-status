@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 15:18:31 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 15:22:51 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-06T15:18:30",
+  "generatedAt": "2026-09-06T15:22:50",
   "counts": {
     "active": 10,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 1,
     "done": 430,
     "alerts": 16
@@ -90,31 +90,31 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
       "verify": {
-        "status": "RUNNING",
-        "decision": null,
-        "a": null,
-        "b": null,
-        "relayJobId": "pending",
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260906-151814-11bb",
         "startedAt": "2026-09-06 15:18:14",
-        "finishedAt": null,
+        "finishedAt": "2026-09-06 15:22:15",
         "runs": 1
       },
       "autorun": {
         "active": true,
-        "phase": "verify",
-        "round": 0,
+        "phase": "worker",
+        "round": 1,
         "result": null
       },
       "timeline": [
@@ -122,9 +122,14 @@
           "time": "2026-09-06 15:18:12",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-06 15:22:15",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-06 15:18:12"
+      "lastUpdate": "2026-09-06 15:22:15"
     },
     {
       "jobId": "Jproject-28-phase1-graph-build",
@@ -21638,6 +21643,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-06 15:22:24",
+      "command": "handoff-auto",
+      "panel": "01_foundry-ontology-corpus",
+      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
+    },
+    {
       "time": "2026-09-06 15:00:13",
       "command": "handoff-check",
       "panel": "01_foundry-ontology-corpus",
@@ -21750,12 +21761,6 @@
       "command": "handoff-cycle",
       "panel": "claude-handoff",
       "text": "<task-notification> <task-id>wdz4w9izj</task-id> <tool-use-id>toolu_01SczusHdQ6s…"
-    },
-    {
-      "time": "2026-09-03 13:38:56",
-      "command": "handoff-cycle",
-      "panel": "project-45",
-      "text": "오토파일럿이 멈췄습니다. 1단계(Jwp-mass-topics)를 45분 동안 아무 워커 패널도 집어가지 않아 이 패널의 자동 반복이 꺼졌습니다.…"
     }
   ]
 };</script>
