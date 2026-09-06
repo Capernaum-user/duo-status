@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 19:41:51 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 19:43:08 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-06T19:41:50",
+  "generatedAt": "2026-09-06T19:43:08",
   "counts": {
-    "active": 9,
-    "waitingWorker": 6,
+    "active": 8,
+    "waitingWorker": 5,
     "working": 2,
     "waitingReview": 1,
     "done": 433,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
     {
@@ -88,43 +88,48 @@
       "title": "ORDER_Jproject-28-phase3-chunk-embed_R01 — project-28 Phase 3: 480토큰 캡 청킹 · MiniLM 임베딩 · Neo4j 벡터·전문 인덱스 (LLM 0회)",
       "project": "project-28",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 0,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "교차검증 진행 중 — 완료 후 /check",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "교차검증 미완결(SINGLE_NOTES) — 확인 후 /check",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
       "verify": {
-        "status": "RUNNING",
-        "decision": null,
-        "a": null,
-        "b": null,
-        "relayJobId": "pending",
+        "status": "DONE",
+        "decision": "SINGLE_NOTES",
+        "a": "PROTOCOL_ERROR",
+        "b": "PASS_WITH_NOTES",
+        "relayJobId": "J20260906-194046-ec64",
         "startedAt": "2026-09-06 19:40:46",
-        "finishedAt": null,
+        "finishedAt": "2026-09-06 19:42:24",
         "runs": 1
       },
       "autorun": {
-        "active": true,
+        "active": false,
         "phase": "verify",
         "round": 0,
-        "result": null
+        "result": "ESCALATED"
       },
       "timeline": [
         {
           "time": "2026-09-06 19:40:43",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-06 19:42:24",
+          "state": "ESCALATED",
+          "round": 0
         }
       ],
-      "lastUpdate": "2026-09-06 19:40:43"
+      "lastUpdate": "2026-09-06 19:42:24"
     },
     {
       "jobId": "Jproject-28-phase2-structure",
@@ -21746,6 +21751,11 @@
       "file": "Jproject-28-phase2-structure_autorun-worker-fail.md",
       "jobId": "Jproject-28-phase2-structure",
       "cause": "autorun-worker-fail"
+    },
+    {
+      "file": "Jproject-28-phase3-chunk-embed_autorun-verify-nopass.md",
+      "jobId": "Jproject-28-phase3-chunk-embed",
+      "cause": "autorun-verify-nopass"
     },
     {
       "file": "Jwp-auto-scaffold_autopilot-claim-stale.md",
