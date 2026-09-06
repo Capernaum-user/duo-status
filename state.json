@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-06T12:10:40",
+  "generatedAt": "2026-09-06T12:14:55",
   "counts": {
     "active": 9,
-    "waitingWorker": 4,
+    "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 2,
-    "done": 427,
+    "waitingReview": 1,
+    "done": 428,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-recall-90",
+      "title": "ORDER_Jmrgolf-recall-90 — 9월 4일에 있던 문맥 97.1%가 85.7%로 떨어졌다. 원인을 찾아 되돌리고 계약 90%를 다시 넘긴다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-06 12:14:23",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-06 12:14:23"
+    },
     {
       "jobId": "Jmrgolf-publish-quality",
       "title": "ORDER_Jmrgolf-publish-quality — 화면에 뜨는 글에서 남은 타사 상호와 외부 링크를 지우고, 공개본을 LLM 을 거친 판으로 다시 만든다",
@@ -16,10 +45,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -39,9 +68,14 @@
           "time": "2026-09-06 12:09:15",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-06 12:14:22",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-06 12:09:15"
+      "lastUpdate": "2026-09-06 12:14:22"
     },
     {
       "jobId": "Jmrgolf-quota-accrual",
