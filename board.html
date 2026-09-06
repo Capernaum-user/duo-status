@@ -71,18 +71,52 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 23:37:13 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-06 23:39:29 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-06T23:37:12",
+  "generatedAt": "2026-09-06T23:39:28",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 2,
     "done": 434,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-apikey-truth",
+      "title": "ORDER_Jmrgolf-apikey-truth_R01 — 누적 실행기가 인증 실패를 쿼터 부족으로 위장하지 못하게 막고 올바른 키로 돌게 한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-06 19:31:50",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 23:38:43",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-06 23:38:43"
+    },
     {
       "jobId": "Jproject-28-phase4a-query-ir",
       "title": "ORDER_Jproject-28-phase4a-query-ir_R02 — R1 재작업: `reference` 크래시 수정 + AC-08 회귀 스위트 마감",
@@ -92,13 +126,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -337,35 +371,6 @@
         }
       ],
       "lastUpdate": "2026-09-06 19:40:43"
-    },
-    {
-      "jobId": "Jmrgolf-apikey-truth",
-      "title": "ORDER_Jmrgolf-apikey-truth_R01 — 누적 실행기가 인증 실패를 쿼터 부족으로 위장하지 못하게 막고 올바른 키로 돌게 한다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-06 19:31:50",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-06 19:31:50"
     },
     {
       "jobId": "Jwriting-voice-allagents",
@@ -21924,6 +21929,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-06 23:38:05",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "패널에서 /check 시작했어."
+    },
+    {
+      "time": "2026-09-06 23:37:53",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-06 23:15:44",
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
@@ -22030,18 +22047,6 @@
       "command": "handoff-cycle",
       "panel": "project-40",
       "text": "/cycle 정양선 대표님이 내게 의뢰한 형님이셔 그래서 입금자는 이선민 님으로 입금자명확인되었던건데 정양선 대표님 명의로 계약했으니 앞으로 내…"
-    },
-    {
-      "time": "2026-09-04 14:33:56",
-      "command": "handoff-check",
-      "panel": "project-40",
-      "text": "다른패널에서 /check 했어"
-    },
-    {
-      "time": "2026-09-04 10:07:31",
-      "command": "handoff-check",
-      "panel": "project-40",
-      "text": "안티그래비티에게 /check 명령을 내렸어 너도 진행해"
     }
   ]
 };</script>
