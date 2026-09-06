@@ -1,14 +1,67 @@
 {
-  "generatedAt": "2026-09-06T15:39:01",
+  "generatedAt": "2026-09-06T15:47:21",
   "counts": {
-    "active": 9,
+    "active": 8,
     "waitingWorker": 4,
-    "working": 4,
+    "working": 3,
     "waitingReview": 1,
     "done": 431,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jproject-28-phase2-structure",
+      "title": "ORDER_Jproject-28-phase2-structure_R01 — project-28 Phase 2: agent-office 런 901건과 템플릿 노트를 구조 객체로 뽑아 Neo4j 에 올린다 (LLM 0회)",
+      "project": "project-28",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": {
+        "status": "DONE",
+        "decision": "INCONCLUSIVE",
+        "a": "PROTOCOL_ERROR",
+        "b": "PROTOCOL_ERROR",
+        "relayJobId": "J20260906-151814-11bb",
+        "startedAt": "2026-09-06 15:18:14",
+        "finishedAt": "2026-09-06 15:22:15",
+        "runs": 1
+      },
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-09-06 15:18:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 15:22:15",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 15:46:33",
+          "state": "ESCALATED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-06 15:46:33"
+    },
     {
       "jobId": "Jmrgolf-cache-safety",
       "title": "ORDER_Jmrgolf-cache-safety — 오늘 캐시 138건이 동시쓰기로 날아갔다. 다시 그러지 않게 잠금과 원자적 쓰기를 넣는다",
@@ -47,54 +100,6 @@
         }
       ],
       "lastUpdate": "2026-09-06 15:37:25"
-    },
-    {
-      "jobId": "Jproject-28-phase2-structure",
-      "title": "ORDER_Jproject-28-phase2-structure_R01 — project-28 Phase 2: agent-office 런 901건과 템플릿 노트를 구조 객체로 뽑아 Neo4j 에 올린다 (LLM 0회)",
-      "project": "project-28",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": {
-        "status": "DONE",
-        "decision": "INCONCLUSIVE",
-        "a": "PROTOCOL_ERROR",
-        "b": "PROTOCOL_ERROR",
-        "relayJobId": "J20260906-151814-11bb",
-        "startedAt": "2026-09-06 15:18:14",
-        "finishedAt": "2026-09-06 15:22:15",
-        "runs": 1
-      },
-      "autorun": {
-        "active": true,
-        "phase": "worker",
-        "round": 1,
-        "result": null
-      },
-      "timeline": [
-        {
-          "time": "2026-09-06 15:18:12",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 15:22:15",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-06 15:22:15"
     },
     {
       "jobId": "Jproject-28-phase1-graph-build",
@@ -21534,6 +21539,11 @@
     {
       "file": "Jproject-28-p0_autorun-worker-fail.md",
       "jobId": "Jproject-28-p0",
+      "cause": "autorun-worker-fail"
+    },
+    {
+      "file": "Jproject-28-phase2-structure_autorun-worker-fail.md",
+      "jobId": "Jproject-28-phase2-structure",
       "cause": "autorun-worker-fail"
     },
     {
