@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-08T05:25:16",
+  "generatedAt": "2026-09-08T05:28:29",
   "counts": {
-    "active": 9,
+    "active": 8,
     "waitingWorker": 5,
-    "working": 3,
+    "working": 2,
     "waitingReview": 1,
-    "done": 453,
+    "done": 454,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-review-hygiene",
+      "title": "검수자가 처음 보는 자리 셋을 고친다: 시험 종료코드 · 폐기된 판정서 · 표본 하한",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-08 05:15:45",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 05:16:01",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 05:27:57",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-08 05:27:57"
+    },
     {
       "jobId": "Jaodesign-photo-corpus",
       "title": "ORDER_Jaodesign-photo-corpus_R02 — 주제에 맞는 사진으로 코퍼스를 다시 세운다",
@@ -57,40 +96,6 @@
         }
       ],
       "lastUpdate": "2026-09-08 05:22:08"
-    },
-    {
-      "jobId": "Jmrgolf-review-hygiene",
-      "title": "검수자가 처음 보는 자리 셋을 고친다: 시험 종료코드 · 폐기된 판정서 · 표본 하한",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-08 05:15:45",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 05:16:01",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-08 05:16:01"
     },
     {
       "jobId": "Jmrgolf-source-rate",
