@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-09-08T04:51:40",
+  "generatedAt": "2026-09-08T04:52:58",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 1,
     "done": 452,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jaodesign-photo-corpus",
+      "title": "ORDER_Jaodesign-photo-corpus_R02 — 주제에 맞는 사진으로 코퍼스를 다시 세운다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-08 04:19:08",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 04:21:25",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 04:47:56",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 04:52:05",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-08 04:52:05"
+    },
     {
       "jobId": "Jmrgolf-source-rate",
       "title": "제15조 3항 수집 성공률과 제15조 6항 소스별 집계를 재는 판정기를 만든다",
@@ -42,45 +86,6 @@
         }
       ],
       "lastUpdate": "2026-09-08 04:50:58"
-    },
-    {
-      "jobId": "Jaodesign-photo-corpus",
-      "title": "ORDER_Jaodesign-photo-corpus_R01 — 사이트에 쓸 사진 코퍼스를 라이선스 대장과 함께 모은다",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-08 04:19:08",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 04:21:25",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 04:47:56",
-          "state": "REWORK",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-08 04:47:56"
     },
     {
       "jobId": "Jmrgolf-verdict-table",
