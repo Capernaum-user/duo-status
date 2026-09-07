@@ -71,18 +71,52 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-08 04:21:33 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-08 04:27:49 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-08T04:21:32",
+  "generatedAt": "2026-09-08T04:27:48",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 1,
     "done": 450,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-acceptance-spec",
+      "title": "제15조 1항 검수 기준서 초안을 문서로 작성한다(송부는 하지 않는다)",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-07 11:56:32",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 04:27:30",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-08 04:27:30"
+    },
     {
       "jobId": "Jaodesign-photo-corpus",
       "title": "ORDER_Jaodesign-photo-corpus_R01 — 사이트에 쓸 사진 코퍼스를 라이선스 대장과 함께 모은다",
@@ -116,35 +150,6 @@
         }
       ],
       "lastUpdate": "2026-09-08 04:21:25"
-    },
-    {
-      "jobId": "Jmrgolf-acceptance-spec",
-      "title": "제15조 1항 검수 기준서 초안을 문서로 작성한다(송부는 하지 않는다)",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-07 11:56:32",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-07 11:56:32"
     },
     {
       "jobId": "Jproject-28-phase7a-install-tiers",
@@ -22703,6 +22708,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-08 04:26:36",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "다른 패널에서 /check 시작했을거야 너도 이어서 진행해"
+    },
+    {
       "time": "2026-09-08 04:03:53",
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
@@ -22812,12 +22823,6 @@
     },
     {
       "time": "2026-09-06 21:52:10",
-      "command": "handoff-auto",
-      "panel": "01_foundry-ontology-corpus",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-09-06 20:23:42",
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
