@@ -71,18 +71,47 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-08 04:33:03 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-08 04:36:16 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-08T04:33:02",
+  "generatedAt": "2026-09-08T04:36:16",
   "counts": {
     "active": 9,
-    "waitingWorker": 4,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 3,
     "waitingReview": 1,
-    "done": 450,
+    "done": 451,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-verdict-table",
+      "title": "제2조 4호 다목 항목별 판정 결과표 생성기를 만들고 100건 표를 뽑는다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-08 04:35:34",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-08 04:35:34"
+    },
     {
       "jobId": "Jmrgolf-acceptance-spec",
       "title": "제15조 1항 검수 기준서 초안을 문서로 작성한다(송부는 하지 않는다)",
@@ -90,10 +119,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -113,9 +142,14 @@
           "time": "2026-09-08 04:27:30",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-08 04:35:33",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-08 04:27:30"
+      "lastUpdate": "2026-09-08 04:35:33"
     },
     {
       "jobId": "Jaodesign-photo-corpus",
@@ -18811,6 +18845,60 @@
       "lastUpdate": "2026-07-25 18:12:36"
     },
     {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-53",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
       "project": "project-53",
@@ -18895,60 +18983,6 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 3
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-53",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -20032,60 +20066,6 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jceo-chart-axes",
-      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
-      "project": "project-53",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:59:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:59:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:23:57",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:26:23",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
       "jobId": "Jgnosis-dedup",
       "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
       "project": "project-53",
@@ -20128,6 +20108,60 @@
         },
         {
           "time": "2026-07-20 18:27:06",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jceo-chart-axes",
+      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
+      "project": "project-53",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:59:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:59:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:23:57",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:26:23",
           "state": "ACCEPTED",
           "round": 1
         },
