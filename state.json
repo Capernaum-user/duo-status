@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-09-08T05:29:42",
+  "generatedAt": "2026-09-08T06:55:29",
   "counts": {
     "active": 8,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 1,
     "done": 454,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jaodesign-photo-corpus",
+      "title": "ORDER_Jaodesign-photo-corpus_R03 — 제목으로 판정하고 질감 재질을 넷으로 벌린다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-08 04:19:08",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 04:21:25",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 04:47:56",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 04:52:05",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 05:22:08",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-08 06:54:23",
+          "state": "CLAIMED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-08 06:54:23"
+    },
     {
       "jobId": "Jmrgolf-review-hygiene",
       "title": "검수자가 처음 보는 자리 셋을 고친다: 시험 종료코드 · 폐기된 판정서 · 표본 하한",
@@ -47,55 +101,6 @@
         }
       ],
       "lastUpdate": "2026-09-08 05:27:57"
-    },
-    {
-      "jobId": "Jaodesign-photo-corpus",
-      "title": "ORDER_Jaodesign-photo-corpus_R02 — 주제에 맞는 사진으로 코퍼스를 다시 세운다",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-08 04:19:08",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 04:21:25",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 04:47:56",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-08 04:52:05",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-08 05:22:08",
-          "state": "REWORK",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-09-08 05:22:08"
     },
     {
       "jobId": "Jmrgolf-source-rate",
@@ -826,7 +831,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -22786,6 +22791,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-08 06:52:08",
+      "command": "handoff-check",
+      "panel": "ObsidianVault",
+      "text": "다른 패널에서 /check 했어"
+    },
+    {
+      "time": "2026-09-08 06:52:07",
+      "command": "handoff-check",
+      "panel": "project-45",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-08 04:26:36",
       "command": "handoff-check",
       "panel": "project-40",
@@ -22889,18 +22906,6 @@
     },
     {
       "time": "2026-09-06 22:36:14",
-      "command": "handoff-auto",
-      "panel": "01_foundry-ontology-corpus",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-09-06 22:23:05",
-      "command": "handoff-auto",
-      "panel": "01_foundry-ontology-corpus",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-09-06 21:52:10",
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
