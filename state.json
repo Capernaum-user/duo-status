@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-07T08:52:15",
+  "generatedAt": "2026-09-07T11:57:29",
   "counts": {
-    "active": 7,
-    "waitingWorker": 4,
+    "active": 8,
+    "waitingWorker": 5,
     "working": 2,
     "waitingReview": 1,
     "done": 450,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-acceptance-spec",
+      "title": "제15조 1항 검수 기준서 초안을 문서로 작성한다(송부는 하지 않는다)",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-07 11:56:32",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-07 11:56:32"
+    },
     {
       "jobId": "Jproject-28-phase7a-install-tiers",
       "title": "ORDER_Jproject-28-phase7a-install-tiers_R01 — project-28 Phase 7a: 티어드 설치·롤백으로 Gemini·Codex·로컬 LLM 을 그래프 창구에 붙인다 (Claude 등록은 기획 세션 몫)",
@@ -18669,6 +18698,60 @@
       "lastUpdate": "2026-07-25 18:12:36"
     },
     {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-53",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
       "project": "project-53",
@@ -18753,60 +18836,6 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 3
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-53",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -19890,60 +19919,6 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jceo-chart-axes",
-      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
-      "project": "project-53",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:59:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:59:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:23:57",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:26:23",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
       "jobId": "Jgnosis-dedup",
       "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
       "project": "project-53",
@@ -19986,6 +19961,60 @@
         },
         {
           "time": "2026-07-20 18:27:06",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jceo-chart-axes",
+      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
+      "project": "project-53",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:59:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:59:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:23:57",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:26:23",
           "state": "ACCEPTED",
           "round": 1
         },
