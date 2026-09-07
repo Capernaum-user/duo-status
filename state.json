@@ -1,14 +1,93 @@
 {
-  "generatedAt": "2026-09-08T06:55:29",
+  "generatedAt": "2026-09-08T06:56:44",
   "counts": {
-    "active": 8,
+    "active": 9,
     "waitingWorker": 4,
-    "working": 3,
+    "working": 4,
     "waitingReview": 1,
-    "done": 454,
+    "done": 453,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jproject-28-phase4a-query-ir",
+      "title": "ORDER_Jproject-28-phase4a-query-ir_R04 — R3 검토 중 새로 드러난 컨테이너 형태 입력 크래시 3곳 봉인",
+      "project": "project-28",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 3,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-09-06 22:36:06",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 22:36:07",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-06 23:15:08",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 23:15:30",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-06 23:36:17",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-07 00:03:30",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-07 00:04:52",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-07 00:33:01",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-09-07 01:02:34",
+          "state": "ACCEPTED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-08 06:56:09",
+          "state": "CLAIMED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-08 06:56:09"
+    },
     {
       "jobId": "Jaodesign-photo-corpus",
       "title": "ORDER_Jaodesign-photo-corpus_R03 — 제목으로 판정하고 질감 재질을 넷으로 벌린다",
@@ -816,80 +895,6 @@
         }
       ],
       "lastUpdate": "2026-09-07 01:13:51"
-    },
-    {
-      "jobId": "Jproject-28-phase4a-query-ir",
-      "title": "ORDER_Jproject-28-phase4a-query-ir_R03 — R2 잔여: 컴파일러 전 구간 unhashable 입력 크래시 4곳 봉인 + Chunk 기준값 재설정",
-      "project": "project-28",
-      "targetDir": "<local>",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 3,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-09-06 22:36:06",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 22:36:07",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-06 23:15:08",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-06 23:15:30",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-06 23:36:17",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-09-07 00:03:30",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-09-07 00:04:52",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-09-07 00:33:01",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-09-07 01:02:34",
-          "state": "ACCEPTED",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-09-07 01:02:34"
     },
     {
       "jobId": "Jmrgolf-uptime-evidence",
