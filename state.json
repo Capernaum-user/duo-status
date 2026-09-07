@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T05:22:59",
+  "generatedAt": "2026-09-08T05:25:16",
   "counts": {
     "active": 9,
     "waitingWorker": 5,
@@ -73,7 +73,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -22657,6 +22657,11 @@
       "file": "Jaoapp-port-p9_autorun-worker-fail.md",
       "jobId": "Jaoapp-port-p9",
       "cause": "autorun-worker-fail"
+    },
+    {
+      "file": "Jaodesign-photo-corpus_autopilot-unclaimed.md",
+      "jobId": "Jaodesign-photo-corpus",
+      "cause": "autopilot-unclaimed"
     },
     {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
