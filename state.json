@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-08T18:32:39",
+  "generatedAt": "2026-09-08T18:33:54",
   "counts": {
     "active": 10,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 2,
     "done": 459,
     "alerts": 16
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jaodesign-blog-visual",
-      "title": "ORDER_Jaodesign-blog-visual_R01 — 블로그 목록과 글 지면을 편집물처럼 다시 짠다",
+      "title": "ORDER_Jaodesign-blog-visual_R02 — 카드뉴스 띠가 잘리지 않게 하고 글 끝의 빈 날짜 넉 줄을 없앤다",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-09-08 18:32:26",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-09-08 18:33:30",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-08 18:32:26"
+      "lastUpdate": "2026-09-08 18:33:30"
     },
     {
       "jobId": "Jmrgolf-admin-project-18",
