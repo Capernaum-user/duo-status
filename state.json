@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-08T12:51:34",
+  "generatedAt": "2026-09-08T12:55:46",
   "counts": {
     "active": 10,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 2,
-    "waitingReview": 3,
+    "waitingReview": 2,
     "done": 458,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
     {
       "jobId": "Jaodesign-home-visual",
-      "title": "ORDER_Jaodesign-home-visual_R01 — 홈 화면을 전문기업 지면으로 다시 짠다",
+      "title": "ORDER_Jaodesign-home-visual_R02 — 사진 넉 장을 갈아 끼우고 검사기가 우리 CSS 만 재게 한다",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,14 @@
           "time": "2026-09-08 12:51:09",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-08 12:55:30",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-08 12:51:09"
+      "lastUpdate": "2026-09-08 12:55:30"
     },
     {
       "jobId": "Jmrgolf-admin-project-18",
