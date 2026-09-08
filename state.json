@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-08T22:47:00",
+  "generatedAt": "2026-09-08T23:08:50",
   "counts": {
     "active": 10,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 3,
     "done": 461,
     "alerts": 16
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jaodesign-rollout-report",
-      "title": "ORDER_Jaodesign-rollout-report_R02 — 전량 적용은 끝났다. 남은 것은 최종 갈무리 아홉 장과 보고서 HTML 이다",
+      "title": "ORDER_Jaodesign-rollout-report_R03 — 잃어버린 마무리 카드 56장을 채우고, 겹친 표지 한 장을 갈라내고, 보고서의 틀린 숫자를 고친다",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -59,9 +59,14 @@
           "time": "2026-09-08 22:46:33",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-09-08 23:07:57",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-08 22:46:33"
+      "lastUpdate": "2026-09-08 23:07:57"
     },
     {
       "jobId": "Jmrgolf-delivery-baseline",
