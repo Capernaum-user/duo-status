@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-09-08T12:38:35",
+  "generatedAt": "2026-09-08T12:42:52",
   "counts": {
     "active": 11,
     "waitingWorker": 4,
-    "working": 4,
-    "waitingReview": 3,
+    "working": 3,
+    "waitingReview": 4,
     "done": 456,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-home-banners",
+      "title": "코드는 그대로 두고 보고서에 빠진 증거 넷을 채운다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-08 11:35:33",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 12:05:53",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 12:21:58",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 12:23:34",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 12:28:29",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 12:42:08",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-08 12:42:08"
+    },
     {
       "jobId": "Jmrgolf-admin-community",
       "title": "관리자 로그인과 커뮤니티 원클릭 숨김, 차단·예외 키워드 편집",
@@ -47,55 +101,6 @@
         }
       ],
       "lastUpdate": "2026-09-08 12:38:15"
-    },
-    {
-      "jobId": "Jmrgolf-home-banners",
-      "title": "코드는 그대로 두고 보고서에 빠진 증거 넷을 채운다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-08 11:35:33",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 12:05:53",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 12:21:58",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-08 12:23:34",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-08 12:28:29",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-08 12:28:29"
     },
     {
       "jobId": "Jaodesign-home-visual",
