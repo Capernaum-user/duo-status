@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-08T11:23:30",
+  "generatedAt": "2026-09-08T11:25:43",
   "counts": {
     "active": 10,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 2,
     "done": 454,
     "alerts": 16
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jaodesign-cardnews",
-      "title": "ORDER_Jaodesign-cardnews_R01 — 네이버에 이미지로 노출될 카드뉴스 생성기를 세운다",
+      "title": "ORDER_Jaodesign-cardnews_R02 — 카드를 읽히게 만들고 파일명에 검색어를 넣는다",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-09-08 11:23:12",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-09-08 11:24:51",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-08 11:23:12"
+      "lastUpdate": "2026-09-08 11:24:51"
     },
     {
       "jobId": "Jmrgolf-quote-form",
