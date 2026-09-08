@@ -1,42 +1,67 @@
 {
-  "generatedAt": "2026-09-08T11:36:05",
+  "generatedAt": "2026-09-08T11:48:15",
   "counts": {
     "active": 10,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 2,
+    "working": 2,
+    "waitingReview": 3,
     "done": 455,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
     {
-      "jobId": "Jmrgolf-home-banners",
-      "title": "홈 특가 슬라이드 배너와 제휴업체 광고 슬롯 시스템 구축",
-      "project": "project-40",
+      "jobId": "Jaodesign-cardnews",
+      "title": "ORDER_Jaodesign-cardnews_R02 — 카드를 읽히게 만들고 파일명에 검색어를 넣는다",
+      "project": "00_reuel-maison",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
       "timeline": [
         {
-          "time": "2026-09-08 11:35:33",
+          "time": "2026-09-08 07:44:13",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-08 10:57:13",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 11:17:25",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 11:23:12",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 11:24:51",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 11:47:32",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-08 11:35:33"
+      "lastUpdate": "2026-09-08 11:47:32"
     },
     {
       "jobId": "Jmrgolf-quote-form",
@@ -78,53 +103,33 @@
       "lastUpdate": "2026-09-08 11:35:33"
     },
     {
-      "jobId": "Jaodesign-cardnews",
-      "title": "ORDER_Jaodesign-cardnews_R02 — 카드를 읽히게 만들고 파일명에 검색어를 넣는다",
-      "project": "00_reuel-maison",
+      "jobId": "Jmrgolf-home-banners",
+      "title": "홈 특가 슬라이드 배너와 제휴업체 광고 슬롯 시스템 구축",
+      "project": "project-40",
       "targetDir": "<local>",
-      "round": 2,
+      "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
-        "rework": true
+        "rework": false
       },
       "verify": null,
       "autorun": null,
       "timeline": [
         {
-          "time": "2026-09-08 07:44:13",
+          "time": "2026-09-08 11:35:33",
           "state": "PLANNED",
           "round": 1
-        },
-        {
-          "time": "2026-09-08 10:57:13",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 11:17:25",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 11:23:12",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-08 11:24:51",
-          "state": "CLAIMED",
-          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-08 11:24:51"
+      "lastUpdate": "2026-09-08 11:35:33"
     },
     {
       "jobId": "Jaodesign-photo-corpus",
