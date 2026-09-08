@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-08T22:39:08",
+  "generatedAt": "2026-09-08T22:42:30",
   "counts": {
     "active": 10,
     "waitingWorker": 4,
-    "working": 4,
-    "waitingReview": 2,
+    "working": 3,
+    "waitingReview": 3,
     "done": 461,
-    "alerts": 16
+    "alerts": 17
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -49,9 +49,14 @@
           "time": "2026-09-08 22:26:46",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-08 22:41:46",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-08 22:26:46"
+      "lastUpdate": "2026-09-08 22:41:46"
     },
     {
       "jobId": "Jmrgolf-delivery-baseline",
