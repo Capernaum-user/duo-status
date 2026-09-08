@@ -71,18 +71,72 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-08 22:43:44 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-08 22:47:00 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-08T22:43:44",
+  "generatedAt": "2026-09-08T22:47:00",
   "counts": {
     "active": 10,
-    "waitingWorker": 4,
+    "waitingWorker": 5,
     "working": 2,
-    "waitingReview": 4,
+    "waitingReview": 3,
     "done": 461,
-    "alerts": 17
+    "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jaodesign-rollout-report",
+      "title": "ORDER_Jaodesign-rollout-report_R02 — 전량 적용은 끝났다. 남은 것은 최종 갈무리 아홉 장과 보고서 HTML 이다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-08 18:48:08",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 18:49:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 22:08:42",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 22:26:46",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 22:41:46",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-08 22:46:33",
+          "state": "REWORK",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-08 22:46:33"
+    },
     {
       "jobId": "Jmrgolf-delivery-baseline",
       "title": "MrGolf 홈 회귀의 증거와 기능 명세를 정리한다",
@@ -121,55 +175,6 @@
         }
       ],
       "lastUpdate": "2026-09-08 22:42:46"
-    },
-    {
-      "jobId": "Jaodesign-rollout-report",
-      "title": "ORDER_Jaodesign-rollout-report_R02 — 전량 적용은 끝났다. 남은 것은 최종 갈무리 아홉 장과 보고서 HTML 이다",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-08 18:48:08",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 18:49:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 22:08:42",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-08 22:26:46",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-08 22:41:46",
-          "state": "DONE",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-08 22:41:46"
     },
     {
       "jobId": "Jmrgolf-admin-project-18",
