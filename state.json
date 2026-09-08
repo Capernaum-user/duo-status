@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-08T19:07:55",
+  "generatedAt": "2026-09-08T19:34:12",
   "counts": {
     "active": 10,
-    "waitingWorker": 5,
+    "waitingWorker": 4,
     "working": 3,
-    "waitingReview": 2,
+    "waitingReview": 3,
     "done": 460,
     "alerts": 16
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-admin-project-18",
-      "title": "4단계 관리자 CMS: 제휴 배너·골프장 특가·견적 DB 관리 (S-07·S-08·S-09)",
+      "title": "홈을 동적 렌더로 바꾸면서 2단계 검사기를 깨뜨렸다. 살려 놓고 신고하라",
       "project": "project-40",
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
+        "pendingOrder": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -54,9 +54,14 @@
           "time": "2026-09-08 19:07:23",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-09-08 19:34:03",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-08 19:07:23"
+      "lastUpdate": "2026-09-08 19:34:03"
     },
     {
       "jobId": "Jaodesign-rollout-report",
