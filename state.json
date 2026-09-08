@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-09-08T18:59:31",
+  "generatedAt": "2026-09-08T19:07:55",
   "counts": {
     "active": 10,
-    "waitingWorker": 4,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 3,
     "waitingReview": 2,
     "done": 460,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-admin-project-18",
+      "title": "4단계 관리자 CMS: 제휴 배너·골프장 특가·견적 DB 관리 (S-07·S-08·S-09)",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-08 12:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 13:01:15",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 13:01:36",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 18:04:25",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-08 19:07:23",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-08 19:07:23"
+    },
     {
       "jobId": "Jaodesign-rollout-report",
       "title": "ORDER_Jaodesign-rollout-report_R01 — 171편 전량에 카드뉴스를 입히고 검증해 보고서를 낸다",
@@ -101,50 +150,6 @@
         }
       ],
       "lastUpdate": "2026-09-08 18:47:49"
-    },
-    {
-      "jobId": "Jmrgolf-admin-project-18",
-      "title": "4단계 관리자 CMS: 제휴 배너·골프장 특가·견적 DB 관리 (S-07·S-08·S-09)",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-08 12:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 13:01:15",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 13:01:36",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-08 18:04:25",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-08 18:04:25"
     },
     {
       "jobId": "Jaodesign-home-visual",
