@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-08 07:44:20 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-08 10:57:37 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-08T07:44:19",
+  "generatedAt": "2026-09-08T10:57:37",
   "counts": {
     "active": 10,
-    "waitingWorker": 6,
-    "working": 2,
+    "waitingWorker": 5,
+    "working": 3,
     "waitingReview": 2,
     "done": 454,
     "alerts": 16
@@ -90,14 +90,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -108,9 +108,14 @@
           "time": "2026-09-08 07:44:13",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-08 10:57:13",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-08 07:44:13"
+      "lastUpdate": "2026-09-08 10:57:13"
     },
     {
       "jobId": "Jaodesign-photo-corpus",
@@ -22816,6 +22821,11 @@
       "cause": "autorun-worker-fail"
     },
     {
+      "file": "Jaodesign-cardnews_autopilot-unclaimed.md",
+      "jobId": "Jaodesign-cardnews",
+      "cause": "autopilot-unclaimed"
+    },
+    {
       "file": "Jaodesign-photo-corpus_autopilot-unclaimed.md",
       "jobId": "Jaodesign-photo-corpus",
       "cause": "autopilot-unclaimed"
@@ -22853,6 +22863,11 @@
     {
       "file": "Jmrgolf-project-49-100_autopilot-unclaimed.md",
       "jobId": "Jmrgolf-project-49-100",
+      "cause": "autopilot-unclaimed"
+    },
+    {
+      "file": "Jmrgolf-quote-form_autopilot-unclaimed.md",
+      "jobId": "Jmrgolf-quote-form",
       "cause": "autopilot-unclaimed"
     },
     {
@@ -22937,6 +22952,18 @@
     }
   ],
   "invocations": [
+    {
+      "time": "2026-09-08 10:56:49",
+      "command": "handoff-check",
+      "panel": "ObsidianVault",
+      "text": "다른 패널에 패널에 직접 열어서 /check 해놨어"
+    },
+    {
+      "time": "2026-09-08 10:56:33",
+      "command": "handoff-check",
+      "panel": "00_reuel-maison",
+      "text": "/check"
+    },
     {
       "time": "2026-09-08 06:52:08",
       "command": "handoff-check",
@@ -23044,18 +23071,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-06 23:15:44",
-      "command": "handoff-auto",
-      "panel": "01_foundry-ontology-corpus",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-09-06 22:36:14",
-      "command": "handoff-auto",
-      "panel": "01_foundry-ontology-corpus",
-      "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
     }
   ]
 };</script>
