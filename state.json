@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-08T12:55:46",
+  "generatedAt": "2026-09-08T12:56:59",
   "counts": {
     "active": 10,
-    "waitingWorker": 6,
-    "working": 2,
+    "waitingWorker": 5,
+    "working": 3,
     "waitingReview": 2,
     "done": 458,
-    "alerts": 17
+    "alerts": 16
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -49,9 +49,14 @@
           "time": "2026-09-08 12:55:30",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-09-08 12:56:03",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-08 12:55:30"
+      "lastUpdate": "2026-09-08 12:56:03"
     },
     {
       "jobId": "Jmrgolf-admin-project-18",
