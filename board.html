@@ -71,18 +71,47 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-11 21:42:06 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-11 22:02:17 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-11T21:42:06",
+  "generatedAt": "2026-09-11T22:02:17",
   "counts": {
     "active": 10,
-    "waitingWorker": 4,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 3,
     "waitingReview": 2,
-    "done": 464,
+    "done": 465,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-d-apply",
+      "title": "ORDER_Jmrgolf-d-apply_R01 — 합쳐진 트리를 D 본 앱에 반영하고 검사기를 다시 통과시킨다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-11 22:01:22",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-11 22:01:22"
+    },
     {
       "jobId": "Jmrgolf-next16-merge",
       "title": "ORDER_Jmrgolf-next16-merge_R01 — 미반영 후보 열두 층을 격리 사본에서 순서대로 합쳐 빌드하고 띄운다",
@@ -90,10 +119,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -113,9 +142,14 @@
           "time": "2026-09-11 21:13:03",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-11 22:01:22",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-11 21:13:03"
+      "lastUpdate": "2026-09-11 22:01:22"
     },
     {
       "jobId": "Jmrgolf-candidate-vault",
