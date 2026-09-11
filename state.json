@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-12T00:28:03",
+  "generatedAt": "2026-09-12T00:40:14",
   "counts": {
     "active": 10,
-    "waitingWorker": 4,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 2,
     "waitingReview": 3,
     "done": 465,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-d-apply",
+      "title": "ORDER_Jmrgolf-d-apply_R01 — 합쳐진 트리를 D 본 앱에 반영하고 검사기를 다시 통과시킨다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-11 22:01:22",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-11 22:07:18",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-12 00:39:55",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-12 00:39:55"
+    },
     {
       "jobId": "Jao10-retitle-cover",
       "title": "ORDER_Jao10-retitle-cover_R02 — 깨진 다섯째 장 15편을 고치고, 색보정 표지 하나를 더 바꾸고, 형제 글 표지가 같은 사진을 물지 않게 한다",
@@ -57,40 +96,6 @@
         }
       ],
       "lastUpdate": "2026-09-11 22:30:18"
-    },
-    {
-      "jobId": "Jmrgolf-d-apply",
-      "title": "ORDER_Jmrgolf-d-apply_R01 — 합쳐진 트리를 D 본 앱에 반영하고 검사기를 다시 통과시킨다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-11 22:01:22",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-11 22:07:18",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-11 22:07:18"
     },
     {
       "jobId": "Jmrgolf-next16-merge",
