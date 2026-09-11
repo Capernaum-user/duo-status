@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-11T20:54:48",
+  "generatedAt": "2026-09-11T21:00:00",
   "counts": {
     "active": 10,
-    "waitingWorker": 4,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 3,
     "waitingReview": 2,
     "done": 463,
     "alerts": 16
   },
   "jobs": [
+    {
+      "jobId": "Jao10-retitle-cover",
+      "title": "겹친 제목 두 쌍을 갈라 쓰고 색보정 차트가 찍힌 표지를 바꾼다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-11 18:08:29",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-11 18:38:17",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-11 20:59:46",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-11 20:59:46"
+    },
     {
       "jobId": "Jmrgolf-candidate-vault",
       "title": "ORDER_Jmrgolf-candidate-vault_R01 — 임시 폴더의 후보 산출물을 보전하고 반영 대장을 만든다",
@@ -86,40 +125,6 @@
         }
       ],
       "lastUpdate": "2026-09-11 19:07:01"
-    },
-    {
-      "jobId": "Jao10-retitle-cover",
-      "title": "겹친 제목 두 쌍을 갈라 쓰고 색보정 차트가 찍힌 표지를 바꾼다",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-11 18:08:29",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-11 18:38:17",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-11 18:38:17"
     },
     {
       "jobId": "Jaodesign-rollout-report",
@@ -23400,6 +23405,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-11 20:54:56",
+      "command": "handoff-check",
+      "panel": "ObsidianVault",
+      "text": "<local>"
+    },
+    {
       "time": "2026-09-11 20:54:39",
       "command": "handoff-check",
       "panel": "00_reuel-maison",
@@ -23512,12 +23523,6 @@
       "command": "handoff-auto",
       "panel": "01_foundry-ontology-corpus",
       "text": "너는 claude-duo의 무인(headless) 워커다. 아래 작업지시서(ORDER)만 보고 자족적으로 수행하라(다른 문맥 없음). === O…"
-    },
-    {
-      "time": "2026-09-07 02:16:05",
-      "command": "handoff-cycle",
-      "panel": "project-40",
-      "text": "/cycle 다음 관리자 powershell에서 작업 스케쥴러 이벤트 로그를 켜는 것 포함해서 진행해야 하는게 있다면 전부 진행해."
     }
   ]
 }
