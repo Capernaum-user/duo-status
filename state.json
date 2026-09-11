@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-12T00:40:14",
+  "generatedAt": "2026-09-12T00:54:25",
   "counts": {
     "active": 10,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 3,
     "done": 465,
     "alerts": 16
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-d-apply",
-      "title": "ORDER_Jmrgolf-d-apply_R01 — 합쳐진 트리를 D 본 앱에 반영하고 검사기를 다시 통과시킨다",
+      "title": "ORDER_Jmrgolf-d-apply_R02 — 반영된 D에서 검사기 일곱을 전부 통과시키고 커밋·문서로 닫는다",
       "project": "project-40",
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -44,9 +44,14 @@
           "time": "2026-09-12 00:39:55",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-09-12 00:53:38",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-12 00:39:55"
+      "lastUpdate": "2026-09-12 00:53:38"
     },
     {
       "jobId": "Jao10-retitle-cover",
