@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-09-12T02:38:01",
+  "generatedAt": "2026-09-12T02:39:12",
   "counts": {
     "active": 10,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 2,
+    "working": 2,
+    "waitingReview": 3,
     "done": 466,
-    "alerts": 17
+    "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-d-apply",
+      "title": "ORDER_Jmrgolf-d-apply_R02 — 반영된 D에서 검사기 일곱을 전부 통과시키고 커밋·문서로 닫는다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-11 22:01:22",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-11 22:07:18",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-12 00:39:55",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-12 00:53:38",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-12 02:39:03",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-12 02:39:03"
+    },
     {
       "jobId": "Jao10-write-missing",
       "title": "미작성 주제 23편을 쓰고 카드뉴스를 붙여 예약 대기열 맨 뒤에 넣는다",
@@ -91,50 +140,6 @@
         }
       ],
       "lastUpdate": "2026-09-12 01:27:08"
-    },
-    {
-      "jobId": "Jmrgolf-d-apply",
-      "title": "ORDER_Jmrgolf-d-apply_R02 — 반영된 D에서 검사기 일곱을 전부 통과시키고 커밋·문서로 닫는다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-11 22:01:22",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-11 22:07:18",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-12 00:39:55",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-12 00:53:38",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-12 00:53:38"
     },
     {
       "jobId": "Jmrgolf-next16-merge",
