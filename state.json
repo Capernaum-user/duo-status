@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T19:28:56",
+  "generatedAt": "2026-09-11T19:53:07",
   "counts": {
     "active": 10,
     "waitingWorker": 5,
@@ -23295,6 +23295,11 @@
     {
       "file": "Jmrgolf-apikey-truth_autopilot-unclaimed.md",
       "jobId": "Jmrgolf-apikey-truth",
+      "cause": "autopilot-unclaimed"
+    },
+    {
+      "file": "Jmrgolf-candidate-vault_autopilot-unclaimed.md",
+      "jobId": "Jmrgolf-candidate-vault",
       "cause": "autopilot-unclaimed"
     },
     {
