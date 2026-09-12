@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-13T06:51:36",
+  "generatedAt": "2026-09-13T06:52:45",
   "counts": {
     "active": 10,
     "waitingWorker": 5,
-    "working": 2,
-    "waitingReview": 3,
+    "working": 3,
+    "waitingReview": 2,
     "done": 502,
-    "alerts": 18
+    "alerts": 17
   },
   "jobs": [
     {
       "jobId": "Jao-naver-verify",
-      "title": "4단계: 전수로 다시 재고, 사람이 할 일을 남기고, 보고서를 낸다",
+      "title": "R2: 주석 한 줄을 고쳐 검사기를 통과시키고, 보고서에 그 결과와 로봇 실측을 반영한다",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-09-13 06:51:06",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-13 06:52:11",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 06:52:24",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-13 06:51:06"
+      "lastUpdate": "2026-09-13 06:52:24"
     },
     {
       "jobId": "Jao-naver-imgindex",
