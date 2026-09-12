@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-12T20:15:57",
+  "generatedAt": "2026-09-12T20:25:08",
   "counts": {
     "active": 10,
-    "waitingWorker": 5,
-    "working": 3,
+    "waitingWorker": 4,
+    "working": 4,
     "waitingReview": 2,
     "done": 475,
     "alerts": 17
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-12 20:15:26",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-12 20:24:04",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-12 20:15:26"
+      "lastUpdate": "2026-09-12 20:24:04"
     },
     {
       "jobId": "Jmrgolf-notify-live-adapters",
@@ -23948,6 +23953,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-12 20:23:53",
+      "command": "handoff-check",
+      "panel": "00_reuel-maison",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-12 20:05:08",
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
@@ -24059,12 +24070,6 @@
       "time": "2026-09-12 10:21:07",
       "command": "handoff-check",
       "panel": "00_reuel-maison",
-      "text": "/check"
-    },
-    {
-      "time": "2026-09-12 10:12:04",
-      "command": "handoff-check",
-      "panel": "ObsidianVault",
       "text": "/check"
     }
   ]
