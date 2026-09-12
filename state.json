@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T18:19:02",
+  "generatedAt": "2026-09-12T18:20:13",
   "counts": {
     "active": 10,
     "waitingWorker": 4,
@@ -9,6 +9,50 @@
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jao10-daily-writer",
+      "title": "ORDER_Jao10-daily-writer_R02 — 글이 먼저 공개됐다가 예약으로 되돌아가는 구조를 없애고, 남은 뒷정리를 끝낸다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-12 17:07:05",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-12 17:07:45",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-12 18:19:12",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-12 18:19:23",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-12 18:19:23"
+    },
     {
       "jobId": "Jmrgolf-project-18-migration",
       "title": "ORDER_Jmrgolf-project-18-migration_R01 — 배너·특가·게시글을 Postgres로 옮겨 관리자 쓰기를 되살린다",
@@ -86,40 +130,6 @@
         }
       ],
       "lastUpdate": "2026-09-12 17:13:54"
-    },
-    {
-      "jobId": "Jao10-daily-writer",
-      "title": "매일 아침 스스로 열 편을 쓰고 예약하는 작업을 세우고 첫 이틀치를 돌려 본다",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-12 17:07:05",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-12 17:07:45",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-12 17:07:45"
     },
     {
       "jobId": "Jao10-topics-v2",
