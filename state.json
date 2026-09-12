@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-13T01:31:16",
+  "generatedAt": "2026-09-13T01:39:59",
   "counts": {
-    "active": 11,
+    "active": 10,
     "waitingWorker": 4,
-    "working": 5,
+    "working": 4,
     "waitingReview": 2,
-    "done": 485,
+    "done": 486,
     "alerts": 17
   },
   "jobs": [
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -39,9 +39,19 @@
           "time": "2026-09-13 01:30:59",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-13 01:38:55",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 01:39:28",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-13 01:30:59"
+      "lastUpdate": "2026-09-13 01:39:28"
     },
     {
       "jobId": "Jreuel-similarity-check",
