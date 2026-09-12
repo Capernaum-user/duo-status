@@ -71,18 +71,52 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-13 01:44:20 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-13 01:45:31 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-13T01:44:20",
+  "generatedAt": "2026-09-13T01:45:31",
   "counts": {
     "active": 11,
     "waitingWorker": 4,
     "working": 5,
     "waitingReview": 2,
-    "done": 486,
+    "done": 487,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jreuel-doc-truth",
+      "title": "Jreuel-doc-truth",
+      "project": "",
+      "targetDir": null,
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 01:45:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 01:45:29",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-13 01:45:29"
+    },
     {
       "jobId": "Jreuel-cluster-coverage",
       "title": "ORDER_Jreuel-cluster-coverage_R01 — 편수 대신 군집 덮기를 세는 상태판을 만든다",
@@ -90,10 +124,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -113,9 +147,19 @@
           "time": "2026-09-13 01:39:36",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-13 01:44:49",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 01:45:17",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-13 01:39:36"
+      "lastUpdate": "2026-09-13 01:45:17"
     },
     {
       "jobId": "Jreuel-uptime-watch",
@@ -20599,6 +20643,60 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-53",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
       "jobId": "Jclarify-noautopop",
       "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
       "project": "project-53",
@@ -20767,60 +20865,6 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 4
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-53",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
