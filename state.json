@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T01:59:14",
+  "generatedAt": "2026-09-13T02:03:25",
   "counts": {
     "active": 11,
     "waitingWorker": 4,
@@ -11,21 +11,21 @@
   "jobs": [
     {
       "jobId": "Jao-visual-verify",
-      "title": "전수로 다시 재고 한 장짜리 보고서를 낸다",
+      "title": "R2: 공개 글 26편에서 안 보이는 글자를 살리고 보고서를 고쳐 낸다",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-09-13 01:59:00",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-13 02:02:54",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 02:03:06",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-13 01:59:00"
+      "lastUpdate": "2026-09-13 02:03:06"
     },
     {
       "jobId": "Jreuel-naver-satellite",
@@ -55,10 +65,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -78,9 +88,14 @@
           "time": "2026-09-13 01:52:57",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-13 02:02:50",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-13 01:52:57"
+      "lastUpdate": "2026-09-13 02:02:50"
     },
     {
       "jobId": "Jreuel-doc-truth",
