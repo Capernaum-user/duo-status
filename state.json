@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-12T19:02:43",
+  "generatedAt": "2026-09-12T19:03:53",
   "counts": {
-    "active": 9,
+    "active": 8,
     "waitingWorker": 4,
     "working": 2,
-    "waitingReview": 3,
-    "done": 473,
-    "alerts": 18
+    "waitingReview": 2,
+    "done": 474,
+    "alerts": 17
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -54,9 +54,14 @@
           "time": "2026-09-12 19:02:01",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-09-12 19:03:16",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-12 19:02:01"
+      "lastUpdate": "2026-09-12 19:03:16"
     },
     {
       "jobId": "Jmrgolf-project-18-migration",
