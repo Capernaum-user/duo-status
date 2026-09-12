@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-13T04:15:49",
+  "generatedAt": "2026-09-13T04:19:01",
   "counts": {
-    "active": 9,
-    "waitingWorker": 5,
+    "active": 10,
+    "waitingWorker": 6,
     "working": 2,
     "waitingReview": 2,
     "done": 497,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jao-naver-diagnose",
+      "title": "1단계: 네이버 검색에 카드뉴스 그림이 안 나오는 이유를 증거로 찾아낸다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 04:18:51",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-13 04:18:51"
+    },
     {
       "jobId": "Jmrgolf-project-64ation-operator",
       "title": "ORDER_Jmrgolf-project-64ation-operator_R01 — 발행 제어판을 여는 권한 경로를 뚫는다",
