@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-13T01:54:03",
+  "generatedAt": "2026-09-13T01:59:14",
   "counts": {
     "active": 11,
     "waitingWorker": 4,
-    "working": 5,
-    "waitingReview": 2,
+    "working": 4,
+    "waitingReview": 3,
     "done": 489,
-    "alerts": 17
+    "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jao-visual-verify",
+      "title": "전수로 다시 재고 한 장짜리 보고서를 낸다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 01:21:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 01:21:12",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 01:59:00",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-13 01:59:00"
+    },
     {
       "jobId": "Jreuel-naver-satellite",
       "title": "ORDER_Jreuel-naver-satellite_R01 — 네이버 블로그 위성의 요약본 생산까지 만든다",
@@ -301,40 +340,6 @@
         }
       ],
       "lastUpdate": "2026-09-13 01:30:47"
-    },
-    {
-      "jobId": "Jao-visual-verify",
-      "title": "전수로 다시 재고 한 장짜리 보고서를 낸다",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-13 01:21:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 01:21:12",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-13 01:21:12"
     },
     {
       "jobId": "Jao-cardnews-covers",
