@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-09-13T02:09:58",
+  "generatedAt": "2026-09-13T02:36:10",
   "counts": {
     "active": 10,
     "waitingWorker": 4,
-    "working": 4,
-    "waitingReview": 2,
+    "working": 3,
+    "waitingReview": 3,
     "done": 491,
-    "alerts": 17
+    "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jao-visual-verify",
+      "title": "R2: 공개 글 26편에서 안 보이는 글자를 살리고 보고서를 고쳐 낸다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 01:21:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 01:21:12",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 01:59:00",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 02:02:54",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 02:03:06",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 02:35:15",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-13 02:35:15"
+    },
     {
       "jobId": "Jmrgolf-community-project-64",
       "title": "ORDER_Jmrgolf-community-project-64_R01 — 공개 커뮤니티 화면을 직접 열어 확인하고 회귀를 막는다",
@@ -125,55 +179,6 @@
         }
       ],
       "lastUpdate": "2026-09-13 02:03:25"
-    },
-    {
-      "jobId": "Jao-visual-verify",
-      "title": "R2: 공개 글 26편에서 안 보이는 글자를 살리고 보고서를 고쳐 낸다",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-13 01:21:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 01:21:12",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 01:59:00",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 02:02:54",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-13 02:03:06",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-13 02:03:06"
     },
     {
       "jobId": "Jreuel-doc-truth",
