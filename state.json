@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-13T02:41:29",
+  "generatedAt": "2026-09-13T02:55:41",
   "counts": {
-    "active": 9,
-    "waitingWorker": 4,
+    "active": 10,
+    "waitingWorker": 5,
     "working": 3,
     "waitingReview": 2,
     "done": 492,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jreuel2-satellite-referral",
+      "title": "ORDER_Jreuel2-satellite-referral_R01 — 위성 유입을 진짜로 세게 만든다",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 02:55:35",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-13 02:55:35"
+    },
     {
       "jobId": "Jmrgolf-community-project-64",
       "title": "ORDER_Jmrgolf-community-project-64_R02 — 공개 커뮤니티 화면을 직접 열어 확인하고 회귀를 막는다",
@@ -20736,6 +20765,60 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
+      "jobId": "Jneo4j-durable",
+      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
+      "project": "project-53",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "worker",
+        "round": 1,
+        "result": "ERROR"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-21 20:48:47",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-21 20:48:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:11:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
       "jobId": "Jmermaid-render",
       "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
       "project": "project-53",
@@ -20904,60 +20987,6 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 3
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
-      "jobId": "Jneo4j-durable",
-      "title": "ORDER_Jneo4j-durable_R01 — Neo4j 지속가동 3종: 재시작정책 + 부팅 자동기동 + 표식 자가치유",
-      "project": "project-53",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "worker",
-        "round": 1,
-        "result": "ERROR"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-21 20:48:47",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-21 20:48:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:11:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 1
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
@@ -24757,6 +24786,18 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-13 02:54:05",
+      "command": "handoff-cycle",
+      "panel": "01_project-55",
+      "text": "/cycle 남은 것 셋을 지금 당장 해야된다면 지금 시작해."
+    },
+    {
+      "time": "2026-09-13 02:50:00",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-13 01:22:04",
       "command": "handoff-check",
       "panel": "project-45",
@@ -24863,18 +24904,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "<cross-session-message from=\"ud<local>"
-    },
-    {
-      "time": "2026-09-12 11:42:40",
-      "command": "handoff-cycle",
-      "panel": "claude-handoff",
-      "text": "<task-notification> <task-id>abb98a288c239b2b7</task-id> <tool-use-id>toolu_01A3…"
-    },
-    {
-      "time": "2026-09-12 11:32:10",
-      "command": "handoff-review",
-      "panel": "project-40",
-      "text": "/handoff-review — 미스터골프 사이클 C20260908-220717-04ac 전용 검토 틱이다. 먼저 pwsh -NoProfile …"
     }
   ]
 }
