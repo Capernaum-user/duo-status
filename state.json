@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-13T04:33:07",
+  "generatedAt": "2026-09-13T04:35:15",
   "counts": {
     "active": 10,
     "waitingWorker": 4,
-    "working": 3,
-    "waitingReview": 3,
-    "done": 498,
-    "alerts": 18
+    "working": 4,
+    "waitingReview": 2,
+    "done": 499,
+    "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jao-naver-ogimage",
+      "title": "2단계: 글마다 대표그림 하나를 확정하고 주소를 한 개로 모은다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 04:34:32",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 04:34:43",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-13 04:34:43"
+    },
     {
       "jobId": "Jao-naver-diagnose",
       "title": "1단계: 네이버 검색에 카드뉴스 그림이 안 나오는 이유를 증거로 찾아낸다",
@@ -16,10 +50,10 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -44,9 +78,14 @@
           "time": "2026-09-13 04:32:51",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-13 04:34:27",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-13 04:32:51"
+      "lastUpdate": "2026-09-13 04:34:27"
     },
     {
       "jobId": "Jmrgolf-admin-moderation",
