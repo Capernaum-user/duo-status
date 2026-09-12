@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-09-13T03:10:51",
+  "generatedAt": "2026-09-13T03:23:23",
   "counts": {
-    "active": 10,
+    "active": 9,
     "waitingWorker": 4,
-    "working": 4,
+    "working": 3,
     "waitingReview": 2,
-    "done": 495,
+    "done": 496,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jreuel2-satellite-handoff",
+      "title": "ORDER_Jreuel2-satellite-handoff_R01 — 사람이 붙여넣기만 하면 되는 데까지 간다",
+      "project": "project-45",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 03:08:20",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 03:08:32",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 03:22:14",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 03:22:59",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-13 03:22:59"
+    },
     {
       "jobId": "Jmrgolf-crawler-status",
       "title": "ORDER_Jmrgolf-crawler-status_R01 — 수집기 상태판을 관리자 화면에 붙이고 사이클 보고서를 낸다",
@@ -91,40 +135,6 @@
         }
       ],
       "lastUpdate": "2026-09-13 03:10:03"
-    },
-    {
-      "jobId": "Jreuel2-satellite-handoff",
-      "title": "ORDER_Jreuel2-satellite-handoff_R01 — 사람이 붙여넣기만 하면 되는 데까지 간다",
-      "project": "project-45",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-13 03:08:20",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 03:08:32",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-13 03:08:32"
     },
     {
       "jobId": "Jreuel2-satellite-similarity",
