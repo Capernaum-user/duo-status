@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-12T10:15:34",
+  "generatedAt": "2026-09-12T10:22:11",
   "counts": {
     "active": 10,
-    "waitingWorker": 6,
-    "working": 2,
+    "waitingWorker": 5,
+    "working": 3,
     "waitingReview": 2,
     "done": 470,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jao10-topics-v2",
+      "title": "하루 열 편을 30일 더 이어 갈 2차 주제표 300행을 짠다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-12 10:14:37",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-12 10:21:28",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-12 10:21:28"
+    },
     {
       "jobId": "Jao10-respace",
       "title": "예약 글 전부를 내일부터 하루 열 편으로 다시 편다",
@@ -43,35 +77,6 @@
         {
           "time": "2026-09-12 10:14:37",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-12 10:14:37"
-    },
-    {
-      "jobId": "Jao10-topics-v2",
-      "title": "하루 열 편을 30일 더 이어 갈 2차 주제표 300행을 짠다",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-12 10:14:37",
-          "state": "PLANNED",
           "round": 1
         }
       ],
@@ -23713,6 +23718,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-12 10:21:07",
+      "command": "handoff-check",
+      "panel": "00_reuel-maison",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-12 10:12:04",
       "command": "handoff-check",
       "panel": "ObsidianVault",
@@ -23825,12 +23836,6 @@
       "command": "handoff-check",
       "panel": "ObsidianVault",
       "text": "다른 패널에서 /check 했어"
-    },
-    {
-      "time": "2026-09-08 06:52:07",
-      "command": "handoff-check",
-      "panel": "project-45",
-      "text": "/check"
     }
   ]
 }
