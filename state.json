@@ -1,14 +1,98 @@
 {
-  "generatedAt": "2026-09-14T03:33:58",
+  "generatedAt": "2026-09-14T03:36:06",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 3,
-    "waitingReview": 2,
+    "working": 2,
+    "waitingReview": 3,
     "done": 512,
     "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-client-confirmation-build-20260914",
+      "title": "R4 — 응답 감지의 잔여 네 결함을 보완한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 4,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-14 02:01:35",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 02:03:19",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 02:33:21",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 02:45:36",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-14 02:46:07",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-14 03:00:32",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-14 03:10:46",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-14 03:11:01",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-14 03:22:09",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-09-14 03:28:56",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-09-14 03:29:05",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-09-14 03:35:35",
+          "state": "DONE",
+          "round": 4
+        }
+      ],
+      "lastUpdate": "2026-09-14 03:35:35"
+    },
     {
       "jobId": "Jao-renewal-20260913-seo",
       "title": "남은 이미지 예시를 읽게 만든다 — SEO 후보 R5의 제한된 보완",
@@ -102,85 +186,6 @@
         }
       ],
       "lastUpdate": "2026-09-14 03:33:34"
-    },
-    {
-      "jobId": "Jmrgolf-client-confirmation-build-20260914",
-      "title": "R4 — 응답 감지의 잔여 네 결함을 보완한다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 4,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-14 02:01:35",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-14 02:03:19",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-14 02:33:21",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-09-14 02:45:36",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-14 02:46:07",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-14 03:00:32",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-09-14 03:10:46",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-09-14 03:11:01",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-09-14 03:22:09",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-09-14 03:28:56",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-09-14 03:29:05",
-          "state": "CLAIMED",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-09-14 03:29:05"
     },
     {
       "jobId": "Jmrgolf-intake-records-20260914",
