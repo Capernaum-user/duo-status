@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-14T01:31:15",
+  "generatedAt": "2026-09-14T01:32:22",
   "counts": {
     "active": 10,
     "waitingWorker": 4,
-    "working": 4,
-    "waitingReview": 2,
+    "working": 3,
+    "waitingReview": 3,
     "done": 511,
-    "alerts": 17
+    "alerts": 18
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -54,9 +54,14 @@
           "time": "2026-09-14 01:30:48",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-14 01:31:45",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-14 01:30:48"
+      "lastUpdate": "2026-09-14 01:31:45"
     },
     {
       "jobId": "Jao-renewal-20260913-seo",
