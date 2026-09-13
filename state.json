@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T04:15:40",
+  "generatedAt": "2026-09-14T04:35:51",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
@@ -11,10 +11,10 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-client-confirmation-release-20260914",
-      "title": "기존 설정으로 감지기를 연결하고 배포를 마친다",
+      "title": "검증이 끝난 확인서 전달 작업의 보고를 마감한다",
       "project": "project-40",
       "targetDir": "<local>",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -24,7 +24,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -49,9 +49,19 @@
           "time": "2026-09-14 04:04:21",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-14 04:35:30",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-14 04:35:40",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-14 04:04:21"
+      "lastUpdate": "2026-09-14 04:35:40"
     },
     {
       "jobId": "Jmrgolf-client-confirmation-build-20260914",
