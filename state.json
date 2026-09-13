@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-14T01:55:54",
+  "generatedAt": "2026-09-14T02:02:05",
   "counts": {
-    "active": 9,
-    "waitingWorker": 4,
+    "active": 10,
+    "waitingWorker": 5,
     "working": 3,
     "waitingReview": 2,
     "done": 512,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-client-confirmation-build-20260914",
+      "title": "의뢰인 확인서와 응답 감지를 준비한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-14 02:01:35",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-14 02:01:35"
+    },
     {
       "jobId": "Jao-renewal-20260913-seo",
       "title": "읽을 수 있는 이미지와 일관된 출력으로 마무리한다 — SEO 후보 R4",
