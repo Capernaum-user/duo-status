@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T19:31:59",
+  "generatedAt": "2026-09-13T19:35:08",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
@@ -25675,6 +25675,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-13 19:32:40",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-13 18:06:53",
       "command": "handoff-check",
       "panel": "00_reuel-maison",
@@ -25787,12 +25793,6 @@
       "command": "handoff-check",
       "panel": "00_reuel-maison",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-12 20:05:08",
-      "command": "handoff-cycle",
-      "panel": "ObsidianVault",
-      "text": "/cycle https://agent-ontology.com/ 이 디자인과 이 이미지들이 과연 시각적으로 좋아보여?다시 디자인셋팅하고 이미지들도…"
     }
   ]
 }
