@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T23:55:28",
+  "generatedAt": "2026-09-14T00:26:35",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
@@ -118,7 +118,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
