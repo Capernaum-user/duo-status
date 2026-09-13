@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-13T15:04:59",
+  "generatedAt": "2026-09-13T15:10:10",
   "counts": {
-    "active": 9,
-    "waitingWorker": 4,
+    "active": 10,
+    "waitingWorker": 5,
     "working": 3,
     "waitingReview": 2,
     "done": 505,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jao-renewal-20260913-baseline",
+      "title": "현황·기획 근거를 먼저 고정한다",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-55/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 15:09:58",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-13 15:09:58"
+    },
     {
       "jobId": "Jmrgolf-progress-deck",
       "title": "ORDER_Jmrgolf-progress-deck_R01 — 의뢰인에게 보여 줄 진행 보고 발표자료를 만든다",
