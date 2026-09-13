@@ -1,64 +1,25 @@
 {
-  "generatedAt": "2026-09-14T02:33:32",
+  "generatedAt": "2026-09-14T02:41:40",
   "counts": {
     "active": 10,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 4,
+    "working": 3,
+    "waitingReview": 3,
     "done": 512,
     "alerts": 18
   },
   "jobs": [
     {
-      "jobId": "Jmrgolf-client-confirmation-build-20260914",
-      "title": "의뢰인 확인서와 응답 감지를 준비한다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-14 02:01:35",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-14 02:03:19",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-14 02:33:21",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-14 02:33:21"
-    },
-    {
       "jobId": "Jao-renewal-20260913-seo",
-      "title": "읽을 수 있는 이미지와 일관된 출력으로 마무리한다 — SEO 후보 R4",
+      "title": "남은 이미지 예시를 읽게 만든다 — SEO 후보 R5의 제한된 보완",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
-      "round": 4,
+      "round": 5,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -113,9 +74,58 @@
           "time": "2026-09-14 02:30:02",
           "state": "DONE",
           "round": 4
+        },
+        {
+          "time": "2026-09-14 02:41:24",
+          "state": "REWORK",
+          "round": 5
+        },
+        {
+          "time": "2026-09-14 02:41:36",
+          "state": "CLAIMED",
+          "round": 5
         }
       ],
-      "lastUpdate": "2026-09-14 02:30:02"
+      "lastUpdate": "2026-09-14 02:41:36"
+    },
+    {
+      "jobId": "Jmrgolf-client-confirmation-build-20260914",
+      "title": "의뢰인 확인서와 응답 감지를 준비한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-14 02:01:35",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 02:03:19",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 02:33:21",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-14 02:33:21"
     },
     {
       "jobId": "Jmrgolf-intake-records-20260914",
