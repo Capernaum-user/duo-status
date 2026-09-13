@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-14T07:25:34",
+  "generatedAt": "2026-09-14T07:39:44",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 3,
-    "done": 514,
+    "working": 3,
+    "waitingReview": 2,
+    "done": 515,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jao-renewal-20260913-release",
+      "title": "사용자가 검토할 개편 후보를 준비한다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-14 07:39:05",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 07:39:19",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-14 07:39:19"
+    },
     {
       "jobId": "Jao-renewal-20260913-seo",
       "title": "문의 복귀 주소를 일치시킨다 — SEO R6의 한정된 보완",
@@ -16,15 +50,15 @@
       "targetDir": "<local>",
       "round": 6,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -114,9 +148,14 @@
           "time": "2026-09-14 07:24:43",
           "state": "DONE",
           "round": 6
+        },
+        {
+          "time": "2026-09-14 07:39:05",
+          "state": "ACCEPTED",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-09-14 07:24:43"
+      "lastUpdate": "2026-09-14 07:39:05"
     },
     {
       "jobId": "Jmrgolf-client-confirmation-release-20260914",
