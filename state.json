@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-13T19:39:24",
+  "generatedAt": "2026-09-13T19:56:31",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 3,
-    "waitingReview": 2,
+    "working": 2,
+    "waitingReview": 3,
     "done": 508,
     "alerts": 18
   },
@@ -16,15 +16,15 @@
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -69,9 +69,14 @@
           "time": "2026-09-13 19:37:50",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-09-13 19:55:57",
+          "state": "DONE",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-13 19:37:50"
+      "lastUpdate": "2026-09-13 19:55:57"
     },
     {
       "jobId": "Jmrgolf-client-intake-20260913-1",
@@ -25685,6 +25690,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-13 19:55:01",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-13 19:32:40",
       "command": "handoff-check",
       "panel": "project-40",
@@ -25797,12 +25808,6 @@
       "command": "handoff-cycle",
       "panel": "project-40",
       "text": "/cycle 그럼 우선 우리가 할 수있는것부터 하자. 의뢰인에게 요청할건 나중에 요청하고 지금 당장 해야될 것들을 하면돼. 혹시 우리 기획일부에…"
-    },
-    {
-      "time": "2026-09-12 20:23:53",
-      "command": "handoff-check",
-      "panel": "00_reuel-maison",
-      "text": "/check"
     }
   ]
 }
