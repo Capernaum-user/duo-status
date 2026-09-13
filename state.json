@@ -1,14 +1,78 @@
 {
-  "generatedAt": "2026-09-13T22:10:42",
+  "generatedAt": "2026-09-13T22:13:53",
   "counts": {
-    "active": 9,
-    "waitingWorker": 4,
+    "active": 10,
+    "waitingWorker": 5,
     "working": 2,
     "waitingReview": 3,
     "done": 509,
-    "alerts": 19
+    "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-client-intake-20260913-1",
+      "title": "의뢰인 추가 자료를 확인한다",
+      "project": "project-40",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 17:49:14",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 17:52:40",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 18:00:41",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 18:12:47",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 18:12:57",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 18:25:11",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 19:31:54",
+          "state": "ESCALATED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 22:13:30",
+          "state": "REWORK",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-13 22:13:30"
+    },
     {
       "jobId": "Jao-renewal-20260913-site",
       "title": "검증 기록을 바로잡고 화면을 유지한다 — 워드프레스 후보 R4",
@@ -166,65 +230,6 @@
         }
       ],
       "lastUpdate": "2026-09-13 20:06:18"
-    },
-    {
-      "jobId": "Jmrgolf-client-intake-20260913-1",
-      "title": "의뢰인 추가 자료를 확인한다",
-      "project": "project-40",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
-      "flags": {
-        "escalated": true,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-13 17:49:14",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 17:52:40",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 18:00:41",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 18:12:47",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-13 18:12:57",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-13 18:25:11",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-09-13 19:31:54",
-          "state": "ESCALATED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-13 19:31:54"
     },
     {
       "jobId": "Jao-renewal-20260913-baseline",
@@ -25779,6 +25784,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-13 22:13:49",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check <local>"
+    },
+    {
       "time": "2026-09-13 19:55:01",
       "command": "handoff-check",
       "panel": "project-40",
@@ -25891,12 +25902,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-13 00:31:32",
-      "command": "handoff-cycle",
-      "panel": "project-40",
-      "text": "/cycle 그럼 우선 우리가 할 수있는것부터 하자. 의뢰인에게 요청할건 나중에 요청하고 지금 당장 해야될 것들을 하면돼. 혹시 우리 기획일부에…"
     }
   ]
 }
