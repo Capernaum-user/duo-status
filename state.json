@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-13T18:03:14",
+  "generatedAt": "2026-09-13T18:11:25",
   "counts": {
-    "active": 9,
+    "active": 10,
     "waitingWorker": 4,
-    "working": 2,
+    "working": 3,
     "waitingReview": 3,
     "done": 507,
     "alerts": 18
@@ -11,17 +11,17 @@
   "jobs": [
     {
       "jobId": "Jao-renewal-20260913-baseline",
-      "title": "현황·기획 근거를 먼저 고정한다",
+      "title": "검사 이력을 연결한다 — 기존 감사 자료를 유지하는 R6 보완",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
-      "round": 5,
+      "round": 6,
       "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
-        "escalated": true,
+        "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -114,9 +114,19 @@
           "time": "2026-09-13 18:01:25",
           "state": "ESCALATED",
           "round": 5
+        },
+        {
+          "time": "2026-09-13 18:11:09",
+          "state": "REWORK",
+          "round": 6
+        },
+        {
+          "time": "2026-09-13 18:11:20",
+          "state": "CLAIMED",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-09-13 18:01:25"
+      "lastUpdate": "2026-09-13 18:11:20"
     },
     {
       "jobId": "Jmrgolf-client-intake-20260913-1",
@@ -127,13 +137,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -25576,6 +25586,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-13 18:06:53",
+      "command": "handoff-check",
+      "panel": "00_reuel-maison",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-13 17:52:32",
       "command": "handoff-check",
       "panel": "project-40",
@@ -25688,12 +25704,6 @@
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
       "text": "/cycle https://agent-ontology.com/ 이 디자인과 이 이미지들이 과연 시각적으로 좋아보여?다시 디자인셋팅하고 이미지들도…"
-    },
-    {
-      "time": "2026-09-12 19:51:37",
-      "command": "handoff-check",
-      "panel": "project-40",
-      "text": "/check"
     }
   ]
 }
