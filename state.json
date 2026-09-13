@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-13T19:56:31",
+  "generatedAt": "2026-09-13T20:06:39",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 3,
-    "done": 508,
+    "working": 3,
+    "waitingReview": 2,
+    "done": 509,
     "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jao-renewal-20260913-site",
+      "title": "서비스가 보이는 공통 화면을 구현한다",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 20:06:19",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 20:06:31",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-13 20:06:31"
+    },
     {
       "jobId": "Jao-renewal-20260913-design",
       "title": "작은 글자와 끊긴 탐색을 고친다 — 디자인 R3",
@@ -16,15 +50,15 @@
       "targetDir": "<local>",
       "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -74,9 +108,14 @@
           "time": "2026-09-13 19:55:57",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-09-13 20:06:18",
+          "state": "ACCEPTED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-13 19:55:57"
+      "lastUpdate": "2026-09-13 20:06:18"
     },
     {
       "jobId": "Jmrgolf-client-intake-20260913-1",
