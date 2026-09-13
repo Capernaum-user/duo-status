@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-09-14T00:26:35",
+  "generatedAt": "2026-09-14T00:44:42",
   "counts": {
     "active": 9,
-    "waitingWorker": 4,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 2,
     "waitingReview": 2,
     "done": 511,
     "alerts": 17
   },
   "jobs": [
+    {
+      "jobId": "Jao-renewal-20260913-seo",
+      "title": "이미지와 접수 근거를 바로잡는다 — SEO 후보 R2",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 22:19:11",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 22:19:25",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 23:33:36",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 23:33:45",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-14 00:44:33",
+          "state": "REWORK",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-14 00:44:33"
+    },
     {
       "jobId": "Jmrgolf-client-intake-20260913-1",
       "title": "남은 두 업체의 기간과 보험 조건을 바로잡는다",
@@ -102,50 +151,6 @@
         }
       ],
       "lastUpdate": "2026-09-13 23:53:06"
-    },
-    {
-      "jobId": "Jao-renewal-20260913-seo",
-      "title": "이미지와 접수 근거를 바로잡는다 — SEO 후보 R2",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-13 22:19:11",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 22:19:25",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 23:33:36",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-13 23:33:45",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-13 23:33:45"
     },
     {
       "jobId": "Jao-renewal-20260913-site",
