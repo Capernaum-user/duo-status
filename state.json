@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-13T18:57:39",
+  "generatedAt": "2026-09-13T19:27:50",
   "counts": {
     "active": 10,
     "waitingWorker": 4,
-    "working": 3,
-    "waitingReview": 3,
+    "working": 2,
+    "waitingReview": 4,
     "done": 508,
-    "alerts": 17
+    "alerts": 18
   },
   "jobs": [
     {
@@ -16,15 +16,15 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -54,9 +54,14 @@
           "time": "2026-09-13 18:57:28",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-13 19:27:07",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-13 18:57:28"
+      "lastUpdate": "2026-09-13 19:27:07"
     },
     {
       "jobId": "Jao-renewal-20260913-baseline",
@@ -196,13 +201,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
