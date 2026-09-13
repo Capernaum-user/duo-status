@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-14T06:53:14",
+  "generatedAt": "2026-09-14T07:09:24",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 2,
     "done": 514,
     "alerts": 17
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jao-renewal-20260913-seo",
-      "title": "남은 이미지 예시를 읽게 만든다 — SEO 후보 R5의 제한된 보완",
+      "title": "문의 복귀 주소를 일치시킨다 — SEO R6의 한정된 보완",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
       "round": 6,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -104,9 +104,14 @@
           "time": "2026-09-14 06:51:07",
           "state": "REWORK",
           "round": 6
+        },
+        {
+          "time": "2026-09-14 07:08:44",
+          "state": "CLAIMED",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-09-14 06:51:07"
+      "lastUpdate": "2026-09-14 07:08:44"
     },
     {
       "jobId": "Jmrgolf-client-confirmation-release-20260914",
