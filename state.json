@@ -1,14 +1,108 @@
 {
-  "generatedAt": "2026-09-14T03:29:49",
+  "generatedAt": "2026-09-14T03:33:58",
   "counts": {
-    "active": 10,
+    "active": 9,
     "waitingWorker": 4,
     "working": 3,
-    "waitingReview": 3,
+    "waitingReview": 2,
     "done": 512,
     "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jao-renewal-20260913-seo",
+      "title": "남은 이미지 예시를 읽게 만든다 — SEO 후보 R5의 제한된 보완",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 6,
+      "originDir": "<local>",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 22:19:11",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 22:19:25",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 23:33:36",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 23:33:45",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-14 00:44:33",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-14 00:44:50",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-14 01:54:50",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-09-14 01:55:01",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-09-14 02:30:02",
+          "state": "DONE",
+          "round": 4
+        },
+        {
+          "time": "2026-09-14 02:41:24",
+          "state": "REWORK",
+          "round": 5
+        },
+        {
+          "time": "2026-09-14 02:41:36",
+          "state": "CLAIMED",
+          "round": 5
+        },
+        {
+          "time": "2026-09-14 03:18:23",
+          "state": "DONE",
+          "round": 5
+        },
+        {
+          "time": "2026-09-14 03:33:34",
+          "state": "REWORK",
+          "round": 6
+        },
+        {
+          "time": "2026-09-14 03:33:34",
+          "state": "ESCALATED",
+          "round": 6
+        }
+      ],
+      "lastUpdate": "2026-09-14 03:33:34"
+    },
     {
       "jobId": "Jmrgolf-client-confirmation-build-20260914",
       "title": "R4 — 응답 감지의 잔여 네 결함을 보완한다",
@@ -87,90 +181,6 @@
         }
       ],
       "lastUpdate": "2026-09-14 03:29:05"
-    },
-    {
-      "jobId": "Jao-renewal-20260913-seo",
-      "title": "남은 이미지 예시를 읽게 만든다 — SEO 후보 R5의 제한된 보완",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 5,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-13 22:19:11",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 22:19:25",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 23:33:36",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-13 23:33:45",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-14 00:44:33",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-09-14 00:44:50",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-09-14 01:54:50",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-09-14 01:55:01",
-          "state": "CLAIMED",
-          "round": 4
-        },
-        {
-          "time": "2026-09-14 02:30:02",
-          "state": "DONE",
-          "round": 4
-        },
-        {
-          "time": "2026-09-14 02:41:24",
-          "state": "REWORK",
-          "round": 5
-        },
-        {
-          "time": "2026-09-14 02:41:36",
-          "state": "CLAIMED",
-          "round": 5
-        },
-        {
-          "time": "2026-09-14 03:18:23",
-          "state": "DONE",
-          "round": 5
-        }
-      ],
-      "lastUpdate": "2026-09-14 03:18:23"
     },
     {
       "jobId": "Jmrgolf-intake-records-20260914",
@@ -25816,6 +25826,11 @@
     {
       "file": "Jao-renewal-20260913-baseline_round-cap-exceeded.md",
       "jobId": "Jao-renewal-20260913-baseline",
+      "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jao-renewal-20260913-seo_round-cap-exceeded.md",
+      "jobId": "Jao-renewal-20260913-seo",
       "cause": "round-cap-exceeded"
     },
     {
