@@ -1,14 +1,78 @@
 {
-  "generatedAt": "2026-09-13T19:35:08",
+  "generatedAt": "2026-09-13T19:38:16",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 3,
+    "working": 3,
+    "waitingReview": 2,
     "done": 508,
-    "alerts": 19
+    "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jao-renewal-20260913-design",
+      "title": "작은 글자와 끊긴 탐색을 고친다 — 디자인 R3",
+      "project": "00_reuel-maison",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-13 18:34:22",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 18:34:35",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 18:46:36",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-13 18:57:17",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 18:57:28",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 19:27:07",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 19:37:38",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-13 19:37:50",
+          "state": "CLAIMED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-13 19:37:50"
+    },
     {
       "jobId": "Jmrgolf-client-intake-20260913-1",
       "title": "의뢰인 추가 자료를 확인한다",
@@ -67,60 +131,6 @@
         }
       ],
       "lastUpdate": "2026-09-13 19:31:54"
-    },
-    {
-      "jobId": "Jao-renewal-20260913-design",
-      "title": "실제 화면으로 디자인 방향을 비교한다",
-      "project": "00_reuel-maison",
-      "targetDir": "<local>",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-13 18:34:22",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 18:34:35",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 18:46:36",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-09-13 18:57:17",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-13 18:57:28",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-13 19:27:07",
-          "state": "DONE",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-09-13 19:27:07"
     },
     {
       "jobId": "Jao-renewal-20260913-baseline",
