@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-13T20:29:48",
+  "generatedAt": "2026-09-13T20:42:56",
   "counts": {
     "active": 9,
     "waitingWorker": 4,
-    "working": 2,
-    "waitingReview": 3,
+    "working": 3,
+    "waitingReview": 2,
     "done": 509,
     "alerts": 18
   },
   "jobs": [
     {
       "jobId": "Jao-renewal-20260913-site",
-      "title": "서비스가 보이는 공통 화면을 구현한다",
+      "title": "서비스 제공물과 문의 복귀를 완성한다 — 워드프레스 후보 R2",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-09-13 20:29:33",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-13 20:42:03",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-13 20:42:11",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-13 20:29:33"
+      "lastUpdate": "2026-09-13 20:42:11"
     },
     {
       "jobId": "Jao-renewal-20260913-design",
