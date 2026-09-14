@@ -1,29 +1,63 @@
 {
-  "generatedAt": "2026-09-14T20:40:09",
+  "generatedAt": "2026-09-14T20:41:18",
   "counts": {
     "active": 10,
-    "waitingWorker": 6,
-    "working": 2,
+    "waitingWorker": 5,
+    "working": 3,
     "waitingReview": 2,
     "done": 515,
-    "alerts": 18
+    "alerts": 19
   },
   "jobs": [
     {
+      "jobId": "Jmrgolf-confirmation-1325-16a4-1326-c2f5",
+      "title": "ORDER_Jmrgolf-confirmation-1325-16a4-1326-c2f5_R01 — 추가 확인 응답을 요금·준비상태 문서에 반영한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-55/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-14 20:38:46",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 20:40:19",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-14 20:40:19"
+    },
+    {
       "jobId": "Jao-seo-journal-20260914-store",
-      "title": "ORDER_Jao-seo-journal-20260914-store_R04 — 조회 이력과 비교 계산을 만든다",
+      "title": "ORDER_Jao-seo-journal-20260914-store_R05 — 조회 이력과 비교 계산을 만든다",
       "project": "11_seo-journal",
       "targetDir": "D:/01_project-55/project-45/project-45/00_reuel-maison/11_seo-journal",
       "round": 5,
       "originDir": "<local>",
       "stage": "REWORK",
       "stageIndex": 1,
-      "stageLabel": "발주됨",
+      "stageLabel": "발주됨 [확인필요]",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": true,
         "rework": true
       },
@@ -97,35 +131,6 @@
         }
       ],
       "lastUpdate": "2026-09-14 20:40:04"
-    },
-    {
-      "jobId": "Jmrgolf-confirmation-1325-16a4-1326-c2f5",
-      "title": "ORDER_Jmrgolf-confirmation-1325-16a4-1326-c2f5_R01 — 추가 확인 응답을 요금·준비상태 문서에 반영한다",
-      "project": "project-40",
-      "targetDir": "D:/01_project-55/project-40",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-14 20:38:46",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-14 20:38:46"
     },
     {
       "jobId": "Jao-renewal-20260913-release",
