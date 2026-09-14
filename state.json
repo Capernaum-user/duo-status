@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-14T12:12:07",
+  "generatedAt": "2026-09-14T12:26:19",
   "counts": {
     "active": 9,
-    "waitingWorker": 4,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 2,
     "waitingReview": 2,
     "done": 515,
-    "alerts": 18
+    "alerts": 19
   },
   "jobs": [
     {
       "jobId": "Jao-seo-journal-20260914-store",
-      "title": "ORDER_Jao-seo-journal-20260914-store_R01 — 조회 이력과 비교 계산을 만든다",
+      "title": "ORDER_Jao-seo-journal-20260914-store_R02 — 조회 이력과 비교 계산을 만든다",
       "project": "11_seo-journal",
       "targetDir": "D:/01_project-55/project-45/project-45/00_reuel-maison/11_seo-journal",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -39,9 +39,14 @@
           "time": "2026-09-14 12:03:27",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-14 12:25:39",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-14 12:03:27"
+      "lastUpdate": "2026-09-14 12:25:39"
     },
     {
       "jobId": "Jao-renewal-20260913-release",
