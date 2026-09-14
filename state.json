@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-09-14T20:56:33",
+  "generatedAt": "2026-09-14T21:05:44",
   "counts": {
     "active": 11,
     "waitingWorker": 4,
-    "working": 5,
-    "waitingReview": 2,
+    "working": 4,
+    "waitingReview": 3,
     "done": 516,
     "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jao-seo-journal-20260914-capture",
+      "title": "ORDER_Jao-seo-journal-20260914-capture_R01 — 운영 수집과 검색 자료 입력을 연결한다",
+      "project": "11_seo-journal",
+      "targetDir": "D:/01_project-55/project-45/project-45/00_reuel-maison/11_seo-journal",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-14 20:54:54",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 20:55:13",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 21:05:29",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-14 21:05:29"
+    },
     {
       "jobId": "Jao-leads-20260914-foundation",
       "title": "신청 개편의 기준과 격리 기반을 만든다",
@@ -42,40 +81,6 @@
         }
       ],
       "lastUpdate": "2026-09-14 20:55:46"
-    },
-    {
-      "jobId": "Jao-seo-journal-20260914-capture",
-      "title": "ORDER_Jao-seo-journal-20260914-capture_R01 — 운영 수집과 검색 자료 입력을 연결한다",
-      "project": "11_seo-journal",
-      "targetDir": "D:/01_project-55/project-45/project-45/00_reuel-maison/11_seo-journal",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-14 20:54:54",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-14 20:55:13",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-14 20:55:13"
     },
     {
       "jobId": "Jao-seo-journal-20260914-store",
@@ -196,7 +201,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
