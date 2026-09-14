@@ -1,43 +1,14 @@
 {
-  "generatedAt": "2026-09-14T20:38:59",
+  "generatedAt": "2026-09-14T20:40:09",
   "counts": {
-    "active": 9,
-    "waitingWorker": 5,
+    "active": 10,
+    "waitingWorker": 6,
     "working": 2,
     "waitingReview": 2,
     "done": 515,
-    "alerts": 19
+    "alerts": 18
   },
   "jobs": [
-    {
-      "jobId": "Jmrgolf-confirmation-1325-16a4-1326-c2f5",
-      "title": "ORDER_Jmrgolf-confirmation-1325-16a4-1326-c2f5_R01 — 추가 확인 응답을 요금·준비상태 문서에 반영한다",
-      "project": "project-40",
-      "targetDir": "D:/01_project-55/project-40",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-14 20:38:46",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-14 20:38:46"
-    },
     {
       "jobId": "Jao-seo-journal-20260914-store",
       "title": "ORDER_Jao-seo-journal-20260914-store_R04 — 조회 이력과 비교 계산을 만든다",
@@ -45,13 +16,13 @@
       "targetDir": "D:/01_project-55/project-45/project-45/00_reuel-maison/11_seo-journal",
       "round": 5,
       "originDir": "<local>",
-      "stage": "PROTOCOL_ERROR",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입 [확인필요]",
-      "nextAction": "05_escalation 확인",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
-        "protocolError": true,
+        "protocolError": false,
         "pendingOrder": true,
         "pendingReport": true,
         "rework": true
@@ -118,9 +89,43 @@
           "time": "2026-09-14 20:38:31",
           "state": "PROTOCOL_ERROR",
           "round": 5
+        },
+        {
+          "time": "2026-09-14 20:40:04",
+          "state": "REWORK",
+          "round": 5
         }
       ],
-      "lastUpdate": "2026-09-14 20:38:31"
+      "lastUpdate": "2026-09-14 20:40:04"
+    },
+    {
+      "jobId": "Jmrgolf-confirmation-1325-16a4-1326-c2f5",
+      "title": "ORDER_Jmrgolf-confirmation-1325-16a4-1326-c2f5_R01 — 추가 확인 응답을 요금·준비상태 문서에 반영한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-55/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-14 20:38:46",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-14 20:38:46"
     },
     {
       "jobId": "Jao-renewal-20260913-release",
@@ -26382,6 +26387,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-14 20:39:30",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check Jmrgolf-confirmation-1325-16a4-1326-c2f5 D:/01_project-55/project-40 — Crea…"
+    },
+    {
       "time": "2026-09-14 06:48:27",
       "command": "handoff-check",
       "panel": "00_reuel-maison",
@@ -26493,12 +26504,6 @@
       "time": "2026-09-13 04:20:14",
       "command": "handoff-check",
       "panel": "project-40",
-      "text": "/check"
-    },
-    {
-      "time": "2026-09-13 04:19:31",
-      "command": "handoff-check",
-      "panel": "00_reuel-maison",
       "text": "/check"
     }
   ]
