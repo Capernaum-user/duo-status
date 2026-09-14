@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-14T12:26:19",
+  "generatedAt": "2026-09-14T12:27:28",
   "counts": {
     "active": 9,
-    "waitingWorker": 5,
-    "working": 2,
+    "waitingWorker": 4,
+    "working": 3,
     "waitingReview": 2,
     "done": 515,
-    "alerts": 19
+    "alerts": 18
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-55/project-45/project-45/00_reuel-maison/11_seo-journal",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -44,9 +44,14 @@
           "time": "2026-09-14 12:25:39",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-09-14 12:26:15",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-14 12:25:39"
+      "lastUpdate": "2026-09-14 12:26:15"
     },
     {
       "jobId": "Jao-renewal-20260913-release",
