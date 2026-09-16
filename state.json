@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-16T12:40:26",
+  "generatedAt": "2026-09-16T12:53:38",
   "counts": {
     "active": 12,
     "waitingWorker": 4,
-    "working": 6,
-    "waitingReview": 2,
+    "working": 5,
+    "waitingReview": 3,
     "done": 516,
     "alerts": 18
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-54/project-45/project-45/00_reuel-maison/11_seo-journal",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -54,9 +54,14 @@
           "time": "2026-09-16 12:39:48",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-16 12:53:16",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-16 12:39:48"
+      "lastUpdate": "2026-09-16 12:53:16"
     },
     {
       "jobId": "Jmrgolf-response-pricing-20260916",
