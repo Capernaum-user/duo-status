@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-09-16T12:39:16",
+  "generatedAt": "2026-09-16T12:40:26",
   "counts": {
     "active": 12,
     "waitingWorker": 4,
-    "working": 5,
-    "waitingReview": 3,
+    "working": 6,
+    "waitingReview": 2,
     "done": 516,
-    "alerts": 19
+    "alerts": 18
   },
   "jobs": [
+    {
+      "jobId": "Jao-seo-journal-20260914-capture",
+      "title": "ORDER_Jao-seo-journal-20260914-capture_R02 — 운영 수집과 검색 자료 입력을 연결한다",
+      "project": "11_seo-journal",
+      "targetDir": "D:/01_project-54/project-45/project-45/00_reuel-maison/11_seo-journal",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-14 20:54:54",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 20:55:13",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-14 21:05:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-16 12:39:28",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-16 12:39:48",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-16 12:39:48"
+    },
     {
       "jobId": "Jmrgolf-response-pricing-20260916",
       "title": "ORDER_Jmrgolf-response-pricing-20260916_R01 — 회신의 요금 상태를 실제 견적에 연결한다",
@@ -96,45 +145,6 @@
         }
       ],
       "lastUpdate": "2026-09-14 21:09:24"
-    },
-    {
-      "jobId": "Jao-seo-journal-20260914-capture",
-      "title": "ORDER_Jao-seo-journal-20260914-capture_R01 — 운영 수집과 검색 자료 입력을 연결한다",
-      "project": "11_seo-journal",
-      "targetDir": "D:/01_project-54/project-45/project-45/00_reuel-maison/11_seo-journal",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-14 20:54:54",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-14 20:55:13",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-14 21:05:29",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-14 21:05:29"
     },
     {
       "jobId": "Jao-leads-20260914-foundation",
