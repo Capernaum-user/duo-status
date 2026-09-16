@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-16T14:11:41",
+  "generatedAt": "2026-09-16T14:12:51",
   "counts": {
     "active": 12,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 2,
     "done": 516,
     "alerts": 19
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-54/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-16 14:11:19",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-16 14:11:54",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-16 14:11:19"
+      "lastUpdate": "2026-09-16 14:11:54"
     },
     {
       "jobId": "Jao-seo-journal-20260914-capture",
@@ -26648,6 +26653,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-16 14:11:45",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check Jmrgolf-notice-source-20260916 — D:/01_project-54/project-40. 가격 R3 작업과 별개의…"
+    },
+    {
       "time": "2026-09-16 13:55:48",
       "command": "handoff-check",
       "panel": "project-40",
@@ -26760,12 +26771,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check"
-    },
-    {
-      "time": "2026-09-13 16:39:51",
-      "command": "handoff-check",
-      "panel": "00_reuel-maison",
-      "text": "/check Jao-renewal-20260913-baseline"
     }
   ]
 }
