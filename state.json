@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-16T17:44:47",
+  "generatedAt": "2026-09-16T17:49:58",
   "counts": {
     "active": 11,
     "waitingWorker": 4,
-    "working": 4,
-    "waitingReview": 3,
+    "working": 5,
+    "waitingReview": 2,
     "done": 517,
-    "alerts": 21
+    "alerts": 20
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-recovery-closeout-20260916",
-      "title": "ORDER_Jmrgolf-recovery-closeout-20260916_R01 — 중단된 공지 검토의 기록과 색인을 마무리한다",
+      "title": "ORDER_Jmrgolf-recovery-closeout-20260916_R02 — 색인 체크포인트와 보고 근거를 보완한다",
       "project": "project-40",
       "targetDir": "D:/01_project-54/project-40",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-09-16 17:44:02",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-16 17:49:00",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-16 17:49:15",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-16 17:44:02"
+      "lastUpdate": "2026-09-16 17:49:15"
     },
     {
       "jobId": "Jao-seo-journal-20260914-capture",
@@ -26722,6 +26732,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-16 17:49:09",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check D:/01_project-54/project-40 Jmrgolf-recovery-closeout-20260916"
+    },
+    {
       "time": "2026-09-16 17:32:33",
       "command": "handoff-check",
       "panel": "project-40",
@@ -26833,12 +26849,6 @@
       "time": "2026-09-13 19:32:40",
       "command": "handoff-check",
       "panel": "project-40",
-      "text": "/check"
-    },
-    {
-      "time": "2026-09-13 18:06:53",
-      "command": "handoff-check",
-      "panel": "00_reuel-maison",
       "text": "/check"
     }
   ]
