@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-17T01:36:18",
+  "generatedAt": "2026-09-17T01:37:30",
   "counts": {
     "active": 11,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 4,
+    "working": 5,
     "waitingReview": 2,
     "done": 520,
     "alerts": 19
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-notice-index-refresh-20260917",
+      "title": "ORDER_Jmrgolf-notice-index-refresh-20260917_R01 — 공지 작업 일지 색인을 갱신한다",
+      "project": "ObsidianVault",
+      "targetDir": "D:/ObsidianVault",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-17 01:36:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-17 01:36:41",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-17 01:36:41"
+    },
     {
       "jobId": "Jmrgolf-notice-local-install-20260917",
       "title": "ORDER_Jmrgolf-notice-local-install-20260917_R01 — 기존 로컬 DB에 검토된 공지 SQL 두 개를 단계별 설치",
@@ -48,35 +82,6 @@
         {
           "time": "2026-09-17 01:36:12",
           "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-17 01:36:12"
-    },
-    {
-      "jobId": "Jmrgolf-notice-index-refresh-20260917",
-      "title": "ORDER_Jmrgolf-notice-index-refresh-20260917_R01 — 공지 작업 일지 색인을 갱신한다",
-      "project": "ObsidianVault",
-      "targetDir": "D:/ObsidianVault",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-17 01:36:12",
-          "state": "PLANNED",
           "round": 1
         }
       ],
@@ -26900,6 +26905,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-17 01:36:33",
+      "command": "handoff-check",
+      "panel": "project-40",
+      "text": "/check D:/ObsidianVault Jmrgolf-notice-index-refresh-20260917"
+    },
+    {
       "time": "2026-09-17 01:08:02",
       "command": "handoff-check",
       "panel": "project-40",
@@ -27012,12 +27023,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check 30분마다"
-    },
-    {
-      "time": "2026-09-13 23:53:16",
-      "command": "handoff-check",
-      "panel": "project-40",
-      "text": "/check <local>"
     }
   ]
 }
