@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-16 23:31:28 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-16 23:39:39 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-16T23:31:27",
+  "generatedAt": "2026-09-16T23:39:39",
   "counts": {
     "active": 11,
-    "waitingWorker": 4,
+    "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 3,
+    "waitingReview": 2,
     "done": 518,
-    "alerts": 20
+    "alerts": 19
   },
   "jobs": [
     {
@@ -90,14 +90,14 @@
       "targetDir": "<local>",
       "round": 7,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -228,9 +228,19 @@
           "time": "2026-09-16 20:27:02",
           "state": "DONE",
           "round": 7
+        },
+        {
+          "time": "2026-09-16 23:39:09",
+          "state": "REWORK",
+          "round": 7
+        },
+        {
+          "time": "2026-09-16 23:39:09",
+          "state": "PLANNED",
+          "round": 7
         }
       ],
-      "lastUpdate": "2026-09-16 20:27:02"
+      "lastUpdate": "2026-09-16 23:39:09"
     },
     {
       "jobId": "Jmrgolf-recovery-closeout-20260916",
@@ -26851,6 +26861,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-16 23:39:25",
+      "command": "handoff-check",
+      "panel": "00_reuel-maison",
+      "text": "/check Jao-renewal-20260913-release"
+    },
+    {
       "time": "2026-09-16 19:57:42",
       "command": "handoff-check",
       "panel": "00_reuel-maison",
@@ -26963,12 +26979,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check <local>"
-    },
-    {
-      "time": "2026-09-13 19:55:01",
-      "command": "handoff-check",
-      "panel": "project-40",
-      "text": "/check"
     }
   ]
 };</script>
