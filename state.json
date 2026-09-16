@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-16T20:25:28",
+  "generatedAt": "2026-09-16T20:27:39",
   "counts": {
-    "active": 10,
+    "active": 11,
     "waitingWorker": 4,
     "working": 4,
-    "waitingReview": 2,
+    "waitingReview": 3,
     "done": 518,
-    "alerts": 20
+    "alerts": 19
   },
   "jobs": [
     {
@@ -16,15 +16,15 @@
       "targetDir": "<local>",
       "round": 7,
       "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
-        "escalated": true,
+        "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -149,9 +149,14 @@
           "time": "2026-09-16 20:25:19",
           "state": "ESCALATED",
           "round": 7
+        },
+        {
+          "time": "2026-09-16 20:27:02",
+          "state": "DONE",
+          "round": 7
         }
       ],
-      "lastUpdate": "2026-09-16 20:25:19"
+      "lastUpdate": "2026-09-16 20:27:02"
     },
     {
       "jobId": "Jmrgolf-recovery-closeout-20260916",
