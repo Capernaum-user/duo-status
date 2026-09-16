@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-16T14:31:29",
+  "generatedAt": "2026-09-16T14:34:39",
   "counts": {
-    "active": 12,
+    "active": 11,
     "waitingWorker": 5,
-    "working": 5,
+    "working": 4,
     "waitingReview": 2,
-    "done": 516,
+    "done": 517,
     "alerts": 19
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-54/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -39,9 +39,14 @@
           "time": "2026-09-16 14:11:54",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-16 14:34:30",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-16 14:11:54"
+      "lastUpdate": "2026-09-16 14:34:30"
     },
     {
       "jobId": "Jao-seo-journal-20260914-capture",
