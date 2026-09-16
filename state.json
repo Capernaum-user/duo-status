@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-16T23:52:01",
+  "generatedAt": "2026-09-17T00:04:14",
   "counts": {
-    "active": 11,
+    "active": 10,
     "waitingWorker": 4,
-    "working": 5,
+    "working": 4,
     "waitingReview": 2,
     "done": 518,
-    "alerts": 19
+    "alerts": 20
   },
   "jobs": [
     {
@@ -14,17 +14,17 @@
       "title": "배포 명세의 모순을 고친다 — Release R7 문서 3건과 보고 근거 정정",
       "project": "00_reuel-maison",
       "targetDir": "<local>",
-      "round": 7,
+      "round": 8,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -169,9 +169,19 @@
           "time": "2026-09-16 23:39:35",
           "state": "CLAIMED",
           "round": 7
+        },
+        {
+          "time": "2026-09-17 00:04:09",
+          "state": "REWORK",
+          "round": 8
+        },
+        {
+          "time": "2026-09-17 00:04:09",
+          "state": "ESCALATED",
+          "round": 8
         }
       ],
-      "lastUpdate": "2026-09-16 23:39:35"
+      "lastUpdate": "2026-09-17 00:04:09"
     },
     {
       "jobId": "Jmrgolf-recovery-closeout-20260916",
@@ -26548,6 +26558,11 @@
       "file": "Jao-renewal-20260913-release_round-cap-exceeded-R6-20260916.md",
       "jobId": "Jao-renewal-20260913-release",
       "cause": "round-cap-exceeded-R6-20260916"
+    },
+    {
+      "file": "Jao-renewal-20260913-release_round-cap-exceeded-R7-20260917.md",
+      "jobId": "Jao-renewal-20260913-release",
+      "cause": "round-cap-exceeded-R7-20260917"
     },
     {
       "file": "Jao-renewal-20260913-release_round-cap-exceeded.md",
