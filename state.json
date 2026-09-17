@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-18T03:54:19",
+  "generatedAt": "2026-09-18T03:55:30",
   "counts": {
     "active": 11,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 4,
+    "working": 5,
     "waitingReview": 2,
     "done": 522,
     "alerts": 19
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-18 03:54:04",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-18 03:54:20",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-18 03:54:04"
+      "lastUpdate": "2026-09-18 03:54:20"
     },
     {
       "jobId": "JMrGolf-account-evidence",
