@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-20T02:24:22",
+  "generatedAt": "2026-09-20T02:26:34",
   "counts": {
     "active": 11,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 4,
+    "working": 5,
     "waitingReview": 2,
     "done": 526,
     "alerts": 19
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-20 02:23:33",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-20 02:25:32",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-20 02:23:33"
+      "lastUpdate": "2026-09-20 02:25:32"
     },
     {
       "jobId": "JMrGolf-publish-backlog",
@@ -27164,6 +27169,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-20 02:25:18",
+      "command": "handoff-check",
+      "panel": "03_blueprint-site",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-20 02:03:17",
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
@@ -27276,12 +27287,6 @@
       "command": "handoff-check",
       "panel": "00_reuel-maison",
       "text": "/check 20분"
-    },
-    {
-      "time": "2026-09-14 05:12:21",
-      "command": "handoff-check",
-      "panel": "project-40",
-      "text": "/check Jmrgolf-client-confirmation-release-20260914 — 정식 R3 기록 마감 ORDER가 발행됐습니다.…"
     }
   ]
 }
