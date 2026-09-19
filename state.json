@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-20T04:37:48",
+  "generatedAt": "2026-09-20T04:42:01",
   "counts": {
     "active": 11,
     "waitingWorker": 4,
-    "working": 4,
-    "waitingReview": 3,
+    "working": 5,
+    "waitingReview": 2,
     "done": 527,
-    "alerts": 20
+    "alerts": 19
   },
   "jobs": [
     {
       "jobId": "Jaobp-pages",
-      "title": "ORDER_Jaobp-pages_R01 — 고정 페이지 전부를 도면 v2 언어로 입힌다",
+      "title": "ORDER_Jaobp-pages_R02 — 고정 페이지 전부를 도면 v2 언어로 입힌다",
       "project": "03_blueprint-site",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-09-20 04:36:18",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-20 04:41:32",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 04:41:50",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-20 04:36:18"
+      "lastUpdate": "2026-09-20 04:41:50"
     },
     {
       "jobId": "Jaobp-foundation",
