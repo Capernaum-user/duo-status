@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-20T04:43:12",
+  "generatedAt": "2026-09-20T05:15:25",
   "counts": {
     "active": 11,
     "waitingWorker": 4,
-    "working": 5,
-    "waitingReview": 2,
+    "working": 4,
+    "waitingReview": 3,
     "done": 527,
-    "alerts": 19
+    "alerts": 20
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -54,9 +54,14 @@
           "time": "2026-09-20 04:41:50",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-20 05:14:28",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-20 04:41:50"
+      "lastUpdate": "2026-09-20 05:14:28"
     },
     {
       "jobId": "Jaobp-foundation",
