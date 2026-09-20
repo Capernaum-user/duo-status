@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-20T14:06:30",
+  "generatedAt": "2026-09-20T14:34:43",
   "counts": {
     "active": 11,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 4,
+    "working": 5,
     "waitingReview": 2,
     "done": 531,
     "alerts": 19
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-20 14:06:21",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-20 14:33:52",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-20 14:06:21"
+      "lastUpdate": "2026-09-20 14:33:52"
     },
     {
       "jobId": "Jaobp-apply",
@@ -27399,6 +27404,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-20 14:33:40",
+      "command": "handoff-check",
+      "panel": "03_blueprint-site",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-20 13:46:41",
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
@@ -27511,12 +27522,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check Jmrgolf-confirmation-1325-16a4-1326-c2f5 D:/01_project-54/project-40 — R3가 …"
-    },
-    {
-      "time": "2026-09-14 20:54:54",
-      "command": "handoff-check",
-      "panel": "00_reuel-maison",
-      "text": "/check D:/01_project-54/project-45/project-45/00_reuel-maison/tmp/01_le…"
     }
   ]
 }
