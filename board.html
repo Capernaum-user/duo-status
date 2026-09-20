@@ -71,13 +71,13 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-20 23:02:40 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-20 23:03:53 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-20T23:02:39",
+  "generatedAt": "2026-09-20T23:03:52",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
-    "working": 5,
+    "waitingWorker": 4,
+    "working": 6,
     "waitingReview": 3,
     "done": 538,
     "alerts": 20
@@ -90,14 +90,14 @@
       "targetDir": "D:/01_project-57/project-53",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -108,9 +108,14 @@
           "time": "2026-09-20 23:02:31",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-20 23:03:42",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-20 23:02:31"
+      "lastUpdate": "2026-09-20 23:03:42"
     },
     {
       "jobId": "Jaonaver-20260920-project-18",
@@ -28054,6 +28059,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-20 23:03:29",
+      "command": "handoff-check",
+      "panel": "project-53",
+      "text": "/check <local>"
+    },
+    {
       "time": "2026-09-20 22:06:43",
       "command": "handoff-check",
       "panel": "03_blueprint-site",
@@ -28166,12 +28177,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check D:/01_project-57/project-40 Jmrgolf-notice-local-install-20260917"
-    },
-    {
-      "time": "2026-09-17 00:27:39",
-      "command": "handoff-check",
-      "panel": "00_reuel-maison",
-      "text": "/check Jao-renewal-20260913-release"
     }
   ]
 };</script>
