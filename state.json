@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-20T23:09:15",
+  "generatedAt": "2026-09-20T23:27:28",
   "counts": {
     "active": 13,
     "waitingWorker": 4,
-    "working": 7,
-    "waitingReview": 2,
+    "working": 6,
+    "waitingReview": 3,
     "done": 538,
-    "alerts": 19
+    "alerts": 20
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -54,9 +54,14 @@
           "time": "2026-09-20 23:07:48",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-20 23:26:39",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-20 23:07:48"
+      "lastUpdate": "2026-09-20 23:26:39"
     },
     {
       "jobId": "Jproject-53-replay-core-20260920",
