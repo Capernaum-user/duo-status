@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-20T18:25:59",
+  "generatedAt": "2026-09-20T18:31:12",
   "counts": {
-    "active": 13,
+    "active": 11,
     "waitingWorker": 4,
     "working": 5,
-    "waitingReview": 4,
+    "waitingReview": 2,
     "done": 535,
-    "alerts": 20
+    "alerts": 21
   },
   "jobs": [
     {
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-56/project-45/project-45/00_reuel-maison",
       "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -74,9 +74,14 @@
           "time": "2026-09-20 18:25:32",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-09-20 18:30:55",
+          "state": "ESCALATED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-20 18:25:32"
+      "lastUpdate": "2026-09-20 18:30:55"
     },
     {
       "jobId": "Jproject-53-mining-preflight-20260920",
@@ -85,12 +90,12 @@
       "targetDir": "D:/01_project-56/project-53",
       "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -143,9 +148,14 @@
           "time": "2026-09-20 18:23:05",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-09-20 18:30:07",
+          "state": "ESCALATED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-20 18:23:05"
+      "lastUpdate": "2026-09-20 18:30:07"
     },
     {
       "jobId": "Jmrgolf-pricing-recovery-20260920",
@@ -27606,6 +27616,11 @@
       "cause": "autopilot-claim-stale"
     },
     {
+      "file": "Jaonaver-20260920-baseline_round-cap-exceeded.md",
+      "jobId": "Jaonaver-20260920-baseline",
+      "cause": "round-cap-exceeded"
+    },
+    {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
       "jobId": "Jclarify-noautopop",
       "cause": "autorun-roundcap"
@@ -27614,6 +27629,11 @@
       "file": "Jcosmosbg-verify_autopilot-worker-noreport.md",
       "jobId": "Jcosmosbg-verify",
       "cause": "autopilot-worker-noreport"
+    },
+    {
+      "file": "Jproject-53-mining-preflight-20260920_round-cap-exceeded.md",
+      "jobId": "Jproject-53-mining-preflight-20260920",
+      "cause": "round-cap-exceeded"
     },
     {
       "file": "Jhudfin-02-drift_autopilot-worker-noreport.md",
