@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-09-20T23:53:06",
+  "generatedAt": "2026-09-20T23:54:17",
   "counts": {
     "active": 13,
     "waitingWorker": 4,
-    "working": 6,
-    "waitingReview": 3,
+    "working": 7,
+    "waitingReview": 2,
     "done": 538,
-    "alerts": 20
+    "alerts": 19
   },
   "jobs": [
+    {
+      "jobId": "Jproject-53-replay-core-20260920",
+      "title": "채광 규칙을 실행 코드로 만든다",
+      "project": "project-53",
+      "targetDir": "D:/01_project-57/project-53",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-20 23:02:31",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 23:03:42",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 23:37:41",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 23:53:25",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 23:53:38",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-20 23:53:38"
+    },
     {
       "jobId": "Jaonaver-20260920-project-18",
       "title": "남은 평가 근거를 바로잡고 내용 검수를 마친다",
@@ -72,45 +121,6 @@
         }
       ],
       "lastUpdate": "2026-09-20 23:38:19"
-    },
-    {
-      "jobId": "Jproject-53-replay-core-20260920",
-      "title": "채광 규칙을 실행 코드로 만든다",
-      "project": "project-53",
-      "targetDir": "D:/01_project-57/project-53",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-20 23:02:31",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 23:03:42",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 23:37:41",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-20 23:37:41"
     },
     {
       "jobId": "Jmrgolf-pricing-promote-20260920",
