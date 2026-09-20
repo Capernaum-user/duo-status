@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T22:38:49",
+  "generatedAt": "2026-09-20T22:42:02",
   "counts": {
     "active": 12,
     "waitingWorker": 4,
@@ -69,9 +69,14 @@
           "time": "2026-09-20 22:38:34",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-09-20 22:41:12",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-20 22:38:34"
+      "lastUpdate": "2026-09-20 22:41:12"
     },
     {
       "jobId": "Jaonaver-20260920-project-18",
