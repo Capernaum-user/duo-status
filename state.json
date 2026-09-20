@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T00:39:41",
+  "generatedAt": "2026-09-21T00:40:53",
   "counts": {
     "active": 13,
     "waitingWorker": 4,
@@ -99,9 +99,14 @@
           "time": "2026-09-21 00:38:50",
           "state": "CLAIMED",
           "round": 5
+        },
+        {
+          "time": "2026-09-21 00:39:54",
+          "state": "CLAIMED",
+          "round": 5
         }
       ],
-      "lastUpdate": "2026-09-21 00:38:50"
+      "lastUpdate": "2026-09-21 00:39:54"
     },
     {
       "jobId": "Jproject-53-replay-core-20260920",
