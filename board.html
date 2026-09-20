@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-21 02:10:06 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-09-21 02:22:20 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-09-21T02:10:06",
+  "generatedAt": "2026-09-21T02:22:20",
   "counts": {
-    "active": 11,
-    "waitingWorker": 4,
+    "active": 12,
+    "waitingWorker": 5,
     "working": 5,
     "waitingReview": 2,
     "done": 540,
-    "alerts": 20
+    "alerts": 19
   },
   "jobs": [
     {
@@ -88,16 +88,16 @@
       "title": "채광 규칙을 실행 코드로 만든다",
       "project": "project-53",
       "targetDir": "D:/01_project-57/project-53",
-      "round": 4,
+      "round": 5,
       "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
-        "escalated": true,
+        "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -183,9 +183,14 @@
           "time": "2026-09-21 02:09:25",
           "state": "ESCALATED",
           "round": 4
+        },
+        {
+          "time": "2026-09-21 02:21:44",
+          "state": "REWORK",
+          "round": 5
         }
       ],
-      "lastUpdate": "2026-09-21 02:09:25"
+      "lastUpdate": "2026-09-21 02:21:44"
     },
     {
       "jobId": "Jmrgolf-pricing-promote-20260920",
@@ -28243,6 +28248,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-21 02:22:15",
+      "command": "handoff-check",
+      "panel": "project-53",
+      "text": "/check <local>"
+    },
+    {
       "time": "2026-09-21 01:38:07",
       "command": "handoff-check",
       "panel": "project-53",
@@ -28355,12 +28366,6 @@
       "command": "handoff-cycle",
       "panel": "ObsidianVault",
       "text": "/cycle 잘만들었다. 그러면 이 디자인 컨셉 그대로 유지한 상태로 agent-ontology.com 과 블로그의 디자인까지 모든 디자인을 다…"
-    },
-    {
-      "time": "2026-09-18 03:45:24",
-      "command": "handoff-check",
-      "panel": "project-40",
-      "text": "/check"
     }
   ]
 };</script>
