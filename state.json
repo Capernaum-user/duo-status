@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-20T22:17:24",
+  "generatedAt": "2026-09-20T22:21:36",
   "counts": {
     "active": 13,
     "waitingWorker": 4,
-    "working": 6,
-    "waitingReview": 3,
+    "working": 5,
+    "waitingReview": 4,
     "done": 536,
-    "alerts": 19
+    "alerts": 20
   },
   "jobs": [
     {
-      "jobId": "Jproject-53-mining-preflight-20260920",
-      "title": "검증 증거를 연결한다",
-      "project": "project-53",
-      "targetDir": "D:/01_project-57/project-53",
+      "jobId": "Jaonaver-20260920-baseline",
+      "title": "검증 기록을 보완하고 블로그 전수검수로 이어간다",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
       "round": 4,
       "originDir": "<local>",
       "stage": "DONE",
@@ -25,6 +25,95 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-20 17:37:05",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 17:44:24",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 17:55:08",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 18:04:48",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 18:05:03",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 18:13:51",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 18:19:42",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 18:19:50",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 18:25:32",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 18:30:55",
+          "state": "ESCALATED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 22:06:11",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-09-20 22:06:56",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-09-20 22:21:10",
+          "state": "DONE",
+          "round": 4
+        }
+      ],
+      "lastUpdate": "2026-09-20 22:21:10"
+    },
+    {
+      "jobId": "Jproject-53-mining-preflight-20260920",
+      "title": "검증 증거를 연결한다",
+      "project": "project-53",
+      "targetDir": "D:/01_project-57/project-53",
+      "round": 4,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -97,90 +186,6 @@
         }
       ],
       "lastUpdate": "2026-09-20 22:17:05"
-    },
-    {
-      "jobId": "Jaonaver-20260920-baseline",
-      "title": "검증 기록을 보완하고 블로그 전수검수로 이어간다",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
-      "round": 4,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-20 17:37:05",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 17:44:24",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 17:55:08",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 18:04:48",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-20 18:05:03",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-20 18:13:51",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-09-20 18:19:42",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-09-20 18:19:50",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-09-20 18:25:32",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-09-20 18:30:55",
-          "state": "ESCALATED",
-          "round": 3
-        },
-        {
-          "time": "2026-09-20 22:06:11",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-09-20 22:06:56",
-          "state": "CLAIMED",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-09-20 22:06:56"
     },
     {
       "jobId": "Jmrgolf-pricing-promote-20260920",
