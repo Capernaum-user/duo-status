@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-20T17:13:16",
+  "generatedAt": "2026-09-20T17:20:30",
   "counts": {
     "active": 12,
-    "waitingWorker": 5,
-    "working": 5,
+    "waitingWorker": 4,
+    "working": 6,
     "waitingReview": 2,
     "done": 535,
     "alerts": 19
   },
   "jobs": [
+    {
+      "jobId": "Jproject-53-mining-preflight-20260920",
+      "title": "채광 자동화의 관찰 근거와 기술 제약을 검토한다",
+      "project": "project-53",
+      "targetDir": "D:/01_project-56/project-53",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-20 17:12:34",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 17:20:05",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-20 17:20:05"
+    },
     {
       "jobId": "Jmrgolf-pricing-recovery-20260920",
       "title": "ORDER_Jmrgolf-pricing-recovery-20260920_R03 — 공개자료 검사와 보존 집계를 보완한다",
@@ -62,35 +96,6 @@
         }
       ],
       "lastUpdate": "2026-09-20 17:12:43"
-    },
-    {
-      "jobId": "Jproject-53-mining-preflight-20260920",
-      "title": "채광 자동화의 관찰 근거와 기술 제약을 검토한다",
-      "project": "project-53",
-      "targetDir": "D:/01_project-56/project-53",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-20 17:12:34",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-20 17:12:34"
     },
     {
       "jobId": "Jaocopy-form-apply",
@@ -27639,6 +27644,12 @@
   ],
   "invocations": [
     {
+      "time": "2026-09-20 17:19:14",
+      "command": "handoff-check",
+      "panel": "project-53",
+      "text": "/check"
+    },
+    {
       "time": "2026-09-20 15:15:49",
       "command": "handoff-check",
       "panel": "win-diag",
@@ -27751,12 +27762,6 @@
       "command": "handoff-check",
       "panel": "project-40",
       "text": "/check Jmrgolf-notice-source-20260916 — D:/01_project-56/project-40. 가격 R3 작업과 별개의…"
-    },
-    {
-      "time": "2026-09-16 13:55:48",
-      "command": "handoff-check",
-      "panel": "project-40",
-      "text": "/check Jmrgolf-response-pricing-20260916 R3 --target-dir D:/01_project-56/38_mr-go…"
     }
   ]
 }
