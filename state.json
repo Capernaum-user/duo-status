@@ -1,14 +1,88 @@
 {
-  "generatedAt": "2026-09-20T18:31:12",
+  "generatedAt": "2026-09-20T18:39:24",
   "counts": {
     "active": 11,
     "waitingWorker": 4,
-    "working": 5,
-    "waitingReview": 2,
+    "working": 4,
+    "waitingReview": 3,
     "done": 535,
     "alerts": 21
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-pricing-recovery-20260920",
+      "title": "ORDER_Jmrgolf-pricing-recovery-20260920_R04 — 검사기의 분류와 문자열 처리를 보완한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-56/project-40",
+      "round": 4,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-20 14:59:10",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 15:04:21",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 16:30:55",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 16:31:06",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 17:12:32",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 17:12:43",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 17:36:41",
+          "state": "ESCALATED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 18:03:09",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-09-20 18:03:39",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-09-20 18:39:16",
+          "state": "DONE",
+          "round": 4
+        }
+      ],
+      "lastUpdate": "2026-09-20 18:39:16"
+    },
     {
       "jobId": "Jaonaver-20260920-baseline",
       "title": "네이버 관측과 사이트 운영 기준선을 확보한다",
@@ -156,75 +230,6 @@
         }
       ],
       "lastUpdate": "2026-09-20 18:30:07"
-    },
-    {
-      "jobId": "Jmrgolf-pricing-recovery-20260920",
-      "title": "ORDER_Jmrgolf-pricing-recovery-20260920_R04 — 검사기의 분류와 문자열 처리를 보완한다",
-      "project": "project-40",
-      "targetDir": "D:/01_project-56/project-40",
-      "round": 4,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-20 14:59:10",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 15:04:21",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 16:30:55",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-20 16:31:06",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-20 17:12:32",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-09-20 17:12:43",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-09-20 17:36:41",
-          "state": "ESCALATED",
-          "round": 3
-        },
-        {
-          "time": "2026-09-20 18:03:09",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-09-20 18:03:39",
-          "state": "CLAIMED",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-09-20 18:03:39"
     },
     {
       "jobId": "Jaocopy-form-apply",
