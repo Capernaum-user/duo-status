@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T16:26:31",
+  "generatedAt": "2026-09-20T16:31:44",
   "counts": {
     "active": 12,
     "waitingWorker": 4,
@@ -9,6 +9,50 @@
     "alerts": 19
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-pricing-recovery-20260920",
+      "title": "ORDER_Jmrgolf-pricing-recovery-20260920_R02 — 브라우저 검사 오류와 보존 증거를 보완한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-55/project-40",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-20 14:59:10",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 15:04:21",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 16:30:55",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 16:31:06",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-20 16:31:06"
+    },
     {
       "jobId": "Jaocopy-apply",
       "title": "ORDER_Jaocopy-apply_R01 — 교체표 두 벌을 운영 agent-ontology.com 에 적용하고 검증한다",
@@ -140,40 +184,6 @@
         }
       ],
       "lastUpdate": "2026-09-20 15:04:28"
-    },
-    {
-      "jobId": "Jmrgolf-pricing-recovery-20260920",
-      "title": "요금 후보를 수락 가능한 상태로 보완한다",
-      "project": "project-40",
-      "targetDir": "D:/01_project-55/project-40",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-20 14:59:10",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 15:04:21",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-20 15:04:21"
     },
     {
       "jobId": "Jaobp-apply",
