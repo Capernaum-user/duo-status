@@ -1,14 +1,122 @@
 {
-  "generatedAt": "2026-09-20T23:59:52",
+  "generatedAt": "2026-09-21T00:03:03",
   "counts": {
     "active": 13,
     "waitingWorker": 4,
-    "working": 6,
-    "waitingReview": 3,
-    "done": 538,
-    "alerts": 20
+    "working": 7,
+    "waitingReview": 2,
+    "done": 539,
+    "alerts": 19
   },
   "jobs": [
+    {
+      "jobId": "Jaonaver-20260920-layout",
+      "title": "블로그 표와 이미지와 본문 지면을 기기별로 검수한다",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-21 00:02:25",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-21 00:02:35",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-21 00:02:35"
+    },
+    {
+      "jobId": "Jaonaver-20260920-project-18",
+      "title": "남은 평가 근거를 바로잡고 내용 검수를 마친다",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-20 22:30:27",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 22:30:37",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 22:58:38",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 23:07:37",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 23:07:48",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 23:26:39",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 23:38:08",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 23:38:19",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 23:54:19",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-09-21 00:02:25",
+          "state": "ACCEPTED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-09-21 00:02:25"
+    },
     {
       "jobId": "Jmrgolf-pricing-promote-20260920",
       "title": "ORDER_Jmrgolf-pricing-promote-20260920_R04 — 허용 경로와 응답 수집의 남은 결손을 보완한다",
@@ -92,75 +200,6 @@
         }
       ],
       "lastUpdate": "2026-09-20 23:59:23"
-    },
-    {
-      "jobId": "Jaonaver-20260920-project-18",
-      "title": "남은 평가 근거를 바로잡고 내용 검수를 마친다",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-20 22:30:27",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 22:30:37",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 22:58:38",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 23:07:37",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-09-20 23:07:48",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-09-20 23:26:39",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-09-20 23:38:08",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-09-20 23:38:19",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-09-20 23:54:19",
-          "state": "DONE",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-09-20 23:54:19"
     },
     {
       "jobId": "Jproject-53-replay-core-20260920",
