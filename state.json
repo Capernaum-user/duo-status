@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-21T02:25:45",
+  "generatedAt": "2026-09-21T02:28:58",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
-    "working": 6,
+    "waitingWorker": 4,
+    "working": 7,
     "waitingReview": 2,
     "done": 540,
     "alerts": 19
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-09-21 02:25:16",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-09-21 02:28:47",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-09-21 02:25:16"
+      "lastUpdate": "2026-09-21 02:28:47"
     },
     {
       "jobId": "Jproject-53-replay-core-20260920",
