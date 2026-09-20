@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T22:07:00",
+  "generatedAt": "2026-09-20T22:08:12",
   "counts": {
     "active": 13,
     "waitingWorker": 4,
@@ -11,7 +11,7 @@
   "jobs": [
     {
       "jobId": "Jaonaver-20260920-baseline",
-      "title": "네이버 관측과 사이트 운영 기준선을 확보한다",
+      "title": "검증 기록을 보완하고 블로그 전수검수로 이어간다",
       "project": "00_reuel-maison",
       "targetDir": "D:/01_project-56/project-45/project-45/00_reuel-maison",
       "round": 4,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
