@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-21T01:39:39",
+  "generatedAt": "2026-09-21T02:01:52",
   "counts": {
     "active": 12,
     "waitingWorker": 4,
-    "working": 6,
-    "waitingReview": 2,
+    "working": 5,
+    "waitingReview": 3,
     "done": 540,
     "alerts": 19
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-53",
       "round": 4,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -94,9 +94,14 @@
           "time": "2026-09-21 01:38:34",
           "state": "CLAIMED",
           "round": 4
+        },
+        {
+          "time": "2026-09-21 02:01:13",
+          "state": "DONE",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-09-21 01:38:34"
+      "lastUpdate": "2026-09-21 02:01:13"
     },
     {
       "jobId": "Jmrgolf-pricing-promote-20260920",
