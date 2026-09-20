@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-09-20T15:54:43",
+  "generatedAt": "2026-09-20T15:57:55",
   "counts": {
     "active": 12,
-    "waitingWorker": 4,
+    "waitingWorker": 5,
     "working": 5,
-    "waitingReview": 3,
-    "done": 532,
-    "alerts": 20
+    "waitingReview": 2,
+    "done": 533,
+    "alerts": 19
   },
   "jobs": [
+    {
+      "jobId": "Jaocopy-apply",
+      "title": "ORDER_Jaocopy-apply_R01 — 교체표 두 벌을 운영 agent-ontology.com 에 적용하고 검증한다",
+      "project": "03_blueprint-site",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-20 15:57:45",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-20 15:57:45"
+    },
     {
       "jobId": "Jaocopy-body",
       "title": "ORDER_Jaocopy-body_R02 — 본문 36건 유지 + 문의 폼 선택지 5곳(mu-plugin 52 스테이징 사본)을 교체하고 검증한다",
@@ -16,10 +45,10 @@
       "targetDir": "<local>",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -54,9 +83,14 @@
           "time": "2026-09-20 15:53:40",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-09-20 15:57:44",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-20 15:53:40"
+      "lastUpdate": "2026-09-20 15:57:44"
     },
     {
       "jobId": "Jaocopy-surface",
