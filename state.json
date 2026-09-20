@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T15:28:17",
+  "generatedAt": "2026-09-20T15:36:30",
   "counts": {
     "active": 12,
     "waitingWorker": 4,
@@ -11,10 +11,10 @@
   "jobs": [
     {
       "jobId": "Jaocopy-body",
-      "title": "ORDER_Jaocopy-body_R01 — 본문 문장 36건을 스테이징에 교체하고 검증한다",
+      "title": "ORDER_Jaocopy-body_R02 — 본문 36건 유지 + 문의 폼 선택지 5곳(mu-plugin 52 스테이징 사본)을 교체하고 검증한다",
       "project": "03_blueprint-site",
       "targetDir": "<local>",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -24,8 +24,8 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -39,9 +39,19 @@
           "time": "2026-09-20 15:04:44",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-09-20 15:36:09",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 15:36:20",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-20 15:04:44"
+      "lastUpdate": "2026-09-20 15:36:20"
     },
     {
       "jobId": "Jaocopy-surface",
