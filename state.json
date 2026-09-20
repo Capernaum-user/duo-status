@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-09-20T22:32:36",
+  "generatedAt": "2026-09-20T22:38:49",
   "counts": {
     "active": 12,
     "waitingWorker": 4,
-    "working": 5,
-    "waitingReview": 3,
+    "working": 6,
+    "waitingReview": 2,
     "done": 538,
-    "alerts": 20
+    "alerts": 19
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-pricing-promote-20260920",
-      "title": "ORDER_Jmrgolf-pricing-promote-20260920_R02 — 반영한 소스를 동결하고 누락된 검증을 보완한다",
+      "title": "ORDER_Jmrgolf-pricing-promote-20260920_R03 — 검사기의 남은 경계와 증거 출처를 고친다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -59,9 +59,19 @@
           "time": "2026-09-20 22:31:15",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-09-20 22:38:15",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-20 22:38:34",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-20 22:31:15"
+      "lastUpdate": "2026-09-20 22:38:34"
     },
     {
       "jobId": "Jaonaver-20260920-project-18",
