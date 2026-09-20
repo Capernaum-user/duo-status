@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-09-20T17:44:50",
+  "generatedAt": "2026-09-20T17:49:01",
   "counts": {
     "active": 12,
     "waitingWorker": 4,
-    "working": 5,
-    "waitingReview": 3,
+    "working": 6,
+    "waitingReview": 2,
     "done": 535,
-    "alerts": 21
+    "alerts": 20
   },
   "jobs": [
+    {
+      "jobId": "Jproject-53-mining-preflight-20260920",
+      "title": "채광 자동화의 관찰 근거와 기술 제약을 검토한다",
+      "project": "project-53",
+      "targetDir": "D:/01_project-56/project-53",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-20 17:12:34",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 17:20:05",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 17:40:16",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-09-20 17:48:30",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-20 17:48:42",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-09-20 17:48:42"
+    },
     {
       "jobId": "Jaonaver-20260920-baseline",
       "title": "네이버 관측과 사이트 운영 기준선을 확보한다",
@@ -42,45 +91,6 @@
         }
       ],
       "lastUpdate": "2026-09-20 17:44:24"
-    },
-    {
-      "jobId": "Jproject-53-mining-preflight-20260920",
-      "title": "채광 자동화의 관찰 근거와 기술 제약을 검토한다",
-      "project": "project-53",
-      "targetDir": "D:/01_project-56/project-53",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-09-20 17:12:34",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 17:20:05",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-09-20 17:40:16",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-09-20 17:40:16"
     },
     {
       "jobId": "Jmrgolf-pricing-recovery-20260920",
