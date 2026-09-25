@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-26T04:48:10",
+  "generatedAt": "2026-09-26T04:51:22",
   "counts": {
-    "active": 13,
+    "active": 12,
     "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 5,
-    "done": 577,
+    "waitingReview": 4,
+    "done": 578,
     "alerts": 23
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 4,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -74,9 +74,14 @@
           "time": "2026-09-26 04:47:58",
           "state": "DONE",
           "round": 4
+        },
+        {
+          "time": "2026-09-26 04:50:53",
+          "state": "ACCEPTED",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-09-26 04:47:58"
+      "lastUpdate": "2026-09-26 04:50:53"
     },
     {
       "jobId": "Jmrgolf-db-install-plan-20260926",
