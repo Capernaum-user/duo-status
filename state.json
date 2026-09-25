@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-26T03:08:48",
+  "generatedAt": "2026-09-26T03:12:00",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 6,
+    "working": 3,
     "waitingReview": 4,
     "done": 576,
     "alerts": 23
@@ -14,16 +14,16 @@
       "title": "Jmrgolf-db-install-plan-20260926",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-09-26 02:52:30",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-09-26 03:11:35",
+          "state": "REWORK",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-26 02:52:30"
+      "lastUpdate": "2026-09-26 03:11:35"
     },
     {
       "jobId": "Jmrgolf-operations-readiness-20260925",
