@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-26T11:00:36",
+  "generatedAt": "2026-09-26T11:02:49",
   "counts": {
-    "active": 13,
+    "active": 12,
     "waitingWorker": 5,
-    "working": 4,
+    "working": 3,
     "waitingReview": 4,
     "done": 578,
-    "alerts": 23
+    "alerts": 24
   },
   "jobs": [
     {
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 5,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -79,9 +79,14 @@
           "time": "2026-09-26 10:51:01",
           "state": "CLAIMED",
           "round": 5
+        },
+        {
+          "time": "2026-09-26 11:02:43",
+          "state": "ESCALATED",
+          "round": 5
         }
       ],
-      "lastUpdate": "2026-09-26 10:51:01"
+      "lastUpdate": "2026-09-26 11:02:43"
     },
     {
       "jobId": "Jmrgolf-db-install-rehearsal-20260926",
@@ -31619,6 +31624,11 @@
       "file": "Jmrgolf-pricing-recovery-20260920_round-cap-exceeded.md",
       "jobId": "Jmrgolf-pricing-recovery-20260920",
       "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jmrgolf-prod-db-preflight-20260926_external-credential-access.md",
+      "jobId": "Jmrgolf-prod-db-preflight-20260926",
+      "cause": "external-credential-access"
     },
     {
       "file": "Jmrgolf-project-66ation-r4_autopilot-unclaimed.md",
