@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-26T04:51:22",
+  "generatedAt": "2026-09-26T09:36:25",
   "counts": {
-    "active": 12,
+    "active": 13,
     "waitingWorker": 5,
-    "working": 3,
+    "working": 4,
     "waitingReview": 4,
     "done": 578,
     "alerts": 23
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-prod-db-preflight-20260926",
+      "title": "Jmrgolf-prod-db-preflight-20260926",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-26 09:34:52",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-26 09:35:40",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-26 09:35:40"
+    },
     {
       "jobId": "Jmrgolf-db-install-rehearsal-20260926",
       "title": "Jmrgolf-db-install-rehearsal-20260926",
@@ -28700,60 +28734,6 @@
       "lastUpdate": "2026-07-20 21:59:53"
     },
     {
-      "jobId": "Jbrief-std-a",
-      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
-      "project": "project-55",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 18:50:28",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:50:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:15:05",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:17:29",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 19:58:17",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 19:58:17"
-    },
-    {
       "jobId": "Jbrief-std-b",
       "title": "ORDER_Jbrief-std-b_R02 — 접기 토글 state 키 불일치 수정 (R01 REWORK)",
       "project": "project-55",
@@ -28813,6 +28793,60 @@
           "time": "2026-07-20 19:58:17",
           "state": "ACCEPTED",
           "round": 2
+        }
+      ],
+      "lastUpdate": "2026-07-20 19:58:17"
+    },
+    {
+      "jobId": "Jbrief-std-a",
+      "title": "ORDER_Jbrief-std-a_R01 — 결재 표지·과정 문서에 시각적 요약 레이아웃 생성(신호등·3카드·타임라인)",
+      "project": "project-55",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 18:50:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:50:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:15:05",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:17:29",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 19:58:17",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
       "lastUpdate": "2026-07-20 19:58:17"
