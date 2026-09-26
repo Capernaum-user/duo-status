@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-27T04:49:09",
+  "generatedAt": "2026-09-27T05:03:22",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 4,
+    "working": 3,
+    "waitingReview": 5,
     "done": 578,
-    "alerts": 23
+    "alerts": 24
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 23,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -264,9 +264,14 @@
           "time": "2026-09-27 04:48:40",
           "state": "CLAIMED",
           "round": 23
+        },
+        {
+          "time": "2026-09-27 05:02:25",
+          "state": "DONE",
+          "round": 23
         }
       ],
-      "lastUpdate": "2026-09-27 04:48:40"
+      "lastUpdate": "2026-09-27 05:02:25"
     },
     {
       "jobId": "Jmrgolf-db-install-rehearsal-20260926",
