@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T20:01:28",
+  "generatedAt": "2026-09-26T22:03:27",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -31729,6 +31729,11 @@
       "file": "Jmrgolf-pricing-recovery-20260920_round-cap-exceeded.md",
       "jobId": "Jmrgolf-pricing-recovery-20260920",
       "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jmrgolf-prod-db-preflight-20260926_autopilot-claim-stale.md",
+      "jobId": "Jmrgolf-prod-db-preflight-20260926",
+      "cause": "autopilot-claim-stale"
     },
     {
       "file": "Jmrgolf-prod-db-preflight-20260926_external-credential-access.md",
