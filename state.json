@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T16:00:38",
+  "generatedAt": "2026-09-26T16:02:51",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
@@ -14,7 +14,7 @@
       "title": "Jmrgolf-prod-db-preflight-20260926",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 8,
+      "round": 9,
       "originDir": "<local>",
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -114,9 +114,19 @@
           "time": "2026-09-26 15:46:18",
           "state": "CLAIMED",
           "round": 8
+        },
+        {
+          "time": "2026-09-26 16:01:50",
+          "state": "REWORK",
+          "round": 9
+        },
+        {
+          "time": "2026-09-26 16:02:04",
+          "state": "CLAIMED",
+          "round": 9
         }
       ],
-      "lastUpdate": "2026-09-26 15:46:18"
+      "lastUpdate": "2026-09-26 16:02:04"
     },
     {
       "jobId": "Jmrgolf-db-install-rehearsal-20260926",
