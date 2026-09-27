@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-28T06:03:07",
+  "generatedAt": "2026-09-28T06:04:20",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 580,
     "alerts": 23
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
-      "title": "R07: deploy the corrected upload to actual Preview and finish live acceptance",
+      "title": "R08: close community readiness and execute the missing live quote/admin project-58",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 8,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -129,9 +129,14 @@
           "time": "2026-09-28 06:02:58",
           "state": "REWORK",
           "round": 8
+        },
+        {
+          "time": "2026-09-28 06:03:50",
+          "state": "CLAIMED",
+          "round": 8
         }
       ],
-      "lastUpdate": "2026-09-28 06:02:58"
+      "lastUpdate": "2026-09-28 06:03:50"
     },
     {
       "jobId": "Jmrgolf-prod-db-apply-20260926",
