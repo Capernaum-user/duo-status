@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-27T16:36:28",
+  "generatedAt": "2026-09-27T16:37:41",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 579,
-    "alerts": 24
+    "alerts": 23
   },
   "jobs": [
     {
@@ -14,16 +14,16 @@
       "title": "Jmrgolf-prod-db-apply-20260926",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 16,
+      "round": 17,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -244,9 +244,14 @@
           "time": "2026-09-27 16:29:31",
           "state": "DONE",
           "round": 16
+        },
+        {
+          "time": "2026-09-27 16:37:32",
+          "state": "REWORK",
+          "round": 17
         }
       ],
-      "lastUpdate": "2026-09-27 16:29:31"
+      "lastUpdate": "2026-09-27 16:37:32"
     },
     {
       "jobId": "Jmrgolf-prod-db-preflight-20260926",
