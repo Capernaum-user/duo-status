@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-28T03:34:29",
+  "generatedAt": "2026-09-28T03:42:43",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 580,
-    "alerts": 24
+    "alerts": 23
   },
   "jobs": [
     {
@@ -14,16 +14,16 @@
       "title": "R05: deploy and independently verify Preview in the user's MrGolf Pro team",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 5,
+      "round": 6,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -104,9 +104,14 @@
           "time": "2026-09-28 03:33:39",
           "state": "DONE",
           "round": 5
+        },
+        {
+          "time": "2026-09-28 03:42:33",
+          "state": "REWORK",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-09-28 03:33:39"
+      "lastUpdate": "2026-09-28 03:42:33"
     },
     {
       "jobId": "Jmrgolf-prod-db-apply-20260926",
