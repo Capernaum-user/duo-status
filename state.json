@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T00:49:56",
+  "generatedAt": "2026-09-28T00:51:10",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
@@ -11,7 +11,7 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
-      "title": "Jmrgolf-vercel-preview-20260926",
+      "title": "R02: close local Preview privacy/placeholder gaps, then deploy only to verified client target",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 2,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
