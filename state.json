@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-28T23:37:33",
+  "generatedAt": "2026-09-28T23:51:48",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 4,
     "done": 582,
     "alerts": 23
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-launch-handover-20260927",
-      "title": "Jmrgolf-launch-handover-20260927",
+      "title": "정제 동작을 검증하고 남은 보호 배포와 서버 실행 경로를 닫는다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-09-28 23:37:26",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-28 23:50:51",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-09-28 23:51:17",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-28 23:37:26"
+      "lastUpdate": "2026-09-28 23:51:17"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
