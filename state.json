@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-29T07:17:55",
+  "generatedAt": "2026-09-29T07:24:09",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 582,
     "alerts": 23
   },
@@ -14,17 +14,17 @@
       "title": "현재 인증 세션에서 UI 처리 중단 원인을 좁혀 해결한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 12,
+      "round": 13,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -229,9 +229,14 @@
           "time": "2026-09-29 07:17:23",
           "state": "DONE",
           "round": 12
+        },
+        {
+          "time": "2026-09-29 07:23:59",
+          "state": "REWORK",
+          "round": 13
         }
       ],
-      "lastUpdate": "2026-09-29 07:17:23"
+      "lastUpdate": "2026-09-29 07:23:59"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
