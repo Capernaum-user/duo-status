@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-28T21:03:49",
+  "generatedAt": "2026-09-28T21:09:03",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 581,
-    "alerts": 24
+    "alerts": 23
   },
   "jobs": [
     {
@@ -14,16 +14,16 @@
       "title": "서울 리전을 적용하고 두 도메인의 실제 표시 시간을 확인한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 13,
+      "round": 14,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -234,9 +234,14 @@
           "time": "2026-09-28 21:02:08",
           "state": "DONE",
           "round": 13
+        },
+        {
+          "time": "2026-09-28 21:08:35",
+          "state": "REWORK",
+          "round": 14
         }
       ],
-      "lastUpdate": "2026-09-28 21:02:08"
+      "lastUpdate": "2026-09-28 21:08:35"
     },
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
