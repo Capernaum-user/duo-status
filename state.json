@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-29T05:27:25",
+  "generatedAt": "2026-09-29T05:37:40",
   "counts": {
-    "active": 12,
-    "waitingWorker": 5,
+    "active": 13,
+    "waitingWorker": 6,
     "working": 3,
     "waitingReview": 4,
     "done": 582,
-    "alerts": 24
+    "alerts": 23
   },
   "jobs": [
     {
@@ -16,12 +16,12 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 11,
       "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
-        "escalated": true,
+        "escalated": false,
         "protocolError": false,
         "pendingOrder": true,
         "pendingReport": false,
@@ -199,9 +199,14 @@
           "time": "2026-09-29 05:26:28",
           "state": "ESCALATED",
           "round": 11
+        },
+        {
+          "time": "2026-09-29 05:37:22",
+          "state": "REWORK",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-09-29 05:26:28"
+      "lastUpdate": "2026-09-29 05:37:22"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
