@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-29T01:15:49",
+  "generatedAt": "2026-09-29T01:17:03",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 582,
     "alerts": 23
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-launch-handover-20260927",
-      "title": "기존 후보 접근 근거와 7일 운영 판정의 실제 빈틈을 해결한다",
+      "title": "구어체 재작성 지시와 캐시를 고치고 독립 표본으로 검증한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 4,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -79,9 +79,14 @@
           "time": "2026-09-29 01:15:23",
           "state": "REWORK",
           "round": 4
+        },
+        {
+          "time": "2026-09-29 01:16:08",
+          "state": "CLAIMED",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-09-29 01:15:23"
+      "lastUpdate": "2026-09-29 01:16:08"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
