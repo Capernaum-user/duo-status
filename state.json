@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-28T22:08:05",
+  "generatedAt": "2026-09-28T22:42:21",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 4,
+    "working": 3,
+    "waitingReview": 5,
     "done": 581,
     "alerts": 23
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 16,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -274,9 +274,14 @@
           "time": "2026-09-28 22:07:26",
           "state": "CLAIMED",
           "round": 16
+        },
+        {
+          "time": "2026-09-28 22:42:11",
+          "state": "DONE",
+          "round": 16
         }
       ],
-      "lastUpdate": "2026-09-28 22:07:26"
+      "lastUpdate": "2026-09-28 22:42:11"
     },
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
