@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-28T09:42:32",
+  "generatedAt": "2026-09-28T09:52:47",
   "counts": {
-    "active": 13,
+    "active": 12,
     "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 581,
-    "alerts": 23
+    "alerts": 24
   },
   "jobs": [
     {
@@ -14,17 +14,17 @@
       "title": "R02: complete protected Production verification and resolve only actual release prerequisites",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -59,9 +59,19 @@
           "time": "2026-09-28 09:42:11",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-09-28 09:51:41",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-09-28 09:51:42",
+          "state": "ESCALATED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-28 09:42:11"
+      "lastUpdate": "2026-09-28 09:51:42"
     },
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
@@ -32436,6 +32446,11 @@
       "file": "Jmrgolf-d-apply_autopilot-review-nofinish.md",
       "jobId": "Jmrgolf-d-apply",
       "cause": "autopilot-review-nofinish"
+    },
+    {
+      "file": "Jmrgolf-domain-go-live-20260926_external-project-66-release-project-58s.md",
+      "jobId": "Jmrgolf-domain-go-live-20260926",
+      "cause": "external-project-66-release-project-58s"
     },
     {
       "file": "Jmrgolf-project-49-100_autopilot-unclaimed.md",
