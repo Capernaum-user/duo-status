@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-09-28T09:06:50",
+  "generatedAt": "2026-09-28T09:15:04",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 581,
     "alerts": 23
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
-      "title": "Jmrgolf-domain-go-live-20260926",
+      "title": "R02: complete protected Production verification and resolve only actual release prerequisites",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,14 @@
           "time": "2026-09-28 09:05:57",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-09-28 09:14:25",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-09-28 09:05:57"
+      "lastUpdate": "2026-09-28 09:14:25"
     },
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
