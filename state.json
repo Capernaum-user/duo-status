@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-09-28T13:36:24",
+  "generatedAt": "2026-09-28T14:15:39",
   "counts": {
-    "active": 12,
+    "active": 13,
     "waitingWorker": 5,
-    "working": 3,
+    "working": 4,
     "waitingReview": 4,
     "done": 581,
-    "alerts": 24
+    "alerts": 23
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
-      "title": "R02: complete protected Production verification and resolve only actual release prerequisites",
+      "title": "R03: prepare protected domain registration now; project-66 release remains gated",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 3,
       "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
-        "escalated": true,
+        "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -69,9 +69,14 @@
           "time": "2026-09-28 09:51:42",
           "state": "ESCALATED",
           "round": 3
+        },
+        {
+          "time": "2026-09-28 14:15:31",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-09-28 09:51:42"
+      "lastUpdate": "2026-09-28 14:15:31"
     },
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
