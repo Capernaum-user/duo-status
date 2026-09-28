@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-09-28T23:13:04",
+  "generatedAt": "2026-09-28T23:17:19",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 5,
-    "done": 581,
+    "working": 4,
+    "waitingReview": 4,
+    "done": 582,
     "alerts": 23
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-launch-handover-20260927",
+      "title": "Jmrgolf-launch-handover-20260927",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-09-28 23:16:25",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-09-28 23:16:45",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-09-28 23:16:45"
+    },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
       "title": "서울 전환을 보존하고 카탈로그 전환 자료의 누락을 채운다",
@@ -16,15 +50,15 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 17,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -294,9 +328,14 @@
           "time": "2026-09-28 23:12:42",
           "state": "DONE",
           "round": 17
+        },
+        {
+          "time": "2026-09-28 23:16:24",
+          "state": "ACCEPTED",
+          "round": 17
         }
       ],
-      "lastUpdate": "2026-09-28 23:12:42"
+      "lastUpdate": "2026-09-28 23:16:24"
     },
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
