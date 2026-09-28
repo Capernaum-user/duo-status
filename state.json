@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-29T02:09:01",
+  "generatedAt": "2026-09-29T02:16:14",
   "counts": {
-    "active": 13,
+    "active": 12,
     "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 582,
     "alerts": 24
   },
@@ -14,16 +14,16 @@
       "title": "응답 해석의 실패 지점을 좁히고 구어체 검증을 마무리한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 5,
+      "round": 6,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -104,9 +104,19 @@
           "time": "2026-09-29 02:08:14",
           "state": "DONE",
           "round": 5
+        },
+        {
+          "time": "2026-09-29 02:15:42",
+          "state": "REWORK",
+          "round": 6
+        },
+        {
+          "time": "2026-09-29 02:15:42",
+          "state": "ESCALATED",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-09-29 02:08:14"
+      "lastUpdate": "2026-09-29 02:15:42"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
@@ -32795,6 +32805,11 @@
       "file": "Jmrgolf-kakao-connect-20260925_owner-login-required.md",
       "jobId": "Jmrgolf-kakao-connect-20260925",
       "cause": "owner-login-required"
+    },
+    {
+      "file": "Jmrgolf-launch-handover-20260927_normal-access-and-operating-project-58s.md",
+      "jobId": "Jmrgolf-launch-handover-20260927",
+      "cause": "normal-access-and-operating-project-58s"
     },
     {
       "file": "Jmrgolf-pricing-promote-20260920_autopilot-worker-noreport.md",
