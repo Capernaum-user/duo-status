@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-09-28T19:04:13",
+  "generatedAt": "2026-09-28T19:14:27",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 4,
     "done": 581,
-    "alerts": 24
+    "alerts": 23
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
-      "title": "버린 오류 원문을 안전하게 수집하고 화면 검증을 끝낸다",
+      "title": "보호 후보의 실제 저장 모드와 화면 동작을 확인한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 10,
+      "round": 11,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -189,9 +189,19 @@
           "time": "2026-09-28 19:03:12",
           "state": "DONE",
           "round": 10
+        },
+        {
+          "time": "2026-09-28 19:13:26",
+          "state": "REWORK",
+          "round": 11
+        },
+        {
+          "time": "2026-09-28 19:14:20",
+          "state": "CLAIMED",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-09-28 19:03:12"
+      "lastUpdate": "2026-09-28 19:14:20"
     },
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
