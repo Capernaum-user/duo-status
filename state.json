@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-29T03:50:17",
+  "generatedAt": "2026-09-29T03:51:31",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 582,
     "alerts": 23
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-launch-handover-20260927",
-      "title": "고정 후보 검증과 격리 이미지 서빙 준비를 이어간다",
+      "title": "정상 DOM 읽기로 고정 후보의 남은 기능과 보호 승격을 마친다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 8,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -149,9 +149,14 @@
           "time": "2026-09-29 03:48:36",
           "state": "REWORK",
           "round": 8
+        },
+        {
+          "time": "2026-09-29 03:50:29",
+          "state": "CLAIMED",
+          "round": 8
         }
       ],
-      "lastUpdate": "2026-09-29 03:48:36"
+      "lastUpdate": "2026-09-29 03:50:29"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
