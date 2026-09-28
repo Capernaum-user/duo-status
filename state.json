@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-29T07:59:06",
+  "generatedAt": "2026-09-29T08:05:20",
   "counts": {
-    "active": 13,
+    "active": 12,
     "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 582,
     "alerts": 24
   },
@@ -14,16 +14,16 @@
       "title": "전송이 끊긴 명령의 후상태부터 회수하고 남은 기능을 이어간다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 14,
+      "round": 15,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -259,9 +259,19 @@
           "time": "2026-09-29 07:58:28",
           "state": "DONE",
           "round": 14
+        },
+        {
+          "time": "2026-09-29 08:04:17",
+          "state": "REWORK",
+          "round": 15
+        },
+        {
+          "time": "2026-09-29 08:04:18",
+          "state": "ESCALATED",
+          "round": 15
         }
       ],
-      "lastUpdate": "2026-09-29 07:58:28"
+      "lastUpdate": "2026-09-29 08:04:18"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
