@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-29T05:21:11",
+  "generatedAt": "2026-09-29T05:27:25",
   "counts": {
-    "active": 13,
+    "active": 12,
     "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 582,
     "alerts": 24
   },
@@ -14,16 +14,16 @@
       "title": "로그인 처리와 카드 이동의 관측 공백을 닫고 실제 결함만 고친다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 10,
+      "round": 11,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -189,9 +189,19 @@
           "time": "2026-09-29 05:20:17",
           "state": "DONE",
           "round": 10
+        },
+        {
+          "time": "2026-09-29 05:26:28",
+          "state": "REWORK",
+          "round": 11
+        },
+        {
+          "time": "2026-09-29 05:26:28",
+          "state": "ESCALATED",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-09-29 05:20:17"
+      "lastUpdate": "2026-09-29 05:26:28"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
