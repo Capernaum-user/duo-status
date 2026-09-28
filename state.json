@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-09-29T07:40:37",
+  "generatedAt": "2026-09-29T07:45:51",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 4,
     "done": 582,
-    "alerts": 24
+    "alerts": 23
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-launch-handover-20260927",
-      "title": "관측된 화면 요소의 정상 처리 경로로 남은 기능을 검증한다",
+      "title": "전송이 끊긴 명령의 후상태부터 회수하고 남은 기능을 이어간다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 13,
+      "round": 14,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -244,9 +244,19 @@
           "time": "2026-09-29 07:39:38",
           "state": "DONE",
           "round": 13
+        },
+        {
+          "time": "2026-09-29 07:45:00",
+          "state": "REWORK",
+          "round": 14
+        },
+        {
+          "time": "2026-09-29 07:45:35",
+          "state": "CLAIMED",
+          "round": 14
         }
       ],
-      "lastUpdate": "2026-09-29 07:39:38"
+      "lastUpdate": "2026-09-29 07:45:35"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
