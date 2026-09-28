@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-09-28T20:21:39",
+  "generatedAt": "2026-09-28T20:27:52",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 4,
     "done": 581,
     "alerts": 23
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
-      "title": "기존 관리자 로그인으로 보호 후보 검증을 이어간다",
+      "title": "서울 리전을 적용하고 두 도메인의 실제 표시 시간을 확인한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 12,
+      "round": 13,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -219,9 +219,19 @@
           "time": "2026-09-28 20:21:04",
           "state": "DONE",
           "round": 12
+        },
+        {
+          "time": "2026-09-28 20:26:53",
+          "state": "REWORK",
+          "round": 13
+        },
+        {
+          "time": "2026-09-28 20:27:19",
+          "state": "CLAIMED",
+          "round": 13
         }
       ],
-      "lastUpdate": "2026-09-28 20:21:04"
+      "lastUpdate": "2026-09-28 20:27:19"
     },
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
