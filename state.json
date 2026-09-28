@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-28T18:07:59",
+  "generatedAt": "2026-09-28T18:09:13",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 581,
     "alerts": 23
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
-      "title": "확정된 문의 표시를 유지하고 보호된 웹의 남은 기능을 검증한다",
+      "title": "입력 실패를 분류하고 기존 보호 후보의 실제 화면을 검증한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 9,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -164,9 +164,14 @@
           "time": "2026-09-28 18:07:19",
           "state": "REWORK",
           "round": 9
+        },
+        {
+          "time": "2026-09-28 18:08:14",
+          "state": "CLAIMED",
+          "round": 9
         }
       ],
-      "lastUpdate": "2026-09-28 18:07:19"
+      "lastUpdate": "2026-09-28 18:08:14"
     },
     {
       "jobId": "Jmrgolf-vercel-preview-20260926",
