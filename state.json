@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-09-29T04:16:59",
+  "generatedAt": "2026-09-29T04:29:14",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 4,
     "done": 582,
-    "alerts": 24
+    "alerts": 23
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-launch-handover-20260927",
-      "title": "정상 DOM 읽기로 고정 후보의 남은 기능과 보호 승격을 마친다",
+      "title": "보관 계정의 정상 로그인으로 남은 후보 기능을 검증한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 8,
+      "round": 9,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -159,9 +159,19 @@
           "time": "2026-09-29 04:16:20",
           "state": "DONE",
           "round": 8
+        },
+        {
+          "time": "2026-09-29 04:28:40",
+          "state": "REWORK",
+          "round": 9
+        },
+        {
+          "time": "2026-09-29 04:29:01",
+          "state": "CLAIMED",
+          "round": 9
         }
       ],
-      "lastUpdate": "2026-09-29 04:16:20"
+      "lastUpdate": "2026-09-29 04:29:01"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
