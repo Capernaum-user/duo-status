@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-30T21:43:06",
+  "generatedAt": "2026-09-30T21:53:20",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 582,
     "alerts": 23
   },
@@ -14,17 +14,17 @@
       "title": "기존 TEST 문의의 저장 증거를 확인하고 서울 후보를 보호 승격한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 19,
+      "round": 20,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -339,9 +339,14 @@
           "time": "2026-09-30 21:41:44",
           "state": "DONE",
           "round": 19
+        },
+        {
+          "time": "2026-09-30 21:53:15",
+          "state": "REWORK",
+          "round": 20
         }
       ],
-      "lastUpdate": "2026-09-30 21:41:44"
+      "lastUpdate": "2026-09-30 21:53:15"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
