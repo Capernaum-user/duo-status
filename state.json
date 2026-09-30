@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-01T04:23:46",
+  "generatedAt": "2026-10-01T04:25:01",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 585,
     "alerts": 23
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-01 04:23:34",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-01 04:24:12",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-01 04:23:34"
+      "lastUpdate": "2026-10-01 04:24:12"
     },
     {
       "jobId": "Jmrgolf-ops-install-20261001",
