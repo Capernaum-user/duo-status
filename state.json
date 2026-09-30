@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-30T13:15:14",
+  "generatedAt": "2026-09-30T13:22:28",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 6,
+    "working": 3,
     "waitingReview": 4,
     "done": 582,
     "alerts": 23
@@ -14,17 +14,17 @@
       "title": "같은 R15에서 UI 실행보조를 고치고 남은 기능 검증을 진행한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 15,
+      "round": 16,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -279,9 +279,14 @@
           "time": "2026-09-30 12:07:59",
           "state": "CLAIMED",
           "round": 15
+        },
+        {
+          "time": "2026-09-30 13:22:06",
+          "state": "REWORK",
+          "round": 16
         }
       ],
-      "lastUpdate": "2026-09-30 12:07:59"
+      "lastUpdate": "2026-09-30 13:22:06"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
