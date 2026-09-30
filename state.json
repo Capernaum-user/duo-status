@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-01T04:20:33",
+  "generatedAt": "2026-10-01T04:23:46",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 5,
-    "done": 584,
+    "waitingReview": 4,
+    "done": 585,
     "alerts": 23
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-ops-pipeline-20261001",
+      "title": "원시 수집부터 이미지·DB 게시까지 연결하고 운영 선택을 확정 가능한 형태로 정리한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-01 04:23:34",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-01 04:23:34"
+    },
     {
       "jobId": "Jmrgolf-ops-install-20261001",
       "title": "Windows 수집기의 격리 설치·실행·복구 묶음을 만든다",
@@ -16,15 +45,15 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -44,9 +73,14 @@
           "time": "2026-10-01 04:20:17",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-01 04:23:33",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-01 04:20:17"
+      "lastUpdate": "2026-10-01 04:23:33"
     },
     {
       "jobId": "Jmrgolf-ops-readiness-20261001",
