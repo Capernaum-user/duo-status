@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-30T14:51:56",
+  "generatedAt": "2026-09-30T14:53:10",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 582,
     "alerts": 23
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-launch-handover-20260927",
-      "title": "날짜 입력을 복구하고 문의 TEST를 끝내 보호 승격한다",
+      "title": "기존 일정 달력에서 견적 TEST까지 이어 보호 승격한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 18,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -314,9 +314,14 @@
           "time": "2026-09-30 14:51:32",
           "state": "REWORK",
           "round": 18
+        },
+        {
+          "time": "2026-09-30 14:53:03",
+          "state": "CLAIMED",
+          "round": 18
         }
       ],
-      "lastUpdate": "2026-09-30 14:51:32"
+      "lastUpdate": "2026-09-30 14:53:03"
     },
     {
       "jobId": "Jmrgolf-domain-go-live-20260926",
