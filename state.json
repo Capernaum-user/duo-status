@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-01T07:40:11",
+  "generatedAt": "2026-10-01T16:38:50",
   "counts": {
-    "active": 12,
-    "waitingWorker": 5,
+    "active": 13,
+    "waitingWorker": 6,
     "working": 3,
     "waitingReview": 4,
     "done": 586,
     "alerts": 23
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-review-build-20261001",
+      "title": "ORDER_Jmrgolf-review-build-20261001_R01 — 의뢰인 수정 요청 도구를 구현한다",
+      "project": "11_client-review",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-01 16:38:24",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-01 16:38:24"
+    },
     {
       "jobId": "Jmrgolf-ops-pipeline-20261001",
       "title": "원시 수집부터 이미지·DB 게시까지 연결하고 운영 선택을 확정 가능한 형태로 정리한다",
