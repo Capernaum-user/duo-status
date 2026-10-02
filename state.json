@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-03T08:14:16",
+  "generatedAt": "2026-10-03T08:15:29",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 591,
     "alerts": 23
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-03 08:13:43",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-03 08:14:28",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-03 08:13:43"
+      "lastUpdate": "2026-10-03 08:14:28"
     },
     {
       "jobId": "Jmrgolf-community-edit-20261003",
