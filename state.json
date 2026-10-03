@@ -1,14 +1,97 @@
 {
-  "generatedAt": "2026-10-04T07:19:23",
+  "generatedAt": "2026-10-04T07:27:36",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 6,
+    "waitingWorker": 7,
+    "working": 3,
+    "waitingReview": 5,
     "done": 602,
     "alerts": 25
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-editorial-batch-20261004",
+      "title": "전체 글의 편집 경로를 연결한다 — 안정 별칭·자연스러운 요약·중단 재개",
+      "project": "15_community-editorial",
+      "targetDir": "D:/01_project-57/project-40/project-40/15_community-editorial",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 06:20:30",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 06:21:24",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 07:27:22",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-04 07:27:22"
+    },
+    {
+      "jobId": "Jaogreen-20261004-core",
+      "title": "초록·흰색 핵심 화면을 별도 로컬 시안으로 구현한다",
+      "project": "04_search-green-preview",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/04_search-green-preview",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 05:46:25",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 06:30:54",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 07:09:23",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 07:27:17",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-04 07:27:17"
+    },
     {
       "jobId": "Jmrgolf-gallery-build-20261004",
       "title": "스무 홈 디자인을 직접 넘기며 조작하는 비교 페이지",
@@ -18,13 +101,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -47,45 +130,6 @@
         }
       ],
       "lastUpdate": "2026-10-04 07:19:10"
-    },
-    {
-      "jobId": "Jaogreen-20261004-core",
-      "title": "초록·흰색 핵심 화면을 별도 로컬 시안으로 구현한다",
-      "project": "04_search-green-preview",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/04_search-green-preview",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-04 05:46:25",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 06:30:54",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 07:09:23",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-04 07:09:23"
     },
     {
       "jobId": "Jdecknara-20261004-aside-handoff",
@@ -130,40 +174,6 @@
         }
       ],
       "lastUpdate": "2026-10-04 06:35:15"
-    },
-    {
-      "jobId": "Jmrgolf-editorial-batch-20261004",
-      "title": "전체 글의 편집 경로를 연결한다 — 안정 별칭·자연스러운 요약·중단 재개",
-      "project": "15_community-editorial",
-      "targetDir": "D:/01_project-57/project-40/project-40/15_community-editorial",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-04 06:20:30",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 06:21:24",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-04 06:21:24"
     },
     {
       "jobId": "Jmrgolf-feed-inventory-20261004",
