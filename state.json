@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-03T14:23:34",
+  "generatedAt": "2026-10-03T14:29:47",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 6,
+    "working": 3,
     "waitingReview": 4,
     "done": 592,
     "alerts": 23
@@ -14,18 +14,18 @@
       "title": "일곱 질문을 그림으로 설명한다 — 제작 패널의 구현 지시",
       "project": "13_client-decisions",
       "targetDir": "D:/01_project-57/project-40/project-40/13_client-decisions",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -39,9 +39,14 @@
           "time": "2026-10-03 13:31:51",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-03 14:29:08",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-03 13:31:51"
+      "lastUpdate": "2026-10-03 14:29:08"
     },
     {
       "jobId": "Jmrgolf-client-preview-20261003",
