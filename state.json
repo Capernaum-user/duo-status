@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-04T06:36:55",
+  "generatedAt": "2026-10-04T07:10:10",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 6,
-    "waitingReview": 4,
+    "working": 5,
+    "waitingReview": 5,
     "done": 602,
     "alerts": 24
   },
   "jobs": [
+    {
+      "jobId": "Jaogreen-20261004-core",
+      "title": "초록·흰색 핵심 화면을 별도 로컬 시안으로 구현한다",
+      "project": "04_search-green-preview",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/04_search-green-preview",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 05:46:25",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 06:30:54",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 07:09:23",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-04 07:09:23"
+    },
     {
       "jobId": "Jdecknara-20261004-aside-handoff",
       "title": "Aside 인계를 받아 다음 협업을 준비한다",
@@ -54,40 +93,6 @@
       "lastUpdate": "2026-10-04 06:35:15"
     },
     {
-      "jobId": "Jaogreen-20261004-core",
-      "title": "초록·흰색 핵심 화면을 별도 로컬 시안으로 구현한다",
-      "project": "04_search-green-preview",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/04_search-green-preview",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-04 05:46:25",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 06:30:54",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-04 06:30:54"
-    },
-    {
       "jobId": "Jmrgolf-editorial-batch-20261004",
       "title": "전체 글의 편집 경로를 연결한다 — 안정 별칭·자연스러운 요약·중단 재개",
       "project": "15_community-editorial",
@@ -102,7 +107,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
