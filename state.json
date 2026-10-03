@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-04T05:35:07",
+  "generatedAt": "2026-10-04T05:36:21",
   "counts": {
-    "active": 13,
+    "active": 14,
     "waitingWorker": 6,
-    "working": 3,
+    "working": 4,
     "waitingReview": 4,
     "done": 600,
     "alerts": 24
   },
   "jobs": [
     {
-      "jobId": "Jmrgolf-gallery-build-20261004",
-      "title": "스무 홈 디자인을 직접 넘기며 조작하는 비교 페이지",
-      "project": "03_concepts",
-      "targetDir": "D:/01_project-57/project-40/project-40/14_experience-update/03_concepts",
+      "jobId": "Jdecknara-20261004-aside-handoff",
+      "title": "Aside 인계를 받아 다음 협업을 준비한다",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
       "round": 1,
       "originDir": "<local>",
       "stage": "PLANNED",
@@ -31,12 +31,46 @@
       "autorun": null,
       "timeline": [
         {
-          "time": "2026-10-04 05:34:27",
+          "time": "2026-10-04 05:35:57",
           "state": "PLANNED",
           "round": 1
         }
       ],
-      "lastUpdate": "2026-10-04 05:34:27"
+      "lastUpdate": "2026-10-04 05:35:57"
+    },
+    {
+      "jobId": "Jmrgolf-gallery-build-20261004",
+      "title": "스무 홈 디자인을 직접 넘기며 조작하는 비교 페이지",
+      "project": "03_concepts",
+      "targetDir": "D:/01_project-57/project-40/project-40/14_experience-update/03_concepts",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 05:34:27",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 05:35:54",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-04 05:35:54"
     },
     {
       "jobId": "Jdecknara-20261003-naver-auth-resume",
