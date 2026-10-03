@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-10-04T07:32:19",
+  "generatedAt": "2026-10-04T07:52:34",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 6,
-    "waitingReview": 4,
+    "working": 5,
+    "waitingReview": 5,
     "done": 602,
-    "alerts": 24
+    "alerts": 25
   },
   "jobs": [
+    {
+      "jobId": "Jaogreen-20261004-core",
+      "title": "검증한 디자인을 보존한다 — R2 변경 기록과 격리 검수를 보완한다",
+      "project": "04_search-green-preview",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/04_search-green-preview",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 05:46:25",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 06:30:54",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 07:09:23",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 07:27:17",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-04 07:27:50",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-04 07:51:45",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-04 07:51:45"
+    },
     {
       "jobId": "Jmrgolf-gallery-build-20261004",
       "title": "스무 홈 디자인을 직접 넘기며 조작하는 비교 페이지",
@@ -101,55 +155,6 @@
         }
       ],
       "lastUpdate": "2026-10-04 07:27:54"
-    },
-    {
-      "jobId": "Jaogreen-20261004-core",
-      "title": "검증한 디자인을 보존한다 — R2 변경 기록과 격리 검수를 보완한다",
-      "project": "04_search-green-preview",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/04_search-green-preview",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-04 05:46:25",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 06:30:54",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 07:09:23",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 07:27:17",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-04 07:27:50",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-04 07:27:50"
     },
     {
       "jobId": "Jdecknara-20261004-aside-handoff",
