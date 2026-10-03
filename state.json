@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-10-04T05:37:34",
+  "generatedAt": "2026-10-04T05:39:48",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 4,
     "done": 600,
     "alerts": 24
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261004-aside-handoff",
+      "title": "Aside 인계를 받아 다음 협업을 준비한다",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 05:35:57",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 05:39:16",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-04 05:39:16"
+    },
     {
       "jobId": "Jmrgolf-feed-inventory-20261004",
       "title": "실제 갱신 경로와 전체 글을 확인한다 — 현재 로그·고유 목록·허용 조건",
@@ -47,35 +81,6 @@
         }
       ],
       "lastUpdate": "2026-10-04 05:36:35"
-    },
-    {
-      "jobId": "Jdecknara-20261004-aside-handoff",
-      "title": "Aside 인계를 받아 다음 협업을 준비한다",
-      "project": "project-51",
-      "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-04 05:35:57",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-04 05:35:57"
     },
     {
       "jobId": "Jmrgolf-gallery-build-20261004",
