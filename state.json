@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-10-03T18:18:55",
+  "generatedAt": "2026-10-03T18:20:08",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 4,
     "done": 595,
     "alerts": 23
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-experience-build-20261003",
+      "title": "메뉴·사진·시안을 병행 제작한다 — 화면 수정과 세 홈 체험",
+      "project": "14_experience-update",
+      "targetDir": "D:/01_project-57/project-40/project-40/14_experience-update",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-03 16:56:50",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-03 17:00:11",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-03 18:18:57",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-03 18:19:17",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-03 18:19:17"
+    },
     {
       "jobId": "Jdecknara-20261003-naver-kit",
       "title": "Jdecknara-20261003-naver-kit",
@@ -16,14 +60,14 @@
       "targetDir": "D:/01_project-57/project-51",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +78,14 @@
           "time": "2026-10-03 18:18:26",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-03 18:19:00",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-03 18:18:26"
+      "lastUpdate": "2026-10-03 18:19:00"
     },
     {
       "jobId": "Jdecknara-20261003-naver-plan",
@@ -86,40 +135,6 @@
         }
       ],
       "lastUpdate": "2026-10-03 18:18:25"
-    },
-    {
-      "jobId": "Jmrgolf-experience-build-20261003",
-      "title": "메뉴·사진·시안을 병행 제작한다 — 화면 수정과 세 홈 체험",
-      "project": "14_experience-update",
-      "targetDir": "D:/01_project-57/project-40/project-40/14_experience-update",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-03 16:56:50",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-03 17:00:11",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-03 17:00:11"
     },
     {
       "jobId": "Jmrgolf-decisions-publish-20261003",
