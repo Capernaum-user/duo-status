@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-03T19:02:04",
+  "generatedAt": "2026-10-03T19:15:19",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 596,
-    "alerts": 23
+    "alerts": 24
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-51",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -54,9 +54,14 @@
           "time": "2026-10-03 18:53:01",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-03 19:14:17",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-03 18:53:01"
+      "lastUpdate": "2026-10-03 19:14:17"
     },
     {
       "jobId": "Jmrgolf-experience-release-20261003",
