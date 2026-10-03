@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T08:01:41",
+  "generatedAt": "2026-10-04T08:02:55",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
@@ -11,9 +11,9 @@
   "jobs": [
     {
       "jobId": "Jaogreen-20261004-project-18",
-      "title": "Jaogreen-20261004-project-18",
-      "project": "",
-      "targetDir": null,
+      "title": "서비스·사례·콘텐츠·정책 화면과 상호작용을 완성한다",
+      "project": "04_search-green-preview",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/04_search-green-preview",
       "round": 1,
       "originDir": "<local>",
       "stage": "CLAIMED",
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -166,7 +166,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
