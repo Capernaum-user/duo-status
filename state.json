@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-10-04T06:31:26",
+  "generatedAt": "2026-10-04T06:35:42",
   "counts": {
-    "active": 16,
+    "active": 15,
     "waitingWorker": 5,
     "working": 6,
-    "waitingReview": 5,
-    "done": 601,
-    "alerts": 25
+    "waitingReview": 4,
+    "done": 602,
+    "alerts": 24
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261004-aside-handoff",
+      "title": "Aside 인계를 받아 다음 협업을 준비한다",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 05:35:57",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 05:39:16",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 06:25:10",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 06:35:15",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-04 06:35:15"
+    },
     {
       "jobId": "Jaogreen-20261004-core",
       "title": "초록·흰색 핵심 화면을 별도 로컬 시안으로 구현한다",
@@ -42,45 +86,6 @@
         }
       ],
       "lastUpdate": "2026-10-04 06:30:54"
-    },
-    {
-      "jobId": "Jdecknara-20261004-aside-handoff",
-      "title": "Aside 인계를 받아 다음 협업을 준비한다",
-      "project": "project-51",
-      "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-04 05:35:57",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 05:39:16",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 06:25:10",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-04 06:25:10"
     },
     {
       "jobId": "Jmrgolf-editorial-batch-20261004",
