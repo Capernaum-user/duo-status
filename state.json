@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-03T23:12:07",
+  "generatedAt": "2026-10-04T00:24:24",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 4,
+    "working": 3,
+    "waitingReview": 5,
     "done": 599,
-    "alerts": 24
+    "alerts": 25
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261003-naver-auth-resume",
+      "title": "Jdecknara-20261003-naver-auth-resume",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-03 23:00:56",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-03 23:05:46",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 00:23:51",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-04 00:23:51"
+    },
     {
       "jobId": "Jmrgolf-editorial-draft-20261003",
       "title": "익명화와 편집 초안을 분리한다 — 출처 확인과 관리자 검토",
@@ -62,40 +101,6 @@
         }
       ],
       "lastUpdate": "2026-10-03 23:11:18"
-    },
-    {
-      "jobId": "Jdecknara-20261003-naver-auth-resume",
-      "title": "Jdecknara-20261003-naver-auth-resume",
-      "project": "project-51",
-      "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-03 23:00:56",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-03 23:05:46",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-03 23:05:46"
     },
     {
       "jobId": "Jmrgolf-experience-release-20261003",
