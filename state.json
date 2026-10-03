@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-03T19:38:25",
+  "generatedAt": "2026-10-03T19:39:38",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 597,
     "alerts": 24
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-57/project-40/project-40/14_experience-update",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-03 19:38:13",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-03 19:38:33",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-03 19:38:13"
+      "lastUpdate": "2026-10-03 19:38:33"
     },
     {
       "jobId": "Jdecknara-20261003-naver-pilot",
