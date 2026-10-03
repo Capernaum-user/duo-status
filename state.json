@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-04T05:41:01",
+  "generatedAt": "2026-10-04T05:47:14",
   "counts": {
-    "active": 15,
-    "waitingWorker": 5,
+    "active": 16,
+    "waitingWorker": 6,
     "working": 6,
     "waitingReview": 4,
     "done": 600,
     "alerts": 24
   },
   "jobs": [
+    {
+      "jobId": "Jaogreen-20261004-core",
+      "title": "초록·흰색 핵심 화면을 별도 로컬 시안으로 구현한다",
+      "project": "04_search-green-preview",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/04_search-green-preview",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 05:46:25",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-04 05:46:25"
+    },
     {
       "jobId": "Jdecknara-20261004-aside-handoff",
       "title": "Aside 인계를 받아 다음 협업을 준비한다",
