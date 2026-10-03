@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-10-03T18:50:26",
+  "generatedAt": "2026-10-03T18:53:38",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 4,
     "done": 596,
-    "alerts": 24
+    "alerts": 23
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261003-naver-kit",
+      "title": "Jdecknara-20261003-naver-kit",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-03 18:18:26",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-03 18:19:00",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-03 18:48:12",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-03 18:52:38",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-03 18:53:01",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-03 18:53:01"
+    },
     {
       "jobId": "Jmrgolf-experience-release-20261003",
       "title": "세 시안과 검증한 화면 수정을 전달한다 — 기존 링크와 운영 배포",
@@ -91,45 +140,6 @@
         }
       ],
       "lastUpdate": "2026-10-03 18:49:38"
-    },
-    {
-      "jobId": "Jdecknara-20261003-naver-kit",
-      "title": "Jdecknara-20261003-naver-kit",
-      "project": "project-51",
-      "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-03 18:18:26",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-03 18:19:00",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-03 18:48:12",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-03 18:48:12"
     },
     {
       "jobId": "Jdecknara-20261003-naver-plan",
