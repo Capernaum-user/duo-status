@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-04T22:11:46",
+  "generatedAt": "2026-10-04T22:22:01",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 612,
     "alerts": 24
   },
@@ -14,18 +14,18 @@
       "title": "글 세 편과 사진·도해를 제작한다",
       "project": "project-51",
       "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-04 22:11:09",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-04 22:21:41",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-04 22:11:09"
+      "lastUpdate": "2026-10-04 22:21:41"
     },
     {
       "jobId": "Jmrgolf-community-edit-live-20261004",
