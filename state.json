@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-05T05:13:48",
+  "generatedAt": "2026-10-05T05:24:02",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 4,
     "done": 613,
-    "alerts": 26
+    "alerts": 25
   },
   "jobs": [
     {
       "jobId": "Jdecknara-20261004-launch-private",
-      "title": "본문 옆에 정보 영역을 배치한다 — PC 레이아웃 R4 보정",
+      "title": "상단 가로 메뉴를 유지한다 — 네이버 배치 대안 R5 검수",
       "project": "project-51",
       "targetDir": "D:/01_project-57/project-51",
-      "round": 4,
+      "round": 5,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -94,9 +94,19 @@
           "time": "2026-10-05 05:12:51",
           "state": "DONE",
           "round": 4
+        },
+        {
+          "time": "2026-10-05 05:23:17",
+          "state": "REWORK",
+          "round": 5
+        },
+        {
+          "time": "2026-10-05 05:23:51",
+          "state": "CLAIMED",
+          "round": 5
         }
       ],
-      "lastUpdate": "2026-10-05 05:12:51"
+      "lastUpdate": "2026-10-05 05:23:51"
     },
     {
       "jobId": "Jmrgolf-community-edit-live-20261004",
