@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-05T04:35:18",
+  "generatedAt": "2026-10-05T04:44:33",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 613,
     "alerts": 25
   },
@@ -14,16 +14,16 @@
       "title": "ORDER_Jmrgolf-community-edit-live-20261004_R06 — 권한 거절 증거와 강제 종료 상태를 보완한다",
       "project": "15_community-editorial",
       "targetDir": "D:/01_project-57/project-40/project-40/15_community-editorial",
-      "round": 6,
+      "round": 7,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -114,9 +114,19 @@
           "time": "2026-10-05 04:34:41",
           "state": "DONE",
           "round": 6
+        },
+        {
+          "time": "2026-10-05 04:43:57",
+          "state": "REWORK",
+          "round": 7
+        },
+        {
+          "time": "2026-10-05 04:43:58",
+          "state": "ESCALATED",
+          "round": 7
         }
       ],
-      "lastUpdate": "2026-10-05 04:34:41"
+      "lastUpdate": "2026-10-05 04:43:58"
     },
     {
       "jobId": "Jdecknara-20261004-launch-private",
@@ -34897,6 +34907,11 @@
       "file": "Jmrgolf-community-edit-live-20261004_autopilot-claim-stale.md",
       "jobId": "Jmrgolf-community-edit-live-20261004",
       "cause": "autopilot-claim-stale"
+    },
+    {
+      "file": "Jmrgolf-community-edit-live-20261004_owner-project-58-required.md",
+      "jobId": "Jmrgolf-community-edit-live-20261004",
+      "cause": "owner-project-58-required"
     },
     {
       "file": "Jmrgolf-confirmation-1325-16a4-1326-c2f5_external-writer-active.md",
