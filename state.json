@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-04T20:28:24",
+  "generatedAt": "2026-10-04T20:34:38",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 610,
     "alerts": 24
   },
@@ -14,18 +14,18 @@
       "title": "Jmrgolf-community-edit-complete-20261004",
       "project": "15_community-editorial",
       "targetDir": "D:/01_project-57/project-40/project-40/15_community-editorial",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-04 20:24:53",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-04 20:34:27",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-04 20:24:53"
+      "lastUpdate": "2026-10-04 20:34:27"
     },
     {
       "jobId": "Jdecknara-20261004-launch-design",
@@ -63,7 +68,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
