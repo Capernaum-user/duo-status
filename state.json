@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T21:12:46",
+  "generatedAt": "2026-10-04T21:14:00",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -12,8 +12,8 @@
     {
       "jobId": "Jmrgolf-community-edit-live-20261004",
       "title": "Jmrgolf-community-edit-live-20261004",
-      "project": "",
-      "targetDir": null,
+      "project": "15_community-editorial",
+      "targetDir": "D:/01_project-57/project-40/project-40/15_community-editorial",
       "round": 1,
       "originDir": "<local>",
       "stage": "CLAIMED",
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
