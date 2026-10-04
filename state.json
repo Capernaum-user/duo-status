@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T00:17:30",
+  "generatedAt": "2026-10-05T00:32:44",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -131,7 +131,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -34797,6 +34797,11 @@
       "file": "Jmrgolf-client-intake-20260913-1_round-cap-exceeded.md",
       "jobId": "Jmrgolf-client-intake-20260913-1",
       "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jmrgolf-community-edit-live-20261004_autopilot-claim-stale.md",
+      "jobId": "Jmrgolf-community-edit-live-20261004",
+      "cause": "autopilot-claim-stale"
     },
     {
       "file": "Jmrgolf-confirmation-1325-16a4-1326-c2f5_external-writer-active.md",
