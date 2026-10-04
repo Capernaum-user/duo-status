@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-04T10:54:51",
+  "generatedAt": "2026-10-04T11:09:06",
   "counts": {
-    "active": 13,
+    "active": 12,
     "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 5,
-    "done": 608,
+    "waitingReview": 4,
+    "done": 609,
     "alerts": 24
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/04_search-green-preview",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-04 10:53:56",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-04 11:08:27",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-04 10:53:56"
+      "lastUpdate": "2026-10-04 11:08:27"
     },
     {
       "jobId": "Jmrgolf-gallery-delivery-20261004",
