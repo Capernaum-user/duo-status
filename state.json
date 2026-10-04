@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-04T10:42:22",
+  "generatedAt": "2026-10-04T10:50:37",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 5,
-    "done": 607,
-    "alerts": 25
+    "waitingReview": 4,
+    "done": 608,
+    "alerts": 24
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-40/project-40/14_experience-update/03_concepts",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -59,9 +59,14 @@
           "time": "2026-10-04 10:37:41",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-04 10:49:49",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-04 10:37:41"
+      "lastUpdate": "2026-10-04 10:49:49"
     },
     {
       "jobId": "Jmrgolf-editorial-apply-20261004",
