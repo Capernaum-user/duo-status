@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-10-04T22:47:33",
+  "generatedAt": "2026-10-04T22:56:47",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
-    "working": 5,
+    "waitingWorker": 6,
+    "working": 4,
     "waitingReview": 4,
     "done": 612,
     "alerts": 24
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-community-edit-live-20261004",
+      "title": "Jmrgolf-community-edit-live-20261004",
+      "project": "15_community-editorial",
+      "targetDir": "D:/01_project-57/project-40/project-40/15_community-editorial",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 21:12:20",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 21:12:43",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 21:56:41",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-04 21:57:05",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-04 22:56:06",
+          "state": "REWORK",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-10-04 22:56:06"
+    },
     {
       "jobId": "Jdecknara-20261004-launch-project-18",
       "title": "글 세 편과 사진·도해를 제작한다",
@@ -57,50 +106,6 @@
         }
       ],
       "lastUpdate": "2026-10-04 22:22:06"
-    },
-    {
-      "jobId": "Jmrgolf-community-edit-live-20261004",
-      "title": "Jmrgolf-community-edit-live-20261004",
-      "project": "15_community-editorial",
-      "targetDir": "D:/01_project-57/project-40/project-40/15_community-editorial",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-04 21:12:20",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 21:12:43",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 21:56:41",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-04 21:57:05",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-04 21:57:05"
     },
     {
       "jobId": "Jmrgolf-community-edit-complete-20261004",
