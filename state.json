@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-04T09:53:30",
+  "generatedAt": "2026-10-04T09:57:44",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 6,
     "done": 606,
-    "alerts": 24
+    "alerts": 25
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-gallery-delivery-20261004",
+      "title": "스무 디자인의 선택·모바일 검증을 마치고 기존 HTML로 전달",
+      "project": "03_concepts",
+      "targetDir": "D:/01_project-57/project-40/project-40/14_experience-update/03_concepts",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-04 08:14:31",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 08:15:07",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-04 09:56:51",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-04 09:56:51"
+    },
     {
       "jobId": "Jmrgolf-editorial-apply-20261004",
       "title": "기존 글의 처리 결과를 대조한다 — 허용 자료 편집본·승인 반영·복원 기록",
@@ -189,40 +228,6 @@
         }
       ],
       "lastUpdate": "2026-10-04 08:19:12"
-    },
-    {
-      "jobId": "Jmrgolf-gallery-delivery-20261004",
-      "title": "스무 디자인의 선택·모바일 검증을 마치고 기존 HTML로 전달",
-      "project": "03_concepts",
-      "targetDir": "D:/01_project-57/project-40/project-40/14_experience-update/03_concepts",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-04 08:14:31",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-04 08:15:07",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-04 08:15:07"
     },
     {
       "jobId": "Jmrgolf-gallery-build-20261004",
