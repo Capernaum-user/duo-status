@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-06T04:05:30",
+  "generatedAt": "2026-10-06T04:06:44",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 4,
     "done": 618,
     "alerts": 25
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jdecknara-20261006-calculator-connect",
-      "title": "계산기를 블로그에서 연다 — 공개 HTTPS 배포와 기존 수량 글 연결",
+      "title": "공개 계산기의 운영 근거를 바로잡는다 — R2 문서 정정과 읽기 검수",
       "project": "project-51",
       "targetDir": "D:/01_project-57/project-51",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-06 04:05:22",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-06 04:06:17",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-06 04:05:22"
+      "lastUpdate": "2026-10-06 04:06:17"
     },
     {
       "jobId": "Jmrgolf-community-runner-20261006",
