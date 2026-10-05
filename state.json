@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-05T11:45:08",
+  "generatedAt": "2026-10-05T11:46:22",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 614,
     "alerts": 25
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jdecknara-20261004-launch-project-66",
-      "title": "글을 공개하고 실제 방문자 화면을 확인한다",
+      "title": "공개 글의 모바일 검수를 마친다 — 본문 끝 확인과 운영 기록 보완",
       "project": "project-51",
       "targetDir": "D:/01_project-57/project-51",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-05 11:44:38",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-05 11:45:24",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-05 11:44:38"
+      "lastUpdate": "2026-10-05 11:45:24"
     },
     {
       "jobId": "Jdecknara-20261004-launch-private",
