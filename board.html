@@ -71,57 +71,18 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-06 05:16:32 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-06 05:21:47 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-06T05:16:32",
+  "generatedAt": "2026-10-06T05:21:46",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
-    "working": 4,
+    "working": 3,
     "waitingReview": 5,
     "done": 620,
-    "alerts": 26
+    "alerts": 27
   },
   "jobs": [
-    {
-      "jobId": "Jmrgolf-community-guide-20261006",
-      "title": "운영 방법과 남은 결정을 인계한다",
-      "project": "17_community-automation",
-      "targetDir": "D:/01_project-57/project-40/project-40/17_community-automation",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-06 04:31:02",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 04:31:51",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 05:11:11",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-06 05:11:11"
-    },
     {
       "jobId": "Jaointake-20261006-inbox",
       "title": "보호 파일 변경의 증거를 보존하고 재개 판단 자료를 만든다",
@@ -129,15 +90,15 @@
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/05_guided-intake",
       "round": 3,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -182,9 +143,53 @@
           "time": "2026-10-06 04:57:28",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-10-06 05:21:29",
+          "state": "ESCALATED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-06 04:57:28"
+      "lastUpdate": "2026-10-06 05:21:29"
+    },
+    {
+      "jobId": "Jmrgolf-community-guide-20261006",
+      "title": "운영 방법과 남은 결정을 인계한다",
+      "project": "17_community-automation",
+      "targetDir": "D:/01_project-57/project-40/project-40/17_community-automation",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 04:31:02",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 04:31:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 05:11:11",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-06 05:11:11"
     },
     {
       "jobId": "Jdecknara-20261006-calculator-connect",
@@ -35323,6 +35328,11 @@
       "file": "Jaodesign-rollout-report_autopilot-claim-stale.md",
       "jobId": "Jaodesign-rollout-report",
       "cause": "autopilot-claim-stale"
+    },
+    {
+      "file": "Jaointake-20261006-inbox_round-cap-exceeded.md",
+      "jobId": "Jaointake-20261006-inbox",
+      "cause": "round-cap-exceeded"
     },
     {
       "file": "Jaonaver-20260920-baseline_round-cap-exceeded.md",
