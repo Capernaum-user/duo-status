@@ -1,48 +1,14 @@
 {
-  "generatedAt": "2026-10-06T04:32:52",
+  "generatedAt": "2026-10-06T04:41:06",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
     "working": 5,
-    "waitingReview": 5,
-    "done": 619,
-    "alerts": 26
+    "waitingReview": 4,
+    "done": 620,
+    "alerts": 25
   },
   "jobs": [
-    {
-      "jobId": "Jmrgolf-community-guide-20261006",
-      "title": "운영 방법과 남은 결정을 인계한다",
-      "project": "17_community-automation",
-      "targetDir": "D:/01_project-57/project-40/project-40/17_community-automation",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-06 04:31:02",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 04:31:51",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-06 04:31:51"
-    },
     {
       "jobId": "Jdecknara-20261006-calculator-connect",
       "title": "공개 계산기의 운영 근거를 바로잡는다 — R2 문서 정정과 읽기 검수",
@@ -50,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-51",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -93,9 +59,48 @@
           "time": "2026-10-06 04:31:37",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-06 04:40:19",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-06 04:31:37"
+      "lastUpdate": "2026-10-06 04:40:19"
+    },
+    {
+      "jobId": "Jmrgolf-community-guide-20261006",
+      "title": "운영 방법과 남은 결정을 인계한다",
+      "project": "17_community-automation",
+      "targetDir": "D:/01_project-57/project-40/project-40/17_community-automation",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 04:31:02",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 04:31:51",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-06 04:31:51"
     },
     {
       "jobId": "Jmrgolf-community-runner-20261006",
