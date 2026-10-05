@@ -1,14 +1,87 @@
 {
-  "generatedAt": "2026-10-06T02:25:46",
+  "generatedAt": "2026-10-06T02:35:02",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 5,
-    "waitingReview": 5,
-    "done": 615,
-    "alerts": 26
+    "waitingReview": 4,
+    "done": 616,
+    "alerts": 25
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261006-calculator-connect",
+      "title": "계산기를 블로그에서 연다 — 공개 HTTPS 배포와 기존 수량 글 연결",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 02:34:40",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-06 02:34:40"
+    },
+    {
+      "jobId": "Jdecknara-20261006-calculator-build",
+      "title": "독자가 수량을 직접 계산한다 — 가격과 분리한 데코타일·데크판 계산기",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 01:19:53",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 01:20:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 02:20:25",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 02:34:39",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-06 02:34:39"
+    },
     {
       "jobId": "Jmrgolf-community-inventory-20261006",
       "title": "답변과 기존 자동화 경로를 고정한다",
@@ -57,45 +130,6 @@
         }
       ],
       "lastUpdate": "2026-10-06 02:25:19"
-    },
-    {
-      "jobId": "Jdecknara-20261006-calculator-build",
-      "title": "독자가 수량을 직접 계산한다 — 가격과 분리한 데코타일·데크판 계산기",
-      "project": "project-51",
-      "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-06 01:19:53",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 01:20:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 02:20:25",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-06 02:20:25"
     },
     {
       "jobId": "Jaointake-20261006-flows",
