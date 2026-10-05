@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-06T02:36:17",
+  "generatedAt": "2026-10-06T03:15:35",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 6,
-    "waitingReview": 4,
+    "working": 5,
+    "waitingReview": 5,
     "done": 616,
     "alerts": 25
   },
   "jobs": [
+    {
+      "jobId": "Jaointake-20261006-flows",
+      "title": "홈과 두 선택형 의뢰 흐름을 구현한다",
+      "project": "05_guided-intake",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/05_guided-intake",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 02:08:43",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 02:11:38",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 03:15:09",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-06 03:15:09"
+    },
     {
       "jobId": "Jdecknara-20261006-calculator-connect",
       "title": "계산기를 블로그에서 연다 — 공개 HTTPS 배포와 기존 수량 글 연결",
@@ -135,40 +174,6 @@
         }
       ],
       "lastUpdate": "2026-10-06 02:25:19"
-    },
-    {
-      "jobId": "Jaointake-20261006-flows",
-      "title": "홈과 두 선택형 의뢰 흐름을 구현한다",
-      "project": "05_guided-intake",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/05_guided-intake",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-06 02:08:43",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 02:11:38",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-06 02:11:38"
     },
     {
       "jobId": "Jdecknara-20261004-launch-project-66",
