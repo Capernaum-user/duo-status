@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-06T01:34:13",
+  "generatedAt": "2026-10-06T02:09:29",
   "counts": {
-    "active": 14,
-    "waitingWorker": 5,
+    "active": 15,
+    "waitingWorker": 6,
     "working": 5,
     "waitingReview": 4,
     "done": 615,
     "alerts": 25
   },
   "jobs": [
+    {
+      "jobId": "Jaointake-20261006-flows",
+      "title": "홈과 두 선택형 의뢰 흐름을 구현한다",
+      "project": "05_guided-intake",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/05_guided-intake",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 02:08:43",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-06 02:08:43"
+    },
     {
       "jobId": "Jmrgolf-community-inventory-20261006",
       "title": "답변과 기존 자동화 경로를 고정한다",
