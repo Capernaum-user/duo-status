@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-07T01:54:25",
+  "generatedAt": "2026-10-07T01:55:38",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 627,
     "alerts": 26
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jdecknara-20261006-editorial-build-b",
-      "title": "새 글 두 편을 제작한다 — 묶음B 원고·사진·도해·출처 검수",
+      "title": "배송 기록 사진의 소재 혼동을 줄인다 — 묶음B 사진 1장과 인접 캡션 교정",
       "project": "project-51",
       "targetDir": "D:/01_project-57/project-51",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-07 01:54:14",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-07 01:55:10",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-07 01:54:14"
+      "lastUpdate": "2026-10-07 01:55:10"
     },
     {
       "jobId": "Jdecknara-20261006-editorial-publish-a",
