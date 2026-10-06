@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-07T00:00:27",
+  "generatedAt": "2026-10-07T00:13:43",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 625,
-    "alerts": 26
+    "alerts": 27
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-site-release-20261006",
+      "title": "검증한 변경을 사이트에 반영한다 — 선별 이관과 실제 화면 확인",
+      "project": "18_site-polish",
+      "targetDir": "D:/01_project-57/project-40/project-40/18_site-polish",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 22:56:53",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 22:57:36",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 00:13:02",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-07 00:13:02"
+    },
     {
       "jobId": "Jdecknara-20261006-editorial-publish-a",
       "title": "검수한 두 글을 공개한다 — 묶음A 네이버 적용과 방문자 확인",
@@ -101,40 +140,6 @@
         }
       ],
       "lastUpdate": "2026-10-06 23:13:08"
-    },
-    {
-      "jobId": "Jmrgolf-site-release-20261006",
-      "title": "검증한 변경을 사이트에 반영한다 — 선별 이관과 실제 화면 확인",
-      "project": "18_site-polish",
-      "targetDir": "D:/01_project-57/project-40/project-40/18_site-polish",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-06 22:56:53",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 22:57:36",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-06 22:57:36"
     },
     {
       "jobId": "Jmrgolf-site-build-20261006",
