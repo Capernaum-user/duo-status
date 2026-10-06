@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-10-06T22:09:10",
+  "generatedAt": "2026-10-06T22:48:28",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 623,
     "alerts": 26
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-site-build-20261006",
+      "title": "사진과 골프장 선택을 보완한다 — 후보 구현과 독립 화면 검증",
+      "project": "18_site-polish",
+      "targetDir": "D:/01_project-57/project-40/project-40/18_site-polish",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 20:50:09",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 20:50:30",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 21:50:00",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 21:56:30",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-06 21:57:04",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-06 22:48:17",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-06 22:48:17"
+    },
     {
       "jobId": "Jdecknara-20261006-editorial-build-a",
       "title": "두 글을 정식 명령으로 다시 만든다 — R2 생성 경로·편집·모바일 보완",
@@ -57,55 +111,6 @@
         }
       ],
       "lastUpdate": "2026-10-06 22:07:51"
-    },
-    {
-      "jobId": "Jmrgolf-site-build-20261006",
-      "title": "사진과 골프장 선택을 보완한다 — 후보 구현과 독립 화면 검증",
-      "project": "18_site-polish",
-      "targetDir": "D:/01_project-57/project-40/project-40/18_site-polish",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-06 20:50:09",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 20:50:30",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 21:50:00",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 21:56:30",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-06 21:57:04",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-06 21:57:04"
     },
     {
       "jobId": "Jdecknara-20261006-editorial-visibility",
