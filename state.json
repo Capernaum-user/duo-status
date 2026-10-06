@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-07T01:41:10",
+  "generatedAt": "2026-10-07T01:54:25",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 627,
     "alerts": 26
   },
@@ -14,18 +14,18 @@
       "title": "새 글 두 편을 제작한다 — 묶음B 원고·사진·도해·출처 검수",
       "project": "project-51",
       "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-07 01:40:47",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-07 01:54:14",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-07 01:40:47"
+      "lastUpdate": "2026-10-07 01:54:14"
     },
     {
       "jobId": "Jdecknara-20261006-editorial-publish-a",
