@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-10-06T05:26:15",
+  "generatedAt": "2026-10-06T19:29:44",
   "counts": {
-    "active": 12,
+    "active": 13,
     "waitingWorker": 5,
-    "working": 3,
+    "working": 4,
     "waitingReview": 4,
     "done": 621,
     "alerts": 26
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261006-editorial-visibility",
+      "title": "기존 글을 누구나 읽게 확인한다 — 전수 공개 점검과 네 편의 편집 계획",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 19:28:38",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 19:28:54",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-06 19:28:54"
+    },
     {
       "jobId": "Jmrgolf-community-guide-20261006",
       "title": "운영 방법과 남은 결정을 인계한다",
