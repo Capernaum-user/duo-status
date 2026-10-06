@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-07T03:08:11",
+  "generatedAt": "2026-10-07T03:09:24",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 4,
     "done": 628,
     "alerts": 26
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-57/project-40/project-40/19_community-sync-hotfix",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-07 03:07:47",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-07 03:08:10",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-07 03:07:47"
+      "lastUpdate": "2026-10-07 03:08:10"
     },
     {
       "jobId": "Jdecknara-20261006-editorial-publish-b",
