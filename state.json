@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-07T03:22:51",
+  "generatedAt": "2026-10-07T03:32:05",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 628,
     "alerts": 26
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261006-editorial-publish-b",
+      "title": "검수한 두 글을 공개한다 — 묶음B 네이버 적용과 방문자 확인",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-07 02:33:14",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 02:34:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 03:31:41",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-07 03:31:41"
+    },
     {
       "jobId": "Jmrgolf-community-sync-fix-20261007",
       "title": "커뮤니티 변경 확인을 정상화한다 — 운영 재현과 최소 수정",
@@ -72,40 +111,6 @@
         }
       ],
       "lastUpdate": "2026-10-07 03:22:25"
-    },
-    {
-      "jobId": "Jdecknara-20261006-editorial-publish-b",
-      "title": "검수한 두 글을 공개한다 — 묶음B 네이버 적용과 방문자 확인",
-      "project": "project-51",
-      "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-07 02:33:14",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 02:34:08",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-07 02:34:08"
     },
     {
       "jobId": "Jdecknara-20261006-editorial-build-b",
