@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-10-07T03:42:49",
+  "generatedAt": "2026-10-07T03:47:07",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 5,
-    "done": 629,
-    "alerts": 27
+    "waitingReview": 4,
+    "done": 630,
+    "alerts": 26
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261006-editorial-publish-b",
+      "title": "검수한 두 글을 공개한다 — 묶음B 네이버 적용과 방문자 확인",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-07 02:33:14",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 02:34:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 03:31:41",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 03:46:48",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-07 03:46:48"
+    },
     {
       "jobId": "Jmrgolf-community-sync-release-20261007",
       "title": "운영 커뮤니티의 경고를 해결한다 — 실제 배포와 모바일·PC 확인",
@@ -116,45 +160,6 @@
         }
       ],
       "lastUpdate": "2026-10-07 03:41:10"
-    },
-    {
-      "jobId": "Jdecknara-20261006-editorial-publish-b",
-      "title": "검수한 두 글을 공개한다 — 묶음B 네이버 적용과 방문자 확인",
-      "project": "project-51",
-      "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-07 02:33:14",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 02:34:08",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 03:31:41",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-07 03:31:41"
     },
     {
       "jobId": "Jdecknara-20261006-editorial-build-b",
