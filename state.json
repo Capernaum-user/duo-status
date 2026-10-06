@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-10-07T02:12:08",
+  "generatedAt": "2026-10-07T02:18:22",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 627,
     "alerts": 26
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261006-editorial-build-b",
+      "title": "배송 기록 사진의 소재 혼동을 줄인다 — 묶음B 사진 1장과 인접 캡션 교정",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-07 00:51:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 00:52:24",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 01:40:47",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 01:54:14",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-07 01:55:10",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-07 02:17:51",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-07 02:17:51"
+    },
     {
       "jobId": "Jmrgolf-community-sync-fix-20261007",
       "title": "커뮤니티 변경 확인을 정상화한다 — 운영 재현과 최소 수정",
@@ -42,55 +96,6 @@
         }
       ],
       "lastUpdate": "2026-10-07 02:11:13"
-    },
-    {
-      "jobId": "Jdecknara-20261006-editorial-build-b",
-      "title": "배송 기록 사진의 소재 혼동을 줄인다 — 묶음B 사진 1장과 인접 캡션 교정",
-      "project": "project-51",
-      "targetDir": "D:/01_project-57/project-51",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-07 00:51:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 00:52:24",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 01:40:47",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 01:54:14",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-07 01:55:10",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-07 01:55:10"
     },
     {
       "jobId": "Jdecknara-20261006-editorial-publish-a",
