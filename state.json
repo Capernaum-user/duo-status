@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-07T01:55:38",
+  "generatedAt": "2026-10-07T02:10:53",
   "counts": {
-    "active": 13,
-    "waitingWorker": 5,
+    "active": 14,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 4,
     "done": 627,
     "alerts": 26
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-community-sync-fix-20261007",
+      "title": "커뮤니티 변경 확인을 정상화한다 — 운영 재현과 최소 수정",
+      "project": "19_community-sync-hotfix",
+      "targetDir": "D:/01_project-57/project-40/project-40/19_community-sync-hotfix",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-07 02:09:49",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-07 02:09:49"
+    },
     {
       "jobId": "Jdecknara-20261006-editorial-build-b",
       "title": "배송 기록 사진의 소재 혼동을 줄인다 — 묶음B 사진 1장과 인접 캡션 교정",
@@ -33025,60 +33054,6 @@
       "lastUpdate": "2026-07-20 19:58:17"
     },
     {
-      "jobId": "Jceo-chart-axes",
-      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
-      "project": "project-55",
-      "targetDir": "<local>",
-      "round": 1,
-      "originDir": null,
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 1,
-        "result": "ACCEPTED"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-20 17:59:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 17:59:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:23:57",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:26:23",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-20 18:30:08",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-07-20 18:30:08"
-    },
-    {
       "jobId": "Jgnosis-dedup",
       "title": "ORDER_Jgnosis-dedup_R01 — Gnosis 학습로그 중복 붕괴 수리: 기록 시 dedup + 기존 로그 압축",
       "project": "project-55",
@@ -33121,6 +33096,60 @@
         },
         {
           "time": "2026-07-20 18:27:06",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:30:08",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-20 18:30:08"
+    },
+    {
+      "jobId": "Jceo-chart-axes",
+      "title": "ORDER_Jceo-chart-axes_R01 — 성과 분석 차트 공통 UI 표준: 축·눈금·툴팁·범례 일괄 적용",
+      "project": "project-55",
+      "targetDir": "<local>",
+      "round": 1,
+      "originDir": null,
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 1,
+        "result": "ACCEPTED"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-20 17:59:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 17:59:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:23:57",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-20 18:26:23",
           "state": "ACCEPTED",
           "round": 1
         },
