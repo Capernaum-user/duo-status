@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-06T21:56:48",
+  "generatedAt": "2026-10-06T21:58:02",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 623,
     "alerts": 27
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-57/project-40/project-40/18_site-polish",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-06 21:56:30",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-06 21:57:04",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-06 21:56:30"
+      "lastUpdate": "2026-10-06 21:57:04"
     },
     {
       "jobId": "Jdecknara-20261006-editorial-build-a",
