@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-10-06T20:19:36",
+  "generatedAt": "2026-10-06T20:25:49",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 4,
     "done": 621,
-    "alerts": 27
+    "alerts": 26
   },
   "jobs": [
+    {
+      "jobId": "Jdecknara-20261006-editorial-visibility",
+      "title": "다음 제작 경로를 맞추고 모바일 증거를 보완한다 — 공개 점검 R2",
+      "project": "project-51",
+      "targetDir": "D:/01_project-57/project-51",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-06 19:28:38",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 19:28:54",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 20:14:39",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-06 20:25:21",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-06 20:25:37",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-06 20:25:37"
+    },
     {
       "jobId": "Jmrgolf-site-audit-20261006",
       "title": "화면과 사진의 부족한 곳을 확인한다 — 기준선과 수정 목록",
@@ -57,45 +106,6 @@
         }
       ],
       "lastUpdate": "2026-10-06 20:18:30"
-    },
-    {
-      "jobId": "Jdecknara-20261006-editorial-visibility",
-      "title": "기존 글을 누구나 읽게 확인한다 — 전수 공개 점검과 네 편의 편집 계획",
-      "project": "project-51",
-      "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-06 19:28:38",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 19:28:54",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-06 20:14:39",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-06 20:14:39"
     },
     {
       "jobId": "Jmrgolf-community-guide-20261006",
