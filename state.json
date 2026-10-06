@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-06T19:37:37",
+  "generatedAt": "2026-10-06T20:09:54",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 621,
     "alerts": 26
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-40/project-40/18_site-polish",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -39,9 +39,14 @@
           "time": "2026-10-06 19:37:18",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-06 20:09:40",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-06 19:37:18"
+      "lastUpdate": "2026-10-06 20:09:40"
     },
     {
       "jobId": "Jdecknara-20261006-editorial-visibility",
