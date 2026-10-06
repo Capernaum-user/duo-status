@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T20:50:32",
+  "generatedAt": "2026-10-06T20:51:45",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -11,9 +11,9 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-site-build-20261006",
-      "title": "Jmrgolf-site-build-20261006",
-      "project": "",
-      "targetDir": null,
+      "title": "사진과 골프장 선택을 보완한다 — 후보 구현과 독립 화면 검증",
+      "project": "18_site-polish",
+      "targetDir": "D:/01_project-57/project-40/project-40/18_site-polish",
       "round": 1,
       "originDir": "<local>",
       "stage": "CLAIMED",
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
