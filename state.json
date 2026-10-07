@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-07T12:39:21",
+  "generatedAt": "2026-10-07T12:41:35",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 633,
     "alerts": 27
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-community-server-20261007",
+      "title": "무인 실행 패키지와 실제 활성화 절차를 준비한다",
+      "project": "17_community-automation",
+      "targetDir": "D:/01_project-57/project-40/project-40/17_community-automation",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-07 12:04:32",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 12:05:00",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 12:41:15",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-07 12:41:15"
+    },
     {
       "jobId": "Jdecknara-20261007-mobile-project-32",
       "title": "지원되는 모바일 홈 메뉴 구성과 적용 자료를 준비한다",
@@ -91,40 +130,6 @@
         }
       ],
       "lastUpdate": "2026-10-07 12:06:32"
-    },
-    {
-      "jobId": "Jmrgolf-community-server-20261007",
-      "title": "무인 실행 패키지와 실제 활성화 절차를 준비한다",
-      "project": "17_community-automation",
-      "targetDir": "D:/01_project-57/project-40/project-40/17_community-automation",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-07 12:04:32",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 12:05:00",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-07 12:05:00"
     },
     {
       "jobId": "Jmrgolf-community-bridge-20261007",
