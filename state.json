@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-10-07T11:56:14",
+  "generatedAt": "2026-10-07T12:02:30",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 631,
     "alerts": 27
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-community-bridge-20261007",
+      "title": "실제 수집 자료와 승인 게시 계약을 연결한다",
+      "project": "17_community-automation",
+      "targetDir": "D:/01_project-57/project-40/project-40/17_community-automation",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-07 10:58:25",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 10:59:44",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 11:43:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-07 11:50:34",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-07 11:51:19",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-07 12:02:05",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-07 12:02:05"
+    },
     {
       "jobId": "Jdecknara-20261007-mobile-discovery",
       "title": "모바일 홈 지원 기능과 현재 경로를 읽기 전용으로 조사한다",
@@ -47,55 +101,6 @@
         }
       ],
       "lastUpdate": "2026-10-07 11:55:13"
-    },
-    {
-      "jobId": "Jmrgolf-community-bridge-20261007",
-      "title": "실제 수집 자료와 승인 게시 계약을 연결한다",
-      "project": "17_community-automation",
-      "targetDir": "D:/01_project-57/project-40/project-40/17_community-automation",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-07 10:58:25",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 10:59:44",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 11:43:29",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-07 11:50:34",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-07 11:51:19",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-07 11:51:19"
     },
     {
       "jobId": "Jmrgolf-community-sync-release-20261007",
