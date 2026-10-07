@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-07T14:59:13",
+  "generatedAt": "2026-10-07T15:24:29",
   "counts": {
     "active": 13,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 6,
+    "working": 3,
     "waitingReview": 4,
     "done": 635,
     "alerts": 26
@@ -14,18 +14,18 @@
       "title": "모바일 홈에 메뉴를 적용하고 실제 방문자 경로를 검수한다",
       "project": "project-51",
       "targetDir": "D:/01_project-57/project-51",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -39,9 +39,14 @@
           "time": "2026-10-07 13:19:07",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-07 15:24:18",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-07 13:19:07"
+      "lastUpdate": "2026-10-07 15:24:18"
     },
     {
       "jobId": "Jdecknara-20261007-mobile-project-32",
