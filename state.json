@@ -1,60 +1,31 @@
 {
-  "generatedAt": "2026-10-09T07:32:19",
+  "generatedAt": "2026-10-09T07:35:34",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
-    "waitingReview": 5,
+    "waitingWorker": 5,
+    "working": 6,
+    "waitingReview": 4,
     "done": 644,
-    "alerts": 29
+    "alerts": 28
   },
   "jobs": [
-    {
-      "jobId": "Jhuman-rights-example-first-proof-20261009",
-      "title": "사례를 이해한 뒤 답하도록 수업 원고와 연속 시안을 만든다",
-      "project": "example-first",
-      "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-ppt-redesign/creator/example-first",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 07:32:02",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-09 07:32:02"
-    },
     {
       "jobId": "Jmrgolf-remediation-baseline-20261009",
       "title": "1/6 운영 수정분을 지키며 후보를 분리한다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -73,9 +44,53 @@
           "time": "2026-10-09 07:25:49",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-09 07:35:02",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-09 07:35:20",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-09 07:25:49"
+      "lastUpdate": "2026-10-09 07:35:20"
+    },
+    {
+      "jobId": "Jhuman-rights-example-first-proof-20261009",
+      "title": "사례를 이해한 뒤 답하도록 수업 원고와 연속 시안을 만든다",
+      "project": "example-first",
+      "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-ppt-redesign/creator/example-first",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 07:32:02",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 07:35:17",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-09 07:35:17"
     },
     {
       "jobId": "Jao-pearl-source-contract-20261009",
