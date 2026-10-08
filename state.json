@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-09T00:59:55",
+  "generatedAt": "2026-10-09T01:16:13",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 642,
-    "alerts": 26
+    "alerts": 27
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/07_pearl-renewal",
       "round": 3,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -69,9 +69,14 @@
           "time": "2026-10-09 00:58:47",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-10-09 01:15:18",
+          "state": "DONE",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-09 00:58:47"
+      "lastUpdate": "2026-10-09 01:15:18"
     },
     {
       "jobId": "Jhuman-rights-ppt-pastel-decks-20261008",
