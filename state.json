@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-08T19:05:58",
+  "generatedAt": "2026-10-08T19:07:08",
   "counts": {
     "active": 15,
     "waitingWorker": 6,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 638,
     "alerts": 26
   },
   "jobs": [
+    {
+      "jobId": "Jhuman-rights-art-ppt-20261008",
+      "title": "중·고등학교 수업 PPT를 제작한다 — Creator 작업 지시서",
+      "project": "01_human-rights-art",
+      "targetDir": "D:/02_Documents/03_Teaching-Materials/01_human-rights-art",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-08 15:49:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-08 15:53:26",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-08 19:06:32",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-08 19:06:32"
+    },
     {
       "jobId": "Jhuman-rights-visual-workbooks-20261008",
       "title": "이미지와 질문을 엮은 수업 활동지를 납품한다",
@@ -159,40 +198,6 @@
         }
       ],
       "lastUpdate": "2026-10-08 16:16:52"
-    },
-    {
-      "jobId": "Jhuman-rights-art-ppt-20261008",
-      "title": "중·고등학교 수업 PPT를 제작한다 — Creator 작업 지시서",
-      "project": "01_human-rights-art",
-      "targetDir": "D:/02_Documents/03_Teaching-Materials/01_human-rights-art",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-08 15:49:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-08 15:53:26",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-08 15:53:26"
     },
     {
       "jobId": "Jdecknara-20261007-mobile-apply",
