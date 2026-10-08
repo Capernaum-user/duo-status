@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-10-09T08:52:12",
+  "generatedAt": "2026-10-09T08:58:27",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 6,
-    "waitingReview": 4,
+    "working": 5,
+    "waitingReview": 5,
     "done": 646,
     "alerts": 28
   },
   "jobs": [
+    {
+      "jobId": "Jao-pearl-source-contract-20261009",
+      "title": "문의가 시작된 위치를 보존한다 — 승인된 출처 계약·테마 연결 보완",
+      "project": "07_pearl-renewal",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/07_pearl-renewal",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 06:44:23",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 06:46:06",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 08:08:33",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 08:15:13",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-09 08:15:44",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-09 08:58:02",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-09 08:58:02"
+    },
     {
       "jobId": "Jhuman-rights-example-first-proof-20261009",
       "title": "사례를 이해한 뒤 답하도록 수업 원고와 연속 시안을 만든다",
@@ -135,55 +189,6 @@
         }
       ],
       "lastUpdate": "2026-10-09 08:30:22"
-    },
-    {
-      "jobId": "Jao-pearl-source-contract-20261009",
-      "title": "문의가 시작된 위치를 보존한다 — 승인된 출처 계약·테마 연결 보완",
-      "project": "07_pearl-renewal",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/07_pearl-renewal",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 06:44:23",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 06:46:06",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 08:08:33",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 08:15:13",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-09 08:15:44",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-09 08:15:44"
     },
     {
       "jobId": "Jmrgolf-remediation-baseline-20261009",
