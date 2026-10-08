@@ -1,48 +1,14 @@
 {
-  "generatedAt": "2026-10-09T01:49:34",
+  "generatedAt": "2026-10-09T01:56:50",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 5,
-    "done": 642,
-    "alerts": 28
+    "waitingReview": 4,
+    "done": 643,
+    "alerts": 27
   },
   "jobs": [
-    {
-      "jobId": "Jao-pearl-wp-theme-20261009",
-      "title": "승인 디자인을 WordPress에 적용한다 — 공통 테마·기존 주소·모바일 하단 메뉴",
-      "project": "07_pearl-renewal",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/07_pearl-renewal",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 01:46:44",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 01:47:46",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-09 01:47:46"
-    },
     {
       "jobId": "Jhuman-rights-ppt-pastel-decks-20261008",
       "title": "두 덱에 같은 시각 언어를 이어간다 — Creator 2단계 지시서",
@@ -50,10 +16,10 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-ppt-redesign/creator",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -98,9 +64,48 @@
           "time": "2026-10-09 01:47:00",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-09 01:56:42",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-09 01:47:00"
+      "lastUpdate": "2026-10-09 01:56:42"
+    },
+    {
+      "jobId": "Jao-pearl-wp-theme-20261009",
+      "title": "승인 디자인을 WordPress에 적용한다 — 공통 테마·기존 주소·모바일 하단 메뉴",
+      "project": "07_pearl-renewal",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/07_pearl-renewal",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 01:46:44",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 01:47:46",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-09 01:47:46"
     },
     {
       "jobId": "Jao-pearl-mobile-20261009",
