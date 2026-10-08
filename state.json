@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-08T15:51:44",
+  "generatedAt": "2026-10-08T15:54:01",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 636,
     "alerts": 26
@@ -16,14 +16,14 @@
       "targetDir": "D:/02_Documents/03_Teaching-Materials/01_human-rights-art",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-08 15:49:55",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-08 15:53:26",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-08 15:49:55"
+      "lastUpdate": "2026-10-08 15:53:26"
     },
     {
       "jobId": "Jdecknara-20261007-mobile-apply",
