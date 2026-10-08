@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-09T07:29:04",
+  "generatedAt": "2026-10-09T07:32:19",
   "counts": {
-    "active": 14,
-    "waitingWorker": 5,
+    "active": 15,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 5,
     "done": 644,
     "alerts": 29
   },
   "jobs": [
+    {
+      "jobId": "Jhuman-rights-example-first-proof-20261009",
+      "title": "사례를 이해한 뒤 답하도록 수업 원고와 연속 시안을 만든다",
+      "project": "example-first",
+      "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-ppt-redesign/creator/example-first",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 07:32:02",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-09 07:32:02"
+    },
     {
       "jobId": "Jmrgolf-remediation-baseline-20261009",
       "title": "1/6 운영 수정분을 지키며 후보를 분리한다",
