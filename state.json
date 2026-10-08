@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T23:56:26",
+  "generatedAt": "2026-10-09T00:13:44",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -39,9 +39,14 @@
           "time": "2026-10-08 21:12:17",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-09 00:13:20",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-08 21:12:17"
+      "lastUpdate": "2026-10-09 00:13:20"
     },
     {
       "jobId": "Jhuman-rights-ppt-pastel-proof-20261008",
