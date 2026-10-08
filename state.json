@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-09T03:59:35",
+  "generatedAt": "2026-10-09T04:04:47",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 643,
     "alerts": 27
   },
@@ -16,15 +16,15 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-ppt-redesign/creator/teaching-script",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -54,9 +54,14 @@
           "time": "2026-10-09 03:59:15",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-09 04:04:27",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-09 03:59:15"
+      "lastUpdate": "2026-10-09 04:04:27"
     },
     {
       "jobId": "Jao-pearl-wp-theme-20261009",
