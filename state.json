@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-09T08:08:55",
+  "generatedAt": "2026-10-09T08:16:09",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 5,
+    "working": 6,
+    "waitingReview": 4,
     "done": 645,
     "alerts": 28
   },
@@ -14,18 +14,18 @@
       "title": "문의가 시작된 위치를 보존한다 — 승인된 출처 계약·테마 연결 보완",
       "project": "07_pearl-renewal",
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/07_pearl-renewal",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-10-09 08:08:33",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-09 08:15:13",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-09 08:15:44",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-09 08:08:33"
+      "lastUpdate": "2026-10-09 08:15:44"
     },
     {
       "jobId": "Jmrgolf-remediation-project-29-20261009",
