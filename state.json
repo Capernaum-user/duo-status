@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-08T20:05:34",
+  "generatedAt": "2026-10-08T20:15:48",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 4,
     "done": 640,
-    "alerts": 27
+    "alerts": 26
   },
   "jobs": [
     {
@@ -14,18 +14,18 @@
       "title": "이미지와 질문을 엮은 수업 활동지를 납품한다",
       "project": "codex-human-rights-visual",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-visual",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-10-08 20:05:06",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-08 20:15:05",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-08 20:15:28",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-08 20:05:06"
+      "lastUpdate": "2026-10-08 20:15:28"
     },
     {
       "jobId": "Jhuman-rights-ppt-pastel-proof-20261008",
