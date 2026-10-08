@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-08T16:56:13",
+  "generatedAt": "2026-10-08T16:57:27",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 637,
     "alerts": 27
@@ -16,14 +16,14 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-assessment",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-08 16:55:24",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-08 16:57:04",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-08 16:55:24"
+      "lastUpdate": "2026-10-08 16:57:04"
     },
     {
       "jobId": "Jhuman-rights-visual-sample-20261008",
