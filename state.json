@@ -1,14 +1,87 @@
 {
-  "generatedAt": "2026-10-08T16:57:27",
+  "generatedAt": "2026-10-08T19:05:58",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 5,
-    "waitingReview": 5,
-    "done": 637,
-    "alerts": 27
+    "waitingReview": 4,
+    "done": 638,
+    "alerts": 26
   },
   "jobs": [
+    {
+      "jobId": "Jhuman-rights-visual-workbooks-20261008",
+      "title": "이미지와 질문을 엮은 수업 활동지를 납품한다",
+      "project": "codex-human-rights-visual",
+      "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-visual",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-08 19:05:53",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-08 19:05:53"
+    },
+    {
+      "jobId": "Jhuman-rights-visual-sample-20261008",
+      "title": "학생이 장면을 읽는 첫쪽 시안을 만든다",
+      "project": "codex-human-rights-visual",
+      "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-visual",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-08 16:30:17",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-08 16:31:19",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-08 16:52:21",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-08 19:05:52",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-08 19:05:52"
+    },
     {
       "jobId": "Jhuman-rights-assessment-common-20261008",
       "title": "학년 공통 인권 미술 평가계획서를 제작한다",
@@ -42,45 +115,6 @@
         }
       ],
       "lastUpdate": "2026-10-08 16:57:04"
-    },
-    {
-      "jobId": "Jhuman-rights-visual-sample-20261008",
-      "title": "학생이 장면을 읽는 첫쪽 시안을 만든다",
-      "project": "codex-human-rights-visual",
-      "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-visual",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-08 16:30:17",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-08 16:31:19",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-08 16:52:21",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-08 16:52:21"
     },
     {
       "jobId": "Jhuman-rights-worksheet-link-20261008",
@@ -32303,95 +32337,6 @@
       "lastUpdate": "2026-07-25 18:41:34"
     },
     {
-      "jobId": "Jclarify-noautopop",
-      "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
-      "project": "project-55",
-      "targetDir": "<local>",
-      "round": 3,
-      "originDir": null,
-      "stage": "OUT-OF-BAND-DONE",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": {
-        "active": false,
-        "phase": "review",
-        "round": 2,
-        "result": "REWORK-CAP"
-      },
-      "timeline": [
-        {
-          "time": "2026-07-22 00:01:06",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:01:08",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:07:09",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:10:57",
-          "state": "ACCEPTED",
-          "round": 1
-        },
-        {
-          "time": "2026-07-22 00:22:06",
-          "state": "PLANNED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:22:08",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:27:54",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-07-22 00:32:03",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 00:42:06",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-07-22 00:49:26",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 15:38:15",
-          "state": "ESCALATED",
-          "round": 3
-        },
-        {
-          "time": "2026-07-25 18:12:36",
-          "state": "OUT-OF-BAND-DONE",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-07-25 18:12:36"
-    },
-    {
       "jobId": "Jmermaid-render",
       "title": "ORDER_Jmermaid-render_R04 — 닫히지 않은 mermaid 펜스에서 이후 본문 전체가 무음 소실되는 회귀 1건 수정 (R2·R3 미이행 재발주)",
       "project": "project-55",
@@ -32525,6 +32470,95 @@
           "time": "2026-07-25 18:12:36",
           "state": "OUT-OF-BAND-DONE",
           "round": 1
+        }
+      ],
+      "lastUpdate": "2026-07-25 18:12:36"
+    },
+    {
+      "jobId": "Jclarify-noautopop",
+      "title": "ORDER_Jclarify-noautopop_R03 — 스냅샷을 poll() 성공 분기에서 직접 취한다 (래치-setState 사이 렌더 경합 차단)",
+      "project": "project-55",
+      "targetDir": "<local>",
+      "round": 3,
+      "originDir": null,
+      "stage": "OUT-OF-BAND-DONE",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": {
+        "active": false,
+        "phase": "review",
+        "round": 2,
+        "result": "REWORK-CAP"
+      },
+      "timeline": [
+        {
+          "time": "2026-07-22 00:01:06",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:01:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:07:09",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:10:57",
+          "state": "ACCEPTED",
+          "round": 1
+        },
+        {
+          "time": "2026-07-22 00:22:06",
+          "state": "PLANNED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:22:08",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:27:54",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-07-22 00:32:03",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 00:42:06",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-07-22 00:49:26",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 15:38:15",
+          "state": "ESCALATED",
+          "round": 3
+        },
+        {
+          "time": "2026-07-25 18:12:36",
+          "state": "OUT-OF-BAND-DONE",
+          "round": 3
         }
       ],
       "lastUpdate": "2026-07-25 18:12:36"
