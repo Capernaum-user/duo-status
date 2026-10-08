@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-09T03:42:10",
+  "generatedAt": "2026-10-09T03:50:22",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 643,
     "alerts": 27
   },
   "jobs": [
+    {
+      "jobId": "Jhuman-rights-teaching-script-20261009",
+      "title": "PPT를 보며 바로 수업한다 — 중학교·고등학교 교사용 대본 제작 지시서",
+      "project": "teaching-script",
+      "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-ppt-redesign/creator/teaching-script",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 02:36:52",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 02:39:59",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 03:50:07",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-09 03:50:07"
+    },
     {
       "jobId": "Jao-pearl-wp-theme-20261009",
       "title": "주요 버튼을 읽을 수 있게 고친다 — R3 색상 회귀·테마 전후 SEO 대조",
@@ -72,40 +111,6 @@
         }
       ],
       "lastUpdate": "2026-10-09 03:41:46"
-    },
-    {
-      "jobId": "Jhuman-rights-teaching-script-20261009",
-      "title": "PPT를 보며 바로 수업한다 — 중학교·고등학교 교사용 대본 제작 지시서",
-      "project": "teaching-script",
-      "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-ppt-redesign/creator/teaching-script",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 02:36:52",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 02:39:59",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-09 02:39:59"
     },
     {
       "jobId": "Jhuman-rights-ppt-pastel-decks-20261008",
