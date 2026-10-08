@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-08T16:30:29",
+  "generatedAt": "2026-10-08T16:31:43",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 4,
     "done": 637,
     "alerts": 26
@@ -16,14 +16,14 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/codex-human-rights-visual",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-08 16:30:17",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-08 16:31:19",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-08 16:30:17"
+      "lastUpdate": "2026-10-08 16:31:19"
     },
     {
       "jobId": "Jhuman-rights-worksheet-link-20261008",
