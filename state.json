@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-09T07:05:00",
+  "generatedAt": "2026-10-09T07:26:34",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 644,
     "alerts": 28
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -39,9 +39,14 @@
           "time": "2026-10-09 07:03:38",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-09 07:25:49",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-09 07:03:38"
+      "lastUpdate": "2026-10-09 07:25:49"
     },
     {
       "jobId": "Jao-pearl-source-contract-20261009",
