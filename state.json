@@ -1,63 +1,29 @@
 {
-  "generatedAt": "2026-10-09T18:25:43",
+  "generatedAt": "2026-10-09T18:36:57",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 5,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 658,
-    "alerts": 29
+    "alerts": 28
   },
   "jobs": [
-    {
-      "jobId": "Jaonavermaison-20261009-setup",
-      "title": "새 브랜드 블로그를 연다 — 승인된 디자인을 네이버에 적용한다",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 18:20:40",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 18:22:16",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-09 18:22:16"
-    },
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
       "title": "6/6 R5 정확한 worktree를 먼저 조회해 보호 후보 접근을 확인한다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 5,
+      "round": 6,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -138,9 +104,48 @@
           "time": "2026-10-09 18:22:00",
           "state": "DONE",
           "round": 5
+        },
+        {
+          "time": "2026-10-09 18:36:42",
+          "state": "REWORK",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-10-09 18:22:00"
+      "lastUpdate": "2026-10-09 18:36:42"
+    },
+    {
+      "jobId": "Jaonavermaison-20261009-setup",
+      "title": "새 브랜드 블로그를 연다 — 승인된 디자인을 네이버에 적용한다",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 18:20:40",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 18:22:16",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-09 18:22:16"
     },
     {
       "jobId": "Jaonavermaison-20261009-project-32",
