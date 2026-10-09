@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-10T08:55:57",
+  "generatedAt": "2026-10-10T08:57:13",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 662,
-    "alerts": 30
+    "alerts": 31
   },
   "jobs": [
     {
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-57/project-40/project-40/21_travel-info",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-10 08:54:56",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-10 08:56:09",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-10 08:54:56"
+      "lastUpdate": "2026-10-10 08:56:09"
     },
     {
       "jobId": "Jmrgolf-travel-info-build-20261010",
@@ -91,13 +96,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
