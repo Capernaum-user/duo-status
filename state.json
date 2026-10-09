@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T19:55:25",
+  "generatedAt": "2026-10-09T19:56:40",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
@@ -196,7 +196,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
@@ -37587,6 +37587,11 @@
       "file": "Jaonaver-20260920-layout_round-cap-exceeded.md",
       "jobId": "Jaonaver-20260920-layout",
       "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jaonavermaison-20261009-setup_autopilot-claim-stale.md",
+      "jobId": "Jaonavermaison-20261009-setup",
+      "cause": "autopilot-claim-stale"
     },
     {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
