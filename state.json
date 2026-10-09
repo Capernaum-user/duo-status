@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-09T19:03:53",
+  "generatedAt": "2026-10-09T19:08:07",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
-    "working": 6,
+    "waitingWorker": 6,
+    "working": 5,
     "waitingReview": 4,
     "done": 658,
     "alerts": 28
   },
   "jobs": [
+    {
+      "jobId": "Jao-pearl-release-compat-20261009",
+      "title": "ORDER_Jao-pearl-release-compat-20261009_R01 — 운영 공존과 문의·메일 흐름을 함께 검증한다",
+      "project": "10_release-rehearsal",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/10_release-rehearsal",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 15:42:25",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 15:44:10",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 19:07:41",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-09 19:07:41"
+    },
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
       "title": "6/6 R6 실제 응답으로 여행 정보와 이미지의 남은 상태를 구분한다",
@@ -244,40 +283,6 @@
         }
       ],
       "lastUpdate": "2026-10-09 16:15:40"
-    },
-    {
-      "jobId": "Jao-pearl-release-compat-20261009",
-      "title": "ORDER_Jao-pearl-release-compat-20261009_R01 — 운영 공존과 문의·메일 흐름을 함께 검증한다",
-      "project": "10_release-rehearsal",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/10_release-rehearsal",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 15:42:25",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 15:44:10",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-09 15:44:10"
     },
     {
       "jobId": "Jao-pearl-mail-transport-20261009",
