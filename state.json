@@ -1,14 +1,88 @@
 {
-  "generatedAt": "2026-10-10T05:15:10",
+  "generatedAt": "2026-10-10T05:16:25",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 6,
+    "waitingReview": 5,
     "done": 659,
     "alerts": 29
   },
   "jobs": [
+    {
+      "jobId": "Jaonavermaison-20261009-setup",
+      "title": "남은 디자인 적용을 인계한다 — R2 접근 차단과 이미지 3종의 적용 준비",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 18:20:40",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 18:22:16",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 04:02:58",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 04:25:14",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-10 04:25:35",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-10 04:36:19",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-10 04:45:33",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-10 04:45:52",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-10-10 05:03:00",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-10-10 05:16:18",
+          "state": "ESCALATED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-10-10 05:16:18"
+    },
     {
       "jobId": "Jao-pearl-operational-preflight-20261010",
       "title": "ORDER_Jao-pearl-operational-preflight-20261010_R01 — 운영 전환 경로를 확인한다",
@@ -336,75 +410,6 @@
         }
       ],
       "lastUpdate": "2026-10-10 05:11:13"
-    },
-    {
-      "jobId": "Jaonavermaison-20261009-setup",
-      "title": "남은 디자인 적용을 인계한다 — R2 접근 차단과 이미지 3종의 적용 준비",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 18:20:40",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 18:22:16",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 04:02:58",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 04:25:14",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-10 04:25:35",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-10 04:36:19",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-10 04:45:33",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-10-10 04:45:52",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-10-10 05:03:00",
-          "state": "DONE",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-10-10 05:03:00"
     },
     {
       "jobId": "Jao-pearl-release-compat-20261009",
@@ -37841,6 +37846,11 @@
       "file": "Jaonavermaison-20261009-setup_autopilot-unclaimed.md",
       "jobId": "Jaonavermaison-20261009-setup",
       "cause": "autopilot-unclaimed"
+    },
+    {
+      "file": "Jaonavermaison-20261009-setup_round-cap-exceeded.md",
+      "jobId": "Jaonavermaison-20261009-setup",
+      "cause": "round-cap-exceeded"
     },
     {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
