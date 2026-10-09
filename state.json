@@ -1,181 +1,14 @@
 {
-  "generatedAt": "2026-10-10T05:49:37",
+  "generatedAt": "2026-10-10T05:50:50",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 660,
-    "alerts": 29
+    "alerts": 30
   },
   "jobs": [
-    {
-      "jobId": "Jao-pearl-operational-mail-20261010",
-      "title": "ORDER_Jao-pearl-operational-mail-20261010_R02 — Resolve mail uncertainty without another message",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-10 05:19:08",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 05:20:45",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 05:40:33",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 05:47:21",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-10 05:48:32",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-10 05:48:32"
-    },
-    {
-      "jobId": "Jao-pearl-operational-preflight-20261010",
-      "title": "ORDER_Jao-pearl-operational-preflight-20261010_R01 — 운영 전환 경로를 확인한다",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-10 04:13:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 04:14:42",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 05:14:59",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 05:18:32",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-10 05:18:32"
-    },
-    {
-      "jobId": "Jaonavermaison-20261009-setup",
-      "title": "남은 디자인 적용을 인계한다 — R2 접근 차단과 이미지 3종의 적용 준비",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
-      "flags": {
-        "escalated": true,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 18:20:40",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 18:22:16",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 04:02:58",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 04:25:14",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-10 04:25:35",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-10 04:36:19",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-10 04:45:33",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-10-10 04:45:52",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-10-10 05:03:00",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-10-10 05:16:18",
-          "state": "ESCALATED",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-10-10 05:16:18"
-    },
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
       "title": "6/6 R19 검증한 차단 코드를 보호된 후보에 반영한다",
@@ -183,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
       "round": 19,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -461,9 +294,181 @@
           "time": "2026-10-10 05:11:13",
           "state": "CLAIMED",
           "round": 19
+        },
+        {
+          "time": "2026-10-10 05:49:49",
+          "state": "DONE",
+          "round": 19
         }
       ],
-      "lastUpdate": "2026-10-10 05:11:13"
+      "lastUpdate": "2026-10-10 05:49:49"
+    },
+    {
+      "jobId": "Jao-pearl-operational-mail-20261010",
+      "title": "ORDER_Jao-pearl-operational-mail-20261010_R02 — Resolve mail uncertainty without another message",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-10 05:19:08",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 05:20:45",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 05:40:33",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 05:47:21",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-10 05:48:32",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-10 05:48:32"
+    },
+    {
+      "jobId": "Jao-pearl-operational-preflight-20261010",
+      "title": "ORDER_Jao-pearl-operational-preflight-20261010_R01 — 운영 전환 경로를 확인한다",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-10 04:13:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 04:14:42",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 05:14:59",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 05:18:32",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-10 05:18:32"
+    },
+    {
+      "jobId": "Jaonavermaison-20261009-setup",
+      "title": "남은 디자인 적용을 인계한다 — R2 접근 차단과 이미지 3종의 적용 준비",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 18:20:40",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 18:22:16",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 04:02:58",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 04:25:14",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-10 04:25:35",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-10 04:36:19",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-10 04:45:33",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-10 04:45:52",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-10-10 05:03:00",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-10-10 05:16:18",
+          "state": "ESCALATED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-10-10 05:16:18"
     },
     {
       "jobId": "Jao-pearl-release-compat-20261009",
