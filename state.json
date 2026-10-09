@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-10T01:35:27",
+  "generatedAt": "2026-10-10T01:49:44",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 659,
-    "alerts": 29
+    "alerts": 28
   },
   "jobs": [
     {
@@ -14,16 +14,16 @@
       "title": "6/6 R13 실제 탭 응답을 근거로 보정하고 같은 후보를 확인한다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 13,
+      "round": 14,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -224,9 +224,14 @@
           "time": "2026-10-10 01:33:28",
           "state": "DONE",
           "round": 13
+        },
+        {
+          "time": "2026-10-10 01:49:34",
+          "state": "REWORK",
+          "round": 14
         }
       ],
-      "lastUpdate": "2026-10-10 01:33:28"
+      "lastUpdate": "2026-10-10 01:49:34"
     },
     {
       "jobId": "Jao-pearl-release-compat-20261009",
