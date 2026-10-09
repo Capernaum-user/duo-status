@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-10T03:21:50",
+  "generatedAt": "2026-10-10T03:38:07",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
-    "working": 5,
+    "waitingWorker": 6,
+    "working": 4,
     "waitingReview": 4,
     "done": 659,
     "alerts": 28
@@ -14,16 +14,16 @@
       "title": "6/6 R16 화면 확인을 국소 복구하고 비민감 응답 증거를 잇는다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 16,
+      "round": 17,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -259,9 +259,14 @@
           "time": "2026-10-10 02:57:59",
           "state": "CLAIMED",
           "round": 16
+        },
+        {
+          "time": "2026-10-10 03:37:36",
+          "state": "REWORK",
+          "round": 17
         }
       ],
-      "lastUpdate": "2026-10-10 02:57:59"
+      "lastUpdate": "2026-10-10 03:37:36"
     },
     {
       "jobId": "Jao-pearl-release-compat-20261009",
