@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T17:35:41",
+  "generatedAt": "2026-10-09T17:36:57",
   "counts": {
     "active": 15,
     "waitingWorker": 6,
@@ -14,9 +14,9 @@
       "title": "Reuel Maison의 제작 역량을 보여준다 — Agent Ontology 네이버 디자인 자산",
       "project": "01_naver-channel",
       "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "PLANNED",
+      "stage": "REWORK",
       "stageIndex": 1,
       "stageLabel": "발주됨",
       "nextAction": "워커 패널에서 /check",
@@ -25,7 +25,7 @@
         "protocolError": false,
         "pendingOrder": true,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -34,9 +34,14 @@
           "time": "2026-10-09 17:26:34",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-09 17:36:42",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-09 17:26:34"
+      "lastUpdate": "2026-10-09 17:36:42"
     },
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
