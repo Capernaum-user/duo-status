@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-09T16:07:32",
+  "generatedAt": "2026-10-09T16:12:46",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 6,
     "done": 656,
     "alerts": 29
   },
   "jobs": [
+    {
+      "jobId": "Jao-pearl-workspace-setup-20261009",
+      "title": "ORDER_Jao-pearl-workspace-setup-20261009_R01 — Workspace 전용 입력창을 준비한다",
+      "project": "workspace-setup",
+      "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-wp-review/creator/workspace-setup",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 15:34:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 15:35:59",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 16:12:19",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-09 16:12:19"
+    },
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
       "title": "6/6 R3 안전한 증거 출력과 기존 보호 세션 연결을 복구한다",
@@ -155,40 +194,6 @@
         }
       ],
       "lastUpdate": "2026-10-09 15:41:30"
-    },
-    {
-      "jobId": "Jao-pearl-workspace-setup-20261009",
-      "title": "ORDER_Jao-pearl-workspace-setup-20261009_R01 — Workspace 전용 입력창을 준비한다",
-      "project": "workspace-setup",
-      "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-wp-review/creator/workspace-setup",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 15:34:41",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 15:35:59",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-09 15:35:59"
     },
     {
       "jobId": "Jao-pearl-receiver-v2-20261009",
