@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-10T04:09:40",
+  "generatedAt": "2026-10-10T04:13:55",
   "counts": {
-    "active": 14,
-    "waitingWorker": 5,
+    "active": 15,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 5,
     "done": 659,
     "alerts": 28
   },
   "jobs": [
+    {
+      "jobId": "Jao-pearl-operational-preflight-20261010",
+      "title": "ORDER_Jao-pearl-operational-preflight-20261010_R01 — 운영 전환 경로를 확인한다",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-10 04:13:00",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-10 04:13:00"
+    },
     {
       "jobId": "Jaonavermaison-20261009-setup",
       "title": "새 브랜드 블로그를 연다 — 승인된 디자인을 네이버에 적용한다",
@@ -63,7 +92,7 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
