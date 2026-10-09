@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-10T08:44:45",
+  "generatedAt": "2026-10-10T08:46:59",
   "counts": {
     "active": 15,
     "waitingWorker": 6,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 661,
     "alerts": 30
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-travel-info-build-20261010",
+      "title": "상단 예보·환율을 격리 후보에서 복구한다",
+      "project": "21_travel-info",
+      "targetDir": "D:/01_project-57/project-40/project-40/21_travel-info",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-10 08:12:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 08:14:25",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 08:46:28",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-10 08:46:28"
+    },
     {
       "jobId": "Jao-pearl-workspace-mail-20261010",
       "title": "ORDER_Jao-pearl-workspace-mail-20261010_R01 — Apply the user-corrected Workspace credential and verify one WordPress message",
@@ -86,40 +125,6 @@
         }
       ],
       "lastUpdate": "2026-10-10 08:41:21"
-    },
-    {
-      "jobId": "Jmrgolf-travel-info-build-20261010",
-      "title": "상단 예보·환율을 격리 후보에서 복구한다",
-      "project": "21_travel-info",
-      "targetDir": "D:/01_project-57/project-40/project-40/21_travel-info",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-10 08:12:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 08:14:25",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-10 08:14:25"
     },
     {
       "jobId": "Jaonavermaison-20261009-setup",
