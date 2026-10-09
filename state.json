@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-10T00:53:24",
+  "generatedAt": "2026-10-10T01:07:40",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 4,
     "done": 659,
-    "alerts": 29
+    "alerts": 28
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
-      "title": "6/6 R12 같은 후보의 DOM과 캡처 표면을 대조한다",
+      "title": "6/6 R13 실제 탭 응답을 근거로 보정하고 같은 후보를 확인한다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 12,
+      "round": 13,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -209,9 +209,19 @@
           "time": "2026-10-10 00:50:37",
           "state": "DONE",
           "round": 12
+        },
+        {
+          "time": "2026-10-10 01:06:36",
+          "state": "REWORK",
+          "round": 13
+        },
+        {
+          "time": "2026-10-10 01:06:59",
+          "state": "CLAIMED",
+          "round": 13
         }
       ],
-      "lastUpdate": "2026-10-10 00:50:37"
+      "lastUpdate": "2026-10-10 01:06:59"
     },
     {
       "jobId": "Jao-pearl-release-compat-20261009",
