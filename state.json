@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T22:42:13",
+  "generatedAt": "2026-10-09T22:43:29",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -11,7 +11,7 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
-      "title": "6/6 R9 사진 대체 표시와 비활성 여행 안내를 후보에서 보정한다",
+      "title": "6/6 R10 통과한 소스의 새 보호 후보를 한 번 배포하고 화면을 확인한다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
       "round": 10,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
