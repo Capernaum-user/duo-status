@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-09T11:20:19",
+  "generatedAt": "2026-10-09T11:25:32",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 650,
-    "alerts": 29
+    "alerts": 28
   },
   "jobs": [
     {
@@ -14,16 +14,16 @@
       "title": "4/6 사진과 상품 설명을 실제 자료에 맞춘다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -59,9 +59,14 @@
           "time": "2026-10-09 11:18:51",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-09 11:25:15",
+          "state": "REWORK",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-09 11:18:51"
+      "lastUpdate": "2026-10-09 11:25:15"
     },
     {
       "jobId": "Jao-pearl-inquiry-flow-20261009",
