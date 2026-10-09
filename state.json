@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-09T18:08:53",
+  "generatedAt": "2026-10-09T18:10:08",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 6,
-    "waitingReview": 4,
+    "working": 5,
+    "waitingReview": 5,
     "done": 657,
     "alerts": 28
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-09 17:39:11",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-09 18:09:36",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-09 17:39:11"
+      "lastUpdate": "2026-10-09 18:09:36"
     },
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
