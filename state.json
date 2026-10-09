@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-10T05:50:50",
+  "generatedAt": "2026-10-10T06:02:05",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 4,
     "done": 660,
-    "alerts": 30
+    "alerts": 29
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
-      "title": "6/6 R19 검증한 차단 코드를 보호된 후보에 반영한다",
+      "title": "6/6 R20 배포 진척을 보존하고 남은 조건을 좁힌다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 19,
+      "round": 20,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -299,9 +299,19 @@
           "time": "2026-10-10 05:49:49",
           "state": "DONE",
           "round": 19
+        },
+        {
+          "time": "2026-10-10 06:01:05",
+          "state": "REWORK",
+          "round": 20
+        },
+        {
+          "time": "2026-10-10 06:01:28",
+          "state": "CLAIMED",
+          "round": 20
         }
       ],
-      "lastUpdate": "2026-10-10 05:49:49"
+      "lastUpdate": "2026-10-10 06:01:28"
     },
     {
       "jobId": "Jao-pearl-operational-mail-20261010",
