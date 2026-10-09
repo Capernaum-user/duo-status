@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-09T09:04:42",
+  "generatedAt": "2026-10-09T09:05:57",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 4,
     "done": 647,
     "alerts": 28
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/07_pearl-renewal",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-09 09:04:18",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-09 09:04:40",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-09 09:04:18"
+      "lastUpdate": "2026-10-09 09:04:40"
     },
     {
       "jobId": "Jao-pearl-source-contract-20261009",
