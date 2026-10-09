@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-09T18:36:57",
+  "generatedAt": "2026-10-09T18:38:11",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 4,
     "done": 658,
     "alerts": 28
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
-      "title": "6/6 R5 정확한 worktree를 먼저 조회해 보호 후보 접근을 확인한다",
+      "title": "6/6 R6 실제 응답으로 여행 정보와 이미지의 남은 상태를 구분한다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
       "round": 6,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -109,9 +109,14 @@
           "time": "2026-10-09 18:36:42",
           "state": "REWORK",
           "round": 6
+        },
+        {
+          "time": "2026-10-09 18:37:15",
+          "state": "CLAIMED",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-10-09 18:36:42"
+      "lastUpdate": "2026-10-09 18:37:15"
     },
     {
       "jobId": "Jaonavermaison-20261009-setup",
