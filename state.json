@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-09T10:46:07",
+  "generatedAt": "2026-10-09T10:47:20",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 4,
     "done": 649,
     "alerts": 28
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison/tmp/07_pearl-renewal",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-09 10:45:48",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-09 10:46:10",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-09 10:45:48"
+      "lastUpdate": "2026-10-09 10:46:10"
     },
     {
       "jobId": "Jmrgolf-remediation-project-18-20261009",
