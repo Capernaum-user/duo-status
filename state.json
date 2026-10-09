@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-10T05:35:52",
+  "generatedAt": "2026-10-10T05:41:07",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 660,
     "alerts": 29
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -39,9 +39,14 @@
           "time": "2026-10-10 05:20:45",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-10 05:40:33",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-10 05:20:45"
+      "lastUpdate": "2026-10-10 05:40:33"
     },
     {
       "jobId": "Jao-pearl-operational-preflight-20261010",
