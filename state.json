@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T04:26:44",
+  "generatedAt": "2026-10-10T04:29:00",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
@@ -10,94 +10,11 @@
   },
   "jobs": [
     {
-      "jobId": "Jaonavermaison-20261009-setup",
-      "title": "검수한 브랜드 이미지를 적용한다 — 기존 블로그 보존과 R1 미완 항목 보완",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 18:20:40",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 18:22:16",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 04:02:58",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 04:25:14",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-10 04:25:35",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-10 04:25:35"
-    },
-    {
-      "jobId": "Jao-pearl-operational-preflight-20261010",
-      "title": "ORDER_Jao-pearl-operational-preflight-20261010_R01 — 운영 전환 경로를 확인한다",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-10 04:13:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 04:14:42",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-10 04:14:42"
-    },
-    {
       "jobId": "Jmrgolf-remediation-release-20261009",
-      "title": "6/6 R17 권리 미확정 커뮤니티 이미지를 후보에서 비노출한다",
+      "title": "6/6 R18 권리 차단의 실제 화면 검증을 마친다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 17,
+      "round": 18,
       "originDir": "<local>",
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -352,9 +269,102 @@
           "time": "2026-10-10 03:38:15",
           "state": "CLAIMED",
           "round": 17
+        },
+        {
+          "time": "2026-10-10 04:28:10",
+          "state": "REWORK",
+          "round": 18
+        },
+        {
+          "time": "2026-10-10 04:28:48",
+          "state": "CLAIMED",
+          "round": 18
         }
       ],
-      "lastUpdate": "2026-10-10 03:38:15"
+      "lastUpdate": "2026-10-10 04:28:48"
+    },
+    {
+      "jobId": "Jaonavermaison-20261009-setup",
+      "title": "검수한 브랜드 이미지를 적용한다 — 기존 블로그 보존과 R1 미완 항목 보완",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 18:20:40",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 18:22:16",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 04:02:58",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 04:25:14",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-10 04:25:35",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-10 04:25:35"
+    },
+    {
+      "jobId": "Jao-pearl-operational-preflight-20261010",
+      "title": "ORDER_Jao-pearl-operational-preflight-20261010_R01 — 운영 전환 경로를 확인한다",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-10 04:13:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 04:14:42",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-10 04:14:42"
     },
     {
       "jobId": "Jao-pearl-release-compat-20261009",
