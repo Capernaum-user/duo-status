@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T02:44:09",
+  "generatedAt": "2026-10-10T02:58:26",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -11,10 +11,10 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
-      "title": "6/6 R15 검증된 응답 계약을 복구하고 같은 회차에 실제 읽기를 잇는다",
+      "title": "6/6 R16 화면 확인을 국소 복구하고 비민감 응답 증거를 잇는다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 15,
+      "round": 16,
       "originDir": "<local>",
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -249,9 +249,19 @@
           "time": "2026-10-10 02:19:54",
           "state": "CLAIMED",
           "round": 15
+        },
+        {
+          "time": "2026-10-10 02:57:31",
+          "state": "REWORK",
+          "round": 16
+        },
+        {
+          "time": "2026-10-10 02:57:59",
+          "state": "CLAIMED",
+          "round": 16
         }
       ],
-      "lastUpdate": "2026-10-10 02:19:54"
+      "lastUpdate": "2026-10-10 02:57:59"
     },
     {
       "jobId": "Jao-pearl-release-compat-20261009",
