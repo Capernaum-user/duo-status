@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T02:21:32",
+  "generatedAt": "2026-10-10T02:28:48",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -37717,6 +37717,11 @@
       "file": "Jaonavermaison-20261009-setup_autopilot-claim-stale.md",
       "jobId": "Jaonavermaison-20261009-setup",
       "cause": "autopilot-claim-stale"
+    },
+    {
+      "file": "Jaonavermaison-20261009-setup_autopilot-unclaimed.md",
+      "jobId": "Jaonavermaison-20261009-setup",
+      "cause": "autopilot-unclaimed"
     },
     {
       "file": "Jclarify-noautopop_autorun-roundcap.md",
