@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-09T14:01:28",
+  "generatedAt": "2026-10-09T14:03:43",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 6,
     "done": 652,
     "alerts": 29
   },
   "jobs": [
+    {
+      "jobId": "Jao-pearl-gmail-setup-20261009",
+      "title": "ORDER_Jao-pearl-gmail-setup-20261009_R01 — Gmail 인증을 채팅 밖에서 준비한다",
+      "project": "gmail-setup",
+      "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-wp-review/creator/gmail-setup",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 13:39:29",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 13:40:46",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-09 14:03:15",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-09 14:03:15"
+    },
     {
       "jobId": "Jmrgolf-remediation-integration-20261009",
       "title": "5/6 통합 R2의 빌드와 저장·사진 성능을 확인한다",
@@ -62,40 +101,6 @@
         }
       ],
       "lastUpdate": "2026-10-09 13:58:18"
-    },
-    {
-      "jobId": "Jao-pearl-gmail-setup-20261009",
-      "title": "ORDER_Jao-pearl-gmail-setup-20261009_R01 — Gmail 인증을 채팅 밖에서 준비한다",
-      "project": "gmail-setup",
-      "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-wp-review/creator/gmail-setup",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-09 13:39:29",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-09 13:40:46",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-09 13:40:46"
     },
     {
       "jobId": "Jhuman-rights-example-first-decks-script-20261009",
