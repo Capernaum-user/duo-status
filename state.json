@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-10-09T13:05:43",
+  "generatedAt": "2026-10-09T13:06:58",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 4,
     "done": 651,
-    "alerts": 29
+    "alerts": 28
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-remediation-integration-20261009",
-      "title": "5/6 화면부터 저장까지 같은 후보를 확인한다",
+      "title": "5/6 통합 R2의 빌드와 저장·사진 성능을 확인한다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-10-09 12:53:30",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-09 13:06:02",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-09 13:06:40",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-09 12:53:30"
+      "lastUpdate": "2026-10-09 13:06:40"
     },
     {
       "jobId": "Jmrgolf-remediation-project-18-20261009",
