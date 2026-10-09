@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-09T18:18:56",
+  "generatedAt": "2026-10-09T18:21:12",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 5,
-    "waitingReview": 5,
-    "done": 657,
-    "alerts": 29
+    "waitingReview": 4,
+    "done": 658,
+    "alerts": 28
   },
   "jobs": [
+    {
+      "jobId": "Jaonavermaison-20261009-setup",
+      "title": "새 브랜드 블로그를 연다 — 승인된 디자인을 네이버에 적용한다",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-09 18:20:40",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-09 18:20:40"
+    },
     {
       "jobId": "Jaonavermaison-20261009-project-32",
       "title": "Reuel Maison의 제작 역량을 보여준다 — Agent Ontology 네이버 디자인 자산",
@@ -16,10 +45,10 @@
       "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -49,9 +78,14 @@
           "time": "2026-10-09 18:09:36",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-09 18:20:38",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-09 18:09:36"
+      "lastUpdate": "2026-10-09 18:20:38"
     },
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
