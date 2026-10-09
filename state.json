@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-09T23:07:14",
+  "generatedAt": "2026-10-09T23:32:31",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 659,
-    "alerts": 28
+    "alerts": 29
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
       "round": 10,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -174,9 +174,14 @@
           "time": "2026-10-09 22:41:36",
           "state": "CLAIMED",
           "round": 10
+        },
+        {
+          "time": "2026-10-09 23:31:34",
+          "state": "DONE",
+          "round": 10
         }
       ],
-      "lastUpdate": "2026-10-09 22:41:36"
+      "lastUpdate": "2026-10-09 23:31:34"
     },
     {
       "jobId": "Jao-pearl-release-compat-20261009",
