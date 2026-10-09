@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-09T23:35:47",
+  "generatedAt": "2026-10-09T23:45:03",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 4,
     "done": 659,
-    "alerts": 29
+    "alerts": 28
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
-      "title": "6/6 R10 통과한 소스의 새 보호 후보를 한 번 배포하고 화면을 확인한다",
+      "title": "6/6 R11 보이는 카드로 스크롤하고 새 후보의 화면 근거를 마무리한다",
       "project": "20_site-remediation",
       "targetDir": "D:/01_project-57/project-40/project-40/20_site-remediation",
-      "round": 10,
+      "round": 11,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -179,9 +179,19 @@
           "time": "2026-10-09 23:31:34",
           "state": "DONE",
           "round": 10
+        },
+        {
+          "time": "2026-10-09 23:44:02",
+          "state": "REWORK",
+          "round": 11
+        },
+        {
+          "time": "2026-10-09 23:44:36",
+          "state": "CLAIMED",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-10-09 23:31:34"
+      "lastUpdate": "2026-10-09 23:44:36"
     },
     {
       "jobId": "Jao-pearl-release-compat-20261009",
