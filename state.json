@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-10-10T05:16:25",
+  "generatedAt": "2026-10-10T05:18:40",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 5,
-    "done": 659,
+    "waitingReview": 4,
+    "done": 660,
     "alerts": 29
   },
   "jobs": [
+    {
+      "jobId": "Jao-pearl-operational-preflight-20261010",
+      "title": "ORDER_Jao-pearl-operational-preflight-20261010_R01 — 운영 전환 경로를 확인한다",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-10 04:13:00",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 04:14:42",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 05:14:59",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 05:18:32",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-10 05:18:32"
+    },
     {
       "jobId": "Jaonavermaison-20261009-setup",
       "title": "남은 디자인 적용을 인계한다 — R2 접근 차단과 이미지 3종의 적용 준비",
@@ -82,45 +126,6 @@
         }
       ],
       "lastUpdate": "2026-10-10 05:16:18"
-    },
-    {
-      "jobId": "Jao-pearl-operational-preflight-20261010",
-      "title": "ORDER_Jao-pearl-operational-preflight-20261010_R01 — 운영 전환 경로를 확인한다",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-10 04:13:00",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 04:14:42",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 05:14:59",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-10 05:14:59"
     },
     {
       "jobId": "Jmrgolf-remediation-release-20261009",
