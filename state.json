@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-10T12:20:45",
+  "generatedAt": "2026-10-10T12:21:59",
   "counts": {
     "active": 13,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 4,
     "done": 667,
     "alerts": 30
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jao-pearl-ingress-contract-20261010",
-      "title": "ORDER_Jao-pearl-ingress-contract-20261010_R02 — Close the native request proof gap without bypassing the execution denial",
+      "title": "ORDER_Jao-pearl-ingress-contract-20261010_R03 — Complete the bounded lab package; retain native HOLD",
       "project": "00_reuel-maison",
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -64,9 +64,14 @@
           "time": "2026-10-10 12:20:30",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-10-10 12:21:49",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-10 12:20:30"
+      "lastUpdate": "2026-10-10 12:21:49"
     },
     {
       "jobId": "Jaonatural-20261010-concept",
