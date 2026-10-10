@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-11T05:35:38",
+  "generatedAt": "2026-10-11T05:47:51",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 678,
     "alerts": 31
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
       "round": 5,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -99,9 +99,14 @@
           "time": "2026-10-11 05:34:27",
           "state": "CLAIMED",
           "round": 5
+        },
+        {
+          "time": "2026-10-11 05:47:20",
+          "state": "DONE",
+          "round": 5
         }
       ],
-      "lastUpdate": "2026-10-11 05:34:27"
+      "lastUpdate": "2026-10-11 05:47:20"
     },
     {
       "jobId": "Jmrgolf-live-functional-20261011",
