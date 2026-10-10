@@ -1,14 +1,173 @@
 {
-  "generatedAt": "2026-10-11T07:22:38",
+  "generatedAt": "2026-10-11T07:42:51",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 680,
     "alerts": 31
   },
   "jobs": [
+    {
+      "jobId": "Jaonaverapply-20261011-setup",
+      "title": "네이버 디자인 적용 R9 — 현재 기록 교정과 배경·문의 연결",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
+      "round": 9,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-11 01:46:30",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 01:46:59",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 04:16:32",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 04:22:12",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 04:22:22",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 04:35:30",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 04:40:53",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 04:41:04",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 04:51:15",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 04:57:23",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-10-11 04:57:55",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-10-11 05:25:30",
+          "state": "DONE",
+          "round": 4
+        },
+        {
+          "time": "2026-10-11 05:34:03",
+          "state": "REWORK",
+          "round": 5
+        },
+        {
+          "time": "2026-10-11 05:34:27",
+          "state": "CLAIMED",
+          "round": 5
+        },
+        {
+          "time": "2026-10-11 05:47:20",
+          "state": "DONE",
+          "round": 5
+        },
+        {
+          "time": "2026-10-11 05:53:38",
+          "state": "REWORK",
+          "round": 6
+        },
+        {
+          "time": "2026-10-11 05:54:16",
+          "state": "CLAIMED",
+          "round": 6
+        },
+        {
+          "time": "2026-10-11 06:03:24",
+          "state": "DONE",
+          "round": 6
+        },
+        {
+          "time": "2026-10-11 06:10:01",
+          "state": "REWORK",
+          "round": 7
+        },
+        {
+          "time": "2026-10-11 06:10:28",
+          "state": "CLAIMED",
+          "round": 7
+        },
+        {
+          "time": "2026-10-11 06:18:33",
+          "state": "DONE",
+          "round": 7
+        },
+        {
+          "time": "2026-10-11 06:23:59",
+          "state": "REWORK",
+          "round": 8
+        },
+        {
+          "time": "2026-10-11 06:24:31",
+          "state": "CLAIMED",
+          "round": 8
+        },
+        {
+          "time": "2026-10-11 06:51:27",
+          "state": "DONE",
+          "round": 8
+        },
+        {
+          "time": "2026-10-11 07:00:56",
+          "state": "REWORK",
+          "round": 9
+        },
+        {
+          "time": "2026-10-11 07:01:35",
+          "state": "CLAIMED",
+          "round": 9
+        },
+        {
+          "time": "2026-10-11 07:42:30",
+          "state": "DONE",
+          "round": 9
+        }
+      ],
+      "lastUpdate": "2026-10-11 07:42:30"
+    },
     {
       "jobId": "Jmrgolf-live-decision-20261011",
       "title": "공개와 제한 운영의 독립 개시 게이트를 판정한다",
@@ -200,160 +359,6 @@
         }
       ],
       "lastUpdate": "2026-10-11 07:09:12"
-    },
-    {
-      "jobId": "Jaonaverapply-20261011-setup",
-      "title": "네이버 디자인 적용 R9 — 현재 기록 교정과 배경·문의 연결",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
-      "round": 9,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-11 01:46:30",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 01:46:59",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 04:16:32",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 04:22:12",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 04:22:22",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 04:35:30",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 04:40:53",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-10-11 04:41:04",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-10-11 04:51:15",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-10-11 04:57:23",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-10-11 04:57:55",
-          "state": "CLAIMED",
-          "round": 4
-        },
-        {
-          "time": "2026-10-11 05:25:30",
-          "state": "DONE",
-          "round": 4
-        },
-        {
-          "time": "2026-10-11 05:34:03",
-          "state": "REWORK",
-          "round": 5
-        },
-        {
-          "time": "2026-10-11 05:34:27",
-          "state": "CLAIMED",
-          "round": 5
-        },
-        {
-          "time": "2026-10-11 05:47:20",
-          "state": "DONE",
-          "round": 5
-        },
-        {
-          "time": "2026-10-11 05:53:38",
-          "state": "REWORK",
-          "round": 6
-        },
-        {
-          "time": "2026-10-11 05:54:16",
-          "state": "CLAIMED",
-          "round": 6
-        },
-        {
-          "time": "2026-10-11 06:03:24",
-          "state": "DONE",
-          "round": 6
-        },
-        {
-          "time": "2026-10-11 06:10:01",
-          "state": "REWORK",
-          "round": 7
-        },
-        {
-          "time": "2026-10-11 06:10:28",
-          "state": "CLAIMED",
-          "round": 7
-        },
-        {
-          "time": "2026-10-11 06:18:33",
-          "state": "DONE",
-          "round": 7
-        },
-        {
-          "time": "2026-10-11 06:23:59",
-          "state": "REWORK",
-          "round": 8
-        },
-        {
-          "time": "2026-10-11 06:24:31",
-          "state": "CLAIMED",
-          "round": 8
-        },
-        {
-          "time": "2026-10-11 06:51:27",
-          "state": "DONE",
-          "round": 8
-        },
-        {
-          "time": "2026-10-11 07:00:56",
-          "state": "REWORK",
-          "round": 9
-        },
-        {
-          "time": "2026-10-11 07:01:35",
-          "state": "CLAIMED",
-          "round": 9
-        }
-      ],
-      "lastUpdate": "2026-10-11 07:01:35"
     },
     {
       "jobId": "Jao-pearl-supervisor-integration-20261011",
