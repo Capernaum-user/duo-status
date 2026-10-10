@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-10T12:53:40",
+  "generatedAt": "2026-10-10T12:56:54",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 4,
+    "working": 3,
+    "waitingReview": 5,
     "done": 667,
     "alerts": 30
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
       "round": 3,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -69,9 +69,14 @@
           "time": "2026-10-10 12:21:49",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-10-10 12:56:33",
+          "state": "DONE",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-10 12:21:49"
+      "lastUpdate": "2026-10-10 12:56:33"
     },
     {
       "jobId": "Jaonatural-20261010-concept",
