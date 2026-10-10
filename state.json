@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-11T08:22:45",
+  "generatedAt": "2026-10-11T08:32:56",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 680,
     "alerts": 31
   },
@@ -14,17 +14,17 @@
       "title": "네이버 디자인 적용 R10 — 클릭 가능한 홈페이지 안내",
       "project": "01_naver-channel",
       "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
-      "round": 10,
+      "round": 11,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -179,9 +179,14 @@
           "time": "2026-10-11 08:22:12",
           "state": "DONE",
           "round": 10
+        },
+        {
+          "time": "2026-10-11 08:32:04",
+          "state": "REWORK",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-10-11 08:22:12"
+      "lastUpdate": "2026-10-11 08:32:04"
     },
     {
       "jobId": "Jmrgolf-live-decision-20261011",
