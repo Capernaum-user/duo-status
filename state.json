@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-11T02:26:39",
+  "generatedAt": "2026-10-11T02:28:54",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 7,
-    "waitingReview": 4,
+    "working": 6,
+    "waitingReview": 5,
     "done": 674,
-    "alerts": 31
+    "alerts": 32
   },
   "jobs": [
+    {
+      "jobId": "Jitq-question-bank-20261011",
+      "title": "ITQ 실기 문제은행 및 해설 제작",
+      "project": "02_itq-practice",
+      "targetDir": "D:/02_Documents/03_Teaching-Materials/02_itq-practice",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-11 01:55:11",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 01:55:44",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 02:27:56",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-11 02:27:56"
+    },
     {
       "jobId": "Jmrgolf-live-functional-20261011",
       "title": "권한과 견적 기능을 격리 교정하고 보호 후보에서 확인한다",
@@ -57,40 +96,6 @@
         }
       ],
       "lastUpdate": "2026-10-11 02:14:31"
-    },
-    {
-      "jobId": "Jitq-question-bank-20261011",
-      "title": "ITQ 실기 문제은행 및 해설 제작",
-      "project": "02_itq-practice",
-      "targetDir": "D:/02_Documents/03_Teaching-Materials/02_itq-practice",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-11 01:55:11",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 01:55:44",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-11 01:55:44"
     },
     {
       "jobId": "Jitq-research-20261011",
