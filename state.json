@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-10T09:34:58",
+  "generatedAt": "2026-10-10T09:38:12",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 5,
-    "done": 664,
+    "waitingReview": 4,
+    "done": 665,
     "alerts": 30
   },
   "jobs": [
     {
-      "jobId": "Jmrgolf-travel-info-release-20261010",
-      "title": "검증된 여행정보 수정만 기존 보호 홈페이지에 연결한다",
-      "project": "21_travel-info",
-      "targetDir": "D:/01_project-57/project-40/project-40/21_travel-info",
-      "round": 1,
+      "jobId": "Jao-pearl-workspace-mail-20261010",
+      "title": "ORDER_Jao-pearl-workspace-mail-20261010_R03 — Preserve R2 boundary evidence and close the ledger",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 3,
       "originDir": "<local>",
       "stage": "ACCEPTED",
       "stageIndex": 5,
@@ -25,50 +25,6 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-10 08:54:56",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 08:56:09",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 09:29:38",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-10 09:33:55",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-10 09:33:55"
-    },
-    {
-      "jobId": "Jao-pearl-workspace-mail-20261010",
-      "title": "ORDER_Jao-pearl-workspace-mail-20261010_R03 — Preserve R2 boundary evidence and close the ledger",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -118,9 +74,58 @@
           "time": "2026-10-10 09:32:58",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-10-10 09:38:02",
+          "state": "ACCEPTED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-10 09:32:58"
+      "lastUpdate": "2026-10-10 09:38:02"
+    },
+    {
+      "jobId": "Jmrgolf-travel-info-release-20261010",
+      "title": "검증된 여행정보 수정만 기존 보호 홈페이지에 연결한다",
+      "project": "21_travel-info",
+      "targetDir": "D:/01_project-57/project-40/project-40/21_travel-info",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-10 08:54:56",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 08:56:09",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 09:29:38",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-10 09:33:55",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-10 09:33:55"
     },
     {
       "jobId": "Jaonatural-20261010-concept",
