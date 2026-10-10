@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-11T02:33:26",
+  "generatedAt": "2026-10-11T02:36:41",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 6,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 6,
     "done": 674,
-    "alerts": 31
+    "alerts": 32
   },
   "jobs": [
     {
-      "jobId": "Jao-pearl-supervisor-repair-20261011",
-      "title": "남은 링크 경로 차단 검증",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "jobId": "Jitq-question-bank-20261011",
+      "title": "ITQ 실기 문제은행 및 해설 제작",
+      "project": "02_itq-practice",
+      "targetDir": "D:/02_Documents/03_Teaching-Materials/02_itq-practice",
       "round": 2,
       "originDir": "<local>",
       "stage": "DONE",
@@ -25,6 +25,60 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-11 01:55:11",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 01:55:44",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 02:27:56",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 02:31:14",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 02:31:37",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 02:36:09",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-11 02:36:09"
+    },
+    {
+      "jobId": "Jao-pearl-supervisor-repair-20261011",
+      "title": "남은 링크 경로 차단 검증",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -62,55 +116,6 @@
         }
       ],
       "lastUpdate": "2026-10-11 02:33:00"
-    },
-    {
-      "jobId": "Jitq-question-bank-20261011",
-      "title": "ITQ 실기 문제은행 및 해설 제작",
-      "project": "02_itq-practice",
-      "targetDir": "D:/02_Documents/03_Teaching-Materials/02_itq-practice",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-11 01:55:11",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 01:55:44",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 02:27:56",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 02:31:14",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 02:31:37",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-11 02:31:37"
     },
     {
       "jobId": "Jmrgolf-live-functional-20261011",
