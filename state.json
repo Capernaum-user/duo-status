@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-11T01:20:49",
+  "generatedAt": "2026-10-11T01:22:04",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 4,
     "done": 671,
     "alerts": 31
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-11 01:19:42",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-11 01:20:45",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-11 01:19:42"
+      "lastUpdate": "2026-10-11 01:20:45"
     },
     {
       "jobId": "Jmrgolf-live-baseline-20261011",
