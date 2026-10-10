@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-10T09:04:42",
+  "generatedAt": "2026-10-10T09:14:57",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 5,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 663,
     "alerts": 30
   },
@@ -14,17 +14,17 @@
       "title": "ORDER_Jao-pearl-workspace-mail-20261010_R02 — Verify the existing message receipt and document unresolved R1 coverage",
       "project": "00_reuel-maison",
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -59,9 +59,14 @@
           "time": "2026-10-10 09:03:54",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-10 09:14:40",
+          "state": "REWORK",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-10 09:03:54"
+      "lastUpdate": "2026-10-10 09:14:40"
     },
     {
       "jobId": "Jaonatural-20261010-concept",
