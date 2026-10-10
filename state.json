@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-10T22:35:22",
+  "generatedAt": "2026-10-10T22:46:36",
   "counts": {
     "active": 13,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 4,
+    "working": 3,
+    "waitingReview": 5,
     "done": 668,
     "alerts": 31
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -39,9 +39,14 @@
           "time": "2026-10-10 22:35:12",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-10 22:46:17",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-10 22:35:12"
+      "lastUpdate": "2026-10-10 22:46:17"
     },
     {
       "jobId": "Jmrgolf-monthly-terms-20261010",
