@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-11T05:25:58",
+  "generatedAt": "2026-10-11T05:31:12",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 678,
-    "alerts": 31
+    "alerts": 32
   },
   "jobs": [
     {
-      "jobId": "Jaonaverapply-20261011-setup",
-      "title": "네이버 디자인 적용 R4 — 실제 본문 표시를 확인한 뒤 적용",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
+      "jobId": "Jmrgolf-live-functional-20261011",
+      "title": "권한과 견적 기능을 격리 교정하고 보호 후보에서 확인한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
       "round": 4,
       "originDir": "<local>",
       "stage": "DONE",
@@ -25,6 +25,90 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-11 01:47:43",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 01:47:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 02:11:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 02:13:54",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 02:14:31",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 03:19:06",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 03:22:26",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 03:23:09",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 04:17:20",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 04:21:16",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-10-11 04:21:36",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-10-11 05:30:49",
+          "state": "DONE",
+          "round": 4
+        }
+      ],
+      "lastUpdate": "2026-10-11 05:30:49"
+    },
+    {
+      "jobId": "Jaonaverapply-20261011-setup",
+      "title": "네이버 디자인 적용 R4 — 실제 본문 표시를 확인한 뒤 적용",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
+      "round": 4,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -131,85 +215,6 @@
         }
       ],
       "lastUpdate": "2026-10-11 04:58:22"
-    },
-    {
-      "jobId": "Jmrgolf-live-functional-20261011",
-      "title": "권한과 견적 기능을 격리 교정하고 보호 후보에서 확인한다",
-      "project": "project-40",
-      "targetDir": "D:/01_project-57/project-40",
-      "round": 4,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-11 01:47:43",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 01:47:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 02:11:29",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 02:13:54",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 02:14:31",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 03:19:06",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 03:22:26",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-10-11 03:23:09",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-10-11 04:17:20",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-10-11 04:21:16",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-10-11 04:21:36",
-          "state": "CLAIMED",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-10-11 04:21:36"
     },
     {
       "jobId": "Jitq-repeat-workbook-20261011",
