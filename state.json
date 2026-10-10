@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-11T08:32:56",
+  "generatedAt": "2026-10-11T08:34:07",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 4,
     "done": 680,
     "alerts": 31
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jaonaverapply-20261011-setup",
-      "title": "네이버 디자인 적용 R10 — 클릭 가능한 홈페이지 안내",
+      "title": "네이버 디자인 적용 R11 — 작업 창 확인과 누락 검수",
       "project": "01_naver-channel",
       "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
       "round": 11,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -184,9 +184,14 @@
           "time": "2026-10-11 08:32:04",
           "state": "REWORK",
           "round": 11
+        },
+        {
+          "time": "2026-10-11 08:33:27",
+          "state": "CLAIMED",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-10-11 08:32:04"
+      "lastUpdate": "2026-10-11 08:33:27"
     },
     {
       "jobId": "Jmrgolf-live-decision-20261011",
