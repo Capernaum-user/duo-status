@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-11T04:18:22",
+  "generatedAt": "2026-10-11T04:21:36",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 6,
+    "waitingReview": 5,
     "done": 677,
-    "alerts": 33
+    "alerts": 32
   },
   "jobs": [
     {
@@ -14,16 +14,16 @@
       "title": "권한과 견적 기능을 격리 교정하고 보호 후보에서 확인한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 3,
+      "round": 4,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -74,9 +74,14 @@
           "time": "2026-10-11 04:17:20",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-10-11 04:21:16",
+          "state": "REWORK",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-10-11 04:17:20"
+      "lastUpdate": "2026-10-11 04:21:16"
     },
     {
       "jobId": "Jaonaverapply-20261011-setup",
