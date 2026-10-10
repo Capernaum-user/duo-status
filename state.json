@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-10-11T03:18:49",
+  "generatedAt": "2026-10-11T03:20:02",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 4,
+    "working": 4,
+    "waitingReview": 5,
     "done": 677,
     "alerts": 31
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-live-functional-20261011",
+      "title": "권한과 견적 기능을 격리 교정하고 보호 후보에서 확인한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-11 01:47:43",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 01:47:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 02:11:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 02:13:54",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 02:14:31",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 03:19:06",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-11 03:19:06"
+    },
     {
       "jobId": "Jitq-repeat-workbook-20261011",
       "title": "ITQ 반복학습 자료 완성과 사용 검증",
@@ -172,55 +226,6 @@
       "lastUpdate": "2026-10-11 02:36:42"
     },
     {
-      "jobId": "Jmrgolf-live-functional-20261011",
-      "title": "권한과 견적 기능을 격리 교정하고 보호 후보에서 확인한다",
-      "project": "project-40",
-      "targetDir": "D:/01_project-57/project-40",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-11 01:47:43",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 01:47:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 02:11:29",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 02:13:54",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 02:14:31",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-11 02:14:31"
-    },
-    {
       "jobId": "Jitq-research-20261011",
       "title": "ITQ 시험 자료 수집과 연습 범위 정리",
       "project": "02_itq-practice",
@@ -337,7 +342,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
@@ -38976,6 +38981,11 @@
       "file": "Jaonaver-20260920-layout_round-cap-exceeded.md",
       "jobId": "Jaonaver-20260920-layout",
       "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jaonaverapply-20261011-setup_autopilot-claim-stale.md",
+      "jobId": "Jaonaverapply-20261011-setup",
+      "cause": "autopilot-claim-stale"
     },
     {
       "file": "Jaonavermaison-20261009-setup_autopilot-claim-stale.md",
