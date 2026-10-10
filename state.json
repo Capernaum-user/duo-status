@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-10T11:10:32",
+  "generatedAt": "2026-10-10T11:11:46",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 4,
     "done": 666,
     "alerts": 30
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jaonatural-20261010-concept",
-      "title": "블로그 콘셉트의 문구를 전체 교정하고 다시 보여준다",
+      "title": "블로그 교정본의 제목 줄바꿈과 변경 범위 검증을 마무리한다",
       "project": "01_naver-channel",
       "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -54,9 +54,14 @@
           "time": "2026-10-10 11:10:13",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-10 11:10:33",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-10 11:10:13"
+      "lastUpdate": "2026-10-10 11:10:33"
     },
     {
       "jobId": "Jao-pearl-ingress-contract-20261010",
