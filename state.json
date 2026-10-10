@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T10:30:46",
+  "generatedAt": "2026-10-10T10:32:01",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -219,7 +219,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": false
       },
@@ -38288,6 +38288,11 @@
       "file": "Jaointake-20261006-inbox_round-cap-exceeded.md",
       "jobId": "Jaointake-20261006-inbox",
       "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jaonatural-20261010-concept_autopilot-claim-stale.md",
+      "jobId": "Jaonatural-20261010-concept",
+      "cause": "autopilot-claim-stale"
     },
     {
       "file": "Jaonaver-20260920-baseline_round-cap-exceeded.md",
