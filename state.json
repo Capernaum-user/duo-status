@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T01:18:22",
+  "generatedAt": "2026-10-11T01:19:35",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -11,9 +11,9 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-live-baseline-20261011",
-      "title": "Jmrgolf-live-baseline-20261011",
-      "project": "",
-      "targetDir": null,
+      "title": "보호 운영 현황과 실제 호스트를 좁혀 감사한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
       "stage": "CLAIMED",
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
