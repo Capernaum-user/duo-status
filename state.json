@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-10T12:56:54",
+  "generatedAt": "2026-10-10T13:06:09",
   "counts": {
-    "active": 13,
+    "active": 12,
     "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 5,
+    "waitingReview": 4,
     "done": 667,
-    "alerts": 30
+    "alerts": 31
   },
   "jobs": [
     {
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
       "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -74,9 +74,14 @@
           "time": "2026-10-10 12:56:33",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-10-10 13:05:04",
+          "state": "ESCALATED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-10 12:56:33"
+      "lastUpdate": "2026-10-10 13:05:04"
     },
     {
       "jobId": "Jaonatural-20261010-concept",
@@ -38229,6 +38234,11 @@
     }
   ],
   "escalations": [
+    {
+      "file": "Jao-pearl-ingress-contract-20261010_round-cap-exceeded.md",
+      "jobId": "Jao-pearl-ingress-contract-20261010",
+      "cause": "round-cap-exceeded"
+    },
     {
       "file": "Jao-pearl-mobile-20261009_round-cap-exceeded.md",
       "jobId": "Jao-pearl-mobile-20261009",
