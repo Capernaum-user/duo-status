@@ -1,14 +1,113 @@
 {
-  "generatedAt": "2026-10-11T05:47:51",
+  "generatedAt": "2026-10-11T05:53:05",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 6,
+    "working": 3,
     "waitingReview": 5,
     "done": 678,
-    "alerts": 31
+    "alerts": 33
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-live-functional-20261011",
+      "title": "기존 SQL Editor 안내를 정상 해소하고 실제 결과와 보호 후보 기능을 확인한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 6,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-11 01:47:43",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 01:47:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 02:11:29",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 02:13:54",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 02:14:31",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 03:19:06",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-11 03:22:26",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 03:23:09",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 04:17:20",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 04:21:16",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-10-11 04:21:36",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-10-11 05:30:49",
+          "state": "DONE",
+          "round": 4
+        },
+        {
+          "time": "2026-10-11 05:33:39",
+          "state": "REWORK",
+          "round": 5
+        },
+        {
+          "time": "2026-10-11 05:34:07",
+          "state": "CLAIMED",
+          "round": 5
+        },
+        {
+          "time": "2026-10-11 05:52:08",
+          "state": "REWORK",
+          "round": 6
+        }
+      ],
+      "lastUpdate": "2026-10-11 05:52:08"
+    },
     {
       "jobId": "Jaonaverapply-20261011-setup",
       "title": "네이버 디자인 적용 R5 — 연결 재확인과 항목별 적용",
@@ -18,13 +117,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -107,100 +206,6 @@
         }
       ],
       "lastUpdate": "2026-10-11 05:47:20"
-    },
-    {
-      "jobId": "Jmrgolf-live-functional-20261011",
-      "title": "보호 후보의 실제 SQL 결과 화면을 복구하고 기능·DB 변경 게이트를 연결한다",
-      "project": "project-40",
-      "targetDir": "D:/01_project-57/project-40",
-      "round": 5,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-11 01:47:43",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 01:47:57",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 02:11:29",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 02:13:54",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 02:14:31",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 03:19:06",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-11 03:22:26",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-10-11 03:23:09",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-10-11 04:17:20",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-10-11 04:21:16",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-10-11 04:21:36",
-          "state": "CLAIMED",
-          "round": 4
-        },
-        {
-          "time": "2026-10-11 05:30:49",
-          "state": "DONE",
-          "round": 4
-        },
-        {
-          "time": "2026-10-11 05:33:39",
-          "state": "REWORK",
-          "round": 5
-        },
-        {
-          "time": "2026-10-11 05:34:07",
-          "state": "CLAIMED",
-          "round": 5
-        }
-      ],
-      "lastUpdate": "2026-10-11 05:34:07"
     },
     {
       "jobId": "Jao-pearl-supervisor-integration-20261011",
