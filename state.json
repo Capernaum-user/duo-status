@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-11T03:21:14",
+  "generatedAt": "2026-10-11T03:23:28",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 4,
     "done": 677,
-    "alerts": 32
+    "alerts": 31
   },
   "jobs": [
     {
@@ -14,12 +14,12 @@
       "title": "권한과 견적 기능을 격리 교정하고 보호 후보에서 확인한다",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -59,9 +59,19 @@
           "time": "2026-10-11 03:19:06",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-11 03:22:26",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-11 03:23:09",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-11 03:19:06"
+      "lastUpdate": "2026-10-11 03:23:09"
     },
     {
       "jobId": "Jitq-repeat-workbook-20261011",
