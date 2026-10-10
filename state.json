@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-10T10:24:59",
+  "generatedAt": "2026-10-10T10:26:16",
   "counts": {
-    "active": 13,
-    "waitingWorker": 5,
+    "active": 14,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 4,
     "done": 666,
     "alerts": 30
   },
   "jobs": [
+    {
+      "jobId": "Jao-pearl-ingress-contract-20261010",
+      "title": "ORDER_Jao-pearl-ingress-contract-20261010_R01 — Observe active ingress and prepare the bounded header correction",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-57/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-10 10:25:23",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-10 10:25:23"
+    },
     {
       "jobId": "Jao-pearl-network-rehearsal-20261010",
       "title": "ORDER_Jao-pearl-network-rehearsal-20261010_R01 — Prepare and independently rehearse the operating network change",
