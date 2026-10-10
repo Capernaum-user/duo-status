@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-10-11T06:03:48",
+  "generatedAt": "2026-10-11T06:11:02",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 5,
+    "waitingReview": 4,
     "done": 678,
     "alerts": 31
   },
   "jobs": [
     {
       "jobId": "Jaonaverapply-20261011-setup",
-      "title": "네이버 디자인 적용 R6 — 작업 도구 세션 복구와 적용",
+      "title": "네이버 디자인 적용 R7 — 공식 Chrome 새 탭 진입 확인",
       "project": "01_naver-channel",
       "targetDir": "D:/01_project-57/project-47/project-47/01_naver-channel",
-      "round": 6,
+      "round": 7,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -119,9 +119,19 @@
           "time": "2026-10-11 06:03:24",
           "state": "DONE",
           "round": 6
+        },
+        {
+          "time": "2026-10-11 06:10:01",
+          "state": "REWORK",
+          "round": 7
+        },
+        {
+          "time": "2026-10-11 06:10:28",
+          "state": "CLAIMED",
+          "round": 7
         }
       ],
-      "lastUpdate": "2026-10-11 06:03:24"
+      "lastUpdate": "2026-10-11 06:10:28"
     },
     {
       "jobId": "Jmrgolf-live-functional-20261011",
