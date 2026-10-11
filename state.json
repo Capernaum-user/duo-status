@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-12T05:17:49",
+  "generatedAt": "2026-10-12T05:24:06",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 6,
     "done": 711,
-    "alerts": 32
+    "alerts": 33
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-live-e-sql-new-postimage-prep-20261012",
+      "title": "Gate E /sql/new postimage SELECT one-shot helper, offline decision packet",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-12 05:06:45",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 05:06:58",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 05:23:17",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-12 05:23:17"
+    },
     {
       "jobId": "Jmrgolf-pc-backup-apply-20261012",
       "title": "기존 PC 일일 백업 운영 적용",
@@ -42,40 +81,6 @@
         }
       ],
       "lastUpdate": "2026-10-12 05:16:22"
-    },
-    {
-      "jobId": "Jmrgolf-live-e-sql-new-postimage-prep-20261012",
-      "title": "Gate E /sql/new postimage SELECT one-shot helper, offline decision packet",
-      "project": "project-40",
-      "targetDir": "D:/01_project-57/project-40",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-12 05:06:45",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-12 05:06:58",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-12 05:06:58"
     },
     {
       "jobId": "Jmrgolf-live-personal-smtp-guarded-entry-20261012",
