@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-12T02:56:19",
+  "generatedAt": "2026-10-12T02:57:36",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 702,
     "alerts": 32
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-live-e-canonical-apply-20261012",
-      "title": "Root GO01 한정 Gate E canonical forward 단발 적용과 안전 사후 판정",
+      "title": "Gate E GO01 STOP 원인 구조 진단 — 읽기 전용 한 번",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -44,9 +44,14 @@
           "time": "2026-10-12 02:55:55",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-12 02:56:29",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-12 02:55:55"
+      "lastUpdate": "2026-10-12 02:56:29"
     },
     {
       "jobId": "Jmrgolf-live-e-application-packet-20261012",
