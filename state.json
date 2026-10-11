@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-12T06:29:58",
+  "generatedAt": "2026-10-12T06:31:14",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
-    "working": 5,
+    "working": 4,
     "waitingReview": 5,
-    "done": 714,
+    "done": 715,
     "alerts": 32
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-live-auth-e-nonce-once-20261012",
+      "title": "Live PERSONAL AUTH-only and Gate E nonce-bound postimage, two independent one-use lanes",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-12 05:39:20",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 05:39:48",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 06:30:02",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-12 06:30:02"
+    },
     {
       "jobId": "Jmrgolf-collection-monitor-apply-20261012",
       "title": "수집 관측 운영 적용",
@@ -101,40 +140,6 @@
         }
       ],
       "lastUpdate": "2026-10-12 06:27:15"
-    },
-    {
-      "jobId": "Jmrgolf-live-auth-e-nonce-once-20261012",
-      "title": "Live PERSONAL AUTH-only and Gate E nonce-bound postimage, two independent one-use lanes",
-      "project": "project-40",
-      "targetDir": "D:/01_project-57/project-40",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-12 05:39:20",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-12 05:39:48",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-12 05:39:48"
     },
     {
       "jobId": "Jmrgolf-live-personal-smtp-deadline-20261012",
