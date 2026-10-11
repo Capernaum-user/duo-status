@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T04:41:24",
+  "generatedAt": "2026-10-12T04:42:39",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -11,9 +11,9 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-live-personal-smtp-guarded-entry-20261012",
-      "title": "Jmrgolf-live-personal-smtp-guarded-entry-20261012",
-      "project": "",
-      "targetDir": null,
+      "title": "PERSONAL AUTH-only guarded live entry, offline verified",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
       "stage": "CLAIMED",
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
