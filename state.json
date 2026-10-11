@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-10-12T04:31:39",
+  "generatedAt": "2026-10-12T04:33:55",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 6,
-    "done": 708,
-    "alerts": 33
+    "waitingReview": 5,
+    "done": 709,
+    "alerts": 32
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-parallel-ops-support-20261012",
+      "title": "MrGolf 비충돌 병렬 운영 지원: 관측 판정과 주기 백업 후보",
+      "project": "mrgolf-parallel-ops-support",
+      "targetDir": "C:/Temp/mrgolf-parallel-ops-support",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-12 03:46:31",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 03:49:34",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 04:26:47",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 04:33:00",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-12 04:33:00"
+    },
     {
       "jobId": "Jmrgolf-live-e-settled-metadata-20261012",
       "title": "Gate E settled same-page metadata read, once",
@@ -81,45 +125,6 @@
         }
       ],
       "lastUpdate": "2026-10-12 04:31:05"
-    },
-    {
-      "jobId": "Jmrgolf-parallel-ops-support-20261012",
-      "title": "MrGolf 비충돌 병렬 운영 지원: 관측 판정과 주기 백업 후보",
-      "project": "mrgolf-parallel-ops-support",
-      "targetDir": "C:/Temp/mrgolf-parallel-ops-support",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-12 03:46:31",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-12 03:49:34",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-12 04:26:47",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-12 04:26:47"
     },
     {
       "jobId": "Jmrgolf-live-e-readonly-recovery-20261012",
