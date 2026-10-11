@@ -1,31 +1,31 @@
 {
-  "generatedAt": "2026-10-12T02:39:41",
+  "generatedAt": "2026-10-12T02:41:58",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 5,
     "done": 701,
-    "alerts": 33
+    "alerts": 32
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-live-e-application-packet-20261012",
-      "title": "Gate E canonical forward의 단발 적용 결정 패킷, 오프라인 준비 전용",
+      "title": "R2 bounded QA — Gate E packet nested safe-postimage validator two cases",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-10-12 02:38:01",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-12 02:41:04",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-12 02:41:35",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-12 02:38:01"
+      "lastUpdate": "2026-10-12 02:41:35"
     },
     {
       "jobId": "Jmrgolf-live-e-forward-canonical-candidate-20261012",
