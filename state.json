@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T03:28:00",
+  "generatedAt": "2026-10-12T03:30:14",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -11,10 +11,10 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-live-e-canonical-apply-go02-20261012",
-      "title": "ROOT GO02 한정 Gate E canonical forward 단발 적용과 독립 사후 판정",
+      "title": "GO02 승인 파일 국소 예외 결속 후 Gate E 단발 적용",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -25,7 +25,7 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -39,9 +39,19 @@
           "time": "2026-10-12 03:23:53",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-12 03:29:18",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-12 03:29:43",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-12 03:23:53"
+      "lastUpdate": "2026-10-12 03:29:43"
     },
     {
       "jobId": "Jmrgolf-live-e-guard-correction-preflight-20261012",
