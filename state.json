@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-11T21:45:11",
+  "generatedAt": "2026-10-11T21:46:27",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 684,
     "alerts": 32
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-11 21:44:41",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-11 21:45:52",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-11 21:44:41"
+      "lastUpdate": "2026-10-11 21:45:52"
     },
     {
       "jobId": "Jmrgolf-live-e-guard-20261011",
