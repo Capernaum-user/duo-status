@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-11T11:10:25",
+  "generatedAt": "2026-10-11T11:12:41",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 680,
     "alerts": 32
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-live-decision-20261011",
+      "title": "공개와 제한 운영의 독립 개시 게이트를 판정한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-11 07:21:44",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 07:22:05",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-11 11:12:12",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-11 11:12:12"
+    },
     {
       "jobId": "Jaonaverapply-20261011-setup",
       "title": "네이버 디자인 적용 R11 — 작업 창 확인과 누락 검수",
@@ -197,40 +236,6 @@
         }
       ],
       "lastUpdate": "2026-10-11 08:52:53"
-    },
-    {
-      "jobId": "Jmrgolf-live-decision-20261011",
-      "title": "공개와 제한 운영의 독립 개시 게이트를 판정한다",
-      "project": "project-40",
-      "targetDir": "D:/01_project-57/project-40",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-11 07:21:44",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-11 07:22:05",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-11 07:22:05"
     },
     {
       "jobId": "Jmrgolf-live-host-20261011",
