@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T01:47:22",
+  "generatedAt": "2026-10-12T01:54:39",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
-    "working": 4,
+    "working": 3,
     "waitingReview": 5,
-    "done": 698,
+    "done": 699,
     "alerts": 32
   },
   "jobs": [
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -39,9 +39,14 @@
           "time": "2026-10-12 01:46:37",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-12 01:54:13",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-12 01:46:37"
+      "lastUpdate": "2026-10-12 01:54:13"
     },
     {
       "jobId": "Jmrgolf-live-e-results-preflight-recovery-20261012",
