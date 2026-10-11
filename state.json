@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-12T03:22:14",
+  "generatedAt": "2026-10-12T03:23:29",
   "counts": {
-    "active": 13,
-    "waitingWorker": 5,
+    "active": 14,
+    "waitingWorker": 6,
     "working": 3,
     "waitingReview": 5,
     "done": 704,
     "alerts": 32
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-live-e-canonical-apply-go02-20261012",
+      "title": "ROOT GO02 한정 Gate E canonical forward 단발 적용과 독립 사후 판정",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-12 03:23:13",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-12 03:23:13"
+    },
     {
       "jobId": "Jmrgolf-live-e-guard-correction-preflight-20261012",
       "title": "Gate E 가시성 판정 교정 후보 + 실제 읽기 전용 사전 점검",
