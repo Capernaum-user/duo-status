@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-12T05:53:04",
+  "generatedAt": "2026-10-12T05:54:19",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 6,
+    "waitingReview": 5,
     "done": 713,
-    "alerts": 33
+    "alerts": 32
   },
   "jobs": [
     {
@@ -14,18 +14,18 @@
       "title": "기존 PC 일일 백업 운영 적용",
       "project": "24_parallel-ops-support",
       "targetDir": "D:/01_project-57/project-40/project-40/10_operations-readiness/24_parallel-ops-support",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-12 05:49:10",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-12 05:54:10",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-12 05:49:10"
+      "lastUpdate": "2026-10-12 05:54:10"
     },
     {
       "jobId": "Jmrgolf-live-auth-e-nonce-once-20261012",
