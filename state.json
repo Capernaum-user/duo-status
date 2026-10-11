@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-12T06:32:29",
+  "generatedAt": "2026-10-12T06:58:46",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 715,
-    "alerts": 32
+    "alerts": 33
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-collection-monitor-apply-20261012",
+      "title": "수집 관측 운영 적용",
+      "project": "24_parallel-ops-support",
+      "targetDir": "D:/01_project-57/project-40/project-40/10_operations-readiness/24_parallel-ops-support",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-12 06:27:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 06:27:42",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 06:57:50",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-12 06:57:50"
+    },
     {
       "jobId": "Jmrgolf-live-auth-e-nonce-once-20261012",
       "title": "Live PERSONAL AUTH-only and Gate E nonce-bound postimage, two independent one-use lanes",
@@ -47,40 +86,6 @@
         }
       ],
       "lastUpdate": "2026-10-12 06:30:02"
-    },
-    {
-      "jobId": "Jmrgolf-collection-monitor-apply-20261012",
-      "title": "수집 관측 운영 적용",
-      "project": "24_parallel-ops-support",
-      "targetDir": "D:/01_project-57/project-40/project-40/10_operations-readiness/24_parallel-ops-support",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-12 06:27:16",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-12 06:27:42",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-12 06:27:42"
     },
     {
       "jobId": "Jmrgolf-pc-backup-apply-20261012",
