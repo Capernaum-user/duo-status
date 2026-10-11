@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T17:43:35",
+  "generatedAt": "2026-10-11T17:44:49",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
@@ -11,7 +11,7 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-live-decision-20261011",
-      "title": "공개와 제한 운영의 독립 개시 게이트를 판정한다",
+      "title": "Step4 R3 — Gate C 합성 저장·본인조회와 실제 개시의 다음 결정",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 3,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
