@@ -71,18 +71,52 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-12 00:31:35 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-12 00:35:52 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-12T00:31:35",
+  "generatedAt": "2026-10-12T00:35:51",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 6,
-    "done": 693,
+    "working": 4,
+    "waitingReview": 5,
+    "done": 694,
     "alerts": 32
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-live-e-dual-context-read-prep-20261012",
+      "title": "E forward 문맥의 outbox 안전 지문 읽기 후보를 오프라인에서 고정한다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-12 00:35:15",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-12 00:35:40",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-12 00:35:40"
+    },
     {
       "jobId": "Jmrgolf-live-e-searchpath-offline-20261012",
       "title": "E guard의 search_path 영향을 격리 PG에서 재현하고 최소 교정 후보를 준비한다",
@@ -90,15 +124,15 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -118,9 +152,14 @@
           "time": "2026-10-12 00:31:17",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-12 00:35:14",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-12 00:31:17"
+      "lastUpdate": "2026-10-12 00:35:14"
     },
     {
       "jobId": "Jmrgolf-live-e-outbox-remote-read-20261012",
