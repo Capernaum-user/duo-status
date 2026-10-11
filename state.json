@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-11T23:51:55",
+  "generatedAt": "2026-10-11T23:53:12",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 691,
-    "alerts": 33
+    "alerts": 32
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -34,9 +34,14 @@
           "time": "2026-10-11 23:51:02",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-11 23:52:15",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-11 23:51:02"
+      "lastUpdate": "2026-10-11 23:52:15"
     },
     {
       "jobId": "Jmrgolf-live-e-normalized-run-20261011",
