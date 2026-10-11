@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-11T23:47:38",
+  "generatedAt": "2026-10-11T23:51:55",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 6,
-    "done": 690,
-    "alerts": 32
+    "waitingReview": 5,
+    "done": 691,
+    "alerts": 33
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-live-e-outbox-diagnostic-20261011",
+      "title": "E outbox 사전 지문 차이를 비파괴 진단 후보로 좁힌다",
+      "project": "project-40",
+      "targetDir": "D:/01_project-57/project-40",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-11 23:51:02",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-11 23:51:02"
+    },
     {
       "jobId": "Jmrgolf-live-e-normalized-run-20261011",
       "title": "기존 Monaco 정규화 E 모델을 단발 Run하고 즉시 안전 사후 SELECT를 읽는다",
@@ -16,15 +45,15 @@
       "targetDir": "D:/01_project-57/project-40",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -44,9 +73,14 @@
           "time": "2026-10-11 23:47:00",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-11 23:51:01",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-11 23:47:00"
+      "lastUpdate": "2026-10-11 23:51:01"
     },
     {
       "jobId": "Jmrgolf-live-d-review-html-20261011",
