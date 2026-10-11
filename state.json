@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-12T03:47:26",
+  "generatedAt": "2026-10-12T03:48:37",
   "counts": {
     "active": 15,
     "waitingWorker": 6,
     "working": 3,
     "waitingReview": 6,
     "done": 704,
-    "alerts": 33
+    "alerts": 32
   },
   "jobs": [
     {
@@ -18,13 +18,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
+      "stageLabel": "보고 제출",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
