@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-11T18:18:20",
+  "generatedAt": "2026-10-11T18:19:33",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 680,
     "alerts": 32
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-live-decision-20261011",
-      "title": "Step4 R3 — Gate C 합성 저장·본인조회와 실제 개시의 다음 결정",
+      "title": "Step4 R4 — Gate E 격리 PostgreSQL 검증과 실제 개시 입력",
       "project": "project-40",
       "targetDir": "D:/01_project-57/project-40",
       "round": 4,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -79,9 +79,14 @@
           "time": "2026-10-11 18:18:08",
           "state": "REWORK",
           "round": 4
+        },
+        {
+          "time": "2026-10-11 18:18:50",
+          "state": "CLAIMED",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-10-11 18:18:08"
+      "lastUpdate": "2026-10-11 18:18:50"
     },
     {
       "jobId": "Jaonaverapply-20261011-setup",
