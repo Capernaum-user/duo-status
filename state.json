@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T12:50:11",
+  "generatedAt": "2026-10-12T13:08:26",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
-    "working": 4,
+    "working": 3,
     "waitingReview": 5,
-    "done": 725,
+    "done": 726,
     "alerts": 32
   },
   "jobs": [
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-57/project-40/project-40/10_operations-readiness/23_monthly-operations",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -49,9 +49,14 @@
           "time": "2026-10-12 12:49:07",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-12 13:07:29",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-12 12:49:07"
+      "lastUpdate": "2026-10-12 13:07:29"
     },
     {
       "jobId": "Jmrgolf-remainder-gate-e-guarded-prep-20261012",
