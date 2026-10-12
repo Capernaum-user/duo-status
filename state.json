@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-12T19:52:35",
+  "generatedAt": "2026-10-12T20:00:54",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 6,
-    "done": 726,
+    "waitingReview": 5,
+    "done": 727,
     "alerts": 32
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-40/project-40/10_operations-readiness/23_monthly-operations",
       "round": 9,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -159,9 +159,14 @@
           "time": "2026-10-12 19:51:35",
           "state": "DONE",
           "round": 9
+        },
+        {
+          "time": "2026-10-12 20:00:06",
+          "state": "ACCEPTED",
+          "round": 9
         }
       ],
-      "lastUpdate": "2026-10-12 19:51:35"
+      "lastUpdate": "2026-10-12 20:00:06"
     },
     {
       "jobId": "Jmrgolf-remainder-gate-e-controlled-install-20261012",
