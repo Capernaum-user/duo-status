@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-12T12:48:56",
+  "generatedAt": "2026-10-12T12:50:11",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 725,
     "alerts": 32
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-remainder-gate-e-controlled-install-20261012",
-      "title": "Step10 Gate E controlled decision and one supervised attempt",
+      "title": "Step10 R2 bounded successor for fail-closed auth selector STOP",
       "project": "23_monthly-operations",
       "targetDir": "D:/01_project-57/project-40/project-40/10_operations-readiness/23_monthly-operations",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -44,9 +44,14 @@
           "time": "2026-10-12 12:48:38",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-12 12:49:07",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-12 12:48:38"
+      "lastUpdate": "2026-10-12 12:49:07"
     },
     {
       "jobId": "Jmrgolf-remainder-gate-e-guarded-prep-20261012",
