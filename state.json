@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-12T10:39:11",
+  "generatedAt": "2026-10-12T11:01:26",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 722,
     "alerts": 32
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-57/project-40/project-40/10_operations-readiness/23_monthly-operations",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -49,9 +49,14 @@
           "time": "2026-10-12 10:38:44",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-12 11:00:54",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-12 10:38:44"
+      "lastUpdate": "2026-10-12 11:00:54"
     },
     {
       "jobId": "Jmrgolf-remainder-self-mail-once-20261012",
