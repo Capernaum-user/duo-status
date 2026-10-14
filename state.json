@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-15T07:15:14",
+  "generatedAt": "2026-10-15T07:16:30",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 733,
     "alerts": 32
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-59/project-40/project-40/24_commercial-b-pair",
       "round": 4,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -79,9 +79,14 @@
           "time": "2026-10-15 07:14:29",
           "state": "REWORK",
           "round": 4
+        },
+        {
+          "time": "2026-10-15 07:15:33",
+          "state": "CLAIMED",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-10-15 07:14:29"
+      "lastUpdate": "2026-10-15 07:15:33"
     },
     {
       "jobId": "Jmrgolf-commercial-bpair-20261015-baseline",
