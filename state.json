@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-15T06:10:57",
+  "generatedAt": "2026-10-15T06:13:11",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 5,
     "done": 732,
     "alerts": 32
   },
@@ -14,18 +14,18 @@
       "title": "Jmrgolf-commercial-bpair-20261015-baseline",
       "project": "24_commercial-b-pair",
       "targetDir": "D:/01_project-59/project-40/project-40/24_commercial-b-pair",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,19 @@
           "time": "2026-10-15 06:10:19",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-15 06:12:25",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-15 06:13:02",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-15 06:10:19"
+      "lastUpdate": "2026-10-15 06:13:02"
     },
     {
       "jobId": "Jmrgolf-home-storefront-release-20261012",
