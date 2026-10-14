@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-15T08:26:27",
+  "generatedAt": "2026-10-15T08:31:44",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 6,
     "done": 735,
     "alerts": 32
   },
   "jobs": [
+    {
+      "jobId": "Jcraft-inspect-20261015",
+      "title": "Craft 앱 설치본과 자동화 경로 조사",
+      "project": "Program Files",
+      "targetDir": "C:/Program Files",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-15 08:19:48",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-15 08:20:54",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-15 08:31:15",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-15 08:31:15"
+    },
     {
       "jobId": "Jmrgolf-commercial-bpair-20261015-handoff",
       "title": "Jmrgolf-commercial-bpair-20261015-handoff",
@@ -42,40 +81,6 @@
         }
       ],
       "lastUpdate": "2026-10-15 08:21:37"
-    },
-    {
-      "jobId": "Jcraft-inspect-20261015",
-      "title": "Craft 앱 설치본과 자동화 경로 조사",
-      "project": "Program Files",
-      "targetDir": "C:/Program Files",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-15 08:19:48",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-15 08:20:54",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-15 08:20:54"
     },
     {
       "jobId": "Jmrgolf-commercial-bpair-20261015-verification",
