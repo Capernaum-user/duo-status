@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-15T18:23:07",
+  "generatedAt": "2026-10-15T18:24:23",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
-    "working": 4,
+    "working": 3,
     "waitingReview": 6,
-    "done": 742,
+    "done": 743,
     "alerts": 32
   },
   "jobs": [
     {
-      "jobId": "Jmrgolf-photo-production-20261015-promote",
-      "title": "검수한 운영 빌드의 도메인 적용 및 확인",
-      "project": "02_app",
-      "targetDir": "D:/01_project-59/project-40/project-40/25_client-photos/02_app",
+      "jobId": "Jao-winter-web-20261015",
+      "title": "겨울 인터랙티브 웹 시안과 브라우저 독립 검증",
+      "project": "project-47",
+      "targetDir": "D:/01_project-59/project-47/project-47",
       "round": 1,
       "originDir": "<local>",
       "stage": "DONE",
@@ -25,6 +25,45 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-15 17:43:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-15 17:43:30",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-15 18:24:09",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-15 18:24:09"
+    },
+    {
+      "jobId": "Jmrgolf-photo-production-20261015-promote",
+      "title": "검수한 운영 빌드의 도메인 적용 및 확인",
+      "project": "02_app",
+      "targetDir": "D:/01_project-59/project-40/project-40/25_client-photos/02_app",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -44,9 +83,14 @@
           "time": "2026-10-15 18:22:26",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-15 18:23:50",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-15 18:22:26"
+      "lastUpdate": "2026-10-15 18:23:50"
     },
     {
       "jobId": "Jmrgolf-photo-production-20261015-stage",
@@ -91,40 +135,6 @@
         }
       ],
       "lastUpdate": "2026-10-15 18:10:20"
-    },
-    {
-      "jobId": "Jao-winter-web-20261015",
-      "title": "겨울 인터랙티브 웹 시안과 브라우저 독립 검증",
-      "project": "project-47",
-      "targetDir": "D:/01_project-59/project-47/project-47",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-15 17:43:16",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-15 17:43:30",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-15 17:43:30"
     },
     {
       "jobId": "Jao-winter-figcraft-20261015",
