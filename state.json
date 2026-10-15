@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-15T16:08:16",
+  "generatedAt": "2026-10-15T16:11:30",
   "counts": {
     "active": 14,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 6,
+    "waitingReview": 5,
     "done": 738,
     "alerts": 32
   },
@@ -14,18 +14,18 @@
       "title": "고객 공유 사진으로 B안 사진 영역을 채운다",
       "project": "02_app",
       "targetDir": "D:/01_project-59/project-40/project-40/25_client-photos/02_app",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-15 16:06:44",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-15 16:10:54",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-15 16:06:44"
+      "lastUpdate": "2026-10-15 16:10:54"
     },
     {
       "jobId": "Jmrgolf-commercial-bpair-20261015-handoff",
