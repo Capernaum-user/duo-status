@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-15T09:42:31",
+  "generatedAt": "2026-10-15T09:53:52",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 737,
-    "alerts": 32
+    "alerts": 33
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-commercial-bpair-20261015-handoff",
+      "title": "Jmrgolf-commercial-bpair-20261015-handoff",
+      "project": "24_commercial-b-pair",
+      "targetDir": "D:/01_project-59/project-40/project-40/24_commercial-b-pair",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-15 08:20:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-15 08:21:37",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-15 09:52:40",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-15 09:52:40"
+    },
     {
       "jobId": "Jcraft-connect-20261015",
       "title": "Craft 앱 연결과 재사용 지침",
@@ -96,40 +135,6 @@
         }
       ],
       "lastUpdate": "2026-10-15 08:32:09"
-    },
-    {
-      "jobId": "Jmrgolf-commercial-bpair-20261015-handoff",
-      "title": "Jmrgolf-commercial-bpair-20261015-handoff",
-      "project": "24_commercial-b-pair",
-      "targetDir": "D:/01_project-59/project-40/project-40/24_commercial-b-pair",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-15 08:20:18",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-15 08:21:37",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-15 08:21:37"
     },
     {
       "jobId": "Jmrgolf-commercial-bpair-20261015-verification",
