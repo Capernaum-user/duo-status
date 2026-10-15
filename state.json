@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-15T09:53:52",
+  "generatedAt": "2026-10-15T09:56:06",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
     "working": 3,
-    "waitingReview": 6,
-    "done": 737,
-    "alerts": 33
+    "waitingReview": 5,
+    "done": 738,
+    "alerts": 32
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-59/project-40/project-40/24_commercial-b-pair",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -44,9 +44,14 @@
           "time": "2026-10-15 09:52:40",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-15 09:55:08",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-15 09:52:40"
+      "lastUpdate": "2026-10-15 09:55:08"
     },
     {
       "jobId": "Jcraft-connect-20261015",
