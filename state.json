@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-16T19:20:13",
+  "generatedAt": "2026-10-16T19:30:31",
   "counts": {
-    "active": 15,
-    "waitingWorker": 7,
+    "active": 14,
+    "waitingWorker": 6,
     "working": 3,
     "waitingReview": 5,
-    "done": 748,
-    "alerts": 35
+    "done": 749,
+    "alerts": 34
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-59/project-40/project-40/26_launch-completion",
       "round": 1,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -49,9 +49,14 @@
           "time": "2026-10-16 19:19:34",
           "state": "REWORK",
           "round": 1
+        },
+        {
+          "time": "2026-10-16 19:29:36",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-16 19:19:34"
+      "lastUpdate": "2026-10-16 19:29:36"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-modules-20261016",
