@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-16T11:47:30",
+  "generatedAt": "2026-10-16T11:53:44",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
-    "working": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 746,
-    "alerts": 33
+    "alerts": 34
   },
   "jobs": [
     {
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-59/project-47/project-47/02_winter-realism",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -54,9 +54,14 @@
           "time": "2026-10-16 11:35:57",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-16 11:52:50",
+          "state": "ESCALATED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-16 11:35:57"
+      "lastUpdate": "2026-10-16 11:52:50"
     },
     {
       "jobId": "Jmrgolf-launch-app-20261016",
@@ -42660,6 +42665,11 @@
       "file": "Jao-seo-journal-20260914-capture_round-cap-exceeded.md",
       "jobId": "Jao-seo-journal-20260914-capture",
       "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jao-winter-firstscreen-20261016_runtime-policy-denial-r2.md",
+      "jobId": "Jao-winter-firstscreen-20261016",
+      "cause": "runtime-policy-denial-r2"
     },
     {
       "file": "Jao-winter-firstscreen-20261016_runtime-policy-denial.md",
