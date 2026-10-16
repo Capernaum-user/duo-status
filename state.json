@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-17T02:00:39",
+  "generatedAt": "2026-10-17T02:07:58",
   "counts": {
     "active": 15,
     "waitingWorker": 6,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 748,
     "alerts": 35
   },
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -54,9 +54,14 @@
           "time": "2026-10-17 01:38:50",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-17 02:07:02",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-17 01:38:50"
+      "lastUpdate": "2026-10-17 02:07:02"
     },
     {
       "jobId": "Jmrgolf-launch-project-68-20261016",
