@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-16T15:17:20",
+  "generatedAt": "2026-10-16T15:19:34",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
-    "working": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 748,
-    "alerts": 33
+    "alerts": 34
   },
   "jobs": [
     {
@@ -16,12 +16,12 @@
       "targetDir": "D:/01_project-59/project-47/project-47/02_winter-realism",
       "round": 3,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -69,9 +69,14 @@
           "time": "2026-10-16 14:01:58",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-10-16 15:19:26",
+          "state": "ESCALATED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-16 14:01:58"
+      "lastUpdate": "2026-10-16 15:19:26"
     },
     {
       "jobId": "Jmrgolf-launch-project-68-20261016",
@@ -42777,6 +42782,11 @@
     {
       "file": "Jao-seo-journal-20260914-capture_round-cap-exceeded.md",
       "jobId": "Jao-seo-journal-20260914-capture",
+      "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jao-winter-firstscreen-20261016_round-cap-exceeded.md",
+      "jobId": "Jao-winter-firstscreen-20261016",
       "cause": "round-cap-exceeded"
     },
     {
