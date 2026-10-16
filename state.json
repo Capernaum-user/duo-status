@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-16T12:00:58",
+  "generatedAt": "2026-10-16T12:03:12",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 746,
     "alerts": 34
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-launch-app-20261016",
+      "title": "개인정보 안내와 검토 콘텐츠를 앱에 반영한다",
+      "project": "26_launch-completion",
+      "targetDir": "D:/01_project-59/project-40/project-40/26_launch-completion",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-16 10:56:52",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 10:57:59",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 12:02:23",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-16 12:02:23"
+    },
     {
       "jobId": "Jao-winter-firstscreen-20261016",
       "title": "겨울 3D 시안을 실제 브라우저에서 완성하고 검토한다",
@@ -62,40 +101,6 @@
         }
       ],
       "lastUpdate": "2026-10-16 11:52:50"
-    },
-    {
-      "jobId": "Jmrgolf-launch-app-20261016",
-      "title": "개인정보 안내와 검토 콘텐츠를 앱에 반영한다",
-      "project": "26_launch-completion",
-      "targetDir": "D:/01_project-59/project-40/project-40/26_launch-completion",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-16 10:56:52",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-16 10:57:59",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-16 10:57:59"
     },
     {
       "jobId": "Jmrgolf-launch-prepare-20261016",
