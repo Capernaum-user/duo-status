@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-10-16T10:51:41",
+  "generatedAt": "2026-10-16T10:56:55",
   "counts": {
-    "active": 14,
+    "active": 13,
     "waitingWorker": 5,
-    "working": 4,
+    "working": 3,
     "waitingReview": 5,
-    "done": 745,
+    "done": 746,
     "alerts": 34
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-launch-prepare-20261016",
+      "title": "승인 콘텐츠 판정과 백업 보완 구현",
+      "project": "26_launch-completion",
+      "targetDir": "D:/01_project-59/project-40/project-40/26_launch-completion",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-16 10:32:09",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 10:32:57",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 10:56:11",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 10:56:51",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-16 10:56:51"
+    },
     {
       "jobId": "Jao-winter-firstscreen-20261016",
       "title": "사실적인 겨울 첫 화면 시안을 제작한다",
@@ -47,40 +91,6 @@
         }
       ],
       "lastUpdate": "2026-10-16 10:50:44"
-    },
-    {
-      "jobId": "Jmrgolf-launch-prepare-20261016",
-      "title": "승인 콘텐츠 판정과 백업 보완 구현",
-      "project": "26_launch-completion",
-      "targetDir": "D:/01_project-59/project-40/project-40/26_launch-completion",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-16 10:32:09",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-16 10:32:57",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-16 10:32:57"
     },
     {
       "jobId": "Jmrgolf-launch-baseline-20261016",
