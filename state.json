@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-17T03:07:22",
+  "generatedAt": "2026-10-17T05:54:20",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 5,
+    "working": 3,
+    "waitingReview": 6,
     "done": 750,
     "alerts": 34
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-admin-pricing-integration-20261016",
+      "title": "관리자 가격 접합과 독립 인수·배포 준비",
+      "project": "27_admin-pricing",
+      "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-17 02:17:45",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-17 02:21:19",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-17 05:52:53",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-17 05:52:53"
+    },
     {
       "jobId": "Jmrgolf-launch-project-68-20261016",
       "title": "정확한 검증 배포를 운영 도메인에 적용하고 공개한다",
@@ -92,40 +131,6 @@
         }
       ],
       "lastUpdate": "2026-10-17 03:02:12"
-    },
-    {
-      "jobId": "Jmrgolf-admin-pricing-integration-20261016",
-      "title": "관리자 가격 접합과 독립 인수·배포 준비",
-      "project": "27_admin-pricing",
-      "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-17 02:17:45",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-17 02:21:19",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-17 02:21:19"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-modules-20261016",
