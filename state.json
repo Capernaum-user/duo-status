@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-10-16T10:18:43",
+  "generatedAt": "2026-10-16T10:20:56",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 6,
     "done": 744,
     "alerts": 33
   },
   "jobs": [
+    {
+      "jobId": "Jao-winter-firstscreen-20261016",
+      "title": "사실적인 겨울 첫 화면 시안을 제작한다",
+      "project": "02_winter-realism",
+      "targetDir": "D:/01_project-59/project-47/project-47/02_winter-realism",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-16 10:15:35",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 10:20:46",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-16 10:20:46"
+    },
     {
       "jobId": "Jmrgolf-launch-baseline-20261016",
       "title": "정식 운영 보완을 위한 현재 상태와 변경 범위 확정",
@@ -62,35 +96,6 @@
         }
       ],
       "lastUpdate": "2026-10-16 10:18:06"
-    },
-    {
-      "jobId": "Jao-winter-firstscreen-20261016",
-      "title": "사실적인 겨울 첫 화면 시안을 제작한다",
-      "project": "02_winter-realism",
-      "targetDir": "D:/01_project-59/project-47/project-47/02_winter-realism",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-16 10:15:35",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-16 10:15:35"
     },
     {
       "jobId": "Jao-realism-research-20261016",
