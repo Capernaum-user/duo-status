@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T00:08:52",
+  "generatedAt": "2026-10-17T00:24:26",
   "counts": {
     "active": 15,
     "waitingWorker": 6,
@@ -74,9 +74,14 @@
           "time": "2026-10-17 00:08:18",
           "state": "REWORK",
           "round": 1
+        },
+        {
+          "time": "2026-10-17 00:23:20",
+          "state": "REWORK",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-17 00:08:18"
+      "lastUpdate": "2026-10-17 00:23:20"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-modules-20261016",
