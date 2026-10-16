@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-16T18:51:22",
+  "generatedAt": "2026-10-16T19:03:39",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 6,
-    "working": 4,
+    "working": 3,
     "waitingReview": 5,
-    "done": 748,
+    "done": 749,
     "alerts": 34
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-launch-project-68-20261016",
+      "title": "정확한 검증 배포를 운영 도메인에 적용하고 공개한다",
+      "project": "26_launch-completion",
+      "targetDir": "D:/01_project-59/project-40/project-40/26_launch-completion",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-16 13:25:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 13:28:34",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 19:02:51",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-16 19:02:51"
+    },
     {
       "jobId": "Jmrgolf-admin-pricing-modules-20261016",
       "title": "관리자 가격 독립 모듈 제작과 계약 검증",
@@ -106,40 +145,6 @@
         }
       ],
       "lastUpdate": "2026-10-16 15:19:26"
-    },
-    {
-      "jobId": "Jmrgolf-launch-project-68-20261016",
-      "title": "정확한 검증 배포를 운영 도메인에 적용하고 공개한다",
-      "project": "26_launch-completion",
-      "targetDir": "D:/01_project-59/project-40/project-40/26_launch-completion",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-16 13:25:18",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-16 13:28:34",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-16 13:28:34"
     },
     {
       "jobId": "Jmrgolf-launch-stage-20261016",
