@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-16T09:58:15",
+  "generatedAt": "2026-10-16T10:03:30",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 5,
+    "working": 4,
+    "waitingReview": 6,
     "done": 743,
-    "alerts": 33
+    "alerts": 34
   },
   "jobs": [
+    {
+      "jobId": "Jao-realism-research-20261016",
+      "title": "겨울 실사 시안의 자료와 착수 계획을 준비한다",
+      "project": "02_winter-realism",
+      "targetDir": "D:/01_project-59/project-47/project-47/02_winter-realism",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-16 09:40:29",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 09:43:08",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-16 10:02:27",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-16 10:02:27"
+    },
     {
       "jobId": "Jmrgolf-launch-baseline-20261016",
       "title": "정식 운영 보완을 위한 현재 상태와 변경 범위 확정",
@@ -42,40 +81,6 @@
         }
       ],
       "lastUpdate": "2026-10-16 09:57:13"
-    },
-    {
-      "jobId": "Jao-realism-research-20261016",
-      "title": "겨울 실사 시안의 자료와 착수 계획을 준비한다",
-      "project": "02_winter-realism",
-      "targetDir": "D:/01_project-59/project-47/project-47/02_winter-realism",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-16 09:40:29",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-16 09:43:08",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-16 09:43:08"
     },
     {
       "jobId": "Jao-winter-web-20261015",
