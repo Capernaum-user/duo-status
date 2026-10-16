@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-17T02:59:05",
+  "generatedAt": "2026-10-17T03:02:31",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 6,
-    "done": 749,
+    "waitingReview": 5,
+    "done": 750,
     "alerts": 34
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-59/project-40/project-40/26_launch-completion",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -84,9 +84,14 @@
           "time": "2026-10-17 02:58:50",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-17 03:02:12",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-17 02:58:50"
+      "lastUpdate": "2026-10-17 03:02:12"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
