@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-17T02:07:58",
+  "generatedAt": "2026-10-17T02:18:18",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
+    "waitingWorker": 7,
     "working": 3,
-    "waitingReview": 6,
-    "done": 748,
+    "waitingReview": 5,
+    "done": 749,
     "alerts": 35
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-admin-pricing-integration-20261016",
+      "title": "관리자 가격 접합과 독립 인수·배포 준비",
+      "project": "27_admin-pricing",
+      "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-17 02:17:45",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-17 02:17:45"
+    },
     {
       "jobId": "Jmrgolf-admin-pricing-modules-20261016",
       "title": "R2 모듈 검증과 보호 문서 동결 재작업",
@@ -16,15 +45,15 @@
       "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -59,9 +88,14 @@
           "time": "2026-10-17 02:07:02",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-17 02:17:43",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-17 02:07:02"
+      "lastUpdate": "2026-10-17 02:17:43"
     },
     {
       "jobId": "Jmrgolf-launch-project-68-20261016",
