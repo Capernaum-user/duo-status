@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-17T01:35:14",
+  "generatedAt": "2026-10-17T01:39:36",
   "counts": {
     "active": 15,
-    "waitingWorker": 7,
-    "working": 3,
+    "waitingWorker": 6,
+    "working": 4,
     "waitingReview": 5,
     "done": 748,
     "alerts": 35
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-admin-pricing-modules-20261016",
-      "title": "관리자 가격 독립 모듈 제작과 계약 검증",
+      "title": "R2 모듈 검증과 보호 문서 동결 재작업",
       "project": "27_admin-pricing",
       "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-17 01:34:21",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-17 01:38:50",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-17 01:34:21"
+      "lastUpdate": "2026-10-17 01:38:50"
     },
     {
       "jobId": "Jmrgolf-launch-project-68-20261016",
