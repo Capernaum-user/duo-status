@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-16T12:55:29",
+  "generatedAt": "2026-10-16T12:56:44",
   "counts": {
     "active": 14,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 5,
     "done": 747,
     "alerts": 34
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-launch-stage-20261016",
-      "title": "검증한 소스를 운영 배포 대상으로 준비한다",
+      "title": "게시 TLS 호환과 정확한 epoch를 포함한 검증 배포",
       "project": "26_launch-completion",
       "targetDir": "D:/01_project-59/project-40/project-40/26_launch-completion",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-16 12:55:06",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-16 12:56:09",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-16 12:55:06"
+      "lastUpdate": "2026-10-16 12:56:09"
     },
     {
       "jobId": "Jmrgolf-launch-app-20261016",
