@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-10-18T06:46:08",
+  "generatedAt": "2026-10-18T06:54:25",
   "counts": {
     "active": 14,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 6,
-    "done": 750,
+    "working": 4,
+    "waitingReview": 5,
+    "done": 751,
     "alerts": 35
   },
   "jobs": [
+    {
+      "jobId": "Jaopearl-20261018-interactive",
+      "title": "Pearl Atlas 상호작용 화면 구현",
+      "project": "11_pearl-interactive",
+      "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-18 06:53:20",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-18 06:53:37",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-18 06:53:37"
+    },
     {
       "jobId": "Jaopearl-20261018-contract",
       "title": "Pearl Atlas 개편의 변경 계약과 재사용 기준 확정",
@@ -16,15 +50,15 @@
       "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -44,9 +78,14 @@
           "time": "2026-10-18 06:45:10",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-18 06:53:19",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-18 06:45:10"
+      "lastUpdate": "2026-10-18 06:53:19"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
