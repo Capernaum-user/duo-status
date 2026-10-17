@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-17T09:31:44",
+  "generatedAt": "2026-10-18T06:31:33",
   "counts": {
-    "active": 13,
-    "waitingWorker": 5,
+    "active": 14,
+    "waitingWorker": 6,
     "working": 3,
     "waitingReview": 5,
     "done": 750,
     "alerts": 35
   },
   "jobs": [
+    {
+      "jobId": "Jaopearl-20261018-contract",
+      "title": "Pearl Atlas 개편의 변경 계약과 재사용 기준 확정",
+      "project": "11_pearl-interactive",
+      "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-18 06:29:59",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-18 06:29:59"
+    },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
       "title": "관리자 가격 접합과 독립 인수·배포 준비",
