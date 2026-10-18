@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-19T07:05:44",
+  "generatedAt": "2026-10-19T07:07:57",
   "counts": {
-    "active": 16,
+    "active": 15,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 7,
-    "done": 751,
-    "alerts": 37
+    "waitingReview": 6,
+    "done": 752,
+    "alerts": 36
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-59/project-41/project-41/01_ccuspjkafgu-features",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -44,9 +44,14 @@
           "time": "2026-10-19 07:04:23",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-19 07:07:04",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-19 07:04:23"
+      "lastUpdate": "2026-10-19 07:07:04"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
