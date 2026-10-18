@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-19T07:15:12",
+  "generatedAt": "2026-10-19T07:21:15",
   "counts": {
-    "active": 15,
-    "waitingWorker": 5,
+    "active": 16,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 6,
     "done": 752,
     "alerts": 36
   },
   "jobs": [
+    {
+      "jobId": "Jao-pearl-motion-prototype-20261019",
+      "title": "Agent Ontology Pearl Motion 단일 테스트 시안",
+      "project": "12_pearl-motion",
+      "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/12_pearl-motion",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-19 07:20:17",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-19 07:20:17"
+    },
     {
       "jobId": "Jvideo-ccuspjkafgu-learning-20261019",
       "title": "지정 영상의 기능을 근거로 분석하고 재사용 학습 노트를 남긴다",
