@@ -1,48 +1,14 @@
 {
-  "generatedAt": "2026-10-19T01:00:25",
+  "generatedAt": "2026-10-19T01:28:43",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
-    "working": 4,
+    "waitingWorker": 6,
+    "working": 3,
     "waitingReview": 6,
     "done": 751,
-    "alerts": 36
+    "alerts": 37
   },
   "jobs": [
-    {
-      "jobId": "Jmrgolf-vercel-access-recovery-20261018",
-      "title": "Vercel access recovery R1 - historical connection and current local binding",
-      "project": "28_operational-followup",
-      "targetDir": "D:/01_project-59/project-40/project-40/28_operational-followup",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입 [확인필요]",
-      "nextAction": "05_escalation 확인",
-      "flags": {
-        "escalated": true,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-18 22:42:35",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-18 22:47:45",
-          "state": "ESCALATED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-18 22:47:45"
-    },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
       "title": "경계 보조기 보정과 남은 실제 격리 시험",
@@ -50,10 +16,10 @@
       "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
       "round": 3,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨 [확인필요]",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -108,9 +74,48 @@
           "time": "2026-10-18 11:04:54",
           "state": "CLAIMED",
           "round": 3
+        },
+        {
+          "time": "2026-10-19 01:28:06",
+          "state": "REWORK",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-18 11:04:54"
+      "lastUpdate": "2026-10-19 01:28:06"
+    },
+    {
+      "jobId": "Jmrgolf-vercel-access-recovery-20261018",
+      "title": "Vercel access recovery R1 - historical connection and current local binding",
+      "project": "28_operational-followup",
+      "targetDir": "D:/01_project-59/project-40/project-40/28_operational-followup",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입 [확인필요]",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-18 22:42:35",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-18 22:47:45",
+          "state": "ESCALATED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-18 22:47:45"
     },
     {
       "jobId": "Jaopearl-20261018-interactive",
