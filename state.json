@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-19T01:37:59",
+  "generatedAt": "2026-10-19T02:28:16",
   "counts": {
     "active": 15,
     "waitingWorker": 6,
     "working": 3,
     "waitingReview": 6,
     "done": 751,
-    "alerts": 37
+    "alerts": 36
   },
   "jobs": [
     {
@@ -18,12 +18,12 @@
       "originDir": "<local>",
       "stage": "REWORK",
       "stageIndex": 1,
-      "stageLabel": "발주됨 [확인필요]",
+      "stageLabel": "발주됨",
       "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -43328,6 +43328,11 @@
       "file": "Jmrgolf-acceptance-spec_autopilot-unclaimed.md",
       "jobId": "Jmrgolf-acceptance-spec",
       "cause": "autopilot-unclaimed"
+    },
+    {
+      "file": "Jmrgolf-admin-pricing-integration-20261016_autopilot-claim-stale.md",
+      "jobId": "Jmrgolf-admin-pricing-integration-20261016",
+      "cause": "autopilot-claim-stale"
     },
     {
       "file": "Jmrgolf-admin-pricing-integration-20261016_r1-runtime-authority-and-boundary-20261017.md",
