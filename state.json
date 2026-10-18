@@ -1,29 +1,29 @@
 {
-  "generatedAt": "2026-10-19T08:52:00",
+  "generatedAt": "2026-10-19T08:53:17",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
+    "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 6,
+    "waitingReview": 7,
     "done": 752,
     "alerts": 37
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
-      "title": "기존 Creator의 정상 재사용 계약 정정, 읽기 전용 원인 분석 재개",
+      "title": "동일 Creator native 증거의 한정 공유 읽기, 그 후에만 A 분석",
       "project": "27_admin-pricing",
       "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
       "round": 10,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -164,9 +164,14 @@
           "time": "2026-10-19 08:51:35",
           "state": "REWORK",
           "round": 10
+        },
+        {
+          "time": "2026-10-19 08:53:03",
+          "state": "CLAIMED",
+          "round": 10
         }
       ],
-      "lastUpdate": "2026-10-19 08:51:35"
+      "lastUpdate": "2026-10-19 08:53:03"
     },
     {
       "jobId": "Jao-pearl-immersive-20261019",
@@ -175,15 +180,15 @@
       "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/13_pearl-immersive",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": false
       },
       "verify": null,
@@ -198,9 +203,14 @@
           "time": "2026-10-19 08:29:12",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-19 08:52:21",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-19 08:29:12"
+      "lastUpdate": "2026-10-19 08:52:21"
     },
     {
       "jobId": "Jao-pearl-motion-prototype-20261019",
