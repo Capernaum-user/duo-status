@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-10-19T08:25:03",
+  "generatedAt": "2026-10-19T08:28:20",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 3,
-    "waitingReview": 7,
+    "working": 4,
+    "waitingReview": 6,
     "done": 752,
     "alerts": 37
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
-      "title": "같은 독립 Tester의 정확 timeout 안전시험 한 건",
+      "title": "timeout FAIL의 Creator 원인 분석, 후속 수정·재검증은 별도 gate",
       "project": "27_admin-pricing",
       "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
-      "round": 7,
+      "round": 8,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -129,9 +129,19 @@
           "time": "2026-10-19 08:24:01",
           "state": "DONE",
           "round": 7
+        },
+        {
+          "time": "2026-10-19 08:27:23",
+          "state": "REWORK",
+          "round": 8
+        },
+        {
+          "time": "2026-10-19 08:28:05",
+          "state": "CLAIMED",
+          "round": 8
         }
       ],
-      "lastUpdate": "2026-10-19 08:24:01"
+      "lastUpdate": "2026-10-19 08:28:05"
     },
     {
       "jobId": "Jao-pearl-motion-prototype-20261019",
