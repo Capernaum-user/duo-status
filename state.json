@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-19T08:07:40",
+  "generatedAt": "2026-10-19T08:08:56",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 752,
     "alerts": 36
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
-      "title": "정산 감사 이후 새 exact-byte 안전성 관문, 기능 인수는 계속 미완료",
+      "title": "같은 독립 Tester의 정확 timeout 안전시험 한 건",
       "project": "27_admin-pricing",
       "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
       "round": 7,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -119,9 +119,14 @@
           "time": "2026-10-19 08:07:16",
           "state": "REWORK",
           "round": 7
+        },
+        {
+          "time": "2026-10-19 08:08:03",
+          "state": "CLAIMED",
+          "round": 7
         }
       ],
-      "lastUpdate": "2026-10-19 08:07:16"
+      "lastUpdate": "2026-10-19 08:08:03"
     },
     {
       "jobId": "Jao-pearl-motion-prototype-20261019",
