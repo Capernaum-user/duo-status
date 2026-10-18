@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-19T07:51:34",
+  "generatedAt": "2026-10-19T07:55:49",
   "counts": {
-    "active": 15,
-    "waitingWorker": 5,
+    "active": 16,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 6,
     "done": 752,
-    "alerts": 37
+    "alerts": 36
   },
   "jobs": [
     {
@@ -14,18 +14,18 @@
       "title": "Agent Ontology Pearl Motion 단일 테스트 시안",
       "project": "12_pearl-motion",
       "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/12_pearl-motion",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
-        "escalated": true,
+        "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -49,9 +49,14 @@
           "time": "2026-10-19 07:49:53",
           "state": "ESCALATED",
           "round": 1
+        },
+        {
+          "time": "2026-10-19 07:55:21",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-19 07:49:53"
+      "lastUpdate": "2026-10-19 07:55:21"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
