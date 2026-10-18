@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-19T07:55:49",
+  "generatedAt": "2026-10-19T07:57:06",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 752,
     "alerts": 36
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/12_pearl-motion",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -54,9 +54,14 @@
           "time": "2026-10-19 07:55:21",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-19 07:56:39",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-19 07:55:21"
+      "lastUpdate": "2026-10-19 07:56:39"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
