@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-19T06:54:13",
+  "generatedAt": "2026-10-19T07:04:29",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 7,
     "done": 751,
-    "alerts": 36
+    "alerts": 37
   },
   "jobs": [
+    {
+      "jobId": "Jvideo-ccuspjkafgu-learning-20261019",
+      "title": "지정 영상의 기능을 근거로 분석하고 재사용 학습 노트를 남긴다",
+      "project": "01_ccuspjkafgu-features",
+      "targetDir": "D:/01_project-59/project-41/project-41/01_ccuspjkafgu-features",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-19 06:40:30",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-19 06:49:51",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-19 07:04:23",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-19 07:04:23"
+    },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
       "title": "새 복구 담당 인계, 최소 보정과 실제 격리 검증",
@@ -92,40 +131,6 @@
         }
       ],
       "lastUpdate": "2026-10-19 06:53:27"
-    },
-    {
-      "jobId": "Jvideo-ccuspjkafgu-learning-20261019",
-      "title": "지정 영상의 기능을 근거로 분석하고 재사용 학습 노트를 남긴다",
-      "project": "01_ccuspjkafgu-features",
-      "targetDir": "D:/01_project-59/project-41/project-41/01_ccuspjkafgu-features",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-19 06:40:30",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-19 06:49:51",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-19 06:49:51"
     },
     {
       "jobId": "Jmrgolf-vercel-access-recovery-20261018",
