@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-19T09:04:07",
+  "generatedAt": "2026-10-19T09:05:24",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 3,
+    "waitingWorker": 5,
+    "working": 4,
     "waitingReview": 6,
     "done": 752,
     "alerts": 38
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
-      "title": "동일 Creator native 증거의 한정 공유 읽기, 그 후에만 A 분석",
+      "title": "native reader byte[] 호환성 정정과 실제 읽기 전용 원인 분석",
       "project": "27_admin-pricing",
       "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
       "round": 11,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -179,9 +179,14 @@
           "time": "2026-10-19 09:03:20",
           "state": "REWORK",
           "round": 11
+        },
+        {
+          "time": "2026-10-19 09:04:58",
+          "state": "CLAIMED",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-10-19 09:03:20"
+      "lastUpdate": "2026-10-19 09:04:58"
     },
     {
       "jobId": "Jao-pearl-immersive-20261019",
