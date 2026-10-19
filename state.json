@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-19T09:00:50",
+  "generatedAt": "2026-10-19T09:04:07",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 3,
-    "waitingReview": 7,
+    "waitingReview": 6,
     "done": 752,
     "alerts": 38
   },
@@ -14,17 +14,17 @@
       "title": "동일 Creator native 증거의 한정 공유 읽기, 그 후에만 A 분석",
       "project": "27_admin-pricing",
       "targetDir": "D:/01_project-59/project-40/project-40/27_admin-pricing",
-      "round": 10,
+      "round": 11,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -174,9 +174,14 @@
           "time": "2026-10-19 08:59:43",
           "state": "DONE",
           "round": 10
+        },
+        {
+          "time": "2026-10-19 09:03:20",
+          "state": "REWORK",
+          "round": 11
         }
       ],
-      "lastUpdate": "2026-10-19 08:59:43"
+      "lastUpdate": "2026-10-19 09:03:20"
     },
     {
       "jobId": "Jao-pearl-immersive-20261019",
