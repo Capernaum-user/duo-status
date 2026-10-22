@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-23T07:05:53",
+  "generatedAt": "2026-10-23T07:07:11",
   "counts": {
     "active": 17,
-    "waitingWorker": 7,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 6,
     "done": 753,
     "alerts": 39
@@ -16,14 +16,14 @@
       "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/project-68",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-23 07:04:03",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-23 07:05:49",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-23 07:04:03"
+      "lastUpdate": "2026-10-23 07:05:49"
     },
     {
       "jobId": "Jmrgolf-admin-residual-20261023",
@@ -45,14 +50,14 @@
       "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/admin",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -63,9 +68,14 @@
           "time": "2026-10-23 07:04:03",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-23 07:05:36",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-23 07:04:03"
+      "lastUpdate": "2026-10-23 07:05:36"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
