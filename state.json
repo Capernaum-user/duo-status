@@ -1,14 +1,98 @@
 {
-  "generatedAt": "2026-10-23T08:55:54",
+  "generatedAt": "2026-10-23T08:57:11",
   "counts": {
     "active": 17,
     "waitingWorker": 5,
-    "working": 6,
-    "waitingReview": 6,
+    "working": 5,
+    "waitingReview": 7,
     "done": 753,
     "alerts": 39
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-project-68-residual-20261023",
+      "title": "공개 페이지 잔여 작업 R4 — 검증한 Production 배포를 운영 주소에 연결",
+      "project": "project-68",
+      "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/project-68",
+      "round": 4,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-23 07:04:03",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-23 07:05:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-23 07:18:42",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-23 07:32:09",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-23 07:32:40",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-23 07:47:33",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-23 07:59:03",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-23 07:59:25",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-10-23 08:21:01",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-10-23 08:35:43",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-10-23 08:36:08",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-10-23 08:56:26",
+          "state": "DONE",
+          "round": 4
+        }
+      ],
+      "lastUpdate": "2026-10-23 08:56:26"
+    },
     {
       "jobId": "Jmrgolf-admin-residual-20261023",
       "title": "관리자 잔여 작업 R4 — 정상 관리자 조회와 적용 입력 정리",
@@ -87,85 +171,6 @@
         }
       ],
       "lastUpdate": "2026-10-23 08:55:12"
-    },
-    {
-      "jobId": "Jmrgolf-project-68-residual-20261023",
-      "title": "공개 페이지 잔여 작업 R4 — 검증한 Production 배포를 운영 주소에 연결",
-      "project": "project-68",
-      "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/project-68",
-      "round": 4,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-23 07:04:03",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-23 07:05:49",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-23 07:18:42",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-23 07:32:09",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-23 07:32:40",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-23 07:47:33",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-23 07:59:03",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-10-23 07:59:25",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-10-23 08:21:01",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-10-23 08:35:43",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-10-23 08:36:08",
-          "state": "CLAIMED",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-10-23 08:36:08"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
