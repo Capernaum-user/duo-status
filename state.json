@@ -1,30 +1,30 @@
 {
-  "generatedAt": "2026-10-23T07:47:52",
+  "generatedAt": "2026-10-23T08:00:09",
   "counts": {
     "active": 17,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 7,
+    "working": 6,
+    "waitingReview": 6,
     "done": 753,
     "alerts": 39
   },
   "jobs": [
     {
       "jobId": "Jmrgolf-project-68-residual-20261023",
-      "title": "공개 페이지 잔여 작업: 검색·문의·모바일 입력",
+      "title": "공개 페이지 잔여 작업 R3 — 검색 설정 적용과 대기 배포",
       "project": "project-68",
       "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/project-68",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -59,9 +59,19 @@
           "time": "2026-10-23 07:47:33",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-23 07:59:03",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-23 07:59:25",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-23 07:47:33"
+      "lastUpdate": "2026-10-23 07:59:25"
     },
     {
       "jobId": "Jmrgolf-admin-residual-20261023",
