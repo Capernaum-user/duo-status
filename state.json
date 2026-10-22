@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-23T07:17:28",
+  "generatedAt": "2026-10-23T07:19:45",
   "counts": {
     "active": 17,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 7,
+    "working": 4,
+    "waitingReview": 8,
     "done": 753,
-    "alerts": 39
+    "alerts": 40
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-project-68-residual-20261023",
+      "title": "공개 페이지 잔여 작업: 검색·문의·모바일 입력",
+      "project": "project-68",
+      "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/project-68",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-23 07:04:03",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-23 07:05:49",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-23 07:18:42",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-23 07:18:42"
+    },
     {
       "jobId": "Jmrgolf-admin-residual-20261023",
       "title": "관리자 잔여 작업: 현황 대조와 해결 가능한 항목 준비",
@@ -47,40 +86,6 @@
         }
       ],
       "lastUpdate": "2026-10-23 07:16:57"
-    },
-    {
-      "jobId": "Jmrgolf-project-68-residual-20261023",
-      "title": "공개 페이지 잔여 작업: 검색·문의·모바일 입력",
-      "project": "project-68",
-      "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/project-68",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-23 07:04:03",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-23 07:05:49",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-23 07:05:49"
     },
     {
       "jobId": "Jmrgolf-admin-pricing-integration-20261016",
