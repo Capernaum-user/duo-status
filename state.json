@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T01:32:32",
+  "generatedAt": "2026-10-24T01:34:49",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 763,
     "alerts": 38
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jaopearl-20261018-wordpress",
-      "title": "WordPress 통합 후보와 운영 반영 패키지",
+      "title": "Pearl Atlas 운영용 파생 테마와 정확한 반영 계약",
       "project": "11_pearl-interactive",
       "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -54,9 +54,14 @@
           "time": "2026-10-24 01:32:07",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-10-24 01:34:26",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-24 01:32:07"
+      "lastUpdate": "2026-10-24 01:34:26"
     },
     {
       "jobId": "Jmrgolf-opsverify-delivery-live-20261023",
