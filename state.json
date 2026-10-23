@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-23T23:29:15",
+  "generatedAt": "2026-10-23T23:31:33",
   "counts": {
     "active": 18,
-    "waitingWorker": 6,
-    "working": 7,
+    "waitingWorker": 5,
+    "working": 8,
     "waitingReview": 5,
     "done": 759,
     "alerts": 38
@@ -16,14 +16,14 @@
       "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/operations-delivery",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -44,9 +44,14 @@
           "time": "2026-10-23 23:28:55",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-23 23:30:55",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-23 23:28:55"
+      "lastUpdate": "2026-10-23 23:30:55"
     },
     {
       "jobId": "Jmrgolf-opsverify-human-20261023",
