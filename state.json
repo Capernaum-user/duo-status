@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-23T19:18:35",
+  "generatedAt": "2026-10-23T19:19:48",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 759,
     "alerts": 38
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-23 19:18:01",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-23 19:19:29",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-23 19:18:01"
+      "lastUpdate": "2026-10-23 19:19:29"
     },
     {
       "jobId": "Jaopearl-20261018-interactive",
