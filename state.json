@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-23T10:45:22",
+  "generatedAt": "2026-10-23T10:55:39",
   "counts": {
-    "active": 16,
+    "active": 15,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 7,
-    "done": 754,
+    "waitingReview": 6,
+    "done": 755,
     "alerts": 39
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/admin",
       "round": 7,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -134,9 +134,14 @@
           "time": "2026-10-23 10:44:46",
           "state": "DONE",
           "round": 7
+        },
+        {
+          "time": "2026-10-23 10:54:59",
+          "state": "ACCEPTED",
+          "round": 7
         }
       ],
-      "lastUpdate": "2026-10-23 10:44:46"
+      "lastUpdate": "2026-10-23 10:54:59"
     },
     {
       "jobId": "Jmrgolf-project-68-residual-20261023",
