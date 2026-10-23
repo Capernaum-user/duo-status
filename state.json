@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T06:38:14",
+  "generatedAt": "2026-10-24T06:44:31",
   "counts": {
     "active": 17,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 6,
     "done": 765,
     "alerts": 38
@@ -16,14 +16,14 @@
       "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-24 06:37:20",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-24 06:43:31",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-24 06:37:20"
+      "lastUpdate": "2026-10-24 06:43:31"
     },
     {
       "jobId": "Jmrgolf-remaining-backup-20261024",
