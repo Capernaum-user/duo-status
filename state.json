@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-23T12:45:35",
+  "generatedAt": "2026-10-23T12:46:51",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 756,
     "alerts": 39
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-courses-refresh-stage-20261023",
-      "title": "버튼 제거 빌드의 대기 배포",
+      "title": "기존 대기 배포의 화면 검증 보완",
       "project": "01_app",
       "targetDir": "D:/01_project-59/project-40/project-40/29_admin-redesign/01_app",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-23 12:45:17",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-23 12:45:51",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-23 12:45:17"
+      "lastUpdate": "2026-10-23 12:45:51"
     },
     {
       "jobId": "Jmrgolf-courses-refresh-ui-20261023",
