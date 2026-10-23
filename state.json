@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-10-24T07:46:45",
+  "generatedAt": "2026-10-24T07:48:00",
   "counts": {
     "active": 18,
     "waitingWorker": 6,
-    "working": 6,
-    "waitingReview": 6,
-    "done": 767,
-    "alerts": 39
+    "working": 7,
+    "waitingReview": 5,
+    "done": 768,
+    "alerts": 38
   },
   "jobs": [
     {
-      "jobId": "Jmrgolf-remaining-ui-20261024",
-      "title": "MrGolf planner and administrator remaining implementation",
-      "project": "ui",
-      "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
-      "round": 5,
+      "jobId": "Jaoresidual-20261024-live",
+      "title": "Jaoresidual-20261024-live",
+      "project": "ao-pearl-residual-20261024",
+      "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-residual-20261024",
+      "round": 1,
       "originDir": "<local>",
-      "stage": "REWORK",
+      "stage": "PLANNED",
       "stageIndex": 1,
       "stageLabel": "발주됨",
       "nextAction": "워커 패널에서 /check",
@@ -24,6 +24,79 @@
         "escalated": false,
         "protocolError": false,
         "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 07:47:14",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-24 07:47:14"
+    },
+    {
+      "jobId": "Jaoresidual-20261024-runtime",
+      "title": "Jaoresidual-20261024-runtime",
+      "project": "ao-pearl-residual-20261024",
+      "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-residual-20261024",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 07:21:48",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 07:23:41",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 07:42:59",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 07:47:13",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-24 07:47:13"
+    },
+    {
+      "jobId": "Jmrgolf-remaining-ui-20261024",
+      "title": "MrGolf remaining UI R5 — actual local administrator fixture",
+      "project": "ui",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
+      "round": 5,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -94,48 +167,14 @@
           "time": "2026-10-24 07:46:30",
           "state": "REWORK",
           "round": 5
-        }
-      ],
-      "lastUpdate": "2026-10-24 07:46:30"
-    },
-    {
-      "jobId": "Jaoresidual-20261024-runtime",
-      "title": "Jaoresidual-20261024-runtime",
-      "project": "ao-pearl-residual-20261024",
-      "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-residual-20261024",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 07:21:48",
-          "state": "PLANNED",
-          "round": 1
         },
         {
-          "time": "2026-10-24 07:23:41",
+          "time": "2026-10-24 07:47:09",
           "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 07:42:59",
-          "state": "DONE",
-          "round": 1
+          "round": 5
         }
       ],
-      "lastUpdate": "2026-10-24 07:42:59"
+      "lastUpdate": "2026-10-24 07:47:09"
     },
     {
       "jobId": "Jmrgolf-remaining-stage-20261024",
