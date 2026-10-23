@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-10-24T06:56:49",
+  "generatedAt": "2026-10-24T06:58:05",
   "counts": {
     "active": 17,
     "waitingWorker": 6,
-    "working": 5,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 7,
     "done": 765,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-remaining-ui-20261024",
+      "title": "MrGolf planner and administrator remaining implementation",
+      "project": "ui",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 06:12:11",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:13:56",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:21:54",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:37:20",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 06:43:31",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 06:57:16",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-24 06:57:16"
+    },
     {
       "jobId": "Jmrgolf-remaining-delivery-20261024",
       "title": "MrGolf remaining project-68ation and designated inquiry delivery",
@@ -47,55 +101,6 @@
         }
       ],
       "lastUpdate": "2026-10-24 06:56:25"
-    },
-    {
-      "jobId": "Jmrgolf-remaining-ui-20261024",
-      "title": "MrGolf planner and administrator remaining implementation",
-      "project": "ui",
-      "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 06:12:11",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:13:56",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:21:54",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:37:20",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-24 06:43:31",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-24 06:43:31"
     },
     {
       "jobId": "Jmrgolf-remaining-backup-20261024",
