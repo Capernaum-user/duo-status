@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-10-24T07:01:37",
+  "generatedAt": "2026-10-24T07:02:54",
   "counts": {
     "active": 18,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 7,
     "done": 765,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-remaining-delivery-20261024",
+      "title": "MrGolf remaining project-68ation and designated inquiry delivery",
+      "project": "delivery",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/delivery",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 06:12:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:16:22",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:56:25",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 07:02:02",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-24 07:02:02"
+    },
     {
       "jobId": "Jaoresidual-20261024-ux",
       "title": "Jaoresidual-20261024-ux",
@@ -96,45 +140,6 @@
         }
       ],
       "lastUpdate": "2026-10-24 06:57:16"
-    },
-    {
-      "jobId": "Jmrgolf-remaining-delivery-20261024",
-      "title": "MrGolf remaining project-68ation and designated inquiry delivery",
-      "project": "delivery",
-      "targetDir": "C:/Temp/MrGolf_remaining_20261024/delivery",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 06:12:12",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:16:22",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:56:25",
-          "state": "REWORK",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-24 06:56:25"
     },
     {
       "jobId": "Jmrgolf-remaining-backup-20261024",
