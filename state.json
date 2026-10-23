@@ -1,14 +1,97 @@
 {
-  "generatedAt": "2026-10-24T07:32:44",
+  "generatedAt": "2026-10-24T07:36:59",
   "counts": {
     "active": 18,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 6,
-    "waitingReview": 7,
-    "done": 766,
+    "waitingReview": 6,
+    "done": 767,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-remaining-stage-20261024",
+      "title": "MrGolf combined pricing UI and inquiry recipient staged production release",
+      "project": "combined-stage",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/combined-stage",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 07:36:41",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-24 07:36:41"
+    },
+    {
+      "jobId": "Jmrgolf-remaining-delivery-20261024",
+      "title": "MrGolf remaining project-68ation and designated inquiry delivery",
+      "project": "delivery",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/delivery",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 06:12:12",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:16:22",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:56:25",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 07:02:02",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 07:08:24",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 07:36:39",
+          "state": "ACCEPTED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-24 07:36:39"
+    },
     {
       "jobId": "Jmrgolf-remaining-ui-20261024",
       "title": "MrGolf planner and administrator remaining implementation",
@@ -170,55 +253,6 @@
         }
       ],
       "lastUpdate": "2026-10-24 07:21:45"
-    },
-    {
-      "jobId": "Jmrgolf-remaining-delivery-20261024",
-      "title": "MrGolf remaining project-68ation and designated inquiry delivery",
-      "project": "delivery",
-      "targetDir": "C:/Temp/MrGolf_remaining_20261024/delivery",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 06:12:12",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:16:22",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:56:25",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-24 07:02:02",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-24 07:08:24",
-          "state": "DONE",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-24 07:08:24"
     },
     {
       "jobId": "Jmrgolf-remaining-backup-20261024",
