@@ -1,14 +1,117 @@
 {
-  "generatedAt": "2026-10-23T19:16:21",
+  "generatedAt": "2026-10-23T19:18:35",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 6,
-    "done": 758,
-    "alerts": 39
+    "waitingReview": 5,
+    "done": 759,
+    "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jaopearl-20261018-wordpress",
+      "title": "WordPress 통합 후보와 운영 반영 패키지",
+      "project": "11_pearl-interactive",
+      "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-23 19:18:01",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-23 19:18:01"
+    },
+    {
+      "jobId": "Jaopearl-20261018-interactive",
+      "title": "ORDER_Jaopearl-20261018-interactive_R03 — 실제 탭 상태를 관측하는 검사 환경 수정",
+      "project": "11_pearl-interactive",
+      "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-18 06:53:20",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-18 06:53:37",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-18 07:23:20",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-18 07:31:05",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-18 07:32:19",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-18 07:42:53",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-18 07:52:23",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-18 07:52:36",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-10-18 08:00:55",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-10-23 19:17:59",
+          "state": "ACCEPTED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-10-23 19:17:59"
+    },
     {
       "jobId": "Jmrgolf-courses-refresh-live-20261023",
       "title": "검증한 버튼 제거 빌드 운영 반영",
@@ -886,75 +989,6 @@
         }
       ],
       "lastUpdate": "2026-10-18 22:47:45"
-    },
-    {
-      "jobId": "Jaopearl-20261018-interactive",
-      "title": "ORDER_Jaopearl-20261018-interactive_R03 — 실제 탭 상태를 관측하는 검사 환경 수정",
-      "project": "11_pearl-interactive",
-      "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-18 06:53:20",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-18 06:53:37",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-18 07:23:20",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-18 07:31:05",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-18 07:32:19",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-18 07:42:53",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-18 07:52:23",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-10-18 07:52:36",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-10-18 08:00:55",
-          "state": "DONE",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-10-18 08:00:55"
     },
     {
       "jobId": "Jaopearl-20261018-contract",
