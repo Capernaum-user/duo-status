@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T07:00:21",
+  "generatedAt": "2026-10-24T07:01:37",
   "counts": {
     "active": 18,
-    "waitingWorker": 7,
-    "working": 4,
+    "waitingWorker": 6,
+    "working": 5,
     "waitingReview": 7,
     "done": 765,
     "alerts": 38
@@ -16,14 +16,14 @@
       "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-residual-20261024",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-24 06:59:57",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-24 07:01:20",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-24 06:59:57"
+      "lastUpdate": "2026-10-24 07:01:20"
     },
     {
       "jobId": "Jmrgolf-remaining-ui-20261024",
