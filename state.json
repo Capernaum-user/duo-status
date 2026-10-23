@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T02:46:55",
+  "generatedAt": "2026-10-24T02:48:12",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 764,
     "alerts": 38
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jaopearl-20261024-live",
-      "title": "Pearl Atlas 실제 사이트 적용",
+      "title": "Pearl Atlas 문의 안내 한 페이지 교정",
       "project": "07_live-release",
       "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive/07_live-release",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -44,9 +44,14 @@
           "time": "2026-10-24 02:45:57",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-24 02:46:59",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-24 02:45:57"
+      "lastUpdate": "2026-10-24 02:46:59"
     },
     {
       "jobId": "Jaopearl-20261018-wordpress",
