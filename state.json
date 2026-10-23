@@ -1,14 +1,103 @@
 {
-  "generatedAt": "2026-10-24T07:43:29",
+  "generatedAt": "2026-10-24T07:46:45",
   "counts": {
     "active": 18,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 6,
-    "waitingReview": 7,
+    "waitingReview": 6,
     "done": 767,
-    "alerts": 38
+    "alerts": 39
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-remaining-ui-20261024",
+      "title": "MrGolf planner and administrator remaining implementation",
+      "project": "ui",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
+      "round": 5,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 06:12:11",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:13:56",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:21:54",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:37:20",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 06:43:31",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 06:57:16",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 07:08:57",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-24 07:09:28",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-10-24 07:18:21",
+          "state": "DONE",
+          "round": 3
+        },
+        {
+          "time": "2026-10-24 07:27:59",
+          "state": "REWORK",
+          "round": 4
+        },
+        {
+          "time": "2026-10-24 07:28:38",
+          "state": "CLAIMED",
+          "round": 4
+        },
+        {
+          "time": "2026-10-24 07:31:41",
+          "state": "DONE",
+          "round": 4
+        },
+        {
+          "time": "2026-10-24 07:46:30",
+          "state": "REWORK",
+          "round": 5
+        }
+      ],
+      "lastUpdate": "2026-10-24 07:46:30"
+    },
     {
       "jobId": "Jaoresidual-20261024-runtime",
       "title": "Jaoresidual-20261024-runtime",
@@ -18,13 +107,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -135,90 +224,6 @@
         }
       ],
       "lastUpdate": "2026-10-24 07:36:39"
-    },
-    {
-      "jobId": "Jmrgolf-remaining-ui-20261024",
-      "title": "MrGolf planner and administrator remaining implementation",
-      "project": "ui",
-      "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
-      "round": 4,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 06:12:11",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:13:56",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:21:54",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:37:20",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-24 06:43:31",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-24 06:57:16",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-24 07:08:57",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-10-24 07:09:28",
-          "state": "CLAIMED",
-          "round": 3
-        },
-        {
-          "time": "2026-10-24 07:18:21",
-          "state": "DONE",
-          "round": 3
-        },
-        {
-          "time": "2026-10-24 07:27:59",
-          "state": "REWORK",
-          "round": 4
-        },
-        {
-          "time": "2026-10-24 07:28:38",
-          "state": "CLAIMED",
-          "round": 4
-        },
-        {
-          "time": "2026-10-24 07:31:41",
-          "state": "DONE",
-          "round": 4
-        }
-      ],
-      "lastUpdate": "2026-10-24 07:31:41"
     },
     {
       "jobId": "Jaoresidual-20261024-ux",
