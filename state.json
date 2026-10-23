@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-10-24T06:13:05",
+  "generatedAt": "2026-10-24T06:14:21",
   "counts": {
     "active": 17,
-    "waitingWorker": 8,
-    "working": 4,
+    "waitingWorker": 7,
+    "working": 5,
     "waitingReview": 5,
     "done": 765,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-remaining-ui-20261024",
+      "title": "MrGolf planner and administrator remaining implementation",
+      "project": "ui",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 06:12:11",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:13:56",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-24 06:13:56"
+    },
     {
       "jobId": "Jmrgolf-remaining-backup-20261024",
       "title": "MrGolf remaining complete service backup and recovery coverage",
@@ -66,35 +100,6 @@
         }
       ],
       "lastUpdate": "2026-10-24 06:12:12"
-    },
-    {
-      "jobId": "Jmrgolf-remaining-ui-20261024",
-      "title": "MrGolf planner and administrator remaining implementation",
-      "project": "ui",
-      "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 06:12:11",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-24 06:12:11"
     },
     {
       "jobId": "Jaopearl-20261024-live",
