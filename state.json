@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-24T03:09:48",
+  "generatedAt": "2026-10-24T03:12:05",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 6,
-    "done": 764,
-    "alerts": 39
+    "waitingReview": 5,
+    "done": 765,
+    "alerts": 38
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive/07_live-release",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -59,9 +59,14 @@
           "time": "2026-10-24 03:09:02",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-24 03:11:26",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-24 03:09:02"
+      "lastUpdate": "2026-10-24 03:11:26"
     },
     {
       "jobId": "Jaopearl-20261018-wordpress",
