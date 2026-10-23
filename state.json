@@ -1,58 +1,14 @@
 {
-  "generatedAt": "2026-10-24T08:22:38",
+  "generatedAt": "2026-10-24T08:33:55",
   "counts": {
     "active": 18,
     "waitingWorker": 5,
-    "working": 8,
-    "waitingReview": 5,
+    "working": 7,
+    "waitingReview": 6,
     "done": 768,
     "alerts": 38
   },
   "jobs": [
-    {
-      "jobId": "Jmrgolf-remaining-stage-20261024",
-      "title": "MrGolf stage R2 remaining no-price layout correction",
-      "project": "combined-stage",
-      "targetDir": "C:/Temp/MrGolf_remaining_20261024/combined-stage",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 07:36:41",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 07:41:10",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 08:20:41",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-24 08:22:25",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-24 08:22:25"
-    },
     {
       "jobId": "Jmrgolf-remaining-ui-20261024",
       "title": "MrGolf R6 isolated fixture baseline reconciliation",
@@ -60,15 +16,15 @@
       "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
       "round": 6,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -158,9 +114,58 @@
           "time": "2026-10-24 08:15:34",
           "state": "CLAIMED",
           "round": 6
+        },
+        {
+          "time": "2026-10-24 08:33:20",
+          "state": "DONE",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-10-24 08:15:34"
+      "lastUpdate": "2026-10-24 08:33:20"
+    },
+    {
+      "jobId": "Jmrgolf-remaining-stage-20261024",
+      "title": "MrGolf stage R2 remaining no-price layout correction",
+      "project": "combined-stage",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/combined-stage",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 07:36:41",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 07:41:10",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 08:20:41",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 08:22:25",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-24 08:22:25"
     },
     {
       "jobId": "Jaoresidual-20261024-live",
