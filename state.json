@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-23T23:53:33",
+  "generatedAt": "2026-10-23T23:55:47",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 5,
     "done": 762,
     "alerts": 38
@@ -16,14 +16,14 @@
       "targetDir": "C:/Temp/MrGolf_parallel-cycle_20261023/operations-delivery",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-23 23:52:59",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-23 23:53:53",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-23 23:52:59"
+      "lastUpdate": "2026-10-23 23:53:53"
     },
     {
       "jobId": "Jmrgolf-opsverify-delivery-preflight-20261023",
