@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-24T07:09:58",
+  "generatedAt": "2026-10-24T07:18:13",
   "counts": {
     "active": 18,
     "waitingWorker": 5,
-    "working": 7,
-    "waitingReview": 6,
+    "working": 6,
+    "waitingReview": 7,
     "done": 765,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jaoresidual-20261024-ux",
+      "title": "Jaoresidual-20261024-ux",
+      "project": "ao-pearl-residual-20261024",
+      "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-residual-20261024",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 06:59:57",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 07:01:20",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 07:17:59",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-24 07:17:59"
+    },
     {
       "jobId": "Jmrgolf-remaining-ui-20261024",
       "title": "MrGolf planner and administrator remaining implementation",
@@ -170,40 +209,6 @@
         }
       ],
       "lastUpdate": "2026-10-24 07:04:33"
-    },
-    {
-      "jobId": "Jaoresidual-20261024-ux",
-      "title": "Jaoresidual-20261024-ux",
-      "project": "ao-pearl-residual-20261024",
-      "targetDir": "C:/Users/권태향/.codex/tmp/ao-pearl-residual-20261024",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 06:59:57",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 07:01:20",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-24 07:01:20"
     },
     {
       "jobId": "Jaopearl-20261024-live",
