@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-24T02:17:45",
+  "generatedAt": "2026-10-24T02:25:02",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 6,
-    "done": 763,
+    "waitingReview": 5,
+    "done": 764,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jaopearl-20261024-live",
+      "title": "Pearl Atlas 실제 사이트 적용",
+      "project": "07_live-release",
+      "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive/07_live-release",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 02:24:28",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-24 02:24:28"
+    },
     {
       "jobId": "Jaopearl-20261018-wordpress",
       "title": "Pearl Atlas 운영용 파생 테마와 정확한 반영 계약",
@@ -16,15 +45,15 @@
       "targetDir": "D:/01_project-59/project-45/project-45/00_reuel-maison/tmp/11_pearl-interactive",
       "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -64,9 +93,14 @@
           "time": "2026-10-24 02:17:14",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-10-24 02:24:27",
+          "state": "ACCEPTED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-24 02:17:14"
+      "lastUpdate": "2026-10-24 02:24:27"
     },
     {
       "jobId": "Jmrgolf-opsverify-delivery-live-20261023",
