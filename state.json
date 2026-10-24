@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T12:15:45",
+  "generatedAt": "2026-10-24T12:17:01",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 772,
     "alerts": 38
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-remaining-ui-20261024",
-      "title": "MrGolf UI R13 exact isolated source attribute repair and functional verification",
+      "title": "MrGolf R14 Home-to-planner transfer and inquiry workflow version synchronization",
       "project": "ui",
       "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
       "round": 14,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -229,9 +229,14 @@
           "time": "2026-10-24 12:15:27",
           "state": "REWORK",
           "round": 14
+        },
+        {
+          "time": "2026-10-24 12:16:03",
+          "state": "CLAIMED",
+          "round": 14
         }
       ],
-      "lastUpdate": "2026-10-24 12:15:27"
+      "lastUpdate": "2026-10-24 12:16:03"
     },
     {
       "jobId": "Jaoresidual-20261024-live",
