@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-24T21:07:26",
+  "generatedAt": "2026-10-24T21:08:48",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 6,
+    "waitingReview": 5,
     "done": 776,
     "alerts": 38
   },
@@ -14,18 +14,18 @@
       "title": "MrGolf corrected Home and inquiry flow production promotion",
       "project": "ui-flow-live",
       "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui-flow-live",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-24 21:05:48",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-24 21:07:40",
+          "state": "REWORK",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-24 21:05:48"
+      "lastUpdate": "2026-10-24 21:07:40"
     },
     {
       "jobId": "Jmrgolf-flow-stage-20261024",
