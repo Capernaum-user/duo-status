@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-24T16:21:52",
+  "generatedAt": "2026-10-24T16:27:12",
   "counts": {
-    "active": 16,
+    "active": 15,
     "waitingWorker": 5,
     "working": 5,
-    "waitingReview": 6,
-    "done": 774,
+    "waitingReview": 5,
+    "done": 775,
     "alerts": 38
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "C:/Users/권태향/.codex/tmp/ao-direct-inquiry-20261024",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-24 16:20:57",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-24 16:26:30",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-24 16:20:57"
+      "lastUpdate": "2026-10-24 16:26:30"
     },
     {
       "jobId": "Jaodirect-20261024-candidate",
