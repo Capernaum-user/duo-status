@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T14:08:51",
+  "generatedAt": "2026-10-24T14:10:09",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 772,
     "alerts": 38
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-remaining-ui-20261024",
-      "title": "MrGolf R15 priced planner layout stability",
+      "title": "MrGolf R16 price conditions dialog placement",
       "project": "ui",
       "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
       "round": 16,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -259,9 +259,14 @@
           "time": "2026-10-24 14:08:38",
           "state": "REWORK",
           "round": 16
+        },
+        {
+          "time": "2026-10-24 14:09:03",
+          "state": "CLAIMED",
+          "round": 16
         }
       ],
-      "lastUpdate": "2026-10-24 14:08:38"
+      "lastUpdate": "2026-10-24 14:09:03"
     },
     {
       "jobId": "Jaoresidual-20261024-live",
