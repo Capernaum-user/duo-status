@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T21:10:05",
+  "generatedAt": "2026-10-24T22:43:29",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -45280,6 +45280,11 @@
       "file": "Jmrgolf-project-49-100_autopilot-unclaimed.md",
       "jobId": "Jmrgolf-project-49-100",
       "cause": "autopilot-unclaimed"
+    },
+    {
+      "file": "Jmrgolf-flow-live-20261024_autopilot-claim-stale.md",
+      "jobId": "Jmrgolf-flow-live-20261024",
+      "cause": "autopilot-claim-stale"
     },
     {
       "file": "Jmrgolf-intake-form_autopilot-unclaimed.md",
