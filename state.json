@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T11:01:07",
+  "generatedAt": "2026-10-24T11:02:24",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 5,
     "done": 771,
     "alerts": 38
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-remaining-ui-20261024",
-      "title": "MrGolf UI R11 original production build and admin task verification",
+      "title": "MrGolf UI R12 historical-process query repair and original admin verification",
       "project": "ui",
       "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
       "round": 12,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -199,9 +199,14 @@
           "time": "2026-10-24 11:00:51",
           "state": "REWORK",
           "round": 12
+        },
+        {
+          "time": "2026-10-24 11:01:31",
+          "state": "CLAIMED",
+          "round": 12
         }
       ],
-      "lastUpdate": "2026-10-24 11:00:51"
+      "lastUpdate": "2026-10-24 11:01:31"
     },
     {
       "jobId": "Jmrgolf-remaining-live-20261024",
