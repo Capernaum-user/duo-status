@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T22:43:29",
+  "generatedAt": "2026-10-24T23:17:51",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -54,9 +54,14 @@
           "time": "2026-10-24 21:09:06",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-24 23:17:27",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-24 21:09:06"
+      "lastUpdate": "2026-10-24 23:17:27"
     },
     {
       "jobId": "Jmrgolf-flow-stage-20261024",
