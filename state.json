@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-10-24T09:14:12",
+  "generatedAt": "2026-10-24T09:16:27",
   "counts": {
-    "active": 18,
+    "active": 17,
     "waitingWorker": 5,
-    "working": 7,
+    "working": 6,
     "waitingReview": 6,
-    "done": 769,
+    "done": 770,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-remaining-backup-20261024",
+      "title": "MrGolf remaining complete service backup and recovery coverage",
+      "project": "backup",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/backup",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 06:12:13",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:17:01",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 06:32:21",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 07:03:30",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 07:04:33",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-24 09:16:16",
+          "state": "ACCEPTED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-24 09:16:16"
+    },
     {
       "jobId": "Jmrgolf-remaining-live-20261024",
       "title": "MrGolf combined release same-build production promotion",
@@ -396,55 +450,6 @@
         }
       ],
       "lastUpdate": "2026-10-24 07:21:45"
-    },
-    {
-      "jobId": "Jmrgolf-remaining-backup-20261024",
-      "title": "MrGolf remaining complete service backup and recovery coverage",
-      "project": "backup",
-      "targetDir": "C:/Temp/MrGolf_remaining_20261024/backup",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 06:12:13",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:17:01",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 06:32:21",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 07:03:30",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-24 07:04:33",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-24 07:04:33"
     },
     {
       "jobId": "Jaopearl-20261024-live",
