@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-24T13:21:29",
+  "generatedAt": "2026-10-24T14:08:51",
   "counts": {
     "active": 15,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 6,
+    "waitingReview": 5,
     "done": 772,
     "alerts": 38
   },
@@ -14,17 +14,17 @@
       "title": "MrGolf R15 priced planner layout stability",
       "project": "ui",
       "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
-      "round": 15,
+      "round": 16,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -254,9 +254,14 @@
           "time": "2026-10-24 13:21:01",
           "state": "DONE",
           "round": 15
+        },
+        {
+          "time": "2026-10-24 14:08:38",
+          "state": "REWORK",
+          "round": 16
         }
       ],
-      "lastUpdate": "2026-10-24 13:21:01"
+      "lastUpdate": "2026-10-24 14:08:38"
     },
     {
       "jobId": "Jaoresidual-20261024-live",
