@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-10-24T09:24:14",
+  "generatedAt": "2026-10-24T09:34:30",
   "counts": {
-    "active": 17,
+    "active": 16,
     "waitingWorker": 5,
     "working": 6,
-    "waitingReview": 6,
-    "done": 770,
+    "waitingReview": 5,
+    "done": 771,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jmrgolf-remaining-live-20261024",
+      "title": "MrGolf combined release same-build production promotion",
+      "project": "combined-live",
+      "targetDir": "C:/Temp/MrGolf_remaining_20261024/combined-live",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-24 09:11:27",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 09:13:58",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 09:19:18",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-24 09:33:31",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-24 09:33:31"
+    },
     {
       "jobId": "Jmrgolf-remaining-ui-20261024",
       "title": "MrGolf UI R8 original fixture startup repair only",
@@ -147,45 +191,6 @@
         }
       ],
       "lastUpdate": "2026-10-24 09:23:33"
-    },
-    {
-      "jobId": "Jmrgolf-remaining-live-20261024",
-      "title": "MrGolf combined release same-build production promotion",
-      "project": "combined-live",
-      "targetDir": "C:/Temp/MrGolf_remaining_20261024/combined-live",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-24 09:11:27",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 09:13:58",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-24 09:19:18",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-24 09:19:18"
     },
     {
       "jobId": "Jmrgolf-remaining-backup-20261024",
