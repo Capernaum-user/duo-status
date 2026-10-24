@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T10:38:12",
+  "generatedAt": "2026-10-24T10:39:30",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
@@ -11,7 +11,7 @@
   "jobs": [
     {
       "jobId": "Jmrgolf-remaining-ui-20261024",
-      "title": "MrGolf UI R10 direct-loopback readiness and retained original app continuation",
+      "title": "MrGolf UI R11 original production build and admin task verification",
       "project": "ui",
       "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
       "round": 11,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
