@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-24T10:48:49",
+  "generatedAt": "2026-10-24T11:01:07",
   "counts": {
     "active": 16,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 5,
-    "waitingReview": 6,
+    "waitingReview": 5,
     "done": 771,
     "alerts": 38
   },
@@ -14,17 +14,17 @@
       "title": "MrGolf UI R11 original production build and admin task verification",
       "project": "ui",
       "targetDir": "C:/Temp/MrGolf_remaining_20261024/ui",
-      "round": 11,
+      "round": 12,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -194,9 +194,14 @@
           "time": "2026-10-24 10:48:01",
           "state": "DONE",
           "round": 11
+        },
+        {
+          "time": "2026-10-24 11:00:51",
+          "state": "REWORK",
+          "round": 12
         }
       ],
-      "lastUpdate": "2026-10-24 10:48:01"
+      "lastUpdate": "2026-10-24 11:00:51"
     },
     {
       "jobId": "Jmrgolf-remaining-live-20261024",
