@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-25T22:08:06",
+  "generatedAt": "2026-10-25T22:10:23",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 777,
     "alerts": 38
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jaojournal-20261025-daily",
-      "title": "WordPress daily publishing and first security article",
+      "title": "R2 report and boundary reconciliation only",
       "project": "00_reuel-maison",
       "targetDir": "D:/01_project-60/project-45/project-45/00_reuel-maison",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-25 22:07:38",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-25 22:09:43",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-25 22:07:38"
+      "lastUpdate": "2026-10-25 22:09:43"
     },
     {
       "jobId": "Jmrgolf-flow-live-20261024",
