@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-25T19:18:50",
+  "generatedAt": "2026-10-25T19:59:10",
   "counts": {
-    "active": 14,
-    "waitingWorker": 5,
+    "active": 15,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 5,
     "done": 777,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jaojournal-20261025-daily",
+      "title": "WordPress daily publishing and first security article",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-60/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-25 19:57:56",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-25 19:57:56"
+    },
     {
       "jobId": "Jmrgolf-flow-live-20261024",
       "title": "MrGolf live R2 — repair the observed project-69 pricing dialog residual",
