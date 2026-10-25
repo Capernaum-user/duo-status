@@ -1,14 +1,58 @@
 {
-  "generatedAt": "2026-10-26T07:08:39",
+  "generatedAt": "2026-10-26T07:09:59",
   "counts": {
-    "active": 16,
+    "active": 15,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 7,
-    "done": 781,
+    "waitingReview": 6,
+    "done": 782,
     "alerts": 39
   },
   "jobs": [
+    {
+      "jobId": "Jaoeditorial-20261026-reserve",
+      "title": "네이버 후속 예약과 운영 기록 반영",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-60/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-26 06:09:50",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 06:10:21",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 07:06:11",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 07:09:39",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-26 07:09:39"
+    },
     {
       "jobId": "Jsoloquant-research-ingest-20261026",
       "title": "SoloQuant 연구 자료 수집 구현",
@@ -18,13 +62,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -62,45 +106,6 @@
         }
       ],
       "lastUpdate": "2026-10-26 07:08:17"
-    },
-    {
-      "jobId": "Jaoeditorial-20261026-reserve",
-      "title": "네이버 후속 예약과 운영 기록 반영",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-60/project-45/project-45/00_reuel-maison",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-26 06:09:50",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 06:10:21",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 07:06:11",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-26 07:06:11"
     },
     {
       "jobId": "Jsoloquant-data-readiness-20261026",
