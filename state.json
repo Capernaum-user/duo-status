@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-26T04:15:37",
+  "generatedAt": "2026-10-26T05:51:00",
   "counts": {
-    "active": 14,
-    "waitingWorker": 5,
+    "active": 15,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 5,
     "done": 779,
     "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jaoeditorial-20261026-prepare",
+      "title": "네이버 후속 원고와 운영 준비",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-60/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-26 05:50:18",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-26 05:50:18"
+    },
     {
       "jobId": "Jaonaverpost-20261026-first",
       "title": "네이버 첫 글 게시",
