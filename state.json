@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-26T04:03:22",
+  "generatedAt": "2026-10-26T04:07:42",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
-    "working": 5,
+    "working": 4,
     "waitingReview": 5,
-    "done": 778,
+    "done": 779,
     "alerts": 38
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -49,9 +49,14 @@
           "time": "2026-10-26 03:20:32",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-26 04:07:23",
+          "state": "ACCEPTED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-26 03:20:32"
+      "lastUpdate": "2026-10-26 04:07:23"
     },
     {
       "jobId": "Jaojournal-20261025-daily",
