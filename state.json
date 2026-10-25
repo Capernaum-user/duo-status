@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-26T05:53:21",
+  "generatedAt": "2026-10-26T05:54:43",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 5,
     "done": 779,
     "alerts": 38
   },
   "jobs": [
     {
-      "jobId": "Jsoloquant-data-readiness-20261026",
-      "title": "Jsoloquant-data-readiness-20261026",
-      "project": "",
-      "targetDir": null,
+      "jobId": "Jaoeditorial-20261026-prepare",
+      "title": "네이버 후속 원고와 운영 준비",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-60/project-45/project-45/00_reuel-maison",
       "round": 1,
       "originDir": "<local>",
       "stage": "CLAIMED",
@@ -23,7 +23,41 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-26 05:50:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 05:53:31",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-26 05:53:31"
+    },
+    {
+      "jobId": "Jsoloquant-data-readiness-20261026",
+      "title": "SoloQuant 데이터 공급자 근거 확인",
+      "project": "project-57",
+      "targetDir": "D:/01_project-60/project-57",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -47,35 +81,6 @@
         }
       ],
       "lastUpdate": "2026-10-26 05:53:12"
-    },
-    {
-      "jobId": "Jaoeditorial-20261026-prepare",
-      "title": "네이버 후속 원고와 운영 준비",
-      "project": "00_reuel-maison",
-      "targetDir": "D:/01_project-60/project-45/project-45/00_reuel-maison",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-26 05:50:18",
-          "state": "PLANNED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-26 05:50:18"
     },
     {
       "jobId": "Jaonaverpost-20261026-first",
