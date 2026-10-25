@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T07:52:26",
+  "generatedAt": "2026-10-26T08:00:47",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
@@ -11,10 +11,10 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-strategy-shadow-20261026",
-      "title": "SoloQuant 다중 전략 연구 비교 구현",
+      "title": "SoloQuant 전략 비교 검수 경계 정정 및 R2 증거 보완",
       "project": "project-57",
       "targetDir": "D:/01_project-60/project-57",
-      "round": 1,
+      "round": 2,
       "originDir": "<local>",
       "stage": "CLAIMED",
       "stageIndex": 2,
@@ -25,7 +25,7 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
-        "rework": false
+        "rework": true
       },
       "verify": null,
       "autorun": null,
@@ -39,9 +39,19 @@
           "time": "2026-10-26 07:38:26",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-26 08:00:19",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-26 08:00:31",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-26 07:38:26"
+      "lastUpdate": "2026-10-26 08:00:31"
     },
     {
       "jobId": "Jsoloquant-forward-capture-20261026",
