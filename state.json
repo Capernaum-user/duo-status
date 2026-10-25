@@ -1,14 +1,48 @@
 {
-  "generatedAt": "2026-10-26T06:05:25",
+  "generatedAt": "2026-10-26T06:10:46",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 6,
-    "done": 779,
-    "alerts": 39
+    "working": 6,
+    "waitingReview": 5,
+    "done": 780,
+    "alerts": 38
   },
   "jobs": [
+    {
+      "jobId": "Jaoeditorial-20261026-reserve",
+      "title": "네이버 후속 예약과 운영 기록 반영",
+      "project": "00_reuel-maison",
+      "targetDir": "D:/01_project-60/project-45/project-45/00_reuel-maison",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-26 06:09:50",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 06:10:21",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-26 06:10:21"
+    },
     {
       "jobId": "Jaoeditorial-20261026-prepare",
       "title": "네이버 후속 원고와 운영 준비",
@@ -16,10 +50,10 @@
       "targetDir": "D:/01_project-60/project-45/project-45/00_reuel-maison",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -44,9 +78,14 @@
           "time": "2026-10-26 06:04:28",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-26 06:09:48",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-26 06:04:28"
+      "lastUpdate": "2026-10-26 06:09:48"
     },
     {
       "jobId": "Jsoloquant-data-readiness-20261026",
