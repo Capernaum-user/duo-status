@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T15:28:20",
+  "generatedAt": "2026-10-26T15:29:42",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
@@ -11,9 +11,9 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-ultrawide-dashboard-20261026",
-      "title": "Jsoloquant-ultrawide-dashboard-20261026",
-      "project": "",
-      "targetDir": null,
+      "title": "SoloQuant ultrawide project-60 and market dashboard",
+      "project": "project-57",
+      "targetDir": "D:/01_project-60/project-57",
       "round": 1,
       "originDir": "<local>",
       "stage": "CLAIMED",
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
