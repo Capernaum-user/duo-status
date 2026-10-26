@@ -1,48 +1,14 @@
 {
-  "generatedAt": "2026-10-27T01:18:49",
+  "generatedAt": "2026-10-27T01:22:11",
   "counts": {
     "active": 17,
     "waitingWorker": 5,
-    "working": 7,
-    "waitingReview": 5,
+    "working": 6,
+    "waitingReview": 6,
     "done": 797,
     "alerts": 39
   },
   "jobs": [
-    {
-      "jobId": "Jsoloquant-docs-prep-20261027",
-      "title": "문서·디자인 잔여를 격리 사본에서 준비한다",
-      "project": "docs-prep-20261027",
-      "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-multiaccount-20261026/docs-prep-20261027",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-27 00:57:28",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-27 01:07:36",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-27 01:07:36"
-    },
     {
       "jobId": "Jsoloquant-accounts-ui-20261026",
       "title": "계좌 UI의 숨김 갱신 검증을 마무리한다",
@@ -50,15 +16,15 @@
       "targetDir": "D:/01_project-60/project-57",
       "round": 4,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -123,9 +89,48 @@
           "time": "2026-10-27 01:00:29",
           "state": "CLAIMED",
           "round": 4
+        },
+        {
+          "time": "2026-10-27 01:22:01",
+          "state": "DONE",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-10-27 01:00:29"
+      "lastUpdate": "2026-10-27 01:22:01"
+    },
+    {
+      "jobId": "Jsoloquant-docs-prep-20261027",
+      "title": "문서·디자인 잔여를 격리 사본에서 준비한다",
+      "project": "docs-prep-20261027",
+      "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-multiaccount-20261026/docs-prep-20261027",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-27 00:57:28",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-27 01:07:36",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-27 01:07:36"
     },
     {
       "jobId": "Jaoproject-32-20261026-design",
