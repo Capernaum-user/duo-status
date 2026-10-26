@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-26T16:24:07",
+  "generatedAt": "2026-10-26T16:31:27",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 6,
-    "done": 790,
+    "waitingReview": 5,
+    "done": 791,
     "alerts": 39
   },
   "jobs": [
@@ -16,15 +16,15 @@
       "targetDir": "D:/01_project-60/project-57",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -44,9 +44,14 @@
           "time": "2026-10-26 16:23:02",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-10-26 16:31:08",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-26 16:23:02"
+      "lastUpdate": "2026-10-26 16:31:08"
     },
     {
       "jobId": "Jsoloquant-select-polling-20261026",
