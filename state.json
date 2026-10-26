@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-26T19:50:13",
+  "generatedAt": "2026-10-26T19:51:32",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 5,
     "done": 796,
     "alerts": 39
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-26 19:46:18",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-26 19:50:45",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-26 19:46:18"
+      "lastUpdate": "2026-10-26 19:50:45"
     },
     {
       "jobId": "Jsoloquant-accounts-ui-20261026",
