@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-27T06:58:23",
+  "generatedAt": "2026-10-27T06:59:40",
   "counts": {
     "active": 17,
-    "waitingWorker": 7,
-    "working": 4,
+    "waitingWorker": 6,
+    "working": 5,
     "waitingReview": 6,
     "done": 800,
     "alerts": 39
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-local-finalize-20261027",
-      "title": "검수된 계좌·상단 메뉴를 로컬 앱에 반영한다",
+      "title": "공유 콘솔의 종료 경계를 확인하고 로컬 반영을 재검토한다",
       "project": "project-57",
       "targetDir": "D:/01_project-60/project-57",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-27 06:57:47",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-27 06:58:46",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-27 06:57:47"
+      "lastUpdate": "2026-10-27 06:58:46"
     },
     {
       "jobId": "Jsoloquant-docs-lane-20261027",
