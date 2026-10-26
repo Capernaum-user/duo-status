@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-10-26T21:10:48",
+  "generatedAt": "2026-10-26T21:12:07",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 5,
     "done": 796,
     "alerts": 39
   },
   "jobs": [
+    {
+      "jobId": "Jaoproject-32-20261026-plan",
+      "title": "검색 콘텐츠 명세와 네이버 현재 상태 통합",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-26 19:46:18",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 19:50:45",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 20:48:42",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 21:04:07",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-26 21:11:07",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-26 21:11:07"
+    },
     {
       "jobId": "Jsoloquant-accounts-ui-20261026",
       "title": "계좌 추가·선택과 대시보드 연결",
@@ -57,50 +106,6 @@
         }
       ],
       "lastUpdate": "2026-10-26 21:10:10"
-    },
-    {
-      "jobId": "Jaoproject-32-20261026-plan",
-      "title": "검색 콘텐츠 명세와 네이버 현재 상태 통합",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-26 19:46:18",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 19:50:45",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 20:48:42",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 21:04:07",
-          "state": "REWORK",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-26 21:04:07"
     },
     {
       "jobId": "Jsoloquant-accounts-project-29-20261026",
