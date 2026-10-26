@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-26 10:08:07 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-26 10:17:29 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-26T10:08:05",
+  "generatedAt": "2026-10-26T10:17:28",
   "counts": {
-    "active": 15,
+    "active": 14,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 6,
+    "waitingReview": 5,
     "done": 786,
-    "alerts": 38
+    "alerts": 39
   },
   "jobs": [
     {
@@ -90,15 +90,15 @@
       "targetDir": "D:/01_project-60/project-57",
       "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -148,9 +148,14 @@
           "time": "2026-10-26 10:07:08",
           "state": "DONE",
           "round": 3
+        },
+        {
+          "time": "2026-10-26 10:17:14",
+          "state": "ESCALATED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-26 10:07:08"
+      "lastUpdate": "2026-10-26 10:17:14"
     },
     {
       "jobId": "Jsoloquant-learning-runner-20261026",
@@ -45989,6 +45994,11 @@
       "file": "Jpm90-02-wrapper_autopilot-worker-noreport.md",
       "jobId": "Jpm90-02-wrapper",
       "cause": "autopilot-worker-noreport"
+    },
+    {
+      "file": "Jsoloquant-integration-ui-20261026_round-cap-exceeded.md",
+      "jobId": "Jsoloquant-integration-ui-20261026",
+      "cause": "round-cap-exceeded"
     },
     {
       "file": "Jproject-28-p0_autorun-worker-fail.md",
