@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-27T05:02:46",
+  "generatedAt": "2026-10-27T05:04:04",
   "counts": {
     "active": 17,
-    "waitingWorker": 7,
-    "working": 4,
+    "waitingWorker": 6,
+    "working": 5,
     "waitingReview": 6,
     "done": 799,
     "alerts": 39
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-docs-lane-20261027",
-      "title": "R2 디자인 검사기의 상대경로 오류와 남은 규격을 검증한다",
+      "title": "R3 로컬 앱의 자산 구성과 디자인 검증 기준을 확정한다",
       "project": "project-57",
       "targetDir": "D:/01_project-60/project-57",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -64,9 +64,14 @@
           "time": "2026-10-27 05:02:13",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-10-27 05:02:49",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-27 05:02:13"
+      "lastUpdate": "2026-10-27 05:02:49"
     },
     {
       "jobId": "Jsoloquant-topnav-integration-20261026",
