@@ -1,14 +1,63 @@
 {
-  "generatedAt": "2026-10-26T19:00:18",
+  "generatedAt": "2026-10-26T19:10:37",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 6,
+    "working": 5,
+    "waitingReview": 5,
     "done": 795,
-    "alerts": 40
+    "alerts": 39
   },
   "jobs": [
+    {
+      "jobId": "Jsoloquant-accounts-project-29-20261026",
+      "title": "여러 계좌의 보호 저장과 요청 격리",
+      "project": "project-57",
+      "targetDir": "D:/01_project-60/project-57",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-26 17:57:14",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 17:58:11",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 18:55:09",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 19:10:11",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-26 19:10:32",
+          "state": "CLAIMED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-26 19:10:32"
+    },
     {
       "jobId": "Jaoblog-20261026-apply",
       "title": "승인된 네이버 꾸미기를 적용하고 공개 결과를 검증한다",
@@ -52,45 +101,6 @@
         }
       ],
       "lastUpdate": "2026-10-26 18:58:36"
-    },
-    {
-      "jobId": "Jsoloquant-accounts-project-29-20261026",
-      "title": "여러 계좌의 보호 저장과 요청 격리",
-      "project": "project-57",
-      "targetDir": "D:/01_project-60/project-57",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-26 17:57:14",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 17:58:11",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 18:55:09",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-26 18:55:09"
     },
     {
       "jobId": "Jaoblog-20261026-design",
