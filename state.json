@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-26T17:32:00",
+  "generatedAt": "2026-10-26T17:33:21",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 793,
     "alerts": 39
@@ -16,14 +16,14 @@
       "targetDir": "<local>",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-26 17:31:51",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-26 17:32:41",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-26 17:31:51"
+      "lastUpdate": "2026-10-26 17:32:41"
     },
     {
       "jobId": "Jaoblog-20261026-reference",
