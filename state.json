@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-26T12:57:51",
+  "generatedAt": "2026-10-26T12:59:13",
   "counts": {
     "active": 15,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 5,
     "done": 786,
     "alerts": 39
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-kis-key-update-20261026",
-      "title": "ORDER_Jsoloquant-kis-key-update-20261026_R01 — 모의 API 키를 안전하게 교체할 로컬 도구 준비",
+      "title": "ORDER_Jsoloquant-kis-key-update-20261026_R02 — 검수 보고의 기준 번호와 검사 수 바로잡기",
       "project": "project-57",
       "targetDir": "D:/01_project-60/project-57",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-26 12:57:27",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-26 12:57:53",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-26 12:57:27"
+      "lastUpdate": "2026-10-26 12:57:53"
     },
     {
       "jobId": "Jsoloquant-integration-ui-20261026",
