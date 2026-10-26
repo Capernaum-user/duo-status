@@ -1,14 +1,78 @@
 {
-  "generatedAt": "2026-10-27T08:11:39",
+  "generatedAt": "2026-10-27T08:16:01",
   "counts": {
     "active": 17,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 6,
     "done": 800,
     "alerts": 39
   },
   "jobs": [
+    {
+      "jobId": "Jaoproject-32-20261026-design",
+      "title": "Pearl Atlas 네이버 적용 R3",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-26 22:02:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 22:06:50",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 22:47:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-27 00:53:29",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-27 00:58:40",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-27 02:01:51",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-27 02:18:58",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-27 08:15:51",
+          "state": "CLAIMED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-10-27 08:15:51"
+    },
     {
       "jobId": "Jsoloquant-local-finalize-20261027",
       "title": "진단의 실패 처리를 보완하고 정상 종료 인수인계를 준비한다",
@@ -344,65 +408,6 @@
         }
       ],
       "lastUpdate": "2026-10-27 03:01:46"
-    },
-    {
-      "jobId": "Jaoproject-32-20261026-design",
-      "title": "Pearl Atlas 네이버 실제 적용",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-26 22:02:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 22:06:50",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 22:47:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-27 00:53:29",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-27 00:58:40",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-27 02:01:51",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-27 02:18:58",
-          "state": "REWORK",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-10-27 02:18:58"
     },
     {
       "jobId": "Jsoloquant-docs-prep-20261027",
