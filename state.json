@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T04:51:28",
+  "generatedAt": "2026-10-27T05:02:46",
   "counts": {
     "active": 17,
-    "waitingWorker": 6,
+    "waitingWorker": 7,
     "working": 4,
-    "waitingReview": 7,
+    "waitingReview": 6,
     "done": 799,
     "alerts": 39
   },
@@ -14,17 +14,17 @@
       "title": "R2 디자인 검사기의 상대경로 오류와 남은 규격을 검증한다",
       "project": "project-57",
       "targetDir": "D:/01_project-60/project-57",
-      "round": 2,
+      "round": 3,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -59,9 +59,14 @@
           "time": "2026-10-27 04:51:14",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-27 05:02:13",
+          "state": "REWORK",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-27 04:51:14"
+      "lastUpdate": "2026-10-27 05:02:13"
     },
     {
       "jobId": "Jsoloquant-topnav-integration-20261026",
