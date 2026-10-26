@@ -71,18 +71,87 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-27 08:40:37 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-27 08:42:57 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-27T08:40:36",
+  "generatedAt": "2026-10-27T08:42:56",
   "counts": {
-    "active": 17,
+    "active": 16,
     "waitingWorker": 5,
-    "working": 6,
+    "working": 5,
     "waitingReview": 6,
     "done": 800,
-    "alerts": 39
+    "alerts": 40
   },
   "jobs": [
+    {
+      "jobId": "Jaoproject-32-20261026-design",
+      "title": "Pearl Atlas 네이버 적용 R3",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-26 22:02:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 22:06:50",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 22:47:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-27 00:53:29",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-27 00:58:40",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-27 02:01:51",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-27 02:18:58",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-27 08:15:51",
+          "state": "CLAIMED",
+          "round": 3
+        },
+        {
+          "time": "2026-10-27 08:42:19",
+          "state": "ESCALATED",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-10-27 08:42:19"
+    },
     {
       "jobId": "Jsoloquant-local-finalize-20261027",
       "title": "기존 정상 제어 경로를 확인하고 승인된 로컬 반영을 마친다",
@@ -176,70 +245,6 @@
         }
       ],
       "lastUpdate": "2026-10-27 08:40:16"
-    },
-    {
-      "jobId": "Jaoproject-32-20261026-design",
-      "title": "Pearl Atlas 네이버 적용 R3",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-26 22:02:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 22:06:50",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 22:47:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-27 00:53:29",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-27 00:58:40",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-27 02:01:51",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-27 02:18:58",
-          "state": "REWORK",
-          "round": 3
-        },
-        {
-          "time": "2026-10-27 08:15:51",
-          "state": "CLAIMED",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-10-27 08:15:51"
     },
     {
       "jobId": "Jsoloquant-docs-lane-20261027",
@@ -46727,6 +46732,11 @@
       "file": "Jaodesign-rollout-report_autopilot-claim-stale.md",
       "jobId": "Jaodesign-rollout-report",
       "cause": "autopilot-claim-stale"
+    },
+    {
+      "file": "Jaoproject-32-20261026-design_round-cap-exceeded.md",
+      "jobId": "Jaoproject-32-20261026-design",
+      "cause": "round-cap-exceeded"
     },
     {
       "file": "Jaointake-20261006-inbox_round-cap-exceeded.md",
