@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-26T17:58:18",
+  "generatedAt": "2026-10-26T17:59:36",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
     "working": 5,
     "waitingReview": 6,
     "done": 793,
-    "alerts": 39
+    "alerts": 40
   },
   "jobs": [
     {
       "jobId": "Jsoloquant-accounts-project-29-20261026",
-      "title": "Jsoloquant-accounts-project-29-20261026",
-      "project": "",
-      "targetDir": null,
+      "title": "여러 계좌의 보호 저장과 요청 격리",
+      "project": "project-57",
+      "targetDir": "D:/01_project-60/project-57",
       "round": 1,
       "originDir": "<local>",
       "stage": "CLAIMED",
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -52,13 +52,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
