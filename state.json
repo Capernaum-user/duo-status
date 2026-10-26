@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T09:26:32",
+  "generatedAt": "2026-10-26T09:27:54",
   "counts": {
     "active": 15,
     "waitingWorker": 5,
@@ -11,7 +11,7 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-integration-ui-20261026",
-      "title": "SoloQuant 화면 연결과 독립 통합 검수",
+      "title": "SoloQuant 출처 문서 정리와 화면 실측 보완",
       "project": "project-57",
       "targetDir": "D:/01_project-60/project-57",
       "round": 2,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
