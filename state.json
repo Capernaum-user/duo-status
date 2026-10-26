@@ -1,73 +1,14 @@
 {
-  "generatedAt": "2026-10-27T02:36:47",
+  "generatedAt": "2026-10-27T02:52:06",
   "counts": {
     "active": 17,
     "waitingWorker": 6,
-    "working": 5,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 7,
     "done": 797,
     "alerts": 39
   },
   "jobs": [
-    {
-      "jobId": "Jaoproject-32-20261026-design",
-      "title": "Pearl Atlas 네이버 실제 적용",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 3,
-      "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": true,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-26 22:02:55",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 22:06:50",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-26 22:47:48",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-27 00:53:29",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-27 00:58:40",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-27 02:01:51",
-          "state": "DONE",
-          "round": 2
-        },
-        {
-          "time": "2026-10-27 02:18:58",
-          "state": "REWORK",
-          "round": 3
-        }
-      ],
-      "lastUpdate": "2026-10-27 02:18:58"
-    },
     {
       "jobId": "Jsoloquant-accounts-ui-20261026",
       "title": "화면 복귀 후 갱신 타이머를 조회 완료에 맞춘다",
@@ -75,15 +16,15 @@
       "targetDir": "D:/01_project-60/project-57",
       "round": 6,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -178,9 +119,73 @@
           "time": "2026-10-27 02:12:57",
           "state": "CLAIMED",
           "round": 6
+        },
+        {
+          "time": "2026-10-27 02:51:17",
+          "state": "DONE",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-10-27 02:12:57"
+      "lastUpdate": "2026-10-27 02:51:17"
+    },
+    {
+      "jobId": "Jaoproject-32-20261026-design",
+      "title": "Pearl Atlas 네이버 실제 적용",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 3,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-26 22:02:55",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 22:06:50",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-26 22:47:48",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-27 00:53:29",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-27 00:58:40",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-27 02:01:51",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-27 02:18:58",
+          "state": "REWORK",
+          "round": 3
+        }
+      ],
+      "lastUpdate": "2026-10-27 02:18:58"
     },
     {
       "jobId": "Jsoloquant-docs-prep-20261027",
