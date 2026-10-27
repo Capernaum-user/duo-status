@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-27T16:49:20",
+  "generatedAt": "2026-10-27T18:00:04",
   "counts": {
-    "active": 16,
-    "waitingWorker": 5,
+    "active": 17,
+    "waitingWorker": 6,
     "working": 5,
     "waitingReview": 6,
     "done": 806,
     "alerts": 41
   },
   "jobs": [
+    {
+      "jobId": "Jaonavlayout-20261027-arrange",
+      "title": "네이버 메뉴 배치와 가독성 정리",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-27 17:58:55",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-27 17:58:55"
+    },
     {
       "jobId": "Jsoloquant-seq-p5-20261027",
       "title": "P5 연구 화면·통합 검수·로컬 소스 반영",
