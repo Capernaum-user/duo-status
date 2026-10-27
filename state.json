@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-27T19:38:33",
+  "generatedAt": "2026-10-28T08:55:14",
   "counts": {
-    "active": 15,
-    "waitingWorker": 5,
+    "active": 16,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 6,
     "done": 807,
-    "alerts": 42
+    "alerts": 41
   },
   "jobs": [
     {
@@ -14,16 +14,16 @@
       "title": "P5 R3 남은 확대 검증과 조건부 소스 반영",
       "project": "soloquant-panel-work-20261027",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
-      "round": 3,
+      "round": 4,
       "originDir": "<local>",
-      "stage": "ESCALATED",
-      "stageIndex": 0,
-      "stageLabel": "⚠ 사람 개입",
-      "nextAction": "05_escalation 확인",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
-        "escalated": true,
+        "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -79,9 +79,14 @@
           "time": "2026-10-27 19:37:51",
           "state": "ESCALATED",
           "round": 3
+        },
+        {
+          "time": "2026-10-28 08:54:18",
+          "state": "REWORK",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-10-27 19:37:51"
+      "lastUpdate": "2026-10-28 08:54:18"
     },
     {
       "jobId": "Jaonavlayout-20261027-arrange",
