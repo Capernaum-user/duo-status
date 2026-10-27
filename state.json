@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-27T14:19:57",
+  "generatedAt": "2026-10-27T14:27:18",
   "counts": {
-    "active": 17,
+    "active": 16,
     "waitingWorker": 5,
-    "working": 6,
+    "working": 5,
     "waitingReview": 6,
-    "done": 802,
+    "done": 803,
     "alerts": 41
   },
   "jobs": [
+    {
+      "jobId": "Jaoaside-20261027-reliability",
+      "title": "Aside 네이버 캡처·메뉴 검증 복구",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-27 13:25:36",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-27 13:28:40",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-27 14:27:07",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-27 14:27:07"
+    },
     {
       "jobId": "Jsoloquant-seq-p2-20261027",
       "title": "P2 데이터 품질과 기업행사",
@@ -145,40 +184,6 @@
         }
       ],
       "lastUpdate": "2026-10-27 13:29:37"
-    },
-    {
-      "jobId": "Jaoaside-20261027-reliability",
-      "title": "Aside 네이버 캡처·메뉴 검증 복구",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-27 13:25:36",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-27 13:28:40",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-27 13:28:40"
     },
     {
       "jobId": "Jaoproject-32-20261026-design",
