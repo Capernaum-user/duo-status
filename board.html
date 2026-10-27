@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-27 09:37:00 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-27 09:49:20 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-27T09:36:59",
+  "generatedAt": "2026-10-27T09:49:19",
   "counts": {
-    "active": 16,
+    "active": 15,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 7,
+    "waitingReview": 6,
     "done": 800,
-    "alerts": 40
+    "alerts": 41
   },
   "jobs": [
     {
@@ -90,15 +90,15 @@
       "targetDir": "D:/01_project-60/project-57",
       "round": 6,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -193,9 +193,14 @@
           "time": "2026-10-27 09:36:44",
           "state": "DONE",
           "round": 6
+        },
+        {
+          "time": "2026-10-27 09:48:36",
+          "state": "ESCALATED",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-10-27 09:36:44"
+      "lastUpdate": "2026-10-27 09:48:36"
     },
     {
       "jobId": "Jaoproject-32-20261026-design",
@@ -47051,6 +47056,11 @@
     {
       "file": "Jsoloquant-integration-ui-20261026_round-cap-exceeded.md",
       "jobId": "Jsoloquant-integration-ui-20261026",
+      "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jsoloquant-local-finalize-20261027_round-cap-exceeded.md",
+      "jobId": "Jsoloquant-local-finalize-20261027",
       "cause": "round-cap-exceeded"
     },
     {
