@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T13:04:26",
+  "generatedAt": "2026-10-27T13:05:46",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
@@ -11,7 +11,7 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-seq-p0-20261027",
-      "title": "P0 공통 기준과 인계 계약 동결",
+      "title": "P0 공통 기준과 인계 계약 동결 R2",
       "project": "soloquant-panel-work-20261027",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 2,
@@ -23,7 +23,7 @@
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
