@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-27T16:47:59",
+  "generatedAt": "2026-10-27T16:49:20",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 806,
     "alerts": 41
@@ -16,14 +16,14 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-27 16:47:26",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-27 16:47:58",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-27 16:47:26"
+      "lastUpdate": "2026-10-27 16:47:58"
     },
     {
       "jobId": "Jsoloquant-seq-p4-20261027",
