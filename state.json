@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-27T13:05:46",
+  "generatedAt": "2026-10-27T13:25:00",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 7,
     "done": 800,
-    "alerts": 41
+    "alerts": 42
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -54,9 +54,14 @@
           "time": "2026-10-27 13:04:25",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-27 13:23:04",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-27 13:04:25"
+      "lastUpdate": "2026-10-27 13:23:04"
     },
     {
       "jobId": "Jaoproject-32-20261026-design",
