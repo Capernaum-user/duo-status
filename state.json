@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-28T08:55:14",
+  "generatedAt": "2026-10-28T08:56:33",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 807,
     "alerts": 41
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-seq-p5-20261027",
-      "title": "P5 R3 남은 확대 검증과 조건부 소스 반영",
+      "title": "P5 R4 사용자 재개 후 확대 검증과 조건부 소스 반영",
       "project": "soloquant-panel-work-20261027",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 4,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -84,9 +84,14 @@
           "time": "2026-10-28 08:54:18",
           "state": "REWORK",
           "round": 4
+        },
+        {
+          "time": "2026-10-28 08:55:28",
+          "state": "CLAIMED",
+          "round": 4
         }
       ],
-      "lastUpdate": "2026-10-28 08:54:18"
+      "lastUpdate": "2026-10-28 08:55:28"
     },
     {
       "jobId": "Jaonavlayout-20261027-arrange",
