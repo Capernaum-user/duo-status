@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-29T04:37:13",
+  "generatedAt": "2026-10-29T04:38:34",
   "counts": {
     "active": 17,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 7,
     "done": 809,
     "alerts": 45
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-aside-capture-repair-20261029",
-      "title": "SoloQuant Aside 캡처 진단과 복구 ORDER",
+      "title": "SoloQuant Aside 캡처 진단·복구 R2 — 슬롯 해제 후 실제 실행",
       "project": "soloquant-panel-work-20261027",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 2,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -49,9 +49,14 @@
           "time": "2026-10-29 04:36:06",
           "state": "REWORK",
           "round": 2
+        },
+        {
+          "time": "2026-10-29 04:37:53",
+          "state": "CLAIMED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-29 04:36:06"
+      "lastUpdate": "2026-10-29 04:37:53"
     },
     {
       "jobId": "Jaonavertags-20261029-apply",
