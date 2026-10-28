@@ -1,53 +1,14 @@
 {
-  "generatedAt": "2026-10-28T11:06:35",
+  "generatedAt": "2026-10-28T11:48:55",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 7,
     "done": 808,
     "alerts": 41
   },
   "jobs": [
-    {
-      "jobId": "Jaob03-20261028-post",
-      "title": "공방 홈페이지 글과 실사 이미지 네 장을 네이버에 게시",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-28 10:08:16",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-28 10:09:56",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-28 11:06:04",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-28 11:06:04"
-    },
     {
       "jobId": "Jsoloquant-seq-p5-20261027",
       "title": "P5 R6 Aside 화면 크기·확대 배치·음수 사례 검수와 한정 반영",
@@ -55,15 +16,15 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 6,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -163,9 +124,53 @@
           "time": "2026-10-28 10:45:35",
           "state": "CLAIMED",
           "round": 6
+        },
+        {
+          "time": "2026-10-28 11:48:03",
+          "state": "DONE",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-10-28 10:45:35"
+      "lastUpdate": "2026-10-28 11:48:03"
+    },
+    {
+      "jobId": "Jaob03-20261028-post",
+      "title": "공방 홈페이지 글과 실사 이미지 네 장을 네이버에 게시",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-28 10:08:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 10:09:56",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 11:06:04",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-28 11:06:04"
     },
     {
       "jobId": "Jaonavlayout-20261027-arrange",
