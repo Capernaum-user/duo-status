@@ -1,14 +1,68 @@
 {
-  "generatedAt": "2026-10-29T04:50:18",
+  "generatedAt": "2026-10-29T05:16:14",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 7,
     "done": 810,
     "alerts": 44
   },
   "jobs": [
+    {
+      "jobId": "Jsoloquant-aside-capture-repair-20261029",
+      "title": "SoloQuant Aside 캡처 진단·복구 R2 — 슬롯 해제 후 실제 실행",
+      "project": "soloquant-panel-work-20261027",
+      "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-29 03:24:54",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-29 03:28:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-29 04:18:38",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-29 04:36:06",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-29 04:37:53",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-29 05:15:00",
+          "state": "DONE",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-29 05:15:00"
+    },
     {
       "jobId": "Jaonavertags-20261029-apply",
       "title": "네이버 기존 글과 매일 자동화에 검색어·태그 적용",
@@ -52,55 +106,6 @@
         }
       ],
       "lastUpdate": "2026-10-29 04:41:32"
-    },
-    {
-      "jobId": "Jsoloquant-aside-capture-repair-20261029",
-      "title": "SoloQuant Aside 캡처 진단·복구 R2 — 슬롯 해제 후 실제 실행",
-      "project": "soloquant-panel-work-20261027",
-      "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-29 03:24:54",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-29 03:28:29",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-29 04:18:38",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-29 04:36:06",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-29 04:37:53",
-          "state": "CLAIMED",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-29 04:37:53"
     },
     {
       "jobId": "Jsoloquant-seq-p5-20261027",
