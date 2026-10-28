@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-28T21:16:18",
+  "generatedAt": "2026-10-28T21:36:41",
   "counts": {
     "active": 17,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 7,
     "done": 809,
     "alerts": 43
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-28 21:15:47",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-28 21:35:42",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-28 21:15:47"
+      "lastUpdate": "2026-10-28 21:35:42"
     },
     {
       "jobId": "Jaonaverdaily-20261029",
