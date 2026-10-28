@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-28 11:48:56 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-28 12:00:15 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-28T11:48:55",
+  "generatedAt": "2026-10-28T12:00:14",
   "counts": {
-    "active": 16,
+    "active": 15,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 7,
+    "waitingReview": 6,
     "done": 808,
-    "alerts": 41
+    "alerts": 42
   },
   "jobs": [
     {
@@ -90,15 +90,15 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 6,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -203,9 +203,19 @@
           "time": "2026-10-28 11:48:03",
           "state": "DONE",
           "round": 6
+        },
+        {
+          "time": "2026-10-28 11:59:18",
+          "state": "REWORK",
+          "round": 7
+        },
+        {
+          "time": "2026-10-28 11:59:18",
+          "state": "ESCALATED",
+          "round": 6
         }
       ],
-      "lastUpdate": "2026-10-28 11:48:03"
+      "lastUpdate": "2026-10-28 11:59:18"
     },
     {
       "jobId": "Jaob03-20261028-post",
@@ -47583,6 +47593,11 @@
       "file": "Jsoloquant-seq-p5-20261027_round-cap-exceeded.md",
       "jobId": "Jsoloquant-seq-p5-20261027",
       "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jsoloquant-seq-p5-20261027_round-cap-r6-visual-coverage.md",
+      "jobId": "Jsoloquant-seq-p5-20261027",
+      "cause": "round-cap-r6-visual-coverage"
     },
     {
       "file": "Jproject-28-p0_autorun-worker-fail.md",
