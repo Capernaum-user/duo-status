@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-29T06:32:47",
+  "generatedAt": "2026-10-29T06:35:07",
   "counts": {
     "active": 17,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 6,
     "done": 810,
     "alerts": 45
@@ -16,14 +16,14 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-29 06:31:53",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-29 06:34:05",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-29 06:31:53"
+      "lastUpdate": "2026-10-29 06:34:05"
     },
     {
       "jobId": "Jaonaverops-20261029-stability",
