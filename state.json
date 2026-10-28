@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-29T05:25:35",
+  "generatedAt": "2026-10-29T06:22:00",
   "counts": {
-    "active": 15,
-    "waitingWorker": 5,
+    "active": 16,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 6,
     "done": 810,
     "alerts": 45
   },
   "jobs": [
+    {
+      "jobId": "Jaonaverops-20261029-stability",
+      "title": "네이버 일일 발행 이미지 첨부 안정화",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-29 06:21:23",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-29 06:21:23"
+    },
     {
       "jobId": "Jsoloquant-aside-capture-repair-20261029",
       "title": "SoloQuant Aside 캡처 진단·복구 R2 — 슬롯 해제 후 실제 실행",
