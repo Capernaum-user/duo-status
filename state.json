@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-28T09:59:51",
+  "generatedAt": "2026-10-28T10:09:10",
   "counts": {
-    "active": 16,
-    "waitingWorker": 5,
+    "active": 17,
+    "waitingWorker": 6,
     "working": 5,
     "waitingReview": 6,
     "done": 807,
     "alerts": 41
   },
   "jobs": [
+    {
+      "jobId": "Jaob03-20261028-post",
+      "title": "공방 홈페이지 글과 실사 이미지 네 장을 네이버에 게시",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-28 10:08:16",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-28 10:08:16"
+    },
     {
       "jobId": "Jsoloquant-seq-p5-20261027",
       "title": "P5 R5 Aside 직접 검증과 한정 소스 반영",
