@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-29T02:23:16",
+  "generatedAt": "2026-10-29T02:54:37",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 7,
     "done": 809,
     "alerts": 43
   },
@@ -16,15 +16,15 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 8,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -164,9 +164,14 @@
           "time": "2026-10-29 02:22:35",
           "state": "CLAIMED",
           "round": 8
+        },
+        {
+          "time": "2026-10-29 02:53:40",
+          "state": "DONE",
+          "round": 8
         }
       ],
-      "lastUpdate": "2026-10-29 02:22:35"
+      "lastUpdate": "2026-10-29 02:53:40"
     },
     {
       "jobId": "Jaonaverdaily-20261028-repair",
