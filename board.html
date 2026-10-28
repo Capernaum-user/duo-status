@@ -71,52 +71,18 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-29 03:02:14 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-29 03:03:36 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-29T03:02:13",
+  "generatedAt": "2026-10-29T03:03:35",
   "counts": {
-    "active": 17,
+    "active": 16,
     "waitingWorker": 5,
     "working": 5,
-    "waitingReview": 7,
+    "waitingReview": 6,
     "done": 809,
     "alerts": 44
   },
   "jobs": [
-    {
-      "jobId": "Jaonavertags-20261029-apply",
-      "title": "네이버 기존 글과 매일 자동화에 검색어·태그 적용",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-29 02:57:50",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-29 03:01:36",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-29 03:01:36"
-    },
     {
       "jobId": "Jsoloquant-seq-p5-20261027",
       "title": "P5 R8 공식 Aside 주석 캡처 검증과 조건부 반영",
@@ -124,12 +90,12 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 8,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": false,
@@ -277,9 +243,53 @@
           "time": "2026-10-29 02:53:40",
           "state": "DONE",
           "round": 8
+        },
+        {
+          "time": "2026-10-29 03:03:23",
+          "state": "REWORK",
+          "round": 9
+        },
+        {
+          "time": "2026-10-29 03:03:23",
+          "state": "ESCALATED",
+          "round": 8
         }
       ],
-      "lastUpdate": "2026-10-29 02:53:40"
+      "lastUpdate": "2026-10-29 03:03:23"
+    },
+    {
+      "jobId": "Jaonavertags-20261029-apply",
+      "title": "네이버 기존 글과 매일 자동화에 검색어·태그 적용",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-29 02:57:50",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-29 03:01:36",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-29 03:01:36"
     },
     {
       "jobId": "Jaonaverdaily-20261028-repair",
@@ -47799,6 +47809,11 @@
       "file": "Jsoloquant-seq-p5-20261027_round-cap-r6-visual-coverage.md",
       "jobId": "Jsoloquant-seq-p5-20261027",
       "cause": "round-cap-r6-visual-coverage"
+    },
+    {
+      "file": "Jsoloquant-seq-p5-20261027_round-cap-r8-aside-capture.md",
+      "jobId": "Jsoloquant-seq-p5-20261027",
+      "cause": "round-cap-r8-aside-capture"
     },
     {
       "file": "Jproject-28-p0_autorun-worker-fail.md",
