@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-28 23:42:00 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-28 23:59:25 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-28T23:41:59",
+  "generatedAt": "2026-10-28T23:59:25",
   "counts": {
-    "active": 17,
+    "active": 16,
     "waitingWorker": 5,
-    "working": 5,
+    "working": 4,
     "waitingReview": 7,
     "done": 809,
-    "alerts": 43
+    "alerts": 44
   },
   "jobs": [
     {
@@ -90,15 +90,15 @@
       "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": false
       },
       "verify": null,
@@ -113,9 +113,14 @@
           "time": "2026-10-28 21:35:42",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-10-28 23:58:55",
+          "state": "ESCALATED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-28 21:35:42"
+      "lastUpdate": "2026-10-28 23:58:55"
     },
     {
       "jobId": "Jaonaverdaily-20261029",
@@ -47445,6 +47450,11 @@
       "file": "Jaonaverapply-20261011-setup_autopilot-claim-stale.md",
       "jobId": "Jaonaverapply-20261011-setup",
       "cause": "autopilot-claim-stale"
+    },
+    {
+      "file": "Jaonaverdaily-20261028-repair_live-upload-blocked-no-safe-retry.md",
+      "jobId": "Jaonaverdaily-20261028-repair",
+      "cause": "live-upload-blocked-no-safe-retry"
     },
     {
       "file": "Jaonaverdaily-20261029_ready-qa-hash-case-no-retry.md",
