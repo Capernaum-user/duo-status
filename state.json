@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-10-28T20:40:49",
+  "generatedAt": "2026-10-28T20:42:09",
   "counts": {
     "active": 17,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 7,
+    "working": 4,
+    "waitingReview": 8,
     "done": 809,
     "alerts": 41
   },
   "jobs": [
     {
-      "jobId": "Jaonaverdaily-20261029",
-      "title": "2026-10-29 네이버 오전 아홉 시 예약",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 1,
+      "jobId": "Jsoloquant-seq-p5-20261027",
+      "title": "P5 R7 Aside 시각 증거 보완과 조건부 원본 반영",
+      "project": "soloquant-panel-work-20261027",
+      "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
+      "round": 7,
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
@@ -25,89 +25,6 @@
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-28 20:14:49",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-28 20:19:07",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-28 20:40:33",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-28 20:40:33"
-    },
-    {
-      "jobId": "Jaonaverdaily-20261028-setup",
-      "title": "네이버 매일 오전 9시 발행 자동화",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "ACCEPTED",
-      "stageIndex": 5,
-      "stageLabel": "완료",
-      "nextAction": "없음 — 수락 종결",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-28 19:34:43",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-28 19:36:07",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-28 20:00:55",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-28 20:06:41",
-          "state": "ACCEPTED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-28 20:06:41"
-    },
-    {
-      "jobId": "Jsoloquant-seq-p5-20261027",
-      "title": "P5 R7 Aside 시각 증거 보완과 조건부 원본 반영",
-      "project": "soloquant-panel-work-20261027",
-      "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
-      "round": 7,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -232,9 +149,97 @@
           "time": "2026-10-28 19:43:52",
           "state": "CLAIMED",
           "round": 7
+        },
+        {
+          "time": "2026-10-28 20:41:34",
+          "state": "DONE",
+          "round": 7
         }
       ],
-      "lastUpdate": "2026-10-28 19:43:52"
+      "lastUpdate": "2026-10-28 20:41:34"
+    },
+    {
+      "jobId": "Jaonaverdaily-20261029",
+      "title": "2026-10-29 네이버 오전 아홉 시 예약",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": true,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-28 20:14:49",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 20:19:07",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 20:40:33",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-28 20:40:33"
+    },
+    {
+      "jobId": "Jaonaverdaily-20261028-setup",
+      "title": "네이버 매일 오전 9시 발행 자동화",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-28 19:34:43",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 19:36:07",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 20:00:55",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 20:06:41",
+          "state": "ACCEPTED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-28 20:06:41"
     },
     {
       "jobId": "Jaob03-20261028-post",
