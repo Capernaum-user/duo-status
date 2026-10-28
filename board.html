@@ -71,18 +71,62 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-28 20:42:10 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-28 20:45:28 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-28T20:42:09",
+  "generatedAt": "2026-10-28T20:45:27",
   "counts": {
-    "active": 17,
+    "active": 16,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 8,
+    "waitingReview": 7,
     "done": 809,
-    "alerts": 41
+    "alerts": 43
   },
   "jobs": [
+    {
+      "jobId": "Jaonaverdaily-20261029",
+      "title": "2026-10-29 네이버 오전 아홉 시 예약",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-28 20:14:49",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 20:19:07",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 20:40:33",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-28 20:44:28",
+          "state": "ESCALATED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-28 20:44:28"
+    },
     {
       "jobId": "Jsoloquant-seq-p5-20261027",
       "title": "P5 R7 Aside 시각 증거 보완과 조건부 원본 반영",
@@ -92,13 +136,13 @@
       "originDir": "<local>",
       "stage": "DONE",
       "stageIndex": 3,
-      "stageLabel": "보고 제출",
+      "stageLabel": "보고 제출 [확인필요]",
       "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -231,45 +275,6 @@
         }
       ],
       "lastUpdate": "2026-10-28 20:41:34"
-    },
-    {
-      "jobId": "Jaonaverdaily-20261029",
-      "title": "2026-10-29 네이버 오전 아홉 시 예약",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-60/project-47/project-47/01_naver-channel",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-28 20:14:49",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-28 20:19:07",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-28 20:40:33",
-          "state": "DONE",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-28 20:40:33"
     },
     {
       "jobId": "Jaonaverdaily-20261028-setup",
@@ -47406,6 +47411,11 @@
       "file": "Jaonaverapply-20261011-setup_autopilot-claim-stale.md",
       "jobId": "Jaonaverapply-20261011-setup",
       "cause": "autopilot-claim-stale"
+    },
+    {
+      "file": "Jaonaverdaily-20261029_ready-qa-hash-case-no-retry.md",
+      "jobId": "Jaonaverdaily-20261029",
+      "cause": "ready-qa-hash-case-no-retry"
     },
     {
       "file": "Jaonavermaison-20261009-setup_autopilot-claim-stale.md",
