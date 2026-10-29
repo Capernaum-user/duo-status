@@ -71,18 +71,77 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-29 08:59:47 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-29 09:01:04 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-29T08:59:46",
+  "generatedAt": "2026-10-29T09:01:04",
   "counts": {
-    "active": 17,
+    "active": 16,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 8,
+    "waitingReview": 7,
     "done": 811,
     "alerts": 46
   },
   "jobs": [
+    {
+      "jobId": "Jsoloquant-aside-canary-20261029",
+      "title": "B R2 실행 제한 교정과 캡처 실패 원인 분리",
+      "project": "soloquant-panel-work-20261027",
+      "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
+      "flags": {
+        "escalated": true,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-29 07:38:24",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-29 07:38:59",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-29 08:05:38",
+          "state": "DONE",
+          "round": 1
+        },
+        {
+          "time": "2026-10-29 08:19:50",
+          "state": "REWORK",
+          "round": 2
+        },
+        {
+          "time": "2026-10-29 08:22:46",
+          "state": "CLAIMED",
+          "round": 2
+        },
+        {
+          "time": "2026-10-29 08:47:07",
+          "state": "DONE",
+          "round": 2
+        },
+        {
+          "time": "2026-10-29 09:00:09",
+          "state": "ESCALATED",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-29 09:00:09"
+    },
     {
       "jobId": "Jaonaverops-20261029-stability",
       "title": "네이버 일일 발행 이미지 첨부 안정화",
@@ -121,60 +180,6 @@
         }
       ],
       "lastUpdate": "2026-10-29 08:48:22"
-    },
-    {
-      "jobId": "Jsoloquant-aside-canary-20261029",
-      "title": "B R2 실행 제한 교정과 캡처 실패 원인 분리",
-      "project": "soloquant-panel-work-20261027",
-      "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
-      "round": 2,
-      "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": true
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-29 07:38:24",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-29 07:38:59",
-          "state": "CLAIMED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-29 08:05:38",
-          "state": "DONE",
-          "round": 1
-        },
-        {
-          "time": "2026-10-29 08:19:50",
-          "state": "REWORK",
-          "round": 2
-        },
-        {
-          "time": "2026-10-29 08:22:46",
-          "state": "CLAIMED",
-          "round": 2
-        },
-        {
-          "time": "2026-10-29 08:47:07",
-          "state": "DONE",
-          "round": 2
-        }
-      ],
-      "lastUpdate": "2026-10-29 08:47:07"
     },
     {
       "jobId": "Jsoloquant-capture-parser-20261029",
@@ -48009,6 +48014,11 @@
     {
       "file": "Jsoloquant-accounts-ui-20261026_round-cap-exceeded.md",
       "jobId": "Jsoloquant-accounts-ui-20261026",
+      "cause": "round-cap-exceeded"
+    },
+    {
+      "file": "Jsoloquant-aside-canary-20261029_round-cap-exceeded.md",
+      "jobId": "Jsoloquant-aside-canary-20261029",
       "cause": "round-cap-exceeded"
     },
     {
