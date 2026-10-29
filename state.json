@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-30T08:28:49",
+  "generatedAt": "2026-10-30T08:31:11",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 813,
     "alerts": 48
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
-      "title": "R15 최초 반환값의 선기록과 준비 단계 단회 관측",
+      "title": "R16 경로 검사 첫 실패 지점의 단회 관측",
       "project": "soloquant-isolated-validation-20261029",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
       "round": 16,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -264,9 +264,14 @@
           "time": "2026-10-30 08:27:53",
           "state": "REWORK",
           "round": 16
+        },
+        {
+          "time": "2026-10-30 08:30:33",
+          "state": "CLAIMED",
+          "round": 16
         }
       ],
-      "lastUpdate": "2026-10-30 08:27:53"
+      "lastUpdate": "2026-10-30 08:30:33"
     },
     {
       "jobId": "Jsoloquant-foundation-state-20261029",
