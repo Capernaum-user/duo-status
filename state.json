@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-30T00:55:52",
+  "generatedAt": "2026-10-30T01:23:16",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 7,
+    "working": 5,
+    "waitingReview": 6,
     "done": 813,
     "alerts": 48
   },
@@ -14,17 +14,17 @@
       "title": "R7 실제 종료 경로의 자원 기록 유실을 보완한다",
       "project": "soloquant-isolated-validation-20261029",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
-      "round": 7,
+      "round": 8,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -139,9 +139,19 @@
           "time": "2026-10-30 00:53:46",
           "state": "DONE",
           "round": 7
+        },
+        {
+          "time": "2026-10-30 01:22:27",
+          "state": "REWORK",
+          "round": 8
+        },
+        {
+          "time": "2026-10-30 01:23:12",
+          "state": "CLAIMED",
+          "round": 8
         }
       ],
-      "lastUpdate": "2026-10-30 00:53:46"
+      "lastUpdate": "2026-10-30 01:23:12"
     },
     {
       "jobId": "Jsoloquant-foundation-state-20261029",
@@ -48332,6 +48342,11 @@
       "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r6-exceeded.md",
       "jobId": "Jsoloquant-isolated-boundary-20261029",
       "cause": "round-cap-r6-exceeded"
+    },
+    {
+      "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r7-exceeded.md",
+      "jobId": "Jsoloquant-isolated-boundary-20261029",
+      "cause": "round-cap-r7-exceeded"
     },
     {
       "file": "Jsoloquant-local-finalize-20261027_round-cap-exceeded.md",
