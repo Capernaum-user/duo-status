@@ -71,16 +71,16 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-29 14:47:18 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-29 14:53:40 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-29T14:47:16",
+  "generatedAt": "2026-10-29T14:53:39",
   "counts": {
-    "active": 16,
+    "active": 15,
     "waitingWorker": 5,
     "working": 4,
-    "waitingReview": 7,
+    "waitingReview": 6,
     "done": 813,
-    "alerts": 47
+    "alerts": 48
   },
   "jobs": [
     {
@@ -90,12 +90,12 @@
       "targetDir": "D:/01_project-61/project-58",
       "round": 2,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ESCALATED",
+      "stageIndex": 0,
+      "stageLabel": "⚠ 사람 개입",
+      "nextAction": "05_escalation 확인",
       "flags": {
-        "escalated": false,
+        "escalated": true,
         "protocolError": false,
         "pendingOrder": false,
         "pendingReport": true,
@@ -133,9 +133,19 @@
           "time": "2026-10-29 14:46:49",
           "state": "DONE",
           "round": 2
+        },
+        {
+          "time": "2026-10-29 14:53:26",
+          "state": "REWORK",
+          "round": 3
+        },
+        {
+          "time": "2026-10-29 14:53:26",
+          "state": "ESCALATED",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-29 14:46:49"
+      "lastUpdate": "2026-10-29 14:53:26"
     },
     {
       "jobId": "Jaonaversafe-20261029-environment",
@@ -48232,6 +48242,11 @@
       "file": "Jsoloquant-aside-capture-repair-20261029_round-cap-r2-readiness-parser.md",
       "jobId": "Jsoloquant-aside-capture-repair-20261029",
       "cause": "round-cap-r2-readiness-parser"
+    },
+    {
+      "file": "Jsoloquant-foundation-state-20261029_round-cap-exceeded.md",
+      "jobId": "Jsoloquant-foundation-state-20261029",
+      "cause": "round-cap-exceeded"
     },
     {
       "file": "Jsoloquant-integration-ui-20261026_round-cap-exceeded.md",
