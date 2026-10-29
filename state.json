@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-29T13:41:44",
+  "generatedAt": "2026-10-29T13:44:06",
   "counts": {
     "active": 17,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 6,
     "done": 812,
     "alerts": 47
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-61/project-58",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-29 13:41:19",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-29 13:43:02",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-29 13:41:19"
+      "lastUpdate": "2026-10-29 13:43:02"
     },
     {
       "jobId": "Jaonaversafe-20261029-environment",
