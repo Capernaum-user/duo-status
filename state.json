@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-29T12:55:32",
+  "generatedAt": "2026-10-29T13:32:58",
   "counts": {
-    "active": 15,
-    "waitingWorker": 5,
+    "active": 16,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 6,
     "done": 812,
     "alerts": 47
   },
   "jobs": [
+    {
+      "jobId": "Jaonaversafe-20261029-environment",
+      "title": "Aside 네이버 제작 환경의 실패 예방",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-29 13:32:29",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-29 13:32:29"
+    },
     {
       "jobId": "Jsoloquant-aside-five-methods-20261029",
       "title": "R4, M05 정리 기한 수정과 지정 Tester 검증",
