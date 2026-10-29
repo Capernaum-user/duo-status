@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-29T22:30:07",
+  "generatedAt": "2026-10-29T22:31:28",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 813,
     "alerts": 48
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
-      "title": "R4 연결 전 차단과 실제 시작 경로의 격리 근거를 검증한다",
+      "title": "R5 실행 전 검사의 DB 경로 결합을 보강한다",
       "project": "soloquant-isolated-validation-20261029",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
       "round": 5,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -99,9 +99,14 @@
           "time": "2026-10-29 22:29:31",
           "state": "REWORK",
           "round": 5
+        },
+        {
+          "time": "2026-10-29 22:30:52",
+          "state": "CLAIMED",
+          "round": 5
         }
       ],
-      "lastUpdate": "2026-10-29 22:29:31"
+      "lastUpdate": "2026-10-29 22:30:52"
     },
     {
       "jobId": "Jsoloquant-foundation-state-20261029",
