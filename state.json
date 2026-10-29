@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-29T11:20:33",
+  "generatedAt": "2026-10-29T11:21:56",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 811,
     "alerts": 47
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-aside-five-methods-20261029",
-      "title": "Aside 다섯 방법의 미실행분 진행, R2 사용 시간 조정",
+      "title": "R3, 공유 Aside와 분리한 M05 대체 캡처 1회",
       "project": "soloquant-panel-work-20261027",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-panel-work-20261027",
       "round": 3,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -64,9 +64,14 @@
           "time": "2026-10-29 11:19:41",
           "state": "REWORK",
           "round": 3
+        },
+        {
+          "time": "2026-10-29 11:20:42",
+          "state": "CLAIMED",
+          "round": 3
         }
       ],
-      "lastUpdate": "2026-10-29 11:19:41"
+      "lastUpdate": "2026-10-29 11:20:42"
     },
     {
       "jobId": "Jaonaverops-20261029-stability",
