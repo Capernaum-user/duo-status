@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-29T16:30:11",
+  "generatedAt": "2026-10-29T17:31:37",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 6,
+    "working": 4,
+    "waitingReview": 7,
     "done": 813,
     "alerts": 48
   },
@@ -16,15 +16,15 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
       "round": 2,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -54,9 +54,14 @@
           "time": "2026-10-29 16:29:18",
           "state": "CLAIMED",
           "round": 2
+        },
+        {
+          "time": "2026-10-29 17:30:31",
+          "state": "DONE",
+          "round": 2
         }
       ],
-      "lastUpdate": "2026-10-29 16:29:18"
+      "lastUpdate": "2026-10-29 17:30:31"
     },
     {
       "jobId": "Jsoloquant-foundation-state-20261029",
