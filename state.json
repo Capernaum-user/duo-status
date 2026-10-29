@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-30T02:19:28",
+  "generatedAt": "2026-10-30T02:40:51",
   "counts": {
     "active": 16,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 7,
+    "waitingReview": 6,
     "done": 813,
     "alerts": 48
   },
@@ -14,17 +14,17 @@
       "title": "R9 등록 실패 후 정리 결과와 자원 소유권을 보존한다",
       "project": "soloquant-isolated-validation-20261029",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
-      "round": 9,
+      "round": 10,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": true,
+        "pendingOrder": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -169,9 +169,14 @@
           "time": "2026-10-30 02:18:19",
           "state": "DONE",
           "round": 9
+        },
+        {
+          "time": "2026-10-30 02:40:41",
+          "state": "REWORK",
+          "round": 10
         }
       ],
-      "lastUpdate": "2026-10-30 02:18:19"
+      "lastUpdate": "2026-10-30 02:40:41"
     },
     {
       "jobId": "Jsoloquant-foundation-state-20261029",
@@ -48372,6 +48377,11 @@
       "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r8-exceeded.md",
       "jobId": "Jsoloquant-isolated-boundary-20261029",
       "cause": "round-cap-r8-exceeded"
+    },
+    {
+      "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r9-exceeded.md",
+      "jobId": "Jsoloquant-isolated-boundary-20261029",
+      "cause": "round-cap-r9-exceeded"
     },
     {
       "file": "Jsoloquant-local-finalize-20261027_round-cap-exceeded.md",
