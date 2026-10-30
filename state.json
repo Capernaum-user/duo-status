@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-30T10:30:35",
+  "generatedAt": "2026-10-30T10:31:57",
   "counts": {
     "active": 17,
-    "waitingWorker": 6,
-    "working": 5,
+    "waitingWorker": 5,
+    "working": 6,
     "waitingReview": 6,
     "done": 814,
     "alerts": 48
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-10-30 10:29:43",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-10-30 10:31:04",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-10-30 10:29:43"
+      "lastUpdate": "2026-10-30 10:31:04"
     },
     {
       "jobId": "Jaoai-20261030-project-19",
