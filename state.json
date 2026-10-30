@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-10-30T09:35:32",
+  "generatedAt": "2026-10-30T09:50:56",
   "counts": {
-    "active": 16,
-    "waitingWorker": 5,
+    "active": 17,
+    "waitingWorker": 6,
     "working": 5,
     "waitingReview": 6,
     "done": 813,
     "alerts": 48
   },
   "jobs": [
+    {
+      "jobId": "Jaoai-20261030-project-19",
+      "title": "AI 일일 콘텐츠와 자동화 변경 후보",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-30 09:50:40",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-30 09:50:40"
+    },
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
       "title": "R18 공식 숨김 항목 조회 계약으로 조상 경계 단회 확인",
