@@ -71,34 +71,34 @@
 </div>
 
 <div id="tip"></div>
-<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-30 13:55:44 · <a href="index.html">- 요약으로</a></p>
+<p style="text-align:center;color:#8e96a3;font-size:12px;margin:10px 0 24px;">생성 2026-10-30 17:48:20 · <a href="index.html">- 요약으로</a></p>
 <script>window.__STATE__ = {
-  "generatedAt": "2026-10-30T13:55:42",
+  "generatedAt": "2026-10-30T17:48:19",
   "counts": {
     "active": 16,
     "waitingWorker": 5,
-    "working": 4,
-    "waitingReview": 7,
+    "working": 5,
+    "waitingReview": 6,
     "done": 814,
     "alerts": 49
   },
   "jobs": [
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
-      "title": "R23 파일 접근 거부 중단과 최초 반환 보존 교정",
+      "title": "R24 전체 파일 IO 중단 계약과 기본 수집 금지 교정",
       "project": "soloquant-isolated-validation-20261029",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
-      "round": 23,
+      "round": 24,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": true,
+        "pendingReport": false,
         "rework": true
       },
       "verify": null,
@@ -453,9 +453,19 @@
           "time": "2026-10-30 13:53:42",
           "state": "DONE",
           "round": 23
+        },
+        {
+          "time": "2026-10-30 17:46:15",
+          "state": "REWORK",
+          "round": 24
+        },
+        {
+          "time": "2026-10-30 17:47:02",
+          "state": "CLAIMED",
+          "round": 24
         }
       ],
-      "lastUpdate": "2026-10-30 13:53:42"
+      "lastUpdate": "2026-10-30 17:47:02"
     },
     {
       "jobId": "Jaoai-20261030-activation",
@@ -48809,6 +48819,11 @@
       "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r22-exceeded.md",
       "jobId": "Jsoloquant-isolated-boundary-20261029",
       "cause": "round-cap-r22-exceeded"
+    },
+    {
+      "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r23-exceeded.md",
+      "jobId": "Jsoloquant-isolated-boundary-20261029",
+      "cause": "round-cap-r23-exceeded"
     },
     {
       "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r4-exceeded.md",
