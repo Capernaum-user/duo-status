@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-30T20:46:39",
+  "generatedAt": "2026-10-30T20:48:01",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 814,
     "alerts": 49
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
-      "title": "R26 전체 비용 선산정과 정확한 소스 조립",
+      "title": "R27 실행 전 소스 완성과 봉인 규격 정합",
       "project": "soloquant-isolated-validation-20261029",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
       "round": 27,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -429,9 +429,14 @@
           "time": "2026-10-30 20:46:04",
           "state": "REWORK",
           "round": 27
+        },
+        {
+          "time": "2026-10-30 20:46:55",
+          "state": "CLAIMED",
+          "round": 27
         }
       ],
-      "lastUpdate": "2026-10-30 20:46:04"
+      "lastUpdate": "2026-10-30 20:46:55"
     },
     {
       "jobId": "Jaoai-20261030-activation",
