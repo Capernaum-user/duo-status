@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-10-30T10:20:07",
+  "generatedAt": "2026-10-30T10:21:29",
   "counts": {
     "active": 17,
-    "waitingWorker": 5,
-    "working": 6,
+    "waitingWorker": 6,
+    "working": 5,
     "waitingReview": 6,
     "done": 813,
     "alerts": 48
   },
   "jobs": [
+    {
+      "jobId": "Jaoai-20261030-project-19",
+      "title": "AI 일일 콘텐츠와 자동화 변경 후보",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
+      "round": 2,
+      "originDir": "<local>",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": true
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-30 09:50:40",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-30 09:51:54",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-30 10:20:38",
+          "state": "REWORK",
+          "round": 2
+        }
+      ],
+      "lastUpdate": "2026-10-30 10:20:38"
+    },
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
       "title": "R19 시험 입력 형식과 현재 라운드 판독 경로 교정",
@@ -317,40 +356,6 @@
         }
       ],
       "lastUpdate": "2026-10-30 10:18:44"
-    },
-    {
-      "jobId": "Jaoai-20261030-project-19",
-      "title": "AI 일일 콘텐츠와 자동화 변경 후보",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-30 09:50:40",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-30 09:51:54",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-30 09:51:54"
     },
     {
       "jobId": "Jsoloquant-foundation-state-20261029",
