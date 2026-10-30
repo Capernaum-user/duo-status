@@ -1,48 +1,14 @@
 {
-  "generatedAt": "2026-10-30T09:52:19",
+  "generatedAt": "2026-10-30T09:54:57",
   "counts": {
     "active": 17,
     "waitingWorker": 5,
-    "working": 6,
-    "waitingReview": 6,
+    "working": 5,
+    "waitingReview": 7,
     "done": 813,
     "alerts": 48
   },
   "jobs": [
-    {
-      "jobId": "Jaoai-20261030-project-19",
-      "title": "AI 일일 콘텐츠와 자동화 변경 후보",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-10-30 09:50:40",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-10-30 09:51:54",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-10-30 09:51:54"
-    },
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
       "title": "R18 공식 숨김 항목 조회 계약으로 조상 경계 단회 확인",
@@ -50,15 +16,15 @@
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
       "round": 18,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
         "pendingOrder": false,
-        "pendingReport": false,
+        "pendingReport": true,
         "rework": true
       },
       "verify": null,
@@ -333,9 +299,48 @@
           "time": "2026-10-30 09:34:12",
           "state": "CLAIMED",
           "round": 18
+        },
+        {
+          "time": "2026-10-30 09:54:21",
+          "state": "DONE",
+          "round": 18
         }
       ],
-      "lastUpdate": "2026-10-30 09:34:12"
+      "lastUpdate": "2026-10-30 09:54:21"
+    },
+    {
+      "jobId": "Jaoai-20261030-project-19",
+      "title": "AI 일일 콘텐츠와 자동화 변경 후보",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-10-30 09:50:40",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-10-30 09:51:54",
+          "state": "CLAIMED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-10-30 09:51:54"
     },
     {
       "jobId": "Jsoloquant-foundation-state-20261029",
