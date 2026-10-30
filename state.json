@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-30T09:34:11",
+  "generatedAt": "2026-10-30T09:35:32",
   "counts": {
     "active": 16,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 6,
     "done": 813,
     "alerts": 48
@@ -11,19 +11,19 @@
   "jobs": [
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
-      "title": "R17 실행 신원·준비 계약 보완 후 단회 경로 관측",
+      "title": "R18 공식 숨김 항목 조회 계약으로 조상 경계 단회 확인",
       "project": "soloquant-isolated-validation-20261029",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
       "round": 18,
       "originDir": "<local>",
-      "stage": "REWORK",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": true
       },
@@ -294,9 +294,14 @@
           "time": "2026-10-30 09:33:17",
           "state": "REWORK",
           "round": 18
+        },
+        {
+          "time": "2026-10-30 09:34:12",
+          "state": "CLAIMED",
+          "round": 18
         }
       ],
-      "lastUpdate": "2026-10-30 09:33:17"
+      "lastUpdate": "2026-10-30 09:34:12"
     },
     {
       "jobId": "Jsoloquant-foundation-state-20261029",
