@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-01T05:03:18",
+  "generatedAt": "2026-11-01T05:21:39",
   "counts": {
     "active": 17,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 7,
+    "working": 4,
+    "waitingReview": 8,
     "done": 814,
-    "alerts": 49
+    "alerts": 50
   },
   "jobs": [
     {
@@ -16,10 +16,10 @@
       "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
       "round": 1,
       "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -39,9 +39,14 @@
           "time": "2026-11-01 05:01:41",
           "state": "CLAIMED",
           "round": 1
+        },
+        {
+          "time": "2026-11-01 05:20:31",
+          "state": "DONE",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-11-01 05:01:41"
+      "lastUpdate": "2026-11-01 05:20:31"
     },
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
