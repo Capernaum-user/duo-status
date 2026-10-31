@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-11-01T05:21:39",
+  "generatedAt": "2026-11-01T05:23:59",
   "counts": {
     "active": 17,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 4,
-    "waitingReview": 8,
-    "done": 814,
-    "alerts": 50
+    "waitingReview": 7,
+    "done": 815,
+    "alerts": 49
   },
   "jobs": [
+    {
+      "jobId": "Jao1031-20261101-apply",
+      "title": "Jao1031-20261101-apply",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-11-01 05:23:39",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-11-01 05:23:39"
+    },
     {
       "jobId": "Jao1031-20261101-repair",
       "title": "Jao1031-20261101-repair",
@@ -16,10 +45,10 @@
       "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
       "round": 1,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "ACCEPTED",
+      "stageIndex": 5,
+      "stageLabel": "완료",
+      "nextAction": "없음 — 수락 종결",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -44,9 +73,14 @@
           "time": "2026-11-01 05:20:31",
           "state": "DONE",
           "round": 1
+        },
+        {
+          "time": "2026-11-01 05:23:36",
+          "state": "ACCEPTED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-11-01 05:20:31"
+      "lastUpdate": "2026-11-01 05:23:36"
     },
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
