@@ -1,14 +1,43 @@
 {
-  "generatedAt": "2026-11-01T05:34:28",
+  "generatedAt": "2026-11-01T05:43:52",
   "counts": {
-    "active": 16,
-    "waitingWorker": 5,
+    "active": 17,
+    "waitingWorker": 6,
     "working": 4,
     "waitingReview": 7,
     "done": 816,
     "alerts": 49
   },
   "jobs": [
+    {
+      "jobId": "Jao1031-20261101-publish",
+      "title": "October 31 article catchup project-70ation through Aside",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "PLANNED",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": true,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-11-01 05:42:01",
+          "state": "PLANNED",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-11-01 05:42:01"
+    },
     {
       "jobId": "Jao1031-20261101-apply",
       "title": "Jao1031-20261101-apply",
