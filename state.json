@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-01T22:02:54",
+  "generatedAt": "2026-11-01T22:25:16",
   "counts": {
     "active": 17,
-    "waitingWorker": 5,
+    "waitingWorker": 6,
     "working": 5,
-    "waitingReview": 7,
+    "waitingReview": 6,
     "done": 818,
-    "alerts": 50
+    "alerts": 49
   },
   "jobs": [
     {
@@ -14,16 +14,16 @@
       "title": "R35 시험계획 교정 후 고정 순수 함수 1회 시험",
       "project": "soloquant-isolated-validation-20261029",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
-      "round": 35,
+      "round": 36,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "REWORK",
+      "stageIndex": 1,
+      "stageLabel": "발주됨",
+      "nextAction": "워커 패널에서 /check",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": false,
+        "pendingOrder": true,
         "pendingReport": false,
         "rework": true
       },
@@ -559,9 +559,14 @@
           "time": "2026-11-01 21:59:56",
           "state": "DONE",
           "round": 35
+        },
+        {
+          "time": "2026-11-01 22:24:47",
+          "state": "REWORK",
+          "round": 36
         }
       ],
-      "lastUpdate": "2026-11-01 21:59:56"
+      "lastUpdate": "2026-11-01 22:24:47"
     },
     {
       "jobId": "Jaoainews-20261101-publish",
@@ -49195,6 +49200,11 @@
       "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r34-exceeded.md",
       "jobId": "Jsoloquant-isolated-boundary-20261029",
       "cause": "round-cap-r34-exceeded"
+    },
+    {
+      "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r35-exceeded.md",
+      "jobId": "Jsoloquant-isolated-boundary-20261029",
+      "cause": "round-cap-r35-exceeded"
     },
     {
       "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r4-exceeded.md",
