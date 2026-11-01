@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-11-02T01:12:29",
+  "generatedAt": "2026-11-02T01:32:54",
   "counts": {
     "active": 17,
     "waitingWorker": 5,
-    "working": 5,
-    "waitingReview": 7,
+    "working": 6,
+    "waitingReview": 6,
     "done": 819,
-    "alerts": 50
+    "alerts": 49
   },
   "jobs": [
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
-      "title": "R39 실행 턴 확인과 현재 경로 결속 후 독립 단위 검증",
+      "title": "R40 모델 설정 선택 경로 교정 후 독립 단위 검증",
       "project": "soloquant-isolated-validation-20261029",
       "targetDir": "C:/Users/권태향/AppData/Local/Temp/soloquant-isolated-validation-20261029",
-      "round": 39,
+      "round": 40,
       "originDir": "<local>",
-      "stage": "DONE",
-      "stageIndex": 3,
-      "stageLabel": "보고 제출 [확인필요]",
-      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
@@ -619,9 +619,19 @@
           "time": "2026-11-02 01:10:18",
           "state": "DONE",
           "round": 39
+        },
+        {
+          "time": "2026-11-02 01:32:01",
+          "state": "REWORK",
+          "round": 40
+        },
+        {
+          "time": "2026-11-02 01:32:19",
+          "state": "CLAIMED",
+          "round": 40
         }
       ],
-      "lastUpdate": "2026-11-02 01:10:18"
+      "lastUpdate": "2026-11-02 01:32:19"
     },
     {
       "jobId": "Jaoreserve-20261102-project-19",
@@ -49319,6 +49329,11 @@
       "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r38-exceeded.md",
       "jobId": "Jsoloquant-isolated-boundary-20261029",
       "cause": "round-cap-r38-exceeded"
+    },
+    {
+      "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r39-exceeded.md",
+      "jobId": "Jsoloquant-isolated-boundary-20261029",
+      "cause": "round-cap-r39-exceeded"
     },
     {
       "file": "Jsoloquant-isolated-boundary-20261029_round-cap-r4-exceeded.md",
