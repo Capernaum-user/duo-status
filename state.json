@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-02T02:11:03",
+  "generatedAt": "2026-11-02T02:13:24",
   "counts": {
     "active": 17,
-    "waitingWorker": 6,
-    "working": 4,
+    "waitingWorker": 5,
+    "working": 5,
     "waitingReview": 7,
     "done": 820,
     "alerts": 50
@@ -16,14 +16,14 @@
       "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
       "round": 1,
       "originDir": "<local>",
-      "stage": "PLANNED",
-      "stageIndex": 1,
-      "stageLabel": "발주됨",
-      "nextAction": "워커 패널에서 /check",
+      "stage": "CLAIMED",
+      "stageIndex": 2,
+      "stageLabel": "작업 중",
+      "nextAction": "워커 작업 완료 대기",
       "flags": {
         "escalated": false,
         "protocolError": false,
-        "pendingOrder": true,
+        "pendingOrder": false,
         "pendingReport": false,
         "rework": false
       },
@@ -34,9 +34,14 @@
           "time": "2026-11-02 02:09:07",
           "state": "PLANNED",
           "round": 1
+        },
+        {
+          "time": "2026-11-02 02:12:28",
+          "state": "CLAIMED",
+          "round": 1
         }
       ],
-      "lastUpdate": "2026-11-02 02:09:07"
+      "lastUpdate": "2026-11-02 02:12:28"
     },
     {
       "jobId": "Jaoreserve-20261102-project-19",
