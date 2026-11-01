@@ -1,14 +1,53 @@
 {
-  "generatedAt": "2026-11-01T19:24:41",
+  "generatedAt": "2026-11-01T19:53:51",
   "counts": {
     "active": 17,
     "waitingWorker": 5,
-    "working": 6,
-    "waitingReview": 6,
+    "working": 5,
+    "waitingReview": 7,
     "done": 817,
-    "alerts": 49
+    "alerts": 50
   },
   "jobs": [
+    {
+      "jobId": "Jaoainews-20261101-prepare",
+      "title": "Jaoainews-20261101-prepare",
+      "project": "01_naver-channel",
+      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
+      "round": 1,
+      "originDir": "<local>",
+      "stage": "DONE",
+      "stageIndex": 3,
+      "stageLabel": "보고 제출 [확인필요]",
+      "nextAction": "기획 패널에 아무 입력(훅이 검토 유도)",
+      "flags": {
+        "escalated": false,
+        "protocolError": false,
+        "pendingOrder": false,
+        "pendingReport": false,
+        "rework": false
+      },
+      "verify": null,
+      "autorun": null,
+      "timeline": [
+        {
+          "time": "2026-11-01 18:36:16",
+          "state": "PLANNED",
+          "round": 1
+        },
+        {
+          "time": "2026-11-01 18:37:29",
+          "state": "CLAIMED",
+          "round": 1
+        },
+        {
+          "time": "2026-11-01 19:52:12",
+          "state": "DONE",
+          "round": 1
+        }
+      ],
+      "lastUpdate": "2026-11-01 19:52:12"
+    },
     {
       "jobId": "Jsoloquant-isolated-boundary-20261029",
       "title": "R32 입력 소유권과 소스 연결의 통합 선행조건 계획",
@@ -512,40 +551,6 @@
         }
       ],
       "lastUpdate": "2026-11-01 19:23:18"
-    },
-    {
-      "jobId": "Jaoainews-20261101-prepare",
-      "title": "Jaoainews-20261101-prepare",
-      "project": "01_naver-channel",
-      "targetDir": "D:/01_project-61/project-48/project-48/01_naver-channel",
-      "round": 1,
-      "originDir": "<local>",
-      "stage": "CLAIMED",
-      "stageIndex": 2,
-      "stageLabel": "작업 중",
-      "nextAction": "워커 작업 완료 대기",
-      "flags": {
-        "escalated": false,
-        "protocolError": false,
-        "pendingOrder": false,
-        "pendingReport": false,
-        "rework": false
-      },
-      "verify": null,
-      "autorun": null,
-      "timeline": [
-        {
-          "time": "2026-11-01 18:36:16",
-          "state": "PLANNED",
-          "round": 1
-        },
-        {
-          "time": "2026-11-01 18:37:29",
-          "state": "CLAIMED",
-          "round": 1
-        }
-      ],
-      "lastUpdate": "2026-11-01 18:37:29"
     },
     {
       "jobId": "Jao1031-20261101-publish",
